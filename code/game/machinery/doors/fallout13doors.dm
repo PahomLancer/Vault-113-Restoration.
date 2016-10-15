@@ -4,29 +4,27 @@
 //  - bauen1, the guy having to clean up the mess
 
 /obj/machinery/dooor
-	door_type = "wasteland"
-  name = "wooden door"
-  desc = "It opens and closes."
-  icon = 'icons/obj/doors/wasteland_doors.dmi'
-  icon_state = door_type
-
-  opacity = 1
-  density = 1
-  anchored = 1
-  layer = 4.2
-  var/open_sound = 'sound/machines/door_open.ogg'
-  var/close_sound = 'sound/machines/door_close.ogg'
+	var/door_type = "wasteland"
+	name = "wooden door"
+	desc = "It opens and closes."
+	icon = 'icons/obj/doors/wasteland_doors.dmi'
+	opacity = 1
+	density = 1
+	anchored = 1
+	layer = 4.2
+	var/open_sound = 'sound/machines/door_open.ogg'
+	var/close_sound = 'sound/machines/door_close.ogg'
 
 /obj/machinery/dooor/New(location)
 	..()
 	icon_state = door_type
-  return
+	return
 
 /obj/machinery/dooor/proc/Open()
-  icon_state = "[door_type]open"
-  playsound(src.loc, open_sound, 30, 0, 0)
-  opacity = 0
-  density = 0
+	  icon_state = "[door_type]open"
+	  playsound(src.loc, open_sound, 30, 0, 0)
+	  opacity = 0
+	  density = 0
 
 /obj/machinery/dooor/proc/Close()
   icon_state = door_type
@@ -77,12 +75,12 @@
 /obj/machinery/dooor/fakeglass
 	door_type = "fakeglass"
 	name = "damaged wooden door"
-	desc "It still somehow opens and closes."
+	desc = "It still somehow opens and closes."
 
 /obj/machinery/dooor/brokenglass
 	door_type = "brokenglass"
 	name = "shattered door"
-	desc "It still opens and closes."
+	desc = "It still opens and closes."
 
 /obj/machinery/dooor/glass
 	door_type = "glass"
