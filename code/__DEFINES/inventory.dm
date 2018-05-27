@@ -98,6 +98,8 @@
 #define HIDEHAIR		256
 #define HIDEFACIALHAIR	512
 #define HIDENECK		1024
+#define HIDEBACKPACK	2048
+#define HIDEBELT		4096
 
 //bitflags for clothing coverage - also used for limbs
 #define HEAD		1

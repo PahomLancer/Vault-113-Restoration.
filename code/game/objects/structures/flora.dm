@@ -21,7 +21,7 @@
 
 /obj/structure/flora/tree/attackby(obj/item/weapon/W, mob/user, params)
 	if(!cut && log_amount && (!(NODECONSTRUCT in flags)))
-		if(W.sharpness && W.force > 15)
+		if(W.sharpness && W.force > 0)
 			if(W.hitsound)
 				playsound(get_turf(src), W.hitsound, 100, 0, 0)
 			user.visible_message("<span class='notice'>[user] begins to cut down [src] with [W].</span>","<span class='notice'>You begin to cut down [src] with [W].</span>", "You hear the sound of sawing.")
@@ -30,14 +30,9 @@
 					return
 				user.visible_message("<span class='notice'>[user] fells [src] with the [W].</span>","<span class='notice'>You fell [src] with the [W].</span>", "You hear the sound of a tree falling.")
 				playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , 0, 0)
-				icon = 'icons/obj/flora/pinetrees.dmi'
-				icon_state = "tree_stump"
-				density = 0
-				pixel_x = -16
-				name += " stump"
-				cut = TRUE
 				for(var/i=1 to log_amount)
 					new /obj/item/weapon/grown/log/tree(get_turf(src))
+				qdel(src)
 
 	else
 		return ..()

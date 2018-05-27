@@ -415,7 +415,7 @@
 
 //Retaliation clauses
 
-/mob/living/carbon/human/interactive/hitby(go/AM, skipcatch, hitpush, blocked)
+/mob/living/carbon/human/interactive/hitby(atom/movable/AM, skipcatch, hitpush, blocked)
 	..(AM,skipcatch,hitpush,blocked)
 	var/mob/living/carbon/C = locate(/mob/living/carbon) in view(MIN_RANGE_FIND,src)
 	if(C)
@@ -544,7 +544,7 @@
 	saveVoice()
 	..()
 
-/mob/living/carbon/human/interactive/Hear(message, go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/mob/living/carbon/human/interactive/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	if(speaker != src)
 		knownStrings |= html_decode(raw_message)
 	..()
@@ -844,7 +844,7 @@
 		return pick(/area/hallway,/area/crew_quarters)
 
 /mob/living/carbon/human/interactive/proc/target_filter(target)
-	var/list/filtered_targets = list(/area, /turf, /obj/machinery/door, /go/light, /obj/structure/cable, /obj/machinery/atmospherics)
+	var/list/filtered_targets = list(/area, /turf, /obj/machinery/door, /atom/movable/light, /obj/structure/cable, /obj/machinery/atmospherics)
 	var/list/L = target
 	for(var/atom/A in target) // added a bunch of "junk" that clogs up the general find procs
 		if(is_type_in_list(A,filtered_targets))

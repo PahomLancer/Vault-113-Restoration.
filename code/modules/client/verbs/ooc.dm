@@ -197,9 +197,8 @@ var/global/normal_ooc_colour = OOC_COLOR
 	set name = "Set Your OOC Color"
 	set category = "Preferences"
 
-	if(!holder || check_rights_for(src, R_ADMIN))
-		if(!is_content_unlocked())
-			return
+	if(!check_rights_for(src, R_ADMIN))
+		return
 
 	var/new_ooccolor = input(src, "Please select your OOC color.", "OOC color", prefs.ooccolor) as color|null
 	if(new_ooccolor)
@@ -213,12 +212,11 @@ var/global/normal_ooc_colour = OOC_COLOR
 	set desc = "Returns your OOC Color to default"
 	set category = "Preferences"
 
-	if(!holder || check_rights_for(src, R_ADMIN))
-		if(!is_content_unlocked())
-			return
+	if(!check_rights_for(src, R_ADMIN))
+		return
 
-		prefs.ooccolor = initial(prefs.ooccolor)
-		prefs.save_preferences()
+	prefs.ooccolor = initial(prefs.ooccolor)
+	prefs.save_preferences()
 
 //Checks admin notice
 /client/verb/admin_notice()
@@ -251,25 +249,3 @@ var/global/normal_ooc_colour = OOC_COLOR
 		return
 
 	show_note(usr.ckey, null, 1)
-
-/client/proc/ignore_key(client)
-	var/client/C = client
-	if(C.key in prefs.ignoring)
-		prefs.ignoring -= C.key
-	else
-		prefs.ignoring |= C.key
-	to_chat(src, "You are [(C.key in prefs.ignoring) ? "now" : "no longer"] ignoring [C.key] on the OOC channel.")
-	prefs.save_preferences()
-
-/client/verb/select_ignore()
-	set name = "Ignore"
-	set category = "OOC"
-	set desc ="Ignore a player's messages on the OOC channel"
-
-	var/selection = input("Please, select a player!", "Ignore", null, null) as null|anything in sortKey(clients)
-	if(!selection)
-		return
-	if(selection == src)
-		to_chat(src, "You can't ignore yourself.")
-		return
-	ignore_key(selection)

@@ -215,7 +215,7 @@ var/list/slime_colours = list("rainbow", "grey", "purple", "metal", "orange",
 	powerlevel = 0 // oh no, the power!
 	..()
 
-/mob/living/simple_animal/slime/MouseDrop(go/A as mob|obj)
+/mob/living/simple_animal/slime/MouseDrop(atom/movable/A as mob|obj)
 	if(isliving(A) && A != src && usr == src)
 		var/mob/living/Food = A
 		if(CanFeedon(Food))
@@ -225,7 +225,7 @@ var/list/slime_colours = list("rainbow", "grey", "purple", "metal", "orange",
 /mob/living/simple_animal/slime/unEquip(obj/item/W)
 	return
 
-/mob/living/simple_animal/slime/start_pulling(go/AM)
+/mob/living/simple_animal/slime/start_pulling(atom/movable/AM)
 	return
 
 /mob/living/simple_animal/slime/attack_ui(slot)

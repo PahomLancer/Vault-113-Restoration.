@@ -32,7 +32,7 @@
 		queue_smooth(src)
 	visibilityChanged()
 
-	for(var/go/AM in src)
+	for(var/atom/movable/AM in src)
 		Entered(AM)
 
 	make_underlays()
@@ -60,7 +60,7 @@
 
 	return 0
 
-/turf/CanPass(go/mover, turf/target, height=1.5)
+/turf/CanPass(atom/movable/mover, turf/target, height=1.5)
 	if(!target) return 0
 
 	if(istype(mover)) // turf/Enter(...) will perform more advanced checks
@@ -79,7 +79,7 @@
 
 		return 1
 
-/turf/Enter(go/mover as mob|obj, atom/forget as mob|obj|turf|area)
+/turf/Enter(atom/movable/mover as mob|obj, atom/forget as mob|obj|turf|area)
 	if (!mover)
 		return 1
 	// First, make sure it can leave its square
@@ -92,7 +92,7 @@
 
 	var/list/large_dense = list()
 	//Next, check objects to block entry that are on the border
-	for(var/go/border_obstacle in src)
+	for(var/atom/movable/border_obstacle in src)
 		if(border_obstacle.flags&ON_BORDER)
 			if(!border_obstacle.CanPass(mover, mover.loc, 1) && (forget != border_obstacle))
 				mover.Bump(border_obstacle, 1)
@@ -106,21 +106,22 @@
 		return 0
 
 	//Finally, check objects/mobs to block entry that are not on the border
-	for(var/go/obstacle in large_dense)
+	for(var/atom/movable/obstacle in large_dense)
 		if(!obstacle.CanPass(mover, mover.loc, 1) && (forget != obstacle))
 			mover.Bump(obstacle, 1)
 			return 0
 	return 1 //Nothing found to block so return success!
 
-/turf/Entered(go/AM)
+/turf/Entered(atom/movable/AM)
 	for(var/A in proximity_checkers)
 		var/atom/B = A
-		B.HasProximity(AM)
+		if(B)
+			B.HasProximity(AM)
 
 	if(explosion_level && AM.ex_check(explosion_id))
 		AM.ex_act(explosion_level)
 
-/turf/open/Entered(go/AM)
+/turf/open/Entered(atom/movable/AM)
 	..()
 	//slipping
 	if (istype(AM,/mob/living/carbon))
@@ -337,8 +338,8 @@
 	for(var/V in contents)
 		var/atom/A = V
 		if(A.level >= affecting_level)
-			if(istype(A,/go))
-				var/go/AM = A
+			if(istype(A,/atom/movable))
+				var/atom/movable/AM = A
 				if(!AM.ex_check(explosion_id))
 					continue
 			A.ex_act(severity, target)
@@ -351,7 +352,7 @@
 		if(ismob(A) || .)
 			A.ratvar_act()
 
-/turf/proc/add_blueprints(go/AM)
+/turf/proc/add_blueprints(atom/movable/AM)
 	var/image/I = new
 	I.appearance = AM.appearance
 	I.appearance_flags = RESET_COLOR|RESET_ALPHA|RESET_TRANSFORM
@@ -364,7 +365,7 @@
 	blueprint_data += I
 
 
-/turf/proc/add_blueprints_preround(go/AM)
+/turf/proc/add_blueprints_preround(atom/movable/AM)
 	if(!ticker || ticker.current_state != GAME_STATE_PLAYING)
 		add_blueprints(AM)
 

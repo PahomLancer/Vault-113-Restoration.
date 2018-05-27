@@ -179,7 +179,7 @@
 		dat += "<font color = 'red'>No product loaded!</font>"
 	else
 		var/listofitems = list()
-		for (var/go/O in contents)
+		for (var/atom/movable/O in contents)
 			if (listofitems[O.name])
 				listofitems[O.name]++
 			else

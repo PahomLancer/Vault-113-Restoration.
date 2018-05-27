@@ -15,6 +15,9 @@
 	var/static_beam = 0
 	var/beam_type = /obj/effect/ebeam //must be subtype
 
+/datum/beam/Destroy()
+	..()
+	return QDEL_HINT_PUTINPOOL
 
 /datum/beam/New(beam_origin,beam_target,beam_icon='icons/effects/beam.dmi',beam_icon_state="b_beam",time=50,maxdistance=10,btype = /obj/effect/ebeam,beam_sleep_time=3)
 	endtime = world.time+time

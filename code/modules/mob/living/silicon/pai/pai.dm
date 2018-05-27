@@ -147,7 +147,7 @@
 
 // See software.dm for Topic()
 
-/mob/living/silicon/pai/canUseTopic(go/M)
+/mob/living/silicon/pai/canUseTopic(atom/movable/M)
 	return TRUE
 
 /mob/proc/makePAI(delold)

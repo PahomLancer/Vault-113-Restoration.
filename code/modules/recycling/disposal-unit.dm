@@ -176,7 +176,7 @@
 // eject the contents of the disposal unit
 /obj/machinery/disposal/proc/eject()
 	var/turf/T = get_turf(src)
-	for(var/go/AM in src)
+	for(var/atom/movable/AM in src)
 		AM.forceMove(T)
 		AM.pipe_eject(0)
 	update_icon()
@@ -223,7 +223,7 @@
 	var/turf/target
 	playsound(src, 'sound/machines/hiss.ogg', 50, 0, 0)
 	if(H) // Somehow, someone managed to flush a window which broke mid-transit and caused the disposal to go in an infinite loop trying to expel null, hopefully this fixes it
-		for(var/go/AM in H)
+		for(var/atom/movable/AM in H)
 			target = get_offset_target_turf(src.loc, rand(5)-rand(5), rand(5)-rand(5))
 
 			AM.forceMove(T)
@@ -242,7 +242,7 @@
 			stored.anchored = 0
 			stored.density = 1
 			stored.update_icon()
-	for(var/go/AM in src) //out, out, darned crowbar!
+	for(var/atom/movable/AM in src) //out, out, darned crowbar!
 		AM.forceMove(T)
 	..()
 
@@ -329,7 +329,7 @@
 			eject()
 			. = TRUE
 
-/obj/machinery/disposal/bin/CanPass(go/mover, turf/target, height=0)
+/obj/machinery/disposal/bin/CanPass(atom/movable/mover, turf/target, height=0)
 	if (istype(mover,/obj/item) && mover.throwing)
 		var/obj/item/I = mover
 		if(istype(I, /obj/item/projectile))
@@ -452,7 +452,7 @@
 		..()
 		flush()
 
-/obj/machinery/disposal/deliveryChute/Bumped(go/AM) //Go straight into the chute
+/obj/machinery/disposal/deliveryChute/Bumped(atom/movable/AM) //Go straight into the chute
 	if(!AM.disposalEnterTry())
 		return
 	switch(dir)
@@ -476,7 +476,7 @@
 		M.forceMove(src)
 	flush()
 
-/go/proc/disposalEnterTry()
+/atom/movable/proc/disposalEnterTry()
 	return 1
 
 /obj/item/projectile/disposalEnterTry()

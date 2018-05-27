@@ -73,11 +73,11 @@
 
 	var/server
 	var/banappeals
-	var/wikiurl = "http://fallout-13.wikia.com/wiki/Fallout_13_Wikia" // default wiki
-	var/forumurl = "https://www.reddit.com/r/Fallout13/" //default forums
-	var/rulesurl = "https://goo.gl/IsvOqU" // default rules
-	var/discord = "https://discord.gg/K2Yxxvs" //default chat
-	var/bitbucket = "https://bitbucket.org/Jackerzz/fallout-13/issues/new" //default code
+	var/wikiurl = "https://discord.gg/zyYBHeQ" // default wiki
+	var/forumurl = "https://discord.gg/zyYBHeQ" //default forums
+	var/rulesurl = "https://discord.gg/zyYBHeQ" // default rules
+	var/discord = "https://discord.gg/zyYBHeQ" //default chat
+	var/bitbucket = "https://discord.gg/zyYBHeQ" //default code
 
 	var/forbid_singulo_possession = 0
 	var/useircbot = 0
@@ -247,7 +247,7 @@
 	var/list/whitelist = list()
 	var/whitelist_on = 0
 
-	var/hostiles_count = 100
+	var/hostiles_count = 50
 
 /datum/configuration/New()
 	gamemode_cache = typecacheof(/datum/game_mode,TRUE)

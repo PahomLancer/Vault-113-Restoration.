@@ -52,7 +52,7 @@
 /atom/var/bottom_left_corner
 /atom/var/bottom_right_corner
 /atom/var/list/canSmoothWith = null // TYPE PATHS I CAN SMOOTH WITH~~~~~ If this is null and atom is smooth, it smooths only with itself
-/go/var/can_be_unanchored = 0
+/atom/movable/var/can_be_unanchored = 0
 /turf/var/list/fixed_underlay = null
 
 /proc/calculate_adjacencies(atom/A)
@@ -61,8 +61,8 @@
 
 	var/adjacencies = 0
 
-	var/go/AM
-	if(istype(A, /go))
+	var/atom/movable/AM
+	if(istype(A, /atom/movable))
 		AM = A
 		if(AM.can_be_unanchored && !AM.anchored)
 			return 0

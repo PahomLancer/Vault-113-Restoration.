@@ -31,7 +31,7 @@
 		return
 	..()
 
-/mob/living/simple_animal/cockroach/Crossed(var/go/AM)
+/mob/living/simple_animal/cockroach/Crossed(var/atom/movable/AM)
 	if(ismob(AM))
 		if(isliving(AM))
 			var/mob/living/A = AM

@@ -25,7 +25,7 @@ var/datum/subsystem/spacedrift/SSspacedrift
 	var/list/currentrun = src.currentrun
 
 	while (currentrun.len)
-		var/go/AM = currentrun[currentrun.len]
+		var/atom/movable/AM = currentrun[currentrun.len]
 		currentrun.len--
 		if (!AM)
 			processing -= AM

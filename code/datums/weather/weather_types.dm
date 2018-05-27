@@ -173,7 +173,7 @@
 		return
 
 	var/datum/signal/status_signal = new
-	var/go/virtualspeaker/virt = PoolOrNew(/go/virtualspeaker,null)
+	var/atom/movable/virtualspeaker/virt = PoolOrNew(/atom/movable/virtualspeaker,null)
 	status_signal.source = virt
 	status_signal.transmission_method = 1
 	status_signal.data["command"] = "shuttle"

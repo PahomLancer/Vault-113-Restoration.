@@ -187,3 +187,7 @@ Temporary Items
 .apdisk
 
 *.before
+
+server/
+
+config/

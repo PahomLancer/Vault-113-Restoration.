@@ -226,7 +226,7 @@
 
 			flick("pad-beam", telepad)
 			playsound(telepad.loc, 'sound/weapons/emitter2.ogg', 25, 1, extrarange = 3, falloff = 5)
-			for(var/go/ROI in source)
+			for(var/atom/movable/ROI in source)
 				// if is anchored, don't let through
 				if(ROI.anchored)
 					if(isliving(ROI))
@@ -249,7 +249,7 @@
 					if (istype(ROI, /obj/structure/closet))
 						var/obj/structure/closet/C = ROI
 						log_msg += " ("
-						for(var/go/Q as mob|obj in C)
+						for(var/atom/movable/Q as mob|obj in C)
 							if(ismob(Q))
 								log_msg += "[key_name(Q)], "
 							else

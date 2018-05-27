@@ -17,12 +17,12 @@ var/list/admin_datums = list()
 /datum/admins/New(datum/admin_rank/R, ckey)
 	if(!ckey)
 		spawn(0)
-			del(src)
+			qdel(src)
 		throw EXCEPTION("Admin datum created without a ckey")
 		return
 	if(!istype(R))
 		spawn(0)
-			del(src)
+			qdel(src)
 		throw EXCEPTION("Admin datum created without a rank")
 		return
 	rank = R

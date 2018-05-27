@@ -8,7 +8,7 @@
 	idle_power_usage = 4
 	active_power_usage = 250
 	var/obj/item/charging = null
-	var/list/allowed_devices = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/ammo_box/magazine/recharge,/obj/item/device/modular_computer)
+	var/list/allowed_devices = list(/obj/item/weapon/stock_parts/cell, /obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/ammo_box/magazine/recharge,/obj/item/device/modular_computer)
 	var/recharge_coeff = 1
 
 /obj/machinery/recharger/New()
@@ -110,14 +110,15 @@
 	if(charging)
 		if(istype(charging, /obj/item/weapon/gun/energy))
 			var/obj/item/weapon/gun/energy/E = charging
-			if(E.power_supply.charge < E.power_supply.maxcharge)
-				E.power_supply.give(E.power_supply.chargerate * recharge_coeff)
-				E.recharge_newshot()
-				use_power(250 * recharge_coeff)
-				using_power = 1
+			if(E.power_supply)
+				if(E.power_supply.charge < E.power_supply.maxcharge)
+					E.power_supply.give(E.power_supply.chargerate * recharge_coeff)
+					E.recharge_newshot()
+					use_power(250 * recharge_coeff)
+					using_power = 1
 
 
-		if(istype(charging, /obj/item/weapon/melee/baton))
+		if(istype(charging, /obj/item/weapon/melee/baton) || istype(charging, /obj/item/weapon/stock_parts/cell))
 			var/obj/item/weapon/melee/baton/B = charging
 			if(B.bcell)
 				if(B.bcell.give(B.bcell.chargerate * recharge_coeff))
@@ -126,8 +127,8 @@
 
 		if(istype(charging, /obj/item/ammo_box/magazine/recharge))
 			var/obj/item/ammo_box/magazine/recharge/R = charging
-			if(R.stored_ammo.len < R.max_ammo)
-				R.stored_ammo += new R.ammo_type(R)
+			if(R.ammo_left < R.max_ammo)
+				R.ammo_left += 1
 				use_power(200 * recharge_coeff)
 				using_power = 1
 

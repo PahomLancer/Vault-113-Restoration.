@@ -91,7 +91,7 @@ List of nuances:
 	return text
 
 //Causes the mob or AM in question to speak a message; it assumes that the message is already translated to ratvar speech using text2ratvar()
-/proc/clockwork_say(go/AM, message, whisper=FALSE)
+/proc/clockwork_say(atom/movable/AM, message, whisper=FALSE)
 	var/list/spans = list(SPAN_ROBOT)
 
 	var/old_languages_spoken = AM.languages_spoken

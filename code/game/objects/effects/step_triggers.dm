@@ -7,7 +7,7 @@
 	invisibility = INVISIBILITY_ABSTRACT // nope cant see this shit
 	anchored = 1
 
-/obj/effect/step_trigger/proc/Trigger(go/A)
+/obj/effect/step_trigger/proc/Trigger(atom/movable/A)
 	return 0
 
 /obj/effect/step_trigger/Crossed(H as mob|obj)
@@ -45,9 +45,9 @@
 	var/list/affecting = list()
 
 /obj/effect/step_trigger/thrower/Trigger(atom/A)
-	if(!A || !istype(A, /go))
+	if(!A || !istype(A, /atom/movable))
 		return
-	var/go/AM = A
+	var/atom/movable/AM = A
 	var/curtiles = 0
 	var/stopthrow = 0
 	for(var/obj/effect/step_trigger/thrower/T in orange(2, src))
@@ -107,7 +107,7 @@
 	var/teleport_y = 0
 	var/teleport_z = 0
 
-/obj/effect/step_trigger/teleporter/Trigger(go/A)
+/obj/effect/step_trigger/teleporter/Trigger(atom/movable/A)
 	if(teleport_x && teleport_y && teleport_z)
 
 		A.x = teleport_x
@@ -121,7 +121,7 @@
 	var/teleport_y_offset = 0
 	var/teleport_z_offset = 0
 
-/obj/effect/step_trigger/teleporter/random/Trigger(go/A)
+/obj/effect/step_trigger/teleporter/random/Trigger(atom/movable/A)
 	if(teleport_x && teleport_y && teleport_z)
 		if(teleport_x_offset && teleport_y_offset && teleport_z_offset)
 
@@ -177,7 +177,7 @@
 	var/triggerer_only = 0 //Whether the triggerer is the only person who hears this
 
 
-/obj/effect/step_trigger/sound_effect/Trigger(go/A)
+/obj/effect/step_trigger/sound_effect/Trigger(atom/movable/A)
 	var/turf/T = get_turf(A)
 
 	if(!T)

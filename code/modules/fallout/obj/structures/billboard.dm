@@ -13,7 +13,7 @@
 /obj/structure/billboard/New()
 	..()
 
-	var/go/S = new (locate(x+1,y,z))
+	var/atom/movable/S = new (locate(x+1,y,z))
 	S.density = 1
 	S.anchored = 1
 	S.icon = null

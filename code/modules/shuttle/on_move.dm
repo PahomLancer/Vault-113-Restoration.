@@ -1,4 +1,4 @@
-/go/proc/onShuttleMove(turf/T1, rotation)
+/atom/movable/proc/onShuttleMove(turf/T1, rotation)
 	if(rotation)
 		shuttleRotate(rotation)
 	forceMove(T1)
@@ -11,7 +11,7 @@
 		return 0
 	. = ..()
 
-/go/light/onShuttleMove()
+/atom/movable/light/onShuttleMove()
 	return 0
 
 /obj/machinery/door/onShuttleMove()

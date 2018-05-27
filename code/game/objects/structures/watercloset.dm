@@ -9,6 +9,7 @@
 	var/cistern = 0			//if the cistern bit is open
 	var/w_items = 0			//the combined w_class of all the items in the cistern
 	var/mob/living/swirlie = null	//the mob being given a swirlie
+	var/liquid = "radwater" //Gargule /What u gain
 
 
 /obj/structure/toilet/New()
@@ -99,7 +100,7 @@
 		if (!open)
 			return
 		var/obj/item/weapon/reagent_containers/RG = I
-		RG.reagents.add_reagent("water", min(RG.volume - RG.reagents.total_volume, RG.amount_per_transfer_from_this))
+		RG.reagents.add_reagent(liquid, min(RG.volume - RG.reagents.total_volume, RG.amount_per_transfer_from_this))
 		to_chat(user, "<span class='notice'>You fill [RG] from [src]. Gross.</span>")
 	else
 		return ..()
@@ -203,7 +204,7 @@
 	add_fingerprint(M)
 	if(on)
 		wash_turf()
-		for(var/go/G in loc)
+		for(var/atom/movable/G in loc)
 			if(isliving(G))
 				var/mob/living/L = G
 				wash_mob(L)
@@ -259,7 +260,7 @@
 				ismist = 0
 
 
-/obj/machinery/shower/Crossed(go/O)
+/obj/machinery/shower/Crossed(atom/movable/O)
 	..()
 	if(on)
 		if(isliving(O))
@@ -271,7 +272,7 @@
 			wash_obj(O)
 
 
-/obj/machinery/shower/proc/wash_obj(go/O)
+/obj/machinery/shower/proc/wash_obj(atom/movable/O)
 	O.clean_blood()
 
 	if(istype(O,/obj/item))
@@ -367,7 +368,7 @@
 /obj/machinery/shower/process()
 	if(on)
 		wash_turf()
-		for(var/go/G in loc)
+		for(var/atom/movable/G in loc)
 			if(isliving(G))
 				var/mob/living/L = G
 				wash_mob(L)
@@ -406,6 +407,7 @@
 	desc = "A sink used for washing one's hands and face."
 	anchored = 1
 	var/busy = 0 	//Something's being washed at the moment
+	var/liquid = "radwater" //Gargule /What u gain
 
 
 /obj/structure/sink/attack_hand(mob/living/user)
@@ -455,7 +457,7 @@
 	if(istype(O, /obj/item/weapon/reagent_containers))
 		var/obj/item/weapon/reagent_containers/RG = O
 		if(RG.container_type & OPENCONTAINER)
-			RG.reagents.add_reagent("water", min(RG.volume - RG.reagents.total_volume, RG.amount_per_transfer_from_this))
+			RG.reagents.add_reagent(liquid, min(RG.volume - RG.reagents.total_volume, RG.amount_per_transfer_from_this))
 			to_chat(user, "<span class='notice'>You fill [RG] from [src].</span>")
 			return 1
 

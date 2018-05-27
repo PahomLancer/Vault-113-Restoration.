@@ -11,6 +11,12 @@
 
 //pass a negative argument to skip one of the variable
 /mob/living/setEarDamage(damage, deaf)
+	if(istype(src, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = src
+		if(H.head)
+			if(istype(H.head, /obj/item/clothing/head/helmet/power_armor))
+				return
+
 	if(damage >= 0)
 		ear_damage = damage
 	if(deaf >= 0)

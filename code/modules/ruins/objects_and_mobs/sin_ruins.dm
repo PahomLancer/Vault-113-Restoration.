@@ -76,7 +76,7 @@
 	icon = 'icons/mob/blob.dmi'
 	color = rgb(145, 150, 0)
 
-/obj/effect/gluttony/CanPass(go/mover, turf/target, height=0)//So bullets will fly over and stuff.
+/obj/effect/gluttony/CanPass(atom/movable/mover, turf/target, height=0)//So bullets will fly over and stuff.
 	if(height==0)
 		return 1
 	if(ishuman(mover))
@@ -117,7 +117,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-/obj/item/weapon/kitchen/knife/envy/afterattack(go/AM, mob/living/carbon/human/user, proximity)
+/obj/item/weapon/kitchen/knife/envy/afterattack(atom/movable/AM, mob/living/carbon/human/user, proximity)
 	..()
 	if(!proximity)
 		return

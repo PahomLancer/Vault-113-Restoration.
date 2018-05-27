@@ -32,10 +32,6 @@ else
 //В аргументах передаем имена рассматриваемых тегов, * все теги
 function initToolTips() {
 //   return;
-	var els = document.getElementsByClassName("tool_tip");
-	for(var i = 0; i < els.length; i++) {
-		els[i].parentNode.removeChild(els[i]);
-	}
     var tags, tooltext;
     for(var i=0; i<arguments.length; i++) {
        tags=document.body.getElementsByTagName(arguments[i]);

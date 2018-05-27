@@ -8,6 +8,7 @@
 	time = 200
 	category = CAT_WEAPON
 	default = 1
+	XP = 20
 
 /datum/crafting_recipe/throwing_spear
 	name = "Throwing Spear"
@@ -17,6 +18,7 @@
 	tools = list(/obj/item/weapon/weldingtool)
 	category = CAT_WEAPON
 	default = 1
+	XP = 20
 
 //BALLISTIC
 
@@ -30,6 +32,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 800
 	category = CAT_WEAPON
+	XP = 200
 
 /datum/crafting_recipe/n99
 	name = "10-mm Pistol"
@@ -41,6 +44,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 600
 	category = CAT_WEAPON
+	XP = 75
 
 /datum/crafting_recipe/a_rifle308
 	name = "Automatic Rifle .308"
@@ -52,6 +56,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 120
 
 /datum/crafting_recipe/smg10mm
 	name = "10-mm Submachine Gun"
@@ -63,6 +68,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 100
 
 /datum/crafting_recipe/rifle308
 	name = "Rifle .308"
@@ -74,6 +80,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 110
 
 /datum/crafting_recipe/pipegun
 	name = "Pipe Gun"
@@ -85,6 +92,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 40
 
 /datum/crafting_recipe/assault_rifle
 	name = "Assault Rifle 5.56mm"
@@ -96,6 +104,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 140
 
 /datum/crafting_recipe/trail_carbine
 	name = "trail carbine"
@@ -106,6 +115,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 120
 
 // PLASMA
 
@@ -121,6 +131,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 250
 
 /datum/crafting_recipe/plasma_glock
 	name = "plasma glock"
@@ -134,6 +145,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 175
 
 /datum/crafting_recipe/plasma_pistol
 	name = "Plasma pistol"
@@ -147,6 +159,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 140
 
 /datum/crafting_recipe/plasma_multiplas
 	name = "Multiplas"
@@ -159,6 +172,7 @@
 	/obj/item/stack/cable_coil = 15, /obj/item/weapon/stock_parts/cell = 1)
 	time = 700
 	category = CAT_WEAPON
+	XP = 400
 
 /datum/crafting_recipe/plasma_turbo
 	name = "Turbo Plasma Rifle"
@@ -172,6 +186,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 700
 
 //LASER
 
@@ -187,6 +202,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 150
 
 /datum/crafting_recipe/laser_rifle9
 	name = "Laser Rifle AER9"
@@ -201,6 +217,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 200
 
 /datum/crafting_recipe/laser_rifle13
 	name = "Laser Rifle AER13"
@@ -215,6 +232,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 250
 
 /datum/crafting_recipe/laser_tri
 	name = "Tribeam"
@@ -229,6 +247,7 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 300
 
 /datum/crafting_recipe/laser_rcw
 	name = "RCW"
@@ -243,3 +262,4 @@
 	tools = list(/obj/item/weapon/screwdriver)
 	time = 700
 	category = CAT_WEAPON
+	XP = 400

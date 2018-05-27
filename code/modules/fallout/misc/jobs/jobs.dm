@@ -4,7 +4,6 @@ var/const/GENERAL			=(1<<0)
 var/const/NCR_SERGEANT		=(1<<1)
 var/const/RANGER			=(1<<2)
 var/const/TROOPER			=(1<<3)
-//var/const/CCO				=(1<<4)
 
 var/const/PRIME				=(1<<4)
 var/const/LEGDECAN			=(1<<5)
@@ -39,5 +38,30 @@ var/const/SCRIBER			=(1<<5)
 
 var/const/CITIZEN			=(1<<4)
 
-//var/const/VAULT			=(1<<6)
+/*
+/var/const/VAULT			=(1<<6)
 
+/var/const/VAULT_OVERSEER	=(1<<0)
+/var/const/VAULT_MEDIC		=(1<<1)
+/var/const/VAULT_SCIENTIST	=(1<<2)
+/var/const/VAULT_SECURITY	=(1<<3)
+/var/const/VAULT_ENGINER	=(1<<4)
+/var/const/VAULT_RESIDENT	=(1<<5)
+/var/const/VAULT_BOTANIST	=(1<<6)
+/var/const/VAULT_BARTENDER	=(1<<7)
+*/
+
+var/const/FOA				=(1<<8)
+var/const/AFOLLOWER			=(1<<0)
+
+var/list/fallout_head_positions = list(
+	"Paladin",
+	"Sergeant",
+	"Centurion",
+	"Sergeant NCR",
+	"Veteran Ranger"
+)
+
+
+/proc/whitelist_jobbans(job)
+	return (job in fallout_head_positions)

@@ -48,10 +48,10 @@
 	register_asset("[ckey(name)].js", file)
 
 /datum/browser/proc/set_content(ncontent)
-	content = ncontent
+	content = replacetext(ncontent, "ÿ", "&#1103;")
 
 /datum/browser/proc/add_content(ncontent)
-	content += ncontent
+	content += replacetext(ncontent, "ÿ", "&#1103;")
 
 /datum/browser/proc/get_header()
 	var/file
@@ -67,7 +67,7 @@
 
 	return {"<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-10646-UCS-4">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<head>
 		[head_content]
@@ -213,8 +213,8 @@
 // This will allow you to show an icon in the browse window
 // This is added to mob so that it can be used without a reference to the browser object
 // There is probably a better place for this...
+/*
 /mob/proc/browse_rsc_icon(icon, icon_state, dir = -1)
-	/*
 	var/icon/I
 	if (dir >= 0)
 		I = new /icon(icon, icon_state, dir)
@@ -225,8 +225,11 @@
 	var/filename = "[ckey("[icon]_[icon_state]_[dir]")].png"
 	src << browse_rsc(I, filename)
 	return filename
-	*/
+*/
 
+/mob/proc/browse_rsc_icon(icon, icon_state)
+    var/icon/i = new(icon, icon_state)
+    src << browse_rsc(i, "[icon_state].png")
 
 // Registers the on-close verb for a browse window (client/verb/.windowclose)
 // this will be called when the close-button of a window is pressed.

@@ -10,7 +10,7 @@
 	throw_speed = 3
 	throw_range = 7
 
-/obj/item/ring/New()
+/obj/item/ring/initialize()
 	..()
 	START_PROCESSING(SSobj, src)
 
@@ -24,3 +24,8 @@
 			M.adjustOxyLoss(-2)
 			flick("one_ring_anim", src)
 			icon_state = initial(icon_state)
+
+/obj/item/weapon/storage/box/doom_slayer/New()
+	..()
+	new /obj/item/weapon/twohanded/required/chainsaw/doomslayer(src)
+

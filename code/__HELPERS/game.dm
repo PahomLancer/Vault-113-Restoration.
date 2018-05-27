@@ -200,7 +200,7 @@
 		return hear
 
 	var/list/range = get_hear(R, T)
-	for(var/go/A in range)
+	for(var/atom/movable/A in range)
 		hear |= recursive_hear_check(A)
 
 	return hear
@@ -280,7 +280,7 @@
 		else
 			return get_step(start, EAST)
 
-/proc/try_move_adjacent(go/AM)
+/proc/try_move_adjacent(atom/movable/AM)
 	var/turf/T = get_turf(AM)
 	for(var/direction in cardinal)
 		if(AM.Move(get_step(T, direction)))

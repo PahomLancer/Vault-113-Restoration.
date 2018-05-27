@@ -95,7 +95,7 @@
 	..()
 	move_update_air(T)
 
-/obj/machinery/door/CanPass(go/mover, turf/target, height=0)
+/obj/machinery/door/CanPass(atom/movable/mover, turf/target, height=0)
 	if(istype(mover) && mover.checkpass(PASSGLASS))
 		return !opacity
 	return !density
@@ -250,7 +250,7 @@
 	if(operating)
 		return
 	if(safe)
-		for(var/go/M in get_turf(src))
+		for(var/atom/movable/M in get_turf(src))
 			if(M.density && M != src) //something is blocking the door
 				if(autoclose)
 					addtimer(CALLBACK(src, .proc/autoclose), 60)

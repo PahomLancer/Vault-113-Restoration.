@@ -18,10 +18,6 @@ MASS SPECTROMETER
 	item_state = "electronic"
 	materials = list(MAT_METAL=150)
 	origin_tech = "magnets=1;engineering=1"
-	components = list(/obj/item/crafting/diode = 1, /obj/item/crafting/transistor = 1,
-	/obj/item/crafting/capacitor = 1, /obj/item/crafting/resistor = 1,
-	/obj/item/crafting/bulb = 1, /obj/item/crafting/board = 1,
-	/obj/item/stack/cable_coil/random = 1)
 
 /obj/item/device/t_scanner/attack_self(mob/user)
 
@@ -261,10 +257,6 @@ MASS SPECTROMETER
 	throw_range = 7
 	materials = list(MAT_METAL=30, MAT_GLASS=20)
 	origin_tech = "magnets=1;engineering=1"
-	components = list(/obj/item/crafting/diode = 1, /obj/item/crafting/transistor = 1,
-	/obj/item/crafting/capacitor = 1, /obj/item/crafting/resistor = 1,
-	/obj/item/crafting/bulb = 1, /obj/item/crafting/board = 1,
-	/obj/item/stack/cable_coil/random = 1)
 
 /obj/item/device/analyzer/attack_self(mob/user)
 

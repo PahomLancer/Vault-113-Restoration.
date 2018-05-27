@@ -7,20 +7,11 @@
 	var/t_has = p_have()
 	var/t_is = p_are()
 
-	var/msg = "<span class='info'>*---------*\nThis is <EM>[src.name]</EM>"
+	var/msg = "<span class='info'>*---------*\nThis is <EM>[src.name]</EM>!\n"
 
 	var/list/obscured = check_obscured_slots()
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
 	var/wielded = 0
-
-	if(!skipface)
-		var/species_name = "\improper "
-		species_name += "[dna.species.name]"
-		msg += ", <b>\a [species_name]</b>!"
-	else
-		msg += "!"
-
-	msg += "\n"
 
 	//uniform
 	if(w_uniform && !(slot_w_uniform in obscured))
@@ -144,6 +135,8 @@
 				if(F != null && F.id != "none")
 					msg += " of <span style='color: [F.color]'>[F.name]</span>"
 			msg += "\n"
+
+	msg += karmaText()
 
 	//Jitters
 	switch(jitteriness)

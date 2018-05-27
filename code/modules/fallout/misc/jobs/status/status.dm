@@ -70,6 +70,8 @@ mob/proc/set_status(var/status)
 		src.allow_recipes -= last_S.craft_recipes
 
 
+	log_faction("[src.real_name]([src.ckey]) changed role to [S.name]");
+
 	src.status = S.id
 	var/text
 	text += "<span class='notice'>Now you are <span style='color: [S.color];'>[S.name]</span>.</span>"
@@ -90,6 +92,11 @@ mob/proc/set_status(var/status)
 		return
 	if(alert("Are you sure you want to leave?",,"Yes","No")=="No")
 		return
+
+	if(jobban_isbanned(src, "labor"))
+		to_chat(usr, "<span class='warning'>You are on corrections!</span>")
+		return
+
 	set_status("none")
 
 
@@ -324,3 +331,10 @@ mob/proc/set_status(var/status)
 	id = "initiate"
 	purge_faction = "bs"
 	color = "#13306d"
+
+// FOA
+/datum/status/follower
+	name = "Follower"
+	id = "follower"
+	purge_faction = "followers"
+	color = "#000"

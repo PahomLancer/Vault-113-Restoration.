@@ -103,7 +103,7 @@
 /obj/mecha/attack_tk()
 	return
 
-/obj/mecha/hitby(go/A as mob|obj) //wrapper
+/obj/mecha/hitby(atom/movable/A as mob|obj) //wrapper
 	log_message("Hit by [A].",1)
 	. = ..()
 

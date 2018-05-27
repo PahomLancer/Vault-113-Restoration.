@@ -19,7 +19,7 @@
 
 	return 1 //diseases, stings, etc can pass
 
-/obj/structure/plasticflaps/CanPass(go/A, turf/T)
+/obj/structure/plasticflaps/CanPass(atom/movable/A, turf/T)
 	if(istype(A) && A.checkpass(PASSGLASS))
 		return prob(60)
 

@@ -103,7 +103,7 @@ var/list/blacklisted_cargo_types = typecacheof(list(
 	var/msg = ""
 	var/sold_atoms = ""
 
-	for(var/go/AM in areaInstance)
+	for(var/atom/movable/AM in areaInstance)
 		if(AM.anchored)
 			continue
 		sold_atoms += export_item_and_contents(AM, contraband, emagged, dry_run = FALSE)

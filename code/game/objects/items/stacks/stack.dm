@@ -224,7 +224,7 @@
 		merge(o)
 	. = ..()
 */
-/obj/item/stack/hitby(go/AM, skip, hitpush)
+/obj/item/stack/hitby(atom/movable/AM, skip, hitpush)
 	if(istype(AM, merge_type))
 		merge(AM)
 	. = ..()

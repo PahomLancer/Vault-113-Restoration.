@@ -16,7 +16,7 @@
 	outfit = /datum/outfit/job/mayor
 	whitelist_on = 1
 
-	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
+	allowed_packs = list("starter", "cigarettes", "follower", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
 
 	required_items = list(
 	/obj/item/clothing/shoes/f13/brownie,
@@ -85,7 +85,7 @@
 	minimal_access = list()
 	outfit = /datum/outfit/job/sheriff
 
-	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
+	allowed_packs = list("starter", "cigarettes", "follower", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
 
 	required_items = list(
 	/obj/item/clothing/under/f13/cowboyg,
@@ -123,7 +123,7 @@
 	head = /obj/item/clothing/head/f13/cowboy
 	weapon = /obj/item/weapon/gun/ballistic/revolver/magnum
 	glasses = /obj/item/clothing/glasses/sunglasses
-	back = /obj/item/weapon/gun/ballistic/shotgun
+	back = /obj/item/weapon/gun/ballistic/shotgun/trail
 
 //Citizen
 
@@ -134,15 +134,15 @@
 	desc = "A City dweller.<br>You live a better life than most Wastelanders will ever have."
 	faction = "city"
 	status = "member"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "none"
 	selection_color = "#ece19d"
 	access = list()
 	minimal_access = list()
 	outfit = /datum/outfit/job/citizen
 
-	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
+	allowed_packs = list("starter", "cigarettes", "follower", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
 
 	required_items = list(
 	/obj/item/clothing/shoes/f13/tan,

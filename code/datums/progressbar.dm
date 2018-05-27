@@ -50,8 +50,7 @@
 	bar.pixel_y -= PROGRESSBAR_HEIGHT
 
 /datum/progressbar/Destroy()
-	for(var/I in user.progressbars[bar.loc])
-		var/datum/progressbar/P = I
+	for(var/datum/progressbar/P in user.progressbars[bar.loc])
 		if(P != src && P.listindex > listindex)
 			P.shiftDown()
 
@@ -63,6 +62,9 @@
 	if (client)
 		client.images -= bar
 	qdel(bar)
+
 	. = ..()
+
+	//return QDEL_HINT_PUTINPOOL
 
 #undef PROGRESSBAR_HEIGHT

@@ -24,7 +24,7 @@ var/list/image/ghost_images_simple = list() //this is a list of all ghost images
 	var/started_as_observer //This variable is set to 1 when you enter the game as an observer.
 							//If you died in the game and are a ghsot - this will remain as null.
 							//Note that this is not a reliable way to determine if admins started as observers, since they change mobs a lot.
-	var/go/following = null
+	var/atom/movable/following = null
 	var/fun_verbs = 0
 	var/image/ghostimage = null //this mobs ghost image, for deleting and stuff
 	var/image/ghostimage_default = null //this mobs ghost image without accessories and dirs
@@ -142,7 +142,7 @@ var/list/image/ghost_images_simple = list() //this is a list of all ghost images
 	updateallghostimages()
 	return ..()
 
-/mob/dead/CanPass(go/mover, turf/target, height=0)
+/mob/dead/CanPass(atom/movable/mover, turf/target, height=0)
 	return 1
 
 /*
@@ -249,7 +249,6 @@ Works together with spawning an observer, noted above.
 			SStgui.on_transfer(src, ghost) // Transfer NanoUIs.
 			ghost.can_reenter_corpse = can_reenter_corpse
 			ghost.key = key
-			ghost.client.eye = ghost
 			return ghost
 
 /*
@@ -386,7 +385,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	ManualFollow(target)
 
 // This is the ghost's follow verb with an argument
-/mob/dead/observer/proc/ManualFollow(go/target)
+/mob/dead/observer/proc/ManualFollow(atom/movable/target)
 	if (!istype(target))
 		return
 
@@ -620,7 +619,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	..()
 	if(usr == src)
 		if(href_list["follow"])
-			var/go/target = locate(href_list["follow"])
+			var/atom/movable/target = locate(href_list["follow"])
 			if(istype(target) && (target != src))
 				ManualFollow(target)
 		if(href_list["reenter"])

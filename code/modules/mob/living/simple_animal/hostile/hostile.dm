@@ -63,9 +63,6 @@
 
 	if(!targets_from)
 		targets_from = src
-	environment_target_typecache = typecacheof(environment_target_typecache)
-	wanted_objects = typecacheof(wanted_objects)
-
 
 /mob/living/simple_animal/hostile/Destroy()
 	targets_from = null
@@ -93,11 +90,18 @@
 	return 1
 
 /mob/living/simple_animal/hostile/attacked_by(obj/item/I, mob/living/user)
+	if(murder)
+		if(!(murder in targets))
+			targets += murder
+
 	if(stat == CONSCIOUS && !target && AIStatus != AI_OFF && !client && user)
 		FindTarget(list(user), 1)
 	return ..()
 
 /mob/living/simple_animal/hostile/bullet_act(obj/item/projectile/P)
+	if(!(P.firer in targets))
+		targets += P.firer
+
 	if(stat == CONSCIOUS && !target && AIStatus != AI_OFF && !client)
 		if(P.firer && get_dist(src, P.firer) <= aggro_vision_range)
 			FindTarget(list(P.firer), 1)
@@ -107,6 +111,13 @@
 //////////////HOSTILE MOB TARGETTING AND AGGRESSION////////////
 
 /mob/living/simple_animal/hostile/proc/ListTargets()//Step 1, find out what we can see
+	return targets
+
+	. = list()
+	for(var/mob/living/carbon/human/player in range(vision_range, src))
+		. += player
+	return
+
 	. = list()
 	if(!search_objects)
 		var/list/Mobs = hearers(vision_range, targets_from) - src //Remove self, so we don't suicide
@@ -176,6 +187,12 @@
 	if(search_objects < 2)
 		if(isliving(the_target))
 			var/mob/living/L = the_target
+
+			if(istype(L, /mob/living/carbon))
+				var/mob/living/carbon/user = L
+				if(user.handcuffed)
+					return 0
+
 			var/faction_check = faction_check(L)
 			if(robust_searching)
 				if(L.stat > stat_attack || L.stat != stat_attack && stat_exclusive == 1)

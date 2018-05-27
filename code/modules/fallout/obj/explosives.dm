@@ -57,7 +57,7 @@
 	if(prob(15))
 		playsound(get_turf(src),'sound/f13weapons/mine_one.ogg',100, extrarange = -5)
 
-/obj/item/weapon/bottlecap_mine/Crossed(go/AM)
+/obj/item/weapon/bottlecap_mine/Crossed(atom/movable/AM)
 	if(state == ACTIVE && ishuman(AM))
 		boom()
 

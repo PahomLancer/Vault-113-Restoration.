@@ -64,7 +64,7 @@
 			add_fingerprint(usr)
 
 
-/obj/item/weapon/storage/MouseDrop_T(go/O, mob/user)
+/obj/item/weapon/storage/MouseDrop_T(atom/movable/O, mob/user)
 	if(istype(O, /obj/item))
 		var/obj/item/I = O
 		if(iscarbon(user) || isdrone(user))

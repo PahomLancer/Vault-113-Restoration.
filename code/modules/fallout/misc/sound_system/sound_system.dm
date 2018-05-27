@@ -125,7 +125,8 @@ atom
 				null_sound.channel = chan
 				to_chat(M, null_sound)
 				M.ambient_sounds -= src
-		ambient_hearers.Cut()
+		if(ambient_hearers)
+			ambient_hearers.Cut()
 		SSambient.processing -= src
 		ambient_playing = 0
 		ambient_hearers = null
@@ -179,6 +180,9 @@ sound_system
 	New(new_owner)
 		src.owner = new_owner
 
+/sound_system
+	var/ambient_music_last = 0
+
 /area/Entered(A)
 	..()
 	if(!isliving(A))
@@ -188,25 +192,29 @@ sound_system
 	if(!L.ckey)
 		return
 
+	/*
 	// Ambience goes down here -- make sure to list each area seperately for ease of adding things in later, thanks! Note: areas adjacent to each other should have the same sounds to prevent cutoff when possible.- LastyScratch
 	if(!(L.client && (L.client.prefs.toggles & SOUND_AMBIENCE)))
 		return //General ambience check is below the ship ambience so one can play without the other
+	*/
 
 	var/sound = pick(ambience)
-	to_chat(L, sound(sound, wait = 0, volume = L.client.prefs.ambient_volume*100, channel = 3, repeat =1))
+	if(L.client)
+		to_chat(L, sound(sound, wait = 0, volume = L.client.prefs.ambient_volume*100, channel = 3, repeat =1))
 
 	if(L.client.state_ambience_change < world.time)
 		if(L.client.music_playing)
 			L.client.music_playing = 0
-			L.client.sound_system.MusicFade(null, 0)
-			L.client.state_ambience_change = world.time + rand(3000, 6000)
+			//L.client.sound_system.MusicFade(null, 0)
+			L.client.state_ambience_change = world.time + rand(1500, 6000)
 		else
 			L.client.music_playing = 1
-			L.client.state_ambience_change = world.time + rand(3000, 6000)
+			L.client.state_ambience_change = world.time + rand(1500, 6000)
 
-	if(L.client.music_playing)
+	if(world.time > L.client.sound_system.ambient_music_last)
 		if(src.ambientmusic && src.ambientmusic.len)
-			L.client.sound_system.AlterMusic(pick(src.ambientmusic), time = 100)
+			L.client.sound_system.ambient_music_last = world.time + 3000
+			L.client.sound_system.PlayMusic(pick(src.ambientmusic), 100, 1)
 
 /*
 PLAY MUSIC
@@ -216,7 +224,7 @@ Exceptions: If the desired music is already playing, nothing will happen.
 Variables:
 	- songfile: The song file to play.
 */
-sound_system/proc/PlayMusic(songfile, volume = owner.prefs.music_volume*100)
+sound_system/proc/PlayMusic(songfile, volume = owner.prefs.music_volume*100, will_wait = 0)
 
 	// If music is already playing...
 	if(src.current_music)
@@ -232,6 +240,7 @@ sound_system/proc/PlayMusic(songfile, volume = owner.prefs.music_volume*100)
 	song.channel = src.music_channel
 	song.volume = volume
 	song.priority = 255
+	song.wait = will_wait
 	song.status = SOUND_STREAM
 
 	src.current_music = song
@@ -250,7 +259,7 @@ sound_system/proc/EndMusic(sound/song)
 		song = src.current_music
 
 	to_chat(src.owner, sound(null, channel = song.channel))
-	del(song)
+	qdel(song)
 	return
 
 

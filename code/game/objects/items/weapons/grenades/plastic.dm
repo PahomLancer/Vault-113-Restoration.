@@ -47,7 +47,7 @@
 /obj/item/weapon/grenade/plastic/receive_signal()
 	prime()
 
-/obj/item/weapon/grenade/plastic/Crossed(go/AM)
+/obj/item/weapon/grenade/plastic/Crossed(atom/movable/AM)
 	if(nadeassembly)
 		nadeassembly.Crossed(AM)
 
@@ -65,7 +65,7 @@
 		det_time = newtime
 		to_chat(user, "Timer set for [det_time] seconds.")
 
-/obj/item/weapon/grenade/plastic/afterattack(go/AM, mob/user, flag)
+/obj/item/weapon/grenade/plastic/afterattack(atom/movable/AM, mob/user, flag)
 	if (!flag)
 		return
 	if (ismob(AM))
@@ -176,6 +176,6 @@
 		M.gib()
 	qdel(src)
 
-/obj/item/weapon/grenade/plastic/x4/afterattack(go/AM, mob/user, flag)
+/obj/item/weapon/grenade/plastic/x4/afterattack(atom/movable/AM, mob/user, flag)
 	aim_dir = get_dir(user,AM)
 	..()

@@ -30,8 +30,6 @@
 	var/datum/subsystem/queue_next
 	var/datum/subsystem/queue_prev
 
-	var/initialized = FALSE
-
 
 	// The object used for the clickable stat() button.
 	var/obj/effect/statclick/statclick
@@ -158,9 +156,8 @@
 /datum/subsystem/proc/Initialize(start_timeofday)
 	var/time = (world.timeofday - start_timeofday) / 10
 	var/msg = "Initialized [name] subsystem within [time] seconds!"
-	to_chat(world, "<span class='boldannounce'>[msg]</span>")
+	//to_chat(world, "<span class='boldannounce'>[msg]</span>")
 	world.log << msg
-	initialized = TRUE
 	return time
 
 //hook for printing stats to the "MC" statuspanel for admins to see performance and related stats etc.

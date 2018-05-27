@@ -53,7 +53,7 @@
 			icon_junction = 4
 	..(icon_junction)
 
-/obj/structure/fence/CanPass(go/mover, turf/target, height=0)
+/obj/structure/fence/CanPass(atom/movable/mover, turf/target, height=0)
 	if (!density)
 		return 1
 	if (junction != 12 && junction != 10 && junction != 6 && junction != 14 && junction != 8 && junction != 4)
@@ -62,10 +62,12 @@
 		return 1
 	if(get_dir(loc, target) != SOUTH)
 		return 1
+	if(istype(mover, /obj/item/projectile/bullet))
+		return 1
 	else
 		return 0
 
-/obj/structure/fence/CheckExit(go/O as mob|obj, target)
+/obj/structure/fence/CheckExit(atom/movable/O as mob|obj, target)
 	if (!density)
 		return 1
 	if (junction != 12 && junction != 10 && junction != 6 && junction != 14 && junction != 8 && junction != 4)
@@ -74,6 +76,8 @@
 		return 1
 	if(get_dir(O.loc, target) != SOUTH)
 		return 1
+	if(istype(O, /obj/item/projectile/bullet))
+		return 1
 	else
 		return 0
 
@@ -81,6 +85,9 @@
 	name = "metal fence door"
 	icon_state = "metal_fence_door0"
 	icontype = "metal_fence_door"
+
+/obj/structure/fence/door/attackby(obj/item/weapon/W, mob/user, params)
+	attack_hand(user)
 
 /obj/structure/fence/door/attack_hand(mob/user)
 	if (density)

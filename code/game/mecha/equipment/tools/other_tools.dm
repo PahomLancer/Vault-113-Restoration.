@@ -83,11 +83,11 @@
 	equip_cooldown = 10
 	energy_drain = 100
 	range = MELEE|RANGED
-	var/go/locked
+	var/atom/movable/locked
 	var/mode = 1 //1 - gravsling 2 - gravpush
 
 
-/obj/item/mecha_parts/mecha_equipment/gravcatapult/action(go/target)
+/obj/item/mecha_parts/mecha_equipment/gravcatapult/action(atom/movable/target)
 	if(!action_checks(target))
 		return
 	switch(mode)
@@ -115,7 +115,7 @@
 				atoms = range(3, target)
 			else
 				atoms = orange(3, target)
-			for(var/go/A in atoms)
+			for(var/atom/movable/A in atoms)
 				if(A.anchored) continue
 				spawn(0)
 					var/iter = 5-get_dist(A,target)

@@ -54,7 +54,7 @@
 **/
 
 
-/proc/Broadcast_Message(var/go/AM,
+/proc/Broadcast_Message(var/atom/movable/AM,
 						var/vmask, var/obj/item/device/radio/radio,
 						var/message, var/name, var/job, var/realname,
 						var/data, var/compression, var/list/level, var/freq, var/list/spans,
@@ -68,7 +68,7 @@
 	var/list/radios = list()
 	var/list/unencrypted_radios = list()
 
-	var/go/virtualspeaker/virt = PoolOrNew(/go/virtualspeaker,null)
+	var/atom/movable/virtualspeaker/virt = PoolOrNew(/atom/movable/virtualspeaker,null)
 	virt.name = name
 	virt.job = job
 	virt.languages_spoken = AM.languages_spoken
@@ -160,12 +160,12 @@
 			receive |= M
 
 	var/rendered = virt.compose_message(virt, virt.languages_spoken, message, freq, spans) //Always call this on the virtualspeaker to advoid issues.
-	for(var/go/hearer in receive)
+	for(var/atom/movable/hearer in receive)
 		hearer.Hear(rendered, virt, AM.languages_spoken, message, freq, spans)
 		unencrypted_receive -= hearer
 
 	rendered = virt.compose_message(virt, virt.languages_spoken, Gibberish(message), freq, spans)
-	for(var/go/hearer in unencrypted_receive)
+	for(var/atom/movable/hearer in unencrypted_receive)
 		hearer.Hear(rendered, virt, AM.languages_spoken, message, freq, spans)
 
 	if(length(receive))
@@ -479,7 +479,7 @@
 	// First, we want to generate a new radio signal
 	var/datum/signal/signal = new
 	signal.transmission_method = 2 // 2 would be a subspace transmission.
-	var/turf/pos = get_turf(src)
+	//var/turf/pos = get_turf(src)
 
 	// --- Finally, tag the actual signal with the appropriate values ---
 	signal.data = list(
@@ -490,7 +490,7 @@
 		"type" = 4, // determines what type of radio input it is: test broadcast
 		"reject" = 0,
 		"done" = 0,
-		"level" = pos.z // The level it is being broadcasted at.
+		"level" = 0 // The level it is being broadcasted at.
 	)
 	signal.frequency = 1459// Common channel
 

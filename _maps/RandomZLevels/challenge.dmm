@@ -51,7 +51,7 @@
 	},
 /area/awaymission/challenge/start)
 "ak" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/airless{
 	icon_state = "damaged4"
 	},
@@ -92,7 +92,7 @@
 /turf/open/floor/plasteel/airless,
 /area/awaymission/challenge/start)
 "as" = (
-/obj/effect/decal/cleanable/remains/robot,
+/obj/effect/decal/remains/robot,
 /turf/open/floor/plasteel/airless{
 	icon_state = "damaged2"
 	},

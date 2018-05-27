@@ -40,7 +40,7 @@ var/global/default_martial_art = new/datum/martial_art
 	var/special_voice = "" // For changing our voice. Used by a symptom.
 
 	var/bleed_rate = 0 //how much are we bleeding
-	var/bleedsuppress = 0 //for stopping bloodloss, eventually this will be limb-based like bleeding
+	var/bleedsuppress = 1 //for stopping bloodloss, eventually this will be limb-based like bleeding
 
 	var/datum/martial_art/martial_art = null
 

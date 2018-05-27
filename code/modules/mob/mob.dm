@@ -3,6 +3,7 @@
 	dead_mob_list -= src
 	living_mob_list -= src
 	all_clockwork_mobs -= src
+
 	if(observers && observers.len)
 		for(var/M in observers)
 			var/mob/dead/observe = M
@@ -27,6 +28,7 @@ var/next_mob_id = 0
 		dead_mob_list += src
 	else
 		living_mob_list += src
+
 	prepare_huds()
 	..()
 
@@ -237,7 +239,7 @@ var/next_mob_id = 0
 
 /mob/proc/reset_perspective(atom/A)
 	if(client)
-		if(istype(A, /go))
+		if(istype(A, /atom/movable))
 			client.perspective = EYE_PERSPECTIVE
 			client.eye = A
 		else
@@ -300,7 +302,7 @@ var/next_mob_id = 0
 	return 1
 
 //this and stop_pulling really ought to be /mob/living procs
-/mob/proc/start_pulling(go/AM, supress_message = 0)
+/mob/proc/start_pulling(atom/movable/AM, supress_message = 0)
 	if(!AM || !src)
 		return
 	if(AM == src || !isturf(AM.loc))
@@ -426,6 +428,11 @@ var/next_mob_id = 0
 	if ((stat != 2 || !( ticker )))
 		to_chat(usr, "<span class='boldnotice'>You must be dead to use this!</span>")
 		return
+
+	if(jobban_isbanned(src, "labor"))
+		if(world.time - src.timeofdeath < 6000)
+			to_chat(usr, "<span class='boldnotice'>You are on corrections! Wait for 15 minutes. You waited [Floor((world.time - src.timeofdeath)/10)] seconds!</span>")
+			return
 
 	log_game("[usr.name]/[usr.key] used abandon mob.")
 

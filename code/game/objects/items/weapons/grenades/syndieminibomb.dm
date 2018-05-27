@@ -28,6 +28,11 @@
 	desc = "Fire in the hole."
 	icon_state = "frag"
 
+/obj/item/weapon/grenade/syndieminibomb/concussion/frag/prime()
+	update_mob()
+	explosion(src.loc,5,10,20,flame_range = 0)
+	qdel(src)
+
 /obj/item/weapon/grenade/gluon
 	desc = "An advanced grenade that releases a harmful stream of gluons inducing radiation in those nearby. These gluon streams will also make victims feel exhausted, and induce shivering. This extreme coldness will also likely wet any nearby floors."
 	name = "gluon frag grenade"

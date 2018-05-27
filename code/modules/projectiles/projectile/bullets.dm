@@ -62,7 +62,7 @@
 
 /obj/item/projectile/bullet/midbullet
 	damage = 20
-	stamina = 20 //two round bursts from the c20r knocks people down
+	stamina = 65 //two round bursts from the c20r knocks people down
 
 
 /obj/item/projectile/bullet/midbullet2
@@ -70,12 +70,10 @@
 
 /obj/item/projectile/bullet/midbullet3
 	damage = 30
-	stamina = 30
 
 /obj/item/projectile/bullet/midbullet3/hp
 	damage = 40
 	armour_penetration = -50
-	stamina = 30
 
 /obj/item/projectile/bullet/midbullet3/ap
 	damage = 27
@@ -88,8 +86,7 @@
 		M.IgniteMob()
 
 /obj/item/projectile/bullet/heavybullet
-	damage = 60
-	stamina = 30
+	damage = 35
 
 /obj/item/projectile/bullet/rpellet
 	damage = 3
@@ -161,8 +158,8 @@
 
 /obj/item/projectile/bullet/meteorshot/on_hit(atom/target, blocked = 0)
 	. = ..()
-	if(istype(target, /go))
-		var/go/M = target
+	if(istype(target, /atom/movable))
+		var/atom/movable/M = target
 		var/atom/throw_target = get_edge_target_turf(M, get_dir(src, get_step_away(M, src)))
 		M.throw_at(throw_target, 3, 2)
 
@@ -285,7 +282,6 @@
 
 
 /obj/item/projectile/bullet/sniper/penetrator
-	icon_state = "gauss"
 	name = "penetrator round"
 	damage = 60
 	forcedodge = 1

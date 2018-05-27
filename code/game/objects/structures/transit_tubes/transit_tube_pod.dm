@@ -58,7 +58,7 @@
 		empty_pod()
 
 /obj/structure/transit_tube_pod/contents_explosion(severity, target)
-	for(var/go/AM in contents)
+	for(var/atom/movable/AM in contents)
 		AM.ex_act(severity, target)
 
 /obj/structure/transit_tube_pod/singularity_pull(S, current_size)
@@ -77,7 +77,7 @@
 /obj/structure/transit_tube_pod/proc/empty_pod(atom/location)
 	if(!location)
 		location = get_turf(src)
-	for(var/go/M in contents)
+	for(var/atom/movable/M in contents)
 		M.forceMove(location)
 	update_icon()
 

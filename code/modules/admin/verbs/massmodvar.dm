@@ -228,8 +228,8 @@
 				. += thing
 			CHECK_TICK
 
-	else if (ispath(T, /go))
-		for(var/go/thing in world)
+	else if (ispath(T, /atom/movable))
+		for(var/atom/movable/thing in world)
 			if (typecache[thing.type])
 				. += thing
 			CHECK_TICK

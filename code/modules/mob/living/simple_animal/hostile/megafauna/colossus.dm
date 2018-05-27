@@ -107,7 +107,7 @@ Difficulty: Very Hard
 /obj/effect/overlay/temp/at_shield/New(new_loc, new_target)
 	..()
 	target = new_target
-	addtimer(CALLBACK(src, /go/proc/orbit, target, 0, FALSE, 0, 0, FALSE, TRUE), 0)
+	addtimer(CALLBACK(src, /atom/movable/proc/orbit, target, 0, FALSE, 0, 0, FALSE, TRUE), 0)
 
 /mob/living/simple_animal/hostile/megafauna/colossus/bullet_act(obj/item/projectile/P)
 	if(!stat)
@@ -382,7 +382,7 @@ Difficulty: Very Hard
 	activation_method = pick("touch","laser","bullet","energy","bomb","mob_bump","heat","weapon","speech")
 	..()
 
-/obj/machinery/anomalous_crystal/Hear(message, go/speaker, message_langs, raw_message, radio_freq, spans)
+/obj/machinery/anomalous_crystal/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, spans)
 	..()
 	if(isliving(speaker))
 		ActivationReaction(speaker,"speech")

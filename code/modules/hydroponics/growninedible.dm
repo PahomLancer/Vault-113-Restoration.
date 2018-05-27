@@ -48,7 +48,7 @@
 	return 0
 
 
-/obj/item/weapon/grown/Crossed(go/AM)
+/obj/item/weapon/grown/Crossed(atom/movable/AM)
 	if(seed)
 		for(var/datum/plant_gene/trait/T in seed.genes)
 			T.on_cross(src, AM)

@@ -81,7 +81,7 @@
 
 /obj/effect/dummy/spell_jaunt/Destroy()
 	// Eject contents if deleted somehow
-	for(var/go/AM in src)
+	for(var/atom/movable/AM in src)
 		AM.forceMove(get_turf(src))
 	return ..()
 

@@ -7,6 +7,7 @@
 	time = 150
 	category = CAT_ARMOR
 	default = 1
+	XP = 20
 
 /datum/crafting_recipe/leatherarmor
 	name = "Leather Armor"
@@ -18,6 +19,7 @@
 	time = 200
 	category = CAT_ARMOR
 	default = 1
+	XP = 30
 
 /datum/crafting_recipe/chestplate
 	name = "Metal Chestplate"
@@ -30,6 +32,7 @@
 	time = 100
 	category = CAT_ARMOR
 	default = 1
+	XP = 40
 
 /datum/crafting_recipe/metalarmor
 	name = "Metal Armor"
@@ -44,6 +47,7 @@
 	time = 200
 	category = CAT_ARMOR
 	default = 1
+	XP = 50
 
 /datum/crafting_recipe/bmetalarmor
 	name = "Black Metal Armor"
@@ -58,3 +62,4 @@
 	time = 200
 	category = CAT_ARMOR
 	default = 1
+	XP = 50

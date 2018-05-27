@@ -241,7 +241,7 @@
 /obj/item/projectile/gravityrepulse/on_hit()
 	. = ..()
 	T = get_turf(src)
-	for(var/go/A in range(T, power))
+	for(var/atom/movable/A in range(T, power))
 		if(A == src || (firer && A == src.firer) || A.anchored)
 			continue
 		var/throwtarget = get_edge_target_turf(src, get_dir(src, get_step_away(A, src)))
@@ -269,7 +269,7 @@
 /obj/item/projectile/gravityattract/on_hit()
 	. = ..()
 	T = get_turf(src)
-	for(var/go/A in range(T, power))
+	for(var/atom/movable/A in range(T, power))
 		if(A == src || (firer && A == src.firer) || A.anchored)
 			continue
 		A.throw_at(T, power+1, 1)
@@ -296,7 +296,7 @@
 /obj/item/projectile/gravitychaos/on_hit()
 	. = ..()
 	T = get_turf(src)
-	for(var/go/A in range(T, power))
+	for(var/atom/movable/A in range(T, power))
 		if(A == src|| (firer && A == src.firer) || A.anchored)
 			continue
 		A.throw_at(get_edge_target_turf(A, pick(cardinal)), power+1, 1)

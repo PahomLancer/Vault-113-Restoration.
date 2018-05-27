@@ -167,7 +167,7 @@
 					to_chat(user, "<span class='notice'>You remove the circuit board.</span>")
 				else
 					to_chat(user, "<span class='notice'>You remove the circuit board and other components.</span>")
-					for(var/go/A in components)
+					for(var/atom/movable/A in components)
 						A.forceMove(src.loc)
 				desc = initial(desc)
 				req_components = null

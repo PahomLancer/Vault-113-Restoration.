@@ -1,6 +1,3 @@
-
-
-
 /datum/crafting_recipe/headscarf
 	name = "Headscarf"
 	result = /obj/item/clothing/head/f13/headscarf
@@ -8,6 +5,7 @@
 	time = 50
 	category = CAT_CLOTHING
 	default = 1
+	XP = 5
 
 /datum/crafting_recipe/rag_shoes
 	name = "Cloth Shoes"
@@ -18,6 +16,7 @@
 	time = 150
 	category = CAT_CLOTHING
 	default = 1
+	XP = 5
 
 /datum/crafting_recipe/shoes
 	name = "Leather Shoes"
@@ -28,6 +27,7 @@
 	time = 150
 	category = CAT_CLOTHING
 	default = 1
+	XP = 5
 
 /datum/crafting_recipe/tribalclothing
 	name = "Tribal Clothing"
@@ -38,6 +38,7 @@
 	time = 100
 	category = CAT_CLOTHING
 	default = 1
+	XP = 15
 
 /datum/crafting_recipe/ragclothing
 	name = "Rag Clothing"
@@ -48,6 +49,7 @@
 	time = 100
 	category = CAT_CLOTHING
 	default = 1
+	XP = 5
 
 /datum/crafting_recipe/ragclothing
 	name = "Pants"
@@ -58,6 +60,7 @@
 	time = 50
 	category = CAT_CLOTHING
 	default = 1
+	XP = 5
 
 /datum/crafting_recipe/satchel
 	name = "Satchel"
@@ -69,5 +72,6 @@
 	tools = list(/obj/item/weapon/wirecutters)
 	category = CAT_CLOTHING
 	default = 1
+	XP = 10
 
 

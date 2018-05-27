@@ -34,7 +34,7 @@
 
 
 
-/go/proc/BlockSuperconductivity() // objects that block air and don't let superconductivity act. Only firelocks atm.
+/atom/movable/proc/BlockSuperconductivity() // objects that block air and don't let superconductivity act. Only firelocks atm.
 	return 0
 
 /turf/proc/CalculateAdjacentTurfs()
@@ -101,7 +101,7 @@
 		CalculateAdjacentTurfs()
 	SSair.add_to_active(src,command)
 
-/go/proc/move_update_air(turf/T)
+/atom/movable/proc/move_update_air(turf/T)
     if(isturf(T))
         T.air_update_turf(1)
     air_update_turf(1)

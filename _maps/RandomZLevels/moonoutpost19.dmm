@@ -7878,7 +7878,7 @@
 	})
 "kD" = (
 /obj/effect/decal/cleanable/generic,
-/obj/effect/decal/cleanable/remains/human{
+/obj/effect/decal/remains/human{
 	desc = "They look like human remains. The skeleton is curled up in fetal position with the hands placed near the throat."
 	},
 /turf/open/floor/plasteel{
@@ -7977,7 +7977,7 @@
 	})
 "kL" = (
 /obj/effect/decal/cleanable/xenoblood,
-/obj/effect/decal/cleanable/remains/xeno{
+/obj/effect/decal/remains/xeno{
 	desc = "They look like the remains of something... alien. The front of skull appears to have been completely obliterated."
 	},
 /turf/open/floor/plasteel/bar{
@@ -8713,7 +8713,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/remains/human{
+/obj/effect/decal/remains/human{
 	desc = "They look like human remains. The skeleton is sitting upright with its legs tucked in and hands still holding onto its arms."
 	},
 /obj/item/weapon/gun/ballistic/shotgun/sc_pump,
@@ -9851,7 +9851,7 @@
 	req_access_txt = "0";
 	specialfunctions = 4
 	},
-/obj/effect/decal/cleanable/remains/human{
+/obj/effect/decal/remains/human{
 	desc = "They look like human remains. The skeleton is laid out on its side and there seems to have been no sign of struggle.";
 	layer = 4.1
 	},

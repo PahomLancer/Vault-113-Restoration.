@@ -58,14 +58,14 @@
 /obj/effect/portal/wormhole/attackby(obj/item/I, mob/user, params)
 	teleport(user)
 
-/obj/effect/portal/wormhole/teleport(go/M)
+/obj/effect/portal/wormhole/teleport(atom/movable/M)
 	if(istype(M, /obj/effect))	//sparks don't teleport
 		return
 	if(M.anchored)
 		if(!(istype(M, /obj/mecha) && mech_sized))
 			return
 
-	if(istype(M, /go))
+	if(istype(M, /atom/movable))
 		var/turf/target
 		if(portals.len)
 			var/obj/effect/portal/P = pick(portals)

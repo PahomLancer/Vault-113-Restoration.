@@ -10,7 +10,6 @@
 	desc = "A footcloths made of ripped cloth.<br>It has soaked in smelly sweat, and it is rather repulsive.<br>Only the poorest of settlers, mostly the drug addicts or slaves wear something like that."
 	icon_state = "rag"
 	item_state = "rag"
-	cloth_count = 1
 
 /obj/item/clothing/shoes/f13/tan
 	name = "tan shoes"

@@ -50,7 +50,7 @@
 
 /obj/structure/destructible/clockwork/powered/mending_motor/process()
 	var/efficiency = get_efficiency_mod()
-	for(var/go/M in range(7, src))
+	for(var/atom/movable/M in range(7, src))
 		var/turf/T
 		if(isclockmob(M) || istype(M, /mob/living/simple_animal/drone/cogscarab))
 			T = get_turf(M)

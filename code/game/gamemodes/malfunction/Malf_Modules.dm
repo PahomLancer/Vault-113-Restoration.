@@ -386,7 +386,7 @@
 			if(!C.visibleTurfs[T])
 				alert_msg = "We cannot get camera vision of this location."
 				fail = 1
-			for(var/go/AM in T.contents)
+			for(var/atom/movable/AM in T.contents)
 				if(AM.density)
 					fail = 1
 			var/image/I = PCT.turfOverlays[n]

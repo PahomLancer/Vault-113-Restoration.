@@ -57,7 +57,7 @@
 		sleep(20)
 	close()
 
-/obj/machinery/door/window/Bumped(go/AM as mob|obj)
+/obj/machinery/door/window/Bumped(atom/movable/AM as mob|obj)
 	if( operating || !src.density )
 		return
 	if (!( ismob(AM) ))
@@ -88,7 +88,7 @@
 		do_animate("deny")
 	return
 
-/obj/machinery/door/window/CanPass(go/mover, turf/target, height=0)
+/obj/machinery/door/window/CanPass(atom/movable/mover, turf/target, height=0)
 	if(istype(mover) && mover.checkpass(PASSGLASS))
 		return 1
 	if(get_dir(loc, target) == dir) //Make sure looking at appropriate border
@@ -116,7 +116,7 @@
 /obj/machinery/door/window/CanAStarPass(obj/item/weapon/card/id/ID, to_dir)
 	return !density || (dir != to_dir) || (check_access(ID) && hasPower())
 
-/obj/machinery/door/window/CheckExit(go/mover as mob|obj, turf/target)
+/obj/machinery/door/window/CheckExit(atom/movable/mover as mob|obj, turf/target)
 	if(istype(mover) && mover.checkpass(PASSGLASS))
 		return 1
 	if(get_dir(loc, target) == dir)

@@ -61,7 +61,7 @@
 /obj/structure/campfire/fire_act(exposed_temperature, exposed_volume)
 	fire()
 
-/obj/structure/campfire/Crossed(go/AM)
+/obj/structure/campfire/Crossed(atom/movable/AM)
 	if(fired)
 		burn_process()
 
@@ -77,10 +77,6 @@
 		set_light(3)
 	else
 		set_light(1)
-//	var/turf/open/location = get_turf(src)//shity code detected
-//	if(istype(location))
-//		var/datum/gas_mixture/affected = location.air
-//		affected.temperature *= 1.01
 
 /obj/structure/campfire/proc/fire(mob/living/user)
 
@@ -120,15 +116,10 @@
 /obj/structure/campfire/extinguish()
 	name = "burned campfire"
 	desc = "It has burned to ashes..."
-	icon_state = "campfire20"
+	icon_state = "campfire0"
 	fired = 0
 	burned = 1
 	set_light(0)
 	StopAmbient()
 	STOP_PROCESSING(SSobj, src)
 	update_icon()
-
-/obj/structure/campfire/infinity
-	fired = 1
-	icon_state = "campfire21"
-	fuel = 999999999

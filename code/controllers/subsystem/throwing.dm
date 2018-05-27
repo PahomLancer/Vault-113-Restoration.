@@ -28,7 +28,7 @@ var/datum/subsystem/throwing/SSthrowing
 	var/list/currentrun = src.currentrun
 
 	while(length(currentrun))
-		var/go/AM = currentrun[currentrun.len]
+		var/atom/movable/AM = currentrun[currentrun.len]
 		var/datum/thrownthing/TT = currentrun[AM]
 		currentrun.len--
 		if (!AM || !TT)
@@ -45,7 +45,7 @@ var/datum/subsystem/throwing/SSthrowing
 	currentrun = null
 
 /datum/thrownthing
-	var/go/thrownthing
+	var/atom/movable/thrownthing
 	var/atom/target
 	var/turf/target_turf
 	var/init_dir
@@ -64,7 +64,7 @@ var/datum/subsystem/throwing/SSthrowing
 	var/datum/callback/callback
 
 /datum/thrownthing/proc/tick()
-	var/go/AM = thrownthing
+	var/atom/movable/AM = thrownthing
 	if (!isturf(AM.loc) || !AM.throwing)
 		finialize()
 		return
@@ -130,8 +130,8 @@ var/datum/subsystem/throwing/SSthrowing
 
 /datum/thrownthing/proc/hitcheck()
 	for (var/thing in get_turf(thrownthing))
-		var/go/AM = thing
-		if (AM == thrownthing || AM == thrower)
+		var/atom/movable/AM = thing
+		if (AM == thrownthing)
 			continue
 		if (AM.density && !(AM.pass_flags & LETPASSTHROW) && !(AM.flags & ON_BORDER))
 			thrownthing.throwing = 0

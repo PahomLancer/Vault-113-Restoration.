@@ -1,0 +1,20 @@
+"a" = (/turf/open/floor/f13/wood,/area/f13/wasteland)
+"b" = (/obj/landmark/vertibird{name = "Left"},/turf/open/floor/f13/wood,/area/f13/wasteland)
+"c" = (/turf/open/floor/light,/area/f13/wasteland)
+"d" = (/obj/vertibird,/turf/open/floor/f13/wood,/area/f13/wasteland)
+"e" = (/obj/machinery/trading_machine/weapon,/turf/open/floor/light,/area/f13/wasteland)
+"f" = (/obj/effect/landmark/start{name = "Colonel"; text = "Colonel"},/turf/open/floor/light,/area/f13/wasteland)
+"g" = (/obj/landmark/vertibird{name = "Right"},/turf/open/floor/f13/wood,/area/f13/wasteland)
+
+(1,1,1) = {"
+aaaaaaaaaa
+bcccccaaaa
+accccccaaa
+acecfccaaa
+acccccaaaa
+accccccaaa
+caaaaacada
+accaaaacaa
+aaacccccaa
+aaaaaaaaga
+"}

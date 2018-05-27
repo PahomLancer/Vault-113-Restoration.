@@ -84,7 +84,7 @@
 /area/shuttle/escape)
 "q" = (
 /obj/item/stack/sheet/metal,
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/cult,
 /area/shuttle/escape)
 "r" = (
@@ -136,7 +136,7 @@
 /area/shuttle/escape)
 "B" = (
 /obj/effect/rune/convert,
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/gibs/body,
 /obj/effect/decal/cleanable/blood/gibs/core,
 /turf/open/floor/plasteel/cult,
@@ -147,7 +147,7 @@
 /area/shuttle/escape)
 "D" = (
 /obj/effect/rune/convert,
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/cult,
 /area/shuttle/escape)
 "E" = (

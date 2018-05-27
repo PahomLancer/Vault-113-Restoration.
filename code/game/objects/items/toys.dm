@@ -1389,7 +1389,7 @@
 	to_chat(user, "You name the dummy as \"[doll_name]\"")
 	name = "[initial(name)] - [doll_name]"
 
-/obj/item/toy/dummy/talk_into(go/M, message, channel, list/spans)
+/obj/item/toy/dummy/talk_into(atom/movable/M, message, channel, list/spans)
 	log_say("[key_name(M)] : through dummy : [message]")
 	say(message)
 	return NOPASS

@@ -1041,7 +1041,7 @@
 /area/awaymission/snowdin/base)
 "cC" = (
 /obj/effect/decal/cleanable/blood/gibs,
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/carpet{
 	baseturf = /turf/open/floor/plating/asteroid/snow
 	},
@@ -1183,7 +1183,7 @@
 	},
 /area/awaymission/snowdin/post)
 "da" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin)
 "db" = (
@@ -1193,7 +1193,7 @@
 	},
 /area/awaymission/snowdin/igloo)
 "dc" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plating{
 	temperature = 220
 	},
@@ -1511,7 +1511,7 @@
 /area/awaymission/snowdin/post)
 "dS" = (
 /obj/structure/bed,
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/floor/carpet{
 	baseturf = /turf/open/floor/plating/asteroid/snow
@@ -1873,7 +1873,7 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin)
 "eY" = (
-/obj/effect/decal/cleanable/remains/human{
+/obj/effect/decal/remains/human{
 	desc = "They look like human remains. The teeth seem to be oddly sharp."
 	},
 /turf/open/floor/plating/asteroid/snow,
@@ -2669,7 +2669,7 @@
 	},
 /area/awaymission/snowdin/post)
 "hf" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /obj/effect/gibspawner/human,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin)
@@ -2817,7 +2817,7 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/cave)
 "hA" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plating/ice,
 /area/awaymission/snowdin/cave)
 "hB" = (
@@ -2825,7 +2825,7 @@
 /turf/open/floor/plating/ice,
 /area/awaymission/snowdin/cave)
 "hC" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/cave)
 "hD" = (

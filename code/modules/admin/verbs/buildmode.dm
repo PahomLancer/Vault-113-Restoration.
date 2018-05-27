@@ -74,14 +74,14 @@
 	var/client/holder = null
 	var/list/obj/screen/buttons = list()
 	var/build_dir = SOUTH
-	var/go/throw_atom = null
+	var/atom/movable/throw_atom = null
 	var/turf/cornerA = null
 	var/turf/cornerB = null
 	var/generator_path = null
 	var/varholder = "name"
 	var/valueholder = "derp"
 	var/objholder = /obj/structure/closet
-	var/go/stored = null
+	var/atom/movable/stored = null
 
 /datum/buildmode/New(client/c)
 	create_buttons()

@@ -63,12 +63,20 @@
 	//Gun safety.
 	var/safety = 0
 
-    //crc
-	var/condition = 100
+	    //crc
+	var/condition = 300
+	var/jammed = FALSE
+	var/jam_fixing = FALSE
+
     //var/loaded = 0
 
+/mob/living/carbon/human/verb/weaponWield()
+	set name = "Wield"
+	set category = "IC"
 
-
+	var/obj/item/W = get_active_held_item()
+	if(W)
+		W.attempt_wield(src)
 
 /obj/item/weapon/gun/New()
 	..()
@@ -78,6 +86,7 @@
 		verbs += /obj/item/weapon/gun/proc/toggle_gunlight
 		new /datum/action/item_action/toggle_gunlight(src)
 	build_zooming()
+	condition = 100
 
 
 /obj/item/weapon/gun/CheckParts(list/parts_list)
@@ -103,21 +112,7 @@
 	else
 		to_chat(user, "<span class='notice'>The safety is off.</span>")
 
-    //crc
-	if(condition > 75)
-		to_chat(user, "<span class='notice'>The weapon looks almost new</span>")
-
-	if(condition < 75 && condition > 50)
-		to_chat(user, "<span class='notice'>The weapon looks used</span>")
-
-	if(condition < 50 && condition > 25)
-		to_chat(user, "<span class='notice'>The weapon looks worn</span>")
-
-	if(condition < 25)
-		to_chat(user, "<span class='notice'>The weapon in poor condition</span>")
-    //crc
-
-
+	to_chat(user, "<span class='notice'>Weapon condition: [round(condition)]%</span>")
 
 //called after the gun has successfully fired its chambered ammo.
 /obj/item/weapon/gun/proc/process_chamber()
@@ -137,7 +132,7 @@
 
 /obj/item/weapon/gun/proc/shoot_live_shot(mob/living/user as mob|obj, pointblank = 0, mob/pbtarget = null, message = 1)
 	if(recoil)
-		shake_camera(user, recoil + 1, recoil)
+		shake_camera(user, (wielded ? recoil/3 : recoil) + 1, (wielded ? recoil/3 : recoil))
 
 	if(suppressed)
 		playsound(user, fire_sound, 10, 1)
@@ -195,9 +190,11 @@
 				user.drop_item()
 				return
 
+/*
 	if(weapon_weight == WEAPON_HEAVY && !wielded)//user.get_inactive_held_item())
 		to_chat(user, "<span class='userdanger'>You need to wield \the [src] in both hands free to fire!</span>")
 		return
+*/
 
 	//DUAL (or more!) WIELDING
 	var/bonus_spread = 0
@@ -241,6 +238,38 @@
 /obj/item/weapon/gun/proc/process_fire(atom/target as mob|obj|turf, mob/living/user as mob|obj, message = 1, params, zone_override, bonus_spread = 0)
 	add_fingerprint(user)
 
+	if(condition == 0)
+		to_chat(usr, "<span class='info'>With this weapon you can kill only yourself.</span>")
+		return
+
+	if(jammed)
+		if(jam_fixing)
+			return
+
+		usr.visible_message("<span class='warning'>[usr] trying to fix jamming!<span class='warning'>")
+		jam_fixing = TRUE
+		if(do_mob(usr, usr, JAM_FIXTIME))
+			jammed = FALSE
+			to_chat(usr, "<span class='green'>Fixed!</span>")
+		else
+			to_chat(usr, "<span class='warning'>Need to stay still!</span>")
+
+		jam_fixing = FALSE
+		return
+
+	if(condition < 60)
+		if(prob(40 - (condition * 0.67)))
+			jammed = TRUE
+
+	if(WMK_have(/obj/item/kit/damage))
+		chambered.BB.damage *= 1.33
+
+	var/mob/living/carbon/userCarbon = user
+
+	// Location of weapon will be 0, 0, 0 if it in hand
+	if(SSbulletecho.can_fire)
+		SSbulletecho.processing += get_turf(target)
+
 	if(semicd)
 		return
 
@@ -249,6 +278,12 @@
 	if(spread)
 		randomized_gun_spread =	rand(0,spread)
 	var/randomized_bonus_spread = rand(0, bonus_spread)
+
+	var/condition_mul = usr:perks.have(/datum/perk_hidden/condition) ? 0.66 : 1
+
+	condition_mul *= WMK_have(/obj/item/kit/condition) ? 0.66 : 1
+
+	condition = max(0, condition - (0.25 * condition_mul))
 
 	if(burst_size > 1)
 		firing_burst = 1
@@ -263,15 +298,17 @@
 				if(target == user)
 					break
 			if(chambered && chambered.BB)
-			            //crc
-				if(prob(110 - condition))
+			/*
+			        //crc
+				if(prob((110 - condition)/2))
 					condition -= 1
 					if(condition < 10 && prob(40))
 						explosion(src.loc, -1, 0, 1, 3)
 					if(condition < 50)
+						process_chamber()
 						shoot_with_empty_chamber(user)
 						break
-
+			*/
 
 
 				if(randomspread)
@@ -291,17 +328,21 @@
 				break
 			process_chamber()
 			update_icon()
-			sleep(chambered ? chambered.delay : fire_delay)
+
+			sleep(chambered ? chambered.delay : (fire_delay / (userCarbon.special.getPoint("a") * 0.2)))
 		firing_burst = 0
 	else
 		if(chambered)
-			if(prob(110 - condition))
+			/*
+			if(prob((110 - condition)/2))
 				condition -= 1
 				if(condition < 10 && prob(40))
 					explosion(src.loc, -1, 0, 1, 3)
 				if(condition < 50)
+					process_chamber()
 					shoot_with_empty_chamber(user)
-
+					return
+			*/
 			sprd = round((pick(1,-1)) * (randomized_gun_spread + randomized_bonus_spread))
 			if(!chambered.fire_casing(target, user, params, , suppressed, zone_override, sprd))
 				shoot_with_empty_chamber(user)
@@ -317,7 +358,8 @@
 		process_chamber()
 		update_icon()
 		semicd = 1
-		spawn(fire_delay)
+
+		spawn(fire_delay / (userCarbon.special.getPoint("a") * 0.2))
 			semicd = 0
 
 	if(user)
@@ -332,6 +374,15 @@
 		return
 
 /obj/item/weapon/gun/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/crafting/weapon_repair_kit))
+		if(condition < 90)
+			if(do_after(user, 20, target = src))
+				to_chat(user, "<span class='notice'>You repaired your weapon.</span>")
+				condition = min(100, condition + 40)
+				qdel(I)
+		else
+			to_chat(user, "<span class='notice'>No need, weapon in good condition.</span>")
+
 	if(can_flashlight)
 		if(istype(I, /obj/item/device/flashlight/seclite))
 			var/obj/item/device/flashlight/seclite/S = I
@@ -560,16 +611,15 @@
 		user.client.pixel_x = world.icon_size*_x
 		user.client.pixel_y = world.icon_size*_y
 		user.client.view = 12
-  //crc
-		//if(scopetype)
-			//user.overlay_fullscreen("scope", scopetype)
+//		if(scopetype)
+//			user.overlay_fullscreen("scope", scopetype)
 	else
 		user.zoomgun = null
 		user.client.pixel_x = 0
 		user.client.pixel_y = 0
 		user.client.view =  world.view
-		//if(scopetype)
-		//	user.clear_fullscreen("scope", 0)
+//		if(scopetype)
+//			user.clear_fullscreen("scope", 0)
 	user.update_fov_position()
 
 //Proc, so that gun accessories/scopes/etc. can easily add zooming.

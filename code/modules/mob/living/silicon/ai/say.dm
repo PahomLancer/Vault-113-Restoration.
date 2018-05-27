@@ -4,13 +4,13 @@
 		return
 	..(message)
 
-/mob/living/silicon/ai/compose_track_href(go/speaker, namepart)
+/mob/living/silicon/ai/compose_track_href(atom/movable/speaker, namepart)
 	var/mob/M = speaker.GetSource()
 	if(M)
 		return "<a href='?src=\ref[src];track=[html_encode_ru(namepart)]'>"
 	return ""
 
-/mob/living/silicon/ai/compose_job(go/speaker, message_langs, raw_message, radio_freq)
+/mob/living/silicon/ai/compose_job(atom/movable/speaker, message_langs, raw_message, radio_freq)
 	//Also includes the </a> for AI hrefs, for convenience.
 	return "[radio_freq ? " (" + speaker.GetJob() + ")" : ""]" + "[speaker.GetSource() ? "</a>" : ""]"
 

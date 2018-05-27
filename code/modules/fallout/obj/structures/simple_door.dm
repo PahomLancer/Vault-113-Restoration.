@@ -188,6 +188,7 @@
 		else
 			if(!istype(src, /obj/structure/simple_door/metal))
 				playsound(src.loc, pick('sound/f13items/door_knock1.wav', 'sound/f13items/door_knock2.wav', 'sound/f13items/door_knock3.wav', 'sound/f13items/door_knock4.wav'), 80, 0, 0)
+		user.changeNext_move(CLICK_CD_MELEE)
 		return
 	if(TryToSwitchState(user, 1) && !density)
 		manual_opened = 1
@@ -208,12 +209,12 @@
 	user.changeNext_move(CLICK_CD_MELEE)
 	..()
 
-/obj/structure/simple_door/CanPass(go/mover, turf/target, height=0)
+/obj/structure/simple_door/CanPass(atom/movable/mover, turf/target, height=0)
 	if(mover.loc == loc)
 		return 1
 	return !density
 
-/obj/structure/simple_door/CheckExit(go/O as mob|obj, target)
+/obj/structure/simple_door/CheckExit(atom/movable/O as mob|obj, target)
 	if(!density && !manual_opened && ishuman(O))
 		var/mob/living/carbon/human/H = O
 		if(H.client && H.stat != 2)

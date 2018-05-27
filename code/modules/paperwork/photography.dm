@@ -233,7 +233,7 @@
 	var/atoms[] = list()
 	for(var/turf/T in turfs)
 		atoms.Add(T)
-		for(var/go/A in T)
+		for(var/atom/movable/A in T)
 			if(A.invisibility)
 				if(see_ghosts && isobserver(A))
 					var/mob/dead/observer/O = A
@@ -264,7 +264,7 @@
 
 		var/offX = 32 * (A.x - center.x) + A.pixel_x + (((picture_size - 1) * 32) + 1)
 		var/offY = 32 * (A.y - center.y) + A.pixel_y + (((picture_size - 1) * 32) + 1)
-		if(istype(A, /go))
+		if(istype(A, /atom/movable))
 			offX += A:step_x
 			offY += A:step_y
 

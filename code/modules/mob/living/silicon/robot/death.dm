@@ -8,7 +8,7 @@
 	..()
 
 /mob/living/silicon/robot/spawn_dust()
-	new /obj/effect/decal/cleanable/remains/robot(loc)
+	new /obj/effect/decal/remains/robot(loc)
 
 /mob/living/silicon/robot/dust_animation()
 	PoolOrNew(/obj/effect/overlay/temp/dust_animation, list(loc, "dust-r"))

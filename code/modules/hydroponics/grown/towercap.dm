@@ -161,7 +161,7 @@
 /obj/structure/bonfire/fire_act(exposed_temperature, exposed_volume)
 	StartBurning()
 
-/obj/structure/bonfire/Crossed(go/AM)
+/obj/structure/bonfire/Crossed(atom/movable/AM)
 	if(burning)
 		Burn()
 

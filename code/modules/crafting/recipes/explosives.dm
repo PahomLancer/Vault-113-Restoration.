@@ -14,3 +14,4 @@
 	time = 200
 	category = CAT_EXPLOSIVES
 	default = 1
+	XP = 100

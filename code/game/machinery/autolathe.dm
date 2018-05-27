@@ -55,6 +55,8 @@
 	files = new /datum/research/autolathe(src)
 	matching_designs = list()
 
+	adjust_hacked(TRUE)
+
 /obj/item/weapon/circuitboard/machine/autolathe
 	name = "Autolathe (Machine Board)"
 	build_path = /obj/machinery/autolathe

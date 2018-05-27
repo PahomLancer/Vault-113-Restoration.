@@ -345,7 +345,7 @@
 		return
 	return ..()
 
-/mob/living/simple_animal/hostile/clockwork/marauder/hitby(go/AM, skipcatch, hitpush, blocked)
+/mob/living/simple_animal/hostile/clockwork/marauder/hitby(atom/movable/AM, skipcatch, hitpush, blocked)
 	if(blockOrCounter(null, AM))
 		return
 	return ..()
@@ -405,7 +405,7 @@
 
 //COMMUNICATION and EMERGENCE
 
-/mob/living/simple_animal/hostile/clockwork/marauder/Hear(message, go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/mob/living/simple_animal/hostile/clockwork/marauder/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	..()
 	if(findtext(message, true_name) && is_in_host()) //Called or revealed by hearing their true name
 		if(speaker == host)

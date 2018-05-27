@@ -206,7 +206,7 @@
 
 	if(air.temperature > FIRE_MINIMUM_TEMPERATURE_TO_EXIST)
 		hotspot_expose(air.temperature, CELL_VOLUME)
-		for(var/go/item in src)
+		for(var/atom/movable/item in src)
 			item.temperature_expose(air, air.temperature, CELL_VOLUME)
 		temperature_expose(air, air.temperature, CELL_VOLUME)
 
@@ -247,13 +247,13 @@
 		atmos_cooldown = 0
 
 /turf/open/proc/high_pressure_movements()
-	for(var/go/M in src)
+	for(var/atom/movable/M in src)
 		M.experience_pressure_difference(pressure_difference, pressure_direction)
 
-/go/var/pressure_resistance = 10
-/go/var/last_high_pressure_movement_air_cycle = 0
+/atom/movable/var/pressure_resistance = 10
+/atom/movable/var/last_high_pressure_movement_air_cycle = 0
 
-/go/proc/experience_pressure_difference(pressure_difference, direction, pressure_resistance_prob_delta = 0)
+/atom/movable/proc/experience_pressure_difference(pressure_difference, direction, pressure_resistance_prob_delta = 0)
 	var/const/PROBABILITY_OFFSET = 25
 	var/const/PROBABILITY_BASE_PRECENT = 75
 	set waitfor = 0

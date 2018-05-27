@@ -115,7 +115,7 @@
 		brute = max(0, brute - 5)
 		burn = max(0, burn - 4)
 
-	var/can_inflict = max_damage - (brute_dam + burn_dam)
+	var/can_inflict = 1000 - (brute_dam + burn_dam)
 	if(!can_inflict)
 		return 0
 

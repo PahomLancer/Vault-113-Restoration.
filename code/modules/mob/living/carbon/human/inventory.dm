@@ -206,13 +206,6 @@
 		s_store = null
 		update_inv_s_store()
 
-/mob/living/carbon/human/canUnEquip(obj/item/I, force)
-	if(!..())
-		return FALSE
-	if(I == w_uniform && wear_suit != null)
-		return FALSE
-	return TRUE
-
 /mob/living/carbon/human/wear_mask_update(obj/item/clothing/C, toggle_off = 1)
 	if((C.flags_inv & (HIDEHAIR|HIDEFACIALHAIR)) || (initial(C.flags_inv) & (HIDEHAIR|HIDEFACIALHAIR)))
 		update_hair()

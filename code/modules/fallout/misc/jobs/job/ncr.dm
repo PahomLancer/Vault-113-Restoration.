@@ -12,18 +12,18 @@
 	spawn_positions = 1
 	supervisors = "the NCR Command HQ"
 	selection_color = "#9d9fec"
-	minimal_player_age = 7
+	minimal_player_age = 36
 	whitelist_on = 1
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
 	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/kitchen/knife/combat,
 	/obj/item/device/radio,
 	/obj/item/weapon/lighter/gold,
-	/obj/item/weapon/reagent_containers/pill/patch/stimpak,
-	/obj/item/weapon/reagent_containers/pill/patch/supstimpak
+	/obj/item/weapon/reagent_containers/f13stimpack,
+	/obj/item/weapon/reagent_containers/f13stimpack/super
 	)
 
 	denied_items = list(
@@ -57,11 +57,18 @@
 	suit = null
 	head = /obj/item/clothing/head/f13/sergeant
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
+	belt = /obj/item/weapon/storage/belt/military/army
+	belt_contents = list(/obj/item/ammo_box/magazine/F13/m556 = 1, \
+		/obj/item/ammo_box/magazine/F13/m556/armourpiercing = 1, \
+		/obj/item/weapon/reagent_containers/f13stimpack = 1, \
+		/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 1, \
+		/obj/item/device/radio = 1, \
+		/obj/item/device/flashlight/torch/flare/blue = 1)
 
 //NCR Sergeant
 
 /datum/job/ncr_sergeant
-	title = "Sergeant"
+	title = "Sergeant NCR"
 	desc = "You have to remind Troopers to speak only when spoken to, and that the first and last words out of their filthy sewers will be \"Sir\"."
 	flag = NCR_SERGEANT
 	department_head = list("general")
@@ -72,9 +79,9 @@
 	spawn_positions = 2
 	supervisors = "the General"
 	selection_color = "#9d9fec"
-	minimal_player_age = 7
+	minimal_player_age = 31
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten", "trooper_armor", "heavy_trooper")
 
 	required_items = list(
 	/obj/item/clothing/head/f13/ncr_officer,
@@ -107,7 +114,7 @@
 	minimal_access = list()
 
 /datum/outfit/job/ncr_sergeant
-	name = "Sergeant"
+	name = "Sergeant NCR"
 	id = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/ncr_officer
@@ -116,8 +123,9 @@
 	head = /obj/item/clothing/head/f13/sergeant
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
-	belt_contents = list(/obj/item/ammo_box/magazine/m556 = 3, \
-		/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
+	belt_contents = list(/obj/item/ammo_box/magazine/F13/m556 = 1, \
+		/obj/item/ammo_box/magazine/F13/m556/armourpiercing = 1, \
+		/obj/item/weapon/reagent_containers/f13stimpack = 1, \
 		/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 1, \
 		/obj/item/device/radio = 1, \
 		/obj/item/device/flashlight/torch/flare/blue = 1)
@@ -130,15 +138,15 @@
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "vranger"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the NCR Command HQ"
 	selection_color = "#9d9fec"
-	minimal_player_age = 7
+	minimal_player_age = 25
 
 	outfit = /datum/outfit/job/vranger
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
 	/obj/item/clothing/glasses/sunglasses,
@@ -175,9 +183,9 @@
 	head = /obj/item/clothing/head/helmet/f13/ranger
 	belt = /obj/item/weapon/storage/belt/military/assault
 	weapon = /obj/item/weapon/gun/ballistic/revolver/magnum
-	belt_contents = list(/obj/item/weapon/restraints/handcuffs = 1, \
-		/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-		/obj/item/ammo_box/m44 = 3, \
+	belt_contents = list(/obj/item/weapon/restraints/handcuffs = 1,
+		/obj/item/weapon/reagent_containers/f13stimpack = 1,
+		/obj/item/ammo_box/F13/m44/heap = 1,
 		/obj/item/device/radio = 1)
 
 
@@ -189,13 +197,13 @@
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "trooper"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "the General"
 	selection_color = "#9d9fec"
-	minimal_player_age = 7
+	minimal_player_age = 16
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten", "trooper_armor", "heavy_trooper")
 
 	required_items = list(
 	/obj/item/clothing/suit/armor/f13/ncr/facewrap,
@@ -233,6 +241,11 @@
 	head = /obj/item/clothing/head/helmet/f13/trooper
 	glasses = /obj/item/clothing/glasses/f13/biker
 	belt = /obj/item/weapon/storage/belt/military/army
-	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
-	/obj/item/device/radio = 1, /obj/item/ammo_box/magazine/m556 = 3)
+	weapon = /obj/item/weapon/gun/ballistic/automatic/garand
+	belt_contents = list(/obj/item/weapon/reagent_containers/f13stimpack = 2, \
+	/obj/item/device/radio = 1, /obj/item/ammo_box/magazine/F13/g308 = 3)
+
+	//weapon = /obj/item/weapon/gun/ballistic/automatic/pistol
+	//belt_contents = list(/obj/item/weapon/reagent_containers/f13stimpack = 2, \
+	//obj/item/device/radio = 1, /obj/item/ammo_box/magazine/F13/m9 = 3)
+

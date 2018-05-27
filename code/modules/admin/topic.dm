@@ -427,6 +427,12 @@
 				M.change_mob_type( /mob/living/simple_animal/parrot , null, null, delmob )
 			if("polyparrot")
 				M.change_mob_type( /mob/living/simple_animal/parrot/Poly , null, null, delmob )
+			if("constructarmored")
+				M.change_mob_type( /mob/living/simple_animal/hostile/construct/armored , null, null, delmob )
+			if("constructbuilder")
+				M.change_mob_type( /mob/living/simple_animal/hostile/construct/builder , null, null, delmob )
+			if("constructwraith")
+				M.change_mob_type( /mob/living/simple_animal/hostile/construct/wraith , null, null, delmob )
 			if("shade")
 				M.change_mob_type( /mob/living/simple_animal/shade , null, null, delmob )
 
@@ -549,6 +555,60 @@
 			if("No")
 				return
 
+	else if(href_list["labor"])
+		if(!check_rights(R_BAN))
+			return
+		var/mob/M = locate(href_list["labor"])
+		if(!ismob(M))
+			to_chat(usr, "This can only be used on instances of type /mob")
+			return
+		if(!M.ckey)	//sanity
+			to_chat(usr, "This mob has no ckey")
+			return
+
+
+		if(jobban_isbanned(M, "labor"))
+			switch(alert("Remove labor ban?","Please Confirm","Yes","No"))
+				if("Yes")
+					ban_unban_log_save("[key_name(usr)] removed [key_name(M)]'s labor ban.")
+					log_admin("[key_name(usr)] removed [key_name(M)]'s labor ban.")
+					feedback_inc("ban_labor_unban", 1)
+					DB_ban_unban(M.ckey, BANTYPE_ANY_JOB, "labor")
+					if(M.client)
+						jobban_buildcache(M.client)
+					message_admins("<span class='adminnotice'>[key_name_admin(usr)] removed [key_name_admin(M)]'s labor ban.</span>")
+					to_chat(M, "<span class='boldannounce'><BIG>[usr.client.ckey] has removed your labor ban.</BIG></span>")
+
+		else switch(alert("Labor ban [M.ckey]?",,"Yes","No", "Cancel"))
+			if("Yes")
+				var/days = input(usr,"How long (in days)?","Ban time",1) as num|null
+				if(!days)
+					return
+				if(!DB_ban_record(BANTYPE_JOB_TEMP, M, days * 1440, "", "labor"))
+					to_chat(usr, "<span class='danger'>Failed to apply ban.</span>")
+					return
+				if(M.client)
+					jobban_buildcache(M.client)
+
+				if(istype(M, /mob/living/carbon/human))
+					var/mob/living/carbon/human/H = M
+					H.adjustBruteLoss(300)
+
+				ban_unban_log_save("[key_name(usr)] labor banned [key_name(M)]. time: [days]days")
+				log_admin("[key_name(usr)] labor banned [key_name(M)]. \nTime: [days]days")
+				feedback_inc("ban_labor",1)
+				add_note(M.ckey, "Labor banned for [days]", null, usr.ckey, 0, null, 0)
+				message_admins("<span class='adminnotice'>[key_name_admin(usr)] labor banned [key_name_admin(M)].</span>")
+				to_chat(M, "<span class='boldannounce'><BIG>You have been labor banned by [usr.client.ckey].</BIG></span>")
+				to_chat(M, "<span class='boldannounce'>Banned for [days]days</span>")
+				to_chat(M, "<span class='danger'>Labor ban can be lifted only upon request.</span>")
+				if(config.banappeals)
+					to_chat(M, "<span class='danger'>To try to resolve this matter head to [config.banappeals]</span>")
+				else
+					to_chat(M, "<span class='danger'>No ban appeals URL has been set.</span>")
+			if("No")
+				return
+
 	else if(href_list["jobban2"])
 		var/mob/M = locate(href_list["jobban2"])
 		if(!ismob(M))
@@ -570,8 +630,8 @@
 //Regular jobs
 	//Command (Blue)
 		dat += "<table cellpadding='1' cellspacing='0' width='100%'>"
-		dat += "<tr align='center' bgcolor='ccccff'><th colspan='[length(command_positions)]'><a href='?src=\ref[src];jobban3=commanddept;jobban4=\ref[M]'>Command Positions</a></th></tr><tr align='center'>"
-		for(var/jobPos in command_positions)
+		dat += "<tr align='center' bgcolor='ccccff'><th colspan='[length(fallout_head_positions)]'><a href='?src=\ref[src];jobban3=commanddept;jobban4=\ref[M]'>Command Positions</a></th></tr><tr align='center'>"
+		for(var/jobPos in fallout_head_positions)
 			if(!jobPos)
 				continue
 			if(jobban_isbanned(M, jobPos))
@@ -585,7 +645,8 @@
 				dat += "</tr><tr>"
 				counter = 0
 		dat += "</tr></table>"
-
+//To fill with fallout jobs later
+/*
 	//Security (Red)
 		counter = 0
 		dat += "<table cellpadding='1' cellspacing='0' width='100%'>"
@@ -835,7 +896,7 @@
 		dat += "</tr></table>"
 		usr << browse(dat, "window=jobban2;size=800x450")
 		return
-
+*/
 	//JOBBAN'S INNARDS
 	else if(href_list["jobban3"])
 		if(!check_rights(R_BAN))
@@ -851,10 +912,11 @@
 		var/list/joblist = list()
 		switch(href_list["jobban3"])
 			if("commanddept")
-				for(var/jobPos in command_positions)
+				for(var/jobPos in fallout_head_positions)
 					if(!jobPos)
 						continue
 					joblist += jobPos
+/*
 			if("securitydept")
 				for(var/jobPos in security_positions)
 					if(!jobPos)
@@ -893,6 +955,7 @@
 			if("ghostroles")
 				joblist += list("pAI", "posibrain", "drone", "deathsquad", "lavaland")
 			else
+*/
 				joblist += href_list["jobban3"]
 
 		//Create a list of unbanned jobs within joblist
@@ -1546,7 +1609,7 @@
 		if(!isobserver(usr) && !check_rights(R_ADMIN))
 			return
 
-		var/go/AM = locate(href_list["adminplayerobservefollow"])
+		var/atom/movable/AM = locate(href_list["adminplayerobservefollow"])
 
 		var/client/C = usr.client
 		if(!isobserver(usr))

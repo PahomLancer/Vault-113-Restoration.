@@ -324,6 +324,9 @@ RCD
 
 
 /obj/item/weapon/rcd/afterattack(atom/A, mob/user, proximity)
+	to_chat(user, "I don't know how to use it")
+	return 0
+
 	if(!proximity) return 0
 	if(istype(A,/turf/open/space/transit))
 		return 0

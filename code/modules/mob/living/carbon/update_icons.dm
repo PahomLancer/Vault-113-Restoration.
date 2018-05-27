@@ -158,6 +158,12 @@
 		var/image/standing = back.build_worn_icon(state = back.icon_state, default_layer = BACK_LAYER, default_icon_file = 'icons/mob/back.dmi')
 		overlays_standing[BACK_LAYER] = standing
 		update_hud_back(back)
+
+	if(istype(src, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = src
+		if(H.wear_suit && (H.wear_suit.flags_inv & HIDEBACKPACK))
+			return
+
 	apply_overlay(BACK_LAYER)
 
 /mob/living/carbon/update_inv_head()

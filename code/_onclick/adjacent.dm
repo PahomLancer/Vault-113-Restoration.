@@ -63,7 +63,7 @@
 	Adjacency (to anything else):
 	* Must be on a turf
 */
-/go/Adjacent(var/atom/neighbor)
+/atom/movable/Adjacent(var/atom/neighbor)
 	if(neighbor == loc) return 1
 	if(!isturf(loc)) return 0
 	if(loc.Adjacent(neighbor,src)) return 1

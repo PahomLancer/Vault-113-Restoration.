@@ -25,11 +25,9 @@
 	mouse_opacity = 0
 	var/duration = 10 //in deciseconds
 	var/randomdir = TRUE
-	var/timerid
 
 /obj/effect/overlay/temp/Destroy()
 	..()
-	deltimer(timerid)
 	return QDEL_HINT_PUTINPOOL
 
 /obj/effect/overlay/temp/New()
@@ -38,7 +36,8 @@
 		setDir(pick(cardinal))
 	flick("[icon_state]", src) //Because we might be pulling it from a pool, flick whatever icon it uses so it starts at the start of the icon's animation.
 
-	timerid = QDEL_IN(src, duration)
+	spawn(duration)
+		qdel(src)
 
 /obj/effect/overlay/temp/ex_act()
 	return
@@ -493,6 +492,17 @@
 	pixel_x = -32
 	pixel_y = -32
 	duration = 8
+
+/obj/effect/overlay/temp/thunder
+	name = "thunder"
+	icon = 'icons/effects/224x224.dmi'
+	icon_state = "lightning1"
+	pixel_x = -112
+	pixel_y = -32
+	duration = 10
+	light_range = 10
+	light_power = 1
+	light_color = "#FFFFFF"
 
 /obj/effect/overlay/temp/explosion/fast
 	icon_state = "explosionfast"

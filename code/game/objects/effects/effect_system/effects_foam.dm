@@ -92,12 +92,12 @@
 	lifetime--
 	return 1
 
-/obj/effect/particle_effect/foam/Crossed(go/AM)
+/obj/effect/particle_effect/foam/Crossed(atom/movable/AM)
 	if(istype(AM, /mob/living/carbon))
 		var/mob/living/carbon/M = AM
 		M.slip(5, 2, src)
 
-/obj/effect/particle_effect/foam/metal/Crossed(go/AM)
+/obj/effect/particle_effect/foam/metal/Crossed(atom/movable/AM)
 	return
 
 
@@ -223,7 +223,7 @@
 	to_chat(user, "<span class='warning'>You hit the metal foam but bounce off it!</span>")
 	playsound(src.loc, 'sound/weapons/tap.ogg', 100, 1)
 
-/obj/structure/foamedmetal/CanPass(go/mover, turf/target, height=1.5)
+/obj/structure/foamedmetal/CanPass(atom/movable/mover, turf/target, height=1.5)
 	return !density
 
 /obj/structure/foamedmetal/iron

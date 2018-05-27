@@ -18,6 +18,18 @@
 	if(can_see_cult && cooldowntime > world.time)
 		to_chat(user, "<span class='cultitalic'>The magic in [src] is too weak, [t_It] will be ready to use again in [getETA()].</span>")
 
+/obj/structure/destructible/cult/attack_animal(mob/living/simple_animal/M)
+	if(istype(M, /mob/living/simple_animal/hostile/construct/builder))
+		if(obj_integrity < max_integrity)
+			obj_integrity = min(max_integrity, obj_integrity + 5)
+			Beam(M, icon_state="sendbeam", time=4)
+			M.visible_message("<span class='danger'>[M] repairs \the <b>[src]</b>.</span>", \
+				"<span class='cult'>You repair <b>[src]</b>, leaving [p_they()] at <b>[round(obj_integrity * 100 / max_integrity)]%</b> stability.</span>")
+		else
+			to_chat(M, "<span class='cult'>You cannot repair [src], as [p_they()] [p_are()] undamaged!</span>")
+	else
+		..()
+
 /obj/structure/destructible/cult/attackby(obj/I, mob/user, params)
 	if(istype(I, /obj/item/weapon/tome) && iscultist(user))
 		anchored = !anchored
@@ -140,14 +152,14 @@ var/list/blacklisted_pylon_turfs = typecacheof(list(
 	if(last_heal <= world.time)
 		last_heal = world.time + heal_delay
 		for(var/mob/living/L in range(5, src))
-			if(iscultist(L) || isshade(L))
+			if(iscultist(L) || isshade(L) || isconstruct(L))
 				if(L.health != L.maxHealth)
 					PoolOrNew(/obj/effect/overlay/temp/heal, list(get_turf(src), "#960000"))
 					if(ishuman(L))
 						L.adjustBruteLoss(-1, 0)
 						L.adjustFireLoss(-1, 0)
 						L.updatehealth()
-					if(isshade(L))
+					if(isshade(L) || isconstruct(L))
 						var/mob/living/simple_animal/M = L
 						if(M.health < M.maxHealth)
 							M.adjustHealth(-1)

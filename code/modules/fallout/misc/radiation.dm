@@ -7,4 +7,5 @@
 		rad_severity = 10
 
 /atom/proc/RadiateRefresh()
-	radiation_pulse(get_turf(src), rad_heavy_range, rad_light_range, rad_severity)
+//	radiation_pulse(get_turf(src), rad_heavy_range, rad_light_range, rad_severity)
+	radiation_pulse_new(get_turf(src), rad_heavy_range, rad_light_range, rad_severity)

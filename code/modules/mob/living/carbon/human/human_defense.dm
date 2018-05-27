@@ -59,6 +59,12 @@
 	if(spec_return)
 		return spec_return
 
+	if(istype(P, /obj/item/ammo_casing/energy/laser))
+		if(P.firer)
+			var/mob/living/carbon/firerMob = P.firer
+			if(firerMob.perks.have(/datum/perk/lasercommander))
+				P.damage *= 1.15
+
 	if(martial_art && martial_art.deflection_chance) //Some martial arts users can deflect projectiles!
 		if(prob(martial_art.deflection_chance))
 			if(!lying && dna && !dna.check_mutation(HULK)) //But only if they're not lying down, and hulks can't do it
@@ -103,7 +109,7 @@
 			return 1
 	return 0
 
-/mob/living/carbon/human/proc/check_shields(damage = 0, attack_text = "the attack", go/AM, attack_type = MELEE_ATTACK, armour_penetration = 0)
+/mob/living/carbon/human/proc/check_shields(damage = 0, attack_text = "the attack", atom/movable/AM, attack_type = MELEE_ATTACK, armour_penetration = 0)
 	var/block_chance_modifier = round(damage / -3)
 
 	for(var/obj/item/I in held_items)
@@ -128,7 +134,7 @@
 		return TRUE
 	return FALSE
 
-/mob/living/carbon/human/hitby(go/AM, skipcatch = 0, hitpush = 1, blocked = 0)
+/mob/living/carbon/human/hitby(atom/movable/AM, skipcatch = 0, hitpush = 1, blocked = 0)
 	var/spec_return = dna.species.spec_hitby(AM, src)
 	if(spec_return)
 		return spec_return

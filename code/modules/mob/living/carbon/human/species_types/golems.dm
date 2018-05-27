@@ -313,7 +313,7 @@
 	do_teleport(H, get_turf(H), 6, asoundin = 'sound/weapons/emitter2.ogg')
 	last_teleport = world.time
 
-/datum/species/golem/bluespace/spec_hitby(go/AM, mob/living/carbon/human/H)
+/datum/species/golem/bluespace/spec_hitby(atom/movable/AM, mob/living/carbon/human/H)
 	..()
 	var/obj/item/I
 	if(istype(AM, /obj/item))
@@ -419,7 +419,7 @@
 		new/obj/item/weapon/grown/bananapeel/specialpeel(get_turf(H))
 		last_banana = world.time
 
-/datum/species/golem/bananium/spec_hitby(go/AM, mob/living/carbon/human/H)
+/datum/species/golem/bananium/spec_hitby(atom/movable/AM, mob/living/carbon/human/H)
 	..()
 	var/obj/item/I
 	if(istype(AM, /obj/item))

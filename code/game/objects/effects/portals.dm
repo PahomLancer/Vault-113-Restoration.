@@ -50,7 +50,7 @@
 	creator = null
 	return ..()
 
-/obj/effect/portal/proc/teleport(go/M as mob|obj)
+/obj/effect/portal/proc/teleport(atom/movable/M as mob|obj)
 	if(istype(M, /obj/effect)) //sparks don't teleport
 		return
 	if(M.anchored)
@@ -59,7 +59,7 @@
 	if (!( target ))
 		qdel(src)
 		return
-	if (istype(M, /go))
+	if (istype(M, /atom/movable))
 		if(ismegafauna(M))
 			message_admins("[M] (<A HREF='?_src_=holder;adminplayerobservefollow=\ref[M]'>FLW</A>) has teleported through [src].")
 		do_teleport(M, target, precision) ///You will appear adjacent to the beacon

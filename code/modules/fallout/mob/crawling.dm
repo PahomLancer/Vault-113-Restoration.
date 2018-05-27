@@ -11,7 +11,7 @@ proc/get_crawled_object(var/turf/T)
 		if(S.can_crawled)
 			return S
 
-/turf/open/Entered(go/Obj,atom/OldLoc)
+/turf/open/Entered(atom/movable/Obj,atom/OldLoc)
 	. = ..()
 	if(iscarbon(Obj) && Obj.pass_flags & PASSCRAWL && isturf(OldLoc))
 		var/mob/living/carbon/C = Obj
@@ -26,7 +26,7 @@ proc/get_crawled_object(var/turf/T)
 		if(!get_crawled_object(OldLoc))
 			C.under_object = crawled_obj
 			C.update_canmove()
-/turf/open/Exited(go/Obj, atom/newloc)
+/turf/open/Exited(atom/movable/Obj, atom/newloc)
 	. = ..()
 	if(iscarbon(Obj) && isturf(newloc))
 		var/mob/living/carbon/C = Obj

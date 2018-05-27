@@ -25,7 +25,7 @@ var/datum/subsystem/parallax/SSparallax
 			if (MC_TICK_CHECK)
 				return
 			continue
-		var/go/A = C.eye
+		var/atom/movable/A = C.eye
 		if(!A)
 			return
 		for (A; isloc(A.loc) && !isturf(A.loc); A = A.loc);

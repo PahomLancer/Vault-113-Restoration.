@@ -137,7 +137,7 @@
 	},
 /area/ruin/unpowered)
 "av" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/airless,
 /area/ruin/unpowered)
 "aw" = (
@@ -373,7 +373,7 @@
 /area/ruin/unpowered)
 "bj" = (
 /obj/item/trash/plate,
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/airless/cafeteria,
 /area/ruin/unpowered)
 "bk" = (

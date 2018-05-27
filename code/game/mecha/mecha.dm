@@ -378,7 +378,7 @@
 /obj/mecha/proc/drop_item()//Derpfix, but may be useful in future for engineering exosuits.
 	return
 
-/obj/mecha/Hear(message, go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/obj/mecha/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	if(speaker == occupant)
 		if(radio.broadcasting)
 			radio.talk_into(speaker, text, , spans)
@@ -457,7 +457,7 @@
 	if(thrusters_active && movement_dir && use_power(step_energy_drain))
 		return 1
 
-	var/go/backup = get_spacemove_backup()
+	var/atom/movable/backup = get_spacemove_backup()
 	if(backup)
 		if(istype(backup) && movement_dir && !backup.anchored)
 			if(backup.newtonian_move(turn(movement_dir, 180)))
@@ -899,14 +899,14 @@
 	go_out()
 
 
-/obj/mecha/Exited(go/M, atom/newloc)
+/obj/mecha/Exited(atom/movable/M, atom/newloc)
 	if(occupant && occupant == M) // The occupant exited the mech without calling go_out()
 		go_out(1, newloc)
 
 /obj/mecha/proc/go_out(var/forced, var/atom/newloc = loc)
 	if(!occupant)
 		return
-	var/go/mob_container
+	var/atom/movable/mob_container
 	occupant.clear_alert("charge")
 	occupant.clear_alert("mech damage")
 	if(ishuman(occupant))

@@ -33,7 +33,7 @@
 	butcher_results = list(/obj/item/weapon/reagent_containers/food/snacks/meat/slab = 2)
 
 	var/morphed = 0
-	var/go/form = null
+	var/atom/movable/form = null
 	var/morph_time = 0
 
 	var/playstyle_string = "<b><font size=3 color='red'>You are a morph,</font> an abomination of science created primarily with changeling cells. \
@@ -66,7 +66,7 @@
 		return //we hide medical hud while morphed
 	..()
 
-/mob/living/simple_animal/hostile/morph/proc/allowed(go/A) // make it into property/proc ? not sure if worth it
+/mob/living/simple_animal/hostile/morph/proc/allowed(atom/movable/A) // make it into property/proc ? not sure if worth it
 	if(istype(A,/obj/screen))
 		return 0
 	if(istype(A,/obj/singularity))
@@ -75,14 +75,14 @@
 		return 0
 	return 1
 
-/mob/living/simple_animal/hostile/morph/proc/eat(go/A)
+/mob/living/simple_animal/hostile/morph/proc/eat(atom/movable/A)
 	if(A && A.loc != src)
 		visible_message("<span class='warning'>[src] swallows [A] whole!</span>")
 		A.forceMove(src)
 		return 1
 	return 0
 
-/mob/living/simple_animal/hostile/morph/ShiftClickOn(go/A)
+/mob/living/simple_animal/hostile/morph/ShiftClickOn(atom/movable/A)
 	if(morph_time <= world.time && !stat)
 		if(A == src)
 			restore()
@@ -93,7 +93,7 @@
 		to_chat(src, "<span class='warning'>Your chameleon skin is still repairing itself!</span>")
 		..()
 
-/mob/living/simple_animal/hostile/morph/proc/assume(go/target)
+/mob/living/simple_animal/hostile/morph/proc/assume(atom/movable/target)
 	morphed = 1
 	form = target
 
@@ -148,7 +148,7 @@
 	..()
 
 /mob/living/simple_animal/hostile/morph/proc/barf_contents()
-	for(var/go/AM in src)
+	for(var/atom/movable/AM in src)
 		AM.forceMove(loc)
 		if(prob(90))
 			step(AM, pick(alldirs))
@@ -168,10 +168,10 @@
 	. = ..()
 	if(.)
 		var/list/things = list()
-		for(var/go/A in view(src))
+		for(var/atom/movable/A in view(src))
 			if(allowed(A))
 				things += A
-		var/go/T = pick(things)
+		var/atom/movable/T = pick(things)
 		assume(T)
 
 /mob/living/simple_animal/hostile/morph/can_track(mob/living/user)

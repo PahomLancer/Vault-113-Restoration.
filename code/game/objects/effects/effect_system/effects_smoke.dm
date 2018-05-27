@@ -131,7 +131,7 @@
 		M.emote("cough")
 		return 1
 
-/obj/effect/particle_effect/smoke/bad/CanPass(go/mover, turf/target, height=0)
+/obj/effect/particle_effect/smoke/bad/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height==0) return 1
 	if(istype(mover, /obj/item/projectile/beam))
 		var/obj/item/projectile/beam/B = mover
@@ -224,7 +224,7 @@
 	if(..())
 		var/turf/T = get_turf(src)
 		var/fraction = 1/initial(lifetime)
-		for(var/go/AM in T)
+		for(var/atom/movable/AM in T)
 			if(AM.type == src.type)
 				continue
 			if(T.intact && AM.level == 1) //hidden under the floor

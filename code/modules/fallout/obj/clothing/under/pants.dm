@@ -9,13 +9,11 @@
 	desc = "A pair of ripped pants that were not washed for over a hundred years.<br>Thanks to these you don't get to see ghouls genitals too often.<br><i>You can also wear these, to pretend you are a feral ghoul, just saying...</i>"
 	icon_state = "ghoul"
 	item_color = "ghoul"
-	cloth_count = 2
 
 /obj/item/clothing/under/pants/f13/cloth
 	name = "cloth pants"
 	desc = "A pair of worn dusty cloth pants made of various textile pieces.<br>Commonly found all over the wasteland."
 	icon_state = "cloth"
-	cloth_count = 2
 	item_color = "cloth"
 
 /obj/item/clothing/under/pants/f13/caravan //Caravanner - someone who travels with caravan. Caravaneer - caravan leader.
@@ -23,7 +21,6 @@
 	desc = "A pair of wide dusty cargo pants.<br>Commonly worn by caravanners or caravan robbers."
 	icon_state = "caravan"
 	item_color = "caravan"
-	cloth_count = 2
 
 /obj/item/clothing/under/pants/f13/khan
 	name = "Great Khan pants"

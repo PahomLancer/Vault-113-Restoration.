@@ -76,19 +76,23 @@
 // Can't think of a good name, this proc will recalculate the has_opaque_atom variable.
 /turf/proc/recalc_atom_opacity()
 	has_opaque_atom = FALSE
+	if(istype(src,/turf/closed))
+		has_opaque_atom = TRUE
+		return
 	for (var/atom/A in src.contents + src) // Loop through every movable atom on our tile PLUS ourselves (we matter too...)
 		if (A.opacity)
 			has_opaque_atom = TRUE
+			return
 
 // If an opaque movable atom moves around we need to potentially update visibility.
-/turf/Entered(var/go/Obj, var/atom/OldLoc)
+/turf/Entered(var/atom/movable/Obj, var/atom/OldLoc)
 	. = ..()
 
 	if (Obj && Obj.opacity)
 		has_opaque_atom = TRUE // Make sure to do this before reconsider_lights(), incase we're on instant updates. Guaranteed to be on in this case.
 		reconsider_lights()
 
-/turf/Exited(var/go/Obj, var/atom/newloc)
+/turf/Exited(var/atom/movable/Obj, var/atom/newloc)
 	. = ..()
 
 	if (Obj && Obj.opacity)

@@ -48,7 +48,7 @@ Notes:
 	..()
 
 
-/datum/tooltip/proc/show(go/thing, params = null, title = null, content = null, theme = "default", special = "none")
+/datum/tooltip/proc/show(atom/movable/thing, params = null, title = null, content = null, theme = "default", special = "none")
 	if (!thing || !params || (!title && !content) || !src.owner || !isnum(world.icon_size))
 		return 0
 	if (!src.init)
@@ -98,7 +98,7 @@ Notes:
 //Open a tooltip for user, at a location based on params
 //Theme is a CSS class in tooltip.html, by default this wrapper chooses a CSS class based on the user's UI_style (Midnight, Plasmafire, Retro, etc)
 //Includes sanity.checks
-/proc/openToolTip(mob/user = null, go/tip_src = null, params = null,title = "",content = "",theme = "")
+/proc/openToolTip(mob/user = null, atom/movable/tip_src = null, params = null,title = "",content = "",theme = "")
 	if(istype(user))
 		if(user.client && user.client.tooltips)
 			if(!theme && user.client.prefs && user.client.prefs.UI_style)

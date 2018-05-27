@@ -5,7 +5,7 @@ var/datum/subsystem/ambient/SSambient
 /datum/subsystem/ambient
 	name = "Ambient"
 	init_order = 20
-	priority = 20
+	priority = 5
 
 	wait = 5
 

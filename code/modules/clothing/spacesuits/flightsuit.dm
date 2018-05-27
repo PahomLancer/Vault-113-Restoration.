@@ -507,7 +507,7 @@
 		density = TRUE
 		anchored = TRUE
 	else if(ismovableatom(unmovablevictim))
-		var/go/victim = unmovablevictim
+		var/atom/movable/victim = unmovablevictim
 		if(crashpower < 3 || victim.throwing)
 			crashing = FALSE
 			return FALSE
@@ -583,7 +583,7 @@
 	victim.throw_at(target, knockback, 1)
 	victim.Weaken(stun)
 
-/obj/item/device/flightpack/proc/victimknockback(go/victim, power, direction)
+/obj/item/device/flightpack/proc/victimknockback(atom/movable/victim, power, direction)
 	if(!victim)
 		return FALSE
 	var/knockback = 0

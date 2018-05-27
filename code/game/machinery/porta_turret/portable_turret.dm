@@ -388,9 +388,9 @@
 
 	return targets
 
-/obj/machinery/porta_turret/proc/tryToShootAt(list/go/targets)
+/obj/machinery/porta_turret/proc/tryToShootAt(list/atom/movable/targets)
 	while(targets.len > 0)
-		var/go/M = pick(targets)
+		var/atom/movable/M = pick(targets)
 		targets -= M
 		if(target(M))
 			return 1
@@ -470,7 +470,7 @@
 		return 0
 	return 1
 
-/obj/machinery/porta_turret/proc/target(go/target)
+/obj/machinery/porta_turret/proc/target(atom/movable/target)
 	if(target)
 		spawn()
 			popUp()				//pop the turret up if it's not already up.
@@ -480,7 +480,7 @@
 		return 1
 	return
 
-/obj/machinery/porta_turret/proc/shootAt(go/target)
+/obj/machinery/porta_turret/proc/shootAt(atom/movable/target)
 	if(!raised) //the turret has to be raised in order to fire - makes sense, right?
 		return
 

@@ -39,7 +39,7 @@
 			light.destroy()
 			light = null
 	else
-		if (!istype(loc, /go)) // We choose what atom should be the top atom of the light here.
+		if (!istype(loc, /atom/movable)) // We choose what atom should be the top atom of the light here.
 			. = src
 		else
 			. = loc
@@ -68,7 +68,7 @@
 	. = ..()
 
 // If we have opacity, make sure to tell (potentially) affected light sources.
-/go/Destroy()
+/atom/movable/Destroy()
 	var/turf/T = loc
 	if (opacity && istype(T))
 		T.reconsider_lights()
@@ -99,7 +99,7 @@
 			T.sun_reconsider_lights()
 
 
-/go/Moved(atom/OldLoc, Dir)
+/atom/movable/Moved(atom/OldLoc, Dir)
 	. = ..()
 	for (var/datum/light_source/L in light_sources) // Cycle through the light sources on this atom and tell them to update.
 		L.source_atom.update_light()

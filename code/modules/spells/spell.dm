@@ -435,7 +435,7 @@ var/list/spells = typesof(/obj/effect/proc_holder/spell) //needed for the badmin
 	var/obj/dummy = new(A.loc)
 	dummy.pass_flags |= PASSTABLE
 	for(var/turf/turf in getline(A,B))
-		for(var/go/AM in turf)
+		for(var/atom/movable/AM in turf)
 			if(!AM.CanPass(dummy,turf,1))
 				qdel(dummy)
 				return 0

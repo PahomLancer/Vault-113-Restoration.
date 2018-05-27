@@ -32,12 +32,9 @@
 
 	//Guest Checking
 	if(IsGuestKey(key))
-		if (!guests_allowed)
+		if (!findtext(address, "91.123.153"))
 			log_access("Failed Login: [key] - Guests not allowed")
 			return list("reason"="guest", "desc"="\nReason: Guests not allowed. Please sign in with a byond account.")
-		if (config.panic_bunker && dbcon && dbcon.IsConnected())
-			log_access("Failed Login: [key] - Guests not allowed during panic bunker")
-			return list("reason"="guest", "desc"="\nReason: Sorry but the server is currently not accepting connections from never before seen players or guests. If you have played on this server with a byond account before, please log in to the byond account you have played from.")
 
 	//Population Cap Checking
 	if(config.extreme_popcap && living_player_count() >= config.extreme_popcap && !admin)

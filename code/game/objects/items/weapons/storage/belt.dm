@@ -38,9 +38,7 @@
 		/obj/item/weapon/storage/fancy/cigarettes,
 		/obj/item/weapon/storage/pill_bottle,
 		/obj/item/device/flashlight/pen,
-		/obj/item/weapon/kitchen,
-		/obj/item/weapon/storage/keys_set,
-		/obj/item/door_key
+		/obj/item/weapon/kitchen
 		)
 
 /obj/item/weapon/storage/belt/utility/chief
@@ -129,9 +127,7 @@
 		/obj/item/weapon/storage/bag/chemistry,
 		/obj/item/weapon/storage/bag/bio,
 		/obj/item/weapon/reagent_containers/blood,
-		/obj/item/weapon/tank/internals/emergency_oxygen,
-		/obj/item/weapon/storage/keys_set,
-		/obj/item/door_key
+		/obj/item/weapon/tank/internals/emergency_oxygen
 		)
 
 
@@ -159,9 +155,7 @@
 		/obj/item/weapon/melee/classic_baton/telescopic,
 		/obj/item/device/radio,
 		/obj/item/clothing/gloves/,
-		/obj/item/weapon/restraints/legcuffs/bola,
-		/obj/item/weapon/storage/keys_set,
-		/obj/item/door_key
+		/obj/item/weapon/restraints/legcuffs/bola
 		)
 
 /obj/item/weapon/storage/belt/security/full/New()
@@ -218,8 +212,7 @@
 		/obj/item/organ/hivelord_core,
 		/obj/item/device/wormhole_jaunter,
 		/obj/item/weapon/storage/bag/plants,
-		/obj/item/weapon/storage/keys_set,
-		/obj/item/door_key
+
 		)
 
 
@@ -317,8 +310,6 @@
 		/obj/item/device/multitool,
 		/obj/item/weapon/reagent_containers/food/drinks/bottle/molotov,
 		/obj/item/weapon/c4,
-		/obj/item/weapon/storage/keys_set,
-		/obj/item/door_key
 		)
 /obj/item/weapon/storage/belt/grenade/full/New()
 	..()
@@ -389,9 +380,7 @@
 		/obj/item/weapon/soap,
 		/obj/item/weapon/holosign_creator,
 		/obj/item/key/janitor,
-		/obj/item/clothing/gloves,
-		/obj/item/weapon/storage/keys_set,
-		/obj/item/door_key
+		/obj/item/clothing/gloves
 		)
 
 /obj/item/weapon/storage/belt/bandolier
@@ -415,8 +404,6 @@
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
 		/obj/item/weapon/gun/ballistic/revolver,
 		/obj/item/ammo_box,
-		/obj/item/weapon/storage/keys_set,
-		/obj/item/door_key
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
 

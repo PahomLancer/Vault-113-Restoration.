@@ -33,7 +33,7 @@ var/global/mulebot_count = 0
 
 	suffix = ""
 
-	var/go/load = null
+	var/atom/movable/load = null
 	var/mob/living/passenger = null
 	var/turf/target				// this is turf to navigate to (location of beacon)
 	var/loaddir = 0				// this the direction to unload onto/load from
@@ -326,7 +326,7 @@ var/global/mulebot_count = 0
 
 // mousedrop a crate to load the bot
 // can load anything if hacked
-/mob/living/simple_animal/bot/mulebot/MouseDrop_T(go/AM, mob/user)
+/mob/living/simple_animal/bot/mulebot/MouseDrop_T(atom/movable/AM, mob/user)
 
 	if(user.incapacitated() || user.lying)
 		return
@@ -337,7 +337,7 @@ var/global/mulebot_count = 0
 	load(AM)
 
 // called to load a crate
-/mob/living/simple_animal/bot/mulebot/proc/load(go/AM)
+/mob/living/simple_animal/bot/mulebot/proc/load(atom/movable/AM)
 	if(load ||  AM.anchored)
 		return
 
@@ -610,9 +610,9 @@ var/global/mulebot_count = 0
 		else
 			// not loaded
 			if(auto_pickup) // find a crate
-				var/go/AM
+				var/atom/movable/AM
 				if(wires.is_cut(WIRE_LOADCHECK)) // if hacked, load first unanchored thing we find
-					for(var/go/A in get_step(loc, loaddir))
+					for(var/atom/movable/A in get_step(loc, loaddir))
 						if(!A.anchored)
 							AM = A
 							break

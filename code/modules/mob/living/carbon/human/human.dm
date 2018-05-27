@@ -4,19 +4,32 @@
 	voice_name = "Unknown"
 	icon = 'icons/mob/human.dmi'
 	icon_state = "caucasian_m_s"
-
-
+	self_weight = 0
 
 /mob/living/carbon/human/dummy
 	real_name = "Test Dummy"
 	status_flags = GODMODE|CANPUSH
 
+/mob/living/carbon/human/proc/burn()
+	for(var/obj/item/W in src)
+		unEquip(W)
 
+	new /obj/effect/decal/cleanable/ash(loc)
+
+	if(client)
+		client.screen.Cut()
+		client.screen += client.void
+
+	var/mob/new_player/M = new /mob/new_player()
+	M.key = key
+
+	qdel(src)
 
 /mob/living/carbon/human/New()
 	verbs += /mob/living/proc/mob_sleep
 	verbs += /mob/living/proc/lay_down
 	verbs += /mob/living/proc/surrender
+	verbs += /mob/living/proc/SPECIALshow
 
 	//initialize limbs first
 	create_bodyparts()
@@ -211,7 +224,7 @@
 
 // called when something steps onto a human
 // this could be made more general, but for now just handle mulebot
-/mob/living/carbon/human/Crossed(go/AM)
+/mob/living/carbon/human/Crossed(atom/movable/AM)
 	var/mob/living/simple_animal/bot/mulebot/MB = AM
 	if(istype(MB))
 		MB.RunOver(src)
@@ -739,7 +752,7 @@
 	remove_atom_colour(TEMPORARY_COLOUR_PRIORITY, "#000000")
 	overlays -= I
 
-/mob/living/carbon/human/canUseTopic(go/M, be_close = 0)
+/mob/living/carbon/human/canUseTopic(atom/movable/M, be_close = 0)
 	if(incapacitated() || lying )
 		return
 	if(!Adjacent(M) && (M.loc != src))

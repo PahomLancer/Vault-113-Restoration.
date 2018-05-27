@@ -7,6 +7,8 @@ var/datum/subsystem/mobs/SSmob
 	priority = 100
 	flags = SS_KEEP_TIMING|SS_NO_INIT
 
+	wait = 30
+
 	var/list/currentrun = list()
 
 /datum/subsystem/mobs/New()

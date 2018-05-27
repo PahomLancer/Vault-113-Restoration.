@@ -11,9 +11,11 @@ var/datum/subsystem/air/SSair
 	name = "Air"
 	init_order = -1
 	priority = 20
-	wait = 5
+	wait = 1200
 	flags = SS_BACKGROUND
 	display_order = 1
+
+	//can_fire = 0
 
 	var/cost_turfs = 0
 	var/cost_groups = 0
@@ -60,11 +62,13 @@ var/datum/subsystem/air/SSair
 	..(msg)
 
 // OFF IT UNTIL IT USELESS
+/*
 /datum/subsystem/air/Initialize(timeofday)
 	setup_allturfs()
 	setup_atmos_machinery()
 	setup_pipenets()
 	..()
+*/
 
 
 /datum/subsystem/air/fire(resumed = 0)

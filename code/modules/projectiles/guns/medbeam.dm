@@ -14,7 +14,7 @@
 	var/datum/beam/current_beam = null
 	var/mounted = 0 //Denotes if this is a handheld or mounted version
 
-	weapon_weight = WEAPON_MEDIUM
+	weapon_weight = WEAPON_HEAVY
 
 /obj/item/weapon/gun/medbeam/New()
 	..()
@@ -46,7 +46,7 @@
 
 	current_target = target
 	active = 1
-	current_beam = new(user,current_target,time=6000,beam_icon_state="medbeam",btype=/obj/effect/ebeam/medical)
+	current_beam = PoolOrNew(/datum/beam, list(user,current_target,time=6000,beam_icon_state="medbeam",btype=/obj/effect/ebeam/medical))
 	addtimer(CALLBACK(current_beam, /datum/beam.proc/Start), 0)
 
 	feedback_add_details("gun_fired","[src.type]")
@@ -76,7 +76,7 @@
 	if(current_target)
 		on_beam_tick(current_target)
 
-/obj/item/weapon/gun/medbeam/proc/los_check(go/user, mob/target)
+/obj/item/weapon/gun/medbeam/proc/los_check(atom/movable/user, mob/target)
 	var/turf/user_turf = user.loc
 	if(mounted)
 		user_turf = get_turf(user)
@@ -90,13 +90,8 @@
 		if(turf.density)
 			qdel(dummy)
 			return 0
-		for(var/go/AM in turf)
+		for(var/atom/movable/AM in turf)
 			if(!AM.CanPass(dummy,turf,1))
-				qdel(dummy)
-				return 0
-		for(var/obj/effect/ebeam/medical/B in turf)// Don't cross the str-beams!
-			if(B.owner != current_beam)
-				explosion(B.loc,0,3,5,8)
 				qdel(dummy)
 				return 0
 	qdel(dummy)

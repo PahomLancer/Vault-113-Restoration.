@@ -50,7 +50,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/powered/mechtransport)
 "l" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/powered/mechtransport)
 "m" = (

@@ -76,7 +76,7 @@ To draw a rune, use an arcane tome.
 		fail_invoke()
 
 /obj/effect/rune/attack_animal(mob/living/simple_animal/M)
-	if(istype(M, /mob/living/simple_animal/shade))
+	if(istype(M, /mob/living/simple_animal/shade) || istype(M, /mob/living/simple_animal/hostile/construct))
 		if(construct_invoke || !iscultist(M)) //if you're not a cult construct we want the normal fail message
 			attack_hand(M)
 		else
@@ -302,7 +302,7 @@ var/list/teleport_runes = list()
 		return
 	var/movedsomething = 0
 	var/moveuserlater = 0
-	for(var/go/A in T)
+	for(var/atom/movable/A in T)
 		if(A == user)
 			moveuserlater = 1
 			movedsomething = 1

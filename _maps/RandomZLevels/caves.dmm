@@ -84,7 +84,7 @@
 	name = "\improper BMP Asteroid Level 4"
 	})
 "am" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plating/asteroid/basalt/lava{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -152,7 +152,7 @@
 	})
 "au" = (
 /obj/structure/destructible/cult/talisman,
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /obj/item/stack/sheet/runed_metal{
 	amount = 25
 	},
@@ -179,7 +179,7 @@
 	name = "\improper BMP Asteroid Level 4"
 	})
 "aw" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/engine/cult{
 	baseturf = /turf/open/floor/plating/lava/smooth;
 	initial_gas_mix = "n2=23;o2=14"
@@ -735,7 +735,7 @@
 	name = "\improper BMP Asteroid Level 3"
 	})
 "bz" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/engine/cult{
 	baseturf = /turf/open/floor/plating/lava/smooth;
@@ -813,7 +813,7 @@
 	name = "\improper BMP Asteroid Level 4"
 	})
 "bH" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /obj/item/clothing/under/patriotsuit,
 /turf/open/floor/plating/asteroid/basalt/lava{
 	initial_gas_mix = "n2=23;o2=14"
@@ -1169,7 +1169,7 @@
 	},
 /area/awaymission/BMPship)
 "cy" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
 	},
@@ -1183,7 +1183,7 @@
 	},
 /area/awaymission/BMPship)
 "cA" = (
-/obj/effect/decal/cleanable/remains/xeno,
+/obj/effect/decal/remains/xeno,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/basalt;
 	initial_gas_mix = "n2=23;o2=14"
@@ -1209,7 +1209,7 @@
 	},
 /area/awaymission/research)
 "cD" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/basalt;
 	initial_gas_mix = "n2=23;o2=14"
@@ -2353,7 +2353,7 @@
 	name = "\improper BMP Asteroid Level 2"
 	})
 "fl" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plating/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14"
 	},

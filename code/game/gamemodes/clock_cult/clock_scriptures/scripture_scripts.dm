@@ -293,7 +293,7 @@
 	playsound(invoker, 'sound/effects/EMPulse.ogg', 50, 1)
 	PoolOrNew(/obj/effect/overlay/temp/ratvar/sigil/voltvoid, get_turf(invoker))
 	var/power_drained = 0
-	for(var/go/A in view(7, get_turf(invoker)))
+	for(var/atom/movable/A in view(7, get_turf(invoker)))
 		power_drained += A.power_drain(TRUE)
 	var/obj/effect/clockwork/sigil/transmission/ST = locate(/obj/effect/clockwork/sigil/transmission) in get_turf(invoker)
 	if(ST && power_drained >= MIN_CLOCKCULT_POWER)

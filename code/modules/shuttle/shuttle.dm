@@ -486,7 +486,7 @@
 				Ts1.copy_air_with_tile(T0)
 
 			//move mobile to new location
-			for(var/go/AM in T0)
+			for(var/atom/movable/AM in T0)
 				AM.onShuttleMove(T1, rotation)
 
 		if(rotation)
@@ -534,7 +534,7 @@
 			continue
 		// The corresponding tile will not be changed, so no roadkill
 
-		for(var/go/AM in T1)
+		for(var/atom/movable/AM in T1)
 			if(ismob(AM))
 				if(isliving(AM))
 					var/mob/living/M = AM
@@ -609,7 +609,7 @@
 	for (var/thing in L0)
 		var/turf/T = thing
 		for (var/thing2 in T)
-			var/go/AM = thing2
+			var/atom/movable/AM = thing2
 			if (length(AM.client_mobs_in_contents))
 				AM.update_parallax_contents()
 */

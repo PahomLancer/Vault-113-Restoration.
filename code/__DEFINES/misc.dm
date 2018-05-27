@@ -319,7 +319,7 @@ var/global/list/ghost_others_options = list(GHOST_OTHERS_SIMPLE, GHOST_OTHERS_DE
 #define MAP_MAXZ 6
 
 // Defib stats
-#define DEFIB_TIME_LIMIT 120
+#define DEFIB_TIME_LIMIT 600
 #define DEFIB_TIME_LOSS 60
 
 // Diagonal movement
@@ -405,6 +405,6 @@ var/global/list/ghost_others_options = list(GHOST_OTHERS_SIMPLE, GHOST_OTHERS_DE
 #define HEAVY_WEIGHT 75
 #define LIMIT_WEIGHT 100
 
-#define RATIO_WEIGHT 40 // BIGGER - FASTER.
+#define RATIO_WEIGHT 50 // BIGGER - FASTER.
 
 #define string2charlist(string) (splittext(string, regex("(.)")) - splittext(string, ""))

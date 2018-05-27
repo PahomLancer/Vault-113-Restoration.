@@ -3,6 +3,8 @@
 /atom/movable/lighting_overlay
 	name          = ""
 
+	anchored      = TRUE
+
 	icon             = LIGHTING_ICON
 	color            = LIGHTING_BASE_MATRIX
 	plane            = LIGHTING_PLANE
@@ -117,6 +119,15 @@
 
 /atom/movable/lighting_overlay/blob_act()
 	return
+
+// Nope nope nope!
+/atom/movable/lighting_overlay/onShuttleMove(turf/T1, rotation)
+	return FALSE
+
+// Override here to prevent things accidentally moving around overlays.
+/atom/movable/lighting_overlay/forceMove(atom/destination, var/no_tp=FALSE, var/harderforce = FALSE)
+	if(harderforce)
+		. = ..()
 
 /atom/movable/lighting_overlay/proc/animate_color()
 	animate(src, color = target_color, time = LIGHTING_ANIMATE_TIME, flags = ANIMATION_RELATIVE )

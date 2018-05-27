@@ -101,7 +101,7 @@
 	if(!obj)
 		return
 	var/turf/T = get_turf(obj)
-	for(var/go/AM in obj.contents) // these should be derezed if they were generated
+	for(var/atom/movable/AM in obj.contents) // these should be derezed if they were generated
 		AM.forceMove(T							)// otherwise make sure they are dropped
 
 	if(istype(obj))

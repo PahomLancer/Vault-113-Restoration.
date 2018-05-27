@@ -330,7 +330,7 @@ field_generator power level display
 	if(fields.len)
 		..()
 
-/obj/machinery/field/generator/bump_field(go/AM as mob|obj)
+/obj/machinery/field/generator/bump_field(atom/movable/AM as mob|obj)
 	if(fields.len)
 		..()
 

@@ -260,7 +260,7 @@
 	if(!I) //If there's nothing to drop, the drop is automatically succesfull. If(unEquip) should generally be used to check for NODROP.
 		return TRUE
 
-	if(!canUnEquip(I, force))
+	if((I.flags & NODROP) && !force)
 		return FALSE
 
 	var/hand_index = get_held_index_of_item(I)

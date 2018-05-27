@@ -434,7 +434,7 @@
 			visible_message("<span class='danger'>[src]'s crusher goes way too many levels too high, crushing right through space-time!</span>")
 			playsound(src.loc, 'sound/effects/supermatter.ogg', 50, 1, -3)
 			investigate_log("Experimentor has triggered the 'throw things' reaction.", "experimentor")
-			for(var/go/AM in oview(7,src))
+			for(var/atom/movable/AM in oview(7,src))
 				if(!AM.anchored)
 					AM.throw_at(src,10,1)
 		else if(prob(EFFECT_PROB_LOW-badThingCoeff))
@@ -442,11 +442,11 @@
 			playsound(src.loc, 'sound/effects/supermatter.ogg', 50, 1, -3)
 			investigate_log("Experimentor has triggered the 'minor throw things' reaction.", "experimentor")
 			var/list/throwAt = list()
-			for(var/go/AM in oview(7,src))
+			for(var/atom/movable/AM in oview(7,src))
 				if(!AM.anchored)
 					throwAt.Add(AM)
 			for(var/counter = 1, counter < throwAt.len, ++counter)
-				var/go/cast = throwAt[counter]
+				var/atom/movable/cast = throwAt[counter]
 				cast.throw_at(pick(throwAt),10,1)
 		ejectItem(TRUE)
 	////////////////////////////////////////////////////////////////////////////////////////////////

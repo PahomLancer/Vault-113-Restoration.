@@ -83,7 +83,7 @@
 				unconverted_ai = TRUE
 
 		for(var/M in atoms_to_test)
-			var/go/A = M
+			var/atom/movable/A = M
 			if(!A || qdeleted(A) || A == target_apc)
 				continue
 			power_drained += (A.power_drain(TRUE) * efficiency)

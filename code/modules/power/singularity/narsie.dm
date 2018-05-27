@@ -38,6 +38,12 @@
 	sleep(70)
 	SSshuttle.emergency.request(null, 0.1) // Cannot recall
 
+
+/obj/singularity/narsie/large/attack_ghost(mob/dead/observer/user as mob)
+	makeNewConstruct(/mob/living/simple_animal/hostile/construct/harvester, user, null, 0, loc_override = src.loc)
+	PoolOrNew(/obj/effect/particle_effect/smoke/sleeping, src.loc)
+
+
 /obj/singularity/narsie/process()
 	if(clashing)
 		return
@@ -136,7 +142,7 @@
 //	if(defer_powernet_rebuild != 2)
 //		defer_powernet_rebuild = 1
 	for(var/atom/X in urange(consume_range,src,1))
-		if(isturf(X) || istype(X, /go))
+		if(isturf(X) || istype(X, /atom/movable))
 			consume(X)
 //	if(defer_powernet_rebuild != 2)
 //		defer_powernet_rebuild = 0

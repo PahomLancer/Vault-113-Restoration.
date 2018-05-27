@@ -5,7 +5,7 @@
 	var/next_vehicle_move = 0 //used for move delays
 	var/vehicle_move_delay = 2 //tick delay between movements, lower = faster, higher = slower
 	var/keytype = null
-	var/go/ridden = null
+	var/atom/movable/ridden = null
 
 	var/slowed = FALSE
 	var/slowvalue = 1

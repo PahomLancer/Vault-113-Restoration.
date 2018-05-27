@@ -98,6 +98,9 @@ var/global/image/fire_overlay = image("icon" = 'icons/effects/fire.dmi', "icon_s
 	// non-clothing items
 	var/datum/dog_fashion/dog_fashion = null
 
+	// F13 price
+	var/price = null
+
 /obj/item/New()
 	if (!materials)
 		materials = list()
@@ -236,11 +239,6 @@ var/global/image/fire_overlay = image("icon" = 'icons/effects/fire.dmi', "icon_s
 
 	throwing = 0
 	if(loc == user)
-		if(ishuman(user))
-			var/mob/living/carbon/human/H = user
-			if(src == H.w_uniform && H.wear_suit)
-				to_chat(H, "<span class='warning'>You need remove suit before removing [src]!</span>")
-				return
 		if(!user.unEquip(src))
 			return
 
@@ -576,7 +574,7 @@ var/global/image/fire_overlay = image("icon" = 'icons/effects/fire.dmi', "icon_s
 /obj/item/proc/get_held_item_speechspans(mob/living/carbon/user)
 	return
 
-/obj/item/hitby(go/AM)
+/obj/item/hitby(atom/movable/AM)
 	return
 
 /obj/item/attack_hulk(mob/living/carbon/human/user)

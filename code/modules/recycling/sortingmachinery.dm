@@ -14,12 +14,12 @@
 
 /obj/structure/bigDelivery/Destroy()
 	var/turf/T = get_turf(src)
-	for(var/go/AM in contents)
+	for(var/atom/movable/AM in contents)
 		AM.forceMove(T)
 	return ..()
 
 /obj/structure/bigDelivery/contents_explosion(severity, target)
-	for(var/go/AM in contents)
+	for(var/atom/movable/AM in contents)
 		AM.ex_act()
 
 /obj/structure/bigDelivery/attackby(obj/item/W, mob/user, params)
@@ -52,8 +52,8 @@
 		return ..()
 
 /obj/structure/bigDelivery/relay_container_resist(mob/living/user, obj/O)
-	if(istype(loc, /go))
-		var/go/AM = loc //can't unwrap the wrapped container if it's inside something.
+	if(istype(loc, /atom/movable))
+		var/atom/movable/AM = loc //can't unwrap the wrapped container if it's inside something.
 		AM.relay_container_resist(user, O)
 		return
 	to_chat(user, "<span class='notice'>You lean on the back of [O] and start pushing to rip the wrapping around it.</span>")
@@ -78,13 +78,13 @@
 	var/sortTag = 0
 
 /obj/item/smallDelivery/contents_explosion(severity, target)
-	for(var/go/AM in contents)
+	for(var/atom/movable/AM in contents)
 		AM.ex_act()
 
 /obj/item/smallDelivery/attack_self(mob/user)
 	user.unEquip(src)
 	for(var/X in contents)
-		var/go/AM = X
+		var/atom/movable/AM = X
 		user.put_in_hands(AM)
 	playsound(src.loc, 'sound/items/poster_ripped.ogg', 50, 1)
 	qdel(src)
@@ -94,11 +94,11 @@
 		var/mob/M = loc
 		M.unEquip(src)
 		for(var/X in contents)
-			var/go/AM = X
+			var/atom/movable/AM = X
 			M.put_in_hands(AM)
 	else
 		for(var/X in contents)
-			var/go/AM = X
+			var/atom/movable/AM = X
 			AM.forceMove(src.loc)
 	playsound(src.loc, 'sound/items/poster_ripped.ogg', 50, 1)
 	qdel(src)

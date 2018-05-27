@@ -103,7 +103,7 @@
 	description = "A ubiquitous chemical substance that is composed of hydrogen and oxygen."
 	color = "#AAAAAA77" // rgb: 170, 170, 170, 77 (alpha)
 	var/cooling_temperature = 2
-	water_factor = 5 * REAGENTS_METABOLISM
+	water_factor = 10 * REAGENTS_METABOLISM
 
 /*
  *	Water reaction to turf
@@ -713,7 +713,7 @@
 	color = "#C7C7C7" // rgb: 199,199,199
 
 /datum/reagent/radium/on_mob_life(mob/living/M)
-	M.apply_effect(2*REM/M.metabolism_efficiency,IRRADIATE,0)
+	M.apply_effect(6*REM/M.metabolism_efficiency,IRRADIATE,0)
 	..()
 
 /datum/reagent/radium/reaction_turf(turf/T, reac_volume)

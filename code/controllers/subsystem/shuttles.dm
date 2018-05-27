@@ -47,6 +47,8 @@ var/datum/subsystem/shuttle/SSshuttle
 	NEW_SS_GLOBAL(SSshuttle)
 
 /datum/subsystem/shuttle/Initialize(timeofday)
+	return 0
+
 	if(!emergency)
 		WARNING("No /obj/docking_port/mobile/emergency placed on the map!")
 	if(!backup_shuttle)
@@ -281,6 +283,8 @@ var/datum/subsystem/shuttle/SSshuttle
 	checkHostileEnvironment()
 
 /datum/subsystem/shuttle/proc/checkHostileEnvironment()
+	return
+
 	for(var/datum/d in hostileEnvironments)
 		if(!istype(d) || qdeleted(d))
 			hostileEnvironments -= d

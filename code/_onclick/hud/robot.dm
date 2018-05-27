@@ -220,7 +220,7 @@
 		var/x = -4	//Start at CENTER-4,SOUTH+1
 		var/y = 1
 
-		for(var/go/A in R.module.get_inactive_modules())
+		for(var/atom/movable/A in R.module.get_inactive_modules())
 			//Module is not currently active
 			screenmob.client.screen += A
 			if(x < 0)

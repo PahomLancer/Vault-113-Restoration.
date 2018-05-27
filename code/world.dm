@@ -13,7 +13,7 @@
 var/list/map_transition_config = MAP_TRANSITION_CONFIG
 
 /world/New()
-//	check_for_cleanbot_bug()
+	check_for_cleanbot_bug()
 	map_ready = 1
 	world.log << "Map is ready."
 
@@ -319,15 +319,7 @@ var/inerror = 0
 
 	if (config && config.server_name)
 		s += "<b>[config.server_name]</b> &#8212; "
-
 	s += "<b>[station_name()]</b>";
-	s += " ("
-	s += "<a href=\"https://discord.gg/K2Yxxvs\">" //Change this to wherever you want the hub to link to.
-//	s += "[game_version]"
-	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
-	s += "</a>"
-	s += ")"
-	s += "<img src='http://i.imgur.com/UrVghOE.gif'><br>"
 
 	var/list/features = list()
 
@@ -356,7 +348,7 @@ var/inerror = 0
 		features += "~[n] player"
 
 	if (!host && config && config.hostedby)
-		features += "follow us at <b>reddit.com/r/Fallout13</b>"
+		features += "hosted by <b>TauCeti</b>"
 
 	if (features)
 		s += ": [jointext(features, ", ")]"

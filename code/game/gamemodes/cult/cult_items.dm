@@ -318,7 +318,7 @@
 /obj/item/device/cult_shift/proc/handle_teleport_grab(turf/T, mob/user)
 	var/mob/living/carbon/C = user
 	if(C.pulling)
-		var/go/pulled = C.pulling
+		var/atom/movable/pulled = C.pulling
 		pulled.forceMove(T)
 		. = pulled
 
@@ -343,7 +343,7 @@
 		playsound(mobloc, "sparks", 50, 1)
 		PoolOrNew(/obj/effect/overlay/temp/dir_setting/cult/phase/out, list(mobloc, C.dir))
 
-		var/go/pulled = handle_teleport_grab(destination, C)
+		var/atom/movable/pulled = handle_teleport_grab(destination, C)
 		C.forceMove(destination)
 		if(pulled)
 			C.start_pulling(pulled) //forcemove resets pulls, so we need to re-pull
@@ -368,7 +368,7 @@
 	on = 1
 	var/charges = 3
 
-/obj/item/device/flashlight/torch/culttorch/afterattack(go/A, mob/user, proximity)
+/obj/item/device/flashlight/torch/culttorch/afterattack(atom/movable/A, mob/user, proximity)
 	if(!proximity)
 		return
 

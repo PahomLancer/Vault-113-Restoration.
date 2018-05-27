@@ -30,7 +30,6 @@
 	var/darkness_view = 2//Base human is 2
 	var/invis_view = SEE_INVISIBLE_LIVING
 	var/invis_override = 0
-	var/cloth_count = null
 
 
 	//Var modification - PLEASE be careful with this I know who you are and where you live
@@ -87,14 +86,6 @@
 		obj_integrity = max_integrity
 		to_chat(user, "<span class='notice'>You fix the damages on [src] with [C].</span>")
 		return 1
-	if(cloth_count && W.sharpness && W.force > 0 && user.a_intent == INTENT_HARM)
-		if(alert("You want to cut [src]?",,"Yes","No") == "Yes")
-			if(ismob(loc))
-				to_chat(user,"<span class='warning'>Unwear it before!</span>")
-			else
-				new /obj/item/stack/sheet/cloth(get_turf(src), cloth_count)
-				qdel(src)
-			return 1
 	if(pockets)
 		var/i = pockets.attackby(W, user, params)
 		if(i)
@@ -518,6 +509,16 @@ BLIND     // can't see anything
 	var/alt_covers_chest = 0 // for adjusted/rolled-down jumpsuits, 0 = exposes chest and arms, 1 = exposes arms only
 	var/obj/item/clothing/tie/hastie = null
 	var/mutantrace_variation = NO_MUTANTRACE_VARIATION //Are there special sprites for specific situations? Don't use this unless you need to.
+
+/obj/item/clothing/under/attackby(obj/item/W, mob/user, params)
+	//Sasargule [moron]
+	if(istype(W,/obj/item/weapon/kitchen/knife))
+		//bidlokod_mode = true. Someone, fix it, pls.
+		var/rnd = rand(3, 5)
+		for(var/i=0, i <rnd, i++)
+			new /obj/item/stack/sheet/cloth/(get_turf(user))
+		del src
+		return
 
 /obj/item/clothing/under/worn_overlays(isinhands = FALSE)
 	. = list()

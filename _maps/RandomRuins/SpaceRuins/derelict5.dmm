@@ -44,7 +44,7 @@
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "m" = (
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plating,
 /area/ruin/unpowered)
 "n" = (

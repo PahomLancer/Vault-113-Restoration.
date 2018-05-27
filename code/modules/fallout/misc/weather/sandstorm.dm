@@ -1,70 +1,72 @@
-var/stormactive=0
-proc/sandstorm(var/position)
-	for(var/area/A in world)
-		if(A.outdoors && !stormactive)
-			for(var/mob/M in view(10,A))
-				M << sound('sound/f13effects/sandstorm_warning.ogg')
-				to_chat(M,"A sudden gust of wind whips up particles of sand and dust all around you.")
-				spawn(100)
-					to_chat(M,"The clouds on the horizon get darker... The storm is coming! I better find a safe shelter now.")
-					spawn(600)
-						stormactive=1
-						M << sound('sound/f13effects/thunder_distant_1.ogg')
-						lightingsandloop(A,M)
-						var/turf/T
-						for(T in view(1,A))
-							T.overlays += 'icons/fallout/misc/weather.dmi'
-						spawn(400)
-							M << sound('sound/f13effects/thunder_distant_2.ogg')
-							spawn(200)
-								M << sound('sound/f13effects/sandstorm_transition.ogg')
-								spawn(80)
-									M << sound('sound/f13effects/sandstorm_loop.ogg')
-									spawn(6000)
-										M << sound('sound/f13effects/sandstorm_transition.ogg')
-										spawn(200)
-											M << sound('sound/f13effects/thunder_distant_1.ogg')
-											T.overlays -= 'icons/fallout/misc/weather.dmi'
-											stormactive=0
-											return(1)
+#define SANDSTORM_CHANNEL 16
 
-proc/lightingsandloop(var/area/A,var/mob/M)
-	if(A.outdoors)
-		lightningstrike(A,M)
-		spawn(600)
-			lightningstrike(A,M)
-			spawn(600)
-				lightningstrike(A,M)
-				spawn(600)
-					lightningstrike(A,M)
-					spawn(600)
-						lightningstrike(A,M)
-						spawn(600)
-							lightningstrike(A,M)
-							spawn(600)
-								lightningstrike(A,M)
-								spawn(600)
-									lightningstrike(A,M)
-									spawn(600)
-										lightningstrike(A,M)
-										spawn(600)
-											lightningstrike(A,M)
-											spawn(600)
-												lightningstrike(A,M)
+/datum/weather_controller/sandstorm
+	name = "sandstorm"
+	id = "sandstorm"
+	desc = "Sandstorm."
 
-proc/lightningstrike(var/area/A,var/mob/M,var/turf/T,var/L)
-	if(A.outdoors)
-		var/list/ls=pick('sound/f13effects/thunder_1.ogg','sound/f13effects/thunder_2.ogg','sound/f13effects/thunder_3.ogg','sound/f13effects/thunder_4.ogg')
-		var/P=icon('icons/effects/224x224.dmi',pick("lightning1","lightning2","lightning3","lightning4"))
-		for(T in view(1,A))
-			T.overlays += P
-			spawn(25)
-				T.overlays-=P
-			for(M in view(2,T))
-				M << sound(ls)
-				for(M in view(1,T))
-					if(M.ckey)
-						to_chat(M,"You have been hit by lightning! Your heart has stopped from a shock.")
-					M.death()
-				spawn(1)
-					return
+	overlay = "sandstorm"
+	chance = 5
+	duration_min = 5000
+	duration_max = 20000
+	var/list/mobs = list()
+	var/list/currentrun = list()
+	var/started = FALSE
+
+/datum/weather_controller/sandstorm/on_start()
+	stop_time = world.time + duration_max
+	spawn(300)
+		started = TRUE
+		..()
+	for (var/area/A in SSweather.outside_areas)
+		for(var/mob/living/carbon/human/H in A)
+			H.playsound_local(get_turf(H), 'sound/f13effects/sandstorm_transition.ogg', vol = 100, channel = SANDSTORM_CHANNEL, repeat = 1)
+	return TRUE
+
+/datum/weather_controller/sandstorm/on_end()
+	started = FALSE
+	. = ..()
+
+/datum/weather_controller/sandstorm/can_start()
+	if((SSweather.controllers["rain"] in SSweather.active) || (SSweather.controllers["fog"] in SSweather.active))
+		return FALSE
+	return TRUE
+
+/datum/weather_controller/sandstorm/on_mob_enter(mob/mob, area/area)
+	. = ..()
+	if(area && area.open_space)
+		if(istype(mob,/mob/living/carbon/human))
+			mobs |= mob
+		if(started)
+			mob.playsound_local(get_turf(mob), 'sound/f13effects/sandstorm_loop.ogg', vol = 100, channel = SANDSTORM_CHANNEL, repeat = 1)
+		else
+			mob.playsound_local(get_turf(mob), 'sound/f13effects/sandstorm_transition.ogg', vol = 100, channel = SANDSTORM_CHANNEL, repeat = FALSE)
+
+/datum/weather_controller/sandstorm/on_mob_exit(mob/mob, area/area)
+	. = ..()
+	mobs -= mob
+	mob.playsound_local(get_turf(mob), null, vol = 0, channel = SANDSTORM_CHANNEL, repeat = 1)
+
+/datum/weather_controller/sandstorm/process()
+	if(!started)
+		return
+	if(prob(75))
+		spawn(rand(1,10))
+			var/turf/open/turf = locate(rand(1,world.maxx), rand(1,world.maxy), rand(1,world.maxz))
+			var/area/A = turf.loc
+			if(A.open_space)
+				lightningstrike(turf)
+	if(!currentrun.len)
+		currentrun = mobs.Copy()
+	while(currentrun.len)
+		var/mob/living/M = currentrun[currentrun.len]
+		currentrun.len--
+		if(istype(M, /mob/living/carbon/human))
+			if(prob(0.5))
+				lightningstrike(get_turf(M))
+			var/mob/living/carbon/human/H = M
+			if((!H.wear_mask || !(H.wear_mask.flags_inv & HIDEFACE)) && (!H.head || !(H.head.flags_inv & HIDEFACE)))
+				H.adjustOxyLoss(2)
+		if (TICK_CHECK)
+			return
+	currentrun.Cut()

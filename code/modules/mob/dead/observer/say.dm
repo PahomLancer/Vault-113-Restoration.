@@ -8,9 +8,9 @@
 
 	. = src.say_dead(message)
 
-/mob/dead/observer/Hear(message, go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/mob/dead/observer/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	if(radio_freq)
-		var/go/virtualspeaker/V = speaker
+		var/atom/movable/virtualspeaker/V = speaker
 
 		if(isAI(V.source))
 			var/mob/living/silicon/ai/S = V.source

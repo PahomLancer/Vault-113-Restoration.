@@ -68,14 +68,14 @@
 	whispers = critical ? "whispers in [p_their()] final breath" : "whispers"
 	rendered = "<span class='game say'><span class='name'>[GetVoice()]</span>[alt_name] [whispers], <span class='message'>\"[attach_spans(message, spans)]\"</span></span>"
 
-	for(var/go/AM in listening)
+	for(var/atom/movable/AM in listening)
 		if(istype(AM,/obj/item/device/radio))
 			continue
 		AM.Hear(rendered, src, languages_spoken, message, , spans)
 
 	message = stars(message)
 	rendered = "<span class='game say'><span class='name'>[GetVoice()]</span>[alt_name] [whispers], <span class='message'>\"[attach_spans(message, spans)]\"</span></span>"
-	for(var/go/AM in eavesdropping)
+	for(var/atom/movable/AM in eavesdropping)
 		if(istype(AM,/obj/item/device/radio))
 			continue
 		AM.Hear(rendered, src, languages_spoken, message, , spans)

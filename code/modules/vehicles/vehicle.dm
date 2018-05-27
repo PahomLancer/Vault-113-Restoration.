@@ -30,7 +30,7 @@
 	return
 
 /obj/item/key
-	name = "vehicle key"
+	name = "key"
 	desc = "A small grey key."
 	icon = 'icons/obj/vehicles.dmi'
 	icon_state = "key"
@@ -47,7 +47,7 @@
 /obj/vehicle/user_buckle_mob(mob/living/M, mob/user)
 	if(user.incapacitated())
 		return
-	for(var/go/A in get_turf(src))
+	for(var/atom/movable/A in get_turf(src))
 		if(A.density)
 			if(A != src && A != M)
 				return
@@ -74,7 +74,7 @@
 		riding_datum.handle_vehicle_offsets()
 
 
-/obj/vehicle/Bump(go/M)
+/obj/vehicle/Bump(atom/movable/M)
 	. = ..()
 	if(auto_door_open)
 		if((istype(M, /obj/machinery/door) || istype(M, /obj/structure/simple_door)) && has_buckled_mobs())

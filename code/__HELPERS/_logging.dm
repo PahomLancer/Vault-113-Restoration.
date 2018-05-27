@@ -79,3 +79,9 @@
 /proc/log_chat(text)
 	if (config.log_pda)
 		diary << "\[[time_stamp()]]CHAT: [text]"
+
+/proc/log_join(text)
+	diary << "\[[time_stamp()]]JOIN-INFO: [text]"
+
+/proc/log_faction(text)
+	diary << "\[[time_stamp()]]FACTION: [text]"

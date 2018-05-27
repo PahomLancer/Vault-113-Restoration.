@@ -1,5 +1,9 @@
 /mob/living/New()
 	. = ..()
+
+	experience = new /datum/experience(src)
+	perks = new /datum/perkController(src)
+
 	generateStaticOverlay()
 	if(staticOverlays.len)
 		for(var/mob/living/simple_animal/drone/D in player_list)
@@ -88,12 +92,12 @@
 		var/obj/O = A
 		if(ObjBump(O))
 			return
-	if(istype(A, /go))
-		var/go/AM = A
+	if(istype(A, /atom/movable))
+		var/atom/movable/AM = A
 		if(PushAM(AM))
 			return
 
-/mob/living/Bumped(go/AM)
+/mob/living/Bumped(atom/movable/AM)
 	..()
 	last_bumped = world.time
 
@@ -171,8 +175,8 @@
 /mob/living/proc/ObjBump(obj/O)
 	return
 
-//Called when we want to push an go
-/mob/living/proc/PushAM(go/AM)
+//Called when we want to push an atom/movable
+/mob/living/proc/PushAM(atom/movable/AM)
 	if(now_pushing)
 		return 1
 	if(moving_diagonally)// no pushing during diagonal moves.
@@ -197,7 +201,7 @@
 
 //mob verbs are a lot faster than object verbs
 //for more info on why this is not atom/pull, see examinate() in mob.dm
-/mob/living/verb/pulled(go/AM as mob|obj in oview(1))
+/mob/living/verb/pulled(atom/movable/AM as mob|obj in oview(1))
 	set name = "Pull"
 	set category = "Object"
 
@@ -217,8 +221,15 @@
 	visible_message("<b>[src]</b> points to [A]")
 	return 1
 
+/mob/living/verb/die()
+	set name = "Kill yourself"
+	set category = "IC"
+
+	succumb()
+
 /mob/living/verb/succumb(whispered as null)
 	set hidden = 1
+
 	if (InCritical())
 		src.attack_log += "[src] has [whispered ? "whispered his final words" : "succumbed to death"] with [round(health, 0.1)] points of health!"
 		src.adjustOxyLoss(src.health - HEALTH_THRESHOLD_DEAD)
@@ -226,13 +237,17 @@
 		if(!whispered)
 			to_chat(src, "<span class='notice'>You have given up life and succumbed to death.</span>")
 		death()
+	else
+		to_chat(src, "You must be in critical state to use this.")
 
 /mob/living/incapacitated(ignore_restraints, ignore_grab)
 	if(stat || paralysis || stunned || weakened || (!ignore_restraints && restrained(ignore_grab)))
 		return 1
 
 /mob/living/proc/InCritical()
-	return (src.health < 0 && src.health > -95 && stat == UNCONSCIOUS)
+	var/health_check = (src.health < 0 && src.health > -95 && stat == UNCONSCIOUS)
+	var/nutrion_check = nutrition < NUTRITION_LEVEL_STARVING
+	return (health_check || nutrion_check)
 
 //This proc is used for mobs which are affected by pressure to calculate the amount of pressure that actually
 //affects them once clothing is factored in. ~Errorage
@@ -437,7 +452,7 @@
 		else
 			return 0
 
-	var/go/pullee = pulling
+	var/atom/movable/pullee = pulling
 	if(pullee && get_dist(src, pullee) > 1)
 		stop_pulling()
 	if(pullee && !isturf(pullee.loc) && pullee.loc != loc) //to be removed once all code that changes an object's loc uses forceMove().
@@ -548,7 +563,7 @@
 			if (T.density)
 				pressure_resistance_prob_delta -= 20
 				continue
-			for (var/go/AM in T)
+			for (var/atom/movable/AM in T)
 				if (AM.density && AM.anchored)
 					pressure_resistance_prob_delta -= 20
 					break
@@ -652,13 +667,12 @@
 	if(what.flags & NODROP)
 		to_chat(src, "<span class='warning'>You can't remove \the [what.name], it appears to be stuck!</span>")
 		return
-	if(ishuman(who))
-		var/mob/living/carbon/human/H = who
-		if(what == H.w_uniform && H.wear_suit)
-			to_chat(src, "<span class='warning'>You need remove suit!</span>")
-			return
-	who.visible_message("<span class='danger'>[src] tries to remove [who]'s [what.name].</span>", \
-					"<span class='userdanger'>[src] tries to remove [who]'s [what.name].</span>")
+
+	var/mob/living/carbon/user = src
+	if(!(user.perks.have(/datum/perk/thief)))
+		who.visible_message("<span class='danger'>[src] tries to remove [who]'s [what.name].</span>", \
+			"<span class='userdanger'>[src] tries to remove [who]'s [what.name].</span>")
+
 	what.add_fingerprint(src)
 	if(do_mob(src, who, what.strip_delay))
 		if(what && Adjacent(who))
@@ -666,9 +680,17 @@
 				var/list/L = where
 				if(what == who.get_item_for_held_index(L[2]))
 					who.unEquip(what)
+
+					if(user.perks.have(/datum/perk/thief))
+						src.put_in_hands(what)
+
 					add_logs(src, who, "stripped", addition="of [what]")
 			if(what == who.get_item_by_slot(where))
 				who.unEquip(what)
+
+				if(user.perks.have(/datum/perk/thief))
+					src.put_in_hands(what)
+
 				add_logs(src, who, "stripped", addition="of [what]")
 
 // The src mob is trying to place an item on someone
@@ -761,7 +783,15 @@
 				var/datum/game_mode/blob/B = ticker.mode
 				if(B.message_sent)
 					stat(null, "Blobs to Blob Win: [blobs_legit.len]/[B.blobwincount]")
-		stat(null, "Weight: [weight2feeling(contents_weight)]")
+
+		if(istype(src, /mob/living))
+			var/mob/living/carbon/human/H = src
+			var/weight = contents_weight
+			if(pulling)
+				weight += pulling.contents_weight
+				weight += pulling.self_weight
+			stat(null, "Weight: [weight]/[H.special.getWeight(H)]")
+
 
 /mob/living/cancel_camera()
 	..()
@@ -804,7 +834,7 @@
 	visible_message("<span class='notice'>[user] butchers [src].</span>")
 	gib(0, 0, 1)
 
-/mob/living/canUseTopic(go/M, be_close = 0, no_dextery = 0)
+/mob/living/canUseTopic(atom/movable/M, be_close = 0, no_dextery = 0)
 	if(incapacitated())
 		return
 	if(no_dextery)
@@ -878,6 +908,13 @@
 	else
 		new_mob.key = key
 
+	for(var/para in hasparasites())
+		var/mob/living/simple_animal/hostile/guardian/G = para
+		G.summoner = new_mob
+		G.Recall()
+		to_chat(G, "<span class='holoparasite'>Your summoner has changed \
+			form!</span>")
+
 /mob/living/proc/fakefireextinguish()
 	return
 
@@ -907,7 +944,12 @@
 		update_fire()
 
 /mob/living/proc/adjust_fire_stacks(add_fire_stacks) //Adjusting the amount of fire_stacks we have on person
-	fire_stacks = Clamp(fire_stacks + add_fire_stacks, -20, 20)
+	fire_stacks = Clamp(fire_stacks + add_fire_stacks, -200, 200)
+	if(fire_stacks == 200)
+		if(istype(src, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = src
+			H.burn()
+
 	if(on_fire && fire_stacks <= 0)
 		ExtinguishMob()
 

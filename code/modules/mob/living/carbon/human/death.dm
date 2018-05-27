@@ -11,11 +11,22 @@
 		new /obj/effect/gibspawner/humanbodypartless(loc, viruses, dna)
 
 /mob/living/carbon/human/spawn_dust()
-	new /obj/effect/decal/cleanable/remains/human(loc)
+	new /obj/effect/decal/remains/human(loc)
 
 /mob/living/carbon/human/death(gibbed)
 	if(stat == DEAD)
 		return
+
+	if(murder)
+		if(murder != src)
+			if(istype(murder, /mob/living/carbon/human))
+				murder:karmaAdd(karma * -0.33)
+
+	var/datum/atom_hud/antag/A = huds[ANTAG_HUD_RAIDER]
+	A.leave_hud(src)
+
+	if(status == "raider")
+		ticker.mode.set_antag_hud(src, null)
 
 	. = ..()
 

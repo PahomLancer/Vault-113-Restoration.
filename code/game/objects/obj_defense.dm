@@ -23,7 +23,8 @@
 			return 0
 	var/armor_protection = 0
 	if(damage_flag)
-		armor_protection = armor[damage_flag]
+		if(armor[damage_flag])
+			armor_protection = armor[damage_flag]
 	return round(damage_amount * (100 - armor_protection)*0.01, 0.1)
 
 //the sound played when the obj is damaged.
@@ -37,7 +38,7 @@
 		if(BURN)
 			playsound(src.loc, 'sound/items/Welder.ogg', 100, 1)
 
-/obj/hitby(go/AM)
+/obj/hitby(atom/movable/AM)
 	..()
 	var/tforce = 0
 	if(ismob(AM))

@@ -370,7 +370,7 @@
 /obj/machinery/door/airlock/cult/allowed(mob/M)
 	if(!density)
 		return 1
-	if(friendly || iscultist(M) || istype(M, /mob/living/simple_animal/shade))
+	if(friendly || iscultist(M) || istype(M, /mob/living/simple_animal/shade) || isconstruct(M))
 		PoolOrNew(openingoverlaytype, loc)
 		return 1
 	else

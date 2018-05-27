@@ -66,7 +66,7 @@
 	P.info += "Item: [pack.name]<br/>"
 	P.info += "Contents: <br/>"
 	P.info += "<ul>"
-	for(var/go/AM in C.contents - P)
+	for(var/atom/movable/AM in C.contents - P)
 		if((P.errors & MANIFEST_ERROR_CONTENTS))
 			if(prob(50))
 				P.info += "<li>[AM.name]</li>"

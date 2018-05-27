@@ -70,7 +70,7 @@
 	else
 		bombtank.release()
 
-/obj/item/device/onetankbomb/Crossed(go/AM as mob|obj) //for mousetraps
+/obj/item/device/onetankbomb/Crossed(atom/movable/AM as mob|obj) //for mousetraps
 	if(bombassembly)
 		bombassembly.Crossed(AM)
 

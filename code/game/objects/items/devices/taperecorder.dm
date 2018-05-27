@@ -11,11 +11,6 @@
 	materials = list(MAT_METAL=60, MAT_GLASS=30)
 	force = 2
 	throwforce = 0
-	components = list(/obj/item/crafting/diode = 1, /obj/item/crafting/transistor = 1,
-	/obj/item/crafting/capacitor = 1, /obj/item/crafting/resistor = 1,
-	/obj/item/crafting/bulb = 1, /obj/item/crafting/board = 1,
-	/obj/item/crafting/buzzer = 1, /obj/item/crafting/small_gear = 1,
-	/obj/item/stack/cable_coil/random = 1)
 	var/recording = 0
 	var/playing = 0
 	var/playsleepseconds = 0
@@ -98,7 +93,7 @@
 		icon_state = "taperecorder_idle"
 
 
-/obj/item/device/taperecorder/Hear(message, go/speaker, message_langs, raw_message, radio_freq, spans)
+/obj/item/device/taperecorder/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, spans)
 	if(mytape && recording)
 		mytape.timestamp += mytape.used_capacity
 		mytape.storedinfo += "\[[time2text(mytape.used_capacity * 10,"mm:ss")]\] [message]"

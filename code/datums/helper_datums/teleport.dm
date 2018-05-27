@@ -6,7 +6,7 @@
 	return 0
 
 /datum/teleport
-	var/go/teleatom //atom to teleport
+	var/atom/movable/teleatom //atom to teleport
 	var/atom/destination //destination to teleport to
 	var/precision = 0 //teleport precision
 	var/datum/effect_system/effectin //effect to show right before teleportation
@@ -48,7 +48,7 @@
 	return 0
 
 //must succeed in most cases
-/datum/teleport/proc/setTeleatom(go/ateleatom)
+/datum/teleport/proc/setTeleatom(atom/movable/ateleatom)
 	if(istype(ateleatom, /obj/effect) && !istype(ateleatom, /obj/effect/dummy/chameleon))
 		qdel(ateleatom)
 		return 0

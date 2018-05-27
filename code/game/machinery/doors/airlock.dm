@@ -1282,7 +1282,7 @@ var/list/airlock_overlays = list()
 		if(!hasPower() || wires.is_cut(WIRE_BOLTS))
 			return
 	if(safe)
-		for(var/go/M in get_turf(src))
+		for(var/atom/movable/M in get_turf(src))
 			if(M.density && M != src) //something is blocking the door
 				addtimer(CALLBACK(src, .proc/autoclose), 60)
 				return

@@ -22,13 +22,15 @@ var/list/datum/time_of_day/time_cycle_steps = list(new /datum/time_of_day/mornin
 	init_order    = 2
 	display_order = 6
 	wait          = LIGHTING_INTERVAL
-	priority      = 25
+	priority      = 5
 	flags         = SS_TICKER
+
+	var/initialized = FALSE
 
 	var/list/currentrun_lights
 	var/list/currentrun_corners
 	var/list/currentrun_overlays
-	var/list/sunlighting_planes = list()
+	var/list/sunlighting_planes
 
 	var/datum/time_of_day/current_step_datum
 	var/datum/time_of_day/next_step_datum
@@ -55,16 +57,27 @@ var/list/datum/time_of_day/time_cycle_steps = list(new /datum/time_of_day/mornin
 			if (A.dynamic_lighting == DYNAMIC_LIGHTING_IFSTARLIGHT)
 				A.luminosity = 0
 
+	sunlighting_planes = list()
+
 	set_time_of_day(STEP_DAY)
 
 	create_all_sunlighting_overlays()
+	initialized = TRUE
+
+//	spawn(300)
+//		can_fire = 0
 
 	..()
+
 
 /datum/subsystem/sunlight/proc/set_time_of_day(var/step)
 	if(step > time_cycle_steps.len)
 		step = STEP_DAY
 		dodaychange()
+/*
+	if(step == STEP_NIGHT)
+		respawn_mob()
+*/
 		/*
 	switch(step)
 		if(STEP_MORNING)

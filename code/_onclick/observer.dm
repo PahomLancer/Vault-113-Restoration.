@@ -9,7 +9,7 @@
 			return									// seems legit.
 
 	// Things you might plausibly want to follow
-	if(istype(A, /go))
+	if(istype(A, /atom/movable))
 		ManualFollow(A)
 
 	// Otherwise jump

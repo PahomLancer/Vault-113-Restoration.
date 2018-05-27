@@ -32,7 +32,7 @@
 /obj/structure/transit_tube/station/should_stop_pod(pod, from_dir)
 	return 1
 
-/obj/structure/transit_tube/station/Bumped(go/AM)
+/obj/structure/transit_tube/station/Bumped(atom/movable/AM)
 	if(!pod_moving && open_status == STATION_TUBE_OPEN && ismob(AM) && AM.dir == boarding_dir)
 		for(var/obj/structure/transit_tube_pod/pod in loc)
 			if(!pod.moving)
@@ -84,7 +84,7 @@
 							user.visible_message("[user] starts emptying [pod]'s contents onto the floor.", "<span class='notice'>You start emptying [pod]'s contents onto the floor...</span>")
 							if(do_after(user, 10, target = src)) //So it doesn't default to close_animation() on fail
 								if(pod && pod.loc == loc)
-									for(var/go/AM in pod)
+									for(var/atom/movable/AM in pod)
 										AM.forceMove(get_turf(user))
 
 						else

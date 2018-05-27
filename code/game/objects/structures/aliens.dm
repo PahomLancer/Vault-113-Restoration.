@@ -102,7 +102,7 @@
 	return attack_hand(user)
 
 
-/obj/structure/alien/resin/CanPass(go/mover, turf/target, height=0)
+/obj/structure/alien/resin/CanPass(atom/movable/mover, turf/target, height=0)
 	return !density
 
 
@@ -301,7 +301,7 @@
 		take_damage(5, BURN, 0, 0)
 
 
-/obj/structure/alien/egg/HasProximity(go/AM)
+/obj/structure/alien/egg/HasProximity(atom/movable/AM)
 	if(status == GROWN)
 		if(!CanHug(AM))
 			return

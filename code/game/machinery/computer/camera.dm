@@ -124,6 +124,10 @@
 	for (var/obj/machinery/camera/C in cameranet.cameras)
 		if((z > ZLEVEL_SPACEMAX || C.z > ZLEVEL_SPACEMAX) && (C.z != z))//if on away mission, can only recieve feed from same z_level cameras
 			continue
+
+		if(C.loc == null)
+			continue
+
 		L.Add(C)
 
 	camera_sort(L)

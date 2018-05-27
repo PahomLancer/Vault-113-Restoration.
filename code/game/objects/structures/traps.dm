@@ -8,7 +8,7 @@
 	var/last_trigger = 0
 	var/time_between_triggers = 600 //takes a minute to recharge
 
-/obj/structure/trap/Crossed(go/AM)
+/obj/structure/trap/Crossed(atom/movable/AM)
 	if(last_trigger + time_between_triggers > world.time)
 		return
 	alpha = initial(alpha)

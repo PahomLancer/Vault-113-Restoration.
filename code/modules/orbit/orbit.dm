@@ -1,5 +1,5 @@
 /datum/orbit
-	var/go/orbiter
+	var/atom/movable/orbiter
 	var/atom/orbiting
 	var/lock = TRUE
 	var/turf/lastloc
@@ -56,7 +56,7 @@
 	lastloc = orbiter.loc
 
 
-/go/var/datum/orbit/orbiting = null
+/atom/movable/var/datum/orbit/orbiting = null
 /atom/var/list/orbiters = null
 
 //A: atom to orbit
@@ -67,7 +67,7 @@
 //pre_rotation: Chooses to rotate src 90 degress towards the orbit dir (clockwise/anticlockwise), useful for things to go "head first" like ghosts
 //lockinorbit: Forces src to always be on A's turf, otherwise the orbit cancels when src gets too far away (eg: ghosts)
 
-/go/proc/orbit(atom/A, radius = 10, clockwise = FALSE, rotation_speed = 20, rotation_segments = 36, pre_rotation = TRUE, lockinorbit = FALSE)
+/atom/movable/proc/orbit(atom/A, radius = 10, clockwise = FALSE, rotation_speed = 20, rotation_segments = 36, pre_rotation = TRUE, lockinorbit = FALSE)
 	if (!istype(A))
 		return
 
@@ -94,7 +94,7 @@
 	//we stack the orbits up client side, so we can assign this back to normal server side without it breaking the orbit
 	transform = initial_transform
 
-/go/proc/stop_orbit()
+/atom/movable/proc/stop_orbit()
 	SpinAnimation(0,0)
 	qdel(orbiting)
 
@@ -106,7 +106,7 @@
 			if (O.orbiter)
 				O.orbiter.stop_orbit()
 
-/go/Destroy(force = FALSE)
+/atom/movable/Destroy(force = FALSE)
 	..()
 	if (orbiting)
 		stop_orbit()

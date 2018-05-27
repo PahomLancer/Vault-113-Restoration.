@@ -42,10 +42,10 @@
 
 /datum/weather/New()
 	..()
-	SSweather.existing_weather |= src
+//	SSweather.existing_weather |= src
 
 /datum/weather/Destroy()
-	SSweather.existing_weather -= src
+//	SSweather.existing_weather -= src
 	..()
 
 /datum/weather/proc/telegraph()
@@ -84,7 +84,7 @@
 				to_chat(M, weather_message)
 			if(weather_sound)
 				to_chat(M, sound(weather_sound))
-	START_PROCESSING(SSweather, src)
+//	START_PROCESSING(SSweather, src)
 	addtimer(CALLBACK(src, .proc/wind_down), weather_duration)
 
 /datum/weather/proc/wind_down()
@@ -99,7 +99,7 @@
 				to_chat(M, end_message)
 			if(end_sound)
 				to_chat(M, sound(end_sound))
-	STOP_PROCESSING(SSweather, src)
+//	STOP_PROCESSING(SSweather, src)
 	addtimer(CALLBACK(src, .proc/end), end_duration)
 
 /datum/weather/proc/end()

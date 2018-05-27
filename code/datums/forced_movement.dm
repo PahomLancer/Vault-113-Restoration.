@@ -1,6 +1,6 @@
 //Just new and forget
 /datum/forced_movement
-	var/go/victim
+	var/atom/movable/victim
 	var/atom/target
 	var/last_processed
 	var/steps_per_tick
@@ -8,7 +8,7 @@
 	var/datum/callback/on_step
 	var/moved_at_all = FALSE
 															//as fast as ssfastprocess
-/datum/forced_movement/New(go/_victim, atom/_target, _steps_per_tick = 0.5, _allow_climbing = FALSE, datum/callback/_on_step = null)
+/datum/forced_movement/New(atom/movable/_victim, atom/_target, _steps_per_tick = 0.5, _allow_climbing = FALSE, datum/callback/_on_step = null)
 	victim = _victim
 	target = _target
 	steps_per_tick = _steps_per_tick
@@ -51,7 +51,7 @@
 		last_processed = world.time
 
 /datum/forced_movement/proc/TryMove(recursive = FALSE)
-	var/go/vic = victim	//sanic
+	var/atom/movable/vic = victim	//sanic
 	var/atom/tar = target
 
 	if(!recursive)

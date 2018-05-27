@@ -2,6 +2,18 @@
 	if(stat == DEAD)
 		return
 
+	if(job)
+		spawn(JOB_REOPEN)
+			if(stat != DEAD)
+				return
+
+			var/datum/job/current = SSjob.GetJob(job)
+			current.current_positions -= 1
+
+	if(social_faction == "raiders")
+		if(murder)
+			murder:experience.add(experience.current * 0.1)
+
 	silent = 0
 	losebreath = 0
 

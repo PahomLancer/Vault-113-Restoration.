@@ -26,7 +26,7 @@
 
 		for(var/i in 1 to rand(2, 5))
 			new material_drop(src)
-		for(var/go/AM in contents)
+		for(var/atom/movable/AM in contents)
 			AM.forceMove(T)
 
 		qdel(src)

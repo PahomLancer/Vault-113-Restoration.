@@ -5,7 +5,6 @@
 	flags = HEAR
 	hud_possible = list(ANTAG_HUD)
 	pressure_resistance = 8
-	parent_type = /go
 	var/datum/mind/mind
 	var/list/datum/action/actions = list()
 
@@ -33,7 +32,7 @@
 	var/disabilities = 0	//Carbon
 	var/movement_type = GROUND		//Incase you have multiple types, you automatically use the most useful one. IE: Skating on ice, flippers on water, flying over chasm/space, etc.
 
-	var/go/pulling = null
+	var/atom/movable/pulling = null
 	var/grab_state = 0
 
 	var/next_move = null
@@ -78,7 +77,7 @@
 	var/list/possible_a_intents = null//Living
 	var/m_intent = MOVE_INTENT_RUN//Living
 	var/lastKnownIP = null
-	var/go/buckled = null//Living
+	var/atom/movable/buckled = null//Living
 
 	//Hands
 	var/active_hand_index = 1
@@ -138,7 +137,7 @@
 	var/force_compose = 0 //If this is nonzero, the mob will always compose it's own hear message instead of using the one given in the arguments.
 
 	var/obj/control_object //Used by admins to possess objects. All mobs should have this var
-	var/go/remote_control //Calls relaymove() to whatever it is
+	var/atom/movable/remote_control //Calls relaymove() to whatever it is
 
 
 	var/turf/listed_turf = null	//the current turf being examined in the stat panel

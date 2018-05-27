@@ -50,7 +50,7 @@
 
 /obj/machinery/washing_machine/proc/wash_cycle()
 	for(var/X in contents)
-		var/go/AM = X
+		var/atom/movable/AM = X
 		AM.clean_blood()
 		AM.machine_wash(src)
 
@@ -62,7 +62,7 @@
 
 
 //what happens to this object when washed inside a washing machine
-/go/proc/machine_wash(obj/machinery/washing_machine/WM)
+/atom/movable/proc/machine_wash(obj/machinery/washing_machine/WM)
 	return
 
 /obj/item/stack/sheet/hairlesshide/machine_wash(obj/machinery/washing_machine/WM)

@@ -20,6 +20,7 @@ var/datum/atom_hud/huds = list( \
 	ANTAG_HUD_SINTOUCHED = new/datum/atom_hud/antag/hidden(),\
 	ANTAG_HUD_SOULLESS = new/datum/atom_hud/antag/hidden(),\
 	ANTAG_HUD_CLOCKWORK = new/datum/atom_hud/antag(),\
+	ANTAG_HUD_RAIDER = new/datum/atom_hud/antag(),\
 	)
 
 /datum/atom_hud

@@ -26,7 +26,7 @@
 	var/dense_when_open = FALSE //if it's dense when open or not
 	var/max_mob_size = MOB_SIZE_HUMAN //Biggest mob_size accepted by the container
 	var/mob_storage_capacity = 3 // how many human sized mob/living can fit together inside a closet.
-	var/storage_capacity = 30 //This is so that someone can't pack hundreds of items in a locker/crate then open it in a populated area to crash clients.
+	var/storage_capacity = 300 //This is so that someone can't pack hundreds of items in a locker/crate then open it in a populated area to crash clients.
 	var/cutting_tool = /obj/item/weapon/weldingtool
 	var/open_sound = 'sound/machines/click.ogg'
 	var/close_sound = 'sound/machines/click.ogg'
@@ -38,6 +38,7 @@
 /obj/structure/closet/New()
 	..()
 	update_icon()
+	take_contents()
 
 /obj/structure/closet/initialize()
 	..()
@@ -45,7 +46,13 @@
 		take_contents()
 
 /obj/structure/closet/Destroy()
-	dump_contents()
+	if(obj_integrity == max_integrity)
+		for(var/atom/movable/AM in src)
+			if(istype(AM, /mob/living/carbon/human))
+				AM.forceMove(loc)
+			else
+				qdel(AM)
+
 	return ..()
 
 /obj/structure/closet/update_icon()
@@ -81,7 +88,7 @@
 	else if(secure && !opened)
 		to_chat(user, "<span class='notice'>Alt-click to [locked ? "unlock" : "lock"].</span>")
 
-/obj/structure/closet/CanPass(go/mover, turf/target, height=0)
+/obj/structure/closet/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height == 0 || wall_mounted)
 		return 1
 	return !density
@@ -112,7 +119,7 @@
 
 /obj/structure/closet/proc/dump_contents()
 	var/turf/T = get_turf(src)
-	for(var/go/AM in src)
+	for(var/atom/movable/AM in src)
 		AM.forceMove(T)
 		if(throwing) // you keep some momentum when getting out of a thrown closet
 			step(AM, dir)
@@ -121,7 +128,7 @@
 
 /obj/structure/closet/proc/take_contents()
 	var/turf/T = get_turf(src)
-	for(var/go/AM in T)
+	for(var/atom/movable/AM in T)
 		if(insert(AM) == -1) // limit reached
 			break
 
@@ -137,7 +144,7 @@
 	update_icon()
 	return 1
 
-/obj/structure/closet/proc/insert(go/AM)
+/obj/structure/closet/proc/insert(atom/movable/AM)
 	if(contents.len >= storage_capacity)
 		return -1
 
@@ -247,6 +254,13 @@
 	else if(istype(W, /obj/item/weapon/wrench))
 		if(isinspace() && !anchored)
 			return
+
+		if(istype(src, /obj/structure/closet/bus))
+			return
+
+		if(istype(src, /obj/vertibird))
+			return
+
 		anchored = !anchored
 		playsound(src.loc, W.usesound, 75, 1)
 		user.visible_message("<span class='notice'>[user] [anchored ? "anchored" : "unanchored"] \the [src] [anchored ? "to" : "from"] the ground.</span>", \
@@ -259,7 +273,7 @@
 	else
 		return ..()
 
-/obj/structure/closet/MouseDrop_T(go/O, mob/living/user)
+/obj/structure/closet/MouseDrop_T(atom/movable/O, mob/living/user)
 	if(!istype(O) || O.anchored || istype(O, /obj/screen))
 		return
 	if(!istype(user) || user.incapacitated() || user.lying)
@@ -343,7 +357,7 @@
 // Objects that try to exit a locker by stepping were doing so successfully,
 // and due to an oversight in turf/Enter() were going through walls.  That
 // should be independently resolved, but this is also an interesting twist.
-/obj/structure/closet/Exit(go/AM)
+/obj/structure/closet/Exit(atom/movable/AM)
 	open()
 	if(AM.loc == src)
 		return 0
@@ -352,10 +366,10 @@
 /obj/structure/closet/container_resist(mob/living/user)
 	if(opened)
 		return
-	if(istype(loc, /go))
+	if(istype(loc, /atom/movable))
 		user.changeNext_move(CLICK_CD_BREAKOUT)
 		user.last_special = world.time + CLICK_CD_BREAKOUT
-		var/go/AM = loc
+		var/atom/movable/AM = loc
 		AM.relay_container_resist(user, src)
 		return
 	if(!welded && !locked)

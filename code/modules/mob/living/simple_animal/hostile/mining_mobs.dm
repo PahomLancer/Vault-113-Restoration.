@@ -37,7 +37,7 @@
 		visible_message("<span class='danger'>[P] has a reduced effect on [src]!</span>")
 	..()
 
-/mob/living/simple_animal/hostile/asteroid/hitby(go/AM)//No floor tiling them to death, wiseguy
+/mob/living/simple_animal/hostile/asteroid/hitby(atom/movable/AM)//No floor tiling them to death, wiseguy
 	if(istype(AM, /obj/item))
 		var/obj/item/T = AM
 		if(!stat)

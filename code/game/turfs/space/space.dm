@@ -102,7 +102,7 @@
 		else
 			to_chat(user, "<span class='warning'>The plating is going to need some support! Place metal rods first.</span>")
 
-/turf/open/space/Entered(go/A)
+/turf/open/space/Entered(atom/movable/A)
 	..()
 	if ((!(A) || src != A.loc))
 		return
@@ -122,7 +122,7 @@
 		stoplag()//Let a diagonal move finish, if necessary
 		A.newtonian_move(A.inertia_dir)
 
-/turf/open/space/proc/Sandbox_Spacemove(go/A)
+/turf/open/space/proc/Sandbox_Spacemove(atom/movable/A)
 	var/cur_x
 	var/cur_y
 	var/next_x = src.x

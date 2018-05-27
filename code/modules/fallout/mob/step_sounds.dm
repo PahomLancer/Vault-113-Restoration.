@@ -36,7 +36,7 @@
 
 		var/turf/T = get_turf(src)
 		if(T.step_sounds[sound_type] && !step_sounded)
-			playsound(src, T.step_sounds[sound_type], (( H && H.shoes.flags & QUIETSTEPSOUND) ? 5 : 25), 0)
+			playsound(src, T.step_sounds[sound_type], (( H && H.shoes.flags & QUIETSTEPSOUND) ? 20 : 60), 0)
 			step_sounded = TRUE
 			spawn(max(5, src.movement_delay() * 2.1))
 				step_sounded = FALSE

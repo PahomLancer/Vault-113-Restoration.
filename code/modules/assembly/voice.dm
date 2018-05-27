@@ -17,7 +17,7 @@
 								 "recognizer",
 								 "voice sensor")
 
-/obj/item/device/assembly/voice/Hear(message, go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/obj/item/device/assembly/voice/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	if(speaker == src)
 		return
 
@@ -28,7 +28,7 @@
 			spawn(10)
 				pulse(0)
 
-/obj/item/device/assembly/voice/proc/record_speech(go/speaker, raw_message)
+/obj/item/device/assembly/voice/proc/record_speech(atom/movable/speaker, raw_message)
 	switch(mode)
 		if(1)
 			recorded = raw_message
@@ -47,7 +47,7 @@
 				spawn(10)
 					pulse(0)
 
-/obj/item/device/assembly/voice/proc/check_activation(go/speaker, raw_message)
+/obj/item/device/assembly/voice/proc/check_activation(atom/movable/speaker, raw_message)
 	. = 0
 	switch(mode)
 		if(1)

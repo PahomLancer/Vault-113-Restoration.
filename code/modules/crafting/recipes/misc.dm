@@ -12,3 +12,4 @@
 	tools = list(/obj/item/weapon/screwdriver, /obj/item/weapon/wirecutters)
 	category = CAT_MISC
 	default = 1
+	XP = 50

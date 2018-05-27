@@ -66,6 +66,9 @@ macro "default"
 		name = "CTRL+B"
 		command = "resist"
 	elem 
+		name = "C"
+		command = "Wield"
+	elem 
 		name = "CTRL+D+REP"
 		command = ".moveright"
 	elem 
@@ -256,6 +259,9 @@ macro "hotkeys"
 	elem 
 		name = "CTRL+B"
 		command = "resist"
+	elem 
+		name = "C"
+		command = "Wield"
 	elem 
 		name = "D+REP"
 		command = ".moveright"
@@ -891,7 +897,6 @@ window "mainwindow"
 		saved-params = "pos;size;is-minimized;is-maximized"
 		icon = 'icons\\ss13_64.png'
 		macro = "macro"
-		menu = "menu"
 	elem "split"
 		type = CHILD
 		pos = 3,0
@@ -972,7 +977,7 @@ window "mapwindow"
 window "infowindow"
 	elem "infowindow"
 		type = MAIN
-		pos = 219,0
+		pos = 281,0
 		size = 640x480
 		anchor1 = none
 		anchor2 = none
@@ -995,64 +1000,12 @@ window "infowindow"
 		left = "statwindow"
 		right = "outputwindow"
 		is-vert = false
-	elem "changelog"
-		type = BUTTON
-		pos = 16,5
-		size = 104x20
-		anchor1 = 3,0
-		anchor2 = 19,0
-		font-family = "Verdana"
-		text-color = #ffffff
-		background-color = #3c4438
-		border = line
-		saved-params = "is-checked"
-		text = "Changelog"
-		command = "changelog"
-	elem "rules"
-		type = BUTTON
-		pos = 120,5
-		size = 99x20
-		anchor1 = 19,0
-		anchor2 = 34,0
-		font-family = "Verdana"
-		text-color = #ffffff
-		background-color = #3c4438
-		border = line
-		saved-params = "is-checked"
-		text = "Rules"
-		command = "rules"
-	elem "wiki"
-		type = BUTTON
-		pos = 219,5
-		size = 100x20
-		anchor1 = 34,0
-		anchor2 = 50,0
-		font-family = "Verdana"
-		text-color = #ffffff
-		background-color = #3c4438
-		border = line
-		saved-params = "is-checked"
-		text = "Wiki"
-		command = "wiki"
-	elem "forum"
-		type = BUTTON
-		pos = 319,5
-		size = 100x20
-		anchor1 = 50,0
-		anchor2 = 66,0
-		font-family = "Verdana"
-		text-color = #ffffff
-		background-color = #3c4438
-		border = line
-		saved-params = "is-checked"
-		text = "Forum"
-		command = "forum"
 	elem "github"
 		type = BUTTON
-		pos = 419,5
-		size = 99x20
-		anchor1 = 66,0
-		anchor2 = 81,0
+		pos = 8,4
+		size = 624x20
+		anchor1 = 1,1
+		anchor2 = 100,1
 		font-family = "Verdana"
 		text-color = #ffffff
 		background-color = #3c4438
@@ -1060,19 +1013,6 @@ window "infowindow"
 		saved-params = "is-checked"
 		text = "Discord"
 		command = "discord"
-	elem "report-issue"
-		type = BUTTON
-		pos = 518,5
-		size = 100x20
-		anchor1 = 81,0
-		anchor2 = 97,0
-		font-family = "Verdana"
-		text-color = #ffffff
-		background-color = #3c4438
-		border = line
-		saved-params = "is-checked"
-		text = "Report Issue"
-		command = "report-issue"
 
 window "outputwindow"
 	elem "outputwindow"

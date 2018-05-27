@@ -17,26 +17,15 @@
 	max_ammo = 7
 
 /obj/item/ammo_box/magazine/internal/cylinder/ammo_count(countempties = 1)
-	var/boolets = 0
-	for(var/obj/item/ammo_casing/bullet in stored_ammo)
-		if(bullet && (bullet.BB || countempties))
-			boolets++
-
-	return boolets
+	return ammo_left
 
 /obj/item/ammo_box/magazine/internal/cylinder/get_round(keep = 0)
 	rotate()
 
-	var/b = stored_ammo[1]
-	if(!keep)
-		stored_ammo[1] = null
-
-	return b
+	return ..()
 
 /obj/item/ammo_box/magazine/internal/cylinder/proc/rotate()
-	var/b = stored_ammo[1]
-	stored_ammo.Cut(1,2)
-	stored_ammo.Insert(0, b)
+	return
 
 /obj/item/ammo_box/magazine/internal/cylinder/proc/spin()
 	for(var/i in 1 to rand(0, max_ammo*2))
@@ -44,20 +33,7 @@
 
 
 /obj/item/ammo_box/magazine/internal/cylinder/give_round(obj/item/ammo_casing/R, replace_spent = 0)
-	if(!R || (caliber && R.caliber != caliber) || (!caliber && R.type != ammo_type))
-		return 0
-
-	for(var/i in 1 to stored_ammo.len)
-		var/obj/item/ammo_casing/bullet = stored_ammo[i]
-		if(!bullet || !bullet.BB) // found a spent ammo
-			stored_ammo[i] = R
-			R.forceMove(src)
-
-			if(bullet)
-				bullet.forceMove(get_turf(src.loc))
-			return 1
-
-	return 0
+	return ..(R)
 
 /obj/item/ammo_box/magazine/internal/cylinder/rev38
 	name = "detective revolver cylinder"
@@ -87,11 +63,7 @@
 
 /obj/item/ammo_box/magazine/internal/shot/ammo_count(countempties = 1)
 	if (!countempties)
-		var/boolets = 0
-		for(var/obj/item/ammo_casing/bullet in stored_ammo)
-			if(bullet.BB)
-				boolets++
-		return boolets
+		return ammo_left
 	else
 		return ..()
 
@@ -152,7 +124,7 @@
 	multiload = 0
 
 /obj/item/ammo_box/magazine/internal/rus357/New()
-	stored_ammo += new ammo_type(src)
+	ammo_left += 1
 	..()
 
 /obj/item/ammo_box/magazine/internal/boltaction
@@ -184,7 +156,7 @@
 	caliber = "gatling"
 	max_ammo = 1
 /obj/item/ammo_box/magazine/internal/minigun/get_round(keep = 0)
-	return stored_ammo[1]
+	return ..()
 
 
 /obj/item/ammo_box/magazine/internal/bow

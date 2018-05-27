@@ -1,4 +1,4 @@
-/mob/CanPass(go/mover, turf/target, height=0)
+/mob/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height==0)
 		return 1
 	if(istype(mover, /obj/item/projectile) || mover.throwing)
@@ -274,7 +274,7 @@
 /mob/Process_Spacemove(movement_dir = 0)
 	if(..())
 		return 1
-	var/go/backup = get_spacemove_backup()
+	var/atom/movable/backup = get_spacemove_backup()
 	if(backup)
 		if(istype(backup) && movement_dir && !backup.anchored)
 			if(backup.newtonian_move(turn(movement_dir, 180))) //You're pushing off something movable, so it moves
@@ -294,7 +294,7 @@
 				continue
 			return A
 		else
-			var/go/AM = A
+			var/atom/movable/AM = A
 			if(AM == buckled) //Kind of unnecessary but let's just be sure
 				continue
 			if(!AM.CanPass(src) || AM.density)

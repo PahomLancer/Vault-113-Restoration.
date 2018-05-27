@@ -13,8 +13,8 @@
 	materials = list(MAT_METAL = 500, MAT_GLASS = 250)
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	var/active = FALSE
-	var/go/target = null //The thing we're searching for
-	var/go/constant_target = null //The thing we're always focused on, if we're in the right mode
+	var/atom/movable/target = null //The thing we're searching for
+	var/atom/movable/constant_target = null //The thing we're always focused on, if we're in the right mode
 	var/target_x = 0 //The target coordinates if we're tracking those
 	var/target_y = 0
 	var/nuke_warning = FALSE // If we've set off a miniature alarm about an armed nuke

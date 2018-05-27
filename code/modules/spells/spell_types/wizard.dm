@@ -321,11 +321,11 @@
 	var/distfromcaster
 	playMagSound()
 	for(var/turf/T in targets) //Done this way so things don't get thrown all around hilariously.
-		for(var/go/AM in T)
+		for(var/atom/movable/AM in T)
 			thrownatoms += AM
 
 	for(var/am in thrownatoms)
-		var/go/AM = am
+		var/atom/movable/AM = am
 		if(AM == user || AM.anchored)
 			continue
 

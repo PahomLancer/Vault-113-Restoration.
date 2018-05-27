@@ -17,7 +17,7 @@
 			to_chat(user, "<span class='info'>Not enough fuel to smelt [src].</span>")
 	..()
 
-/obj/item/weapon/ore/Crossed(go/AM)
+/obj/item/weapon/ore/Crossed(atom/movable/AM)
 	var/obj/item/weapon/storage/bag/ore/OB
 	if(istype(loc, /turf/open/floor/plating/asteroid))
 		var/turf/open/floor/plating/asteroid/F = loc

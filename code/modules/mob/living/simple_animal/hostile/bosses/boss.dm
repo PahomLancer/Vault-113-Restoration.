@@ -36,7 +36,7 @@
 		AB.boss = null
 		AB.Remove(src)
 		qdel(AB)
-	del(boss_abilities)
+	qdel(boss_abilities)
 	return ..()
 
 

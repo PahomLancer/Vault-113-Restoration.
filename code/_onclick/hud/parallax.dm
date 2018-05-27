@@ -3,7 +3,7 @@
 	var/list/parallax_layers
 	var/list/parallax_layers_cached
 	var/static/list/parallax_static_layers_tail = newlist(/obj/screen/parallax_pmaster, /obj/screen/parallax_space_whitifier)
-	var/go/movingmob
+	var/atom/movable/movingmob
 	var/turf/previous_turf
 	var/dont_animate_parallax //world.time of when we can state animate()ing parallax again
 	var/last_parallax_shift //world.time of last update
@@ -192,7 +192,7 @@
 
 		L.screen_loc = "CENTER-7:[round(L.offset_x,1)],CENTER-7:[round(L.offset_y,1)]"
 
-/go/proc/update_parallax_contents()
+/atom/movable/proc/update_parallax_contents()
 	if(length(client_mobs_in_contents))
 		for(var/thing in client_mobs_in_contents)
 			var/mob/M = thing

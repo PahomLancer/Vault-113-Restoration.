@@ -549,13 +549,13 @@
 	..()
 	QDEL_IN(src, AMMO_DROP_LIFETIME)
 
-/obj/effect/ctf/ammo/Crossed(go/AM)
+/obj/effect/ctf/ammo/Crossed(atom/movable/AM)
 	reload(AM)
 
-/obj/effect/ctf/ammo/Bump(go/AM)
+/obj/effect/ctf/ammo/Bump(atom/movable/AM)
 	reload(AM)
 
-/obj/effect/ctf/ammo/Bumped(go/AM)
+/obj/effect/ctf/ammo/Bumped(atom/movable/AM)
 	reload(AM)
 
 /obj/effect/ctf/ammo/proc/reload(mob/living/M)

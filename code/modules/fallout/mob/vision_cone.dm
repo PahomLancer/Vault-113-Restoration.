@@ -67,6 +67,10 @@ mob/living/update_fov_position()
 	fov.screen_loc = "1:[-client.pixel_x],1:[-client.pixel_y]"
 
 mob/living/update_vision_cone()
+	if(src.fov)
+		src.fov.alpha = 0
+	return
+
 	if(src.client)
 		var/image/I = null
 		for(I in src.client.hidden_atoms)

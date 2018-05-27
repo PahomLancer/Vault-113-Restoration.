@@ -35,6 +35,7 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 /turf/closed/mineral //wall piece
 	name = "rock"
 	icon = 'icons/fallout/turfs/mining.dmi'
+	icon_state = "rock2"
 	//var/smooth_icon = 'icons/turf/smoothrocks.dmi'
 	//smooth = SMOOTH_MORE|SMOOTH_BORDER
 	canSmoothWith
@@ -64,8 +65,8 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 				var/turf/T = get_step(src, dir)
 				if(istype(T, /turf/closed/mineral/random))
 					Spread(T)
-	spawn(15)
-		randomizerock(mineraltype)
+	//spawn(15)
+		//randomizerock(mineraltype)
 /turf/closed/mineral/shuttleRotate(rotation)
 	setDir(angle2dir(rotation+dir2angle(dir)))
 	queue_smooth(src)

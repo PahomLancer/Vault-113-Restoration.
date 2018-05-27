@@ -407,7 +407,7 @@
 			for(var/obj/machinery/light/L in machines)
 				L.fix()
 
-//		if("floorlava")
+		if("floorlava")
 //			SSweather.run_weather("the floor is lava")
 
 		if("virus")

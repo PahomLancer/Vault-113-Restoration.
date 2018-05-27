@@ -4,7 +4,7 @@
 
 #define in_range(source, user) (get_dist(source, user) <= 1)
 
-#define ismovableatom(A) (istype(A, /go))
+#define ismovableatom(A) (istype(A, /atom/movable))
 
 //Turfs
 #define isopenturf(A) (istype(A, /turf/open))
@@ -114,7 +114,7 @@
 #define isovermind(A) (istype(A, /mob/camera/blob))
 
 //Objects
-#define isobj(A) istype(A, /obj) //override the byond proc because it returns true on children of /go that aren't objs
+#define isobj(A) istype(A, /obj) //override the byond proc because it returns true on children of /atom/movable that aren't objs
 
 #define isitem(A) istype(A, /obj/item)
 

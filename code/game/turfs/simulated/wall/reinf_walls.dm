@@ -7,7 +7,7 @@
 	density = 1
 
 	var/d_state = INTACT
-	hardness = 10
+	hardness = 200
 	sheet_type = /obj/item/stack/sheet/plasteel
 	sheet_amount = 1
 	girder_type = /obj/structure/girder/reinforced
@@ -234,6 +234,7 @@
 	return 0
 
 /turf/closed/wall/r_wall/update_icon()
+/*
 	if(d_state != INTACT)
 		smooth = SMOOTH_FALSE
 		clear_smooth_overlays()
@@ -244,6 +245,7 @@
 		queue_smooth(src)
 		icon_state = "r_wall"
 	update_damage_overlay()
+*/
 
 /turf/closed/wall/r_wall/singularity_pull(S, current_size)
 	if(current_size >= STAGE_FIVE)

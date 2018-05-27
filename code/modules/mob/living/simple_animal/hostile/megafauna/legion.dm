@@ -161,11 +161,11 @@ Difficulty: Medium
 
 	var/area/user_area = get_area(user)
 	var/datum/weather/A
-	for(var/V in SSweather.existing_weather)
-		var/datum/weather/W = V
-		if(W.target_z == user.z && W.area_type == user_area.type)
-			A = W
-			break
+//	for(var/V in SSweather.existing_weather)
+//		var/datum/weather/W = V
+//		if(W.target_z == user.z && W.area_type == user_area.type)
+//			A = W
+//			break
 	if(A)
 
 		if(A.stage != END_STAGE)

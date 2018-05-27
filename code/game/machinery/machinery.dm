@@ -170,7 +170,7 @@ Class Procs:
 
 /obj/machinery/proc/dropContents()
 	var/turf/T = get_turf(src)
-	for(var/go/A in contents)
+	for(var/atom/movable/A in contents)
 		A.forceMove(T)
 		if(isliving(A))
 			var/mob/living/L = A

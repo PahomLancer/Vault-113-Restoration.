@@ -1,15 +1,22 @@
 /mob/living/carbon
 	blood_volume = BLOOD_VOLUME_NORMAL
 
+	var/datum/special/special
+
 /mob/living/carbon/New()
 	create_reagents(1000)
 	update_body_parts() //to update the carbon's new bodyparts appearance
+
+	if(!special)
+		special = new /datum/special()
+		special.owner = src
+
 	..()
 
 /mob/living/carbon/Destroy()
 	for(var/guts in internal_organs)
 		qdel(guts)
-	for(var/go/food in stomach_contents)
+	for(var/atom/movable/food in stomach_contents)
 		qdel(food)
 	for(var/BP in bodyparts)
 		qdel(BP)
@@ -39,7 +46,7 @@
 				playsound(user.loc, 'sound/effects/attackblob.ogg', 50, 1)
 
 				if(prob(src.getBruteLoss() - 50))
-					for(var/go/A in stomach_contents)
+					for(var/atom/movable/A in stomach_contents)
 						A.forceMove(loc)
 						stomach_contents.Remove(A)
 					src.gib()
@@ -139,7 +146,7 @@
 	if(istype(target, /obj/screen))
 		return
 
-	var/go/thrown_thing
+	var/atom/movable/thrown_thing
 	var/obj/item/I = src.get_active_held_item()
 
 	if(!I)

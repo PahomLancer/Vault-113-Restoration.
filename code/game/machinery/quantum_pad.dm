@@ -136,7 +136,7 @@
 			playsound(get_turf(src), 'sound/weapons/emitter2.ogg', 25, 1, extrarange = 3, falloff = 5)
 			flick("qpad-beam", linked_pad)
 			playsound(get_turf(linked_pad), 'sound/weapons/emitter2.ogg', 25, 1, extrarange = 3, falloff = 5)
-			for(var/go/ROI in get_turf(src))
+			for(var/atom/movable/ROI in get_turf(src))
 				// if is anchored, don't let through
 				if(ROI.anchored)
 					if(isliving(ROI))

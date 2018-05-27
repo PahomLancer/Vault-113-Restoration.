@@ -108,7 +108,7 @@
 		if(iswallturf(loc))
 			to_chat(user, "<span class='warning'>There is already a wall present!</span>")
 			return
-		if(!isfloorturf(src.loc))
+		if(!isfloorturf(src.loc) && !isgroundturf(src.loc))
 			to_chat(user, "<span class='warning'>A floor must be present to build a false wall!</span>")
 			return
 		if (locate(/obj/structure/falsewall) in src.loc.contents)
@@ -266,7 +266,7 @@
 	else
 		return ..()
 
-/obj/structure/girder/CanPass(go/mover, turf/target, height=0)
+/obj/structure/girder/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height==0)
 		return 1
 	if(istype(mover) && mover.checkpass(PASSGRILLE))
@@ -280,7 +280,7 @@
 /obj/structure/girder/CanAStarPass(ID, dir, caller)
 	. = !density
 	if(ismovableatom(caller))
-		var/go/mover = caller
+		var/atom/movable/mover = caller
 		. = . || mover.checkpass(PASSGRILLE)
 
 /obj/structure/girder/deconstruct(disassembled = TRUE)

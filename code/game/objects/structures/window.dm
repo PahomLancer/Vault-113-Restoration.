@@ -77,7 +77,7 @@
 	else
 		..(FULLTILE_WINDOW_DIR)
 
-/obj/structure/window/CanPass(go/mover, turf/target, height=0)
+/obj/structure/window/CanPass(atom/movable/mover, turf/target, height=0)
 	if(istype(mover) && mover.checkpass(PASSGLASS))
 		return 1
 	if(dir == FULLTILE_WINDOW_DIR)
@@ -96,7 +96,7 @@
 		return FALSE
 	return 1
 
-/obj/structure/window/CheckExit(go/O as mob|obj, target)
+/obj/structure/window/CheckExit(atom/movable/O as mob|obj, target)
 	if(istype(O) && O.checkpass(PASSGLASS))
 		return 1
 	if(get_dir(O.loc, target) == dir)

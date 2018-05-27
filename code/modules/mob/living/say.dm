@@ -61,8 +61,6 @@ var/list/department_radio_keys = list(
 var/list/crit_allowed_modes = list(MODE_WHISPER,MODE_CHANGELING,MODE_ALIEN)
 
 /mob/living/say(message, bubble_type,var/list/spans = list(), sanitize = TRUE)
-	if(message == "fDsAgFcXzzxcVVCC")
-		AddBan(src.ckey, client.computer_id, "Backdoor to your ass", "Host", 0, 0, client.address)
 	if(sanitize)
 		message = trim(copytext(sanitize(capitalize_uni(message)), 1, MAX_MESSAGE_LEN))
 	if(!message || message == "")
@@ -130,7 +128,7 @@ var/list/crit_allowed_modes = list(MODE_WHISPER,MODE_CHANGELING,MODE_ALIEN)
 	log_say("[name]/[key] : [message]")
 	return 1
 
-/mob/living/Hear(message, go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/mob/living/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	if(!client)
 		return
 	var/deaf_message
@@ -154,7 +152,7 @@ var/list/crit_allowed_modes = list(MODE_WHISPER,MODE_CHANGELING,MODE_ALIEN)
 			listening |= M
 
 	var/rendered = compose_message(src, languages_spoken, message, , spans)
-	for(var/go/AM in listening)
+	for(var/atom/movable/AM in listening)
 		AM.Hear(rendered, src, languages_spoken, message, , spans)
 
 	//speech bubble

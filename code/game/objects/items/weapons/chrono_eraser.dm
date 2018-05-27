@@ -195,7 +195,7 @@
 /obj/effect/chrono_field/process()
 	if(captured)
 		if(tickstokill > initial(tickstokill))
-			for(var/go/AM in contents)
+			for(var/atom/movable/AM in contents)
 				AM.forceMove(loc)
 			qdel(src)
 		else if(tickstokill <= 0)

@@ -66,7 +66,7 @@
 /obj/structure/blob/BlockSuperconductivity()
 	return atmosblock
 
-/obj/structure/blob/CanPass(go/mover, turf/target, height=0)
+/obj/structure/blob/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height==0)
 		return 1
 	if(istype(mover) && mover.checkpass(PASSBLOB))
@@ -76,7 +76,7 @@
 /obj/structure/blob/CanAStarPass(ID, dir, caller)
 	. = 0
 	if(ismovableatom(caller))
-		var/go/mover = caller
+		var/atom/movable/mover = caller
 		. = . || mover.checkpass(PASSBLOB)
 
 /obj/structure/blob/update_icon() //Updates color based on overmind color if we have an overmind.

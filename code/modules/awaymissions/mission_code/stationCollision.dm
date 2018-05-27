@@ -48,18 +48,18 @@
 
 /obj/item/weapon/gun/ballistic/automatic/c20r/sc_c20r/New()
 	..()
-	for(var/ammo in magazine.stored_ammo)
+	for(var/I = 1 to magazine.ammo_left)
 		if(prob(95)) //95% chance
-			magazine.stored_ammo -= ammo
+			magazine.ammo_left -= 1
 
 //Barman's shotgun
 /obj/item/weapon/gun/ballistic/shotgun/sc_pump
 
 /obj/item/weapon/gun/ballistic/shotgun/sc_pump/New()
 	..()
-	for(var/ammo in magazine.stored_ammo)
+	for(var/ammo in magazine.ammo_left)
 		if(prob(95)) //95% chance
-			magazine.stored_ammo -= ammo
+			magazine.ammo_left -= ammo
 
 //Lasers
 /obj/item/weapon/gun/energy/laser/practice/sc_laser
@@ -138,7 +138,7 @@ var/sc_safecode5 = "[rand(0,9)]"
 	desc = "Your body becomes weak and your feel your mind slipping away as you try to comprehend what you know can't be possible."
 	move_self = 0 //Contianed narsie does not move!
 	grav_pull = 0 //Contained narsie does not pull stuff in!
-	var/uneatable = list(/turf/open/space, /obj/effect/overlay)
+	var/uneatable = list(/turf/open/space, /obj/effect/overlay, /mob/living/simple_animal/hostile/construct)
 //Override this to prevent no adminlog runtimes and admin warnings about a singularity without containment
 /obj/singularity/narsie/sc_Narsie/admin_investigate_setup()
 	return

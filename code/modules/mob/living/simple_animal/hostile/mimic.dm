@@ -121,7 +121,7 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 		death()
 
 /mob/living/simple_animal/hostile/mimic/copy/death()
-	for(var/go/M in src)
+	for(var/atom/movable/M in src)
 		M.forceMove(get_turf(src))
 	..()
 
@@ -265,11 +265,11 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 				visible_message("<span class='danger'>The <b>[src]</b> clears a jam!</span>")
 			Pewgun.chambered.forceMove(loc )//rip revolver immersions, blame shotgun snowflake procs
 			Pewgun.chambered = null
-			if(Pewgun.magazine && Pewgun.magazine.stored_ammo.len)
+			if(Pewgun.magazine && Pewgun.magazine.ammo_left)
 				Pewgun.chambered = Pewgun.magazine.get_round(0)
 				Pewgun.chambered.forceMove(Pewgun)
 			Pewgun.update_icon()
-		else if(Pewgun.magazine && Pewgun.magazine.stored_ammo.len) //only true for pumpguns i think
+		else if(Pewgun.magazine && Pewgun.magazine.ammo_left) //only true for pumpguns i think
 			Pewgun.chambered = Pewgun.magazine.get_round(0)
 			Pewgun.chambered.forceMove(Pewgun)
 			visible_message("<span class='danger'>The <b>[src]</b> cocks itself!</span>")

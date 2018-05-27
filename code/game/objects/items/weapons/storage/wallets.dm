@@ -27,10 +27,7 @@
 		/obj/item/weapon/reagent_containers/syringe,
 		/obj/item/weapon/screwdriver,
 		/obj/item/weapon/stamp,
-		/obj/item/stack/caps,
-		/obj/item/weapon/storage/keys_set,
-		/obj/item/door_key,
-		/obj/item/key)
+		/obj/item/stack/caps/target)
 	slot_flags = SLOT_ID
 
 	var/obj/item/weapon/card/id/front_id = null

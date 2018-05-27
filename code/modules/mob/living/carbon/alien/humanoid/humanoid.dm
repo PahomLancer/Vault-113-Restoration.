@@ -99,7 +99,7 @@
 
 /mob/living/carbon/alien/humanoid/alien_evolve(mob/living/carbon/alien/humanoid/new_xeno)
 	drop_all_held_items()
-	for(var/go/A in stomach_contents)
+	for(var/atom/movable/A in stomach_contents)
 		stomach_contents.Remove(A)
 		new_xeno.stomach_contents.Add(A)
 		A.forceMove(new_xeno)

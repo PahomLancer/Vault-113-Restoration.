@@ -75,7 +75,7 @@ var/const/tk_maxrange = 15
 	plane = ABOVE_HUD_PLANE
 
 	var/last_throw = 0
-	var/go/focus = null
+	var/atom/movable/focus = null
 	var/mob/living/host = null
 
 

@@ -4,7 +4,7 @@
 	name = "Ghoul"
 	id = "ghoul"
 	limbs_id = "ghoul"
-	race_color = "#984500"
+	say_mod = "growls"
 	roundstart = 1
 	armor = -30
 	speedmod = 0.5
@@ -12,7 +12,7 @@
 	punchdamagehigh = 6
 	punchstunthreshold = 6
 	use_skintones = 0
-	species_traits = list(RADIMMUNE, NOBLOOD, VIRUSIMMUNE)
+	species_traits = list(RADREGEN, RADIMMUNE, NOBLOOD, VIRUSIMMUNE, STIMPACKIMMUNE)
 	sexes = 0
 
 /datum/species/ghoul/qualifies_for_faction(faction_id)
@@ -26,6 +26,7 @@
 	for(var/obj/item/bodypart/b in C.bodyparts)
 		b.max_damage -= 10
 	C.faction |= "ghoul"
+
 /datum/species/ghoul/on_species_loss(mob/living/carbon/C)
 	..()
 	C.faction -= "ghoul"
@@ -36,6 +37,7 @@
 	name = "Glowing Ghoul"
 	id = "glowing ghoul"
 	limbs_id = "glowghoul"
+	say_mod = "grouls"
 	roundstart = 0
 	armor = -30
 	speedmod = 0.5
@@ -43,7 +45,7 @@
 	punchdamagehigh = 6
 	punchstunthreshold = 6
 	use_skintones = 0
-	species_traits = list(RADIMMUNE, NOBLOOD, VIRUSIMMUNE)
+	species_traits = list(RADREGEN, RADIMMUNE, NOBLOOD, VIRUSIMMUNE, STIMPACKIMMUNE)
 	sexes = 0
 
 //Ghouls have weak limbs.

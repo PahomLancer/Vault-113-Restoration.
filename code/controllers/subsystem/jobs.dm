@@ -269,7 +269,7 @@ var/datum/subsystem/job/SSjob
 		return 0
 
 	//Scale number of open security officer slots to population
-	setup_officer_positions()
+	//setup_officer_positions()
 
 	//Jobs will have fewer access permissions if the number of players exceeds the threshold defined in game_options.txt
 	if(config.minimal_access_threshold)
@@ -397,7 +397,7 @@ var/datum/subsystem/job/SSjob
 /datum/subsystem/job/proc/EquipRank(mob/living/H, rank, joined_late=0)
 	var/datum/job/job = GetJob(rank)
 
-	H.job = rank
+	H.job = job.title
 
 	//If we joined at roundstart we should be positioned at our workstation
 	if(!joined_late)
@@ -424,10 +424,7 @@ var/datum/subsystem/job/SSjob
 					if(clear)
 						S = T
 						continue
-		if(istype(S, /obj/effect/landmark) && isturf(S.loc))
-			H.forceMove(S.loc)
-	else
-		H.forceMove(get_turf(pick(latejoin)))
+		H.forceMove(get_turf(S))
 
 	if(H.mind)
 		H.mind.assigned_role = job.title
@@ -441,8 +438,10 @@ var/datum/subsystem/job/SSjob
 	to_chat(H, "<b>As the [job.title] you answer directly to [job.supervisors].</b>")
 	if(job && H)
 		job.after_spawn(H)
-	else
-		H.forceMove(get_turf(pick(latejoin)))
+
+	H.contents_weight = 0
+	for(var/obj/item/I in H.contents)
+		H.update_weight(I.self_weight)
 
 	return H
 

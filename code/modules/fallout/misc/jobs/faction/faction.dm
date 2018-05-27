@@ -42,6 +42,9 @@ proc/get_faction_members(var/faction)
 
 	var/list/members = list()
 
+	var/karma = 0
+	var/datum/perkController/perks
+
 // Frequency settings
 	var/freq
 	var/encryption_key
@@ -52,6 +55,8 @@ proc/get_faction_members(var/faction)
 
 /datum/f13_faction/New()
 	..()
+	perks = new /datum/perkController(src)
+
 	if(flags & HAVE_FREQ)
 		freq = sanitize_frequency(rand(MIN_FREQ, MAX_FREQ))
 		encryption_key = format_encryption_key(rand(0, 9999))
@@ -169,7 +174,14 @@ mob/proc/begin_head_voting()
 	return 1
 
 mob/proc/set_faction(var/faction)
+	if((faction == "bs") || (faction == "enclave"))
+		src:perks.add(/datum/perk_hidden/powerArmor)
+
+	log_faction("[src.real_name]([src.ckey]) changed faction to [faction]");
+
 	var/datum/f13_faction/F = get_faction_datum(faction)
+	src:karmaAdd(F.karma, FALSE)
+
 	var/datum/f13_faction/last_F = get_faction_datum(src.social_faction)
 	if(!F)
 		return 0
@@ -195,6 +207,7 @@ mob/proc/set_faction(var/faction)
 	full_name = "Independent Wastelanders"
 	description = "<b>Alignment: True Neutral</b><br>Wastelanders - A catch-all term for anyone living in the wasteland who are not affiliated with any other groups.<br>They make a subsistence living off the land, trade with local settlements, and try not to be ravaged by the abundant (and usually hostile) wildlife, or bands of roaming raider gangs and slavers.<br><i>Home, home on the wastes...</i>"
 	id = "none"
+	karma = 0
 
 /datum/f13_faction/city
 	name = "City"
@@ -207,6 +220,7 @@ mob/proc/set_faction(var/faction)
 	flags = HAVE_FREQ
 	area = /area/f13/city
 	verbs = list(/mob/proc/begin_head_voting)
+	karma = 10
 
 /datum/f13_faction/raider
 	name = "Raiders"
@@ -218,6 +232,7 @@ mob/proc/set_faction(var/faction)
 	description = "<b>Alignment: Chaotic Evil</b><br>Raiders - Any group of wastelanders who pillage, plunder, murder, or otherwise ruin the day of anyone unfortunate enough to not be one of them.<br>Raiders tend to organize into loose confederations of gangs in the post-apocalyptic wasteland, and are a constant problem.<br>Raiders typically prey upon travelers and very small towns, leaving more populous or larger areas alone."
 	verbs = list(/mob/proc/begin_head_voting)
 	area = /area/f13/raiders
+	karma = -10
 
 /datum/f13_faction/vault
 	name = "Vault"
@@ -230,6 +245,7 @@ mob/proc/set_faction(var/faction)
 	flags = HAVE_FREQ
 	verbs = list(/mob/proc/begin_head_voting)
 	area = /area/f13/vault
+	karma = 15
 //	craft_recipes = list(/datum/table_recipe/vlt_encryption_key)
 
 /datum/f13_faction/brotherhood
@@ -243,6 +259,13 @@ mob/proc/set_faction(var/faction)
 	flags = HAVE_FREQ
 	area = /area/f13/brotherhood
 	verbs = list(/mob/proc/begin_head_voting)
+	karma = 10
+	welcome_text = "Your current objectives are:<br>\
+1. � �������� ���� ������ �������������� ������� �� ������ �������� � �������, ���� �� �� ������� ������, ������� ���� � ���!<br>\
+2. �������� � ���� ������������ - ������ > ������ > ������� > ����������. ������ > ������� > ����������. �������� ���� ���������, ���� � �������� ���������� ������� ������������� ������� ����! <br>\
+3. �����, � ������, ������ �������� - ����� ���������� � ������ � ��������, �� ��, ������ ������� ����� � ���� �������, �������������, �� ��� �� ������ �� ���������� ����������, �������, ������ � ����� ����� ���������� �� ��������� ���!<br>\
+4. �� �� ������ �������� ���������, � ������� ������ ������� ����� ������������, ������ ������������ ����������, ������ ��� � ���������� ������� ��� � ������ � ������, �� ������������� �� ������ ����������, �� ������� ��� ���� ����. �������� ���! ���� �� ����� �� ��������, �� �� ������ ���������� ������������ ���� ����������, �������� �� ���� ����������! �� � ���� �� ��� ����������, �������, ��� ������ ������ �� ��� ������ �������� � ������, ���� �� ����� �� ���� ��������.<br>"
+
 
 /datum/f13_faction/enclave
 	name = "Enclave"
@@ -254,7 +277,13 @@ mob/proc/set_faction(var/faction)
 	head_status = "colonel"
 	flags = HAVE_FREQ
 	area = /area/f13/enclave
+	karma = -5
 	verbs = list(/mob/proc/begin_head_voting)
+	welcome_text = "Your current objectives are:<br>\
+1. ��� ������ �������, �� ���������� � ��������� �������, � ��� �� ������� �������, �� �������� ���� �����! ��� ����� �����!<br>\
+2. ���� ������ �� ���� ���������� ������� � ���� �������� �����, ������ ��, ������ ������������ �������� ������������ ���. ��� �� �����, �� ������ � ���� ����, ����� ������ ����� �� ��������, ���� ��� �������, ������!<br>\
+3. ���������, �������, � ������ - �������� ����������� ���, �� ��������. �� ����� ������� �� ���� ���� ����, �� �� ����� �� ����� � ���� ������� ���!<br>\
+4. � ���������, ���� �� � �������������� - ��� ��� �� ������� �������, ������ ���������� ������ ��� ����������� ������ ������, � ��� ������� ���� ��������, � �� ����������.<br>"
 
 /datum/f13_faction/ahs
 	name = "Hubologists"
@@ -278,6 +307,7 @@ mob/proc/set_faction(var/faction)
 	head_status = "ncr_general"
 	verbs = list(/mob/proc/begin_head_voting)
 	area = /area/f13/ncr
+	karma = 5
 	welcome_text = "Your current objectives are:<br>\
 1. As an NCR soldier you must uphold the law around the town, exterminate any raiders you see, seek and destroy the Legion members.<br>\
 2. As an NCR soldier you must protect the innocent from the horrors of the wasteland.<br>\
@@ -293,6 +323,7 @@ mob/proc/set_faction(var/faction)
 	color = "#C24D44"
 	flags = HAVE_FREQ | HAVE_FLAG
 	area = /area/f13/legion
+	karma = -5
 //	craft_recipes = list(/datum/table_recipe/legion_recruit_armor, /datum/table_recipe/legion_recruit_helm, \
 						 /datum/table_recipe/legion_encryption_key)
 	welcome_text = "Your current objectives:<br>\
@@ -308,8 +339,8 @@ mob/proc/set_faction(var/faction)
 	description = "<b>Alignment: Neutral Good</b><br>The Followers of the Apocalypse, or simply the Followers - A post-War organization whose goal is to tend to the inhabitants of the wasteland, as well as to ensure that the horrors of the Great War are never to be repeated.<br>To that end, they serve as keepers of knowledge, a position which provides them with the skills they need to carry out their mission.<br>They don't follow a single Great Leader, but instead a handful of independent Leaders for each group."
 	preview_image = 'html/factions/followers.png'
 	head_status = "leader"
-	verbs = list(/mob/proc/begin_head_voting)
 	area = /area/f13/followers
+	karma = 10
 
 /datum/f13_faction/acolytes
 	name = "Acolytes"

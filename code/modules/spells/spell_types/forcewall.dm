@@ -30,7 +30,7 @@
 	wizard = summoner
 	QDEL_IN(src, 300)
 
-/obj/effect/forcefield/wizard/CanPass(go/mover, turf/target, height=0)
+/obj/effect/forcefield/wizard/CanPass(atom/movable/mover, turf/target, height=0)
 	if(mover == wizard)
 		return 1
 	return 0

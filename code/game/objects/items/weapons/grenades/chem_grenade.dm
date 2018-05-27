@@ -151,7 +151,7 @@
 	prime()
 
 
-/obj/item/weapon/grenade/chem_grenade/Crossed(go/AM)
+/obj/item/weapon/grenade/chem_grenade/Crossed(atom/movable/AM)
 	if(nadeassembly)
 		nadeassembly.Crossed(AM)
 

@@ -192,7 +192,8 @@ Proc for attack log creation, because really why not
 		if(target.mind)
 			target.mind.attack_log += message
 
-	log_attack("[user ? "[user.name][(is_mob_user && user.ckey) ? "([user.ckey])" : ""]" : "NON-EXISTANT SUBJECT"] [what_done] [target ? "[target.name][(is_mob_target && target.ckey)? "([target.ckey])" : ""]" : "NON-EXISTANT SUBJECT"][object ? " with [object]" : " "][addition][(living_target) ? " (NEWHP: [living_target.health])" : ""][(attack_location) ? "([attack_location.x],[attack_location.y],[attack_location.z])" : ""]")
+	if(istype(user, /mob/living/carbon) && istype(target, /mob/living/carbon))
+		log_attack("[user ? "[user.real_name][(is_mob_user && user.ckey) ? "([user.ckey])" : ""]" : "NON-EXISTANT SUBJECT"] [what_done] [target ? "[target.real_name][(is_mob_target && target.ckey)? "([target.ckey])" : ""]" : "NON-EXISTANT SUBJECT"][object ? " with [object]" : " "][addition][(living_target) ? " (NEWHP: [living_target.health])" : ""][(attack_location) ? "([attack_location.x],[attack_location.y],[attack_location.z])" : ""]")
 
 
 /proc/do_mob(mob/user , mob/target, time = 30, uninterruptible = 0, progress = 1)
@@ -209,7 +210,7 @@ Proc for attack log creation, because really why not
 	var/holding = user.get_active_held_item()
 	var/datum/progressbar/progbar
 	if (progress)
-		progbar = new(user, time, target)
+		progbar = PoolOrNew(/datum/progressbar, list (user, time, target))
 
 	var/endtime = world.time+time
 	var/starttime = world.time
@@ -256,7 +257,7 @@ Proc for attack log creation, because really why not
 
 	var/datum/progressbar/progbar
 	if (progress)
-		progbar = new(user, delay, target)
+		progbar = PoolOrNew(/datum/progressbar, list (user, delay, target))
 
 	var/endtime = world.time + delay
 	var/starttime = world.time
@@ -309,7 +310,7 @@ Proc for attack log creation, because really why not
 	var/holding = user.get_active_held_item()
 	var/datum/progressbar/progbar
 	if(progress)
-		progbar = new(user, time, targets[1])
+		progbar = PoolOrNew(/datum/progressbar, list(user, time, targets[1]))
 
 	var/endtime = world.time + time
 	var/starttime = world.time
@@ -359,7 +360,7 @@ Proc for attack log creation, because really why not
 		CRASH("attempt to spawn atom type: [spawn_type] in nullspace")
 
 	for(var/j in 1 to amount)
-		var/go/X = new spawn_type(T)
+		var/atom/movable/X = new spawn_type(T)
 		X.admin_spawned = admin_spawn
 
 		if(always_max_walk || prob(walk_chance))

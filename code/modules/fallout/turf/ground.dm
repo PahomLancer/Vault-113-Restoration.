@@ -30,7 +30,7 @@
 		else
 			to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
 
-///turf/ground/Entered(go/A)
+///turf/ground/Entered(atom/movable/A)
 //	..()
 
 /turf/open/indestructible/ground/handle_slip()
@@ -49,7 +49,7 @@ var/global/list/desertTurfEdgeCache
 	icon_state = "wasteland"
 	step_sounds = list("human" = "dirtfootsteps")
 	allowed_plants = list(/obj/item/seeds/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit, \
-	/obj/item/seeds/ferocactus, /obj/item/seeds/corn,/obj/item/seeds/shroom, /obj/item/seeds/agave)
+	/obj/item/seeds/ferocactus, /obj/item/seeds/corn,/obj/item/seeds/shroom)
 	slowdown = 0.1
 	flags = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
 
@@ -61,7 +61,7 @@ var/global/list/desertTurfEdgeCache
 	icon_state = "dirtfull"
 	step_sounds = list("human" = "dirtfootsteps")
 	allowed_plants = list(/obj/item/seeds/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit, \
-	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn, /obj/item/seeds/agave)
+	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn)
 	slowdown = 0.2
 	flags = CAN_HAVE_NATURE
 

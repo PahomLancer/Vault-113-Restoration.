@@ -99,6 +99,9 @@
 		ExtinguishMob() //If there's no oxygen in the tile we're on, put out the fire
 		return
 	var/turf/location = get_turf(src)
+	if(location.has_weather("rain"))
+		ExtinguishMob()
+		return
 	location.hotspot_expose(700, 50, 1)
 
 /mob/living/proc/handle_stomach()

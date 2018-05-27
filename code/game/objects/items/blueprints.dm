@@ -283,7 +283,7 @@
 	return BORDER_2NDTILE
 
 /turf/open/check_tile_is_border()
-	for(var/go/AM in src)
+	for(var/atom/movable/AM in src)
 		if(!CANATMOSPASS(AM, src))
 			return BORDER_2NDTILE
 

@@ -554,6 +554,9 @@
 	if(!MP)
 		return 0	//Sanity, this should never happen.
 
+	if(ispath(MP, /mob/living/simple_animal/hostile/construct))
+		return 0 //Verbs do not appear for players.
+
 //Good mobs!
 	if(ispath(MP, /mob/living/simple_animal/pet/cat))
 		return 1

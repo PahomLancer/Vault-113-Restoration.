@@ -27,7 +27,7 @@
 	..()
 	move_update_air(T)
 
-/obj/structure/emergency_shield/CanPass(go/mover, turf/target, height)
+/obj/structure/emergency_shield/CanPass(atom/movable/mover, turf/target, height)
 	if(!height) return 0
 	else return ..()
 
@@ -514,7 +514,7 @@
 		drain_power(drain_amount)
 
 
-/obj/machinery/shieldwall/CanPass(go/mover, turf/target, height=0)
+/obj/machinery/shieldwall/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height==0) return 1
 
 	if(istype(mover) && mover.checkpass(PASSGLASS))

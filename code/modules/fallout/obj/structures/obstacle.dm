@@ -35,10 +35,45 @@
 				playsound(loc, WT.usesound, 40, 1)
 				if(do_after(user, 40*I.toolspeed, target = src))
 					obj_integrity = Clamp(obj_integrity + 20, 0, max_integrity)
+
+//crc
+	var/obj/item/stack/sheet/S = I
+	if(istype(S,/obj/item/stack/sheet/metal))
+		if(S.get_amount() < 2)
+			to_chat(user, "<span class='warning'>You need two sheets of metal to finish a wall!</span>")
+			return
+		to_chat(user, "<span class='notice'>You start adding plating...</span>")
+		if (do_after(user, 40, target = src))
+			if(loc == null || S.get_amount() < 2)
+				return
+			S.use(2)
+			to_chat(user, "<span class='notice'>You add the plating.</span>")
+			var/turf/T = get_turf(src)
+			T.ChangeTurf(/turf/closed/wall/f13/store)
+			transfer_fingerprints_to(T)
+			qdel(src)
+		return
+	if(istype(S,/obj/item/stack/sheet/mineral/wood))
+		if(S.get_amount() < 2)
+			to_chat(user, "<span class='warning'>You need two wood planks to finish a wall!</span>")
+			return
+		to_chat(user, "<span class='notice'>You start adding plating...</span>")
+		if (do_after(user, 40, target = src))
+			if(loc == null || S.get_amount() < 2)
+				return
+			S.use(2)
+			to_chat(user, "<span class='notice'>You add the plating.</span>")
+			var/turf/T = get_turf(src)
+			T.ChangeTurf(/turf/closed/wall/f13/wood/house)
+			transfer_fingerprints_to(T)
+			qdel(src)
+		return
+
+//crc
 	else
 		return ..()
 
-/obj/structure/barricade/CanPass(go/mover, turf/target, height=0)//So bullets will fly over and stuff.
+/obj/structure/barricade/CanPass(atom/movable/mover, turf/target, height=0)//So bullets will fly over and stuff.
 	if(height==0)
 		return 1
 	if(locate(/obj/structure/barricade) in get_turf(mover))
@@ -65,18 +100,6 @@
 	icon = 'icons/fallout/objects/structures/fences.dmi'
 	icon_state = "woodenbarricade"
 	material = WOOD
-
-/obj/structure/barricade/wooden/attackby(obj/item/weapon/I, mob/living/user, params)
-	if(istype(I, /obj/item/stack/sheet/mineral/wood) && (isfloorturf(loc) || isgroundturf(loc)))
-		var/obj/item/stack/sheet/mineral/wood/W = I
-		if(W.amount >= 3)
-			to_chat(user, "<span class='notice'>You begin building wall.</span>")
-			if(do_after(user, 100, target = src) && W.use(3))
-				var/turf/open/T = loc
-				T.ChangeTurf(/turf/closed/wall/f13/wood)
-				qdel(src)
-				return 1
-	. = ..()
 
 /obj/structure/barricade/wooden/make_debris()
 	new /obj/item/stack/sheet/mineral/wood(get_turf(src), 3)
@@ -109,8 +132,6 @@
 	pass_flags = LETPASSTHROW
 	material = SAND
 	climbable = TRUE
-	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/obj/structure/barricade/sandbags, /turf/closed/wall, /turf/closed/wall/r_wall, /obj/structure/falsewall, /obj/structure/falsewall/reinforced, /turf/closed/wall/rust, /turf/closed/wall/r_wall/rust, /obj/structure/barricade/security)
 
 /obj/structure/barricade/security
 	name = "police barrier"

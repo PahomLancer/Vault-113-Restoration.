@@ -5,6 +5,10 @@ var/datum/subsystem/radiation/SSradiation
 
 	wait = 50
 
+	priority = 5
+
+	display_order = 1
+
 	var/list/currentrun = list()
 	var/list/processing = list()
 

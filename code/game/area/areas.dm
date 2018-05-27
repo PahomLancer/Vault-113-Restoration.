@@ -100,7 +100,6 @@ var/list/teleportlocs = list()
 /area/New()
 	icon_state = ""
 	layer = AREA_LAYER
-	plane = WEATHER_PLANE
 	master = src
 	uid = ++global_uid
 	related = list(src)
@@ -121,6 +120,8 @@ var/list/teleportlocs = list()
 	power_change()		// all machines set to current power level, also updates icon
 
 	blend_mode = BLEND_MULTIPLY // Putting this in the constructor so that it stops the icons being screwed up in the map editor.
+
+
 
 /area/proc/poweralert(state, obj/source)
 	if (state != poweralm)
@@ -297,9 +298,20 @@ var/list/teleportlocs = list()
 					addtimer(CALLBACK(D, /obj/machinery/door/firedoor.proc/open), 0)
 
 /area/proc/updateicon()
-	icon = 'icons/effects/alphacolors.dmi'
-	if(!src.open_space)
-		icon_state = "black"
+	if ((fire || eject || party) && (!requires_power||power_environ))//If it doesn't require power, can still activate this proc.
+		if(fire && !eject && !party)
+			icon_state = "blue"
+		else if(!fire && eject && !party)
+			icon_state = "red"
+		else if(party && !fire && !eject)
+			icon_state = "party"
+		else
+			icon_state = "blue-red"
+		invisibility = INVISIBILITY_LIGHTING
+	else
+	//	new lighting behaviour with obj lights
+		icon_state = null
+		invisibility = INVISIBILITY_MAXIMUM
 
 /area/space/updateicon()
 	icon_state = null

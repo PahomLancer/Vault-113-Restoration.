@@ -12,6 +12,8 @@ var/datum/subsystem/objectives/SSobjectives
 	NEW_SS_GLOBAL(SSobjectives)
 
 /datum/subsystem/objectives/Initialize(timeofday)
+	return 0
+
 	var/list/objs = subtypesof(/datum/f13_objective)
 	if(!objs.len)
 		to_chat(world, "<span class='boldannounce'>Error setting up objectives, no objective datums found!</span>")
@@ -19,9 +21,10 @@ var/datum/subsystem/objectives/SSobjectives
 	for(var/type in objs)
 		var/datum/f13_objective/O = new type()
 		all_objectives += O
-	..()
 
 /datum/subsystem/objectives/proc/setup_objectives()
+	return 0
+
 	for(var/datum/mind/mind in ticker.minds)
 		if(!mind.current)
 			continue

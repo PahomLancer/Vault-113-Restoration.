@@ -15,6 +15,8 @@ var/datum/subsystem/events/SSevent
 	var/list/holidays			//List of all holidays occuring today or null if no holidays
 	var/wizardmode = 0
 
+	can_fire = 0
+
 
 /datum/subsystem/events/New()
 	NEW_SS_GLOBAL(SSevent)

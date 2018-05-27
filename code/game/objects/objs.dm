@@ -1,7 +1,6 @@
 /obj
 	languages_spoken = HUMAN
 	languages_understood = HUMAN
-	parent_type = /go
 	var/crit_fail = 0
 	animate_movement = 2
 	var/throwforce = 0
@@ -148,7 +147,7 @@
 		machine = null
 
 //called when the user unsets the machine.
-/go/proc/on_unset_machine(mob/user)
+/atom/movable/proc/on_unset_machine(mob/user)
 	return
 
 /mob/proc/set_machine(obj/O)

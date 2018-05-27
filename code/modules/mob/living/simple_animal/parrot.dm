@@ -82,7 +82,7 @@
 
 	//The thing the parrot is currently interested in. This gets used for items the parrot wants to pick up, mobs it wants to steal from,
 	//mobs it wants to attack or mobs that have attacked it
-	var/go/parrot_interest = null
+	var/atom/movable/parrot_interest = null
 
 	//Parrots will generally sit on their perch unless something catches their eye.
 	//These vars store their preffered perch and if they dont have one, what they can use as a perch
@@ -144,7 +144,7 @@
 		stat("Held Item", held_item)
 		stat("Mode",a_intent)
 
-/mob/living/simple_animal/parrot/Hear(message, go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/mob/living/simple_animal/parrot/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	if(speaker != src && prob(50)) //Dont imitate ourselves
 		if(!radio_freq || prob(10))
 			if(speech_buffer.len >= 500)
@@ -459,7 +459,7 @@
 			return
 
 		if(!held_item && !parrot_perch) //If we've got nothing to do.. look for something to do.
-			var/go/AM = search_for_perch_and_item() //This handles checking through lists so we know it's either a perch or stealable item
+			var/atom/movable/AM = search_for_perch_and_item() //This handles checking through lists so we know it's either a perch or stealable item
 			if(AM)
 				if(istype(AM, /obj/item) || isliving(AM))	//If stealable item
 					parrot_interest = AM
@@ -623,7 +623,7 @@
 
 /mob/living/simple_animal/parrot/proc/search_for_item()
 	var/item
-	for(var/go/AM in view(src))
+	for(var/atom/movable/AM in view(src))
 		//Skip items we already stole or are wearing or are too big
 		if(parrot_perch && AM.loc == parrot_perch.loc || AM.loc == src)
 			continue
@@ -654,7 +654,7 @@
 
 //This proc was made to save on doing two 'in view' loops seperatly
 /mob/living/simple_animal/parrot/proc/search_for_perch_and_item()
-	for(var/go/AM in view(src))
+	for(var/atom/movable/AM in view(src))
 		for(var/perch_path in desired_perches)
 			if(istype(AM, perch_path))
 				return AM
@@ -797,7 +797,7 @@
 		return
 
 	if(icon_state == "parrot_fly")
-		for(var/go/AM in view(src,1))
+		for(var/atom/movable/AM in view(src,1))
 			for(var/perch_path in desired_perches)
 				if(istype(AM, perch_path))
 					src.forceMove(AM.loc)

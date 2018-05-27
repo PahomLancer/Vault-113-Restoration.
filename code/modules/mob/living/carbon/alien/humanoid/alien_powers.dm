@@ -277,7 +277,7 @@ Doesn't work on other aliens/AI.*/
 
 /obj/effect/proc_holder/alien/regurgitate/fire(mob/living/carbon/user)
 	if(user.stomach_contents.len)
-		for(var/go/A in user.stomach_contents)
+		for(var/atom/movable/A in user.stomach_contents)
 			user.stomach_contents.Remove(A)
 			A.forceMove(user.loc)
 			if(isliving(A))

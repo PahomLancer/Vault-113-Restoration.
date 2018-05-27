@@ -66,7 +66,7 @@
 				to_chat(M, "<span class='notice'>You [eatverb] \the [src].</span>")
 			else if(fullness > 500 && fullness < 600)
 				to_chat(M, "<span class='notice'>You unwillingly [eatverb] a bit of \the [src].</span>")
-			else if(fullness > (600 * (1 + M.overeatduration / 2000)))	// The more you eat - the more you can eat
+			else if(fullness > (900 * (1 + M.overeatduration / 2000)))	// The more you eat - the more you can eat
 				to_chat(M, "<span class='warning'>You cannot force any more of \the [src] to go down your throat!</span>")
 				return 0
 		else
@@ -251,7 +251,7 @@
 
 /obj/item/weapon/reagent_containers/food/snacks/Destroy()
 	if(contents)
-		for(var/go/something in contents)
+		for(var/atom/movable/something in contents)
 			something.forceMove(get_turf(src))
 	return ..()
 

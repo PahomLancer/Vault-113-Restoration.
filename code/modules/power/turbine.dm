@@ -98,7 +98,7 @@
 
 // Crucial to make things work!!!!
 // OLD FIX - explanation given down below.
-// /obj/machinery/power/compressor/CanPass(go/mover, turf/target, height=0)
+// /obj/machinery/power/compressor/CanPass(atom/movable/mover, turf/target, height=0)
 // 		return !density
 
 /obj/machinery/power/compressor/locate_machinery()

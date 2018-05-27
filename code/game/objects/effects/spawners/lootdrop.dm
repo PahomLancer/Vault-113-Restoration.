@@ -5,8 +5,18 @@
 	var/lootcount = 1		//how many items will be spawned
 	var/lootdoubles = 1		//if the same item can be spawned twice
 	var/list/loot			//a list of possible items to spawn e.g. list(/obj/item, /obj/structure, /obj/effect)
+	var/obj/spawned_item
+	invisibility = INVISIBILITY_ABSTRACT
 
 /obj/effect/spawner/lootdrop/New()
+	spawnLoot()
+
+
+/obj/effect/spawner/lootdrop/proc/spawnLoot()
+	if(spawned_item)
+		if(spawned_item.loc == loc)
+			return
+
 	if(loot && loot.len)
 		for(var/i = lootcount, i > 0, i--)
 			if(!loot.len) break
@@ -15,8 +25,13 @@
 				loot.Remove(lootspawn)
 
 			if(lootspawn)
-				new lootspawn(get_turf(src))
-	qdel(src)
+				spawned_item = new lootspawn(get_turf(src))
+
+	spawn(LOOT_RESPAWN)
+		spawnLoot()
+
+	for(var/obj/structure/closet/C in range(1, src))
+		C.take_contents()
 
 /obj/effect/spawner/lootdrop/armory_contraband
 	name = "armory contraband gun spawner"
@@ -145,6 +160,8 @@
 				/obj/item/weapon/relic = 3,
 				/obj/item/weaponcrafting/reciever = 2,
 				/obj/item/clothing/head/cone = 2,
+				/obj/item/crafting/weapon_repair_kit = 4,
+				/obj/item/crafting/reloader_set = 6,
 				/obj/item/weapon/grenade/smokebomb = 2,
 				/obj/item/device/geiger_counter = 3,
 				/obj/item/weapon/reagent_containers/food/snacks/grown/citrus/orange = 1,

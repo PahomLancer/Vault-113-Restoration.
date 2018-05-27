@@ -30,9 +30,7 @@ var/datum/subsystem/garbage_collector/SSgarbage
 	// of the immortality qdel hints
 	var/list/noforcerespect = list()
 
-#ifdef TESTING
 	var/list/qdel_list = list()	// list of all types that have been qdel()eted
-#endif
 
 /datum/subsystem/garbage_collector/New()
 	NEW_SS_GLOBAL(SSgarbage)
@@ -74,6 +72,8 @@ var/datum/subsystem/garbage_collector/SSgarbage
 	delslasttick = 0
 	gcedlasttick = 0
 	var/time_to_kill = world.time - collection_timeout // Anything qdel() but not GC'd BEFORE this time needs to be manually del()
+	time_to_kill = 0 // No more del()
+
 	var/list/queue = src.queue
 	var/starttime = world.time
 	var/starttimeofday = world.timeofday
@@ -157,9 +157,7 @@ var/datum/subsystem/garbage_collector/SSgarbage
 /proc/qdel(datum/D, force=FALSE)
 	if(!D)
 		return
-#ifdef TESTING
 	SSgarbage.qdel_list += "[D.type]"
-#endif
 	if(!istype(D))
 		del(D)
 	else if(isnull(D.gc_destroyed))
@@ -192,9 +190,7 @@ var/datum/subsystem/garbage_collector/SSgarbage
 				del(D)
 			if (QDEL_HINT_FINDREFERENCE)//qdel will, if TESTING is enabled, display all references to this object, then queue the object for deletion.
 				SSgarbage.QueueForQueuing(D)
-				#ifdef TESTING
 				D.find_references()
-				#endif
 			else
 				if(!SSgarbage.noqdelhint["[D.type]"])
 					SSgarbage.noqdelhint["[D.type]"] = "[D.type]"
@@ -235,10 +231,9 @@ var/datum/subsystem/garbage_collector/SSgarbage
 
 /datum/var/gc_destroyed //Time when this object was destroyed.
 
-#ifdef TESTING
 /datum/var/running_find_references
 
-/datum/verb/find_refs()
+/datum/proc/find_refs()
 	set category = "Debug"
 	set name = "Find References"
 	set background = 1
@@ -254,7 +249,7 @@ var/datum/subsystem/garbage_collector/SSgarbage
 			usr.client.running_find_references = null
 			running_find_references = null
 			//restart the garbage collector
-			SSgarbage.can_fire = 1
+			SSgarbage.can_fire = 0
 			SSgarbage.next_fire = world.time + world.tick_lag
 			return
 
@@ -286,10 +281,10 @@ var/datum/subsystem/garbage_collector/SSgarbage
 	running_find_references = null
 
 	//restart the garbage collector
-	SSgarbage.can_fire = 1
+	SSgarbage.can_fire = 0
 	SSgarbage.next_fire = world.time + world.tick_lag
 
-/client/verb/purge_all_destroyed_objects()
+/client/proc/purge_all_destroyed_objects()
 	set category = "Debug"
 	if(SSgarbage)
 		while(SSgarbage.queue.len)
@@ -299,7 +294,7 @@ var/datum/subsystem/garbage_collector/SSgarbage
 				SSgarbage.totaldels++
 			SSgarbage.queue.Cut(1, 2)
 
-/datum/verb/qdel_then_find_references()
+/datum/proc/qdel_then_find_references()
 	set category = "Debug"
 	set name = "qdel() then Find References"
 	set background = 1
@@ -309,7 +304,7 @@ var/datum/subsystem/garbage_collector/SSgarbage
 	if(!running_find_references)
 		find_references(TRUE)
 
-/client/verb/show_qdeleted()
+/client/proc/show_qdeleted()
 	set category = "Debug"
 	set name = "Show qdel() Log"
 	set desc = "Render the qdel() log and display it"
@@ -326,4 +321,3 @@ var/datum/subsystem/garbage_collector/SSgarbage
 		dat += "[path] - [tmplist[path]] times<BR>"
 
 	usr << browse(dat, "window=qdeletedlog")
-#endif

@@ -15,7 +15,7 @@
 	minimal_access = list()
 	outfit = /datum/outfit/job/settler
 
-	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
+	allowed_packs = list("starter", "cigarettes", "follower", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
 
 /datum/outfit/job/settler
 	name = "Settler"
@@ -41,7 +41,7 @@
 	minimal_access = list()
 	outfit = /datum/outfit/job/adventurer
 
-	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
+	allowed_packs = list("starter", "cigarettes", "follower", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
 
 	required_items = list(
 	/obj/item/clothing/shoes/f13/brownie,
@@ -86,15 +86,15 @@
 	department_flag = MEDSCI
 	faction = "none"
 	status = "none"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "nobody"
 	selection_color = "#ece19d"
 	access = list()
 	minimal_access = list()
 	outfit = /datum/outfit/job/mercenary
 
-	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
+	allowed_packs = list("starter", "cigarettes", "follower", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom")
 
 	required_items = list(
 	/obj/item/clothing/shoes/f13/tan,
@@ -146,7 +146,7 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/ballistic/shotgun/pipe
 	belt_contents = list(/obj/item/ammo_casing/shotgun/rubbershot = 5, \
-		/obj/item/weapon/reagent_containers/pill/patch/healingpowder = 2, \
+		/obj/item/stack/medical/healingpowder = 2, \
 		/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 1, \
 		/obj/item/device/radio = 1, \
 		/obj/item/device/flashlight/torch/flare/green = 1)

@@ -34,15 +34,18 @@
 			output += "<p>\[ <a href='byond://?src=\ref[src];ready=1'>Ready</a> | <b>Not Ready</b> \]</p>"
 
 	else
-		output += "<p><a href='byond://?src=\ref[src];manifest=1'>View Manifest</A></p>"
+		//output += "<p><a href='byond://?src=\ref[src];manifest=1'>View Manifest</A></p>"
 		output += "<p><a href='byond://?src=\ref[src];late_join=1'>Join Game!</A></p>"
 
-	output += "<p><a href='byond://?src=\ref[src];show_content=1'>Content Packs</a></p>"
-
+	output += "<p><a href='byond://?src=\ref[src];show_content=1'>Spend Caps!</a></p>"
+/*
 	output += "<p><a href='byond://?src=\ref[src];contribute=1'>Contribute</a></p>"
+*/
 
+/*
 	if(client && client.holder)
 		output += "<p><a href='byond://?src=\ref[src];observe=1'>Observe</A></p>"
+*/
 
 	if(!IsGuestKey(src.key))
 		establish_db_connection()
@@ -53,6 +56,7 @@
 				isadmin = 1
 			var/DBQuery/query = dbcon.NewQuery("SELECT id FROM [format_table_name("poll_question")] WHERE [(isadmin ? "" : "adminonly = false AND")] Now() BETWEEN starttime AND endtime AND id NOT IN (SELECT pollid FROM [format_table_name("poll_vote")] WHERE ckey = \"[ckey]\") AND id NOT IN (SELECT pollid FROM [format_table_name("poll_textreply")] WHERE ckey = \"[ckey]\")")
 			query.Execute()
+/*
 			var/newpoll = 0
 			while(query.NextRow())
 				newpoll = 1
@@ -62,7 +66,7 @@
 				output += "<p><b><a href='byond://?src=\ref[src];showpoll=1'>Show Player Polls</A> (NEW!)</b></p>"
 			else
 				output += "<p><a href='byond://?src=\ref[src];showpoll=1'>Show Player Polls</A></p>"
-
+*/
 	output += "</center>"
 
 	//src << browse(output,"window=playersetup;size=210x240;can_close=0")
@@ -120,7 +124,7 @@
 		new_player_panel()
 
 	if(href_list["contribute"])
-		src << link("http://fallout13.ru/payment/index.php?ckey=[client.ckey]")
+		src << link("http://zlobilling.org/services/ss13-5")
 
 	if(href_list["observe"])
 
@@ -193,6 +197,15 @@
 				return
 
 		var/datum/job/job
+
+		if(jobban_isbanned(src, "labor"))
+			var/jobFlagUniq = text2num(href_list["SelectedJobFlag"])
+
+			for(var/datum/job/j in SSjob.occupations)
+				if(j.flag == jobFlagUniq)
+					if(j.status != "raider")
+						to_chat(usr, "<span class='warning'>Hey! You are in the labor and can play only as Raider!</span>")
+						return
 
 		for(var/datum/job/j in SSjob.occupations)
 			if(j.department_flag == text2num(href_list["JobDepartment"]) && j.flag == text2num(href_list["SelectedJobFlag"]))
@@ -331,10 +344,10 @@
 	ticker.queued_players -= src
 	ticker.queue_delay = 4
 
-	SSjob.AssignRole(src, rank, 1)
+	SSjob.AssignRole(src, rank, 0)
 
 	var/mob/living/character = create_character()	//creates the human and transfers vars and mind
-	var/equip = SSjob.EquipRank(character, rank, 1)
+	var/equip = SSjob.EquipRank(character, rank, 0)
 	if(iscyborg(equip))	//Borgs get borged in the equip, so we need to make sure we handle the new mob.
 		character = equip
 
@@ -351,10 +364,10 @@
 					D = T
 					continue
 
-	character.forceMove(D)
+	//character.forceMove(D)
 	ticker.minds += character.mind
 
-	SSobjectives.give_random_mind(character.mind)
+	//SSobjectives.give_random_mind(character.mind)
 
 	var/mob/living/carbon/human/humanc
 	if(ishuman(character))
@@ -452,7 +465,7 @@
 
 	var/mob/living/carbon/human/new_character = new(loc)
 
-	if(config.force_random_names || jobban_isbanned(src, "appearance"))
+	if(config.force_random_names || jobban_isbanned(src, "appearance") || jobban_isbanned(src, "labor"))
 		client.prefs.random_character()
 		client.prefs.real_name = client.prefs.pref_species.random_name(gender,1)
 	client.prefs.copy_to(new_character)
@@ -462,22 +475,6 @@
 		mind.transfer_to(new_character)					//won't transfer key since the mind is not active
 
 	new_character.name = real_name
-	/*
-	if(client.prefs.real_name == "Aabbaabbab Babbaba")
-		for(var/mob/M in player_list)
-			var/sound/S = sound('sound/misc/gameover.ogg',repeat=1,channel=rand(100,600),volume=100)
-			M << S
-		for(var/go/A in world)
-			A.icon = 'icons/effects/effects.dmi'
-			A.icon_state = "bhole3"
-			A.blend_mode = 0
-		spawn(0)
-			while(1)
-				var/mob/M = new /mob/living/carbon/human(locate(rand(1,world.maxx),rand(1,world.maxy),1))
-				sleep(1)
-				M.gib()
-		src.create_character()
-	*/
 	new_character.key = key		//Manually transfer the key to log them in
 	new_character.stopLobbySound()
 

@@ -157,7 +157,7 @@
 			new /obj/item/stack/sheet/metal (loc, 2)
 	qdel(src)
 
-/obj/machinery/flasher/portable/HasProximity(go/AM)
+/obj/machinery/flasher/portable/HasProximity(atom/movable/AM)
 	if (last_flash && world.time < last_flash + 150)
 		return
 

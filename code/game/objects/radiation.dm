@@ -8,7 +8,7 @@
 		light_range = heavy_range
 
 	var/light_severity = severity * 0.5
-	for(var/atom/T in range(light_range, epicenter))
+	for(var/mob/living/carbon/human/T in range(light_range, epicenter))
 		var/distance = get_dist(epicenter, T)
 		if(distance < 0)
 			distance = 0
@@ -22,8 +22,38 @@
 		else if(distance <= light_range)
 			T.rad_act(light_severity)
 
-	if(log)
-		log_game("Radiation pulse with size ([heavy_range], [light_range]) and severity [severity] in area [epicenter.loc.name] ")
+	//if(log)
+	//	log_game("Radiation pulse with size ([heavy_range], [light_range]) and severity [severity] in area [epicenter.loc.name] ")
+	return 1
+
+/proc/radiation_pulse_new(turf/epicenter, heavy_range, light_range, severity, log=0)
+	if(!epicenter || !severity) return
+
+	if(!isturf(epicenter))
+		epicenter = get_turf(epicenter.loc)
+
+	if(heavy_range > light_range)
+		light_range = heavy_range
+
+	var/light_severity = severity * 0.5
+	for(var/mob/living/carbon/human/T in hrange(epicenter, light_range))
+		var/distance = get_dist(epicenter, T)
+		if(distance > light_range)
+			continue
+		if(distance < 0)
+			distance = 0
+		if(distance < heavy_range)
+			T.rad_act(severity)
+		else if(distance == heavy_range)
+			if(prob(50))
+				T.rad_act(severity)
+			else
+				T.rad_act(light_severity)
+		else if(distance <= light_range)
+			T.rad_act(light_severity)
+
+	//if(log)
+	//	log_game("Radiation pulse with size ([heavy_range], [light_range]) and severity [severity] in area [epicenter.loc.name] ")
 	return 1
 
 /atom/proc/rad_act(var/severity)
@@ -33,10 +63,16 @@
 	if(amount)
 		var/blocked = getarmor(null, "rad")
 
-//		if(!silent)
-//			to_chat(src, "<span class='warning'>Your skin feels warm.</span>")
+		var/mob/living/carbon/user = src
+		if(user.perks.have(/datum/perk/radresist))
+			blocked *= 1.25
 
 		apply_effect(amount, IRRADIATE, blocked)
+
+		if(amount > blocked)
+			if(!silent)
+				to_chat(src, "<span class='warning'>Your skin feels warm.</span>")
+
 		for(var/obj/I in src) //Radiation is also applied to items held by the mob
 			I.rad_act(amount)
 

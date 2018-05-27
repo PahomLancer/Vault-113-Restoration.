@@ -95,13 +95,13 @@
 /obj/structure/bodycontainer/proc/open()
 	playsound(src.loc, 'sound/items/Deconstruct.ogg', 50, 1)
 	var/turf/T = get_step(src, opendir)
-	for(var/go/AM in src)
+	for(var/atom/movable/AM in src)
 		AM.forceMove(T)
 	update_icon()
 
 /obj/structure/bodycontainer/proc/close()
 	playsound(src.loc, 'sound/items/Deconstruct.ogg', 50, 1)
-	for(var/go/AM in connected.loc)
+	for(var/atom/movable/AM in connected.loc)
 		if(!AM.anchored || AM == connected)
 			AM.forceMove(src)
 	update_icon()
@@ -260,8 +260,8 @@ var/global/list/crematoriums = new/list()
 	else
 		to_chat(user, "<span class='warning'>That's not connected to anything!</span>")
 
-/obj/structure/tray/MouseDrop_T(go/O as mob|obj, mob/user)
-	if(!istype(O, /go) || O.anchored || !Adjacent(user) || !user.Adjacent(O) || O.loc == user)
+/obj/structure/tray/MouseDrop_T(atom/movable/O as mob|obj, mob/user)
+	if(!istype(O, /atom/movable) || O.anchored || !Adjacent(user) || !user.Adjacent(O) || O.loc == user)
 		return
 	if(!ismob(O))
 		if(!istype(O, /obj/structure/closet/body_bag))
@@ -293,7 +293,7 @@ var/global/list/crematoriums = new/list()
 	desc = "Apply corpse before closing."
 	icon_state = "morguet"
 
-/obj/structure/tray/m_tray/CanPass(go/mover, turf/target, height=0)
+/obj/structure/tray/m_tray/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height == 0)
 		return 1
 
@@ -307,5 +307,5 @@ var/global/list/crematoriums = new/list()
 /obj/structure/tray/m_tray/CanAStarPass(ID, dir, caller)
 	. = !density
 	if(ismovableatom(caller))
-		var/go/mover = caller
+		var/atom/movable/mover = caller
 		. = . || mover.checkpass(PASSTABLE)

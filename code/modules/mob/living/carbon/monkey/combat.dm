@@ -434,7 +434,7 @@
 				retaliate(Proj.firer)
 	..()
 
-/mob/living/carbon/monkey/hitby(go/AM, skipcatch = 0, hitpush = 1, blocked = 0)
+/mob/living/carbon/monkey/hitby(atom/movable/AM, skipcatch = 0, hitpush = 1, blocked = 0)
 	if(istype(AM, /obj/item))
 		var/obj/item/I = AM
 		if(I.throwforce < src.health && I.thrownby && ishuman(I.thrownby))
@@ -442,7 +442,7 @@
 			retaliate(H)
 	..()
 
-/mob/living/carbon/monkey/Crossed(go/AM)
+/mob/living/carbon/monkey/Crossed(atom/movable/AM)
 	if(!IsDeadOrIncap() && ismob(AM) && target)
 		var/mob/living/carbon/monkey/M = AM
 		if(!istype(M) || !M)

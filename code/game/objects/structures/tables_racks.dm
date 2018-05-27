@@ -73,7 +73,7 @@
 	else
 		..()
 
-/obj/structure/table/CanPass(go/mover, turf/target, height=0)
+/obj/structure/table/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height==0)
 		return 1
 	if(istype(mover) && (mover.checkpass(PASSTABLE) || (mover.checkpass(PASSCRAWL) && can_crawled)))
@@ -88,7 +88,7 @@
 /obj/structure/table/CanAStarPass(ID, dir, caller)
 	. = !density
 	if(ismovableatom(caller))
-		var/go/mover = caller
+		var/atom/movable/mover = caller
 		. = . || mover.checkpass(PASSTABLE)
 
 /obj/structure/table/proc/tablepush(mob/living/user, mob/living/pushed_mob)
@@ -181,7 +181,7 @@
 		qdel(i)
 	. = ..()
 
-/obj/structure/table/glass/Crossed(go/AM)
+/obj/structure/table/glass/Crossed(atom/movable/AM)
 	. = ..()
 	if(flags & NODECONSTRUCT)
 		return
@@ -207,7 +207,7 @@
 	var/turf/T = get_turf(src)
 	playsound(T, "shatter", 50, 1)
 	for(var/I in debris)
-		var/go/AM = I
+		var/atom/movable/AM = I
 		AM.forceMove(T)
 		debris -= AM
 		if(istype(AM, /obj/item/weapon/shard))
@@ -224,7 +224,7 @@
 			var/turf/T = get_turf(src)
 			playsound(T, "shatter", 50, 1)
 			for(var/X in debris)
-				var/go/AM = X
+				var/atom/movable/AM = X
 				AM.forceMove(T)
 				debris -= AM
 	qdel(src)
@@ -438,7 +438,7 @@
 	obj_integrity = 20
 	max_integrity = 20
 
-/obj/structure/rack/CanPass(go/mover, turf/target, height=0)
+/obj/structure/rack/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height==0) return 1
 	if(src.density == 0) //Because broken racks -Agouri |TODO: SPRITE!|
 		return 1
@@ -450,7 +450,7 @@
 /obj/structure/rack/CanAStarPass(ID, dir, caller)
 	. = !density
 	if(ismovableatom(caller))
-		var/go/mover = caller
+		var/atom/movable/mover = caller
 		. = . || mover.checkpass(PASSTABLE)
 
 /obj/structure/rack/MouseDrop_T(obj/O, mob/user)

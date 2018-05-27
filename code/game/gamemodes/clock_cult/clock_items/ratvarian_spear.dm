@@ -83,7 +83,7 @@
 			if(S.stat != DEAD)
 				S.visible_message("<span class='warning'>[S] shudders violently at [src]'s touch!</span>", "<span class='userdanger'>ERROR: Temperature rising!</span>")
 				S.adjustFireLoss(22)
-		else if(iscultist(target)) //Cultists take extra fire damage
+		else if(iscultist(target) || isconstruct(target)) //Cultists take extra fire damage
 			var/mob/living/M = target
 			if(M.stat != DEAD)
 				to_chat(M, "<span class='userdanger'>Your body flares with agony at [src]'s presence!</span>")

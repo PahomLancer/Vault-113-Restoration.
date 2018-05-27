@@ -41,7 +41,6 @@
 			chambered = null
 		else if(empty_chamber)
 			chambered = null
-		QDEL_IN(AC, 1000)
 	chamber_round()
 
 
@@ -228,11 +227,6 @@
 // Sawing guns related proc
 /obj/item/weapon/gun/ballistic/proc/blow_up(mob/user)
 	. = 0
-	for(var/obj/item/ammo_casing/AC in magazine.stored_ammo)
-		if(AC.BB)
-			process_fire(user, user,0)
-			. = 1
-
 
 /obj/item/weapon/suppressor
 	name = "suppressor"

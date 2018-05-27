@@ -161,7 +161,7 @@
 	icon = 'icons/obj/doors/edge_Doorfire.dmi'
 	flags = ON_BORDER
 
-/obj/machinery/door/firedoor/border_only/CanPass(go/mover, turf/target, height=0)
+/obj/machinery/door/firedoor/border_only/CanPass(atom/movable/mover, turf/target, height=0)
 	if(istype(mover) && mover.checkpass(PASSGLASS))
 		return 1
 	if(get_dir(loc, target) == dir) //Make sure looking at appropriate border
@@ -169,7 +169,7 @@
 	else
 		return 1
 
-/obj/machinery/door/firedoor/border_only/CheckExit(go/mover as mob|obj, turf/target)
+/obj/machinery/door/firedoor/border_only/CheckExit(atom/movable/mover as mob|obj, turf/target)
 	if(istype(mover) && mover.checkpass(PASSGLASS))
 		return 1
 	if(get_dir(loc, target) == dir)

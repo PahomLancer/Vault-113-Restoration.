@@ -1,5 +1,5 @@
 //horrifying power drain proc made for clockcult's power drain in lieu of six istypes or six for(x in view) loops
-/go/proc/power_drain(clockcult_user)
+/atom/movable/proc/power_drain(clockcult_user)
 	return 0
 
 /obj/machinery/power/apc/power_drain(clockcult_user)

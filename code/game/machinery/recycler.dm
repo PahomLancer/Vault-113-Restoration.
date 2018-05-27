@@ -89,13 +89,13 @@ var/const/SAFETY_COOLDOWN = 100
 	icon_state = icon_name + "[is_powered]" + "[(blood ? "bld" : "")]" // add the blood tag at the end
 
 // This is purely for admin possession !FUN!.
-/obj/machinery/recycler/Bump(go/AM)
+/obj/machinery/recycler/Bump(atom/movable/AM)
 	..()
 	if(AM)
 		Bumped(AM)
 
 
-/obj/machinery/recycler/Bumped(go/AM)
+/obj/machinery/recycler/Bumped(atom/movable/AM)
 
 	if(stat & (BROKEN|NOPOWER))
 		return
@@ -115,7 +115,7 @@ var/const/SAFETY_COOLDOWN = 100
 	var/items_recycled = 0
 
 	for(var/i in to_eat)
-		var/go/AM = i
+		var/atom/movable/AM = i
 		var/obj/item/bodypart/head/as_head = AM
 		var/obj/item/device/mmi/as_mmi = AM
 		var/brain_holder = istype(AM, /obj/item/organ/brain) || (istype(as_head) && as_head.brain) || (istype(as_mmi) && as_mmi.brain)

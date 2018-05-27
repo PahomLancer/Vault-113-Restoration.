@@ -65,7 +65,7 @@
 /obj/effect/anomaly/proc/anomalyNeutralize()
 	PoolOrNew(/obj/effect/particle_effect/smoke/bad, loc)
 
-	for(var/go/O in src)
+	for(var/atom/movable/O in src)
 		O.forceMove(src.loc)
 
 	qdel(src)
@@ -215,7 +215,7 @@
 
 			var/y_distance = TO.y - FROM.y
 			var/x_distance = TO.x - FROM.x
-			for (var/go/A in urange(12, FROM )) // iterate thru list of mobs in the area
+			for (var/atom/movable/A in urange(12, FROM )) // iterate thru list of mobs in the area
 				if(istype(A, /obj/item/device/radio/beacon)) continue // don't teleport beacons because that's just insanely stupid
 				if(A.anchored) continue
 

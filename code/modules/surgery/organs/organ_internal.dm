@@ -11,6 +11,9 @@
 	// DO NOT add slots with matching names to different zones - it will break internal_organs_slot list!
 	var/vital = 0
 
+/obj/item/organ/Destroy()
+	..()
+	return QDEL_HINT_PUTINPOOL
 
 /obj/item/organ/proc/Insert(mob/living/carbon/M, special = 0)
 	if(!iscarbon(M) || owner == M)
@@ -699,11 +702,11 @@
 
 /mob/living/carbon/regenerate_organs()
 	if(!(NOBREATH in dna.species.species_traits) && !getorganslot("lungs"))
-		var/obj/item/organ/lungs/L = new()
+		var/obj/item/organ/lungs/L = PoolOrNew(/obj/item/organ/lungs)
 		L.Insert(src)
 
 	if(!(NOBLOOD in dna.species.species_traits) && !getorganslot("heart"))
-		var/obj/item/organ/heart/H = new()
+		var/obj/item/organ/heart/H = PoolOrNew(/obj/item/organ/heart)
 		H.Insert(src)
 
 	if(!getorganslot("tongue"))
@@ -711,10 +714,10 @@
 
 		for(var/tongue_type in dna.species.mutant_organs)
 			if(ispath(tongue_type, /obj/item/organ/tongue))
-				T = new tongue_type()
+				T = PoolOrNew(tongue_type)
 				T.Insert(src)
 
 		// if they have no mutant tongues, give them a regular one
 		if(!T)
-			T = new()
+			T = PoolOrNew(T)
 			T.Insert(src)

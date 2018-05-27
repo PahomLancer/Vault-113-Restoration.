@@ -1,4 +1,7 @@
 /mob/Logout()
+	if(istype(src, /mob/living/carbon/human))
+		human_list -= src
+
 	SStgui.on_logout(src)
 	unset_machine()
 	player_list -= src

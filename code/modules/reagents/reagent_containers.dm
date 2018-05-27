@@ -24,6 +24,10 @@
 	if(list_reagents)
 		reagents.add_reagent_list(list_reagents)
 
+	if(istype(src, /obj/item/weapon/reagent_containers/food/snacks))
+		var/obj/item/weapon/reagent_containers/food/snacks/snack = src
+		reagents.add_reagent_list(snack.bonus_reagents)
+
 /obj/item/weapon/reagent_containers/attack_self(mob/user)
 	if(possible_transfer_amounts.len)
 		var/i=0

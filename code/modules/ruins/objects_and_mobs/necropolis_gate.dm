@@ -16,8 +16,8 @@
 	var/is_anyone_home = FALSE
 
 /obj/structure/necropolis_gate/attack_hand(mob/user)
-//	for(var/mob/living/simple_animal/hostile/megafauna/legion/L in mob_list)
-//		return
+	for(var/mob/living/simple_animal/hostile/megafauna/legion/L in mob_list)
+		return
 	if(is_anyone_home)
 		return
 	var/safety = alert(user, "You think this might be a bad idea...", "Knock on the door?", "Proceed", "Abort")
@@ -50,7 +50,7 @@
 	var/image/door_overlay = image('icons/effects/effects.dmi', "legiondoor")
 	notify_ghosts("Legion has been summoned in the [get_area(src)]!", source = src, alert_overlay = door_overlay, action = NOTIFY_JUMP)
 	is_anyone_home = FALSE
-//	new/mob/living/simple_animal/hostile/megafauna/legion(get_step(src.loc, SOUTH))
+	new/mob/living/simple_animal/hostile/megafauna/legion(get_step(src.loc, SOUTH))
 
 /obj/structure/necropolis_gate/singularity_pull()
 	return 0

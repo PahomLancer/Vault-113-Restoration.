@@ -8,7 +8,7 @@
 	hitsound = 'sound/weapons/sear.ogg'
 	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
 	flag = "laser"
-	eyeblur = 2
+	eyeblur = 0
 	impact_effect_type = /obj/effect/overlay/temp/impact_effect/red_laser
 
 /obj/item/projectile/beam/fire(setAngle, atom/direct_target)

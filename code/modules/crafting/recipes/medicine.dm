@@ -1,15 +1,16 @@
 /datum/crafting_recipe/healingpowder
 	name = "Healing Powder"
-	result = /obj/item/weapon/reagent_containers/pill/patch/healingpowder
+	result = /obj/item/stack/medical/healingpowder
 	time = 50
 	reqs = list(/obj/item/weapon/reagent_containers/food/snacks/grown/broc = 1,
 				/obj/item/weapon/reagent_containers/food/snacks/grown/xander = 1)
 	category = CAT_MEDICINE
 	default = 1
+	XP = 20
 
 /datum/crafting_recipe/stimpak
 	name = "Stimpak"
-	result = /obj/item/weapon/reagent_containers/pill/patch/stimpak
+	result = /obj/item/weapon/reagent_containers/f13stimpack
 	reqs = list(/obj/item/weapon/reagent_containers/food/snacks/grown/glow = 2,
 				/obj/item/weapon/reagent_containers/food/snacks/grown/shroom = 1,
 				/obj/item/weapon/reagent_containers/food/snacks/grown/agave = 1,
@@ -20,7 +21,9 @@
 	time = 50
 	category = CAT_MEDICINE
 	default = 1
+	XP = 40
 
+/*
 /datum/crafting_recipe/gauze
 	name = "Clear Gauze"
 	result = /obj/item/stack/medical/gauze
@@ -29,6 +32,8 @@
 	time = 50
 	category = CAT_MEDICINE
 	default = 1
+	XP = 5
+*/
 
 /datum/crafting_recipe/radaway
 	name = "Radaway"
@@ -39,6 +44,7 @@
 	time = 100
 	category = CAT_MEDICINE
 	default = 1
+	XP = 20
 
 
 /datum/crafting_recipe/turbo
@@ -53,3 +59,4 @@
 	time = 100
 	category = CAT_MEDICINE
 	default = 1
+	XP = 50

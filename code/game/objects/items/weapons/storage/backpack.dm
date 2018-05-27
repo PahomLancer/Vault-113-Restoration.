@@ -22,6 +22,7 @@
 	resistance_flags = 0
 	obj_integrity = 300
 	max_integrity = 300
+	use_to_pickup = 1
 
 /*
  * Backpack Types

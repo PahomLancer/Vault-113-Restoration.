@@ -11,7 +11,7 @@
 
 /obj/structure/closet/crate/necropolis/tendril/New()
 	..()
-	var/loot = rand(1,24)
+	var/loot = rand(1,25)
 	switch(loot)
 		if(1)
 			new /obj/item/device/shared_storage/red(src)
@@ -45,6 +45,8 @@
 			new /obj/item/weapon/nullrod/scythe/talking(src)
 		if(15)
 			new /obj/item/weapon/nullrod/armblade(src)
+		if(16)
+			new /obj/item/weapon/guardiancreator(src)
 		if(17)
 			new /obj/item/borg/upgrade/modkit/aoe/turfs/andmobs(src)
 		if(18)
@@ -62,7 +64,7 @@
 		if(24)
 			new /obj/item/weapon/reagent_containers/food/drinks/bottle/holywater/hell(src)
 			new /obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor(src)
-		if(16)
+		if(25)
 			new /obj/item/weapon/spellbook/oneuse/summonitem(src)
 
 
@@ -195,8 +197,8 @@
 
 /obj/item/projectile/hook/on_hit(atom/target)
 	. = ..()
-	if(istype(target, /go))
-		var/go/A = target
+	if(istype(target, /atom/movable))
+		var/atom/movable/A = target
 		if(A.anchored)
 			return
 		A.visible_message("<span class='danger'>[A] is snagged by [firer]'s hook!</span>")

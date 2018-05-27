@@ -810,7 +810,6 @@
 	overdose_threshold = 60
 
 /datum/reagent/medicine/stimulants/on_mob_life(mob/living/M)
-	M.status_flags |= GOTTAGOFAST
 	if(M.health < 50 && M.health > 0)
 		M.adjustOxyLoss(-1*REM, 0)
 		M.adjustToxLoss(-1*REM, 0)

@@ -13,10 +13,12 @@
 	..()
 
 /datum/game_mode/extended/announced
-	name = "extended"
-	config_tag = "extended"
+	name = "wasteland"
+	config_tag = "wasteland"
 
 /datum/game_mode/extended/announced/generate_station_goals()
+	return
+
 	for(var/T in subtypesof(/datum/station_goal))
 		var/datum/station_goal/G = new T
 		station_goals += G

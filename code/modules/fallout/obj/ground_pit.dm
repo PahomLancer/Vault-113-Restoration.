@@ -27,19 +27,12 @@ obj/dugpit/New(lnk)
 	..()
 	parent = lnk
 
-/obj/dugpit/proc/dugresist(usr)
+/obj/dugpit/container_resist(usr) // RESIST
 	//try to unbury self
-	var/mob/living/user = usr
-	user << "<span class='danger'>You start digging from the inside, trying to unbury yourself!</span>"
-	if(do_after(user, (5*10), target = src))
-		if (prob(10))
-			user << "<span class='danger'>You have managed to move some of the ground!</span>"
-			parent.unburylevel++
-			if (parent.unburylevel>=NUMBURYTIMES)
-				user << "<span class='danger'>You have undug yourself!</span>"
-				parent.gets_dug(null)
-		else
-			user << "<span class='danger'>The ground is too heavy!</span>"
+	to_chat(usr, "<span class='danger'>You start digging from the inside, trying to unbury yourself!</span>")
+	if(do_after(usr, 450, target = src))
+		to_chat(usr, "<span class='danger'>You have undug yourself!</span>")
+		parent.gets_dug(null)
 
 /turf/open/indestructible/ground/desert/proc/handle_item_insertion(obj/item/W, mob/usr)
 	if(!istype(W))
@@ -147,7 +140,7 @@ obj/dugpit/New(lnk)
 					to_chat(user, "<span class='notice'>You dig a hole.</span>")
 					gets_dug(user)
 					new /obj/item/weapon/ore/glass(src)
-					new /obj/item/weapon/ore/glass(src)
+					//new /obj/item/weapon/ore/glass(src)
 					for(var/obj/effect/O in src)
 						if(is_cleanable(O))
 							qdel(O)

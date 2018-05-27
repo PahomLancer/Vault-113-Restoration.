@@ -50,7 +50,7 @@
 		qdel(reagents)
 	return ..()
 
-/atom/proc/CanPass(go/mover, turf/target, height=1.5)
+/atom/proc/CanPass(atom/movable/mover, turf/target, height=1.5)
 	return (!density || !height)
 
 /atom/proc/onCentcom()
@@ -96,8 +96,8 @@
 				reagents = new()
 			reagents.reagent_list.Add(A)
 			reagents.conditional_update()
-		else if(istype(A, /go))
-			var/go/M = A
+		else if(istype(A, /atom/movable))
+			var/atom/movable/M = A
 			if(isliving(M.loc))
 				var/mob/living/L = M.loc
 				L.unEquip(M)
@@ -148,7 +148,7 @@
 /atom/proc/CheckExit()
 	return 1
 
-/atom/proc/HasProximity(go/AM as mob|obj)
+/atom/proc/HasProximity(atom/movable/AM as mob|obj)
 	return
 
 /atom/proc/emp_act(severity)
@@ -236,7 +236,7 @@
 /atom/proc/fire_act(exposed_temperature, exposed_volume)
 	return
 
-/atom/proc/hitby(go/AM, skipcatch, hitpush, blocked)
+/atom/proc/hitby(atom/movable/AM, skipcatch, hitpush, blocked)
 	if(density && !has_gravity(AM)) //thrown stuff bounces off dense stuff in no grav, unless the thrown stuff ends up inside what it hit(embedding, bola, etc...).
 		spawn(2) //very short wait, so we can actually see the impact.
 			if(AM && isturf(AM.loc))
@@ -330,9 +330,11 @@ var/list/blood_splatter_icons = list()
 	transfer_blood = rand(2, 4)
 
 /turf/add_blood(list/blood_dna)
+	return 1
+
 	var/obj/effect/decal/cleanable/blood/splatter/B = locate() in src
 	if(!B)
-		B = new /obj/effect/decal/cleanable/blood/splatter(src)
+		B = PoolOrNew(/obj/effect/decal/cleanable/blood/splatter, src)
 	B.transfer_blood_dna(blood_dna) //give blood info to the blood decal.
 	return 1 //we bloodied the floor
 

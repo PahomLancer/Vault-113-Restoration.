@@ -37,6 +37,14 @@ var/global/list/GlobalPool = list()
 //Either way it gets passed to new
 
 /proc/PoolOrNew(get_type,second_arg)
+	if(islist(second_arg))
+		. = new get_type (arglist(second_arg))
+	else
+		. = new get_type (second_arg)
+
+	return
+
+
 	if(!get_type)
 		return
 
@@ -72,8 +80,8 @@ var/global/list/GlobalPool = list()
 	if(pooled)
 		pooled.gc_destroyed = null
 
-		var/go/AM
-		if(istype(pooled, /go))
+		var/atom/movable/AM
+		if(istype(pooled, /atom/movable))
 			AM = pooled
 
 		if(islist(second_arg))
@@ -90,6 +98,13 @@ var/global/list/GlobalPool = list()
 
 
 /proc/PlaceInPool(datum/diver, destroy = 1)
+	qdel(diver)
+	return
+
+	if(istype(diver, /obj))
+		var/obj/O = diver
+		O.forceMove(null)
+
 	if(!istype(diver))
 		return
 
@@ -132,7 +147,7 @@ var/list/pooledvariables = list()
 		if (!islist(pooledvariables[type][key]))
 			vars[key] = pooledvariables[type][key]
 
-/go/ResetVars()
+/atom/movable/ResetVars()
 	..()
 	forceMove(null)
 	contents = initial(contents) //something is really wrong if this object still has stuff in it by this point

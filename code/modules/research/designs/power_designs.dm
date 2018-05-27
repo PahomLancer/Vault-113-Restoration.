@@ -2,17 +2,6 @@
 //////////////////Power/////////////////
 ////////////////////////////////////////
 
-/datum/design/basic_cell
-	name = "Basic Power Cell"
-	desc = "A basic power cell that holds 1000 units of energy."
-	id = "basic_cell"
-	req_tech = list("powerstorage" = 1)
-	build_type = PROTOLATHE | AUTOLATHE |MECHFAB
-	materials = list(MAT_METAL = 700, MAT_GLASS = 50)
-	construction_time=100
-	build_path = /obj/item/weapon/stock_parts/cell
-	category = list("Misc","Power Designs","Machinery","initial")
-
 /datum/design/high_cell
 	name = "High-Capacity Power Cell"
 	desc = "A power cell that holds 10000 units of energy."

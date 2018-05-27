@@ -202,7 +202,7 @@
 		spawn(50)
 			if(mode == BOT_CLEANING)
 				if(A && isturf(A.loc))
-					var/go/AM = A
+					var/atom/movable/AM = A
 					if(istype(AM, /obj/effect/decal/cleanable))
 						qdel(AM)
 

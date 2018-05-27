@@ -8,3 +8,4 @@
 	var/chem_catalysts[] = list() //like tools but for reagents
 	var/category = CAT_NONE //where it shows up in the crafting UI
 	var/default = 0
+	var/XP = 0

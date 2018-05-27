@@ -34,8 +34,8 @@
 
 /obj/item/weapon/twohanded/singularityhammer/proc/vortex(turf/pull, mob/wielder)
 	for(var/atom/X in orange(5,pull))
-		if(istype(X, /go))
-			var/go/A = X
+		if(istype(X, /atom/movable))
+			var/atom/movable/A = X
 			if(A == wielder)
 				continue
 			if(A && !A.anchored && !ishuman(X))

@@ -10,8 +10,15 @@
 */
 /mob/living/proc/apply_damage(damage = 0,damagetype = BRUTE, def_zone = null, blocked = 0)
 	var/hit_percent = (100-blocked)/100
-	if(blocked > 50)
-		damage -= damage * hit_percent
+
+	if(lastattacker)
+		if(istype(lastattacker, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = lastattacker
+
+			var/obj/item/weapon = H.held_items[H.active_hand_index]
+			if(!istype(weapon, /obj/item/weapon/gun))
+				hit_percent *= H.special.getMeleeMod()
+
 	if(!damage || (hit_percent <= 0))
 		return 0
 	switch(damagetype)

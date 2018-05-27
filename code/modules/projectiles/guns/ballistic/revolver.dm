@@ -13,10 +13,7 @@
 		verbs -= /obj/item/weapon/gun/ballistic/revolver/verb/spin
 
 /obj/item/weapon/gun/ballistic/revolver/chamber_round(spin = 1)
-	if(spin)
-		chambered = magazine.get_round(1)
-	else
-		chambered = magazine.stored_ammo[1]
+	chambered = magazine.get_round(1)
 
 /obj/item/weapon/gun/ballistic/revolver/shoot_with_empty_chamber(mob/living/user as mob|obj)
 	..()

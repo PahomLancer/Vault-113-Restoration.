@@ -315,6 +315,8 @@ There are several things that need to be remembered:
 		var/image/standing = belt.build_worn_icon(state = t_state, default_layer = BELT_LAYER, default_icon_file = 'icons/mob/belt.dmi')
 		overlays_standing[BELT_LAYER] = standing
 
+	if(wear_suit && (wear_suit.flags_inv & HIDEBELT))
+		return
 
 	apply_overlay(BELT_LAYER)
 
@@ -344,6 +346,8 @@ There are several things that need to be remembered:
 	update_mutant_bodyparts()
 
 	apply_overlay(SUIT_LAYER)
+	update_inv_back()
+	update_inv_belt()
 
 
 /mob/living/carbon/human/update_inv_pockets()

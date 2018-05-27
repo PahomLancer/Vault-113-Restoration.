@@ -70,7 +70,9 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/add_whitelist,
 	/datum/admins/proc/remove_whitelist,
 	/datum/admins/proc/who_whitelist,
-	/datum/admins/proc/toogle_whitelist
+	/datum/admins/proc/toogle_whitelist,
+
+	/client/proc/cmd_admin_rejuvenate
 	)
 var/list/admin_verbs_ban = list(
 	/client/proc/unban_panel,
@@ -165,6 +167,10 @@ var/list/admin_verbs_debug = list(
 	/client/proc/map_template_upload,
 	/client/proc/jump_to_ruin,
 	/client/proc/clear_dynamic_transit,
+	/client/proc/show_qdeleted,
+	/datum/proc/qdel_then_find_references,
+	/client/proc/purge_all_destroyed_objects,
+	/datum/proc/find_refs,
 	/client/proc/toggle_medal_disable
 	)
 var/list/admin_verbs_possess = list(

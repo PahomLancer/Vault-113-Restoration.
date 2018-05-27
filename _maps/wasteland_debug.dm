@@ -4,7 +4,7 @@
 
 		#define MINETYPE "lavaland"
 
-        #include "map_files\debug\wasteland.dmm"
+        #include "map_files\debug\turbo_wasteland.dmm"
 
 		#define MAP_PATH "map_files/debug"
         #define MAP_FILE "wasteland.dmm"

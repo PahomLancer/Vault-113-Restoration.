@@ -260,7 +260,7 @@
 			consume(T)
 		for(var/thing in T)
 			if(isturf(loc) && thing != src)
-				var/go/X = thing
+				var/atom/movable/X = thing
 				if(get_dist(X, src) > consume_range)
 					X.singularity_pull(src, current_size)
 				else

@@ -1096,7 +1096,7 @@
 		if(3) //New Name
 			to_chat(connected_ai, "<br><br><span class='notice'>NOTICE - Cyborg reclassification detected: [oldname] is now designated as [newname].</span><br>")
 
-/mob/living/silicon/robot/canUseTopic(go/M, be_close = 0)
+/mob/living/silicon/robot/canUseTopic(atom/movable/M, be_close = 0)
 	if(stat || lockcharge || low_power_mode)
 		return
 	if(be_close && !in_range(M, src))

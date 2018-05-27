@@ -56,10 +56,6 @@
 	permutated = list()
 	return ..()
 
-/obj/item/projectile/Destroy()
-	..()
-	return QDEL_HINT_PUTINPOOL
-
 /obj/item/projectile/proc/Range()
 	range--
 	if(range <= 0 && loc)
@@ -304,7 +300,7 @@
 		src.Angle += spread
 
 
-/obj/item/projectile/Crossed(go/AM) //A mob moving on a tile with a projectile is hit by it.
+/obj/item/projectile/Crossed(atom/movable/AM) //A mob moving on a tile with a projectile is hit by it.
 	..()
 	if(isliving(AM) && AM.density && !checkpass(PASSMOB))
 		Bump(AM, 1)

@@ -12,18 +12,18 @@
 	spawn_positions = 1
 	supervisors = "the Enclave command HQ"
 	selection_color = "#ec9d9d"
-	minimal_player_age = 7
+	minimal_player_age = 31
 	whitelist_on = 1
 
-	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/suit/armor/f13/power_armor/shocktrooper,
-	/obj/item/clothing/head/helmet/power_armor/shocktrooper,
+	/obj/item/clothing/suit/armor/f13/power_armor/superadvanced,
+	/obj/item/clothing/head/helmet/power_armor/superadvanced,
 	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/gun/energy/plasma,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/lighter/engraved,
+	/obj/item/key/vertibird
 	)
 
 	denied_items = list(
@@ -58,7 +58,7 @@
 	suit = /obj/item/clothing/suit/f13/autumn
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/plasma/glock
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
+	belt_contents = list(/obj/item/weapon/reagent_containers/f13stimpack = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 
 //Enclave Sergeant
@@ -71,22 +71,21 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "enclave_sergeant"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Colonel"
 	selection_color = "#ec9d9d"
-	minimal_player_age = 7
+	minimal_player_age = 24
 
-	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/recon,
 	/obj/item/clothing/head/soft/f13/utility/olive,
 	/obj/item/clothing/head/soft/f13/utility/tan,
 	/obj/item/clothing/under/f13/bdu,
 	/obj/item/clothing/under/f13/dbdu,
-	/obj/item/clothing/suit/armor/f13/power_armor/superadvanced,
-	/obj/item/clothing/head/helmet/power_armor/superadvanced,
+	/obj/item/clothing/suit/armor/f13/power_armor/tesla,
+	/obj/item/clothing/head/helmet/power_armor/tesla,
 	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/gun/energy/plasma,
 	/obj/item/weapon/lighter/engraved
@@ -125,7 +124,7 @@
 	head = /obj/item/clothing/head/soft/f13/enclave
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/plasma/pistol
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
+	belt_contents = list(/obj/item/weapon/reagent_containers/f13stimpack = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 
 //Enclave Private
@@ -138,16 +137,15 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "private"
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
-	minimal_player_age = 7
+	minimal_player_age = 19
 
-	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/recon,
 	/obj/item/clothing/under/f13/bdu,
 	/obj/item/clothing/suit/armor/f13/power_armor/advanced,
 	/obj/item/clothing/head/helmet/power_armor/advanced,
@@ -187,5 +185,5 @@
 	head = /obj/item/clothing/head/soft/f13/utility/tan
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/plasma
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
+	belt_contents = list(/obj/item/weapon/reagent_containers/f13stimpack = 1, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)

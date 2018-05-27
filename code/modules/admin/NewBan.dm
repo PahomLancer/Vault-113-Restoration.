@@ -108,14 +108,14 @@ var/savefile/Banlist
 	else
 		Banlist.dir.Add("[ckey][computerid]")
 		Banlist.cd = "/base/[ckey][computerid]"
-		Banlist["key"] << ckey
-		Banlist["id"] << computerid
-		Banlist["ip"] << address
-		Banlist["reason"] << reason
-		Banlist["bannedby"] << bannedby
-		Banlist["temp"] << temp
+		to_chat(Banlist["key"], ckey)
+		to_chat(Banlist["id"], computerid)
+		to_chat(Banlist["ip"], address)
+		to_chat(Banlist["reason"], reason)
+		to_chat(Banlist["bannedby"], bannedby)
+		to_chat(Banlist["temp"], temp)
 		if (temp)
-			Banlist["minutes"] << bantimestamp
+			to_chat(Banlist["minutes"], bantimestamp)
 		if(!temp)
 			add_note(ckey, "Permanently banned - [reason]", null, bannedby, 0, null, 0)
 		else

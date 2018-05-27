@@ -9,11 +9,17 @@
 	blood_state = BLOOD_STATE_HUMAN
 	bloodiness = MAX_SHOE_BLOODINESS
 
+/obj/effect/decal/cleanable/blood/New()
+	..()
+	spawn(BLOOD_REMOVE)
+		qdel(src)
+
 /obj/effect/decal/cleanable/blood/Destroy()
 	for(var/datum/disease/D in viruses)
 		D.cure(0)
 	viruses = null
-	return ..()
+	..()
+	return QDEL_HINT_PUTINPOOL
 
 /obj/effect/decal/cleanable/blood/replace_decal(obj/effect/decal/cleanable/blood/C)
 	if (C.blood_DNA)
@@ -62,12 +68,6 @@
 	var/direction = pick(directions)
 	for (var/i = 0, i < pick(1, 200; 2, 150; 3, 50), i++)
 		sleep(2)
-		if (i > 0)
-			var/obj/effect/decal/cleanable/blood/b = new /obj/effect/decal/cleanable/blood/splatter(src.loc)
-			for(var/datum/disease/D in src.viruses)
-				var/datum/disease/ND = D.Copy(1)
-				b.viruses += ND
-				ND.holder = b
 		if (!step_to(src, get_step(src, direction), 0))
 			break
 
@@ -116,7 +116,7 @@
 	blood_state = BLOOD_STATE_HUMAN //the icon state to load images from
 	var/list/shoe_types = list()
 
-/obj/effect/decal/cleanable/blood/footprints/Crossed(go/O)
+/obj/effect/decal/cleanable/blood/footprints/Crossed(atom/movable/O)
 	if(ishuman(O))
 		var/mob/living/carbon/human/H = O
 		var/obj/item/clothing/shoes/S = H.shoes
@@ -126,7 +126,7 @@
 			shoe_types |= H.shoes.type
 	update_icon()
 
-/obj/effect/decal/cleanable/blood/footprints/Uncrossed(go/O)
+/obj/effect/decal/cleanable/blood/footprints/Uncrossed(atom/movable/O)
 	if(ishuman(O))
 		var/mob/living/carbon/human/H = O
 		var/obj/item/clothing/shoes/S = H.shoes

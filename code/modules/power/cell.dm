@@ -1,6 +1,6 @@
 /obj/item/weapon/stock_parts/cell
-	name = "power cell"
-	desc = "A rechargable electrochemical power cell."
+	name = "micro-fusion cell"
+	desc = "A rechargable micro-fusion power cell."
 	icon = 'icons/obj/power.dmi'
 	icon_state = "cell"
 	item_state = "cell"
@@ -18,9 +18,11 @@
 	var/self_recharge = 0 //does it self recharge, over time, or not?
 	var/ratingdesc = TRUE
 	var/grown_battery = FALSE // If it's a grown that acts as a battery, add a wire overlay to it.
+	var/bcell = null
 
 /obj/item/weapon/stock_parts/cell/New()
 	..()
+	bcell = src
 	START_PROCESSING(SSobj, src)
 	charge = maxcharge
 	if(ratingdesc)
@@ -197,16 +199,16 @@
 	maxcharge = 2000
 
 /obj/item/weapon/stock_parts/cell/high
-	name = "high-capacity power cell"
+	name = "high-capacity micro-fusion cell"
 	origin_tech = "powerstorage=2"
 	icon_state = "hcell"
-	maxcharge = 10000
+	maxcharge = 2000
 	materials = list(MAT_GLASS=60)
 	rating = 3
 	chargerate = 1500
 
 /obj/item/weapon/stock_parts/cell/high/plus
-	name = "high-capacity power cell+"
+	name = "high-capacity micro-fusion cell+"
 	desc = "Where did these come from?"
 	icon_state = "h+cell"
 	maxcharge = 15000
@@ -217,10 +219,10 @@
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/super
-	name = "super-capacity power cell"
+	name = "super-capacity micro-fusion cell"
 	origin_tech = "powerstorage=3;materials=3"
 	icon_state = "scell"
-	maxcharge = 20000
+	maxcharge = 3000
 	materials = list(MAT_GLASS=300)
 	rating = 4
 	chargerate = 2000
@@ -230,7 +232,7 @@
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/hyper
-	name = "hyper-capacity power cell"
+	name = "hyper-capacity micro-fusion cell"
 	origin_tech = "powerstorage=4;engineering=4;materials=4"
 	icon_state = "hpcell"
 	maxcharge = 30000
@@ -257,7 +259,7 @@
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/infinite
-	name = "infinite-capacity power cell!"
+	name = "infinite-capacity micro-fusion cell!"
 	icon_state = "icell"
 	origin_tech =  "powerstorage=7"
 	maxcharge = 30000

@@ -40,6 +40,10 @@
 	user.do_attack_animation(M)
 	M.attacked_by(src, user)
 
+	if(istype(M, /mob/living))
+		var/mob/living/target = M
+		target.murder = user
+
 	add_logs(user, M, "attacked", src.name, "(INTENT: [uppertext(user.a_intent)]) (DAMTYPE: [uppertext(damtype)])")
 	add_fingerprint(user)
 
@@ -52,7 +56,7 @@
 	user.do_attack_animation(O)
 	O.attacked_by(src, user)
 
-/go/proc/attacked_by()
+/atom/movable/proc/attacked_by()
 	return
 
 /obj/attacked_by(obj/item/I, mob/living/user)

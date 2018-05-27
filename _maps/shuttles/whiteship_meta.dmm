@@ -361,7 +361,7 @@
 "aI" = (
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/centcom,
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt{
 	desc = "A thin layer of dust coating the floor.";

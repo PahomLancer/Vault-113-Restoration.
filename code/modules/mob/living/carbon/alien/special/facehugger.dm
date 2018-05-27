@@ -96,7 +96,7 @@ var/const/MAX_ACTIVE_TIME = 400
 		return HasProximity(finder)
 	return 0
 
-/obj/item/clothing/mask/facehugger/HasProximity(go/AM as mob|obj)
+/obj/item/clothing/mask/facehugger/HasProximity(atom/movable/AM as mob|obj)
 	if(CanHug(AM) && Adjacent(AM))
 		return Attach(AM)
 	return 0

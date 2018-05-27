@@ -1,23 +1,11 @@
 //Fallout 13 object and item weight simulation
 
-/go
+/atom/movable
 	var/contents_weight = 0
 	var/self_weight
 
-/go/New(atom/loc)
+/atom/movable/initialize()
 	..()
-	if(SSobj.initialized)
-		if(istype(loc))
-			forceMove(loc)
-		weight_init()
-
-/go/initialize()
-	..()
-	if(istype(loc))
-		forceMove(loc)
-	weight_init()
-
-/go/proc/weight_init()
 	if(self_weight == null && isitem(src))
 		var/obj/item/I = src
 		switch(I.w_class)
@@ -35,21 +23,24 @@
 				self_weight = 14.000
 			if(6)
 				self_weight = 25.000
-	if(istype(loc, /go))
-		var/go/L = loc
+
+	self_weight *= 0.66
+
+	if(istype(loc, /atom/movable))
+		var/atom/movable/L = loc
 		L.update_weight(self_weight)
 
-/go/proc/update_weight(var/weight)
-	if(istype(loc, /go))
-		var/go/L = loc
+/atom/movable/proc/update_weight(var/weight)
+	if(istype(loc, /atom/movable))
+		var/atom/movable/L = loc
 		L.update_weight(weight)
 	contents_weight = max(0, contents_weight + weight)
 
-/go/Entered(go/A, atom/oldloc)
+/atom/movable/Entered(atom/movable/A, atom/oldloc)
 	. = ..()
 	update_weight(A.self_weight + A.contents_weight)
 
-/go/Exited(go/A, atom/newloc)
+/atom/movable/Exited(atom/movable/A, atom/newloc)
 	. = ..()
 	update_weight( -(A.self_weight + A.contents_weight))
 

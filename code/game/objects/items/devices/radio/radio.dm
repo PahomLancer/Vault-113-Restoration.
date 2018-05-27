@@ -38,13 +38,6 @@
 	throw_range = 7
 	w_class = WEIGHT_CLASS_SMALL
 	materials = list(MAT_METAL=75, MAT_GLASS=25)
-	components = list(/obj/item/crafting/diode = 1,
-				/obj/item/crafting/transistor = 1,
-				/obj/item/crafting/capacitor = 1,
-				/obj/item/crafting/resistor = 1,
-				/obj/item/crafting/bulb = 1,
-				/obj/item/crafting/board = 1,
-				/obj/item/crafting/frame = 1)
 
 	var/const/TRANSMISSION_DELAY = 5 // only 2/second/radio
 	var/const/FREQ_LISTENING = 1
@@ -57,8 +50,8 @@
 	remove_radio(src, frequency)
 	frequency = add_radio(src, new_frequency)
 
-/obj/item/device/radio/proc/set_key(new_key)
-	key = format_encryption_key(new_key)
+/obj/item/device/radio/proc/set_encryption(new_encryption)
+	key = new_encryption
 
 /obj/item/device/radio/New()
 	wires = new /datum/wires/radio(src)
@@ -131,7 +124,7 @@
 										datum/tgui/master_ui = null, datum/ui_state/state = inventory_state)
 	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
 	if(!ui)
-		ui = new(user, src, ui_key, "radio", name, 370, 260 + channels.len * 22, master_ui, state)
+		ui = new(user, src, ui_key, "radio", name, 370, 220 + channels.len * 22, master_ui, state)
 		ui.open()
 
 /obj/item/device/radio/ui_data(mob/user)
@@ -209,14 +202,14 @@
 					recalculateChannels()
 				. = TRUE
 		if("key")
-			set_key(input("Enter new encryption key", "Encryption", key))
+			key = format_encryption_key(input("Enter new encryption key", "Encryption", key))
 			. = TRUE
 
-/obj/item/device/radio/talk_into(go/M, message, channel, list/spans)
+/obj/item/device/radio/talk_into(atom/movable/M, message, channel, list/spans)
 	addtimer(CALLBACK(src, .proc/talk_into_impl, M, message, channel, spans), 0)
 	return ITALICS | REDUCE_RANGE
 
-/obj/item/device/radio/proc/talk_into_impl(go/M, message, channel, list/spans)
+/obj/item/device/radio/proc/talk_into_impl(atom/movable/M, message, channel, list/spans)
 	if(!on) return // the device has to be on
 	//  Fix for permacell radios, but kinda eh about actually fixing them.
 	if(!M || !message) return
@@ -381,7 +374,7 @@
 			"type" = 0, // determines what type of radio input it is: normal broadcast
 			"server" = null, // the last server to log this signal
 			"reject" = 0,	// if nonzero, the signal will not be accepted by any broadcasting machinery
-			"level" = position.z, // The source's z level
+			"level" = 0, // The source's z level
 			"languages" = M.languages_spoken, //The languages M is talking in.
 			"spans" = spans, //the span classes of this message.
 			"verb_say" = M.verb_say, //the verb used when talking normally
@@ -432,7 +425,7 @@
 		"type" = 0,
 		"server" = null,
 		"reject" = 0,
-		"level" = position.z,
+		"level" = 0,
 		"languages" = languages_spoken,
 		"spans" = spans,
 		"verb_say" = M.verb_say,
@@ -456,10 +449,10 @@
 		// Send a mundane broadcast with limited targets:
 		Broadcast_Message(M, voicemask,
 						  src, message, voice, jobname, real_name,
-						  filter_type, signal.data["compression"], list(position.z), freq, spans,
+						  filter_type, signal.data["compression"], list(0), freq, spans,
 						  verb_say, verb_ask, verb_exclaim, verb_yell, key)
 
-/obj/item/device/radio/Hear(message, go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/obj/item/device/radio/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	if(radio_freq)
 		return
 	if(broadcasting)
@@ -523,6 +516,7 @@
 
 /obj/item/device/radio/examine(mob/user)
 	..()
+	to_chat(user, "The key is [key]")
 	if (b_stat)
 		to_chat(user, "<span class='notice'>[name] can be attached and modified.</span>")
 	else

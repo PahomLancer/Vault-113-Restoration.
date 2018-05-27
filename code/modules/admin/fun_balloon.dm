@@ -106,7 +106,7 @@
 	var/threshhold = 500
 	var/list/approved_passengers = list()
 
-/obj/effect/forcefield/luxury_shuttle/CanPass(go/mover, turf/target, height=0)
+/obj/effect/forcefield/luxury_shuttle/CanPass(atom/movable/mover, turf/target, height=0)
 	if(mover in approved_passengers)
 		return 1
 

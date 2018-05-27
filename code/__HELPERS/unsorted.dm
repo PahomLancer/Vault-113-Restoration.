@@ -26,7 +26,7 @@
 	return text("#[][][]", textr, textg, textb)
 	return
 
-/proc/Get_Angle(go/start,go/end)//For beams.
+/proc/Get_Angle(atom/movable/start,atom/movable/end)//For beams.
 	if(!start || !end)
 		return 0
 	var/dy
@@ -426,7 +426,7 @@ Turf and target are seperate in case you want to teleport some distance from a t
 //Returns the atom sitting on the turf.
 //For example, using this on a disk, which is in a bag, on a mob, will return the mob because it's on the turf.
 //Optional arg 'type' to stop once it reaches a specific type instead of a turf.
-/proc/get_atom_on_turf(go/M, stop_type)
+/proc/get_atom_on_turf(atom/movable/M, stop_type)
 	var/atom/loc = M
 	while(loc && loc.loc && !isturf(loc.loc))
 		loc = loc.loc
@@ -535,7 +535,7 @@ Turf and target are seperate in case you want to teleport some distance from a t
 	if(T.density)
 		return 1
 	for(var/i in T)
-		var/go/A = i
+		var/atom/movable/A = i
 		if(A.density && A.anchored)
 			return 1
 	return 0
@@ -708,7 +708,7 @@ Turf and target are seperate in case you want to teleport some distance from a t
 
 */
 
-/proc/get_turf_pixel(go/AM)
+/proc/get_turf_pixel(atom/movable/AM)
 	if(!istype(AM))
 		return
 
@@ -862,7 +862,7 @@ var/list/WALLITEMS_INVERSE = typecacheof(list(
 	if(initator.dir + 2 == target.dir || initator.dir - 2 == target.dir || initator.dir + 6 == target.dir || initator.dir - 6 == target.dir) //Initating mob is looking at the target, while the target mob is looking in a direction perpendicular to the 1st
 		return FACING_INIT_FACING_TARGET_TARGET_FACING_PERPENDICULAR
 
-/proc/random_step(go/AM, steps, chance)
+/proc/random_step(atom/movable/AM, steps, chance)
 	var/initial_chance = chance
 	while(steps > 0)
 		if(prob(chance))
@@ -1412,6 +1412,6 @@ for(type in view(range, dview_mob))
 		return "shoes"
 	if(ispath(type, /obj/item/clothing/under))
 		return "uniform"
-	if((ispath(type, /obj/item/weapon) && !ispath(type, /obj/item/weapon/reagent_containers)) || get_var_from_type(type, "w_class") > 2)
+	if(ispath(type, /obj/item/weapon) && !ispath(type, /obj/item/weapon/reagent_containers))
 		return "weapon"
 	return "misc"

@@ -14,7 +14,6 @@
 	name = "sturdy ladder"
 	desc = "An extremely sturdy metal ladder."
 
-
 /obj/structure/ladder/initialize()
 	spawn(120)
 		for(var/obj/structure/ladder/L in world)
@@ -43,19 +42,17 @@
 	else	//wtf make your ladders properly assholes
 		icon_state = "ladder_dmg"
 
-/obj/structure/ladder/proc/go_up(mob/user,is_ghost)
+/obj/structure/ladder/proc/go_up(var/atom/movable/user,is_ghost)
 	if(!is_ghost)
 		show_fluff_message(1,user)
-		up.add_fingerprint(user)
 	user.forceMove(get_turf(up))
 
-/obj/structure/ladder/proc/go_down(mob/user,is_ghost)
+/obj/structure/ladder/proc/go_down(var/atom/movable/user,is_ghost)
 	if(!is_ghost)
 		show_fluff_message(0,user)
-		down.add_fingerprint(user)
 	user.forceMove(get_turf(down))
 
-/obj/structure/ladder/proc/use(mob/user,is_ghost=0)
+/obj/structure/ladder/proc/use(atom/movable/user,is_ghost=0)
 	if(up && down)
 		switch( alert("Go up or down the ladder?", "Ladder", "Up", "Down", "Cancel") )
 			if("Up")
@@ -71,14 +68,17 @@
 	else
 		to_chat(user, "<span class='warning'>[src] doesn't seem to lead anywhere!</span>")
 
-	if(!is_ghost)
-		add_fingerprint(user)
-
-/obj/structure/ladder/MouseDrop_T(go/M, mob/living/user)
+/obj/structure/ladder/MouseDrop_T(atom/movable/M, mob/living/user)
 	. = ..()
-	if(user.restrained() || user.stat || !in_range(user, src) || M == src || M.anchored || (!ismob(M) && !isobj(M)))
+	if(user.restrained() || user.stat || !in_range(user, src) || M == src)
 		return 0
-	add_fingerprint(user)
+
+	if(istype(M, /obj/structure/simple_door))
+		return 0
+
+	if(istype(M, /turf))
+		return 0
+
 	user.visible_message("[user] moved [M] by \the [src].","<span class='notice'>You move [M] to \the [src].</span>")
 	to_chat(M, "You moved to [src] by [user].")
 	use(M)

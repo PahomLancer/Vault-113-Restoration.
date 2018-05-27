@@ -292,14 +292,14 @@
 		return
 	return ..()
 
-/obj/machinery/teleport/hub/proc/teleport(go/M as mob|obj, turf/T)
+/obj/machinery/teleport/hub/proc/teleport(atom/movable/M as mob|obj, turf/T)
 	var/obj/machinery/computer/teleporter/com = power_station.teleporter_console
 	if (!com)
 		return
 	if (!com.target)
 		visible_message("<span class='alert'>Cannot authenticate locked on coordinates. Please reinstate coordinate matrix.</span>")
 		return
-	if (istype(M, /go))
+	if (istype(M, /atom/movable))
 		if(do_teleport(M, com.target))
 			if(!calibrated && prob(30 - ((accurate) * 10))) //oh dear a problem
 				if(ishuman(M))//don't remove people from the round randomly you jerks

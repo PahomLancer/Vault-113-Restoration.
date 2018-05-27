@@ -157,7 +157,7 @@
 	else
 		death()
 
-/mob/living/simple_animal/hostile/swarmer/CanPass(go/O)
+/mob/living/simple_animal/hostile/swarmer/CanPass(atom/movable/O)
 	if(istype(O, /obj/item/projectile/beam/disabler))//Allows for swarmers to fight as a group without wasting their shots hitting each other
 		return 1
 	if(isswarmer(O))
@@ -425,7 +425,7 @@
 	return FALSE
 
 
-/mob/living/simple_animal/hostile/swarmer/proc/DisIntegrate(go/target)
+/mob/living/simple_animal/hostile/swarmer/proc/DisIntegrate(atom/movable/target)
 	PoolOrNew(/obj/effect/overlay/temp/swarmer/disintegration, get_turf(target))
 	do_attack_animation(target)
 	changeNext_move(CLICK_CD_MELEE)
@@ -547,7 +547,7 @@
 	max_integrity = 10
 	density = 0
 
-/obj/structure/swarmer/trap/Crossed(go/AM)
+/obj/structure/swarmer/trap/Crossed(atom/movable/AM)
 	if(isliving(AM))
 		var/mob/living/L = AM
 		if(!istype(L, /mob/living/simple_animal/hostile/swarmer))
@@ -590,7 +590,7 @@
 	obj_integrity = 50
 	max_integrity = 50
 
-/obj/structure/swarmer/blockade/CanPass(go/O)
+/obj/structure/swarmer/blockade/CanPass(atom/movable/O)
 	if(isswarmer(O))
 		return 1
 	if(istype(O, /obj/item/projectile/beam/disabler))

@@ -59227,7 +59227,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/abandoned)
 "czc" = (
@@ -59291,7 +59291,7 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "czl" = (
 /obj/machinery/door/window/northright,
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/mineral/titanium/purple,
 /area/shuttle/abandoned)
 "czm" = (
@@ -59397,7 +59397,7 @@
 	icon_state = "sleeper-open";
 	dir = 8
 	},
-/obj/effect/decal/cleanable/remains/human,
+/obj/effect/decal/remains/human,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/abandoned)
 "czD" = (

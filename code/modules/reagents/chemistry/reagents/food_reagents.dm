@@ -26,8 +26,10 @@
 	color = "#664330" // rgb: 102, 67, 48
 
 /datum/reagent/consumable/nutriment/on_mob_life(mob/living/M)
-	if(prob(50))
-		M.heal_bodypart_damage(1,0, 0)
+	if(prob(75))
+		M.adjustFireLoss(-3, 0)
+		M.adjustBruteLoss(-3, 0)
+		//M.heal_bodypart_damage(1,0, 0)
 		. = 1
 	if(iscarbon(M))
 		var/mob/living/carbon/C = M

@@ -12,7 +12,7 @@
 	var/drop_y = 1
 	var/drop_z = 1
 
-/turf/open/chasm/Entered(go/AM)
+/turf/open/chasm/Entered(atom/movable/AM)
 	START_PROCESSING(SSobj, src)
 	drop_stuff(AM)
 
@@ -30,7 +30,7 @@
 			. = 1
 			addtimer(CALLBACK(src, .proc/drop, thing), 0)
 
-/turf/open/chasm/proc/droppable(go/AM)
+/turf/open/chasm/proc/droppable(atom/movable/AM)
 	if(!isliving(AM) && !isobj(AM))
 		return 0
 	if(istype(AM, /obj/singularity) || istype(AM, /obj/item/projectile) || AM.throwing)
@@ -53,7 +53,7 @@
 			return 0
 	return 1
 
-/turf/open/chasm/proc/drop(go/AM)
+/turf/open/chasm/proc/drop(atom/movable/AM)
 	//Make sure the item is still there after our sleep
 	if(!AM || qdeleted(AM))
 		return
@@ -82,7 +82,7 @@
 	planetary_atmos = TRUE
 	baseturf = /turf/open/chasm/straight_down/lava_land_surface
 
-/turf/open/chasm/straight_down/lava_land_surface/drop(go/AM)
+/turf/open/chasm/straight_down/lava_land_surface/drop(atom/movable/AM)
 	//Make sure the item is still there after our sleep
 	if(!AM || qdeleted(AM))
 		return

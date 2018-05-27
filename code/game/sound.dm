@@ -10,7 +10,7 @@
 	var/turf/turf_source = get_turf(source)
 	var/volume
 	var/distance
-	var/range = world.view + extrarange 
+	var/range = world.view + extrarange
  	// Looping through the player list has the added bonus of working for mobs inside containers
 	for (var/P in player_list)
 		var/mob/M = P
@@ -103,7 +103,8 @@
 	if(!ticker || !ticker.login_music)
 		return
 	if(prefs && (prefs.toggles & SOUND_LOBBY))
-		sound_system.PlayMusic(ticker.login_music)
+		if(sound_system)
+			sound_system.PlayMusic(ticker.login_music)
 
 /proc/get_rand_frequency()
 	return rand(32000, 55000) //Frequency stuff only works with 45kbps oggs.
@@ -142,7 +143,7 @@
 			if ("harmonica")
 				soundin = pick('sound/harmonica/fharp1.ogg','sound/harmonica/fharp2.ogg','sound/harmonica/fharp3.ogg','sound/harmonica/fharp4.ogg','sound/harmonica/fharp5.ogg','sound/harmonica/fharp6.ogg','sound/harmonica/fharp7.ogg','sound/harmonica/fharp8.ogg')
 			if ("krotchy")
-				soundin = pick('sound/f13items/k_daddysaidonly.wav','sound/f13items/k_donttouchme.wav','sound/f13items/k_mommysaiddont.wav')
+				soundin = pick('sound/f13items/k_daddysaidonly.ogg','sound/f13items/k_donttouchme.ogg','sound/f13items/k_mommysaiddont.ogg')
 			if ("ricochet")
 				soundin = pick(	'sound/weapons/effects/ric1.ogg','sound/weapons/effects/ric2.ogg','sound/weapons/effects/ric3.ogg','sound/weapons/effects/ric4.ogg','sound/weapons/effects/ric5.ogg')
 			if ("terminal_type")
@@ -152,19 +153,23 @@
 			if ("footsteps")
 				soundin = pick ('sound/effects/footsteps/footsteps.ogg', 'sound/effects/footsteps/footsteps2.ogg')
 			if ("erikafootsteps")
-				soundin = pick('sound/effects/footsteps/tile1.wav','sound/effects/footsteps/tile2.wav')
+				soundin = pick('sound/effects/footsteps/tile1.ogg','sound/effects/footsteps/tile2.ogg')
 			if ("grassfootsteps")
-				soundin = pick('sound/effects/footsteps/grass/grass1.wav','sound/effects/footsteps/grass/grass2.wav','sound/effects/footsteps/grass/grass3.wav','sound/effects/footsteps/grass/grass4.wav')
+				soundin = pick('sound/effects/footsteps/grass/grass1.ogg','sound/effects/footsteps/grass/grass2.ogg','sound/effects/footsteps/grass/grass3.ogg','sound/effects/footsteps/grass/grass4.ogg')
 			if ("dirtfootsteps")
-				soundin = pick('sound/effects/footsteps/dirt/dirt1.wav','sound/effects/footsteps/dirt/dirt2.wav','sound/effects/footsteps/dirt/dirt3.wav','sound/effects/footsteps/dirt/dirt4.wav')
+				soundin = pick('sound/effects/footsteps/dirt/dirt1.ogg','sound/effects/footsteps/dirt/dirt2.ogg','sound/effects/footsteps/dirt/dirt3.ogg','sound/effects/footsteps/dirt/dirt4.ogg')
 			if ("waterfootsteps")
-				soundin = pick('sound/effects/footsteps/water/slosh1.wav','sound/effects/footsteps/water/slosh2.wav','sound/effects/footsteps/water/slosh3.wav','sound/effects/footsteps/water/slosh4.wav')
+				soundin = pick('sound/effects/footsteps/water/slosh1.ogg','sound/effects/footsteps/water/slosh2.ogg','sound/effects/footsteps/water/slosh3.ogg','sound/effects/footsteps/water/slosh4.ogg')
 			if ("sandfootsteps")
 				soundin = pick('sound/effects/footsteps/sand/sand_step1.ogg','sound/effects/footsteps/sand/sand_step2.ogg','sound/effects/footsteps/sand/sand_step3.ogg','sound/effects/footsteps/sand/sand_step4.ogg','sound/effects/footsteps/sand/sand_step5.ogg','sound/effects/footsteps/sand/sand_step6.ogg','sound/effects/footsteps/sand/sand_step7.ogg','sound/effects/footsteps/sand/sand_step8.ogg')
 			if ("woodfootsteps")
 				soundin = pick('sound/effects/footsteps/wood/wood_step1.ogg','sound/effects/footsteps/wood/wood_step2.ogg','sound/effects/footsteps/wood/wood_step3.ogg','sound/effects/footsteps/wood/wood_step4.ogg','sound/effects/footsteps/wood/wood_step5.ogg','sound/effects/footsteps/wood/wood_step6.ogg','sound/effects/footsteps/wood/wood_step7.ogg','sound/effects/footsteps/wood/wood_step8.ogg')
 			if ("carpetfootsteps")
 				soundin = pick('sound/effects/footsteps/carpet/carpet_step1.ogg','sound/effects/footsteps/carpet/carpet_step2.ogg','sound/effects/footsteps/carpet/carpet_step3.ogg','sound/effects/footsteps/carpet/carpet_step4.ogg','sound/effects/footsteps/carpet/carpet_step5.ogg','sound/effects/footsteps/carpet/carpet_step6.ogg','sound/effects/footsteps/carpet/carpet_step7.ogg','sound/effects/footsteps/carpet/carpet_step8.ogg')
+			if ("rain_loop")
+				soundin = pick('sound/f13ambience/rain1.ogg'/*, 'sound/f13ambience/rain2.ogg', 'sound/f13ambience/rain3.ogg', 'sound/f13ambience/rain4.ogg'*/)
+			if ("rain_roof_loop")
+				soundin = pick('sound/f13ambience/rain4.ogg')
 	return soundin
 
 /proc/playsound_global(file, repeat=0, wait, channel, volume)

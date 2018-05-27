@@ -48,7 +48,7 @@
     {{/if}}
   </ui-section>
   <ui-section label='Encryption'>
-      <ui-button icon='pencil' action='key' params='{"tune": "input"}'>{{data.key}}</ui-button>
+      <ui-button icon='pencil' action='key' params='{"tune": "input"}'>{{key}}</ui-button>
   </ui-section>
   {{#if data.subspaceSwitchable}}
     <ui-section label='Subspace Transmission'>

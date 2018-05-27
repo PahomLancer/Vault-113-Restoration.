@@ -1,13 +1,14 @@
 /turf/proc/is_openspace()
-	if(istype(src,/turf/closed) || has_opaque_atom)
+	if(has_opaque_atom)
 		return 0
-	var/area/A = get_area(src)
+	var/area/A = src.loc
 	return A.open_space
 
 /turf/proc/has_junction_closedspace()
 	for(var/turf/T in RANGE_TURFS(1,src))
 		if(!T.is_openspace())
 			return 1
+
 /turf/open/proc/update_sunlight()
 	if(is_openspace())
 		for(var/turf/T in RANGE_TURFS(1,src))

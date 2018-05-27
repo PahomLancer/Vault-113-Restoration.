@@ -43,7 +43,7 @@
 	var/obj/item/ammo_casing/energy/shot
 	ammo_instances = list()
 	for (var/shottype in ammo_type)
-		shot = new shottype(src)
+		shot = PoolOrNew(shottype)
 		ammo_instances += shot
 	shot = ammo_instances[select]
 	fire_sound = shot.fire_sound
@@ -69,18 +69,20 @@
 		update_icon()
 
 /obj/item/weapon/gun/energy/attackby(obj/item/A, mob/user, params)
-	. = ..()
-	if (!. && istype(A, /obj/item/weapon/stock_parts/cell))
-		if(power_supply)
-			to_chat(user, "<span class='notice'>\the [src] already contains power cell.</span>")
-			return 1
+	..()
+	if (istype(A, /obj/item/weapon/stock_parts/cell))
+		var/obj/O = power_supply
+
 		user.remove_from_mob(A)
 		power_supply = A
 		power_supply.forceMove(src)
 		recharge_newshot(1)
-		to_chat(user, "<span class='notice'>You load a new power cell into \the [src].</span>")
+		to_chat(user, "<span class='greenannounce'>You load a new power cell into \the [src].</span>")
 		update_icon()
-		return 1
+
+		if(O)
+			O.forceMove(get_turf(src.loc))
+			user.put_in_hands(O)
 
 /obj/item/weapon/gun/energy/attack_self(mob/living/user)
 /*
@@ -110,6 +112,10 @@
 
 /obj/item/weapon/gun/energy/can_shoot()
 	var/obj/item/ammo_casing/energy/shot = ammo_instances[select]
+
+	if(!power_supply)
+		return FALSE
+
 	return power_supply.charge >= shot.e_cost
 
 /obj/item/weapon/gun/energy/recharge_newshot(no_cyborg_drain)

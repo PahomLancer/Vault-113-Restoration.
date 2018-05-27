@@ -83,12 +83,20 @@
 		/obj/item/weapon/weldingtool/experimental,
 		/obj/item/weapon/restraints/legcuffs/bola
 		)
+	roles = list(
+		/datum/job/gangleader,
+		/datum/job/mayor,
+		/datum/job/general,
+		/datum/job/legate,
+		/datum/job/elder,
+		/datum/job/colonel
+		)
 	price = -1
 
 /datum/content_pack/cigarettes
-	name = "Cigarettes for Lead Developer"
+	name = "Cigarettes"
 	id = "cigarettes"
-	desc = "<b>Available to: All factions!</b><br>The most simple way to encourage the Lead Developer - Jackerzz aka Maxyo, is to get him a pack of cigarettes.<br>...<br><i>Note: World Health Organization discourages you from smoking. Inhaling any kind of smoke is bad for your health!</i>"
+	desc = "<b>Available to: All factions!</b><br><i>Note: World Health Organization discourages you from smoking. Inhaling any kind of smoke is bad for your health!</i>"
 	items = list(
 		/obj/item/weapon/storage/fancy/rollingpapers,
 		/obj/item/weapon/storage/fancy/cigarettes/cigpack_myron,
@@ -100,7 +108,7 @@
 		/obj/item/clothing/mask/cigarette/cigar/havana,
 		/obj/item/weapon/lighter
 		)
-	price = 60
+	price = 5000
 
 /datum/content_pack/team_fortress
 	name = "Hat simulator"
@@ -114,7 +122,7 @@
 		/obj/item/clothing/head/f13/stormchaser,
 		/obj/item/clothing/head/f13/gambler
 		)
-	price = 60
+	price = 5000
 
 /datum/content_pack/wardrobe
 	name = "High fashion"
@@ -136,7 +144,7 @@
 		/obj/item/clothing/suit/f13/puffer,
 		/obj/item/clothing/suit/toggle/labcoat/f13/wanderer
 		)
-	price = 120
+	price = 5000
 
 /datum/content_pack/vault13
 	name = "Vault 13"
@@ -147,7 +155,7 @@
 		/obj/item/weapon/reagent_containers/food/drinks/flask/vault13,
 		/obj/item/weapon/lighter/vault13
 		)
-	price = 120
+	price = 7500
 
 /datum/content_pack/bard
 	name = "Musical instruments"
@@ -157,7 +165,33 @@
 		/obj/item/device/harmonica,
 		/obj/item/device/instrument/guitar
 		)
-	price = 180
+	price = 10000
+
+/datum/content_pack/doom
+	name = "Doom"
+	id = "doom"
+	desc = "<b>Available to: Neutral and Raider factions only!</b><br>Carefully selected items from Doom game.<br><i>Note: Union Aerospace Corporation welcomes you aboard a shuttle leaving Earth on the way to Mars. Please fasten your seatbelts and have a safe flight!</i>"
+	items = list(
+		/obj/item/clothing/gloves/f13/doom
+		)
+	price = 10000
+
+/datum/content_pack/followers
+	name = "Followers set"
+	id = "follower"
+	desc = "<b>Available to: All factions!</b> : If all doctors on the wasteland are dead, then who is he?"
+	items = list(
+		/obj/item/clothing/suit/toggle/labcoat/f13/followers,
+		/obj/item/clothing/under/f13/doctor,
+		/obj/item/clothing/shoes/laceup,
+		/obj/item/clothing/gloves/color/latex,
+		/obj/item/clothing/glasses/regular,
+		///obj/item/clothing/mask/surgical/joy,
+		/obj/item/clothing/mask/surgical,
+		/obj/item/weapon/storage/backpack/satchel/leather,
+		/obj/item/weapon/storage/firstaid
+	)
+	price = 5000
 
 /datum/content_pack/trooper_armor
 	name = "Batallion themed NCR armor"
@@ -171,8 +205,9 @@
 		/obj/item/clothing/suit/armor/f13/ncr/stalker,
 		/obj/item/clothing/suit/armor/f13/ncr/punisher
 		)
-	price = 60
+	price = 1000
 
+/*
 /datum/content_pack/heavy_trooper
 	name = "NCR Heavy Infantry Corps"
 	id = "heavy_trooper"
@@ -182,19 +217,10 @@
 		/obj/item/clothing/suit/armor/f13/power_armor/ncr,
 		/obj/item/weapon/twohanded/largehammer,
 		/obj/item/weapon/gun/ballistic/automatic/rifle,
-		/obj/item/ammo_box/magazine/m308
+		/obj/item/ammo_box/magazine/F13/m308
 		)
 	price = 180
-
-/datum/content_pack/tesla
-	name = "Enclave Tesla Regiment"
-	id = "tesla"
-	desc = "<b>Available to: Enclave faction only!</b><br>Become the Tesla Trooper with a set of badass tesla power armor!<br><i>Note: Tesla weapons do not apply to this pack (yet).</i>"
-	items = list(
-		/obj/item/clothing/head/helmet/power_armor/tesla,
-		/obj/item/clothing/suit/armor/f13/power_armor/tesla
-		)
-	price = 180
+*/
 
 /datum/content_pack/khan
 	name = "Great Khan"
@@ -208,20 +234,7 @@
 		/obj/item/weapon/twohanded/tribal_spear,
 		/obj/item/weapon/restraints/legcuffs/bola/tribal
 		)
-	price = 180
-
-/datum/content_pack/super_ten
-	name = "Super 10"
-	id = "super_ten"
-	desc = "<b>Available to: All factions!</b><br>Pay-to-win pack of 10mm guns and a powerful 10 iron club."
-	items = list(
-		/obj/item/weapon/golf10,
-		/obj/item/weapon/gun/ballistic/automatic/pistol/n99,
-		/obj/item/ammo_box/magazine/m10mm_adv,
-		/obj/item/weapon/gun/ballistic/automatic/smg10mm,
-		/obj/item/ammo_box/magazine/m10mm_auto
-		)
-	price = 240
+	price = 5000
 
 /datum/content_pack/punk
 	name = "Punk"
@@ -234,7 +247,7 @@
 		/obj/item/device/instrument/eguitar,
 		/obj/item/key/motorcycle
 		)
-	price = 300
+	price = 7500
 
 /datum/content_pack/off
 	name = "OFF"
@@ -244,10 +257,10 @@
 		/obj/item/clothing/head/soft/black,
 		/obj/item/clothing/under/f13/batter,
 		/obj/item/weapon/twohanded/baseball,
-		/obj/item/clothing/gloves/f13/baseball,
+		//obj/item/clothing/gloves/f13/baseball,
 		/obj/item/clothing/shoes/f13/fancy
 		)
-	price = 300
+	price = 2500
 
 /datum/content_pack/madmax
 	name = "Mad Max"
@@ -257,100 +270,17 @@
 		/obj/item/clothing/suit/f13/mfp,
 		/obj/item/clothing/suit/f13/mfp/raider,
 		/obj/item/weapon/reagent_containers/food/snacks/f13/dog,
-		/obj/item/weapon/gun/ballistic/shotgun/trail,
 		/obj/item/clothing/head/f13/safari,
 		/obj/item/clothing/under/pants/f13/warboy,
 		/obj/item/key/buggy/wheel
 		)
-	price = 600
-
-/datum/content_pack/doom
-	name = "Doom"
-	id = "doom"
-	desc = "<b>Available to: Neutral and Raider factions only!</b><br>Carefully selected items from Doom game.<br><i>Note: Union Aerospace Corporation welcomes you aboard a shuttle leaving Earth on the way to Mars. Please fasten your seatbelts and have a safe flight!</i>"
-	items = list(
-		/obj/item/clothing/head/helmet/f13/doom,
-		/obj/item/clothing/suit/armor/f13/doom,
-		/obj/item/clothing/under/pants/f13/doom,
-		/obj/item/clothing/gloves/f13/doom,
-		/obj/item/clothing/shoes/f13/doom,
-		/obj/item/weapon/mounted_chainsaw
-		)
-	price = 1000
-
-/datum/content_pack/godfather
-	name = "Role: Gang Leader"
-	id = "godfather"
-	desc = "<b>Available to: Raider faction only!</b><br><i>You found paradise in this city. You had a good trade, you made a good living. The mercenaries protected you and there were courts of wasteland law. So you didn't need a friend like me. Now you come and say \"Leader, give me justice.\" But you don't ask with respect. You don't offer friendship. You don't even think to call me \"Godfather.\" You come into my house on the day my daughter is to be married and you ask me to do murder - for money.</i><br><b>Godfather (2255)</b>"
-	roles = list(
-		/datum/job/gangleader
-		)
-	price = 120
-
-/datum/content_pack/mayor
-	name = "Role: Mayor"
-	id = "mayor"
-	desc = "<b>Available to: City faction only!</b><br>\[insert clever Mayor related quote here\]"
-	roles = list(
-		/datum/job/mayor
-		)
-	price = 120
-
-/datum/content_pack/general
-	name = "Role: General"
-	id = "general"
-	desc = "<b>Available to: New California Republic faction only!</b><br>Don't anger a Bear, specially a two-headed one."
-	roles = list(
-		/datum/job/general
-		)
-	price = 240
-
-/datum/content_pack/legate
-	name = "Role: Legate"
-	id = "legate"
-	desc = "<b>Available to: Caesar's Legion faction only!</b><br><i>Caesar's will is the will of the Legion. Victory shall be ours, it shall be swift, and it will be honest, purchased with blood.</i>"
-	roles = list(
-		/datum/job/legate
-		)
-	price = 240
-
-/datum/content_pack/elder
-	name = "Role: Elder"
-	id = "elder"
-	desc = "<b>Available to: Brotherhood of Steel faction only!</b><br><i>Pledge in your hearts and minds, pledge by your guns that you will stand with them in battle until the end, trust each of them with your life.</i>"
-	roles = list(
-		/datum/job/elder
-		)
-	price = 240
-
-/datum/content_pack/colonel
-	name = "Role: Colonel"
-	id = "colonel"
-	desc = "<b>Available to: Enclave faction only!</b><br><i>When you see the Enclave, you see the United States government. We are authorized to restore order and civility, by any means necessary. The American people are worth fighting for. The future must be secured.</i>"
-	roles = list(
-		/datum/job/colonel
-		)
-	price = 240
-
-/datum/content_pack/leaders
-	name = "Role: All Leaders set"
-	id = "leaders"
-	desc = "<b>Available to: All factions except for Neutral!</b><br><i>Got to rule them all!</i>"
-	roles = list(
-		/datum/job/gangleader,
-		/datum/job/mayor,
-		/datum/job/general,
-		/datum/job/legate,
-		/datum/job/elder,
-		/datum/job/colonel
-		)
-	price = 1000
+	price = 10000
 
 /datum/content_pack/glowing_ghoul
 	name = "Player race: Glowing Ghoul"
 	id = "glowing_ghoul"
 	desc = "<b>Available to: All factions except for the Enclave!</b><br>The following pack gives you ability to create a glowing ghoul character on round start!"
-	price = 500
+	price = 10000
 
 	on_set(client/client)
 		client.add_race("glowing ghoul", /datum/species/ghoul/glowing)

@@ -37,18 +37,17 @@
 	return
 
 /mob/living/bullet_act(obj/item/projectile/P, def_zone)
-	var/armor = run_armor_check(def_zone, P.flag, "","",P.armour_penetration)
-	if(!P.nodamage)
+	if(P)
+		murder = P.firer
 
+	var/armor = run_armor_check(def_zone, P.flag, "","",P.armour_penetration)
+
+	if(!P.nodamage)
 		if(def_zone == "r_arm" || def_zone == "l_arm")
 			apply_damage(round(P.damage* 0.6 * rand(6, 14)/10,1), P.damage_type, def_zone, armor)
-			if(prob(60))
-				drop_item()
 
 		if(def_zone == "r_leg" || def_zone == "l_leg")
 			apply_damage(round(P.damage* 0.6 * rand(6, 14)/10,1), P.damage_type, def_zone, armor)
-			if(prob(60))
-				apply_effect(2, WEAKEN, 0)
 
 		if(def_zone == "head")
 			apply_damage(round(P.damage* 2 * rand(6, 14)/10,1), P.damage_type, def_zone, armor)
@@ -56,6 +55,8 @@
 		else
 			apply_damage(round(P.damage*rand(6, 14)/10,1), P.damage_type, def_zone, armor)
 
+//crc
+	//	apply_damage(P.damage, P.damage_type, def_zone, armor)
 		attacked_trigger(P.firer)
 		if(P.dismemberment)
 			check_projectile_dismemberment(P, def_zone)
@@ -99,13 +100,11 @@
 							"<span class='userdanger'>[src] has been hit by [I].</span>")
 			var/armor = run_armor_check(zone, "melee", "Your armor has protected your [parse_zone(zone)].", "Your armor has softened hit to your [parse_zone(zone)].",I.armour_penetration)
 
-            //crc
+			//crc
 			if(zone == "r_arm" || zone == "l_arm")
 				var/melee_damage = round(I.throwforce* 0.6 * rand(6, 14)/10, 1)
 
 				apply_damage(melee_damage, dtype, zone, armor)
-				if(prob(60))
-					drop_item()
 
 			if(zone == "r_leg" || zone == "l_leg")
 
@@ -113,8 +112,6 @@
 
 
 				apply_damage(melee_damage, dtype, zone, armor)
-				if(prob(60))
-					apply_effect(2, WEAKEN, 0)
 
 			if(zone == "head")
 				var/melee_damage = round(I.throwforce* 2 * rand(6, 14)/10, 1)
@@ -128,6 +125,9 @@
 
 				apply_damage(melee_damage, dtype, zone, armor)
 
+
+
+			//apply_damage(I.throwforce, dtype, zone, armor)
 			if(I.thrownby)
 				attacked_trigger(I.thrownby)
 				add_logs(I.thrownby, src, "hit", I)
@@ -351,6 +351,30 @@
 	investigate_log("([key_name(src)]) has been consumed by the singularity.","singulo") //Oh that's where the clown ended up!
 	gib()
 	return(gain)
+
+/mob/living/narsie_act()
+	if(is_servant_of_ratvar(src) && !stat)
+		to_chat(src, "<span class='userdanger'>You resist Nar-Sie's influence... but not all of it. <i>Run!</i></span>")
+		adjustBruteLoss(35)
+		if(src && reagents)
+			reagents.add_reagent("heparin", 5)
+		return FALSE
+	if(client)
+		makeNewConstruct(/mob/living/simple_animal/hostile/construct/harvester, src, null, 0)
+	else
+		switch(rand(1, 10))
+			if(1)
+				new /mob/living/simple_animal/hostile/construct/armored/hostile(get_turf(src))
+			if(2)
+				new /mob/living/simple_animal/hostile/construct/wraith/hostile(get_turf(src))
+			if(3 to 6)
+				new /mob/living/simple_animal/hostile/construct/builder/hostile(get_turf(src))
+			if(6 to 10)
+				new /mob/living/simple_animal/hostile/construct/harvester/hostile(get_turf(src))
+	spawn_dust()
+	gib()
+	return TRUE
+
 
 /mob/living/ratvar_act()
 	if(stat != DEAD && !is_servant_of_ratvar(src) && !add_servant_of_ratvar(src))

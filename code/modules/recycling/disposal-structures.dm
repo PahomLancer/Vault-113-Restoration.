@@ -40,7 +40,7 @@
 
 	// now everything inside the disposal gets put into the holder
 	// note AM since can contain mobs or objs
-	for(var/go/AM in D)
+	for(var/atom/movable/AM in D)
 		AM.forceMove(src)
 		if(istype(AM, /obj/structure/bigDelivery) && !hasmob)
 			var/obj/structure/bigDelivery/T = AM
@@ -99,7 +99,7 @@
 // merge two holder objects
 // used when a a holder meets a stuck holder
 /obj/structure/disposalholder/proc/merge(obj/structure/disposalholder/other)
-	for(var/go/AM in other)
+	for(var/atom/movable/AM in other)
 		AM.forceMove(src		)// move everything in other holder to this one
 		if(ismob(AM))
 			var/mob/M = AM
@@ -269,7 +269,7 @@
 		target = get_offset_target_turf(T, rand(5)-rand(5), rand(5)-rand(5))
 
 	playsound(src, 'sound/machines/hiss.ogg', 50, 0, 0)
-	for(var/go/AM in H)
+	for(var/atom/movable/AM in H)
 		AM.forceMove(src.loc)
 		AM.pipe_eject(direction)
 		if(target)
@@ -680,7 +680,7 @@
 	else
 		sleep(20)
 	if(H)
-		for(var/go/AM in H)
+		for(var/atom/movable/AM in H)
 			AM.forceMove(T)
 			AM.pipe_eject(dir)
 			AM.throw_at(target, eject_range, 1)
@@ -723,7 +723,7 @@
 // called when movable is expelled from a disposal pipe or outlet
 // by default does nothing, override for special behaviour
 
-/go/proc/pipe_eject(direction)
+/atom/movable/proc/pipe_eject(direction)
 	return
 
 /obj/effect/decal/cleanable/blood/gibs/pipe_eject(direction)

@@ -1,6 +1,6 @@
 /*
  	Miauw's big Say() rewrite.
-	This file has the basic go level speech procs.
+	This file has the basic atom/movable level speech procs.
 	And the base of the send_speech() proc, which is the core of saycode.
 */
 var/list/freqtospan = list(
@@ -16,7 +16,7 @@ var/list/freqtospan = list(
 	"1337" = "centcomradio"
 	)
 
-/go/proc/say(message)
+/atom/movable/proc/say(message)
 	if(!can_speak())
 		return
 	if(message == "" || !message)
@@ -24,22 +24,22 @@ var/list/freqtospan = list(
 	var/list/spans = get_spans()
 	send_speech(message, 7, src, , spans)
 
-/go/proc/Hear(message, go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/atom/movable/proc/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	return
 
-/go/proc/can_speak()
+/atom/movable/proc/can_speak()
 	return 1
 
-/go/proc/send_speech(message, range = 7, obj/source = src, bubble_type, list/spans)
+/atom/movable/proc/send_speech(message, range = 7, obj/source = src, bubble_type, list/spans)
 	var/rendered = compose_message(src, languages_spoken, message, , spans)
-	for(var/go/AM in get_hearers_in_view(range, src))
+	for(var/atom/movable/AM in get_hearers_in_view(range, src))
 		AM.Hear(rendered, src, languages_spoken, message, , spans)
 
 //To get robot span classes, stuff like that.
-/go/proc/get_spans()
+/atom/movable/proc/get_spans()
 	return list()
 
-/go/proc/compose_message(go/speaker, message_langs, raw_message, radio_freq, list/spans)
+/atom/movable/proc/compose_message(atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	//This proc uses text() because it is faster than appending strings. Thanks BYOND.
 	//Basic span
 	var/spanpart1 = "<span class='[radio_freq ? get_radio_span(radio_freq) : "game say"]'>"
@@ -56,13 +56,13 @@ var/list/freqtospan = list(
 
 	return "[spanpart1][spanpart2][freqpart][compose_track_href(speaker, namepart)][namepart][compose_job(speaker, message_langs, raw_message, radio_freq)][endspanpart][messagepart]"
 
-/go/proc/compose_track_href(go/speaker, message_langs, raw_message, radio_freq)
+/atom/movable/proc/compose_track_href(atom/movable/speaker, message_langs, raw_message, radio_freq)
 	return ""
 
-/go/proc/compose_job(go/speaker, message_langs, raw_message, radio_freq)
+/atom/movable/proc/compose_job(atom/movable/speaker, message_langs, raw_message, radio_freq)
 	return ""
 
-/go/proc/say_quote(input, list/spans=list())
+/atom/movable/proc/say_quote(input, list/spans=list())
 	if(!input)
 		return "says, \"...\""	//not the best solution, but it will stop a large number of runtimes. The cause is somewhere in the Tcomms code
 	var/ending = copytext(input, length(input))
@@ -77,9 +77,9 @@ var/list/freqtospan = list(
 
 	return "[verb_say], \"[input]\""
 
-/go/proc/lang_treat(go/speaker, message_langs, raw_message, list/spans)
+/atom/movable/proc/lang_treat(atom/movable/speaker, message_langs, raw_message, list/spans)
 	if(languages_understood & message_langs)
-		var/go/AM = speaker.GetSource()
+		var/atom/movable/AM = speaker.GetSource()
 		if(AM) //Basically means "if the speaker is virtual"
 			if(AM.verb_say != speaker.verb_say || AM.verb_ask != speaker.verb_ask || AM.verb_exclaim != speaker.verb_exclaim || AM.verb_yell != speaker.verb_yell) //If the saymod was changed
 				return speaker.say_quote(raw_message, spans)
@@ -87,7 +87,7 @@ var/list/freqtospan = list(
 		else
 			return speaker.say_quote(raw_message, spans)
 	else if((message_langs & HUMAN) || (message_langs & RATVAR)) //it's human or ratvar language
-		var/go/AM = speaker.GetSource()
+		var/atom/movable/AM = speaker.GetSource()
 		if(message_langs & HUMAN)
 			raw_message = stars(raw_message)
 		if(message_langs & RATVAR)
@@ -145,38 +145,38 @@ var/list/freqtospan = list(
 		return "2"
 	return "0"
 
-/go/proc/GetVoice()
+/atom/movable/proc/GetVoice()
 	return name
 
-/go/proc/IsVocal()
+/atom/movable/proc/IsVocal()
 	return 1
 
-/go/proc/get_alt_name()
+/atom/movable/proc/get_alt_name()
 
 //HACKY VIRTUALSPEAKER STUFF BEYOND THIS POINT
 //these exist mostly to deal with the AIs hrefs and job stuff.
 
-/go/proc/GetJob() //Get a job, you lazy butte
+/atom/movable/proc/GetJob() //Get a job, you lazy butte
 
-/go/proc/GetSource()
+/atom/movable/proc/GetSource()
 
-/go/proc/GetRadio()
+/atom/movable/proc/GetRadio()
 
 //VIRTUALSPEAKERS
-/go/virtualspeaker
+/atom/movable/virtualspeaker
 	var/job
-	var/go/source
+	var/atom/movable/source
 	var/obj/item/device/radio/radio
 
-/go/virtualspeaker/GetJob()
+/atom/movable/virtualspeaker/GetJob()
 	return job
 
-/go/virtualspeaker/GetSource()
+/atom/movable/virtualspeaker/GetSource()
 	return source
 
-/go/virtualspeaker/GetRadio()
+/atom/movable/virtualspeaker/GetRadio()
 	return radio
 
-/go/virtualspeaker/Destroy()
+/atom/movable/virtualspeaker/Destroy()
 	..()
 	return QDEL_HINT_PUTINPOOL

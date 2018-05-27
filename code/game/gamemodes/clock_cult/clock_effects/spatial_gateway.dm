@@ -112,7 +112,7 @@
 	if(isliving(A) || istype(A, /obj/item))
 		pass_through_gateway(A)
 
-/obj/effect/clockwork/spatial_gateway/proc/pass_through_gateway(go/A, no_cost)
+/obj/effect/clockwork/spatial_gateway/proc/pass_through_gateway(atom/movable/A, no_cost)
 	if(!linked_gateway)
 		qdel(src)
 		return FALSE
@@ -144,7 +144,7 @@
 		qdel(linked_gateway)
 
 //This proc creates and sets up a gateway from invoker input.
-/go/proc/procure_gateway(mob/living/invoker, time_duration, gateway_uses, two_way)
+/atom/movable/proc/procure_gateway(mob/living/invoker, time_duration, gateway_uses, two_way)
 	var/list/possible_targets = list()
 	var/list/teleportnames = list()
 
@@ -162,7 +162,7 @@
 		to_chat(invoker, "<span class='warning'>There are no other eligible targets for a Spatial Gateway!</span>")
 		return FALSE
 	var/input_target_key = input(invoker, "Choose a target to form a rift to.", "Spatial Gateway") as null|anything in possible_targets
-	var/go/target = possible_targets[input_target_key]
+	var/atom/movable/target = possible_targets[input_target_key]
 	if(!src || !input_target_key || !invoker || !invoker.canUseTopic(src, !issilicon(invoker)) || !is_servant_of_ratvar(invoker) || (istype(src, /obj/item) && invoker.get_active_held_item() != src) || !invoker.can_speak_vocal())
 		return FALSE //if any of the involved things no longer exist, the invoker is stunned, too far away to use the object, or does not serve ratvar, or if the object is an item and not in the mob's active hand, fail
 	if(!target) //if we have no target, but did have a key, let them retry

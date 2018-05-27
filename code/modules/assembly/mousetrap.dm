@@ -104,7 +104,7 @@
 	..()
 
 
-/obj/item/device/assembly/mousetrap/Crossed(go/AM as mob|obj)
+/obj/item/device/assembly/mousetrap/Crossed(atom/movable/AM as mob|obj)
 	if(armed)
 		if(ismob(AM))
 			var/mob/MM = AM

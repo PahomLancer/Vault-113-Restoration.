@@ -288,7 +288,8 @@ var/datum/subsystem/timer/SStimer
 			next.prev = prev
 	next = null
 	prev = null
-	return QDEL_HINT_IWILLGC
+
+	return QDEL_HINT_PUTINPOOL
 
 proc/addtimer(datum/callback/callback, wait, flags)
 	if (!callback)
@@ -324,7 +325,7 @@ proc/addtimer(datum/callback/callback, wait, flags)
 	if (flags & TIMER_CLIENT_TIME)
 		timeToRun = REALTIMEOFDAY + wait
 
-	var/datum/timedevent/timer = new(callback, timeToRun, flags, hash)
+	var/datum/timedevent/timer = PoolOrNew(/datum/timedevent, list(callback, timeToRun, flags, hash))
 	if (flags & TIMER_STOPPABLE)
 		return timer.id
 

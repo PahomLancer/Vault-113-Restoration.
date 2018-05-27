@@ -31,6 +31,8 @@
 	if(watch_locations.len>0)
 		forceMove(pick(watch_locations))
 */
+	client.donate_money = SScontent.get_user_money(ckey)
+
 	new_player_panel()
 
 	spawn(40)

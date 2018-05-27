@@ -15,5 +15,5 @@
 	priority_announce("High levels of radiation detected near the station. Maintenance is best shielded from radiation.", "Anomaly Alert", 'sound/AI/radiation.ogg')
 	//sound not longer matches the text, but an audible warning is probably good
 
-/datum/round_event/radiation_storm/start()
+///datum/round_event/radiation_storm/start()
 //	SSweather.run_weather("radiation storm",ZLEVEL_STATION)

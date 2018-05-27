@@ -38,6 +38,9 @@ var/datum/subsystem/fire_burning/SSfire_burning
 			if(istype(location))
 				var/datum/gas_mixture/affected = location.air
 				affected.temperature *= 1.01
+				if(location.has_weather("rain"))
+					O.extinguish()
+					processing -= O
 		else
 			processing -= O
 

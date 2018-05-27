@@ -36,7 +36,7 @@ var/list/total_extraction_beacons = list()
 			return
 		beacon = A
 
-/obj/item/weapon/extraction_pack/afterattack(go/A, mob/living/carbon/human/user, flag, params)
+/obj/item/weapon/extraction_pack/afterattack(atom/movable/A, mob/living/carbon/human/user, flag, params)
 	if(!beacon)
 		to_chat(user, "[src] is not linked to a beacon, and cannot be used.")
 		return
@@ -91,7 +91,7 @@ var/list/total_extraction_beacons = list()
 			balloon.appearance_flags = RESET_COLOR | RESET_ALPHA | RESET_TRANSFORM
 			holder_obj.overlays -= balloon2
 			holder_obj.overlays += balloon
-			playsound(holder_obj.loc, 'sound/items/fulext_deploy.wav', 50, 1, -3)
+			playsound(holder_obj.loc, 'sound/items/fulext_deploy.ogg', 50, 1, -3)
 			animate(holder_obj, pixel_z = 10, time = 20)
 			sleep(20)
 			animate(holder_obj, pixel_z = 15, time = 10)
@@ -102,7 +102,7 @@ var/list/total_extraction_beacons = list()
 			sleep(10)
 			animate(holder_obj, pixel_z = 10, time = 10)
 			sleep(10)
-			playsound(holder_obj.loc, 'sound/items/fultext_launch.wav', 50, 1, -3)
+			playsound(holder_obj.loc, 'sound/items/fultext_launch.ogg', 50, 1, -3)
 			animate(holder_obj, pixel_z = 1000, time = 30)
 			if(ishuman(A))
 				var/mob/living/carbon/human/L = A
@@ -170,7 +170,7 @@ var/list/total_extraction_beacons = list()
 /obj/effect/extraction_holder
 	name = "extraction holder"
 	desc = "you shouldnt see this"
-	var/go/stored_obj
+	var/atom/movable/stored_obj
 
 /obj/item/weapon/extraction_pack/proc/check_for_living_mobs(atom/A)
 	if(isliving(A))

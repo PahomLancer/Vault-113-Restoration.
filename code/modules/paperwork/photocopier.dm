@@ -368,7 +368,7 @@
 		return
 	if(loc.density)
 		return 1
-	for(var/go/AM in loc)
+	for(var/atom/movable/AM in loc)
 		if(AM == src)
 			continue
 		if(AM.density)

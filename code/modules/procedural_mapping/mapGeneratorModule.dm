@@ -77,7 +77,7 @@
 				//You're the same as me? I hate you I'm going home
 				if(clusterCheckFlags & CLUSTER_CHECK_SAME_ATOMS)
 					clustering = rand(clusterMin, clusterMax)
-					for(var/go/M in range(clustering,T))
+					for(var/atom/movable/M in range(clustering,T))
 						if(istype(M,atomPath))
 							skipLoopIteration = TRUE
 							break
@@ -88,7 +88,7 @@
 				//You're DIFFERENT from me? I hate you I'm going home
 				if(clusterCheckFlags & CLUSTER_CHECK_DIFFERENT_ATOMS)
 					clustering = rand(clusterMin, clusterMax)
-					for(var/go/M in range(clustering,T))
+					for(var/atom/movable/M in range(clustering,T))
 						if(!(istype(M,atomPath)))
 							skipLoopIteration = TRUE
 							break

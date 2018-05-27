@@ -2,7 +2,7 @@
 	new /obj/effect/gibspawner/robot(loc,viruses)
 
 /mob/living/silicon/spawn_dust()
-	new /obj/effect/decal/cleanable/remains/robot(loc)
+	new /obj/effect/decal/remains/robot(loc)
 
 /mob/living/silicon/death(gibbed)
 	if(!gibbed)

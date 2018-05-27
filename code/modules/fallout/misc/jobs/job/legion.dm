@@ -17,7 +17,7 @@
 
 	whitelist_on = 1
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
 	/obj/item/weapon/machete,
@@ -26,8 +26,8 @@
 	/obj/item/weapon/harpoon,
 	/obj/item/device/radio,
 	/obj/item/weapon/lighter/gold,
-	/obj/item/weapon/reagent_containers/pill/patch/stimpak,
-	/obj/item/weapon/reagent_containers/pill/patch/supstimpak
+	/obj/item/weapon/reagent_containers/f13stimpack,
+	/obj/item/weapon/reagent_containers/f13stimpack/super
 	)
 
 	denied_items = list(
@@ -77,7 +77,7 @@
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
 	/obj/item/weapon/machete,
@@ -86,7 +86,7 @@
 	/obj/item/weapon/harpoon,
 	/obj/item/device/radio,
 	/obj/item/weapon/lighter/engraved,
-	/obj/item/weapon/reagent_containers/pill/patch/stimpak
+	/obj/item/weapon/reagent_containers/f13stimpack
 	)
 
 	denied_items = list(
@@ -136,7 +136,7 @@
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
 	/obj/item/weapon/machete,
@@ -145,7 +145,7 @@
 	/obj/item/weapon/harpoon,
 	/obj/item/device/radio,
 	/obj/item/weapon/lighter/engraved,
-	/obj/item/weapon/reagent_containers/pill/patch/stimpak
+	/obj/item/weapon/reagent_containers/f13stimpack
 	)
 
 	denied_items = list(
@@ -195,7 +195,7 @@
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
 	/obj/item/clothing/head/helmet/f13/legdecan/alt,
@@ -204,7 +204,7 @@
 	/obj/item/weapon/spear,
 	/obj/item/weapon/harpoon,
 	/obj/item/device/radio,
-	/obj/item/weapon/reagent_containers/pill/patch/healingpowder
+	/obj/item/stack/medical/healingpowder
 	)
 
 	denied_items = list(
@@ -255,14 +255,14 @@
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten")
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
 
 	required_items = list(
 	/obj/item/weapon/machete,
 	/obj/item/weapon/kitchen/knife/combat,
 	/obj/item/weapon/spear,
 	/obj/item/weapon/harpoon,
-	/obj/item/weapon/reagent_containers/pill/patch/healingpowder
+	/obj/item/stack/medical/healingpowder
 	)
 
 	denied_items = list(
@@ -297,4 +297,4 @@
 	weapon = /obj/item/weapon/gun/ballistic/shotgun/rifle
 	backpack_contents = list(/obj/item/weapon/restraints/handcuffs=1, \
 	/obj/item/weapon/reagent_containers/food/drinks/flask/survival=1, \
-	/obj/item/weapon/storage/wallet=1,/obj/item/weapon/reagent_containers/pill/patch/healingpowder)
+	/obj/item/weapon/storage/wallet=1,/obj/item/stack/medical/healingpowder=2)

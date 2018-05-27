@@ -74,13 +74,13 @@
 	..()
 	sound = "sound/guitar/[safepick(guitar_notes)]"
 
-/obj/effect/cross_action/spacetime_dist/proc/walk_link(go/AM)
+/obj/effect/cross_action/spacetime_dist/proc/walk_link(atom/movable/AM)
 	if(linked_dist && walks_left > 0)
 		flick("purplesparkles", src)
 		linked_dist.get_walker(AM)
 		walks_left--
 
-/obj/effect/cross_action/spacetime_dist/proc/get_walker(go/AM)
+/obj/effect/cross_action/spacetime_dist/proc/get_walker(atom/movable/AM)
 	busy = TRUE
 	if(linked_dist)
 		flick("purplesparkles", src)
@@ -88,7 +88,7 @@
 		playsound(get_turf(src),sound,70,0)
 	busy = FALSE
 
-/obj/effect/cross_action/spacetime_dist/Crossed(go/AM)
+/obj/effect/cross_action/spacetime_dist/Crossed(atom/movable/AM)
 	if(!busy)
 		walk_link(AM)
 

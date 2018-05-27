@@ -26,7 +26,7 @@
 	id = "methamphetamine"
 	results = list("methamphetamine" = 4)
 	required_reagents = list("ephedrine" = 1, "iodine" = 1, "phosphorus" = 1, "hydrogen" = 1)
-	required_temp = 374
+//	required_temp = 374
 
 /datum/chemical_reaction/bath_salts
 	name = "bath_salts"

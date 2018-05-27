@@ -65,7 +65,7 @@
 		timer = newtime
 		to_chat(user, "Timer set for [timer] seconds.")
 
-/obj/item/weapon/c4/afterattack(go/AM, mob/user, flag)
+/obj/item/weapon/c4/afterattack(atom/movable/AM, mob/user, flag)
 	if (!flag)
 		return
 	if (ismob(AM))

@@ -3,6 +3,8 @@
 /atom/movable/sunlighting_overlay
 	name          = ""
 
+	anchored      = TRUE
+
 	icon             = LIGHTING_ICON
 	color            = SUNLIGHTING_BASE_MATRIX
 	plane            = SUNLIGHTING_PLANE
@@ -130,6 +132,15 @@
 
 /atom/movable/sunlighting_overlay/blob_act()
 	return
+
+// Nope nope nope!
+/atom/movable/sunlighting_overlay/onShuttleMove(turf/T1, rotation)
+	return FALSE
+
+// Override here to prevent things accidentally moving around overlays.
+/atom/movable/sunlighting_overlay/forceMove(atom/destination, var/no_tp=FALSE, var/harderforce = FALSE)
+	if(harderforce)
+		. = ..()
 
 /atom/movable/sunlighting_overlay/proc/animate_color()
 	animate(src, color = target_color, time = LIGHTING_ANIMATE_TIME, flags = ANIMATION_RELATIVE)

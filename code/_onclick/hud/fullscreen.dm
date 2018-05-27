@@ -2,7 +2,7 @@
 /mob
 	var/list/screens = list()
 
-/mob/proc/overlay_fullscreen(category, type, severity)
+/mob/proc/overlay_fullscreen(category, type, severity, animated = 0)
 	var/obj/screen/fullscreen/screen
 	if(screens[category])
 		screen = screens[category]
@@ -19,6 +19,10 @@
 
 	screens[category] = screen
 	if(client && stat != DEAD)
+		if(animated)
+			screen.alpha = 0
+			spawn(0)
+				animate(screen, alpha = 255, time = animated, flags = ANIMATION_RELATIVE )
 		client.screen += screen
 	return screen
 

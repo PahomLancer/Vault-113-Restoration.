@@ -56,9 +56,13 @@ var/datum/subsystem/ticker/ticker
 /datum/subsystem/ticker/New()
 	NEW_SS_GLOBAL(ticker)
 
+	/*
 	login_music = pickweight(list('sound/f13music/fo2_brotherhood.ogg' = 45, 'sound/f13music/fo2_outpost.ogg' =45, 'sound/f13music/fo2_city.ogg' =45, 'sound/f13music/fo2_village.ogg' =5, 'sound/f13music/fo2_vats.ogg' =5)) // choose title music!
 	if(SSevent.holidays && SSevent.holidays[APRIL_FOOLS])
 		login_music = 'sound/f13music/mysterious_stranger.ogg'
+	*/
+
+	login_music = 'sound/f13music/fo3_menu.ogg'
 
 /datum/subsystem/ticker/Initialize(timeofday)
 	if(!syndicate_code_phrase)
@@ -202,11 +206,12 @@ var/datum/subsystem/ticker/ticker
 	spawn(0)//Forking here so we dont have to wait for this to finish
 		mode.post_setup()
 		//Cleanup some stuff
+		/*
 		for(var/obj/effect/landmark/start/S in landmarks_list)
 			//Deleting Startpoints but we need the ai point to AI-ize people later
 			if(S.name != "AI")
 				qdel(S)
-
+		*/
 		var/list/adm = get_admin_counts()
 		if(!adm["present"])
 			send2irc("Server", "Round just started with no active admins online!")
@@ -366,6 +371,7 @@ var/datum/subsystem/ticker/ticker
 	return 1
 
 /datum/subsystem/ticker/proc/send_tip_of_the_round()
+/*
 	var/m
 	if(selected_tip)
 		m = selected_tip
@@ -380,6 +386,7 @@ var/datum/subsystem/ticker/ticker
 	if(m)
 		to_chat(world, "<font color='purple'><b>Tip of the round: \
 			</b>[html_encode_ru(m)]</font>")
+*/
 
 /datum/subsystem/ticker/proc/check_queue()
 	if(!queued_players.len || !config.hard_popcap)

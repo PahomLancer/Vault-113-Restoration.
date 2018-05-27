@@ -36,7 +36,7 @@
 		bombers += message
 		message_admins(message)
 		log_game("[key_name(user)] has detonated [src.name].")
-	for(var/go/AM in src)
+	for(var/atom/movable/AM in src)
 		qdel(AM)
 	explosion(get_turf(src), 0, 1, 5, 5)
 	qdel(src)

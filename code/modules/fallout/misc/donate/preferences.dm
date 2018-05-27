@@ -435,12 +435,16 @@ This proc take soooo much perfomance.. Cause i'm using CHECK_TICK on every step,
 /datum/preferences/proc/GetOutfit(job)
 	if(!job)
 		return null
-	if(ispath(job))
-		. = outfits[job]
+
+	if(job in outfits)
+		if(outfits[job])
+			. = outfits[job]
 		if(!.)
 			. = get_var_from_type(job, "outfit")
 	else
-		. = outfits[job:type]
+		if(!ispath(job))
+			if(job:type in outfits)
+				. = outfits[job:type]
 		if(!.)
 			. = job:outfit
 #undef MAX_ITEM_LENGTH

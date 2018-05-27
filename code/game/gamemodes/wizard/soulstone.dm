@@ -170,9 +170,50 @@
 				if(user != T)
 					to_chat(user, "<span class='info'><b>Capture successful!</b>:</span> [T.real_name]'s soul has been captured and stored within the soulstone.")
 
+		if("CONSTRUCT")
+			var/obj/structure/constructshell/T = target
+			var/mob/living/simple_animal/shade/A = locate() in src
+			if(A)
+				var/construct_class = alert(user, "Please choose which type of construct you wish to create.",,"Juggernaut","Wraith","Artificer")
+				if(!T || !T.loc)
+					return
+				switch(construct_class)
+					if("Juggernaut")
+						makeNewConstruct(/mob/living/simple_animal/hostile/construct/armored, A, user, 0, T.loc)
+
+					if("Wraith")
+						makeNewConstruct(/mob/living/simple_animal/hostile/construct/wraith, A, user, 0, T.loc)
+
+					if("Artificer")
+						if(iscultist(user) || iswizard(user))
+							makeNewConstruct(/mob/living/simple_animal/hostile/construct/builder, A, user, 0, T.loc)
+
+						else
+							makeNewConstruct(/mob/living/simple_animal/hostile/construct/builder/noncult, A, user, 0, T.loc)
+
+				qdel(T)
+				user.drop_item()
+				qdel(src)
+			else
+				to_chat(user, "<span class='userdanger'>Creation failed!</span>: The soul stone is empty! Go kill someone!")
+
+
+/proc/makeNewConstruct(mob/living/simple_animal/hostile/construct/ctype, mob/target, mob/stoner = null, cultoverride = 0, loc_override = null)
+	var/mob/living/simple_animal/hostile/construct/newstruct = new ctype((loc_override) ? (loc_override) : (get_turf(target)))
+	if(stoner)
+		newstruct.faction |= "\ref[stoner]"
+	newstruct.key = target.key
+	if(newstruct.mind && ((stoner && iscultist(stoner)) || cultoverride) && ticker && ticker.mode)
+		ticker.mode.add_cultist(newstruct.mind, 0)
+	if(iscultist(stoner) || cultoverride)
+		to_chat(newstruct, "<b>You are still bound to serve the cult[stoner ? " and [stoner]":""], follow their orders and help them complete their goals at all costs.</b>")
+	else if(stoner)
+		to_chat(newstruct, "<b>You are still bound to serve your creator, [stoner], follow their orders and help them complete their goals at all costs.</b>")
+	newstruct.cancel_camera()
+
 
 /obj/item/device/soulstone/proc/init_shade(mob/living/carbon/human/T, mob/U, vic = 0)
-	new /obj/effect/decal/cleanable/remains/human(T.loc) //Spawns a skeleton
+	new /obj/effect/decal/remains/human(T.loc) //Spawns a skeleton
 	T.invisibility = INVISIBILITY_ABSTRACT
 	T.dust_animation()
 	var/mob/living/simple_animal/shade/S = new /mob/living/simple_animal/shade(src)

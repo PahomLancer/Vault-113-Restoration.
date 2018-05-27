@@ -86,7 +86,7 @@
 	melee_damage_lower = 5
 	melee_damage_upper = 10
 	poison_per_bite = 3
-	var/go/cocoon_target
+	var/atom/movable/cocoon_target
 	var/fed = 0
 
 //hunters have the most poison and move the fastest, so they can find prey

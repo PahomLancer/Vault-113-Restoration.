@@ -81,8 +81,6 @@
 	name = "dungeon lite"
 	loot = list(/obj/item/weapon/melee/classic_baton = 11,
 				/obj/item/weapon/melee/classic_baton/telescopic = 12,
-				/obj/item/weapon/spellbook/oneuse/smoke = 10,
-				/obj/item/weapon/spellbook/oneuse/blind = 10,
 				/obj/item/weapon/storage/firstaid/regular = 45,
 				/obj/item/weapon/storage/firstaid/toxin = 35,
 				/obj/item/weapon/storage/firstaid/brute = 27,

@@ -65,7 +65,7 @@ var/list/chemical_mob_spawn_nicecritters = list() // and possible friendly mobs
 					step(C, pick(NORTH,SOUTH,EAST,WEST))
 
 /datum/chemical_reaction/proc/goonchem_vortex(turf/T, setting_type, range)
-	for(var/go/X in orange(range, T))
+	for(var/atom/movable/X in orange(range, T))
 		if(istype(X, /obj/effect))
 			continue
 		if(!X.anchored)

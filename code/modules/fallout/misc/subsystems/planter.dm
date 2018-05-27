@@ -4,7 +4,8 @@ var/datum/subsystem/planter/SSplanter
 
 /datum/subsystem/planter
 	name = "Planter"
-	wait = 150
+	wait = 300
+	priority = 5
 
 /datum/subsystem/planter/New()
 	NEW_SS_GLOBAL(SSplanter)

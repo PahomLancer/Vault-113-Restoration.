@@ -44,7 +44,7 @@
 	..()
 	add_fingerprint(usr)
 
-/obj/structure/MouseDrop_T(go/O, mob/user)
+/obj/structure/MouseDrop_T(atom/movable/O, mob/user)
 	. = ..()
 	if(!climbable)
 		return
@@ -62,7 +62,7 @@
 		step(O, get_dir(O, src))
 	return
 
-/obj/structure/proc/do_climb(go/A)
+/obj/structure/proc/do_climb(atom/movable/A)
 	if(climbable)
 		density = 0
 		. = step(A,get_dir(A,src.loc))

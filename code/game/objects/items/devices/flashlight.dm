@@ -311,7 +311,7 @@
 		..()
 	return
 
-/obj/item/device/flashlight/emp/afterattack(go/A, mob/user, proximity)
+/obj/item/device/flashlight/emp/afterattack(atom/movable/A, mob/user, proximity)
 	if(!proximity)
 		return
 

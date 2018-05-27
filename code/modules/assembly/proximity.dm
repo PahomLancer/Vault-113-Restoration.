@@ -52,7 +52,7 @@
 	return secured
 
 
-/obj/item/device/assembly/prox_sensor/HasProximity(go/AM as mob|obj)
+/obj/item/device/assembly/prox_sensor/HasProximity(atom/movable/AM as mob|obj)
 	if (istype(AM, /obj/effect/beam))
 		return
 	sense()

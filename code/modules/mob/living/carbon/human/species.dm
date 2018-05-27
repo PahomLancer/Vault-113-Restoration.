@@ -15,7 +15,6 @@
 	var/name = null		// this is the fluff name. these will be left generic (such as 'Lizardperson' for the lizard race) so servers can change them to whatever
 	var/roundstart = 0	// can this mob be chosen at roundstart? (assuming the config option is checked?)
 	var/default_color = "#FFF"	// if alien colors are disabled, this is the color that will be used by that race
-	var/race_color = "#FFD97C"
 
 	var/eyes = "eyes"	// which eyes the race uses. at the moment, the only types of eyes are "eyes" (regular eyes) and "jelleyes" (three eyes)
 	var/sexes = 1		// whether or not the race has sexual characteristics. at the moment this is only 0 for skeletons and shadows
@@ -724,8 +723,9 @@
 	////////
 
 /datum/species/proc/handle_chemicals_in_body(mob/living/carbon/human/H)
-
 	//The fucking FAT mutation is the dumbest shit ever. It makes the code so difficult to work with
+
+	/*
 	if(H.disabilities & FAT)
 		if(H.overeatduration < 100)
 			to_chat(H, "<span class='notice'>You feel fit again!</span>")
@@ -738,6 +738,7 @@
 			H.disabilities |= FAT
 			H.update_inv_w_uniform()
 			H.update_inv_wear_suit()
+	*/
 
 	// nutrition decrease and satiety
 	if (H.nutrition > 0 && H.client && H.stat != DEAD && \
@@ -753,9 +754,8 @@
 				H.Jitter(5)
 			hunger_rate = 3 * HUNGER_FACTOR
 			thirst_rate = 5 * THIRST_FACTOR
-		if(H.client || (H.water_level > THIRST_LEVEL_HARD && H.nutrition > NUTRITION_LEVEL_HUNGRY))
-			H.nutrition = max(0, H.nutrition - hunger_rate)
-			H.water_level = max(0, H.water_level - thirst_rate)
+		H.nutrition = max(0, H.nutrition - hunger_rate)
+		H.water_level = max(0, H.water_level - thirst_rate)
 
 
 	if (H.nutrition > NUTRITION_LEVEL_FULL)
@@ -781,6 +781,8 @@
 			to_chat(H, "<span class='notice'>You no longer feel vigorous.</span>")
 		H.metabolism_efficiency = 1
 
+	H.metabolism_efficiency *= 1.3 - (0.068 * H.special.getPoint("i"))
+
 	switch(H.nutrition)
 		if(NUTRITION_LEVEL_FAT to INFINITY)
 			H.throw_alert("nutrition", /obj/screen/alert/fat)
@@ -805,9 +807,8 @@
 			H.throw_alert("thirst", /obj/screen/alert/thirst, 3)
 		else
 			H.throw_alert("thirst", /obj/screen/alert/thirst, 4)
-	if((H.water_level < THIRST_LEVEL_DEADLY || H.nutrition < NUTRITION_LEVEL_STARVING) && H.client)
-		H.adjustOxyLoss(2)
-		H.adjustStaminaLoss(2)
+	if(H.water_level < THIRST_LEVEL_DEADLY || H.nutrition < NUTRITION_LEVEL_STARVING)
+		H.adjustStaminaLoss(6)//sasargule
 	return 1
 
 
@@ -888,6 +889,13 @@
 						H.emote("gasp")
 						H.domutcheck()
 		return 0
+	else if ((RADREGEN in species_traits))
+		if(prob(H.radiation*1.5))
+			H.adjustBruteLoss(-5)
+			H.adjustFireLoss(-5)
+			H.adjustToxLoss(-5)
+			to_chat(H, "<span class='green'>Your wounds slowly regenerates.</span>")
+
 	H.radiation = 0
 	return 1
 
@@ -916,7 +924,7 @@
 		if(H.status_flags & GOTTAGOFAST)
 			. -= 1
 		if(H.status_flags & GOTTAGOREALLYFAST)
-			. -= 2
+			. -= 1.2
 		. += speedmod
 
 	if(H.status_flags & IGNORESLOWDOWN)
@@ -966,8 +974,6 @@
 			. += hungry / 50
 		if(H.water_level < THIRST_LEVEL_MIDDLE)
 			. += (THIRST_LEVEL_FULL - H.water_level)/50
-		if(H.disabilities & FAT)
-			. += (1.5 - flight)
 		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT)
 			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
 	return .
@@ -981,7 +987,7 @@
 //////////////////
 
 /datum/species/proc/help(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
-	if(target.health >= 0 && !(target.status_flags & FAKEDEATH))
+	if(target.health >= HEALTH_THRESHOLD_CRIT && !(target.status_flags & FAKEDEATH))
 		target.help_shake_act(user)
 		if(target != user)
 			add_logs(user, target, "shaked")
@@ -1111,7 +1117,7 @@
 
 
 
-/datum/species/proc/spec_hitby(go/AM, mob/living/carbon/human/H)
+/datum/species/proc/spec_hitby(atom/movable/AM, mob/living/carbon/human/H)
 	return
 
 /datum/species/proc/spec_attack_hand(mob/living/carbon/human/M, mob/living/carbon/human/H, datum/martial_art/attacker_style = M.martial_art)
@@ -1180,8 +1186,8 @@
 
 
 
-//    apply_damage(I.force * weakness, I.damtype, def_zone, armor_block, H)
 
+//	apply_damage(I.force * weakness, I.damtype, def_zone, armor_block, H)
 	H.damage_clothes(I.force, I.damtype, "melee", affecting.body_zone)
 
 	H.send_item_attack_message(I, user, hit_area)
@@ -1253,6 +1259,38 @@
 
 /datum/species/proc/apply_damage(damage, damagetype = BRUTE, def_zone = null, blocked, mob/living/carbon/human/H)
 	var/hit_percent = (100-(blocked+armor))/100
+
+	hit_percent *= 1 - (H.special.getPoint("e") * 0.025)
+
+	if(H.perks.have(/datum/perk_hidden/cyborg))
+		hit_percent *= 0.75
+
+	var/obj/item/weapon = H.held_items[H.active_hand_index]
+	if(!istype(weapon, /obj/item/weapon/gun))
+		hit_percent *= H.special.getMeleeMod()
+
+	if(H.murder)
+		var/mob/living/carbon/murder = H.murder
+		if((murder.social_faction != "none") && (murder.social_faction != "neutral"))
+			if(murder.social_faction == H.social_faction)
+				if(H.perks.have(/datum/perk/spraypray))
+					hit_percent *= 0
+
+	if(H.perks.have(/datum/perk/toughness))
+		hit_percent *= 0.9
+
+	if(H.reagents.has_reagent("medx"))
+		hit_percent *= 0.75
+
+	var/missProb = 2 * H.special.getPoint("l")
+
+	if(H.stat == DEAD)
+		missProb = 0
+
+	if(prob(missProb))
+		H.visible_message("<font color='green'>[H] is lucky as hell!</font>")
+		hit_percent = 0
+
 	if(!damage || hit_percent <= 0)
 		return 0
 

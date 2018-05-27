@@ -73,6 +73,13 @@
 
 	H.dna.species.after_equip_job(src, H, visualsOnly)
 
+	// LET'S MAKE RAIDERS LIFE TERRIBLE
+	var/datum/atom_hud/antag/A = huds[ANTAG_HUD_RAIDER]
+	A.join_hud(H)
+
+	if(status == "raider")
+		ticker.mode.set_antag_hud(H, "raider")
+
 	H.set_faction(faction)
 	H.set_status(status)
 	var/datum/f13_faction/F = get_faction_datum(H.social_faction)
@@ -80,7 +87,7 @@
 		H.add_memory("[F.name] is using freq ([F.freq]) with encryption key ([F.encryption_key])")
 		for(var/obj/item/device/radio/R in H.get_contents())
 			R.set_frequency(F.freq)
-			R.set_key(F.encryption_key)
+			R.set_encryption(F.encryption_key)
 
 //	if(!visualsOnly && announce)
 //		announce(H)

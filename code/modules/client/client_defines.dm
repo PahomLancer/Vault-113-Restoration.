@@ -26,6 +26,8 @@
 	var/moving			= null
 
 	var/area			= null
+
+	var/fake 			= null
 		////////////
 		//SECURITY//
 		////////////

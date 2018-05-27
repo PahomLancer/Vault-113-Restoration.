@@ -188,7 +188,7 @@ Difficulty: Medium
 	swoop_attack()
 	swoop_attack()
 
-/mob/living/simple_animal/hostile/megafauna/dragon/proc/swoop_attack(fire_rain = 0, go/manual_target)
+/mob/living/simple_animal/hostile/megafauna/dragon/proc/swoop_attack(fire_rain = 0, atom/movable/manual_target)
 	if(stat || swooping)
 		return
 	swoop_cooldown = world.time + 200
@@ -243,7 +243,7 @@ Difficulty: Medium
 	swooping = 0
 	density = 1
 
-/mob/living/simple_animal/hostile/megafauna/dragon/AltClickOn(go/A)
+/mob/living/simple_animal/hostile/megafauna/dragon/AltClickOn(atom/movable/A)
 	if(!istype(A))
 		return
 	if(swoop_cooldown >= world.time)

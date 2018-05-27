@@ -60,7 +60,7 @@
 		var/turf/T = A
 		if(T.Adjacent(user))
 			for(var/B in T)
-				var/go/AM = B
+				var/atom/movable/AM = B
 				if(AM.flags & HOLOGRAM)
 					continue
 				. += AM
@@ -114,8 +114,14 @@
 				if(!check_tools(user, R, contents))
 					return ", missing tool."
 				var/list/parts = del_reqs(R, user)
-				var/go/I = new R.result (get_turf(user.loc))
+				var/atom/movable/I = new R.result (get_turf(user.loc))
 				I.CheckParts(parts, R)
+				spawn(5)
+					if(user)
+						if(istype(user, /mob/living/carbon))
+							var/mob/living/carbon/U = user
+							if(U.experience)
+								U.experience.add(R.XP)
 				if(send_feedback)
 					feedback_add_details("object_crafted","[I.type]")
 				return 0
@@ -212,7 +218,7 @@
 							S.add(data)
 						surroundings -= S
 			else
-				var/go/I
+				var/atom/movable/I
 				while(amt > 0)
 					I = locate(A) in surroundings
 					Deletion += I
@@ -238,7 +244,7 @@
 			continue
 		else
 			while(partlist[A] > 0)
-				var/go/AM = locate(A) in Deletion
+				var/atom/movable/AM = locate(A) in Deletion
 				. += AM
 				Deletion -= AM
 				partlist[A] -= 1

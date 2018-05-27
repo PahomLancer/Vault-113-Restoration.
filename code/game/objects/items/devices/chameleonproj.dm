@@ -73,7 +73,7 @@
 		spawn(50) can_use = 1
 
 /obj/item/device/chameleon/proc/eject_all()
-	for(var/go/A in active_dummy)
+	for(var/atom/movable/A in active_dummy)
 		A.forceMove(active_dummy.loc)
 		if(ismob(A))
 			var/mob/M = A

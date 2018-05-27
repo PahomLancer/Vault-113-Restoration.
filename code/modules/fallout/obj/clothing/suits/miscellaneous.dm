@@ -137,7 +137,6 @@
 	desc = "A blue cloth robe worn by the Brotherhood of Steel Scribes."
 	icon_state = "scribe"
 	item_state = "suit-command"
-	cloth_count = 5
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/weapon/storage/pill_bottle/dice,/obj/item/weapon/dice)
 
 /obj/item/clothing/suit/f13/elder //Robes are made of finest cloth, so you won't be able to put sharp objects but pens in.
@@ -147,7 +146,6 @@
 	item_state = "suit-command"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 5
-	cloth_count = 8
 	armor = list(melee = 20, bullet = 10, laser = 10,energy = 10, bomb = 10, bio = 0, rad = 0, fire = 10, acid = 0)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/weapon/storage/pill_bottle/dice,/obj/item/weapon/dice)
 
@@ -169,3 +167,29 @@
 	item_state = "hazmat_helmet"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	self_weight = 15
+
+
+//crc
+/obj/item/clothing/suit/armor/f13/ghillie
+	name = "ghillie suit"
+	desc = "Perfect for hiding in desert environment. Lower part"
+	icon_state = "ghillie"
+	item_state = "ghillie"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	armor = list(melee = 30, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 10, rad = 0, fire = 0, acid = 10)
+	flags_inv = HIDEJUMPSUIT
+	put_on_delay = 40
+	strip_delay = 40
+	self_weight = 15
+
+/obj/item/clothing/head/armor/f13/ghillie_hat
+	name = "ghillie hood"
+	desc = "Perfect for hiding in desert environment. Top part"
+	icon_state = "ghillie_hat"
+	item_state = "ghillie_hat"
+	flags = HEADCOVERSEYES | HEADCOVERSMOUTH
+	armor = list(melee = 30, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 10, rad = 0, fire = 0, acid = 10)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	put_on_delay = 20
+	strip_delay = 20
+	self_weight = 5

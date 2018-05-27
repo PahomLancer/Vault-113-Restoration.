@@ -43,7 +43,6 @@
 	var/list/inv_slots[slots_amt] // /obj/screen/inventory objects, ordered by their slot ID.
 	var/list/hand_slots // /obj/screen/inventory/hand objects, assoc list of "[held_index]" = object
 	var/list/obj/screen/plane_master/plane_masters = list() // see "appearance_flags" in the ref, assoc list of "[plane]" = object
-	var/list/obj/screen/weather_planes = list()
 
 	var/obj/screen/movable/action_button/hide_toggle/hide_actions_toggle
 	var/action_buttons_hidden = 0
@@ -52,9 +51,9 @@
 	var/obj/screen/healthdoll
 	var/obj/screen/internals
 
-	var/ui_style_icon = 'icons/fallout/misc/screen_fallout.dmi'
+	var/ui_style_icon = 'icons/mob/screen_midnight.dmi'
 
-/datum/hud/New(mob/owner , ui_style = 'icons/fallout/misc/screen_fallout.dmi')
+/datum/hud/New(mob/owner , ui_style = 'icons/mob/screen_midnight.dmi')
 	mymob = owner
 
 	ui_style_icon = ui_style
@@ -67,7 +66,6 @@
 	for(var/mytype in subtypesof(/obj/screen/plane_master))
 		var/obj/screen/plane_master/instance = new mytype()
 		plane_masters["[instance.plane]"] = instance
-	SSweather.create_screens(src)
 
 /datum/hud/Destroy()
 	if(mymob.hud_used == src)
@@ -125,10 +123,6 @@
 		for(var/thing in plane_masters)
 			qdel(plane_masters[thing])
 		plane_masters.Cut()
-	if(weather_planes.len)
-		for(var/thing in weather_planes)
-			qdel(thing)
-		weather_planes.Cut()
 
 	if(screenoverlays.len)
 		for(var/thing in screenoverlays)
@@ -209,9 +203,6 @@
 	if(plane_masters.len)
 		for(var/thing in plane_masters)
 			screenmob.client.screen += plane_masters[thing]
-	if(weather_planes.len)
-		for(var/thing in weather_planes)
-			screenmob.client.screen += thing
 	hud_version = display_hud_version
 	persistent_inventory_update(screenmob)
 	mymob.update_action_buttons(1)

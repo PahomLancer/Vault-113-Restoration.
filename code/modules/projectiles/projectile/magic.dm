@@ -102,7 +102,7 @@
 	var/teleloc = target
 	if(!isturf(target))
 		teleloc = target.loc
-	for(var/go/stuff in teleloc)
+	for(var/atom/movable/stuff in teleloc)
 		if(!stuff.anchored && stuff.loc)
 			if(do_teleport(stuff, stuff, 10))
 				teleammount++

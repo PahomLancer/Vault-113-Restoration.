@@ -93,11 +93,11 @@
   *
   * Distance versus interaction check.
   *
-  * required src_object go The object which owns the UI.
+  * required src_object atom/movable The object which owns the UI.
   *
   * return UI_state The state of the UI.
  **/
-/mob/living/proc/shared_living_ui_distance(go/src_object)
+/mob/living/proc/shared_living_ui_distance(atom/movable/src_object)
 	if(!(src_object in view(src))) // If the object is obscured, close it.
 		return UI_CLOSE
 
@@ -110,7 +110,7 @@
 		return UI_DISABLED
 	return UI_CLOSE // Otherwise, we got nothing.
 
-/mob/living/carbon/human/shared_living_ui_distance(go/src_object)
+/mob/living/carbon/human/shared_living_ui_distance(atom/movable/src_object)
 	if(dna.check_mutation(TK) && tkMaxRangeCheck(src, src_object))
 		return UI_INTERACTIVE
 	return ..()

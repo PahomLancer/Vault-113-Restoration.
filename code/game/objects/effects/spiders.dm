@@ -35,7 +35,7 @@
 		icon_state = "stickyweb2"
 	. = ..()
 
-/obj/structure/spider/stickyweb/CanPass(go/mover, turf/target, height=0)
+/obj/structure/spider/stickyweb/CanPass(atom/movable/mover, turf/target, height=0)
 	if(height==0) return 1
 	if(istype(mover, /mob/living/simple_animal/hostile/poison/giant_spider))
 		return 1
@@ -210,6 +210,6 @@
 /obj/structure/spider/cocoon/Destroy()
 	var/turf/T = get_turf(src)
 	src.visible_message("<span class='warning'>\The [src] splits open.</span>")
-	for(var/go/A in contents)
+	for(var/atom/movable/A in contents)
 		A.forceMove(T)
 	return ..()

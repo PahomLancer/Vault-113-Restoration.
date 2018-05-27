@@ -12,7 +12,7 @@
 
 //Only need to use one camera
 
-/area/ai_monitored/Entered(go/O)
+/area/ai_monitored/Entered(atom/movable/O)
 	..()
 	if (ismob(O) && motioncameras.len)
 		for(var/X in motioncameras)
@@ -20,7 +20,7 @@
 			cam.newTarget(O)
 			return
 
-/area/ai_monitored/Exited(go/O)
+/area/ai_monitored/Exited(atom/movable/O)
 	..()
 	if (ismob(O) && motioncameras.len)
 		for(var/X in motioncameras)

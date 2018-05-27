@@ -462,7 +462,7 @@ Difficulty: Hard
 	..()
 	return QDEL_HINT_QUEUE
 
-/obj/effect/overlay/temp/hierophant/wall/CanPass(go/mover, turf/target, height = 0)
+/obj/effect/overlay/temp/hierophant/wall/CanPass(atom/movable/mover, turf/target, height = 0)
 	if(mover == caster)
 		return TRUE
 	return FALSE
@@ -580,7 +580,7 @@ Difficulty: Hard
 	sleep(1.3) //slightly forgiving; the burst animation is 1.5 deciseconds
 	bursting = FALSE //we no longer damage crossers
 
-/obj/effect/overlay/temp/hierophant/blast/Crossed(go/AM)
+/obj/effect/overlay/temp/hierophant/blast/Crossed(atom/movable/AM)
 	..()
 	if(bursting)
 		do_damage(get_turf(src))

@@ -8,7 +8,7 @@
 	volume = 40
 	apply_type = PATCH
 	apply_method = "apply"
-	self_delay = 30		// three seconds
+	self_delay = 15		// three seconds
 
 /obj/item/weapon/reagent_containers/pill/patch/afterattack(obj/target, mob/user , proximity)
 	return // thanks inheritance again

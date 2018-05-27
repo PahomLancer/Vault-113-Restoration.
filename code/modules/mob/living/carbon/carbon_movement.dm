@@ -11,9 +11,21 @@
 	else
 		. += grab_state * 3 //can't go fast while grabbing something.
 
-	. += get_pulling_delay()
+	//. += get_pulling_delay()
 	if(contents_weight)
-		. += contents_weight/RATIO_WEIGHT
+		if ((contents_weight + (pulling ? pulling.contents_weight + pulling.self_weight : 0)) > special.getWeight(src))
+			. += 15
+
+		if(istype(src, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = src
+			if(istype(H.wear_suit, /obj/item/clothing/suit/armor/f13/power_armor))
+				if(!perks.have(/datum/perk_hidden/powerArmor))
+					. += 15
+		/*
+		if(src:wear_suit)
+			var/classSlowdown = (src:wear_suit:self_weight) / 30
+			. += classSlowdown
+		*/
 
 	if(!get_leg_ignore()) //ignore the fact we lack legs
 		var/leg_amount = get_num_legs()

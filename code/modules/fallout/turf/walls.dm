@@ -89,7 +89,7 @@
 	icon = 'icons/fallout/turfs/walls/store.dmi'
 	icon_state = "store0"
 	icontype = "store"
-	hardness = 80
+	hardness = 800000
 	smooth = SMOOTH_OLD
 	disasemblable = 0
 	grider = 0
@@ -129,8 +129,9 @@
 	icon = 'icons/fallout/turfs/walls/vault.dmi'
 	icon_state = "vault0"
 	icontype = "vault"
-	hardness = 130
+	hardness = 13000
 	explosion_block = 5
+	disasemblable = 0
 	smooth = SMOOTH_OLD
 	canSmoothWith = list(/turf/closed/wall/f13/vault, /turf/closed/wall/r_wall/f13/vault, /turf/closed/wall)
 
@@ -148,6 +149,7 @@
 	icontype = "vaultrwall"
 	hardness = 230
 	explosion_block = 5
+	disasemblable = 0
 	smooth = SMOOTH_OLD
 	canSmoothWith = list(/turf/closed/wall/f13/vault, /turf/closed/wall/r_wall/f13/vault, /turf/closed/wall)
 
@@ -184,17 +186,18 @@
 
 /turf/closed/indestructible/f13/splashscreen
 	var/tickerPeriod = 300 //in deciseconds
-	var/go/fullDark
+	var/atom/movable/fullDark
 
 turf/closed/indestructible/f13/splashscreen/New()
 	.=..()
 	name = "Fallout 13"
 	desc = "The wasteland is calling!"
 	icon = 'icons/fallout/misc/lobby.dmi'
-	icon_state = "title[rand(1,13)]"
+	icon_state = "fo3"
+	//icon_state = "title[rand(1,13)]"
 	layer = 60
 	plane = 1
-	src.fullDark = new/go{
+	src.fullDark = new/atom/movable{
 		icon = 'icons/fallout/misc/lobby.dmi' //Replace with actual icon
 		icon_state = "transition" //Replace with actual darkness state
 		layer = 61;
@@ -206,7 +209,7 @@ turf/closed/indestructible/f13/splashscreen/New()
 
 turf/closed/indestructible/f13/splashscreen/proc/ticker()
 	while(src && istype(src,/turf/closed/indestructible/f13/splashscreen))
-		src.swapImage()
+		//src.swapImage()
 		sleep(src.tickerPeriod)
 	to_chat(world, "Badmins spawn shit and the title screen was deleted.<br>You know... I'm out of here!")
 	return

@@ -23,7 +23,7 @@
 /mob/living/simple_animal/hostile/retaliate/proc/Retaliate()
 	var/list/around = view(src, vision_range)
 
-	for(var/go/A in around)
+	for(var/atom/movable/A in around)
 		if(A == src)
 			continue
 		if(isliving(A))

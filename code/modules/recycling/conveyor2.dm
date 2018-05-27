@@ -107,7 +107,7 @@
 
 	affecting = loc.contents - src		// moved items will be all in loc
 	sleep(1)
-	for(var/go/A in affecting)
+	for(var/atom/movable/A in affecting)
 		if(!A.anchored)
 			if(A.loc == src.loc) // prevents the object from being affected if it's not currently here.
 				step(A,movedir)
