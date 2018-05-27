@@ -10,25 +10,28 @@
 		else
 			return 0
 	else if(istype(used_atom, /obj/item/weapon/wrench))
-		playsound(holder, 'sound/items/Ratchet.ogg', 50, 1)
+		var/obj/item/weapon/W = used_atom
+		playsound(holder, W.usesound, 50, 1)
 
 	else if(istype(used_atom, /obj/item/weapon/screwdriver))
-		playsound(holder, 'sound/items/Screwdriver.ogg', 50, 1)
+		var/obj/item/weapon/W = used_atom
+		playsound(holder, W.usesound, 50, 1)
 
 	else if(istype(used_atom, /obj/item/weapon/wirecutters))
-		playsound(holder, 'sound/items/Wirecutter.ogg', 50, 1)
+		var/obj/item/weapon/W = used_atom
+		playsound(holder, W.usesound, 50, 1)
 
 	else if(istype(used_atom, /obj/item/stack/cable_coil))
 		var/obj/item/stack/cable_coil/C = used_atom
 		if(C.use(4))
 			playsound(holder, 'sound/items/Deconstruct.ogg', 50, 1)
 		else
-			user << ("<span class='warning'>There's not enough cable to finish the task!</span>")
+			to_chat(user, ("<span class='warning'>There's not enough cable to finish the task!</span>"))
 			return 0
 	else if(istype(used_atom, /obj/item/stack))
 		var/obj/item/stack/S = used_atom
-		if(S.amount < 5)
-			user << ("<span class='warning'>There's not enough material in this stack!</span>")
+		if(S.get_amount() < 5)
+			to_chat(user, ("<span class='warning'>There's not enough material in this stack!</span>"))
 			return 0
 		else
 			S.use(5)
@@ -42,25 +45,28 @@
 		else
 			return 0
 	else if(istype(used_atom, /obj/item/weapon/wrench))
-		playsound(holder, 'sound/items/Ratchet.ogg', 50, 1)
+		var/obj/item/weapon/W = used_atom
+		playsound(holder, W.usesound, 50, 1)
 
 	else if(istype(used_atom, /obj/item/weapon/screwdriver))
-		playsound(holder, 'sound/items/Screwdriver.ogg', 50, 1)
+		var/obj/item/weapon/W = used_atom
+		playsound(holder, W.usesound, 50, 1)
 
 	else if(istype(used_atom, /obj/item/weapon/wirecutters))
-		playsound(holder, 'sound/items/Wirecutter.ogg', 50, 1)
+		var/obj/item/weapon/W = used_atom
+		playsound(holder, W.usesound, 50, 1)
 
 	else if(istype(used_atom, /obj/item/stack/cable_coil))
 		var/obj/item/stack/cable_coil/C = used_atom
 		if (C.use(4))
 			playsound(holder, 'sound/items/Deconstruct.ogg', 50, 1)
 		else
-			user << ("<span class='warning'>There's not enough cable to finish the task!</span>")
+			to_chat(user, ("<span class='warning'>There's not enough cable to finish the task!</span>"))
 			return 0
 	else if(istype(used_atom, /obj/item/stack))
 		var/obj/item/stack/S = used_atom
-		if(S.amount < 5)
-			user << ("<span class='warning'>There's not enough material in this stack!</span>")
+		if(S.get_amount() < 5)
+			to_chat(user, ("<span class='warning'>There's not enough material in this stack!</span>"))
 			return 0
 		else
 			S.use(5)
@@ -77,7 +83,7 @@
 
 /datum/construction/mecha/ripley_chassis/custom_action(step, atom/used_atom, mob/user)
 	user.visible_message("[user] has connected [used_atom] to the [holder].", "<span class='notice'>You connect [used_atom] to the [holder].</span>")
-	holder.overlays += used_atom.icon_state+"+o"
+	holder.add_overlay(used_atom.icon_state+"+o")
 	qdel(used_atom)
 	return 1
 
@@ -287,7 +293,7 @@
 
 /datum/construction/mecha/gygax_chassis/custom_action(step, atom/used_atom, mob/user)
 	user.visible_message("[user] has connected [used_atom] to the [holder].", "<span class='notice'>You connect [used_atom] to the [holder].</span>")
-	holder.overlays += used_atom.icon_state+"+o"
+	holder.add_overlay(used_atom.icon_state+"+o")
 	qdel(used_atom)
 	return 1
 
@@ -476,7 +482,7 @@
 				user.visible_message("[user] installs scanner module to the [holder].", "<span class='notice'>You install scanner module to the [holder].</span>")
 				var/obj/item/I = used_atom
 				user.unEquip(I)
-				I.loc = holder
+				I.forceMove(holder)
 				holder.icon_state = "gygax11"
 			else
 				user.visible_message("[user] unfastens the weapon control module.", "<span class='notice'>You unfasten the weapon control module.</span>")
@@ -488,14 +494,14 @@
 			else
 				user.visible_message("[user] removes the advanced scanner module from the [holder].", "<span class='notice'>You remove the scanner module from the [holder].</span>")
 				var/obj/item/I = locate(/obj/item/weapon/stock_parts/scanning_module) in holder
-				I.loc = get_turf(holder)
+				I.forceMove(get_turf(holder))
 				holder.icon_state = "gygax10"
 		if(8)
 			if(diff==FORWARD)
 				user.visible_message("[user] installs capacitor to the [holder].", "<span class='notice'>You install capacitor to the [holder].</span>")
 				var/obj/item/I = used_atom
 				user.unEquip(I)
-				I.loc = holder
+				I.forceMove(holder)
 				holder.icon_state = "gygax13"
 			else
 				user.visible_message("[user] unfastens the  scanner module.", "<span class='notice'>You unfasten the scanner module.</span>")
@@ -507,7 +513,7 @@
 			else
 				user.visible_message("[user] removes the  capacitor from the [holder].", "<span class='notice'>You remove the capacitor from the [holder].</span>")
 				var/obj/item/I = locate(/obj/item/weapon/stock_parts/capacitor) in holder
-				I.loc = get_turf(holder)
+				I.forceMove(get_turf(holder))
 				holder.icon_state = "gygax12"
 		if(6)
 			if(diff==FORWARD)
@@ -574,7 +580,7 @@
 
 /datum/construction/mecha/firefighter_chassis/custom_action(step, atom/used_atom, mob/user)
 	user.visible_message("[user] has connected [used_atom] to the [holder].", "<span class='notice'>You connect [used_atom] to the [holder].</span>")
-	holder.overlays += used_atom.icon_state+"+o"
+	holder.add_overlay(used_atom.icon_state+"+o")
 	qdel(used_atom)
 	return 1
 
@@ -801,7 +807,7 @@
 
 /datum/construction/mecha/honker_chassis/custom_action(step, atom/used_atom, mob/user)
 	user.visible_message("[user] has connected [used_atom] to the [holder].", "<span class='notice'>You connect [used_atom] to the [holder].</span>")
-	holder.overlays += used_atom.icon_state+"+o"
+	holder.add_overlay(used_atom.icon_state+"+o")
 	qdel(used_atom)
 	return 1
 
@@ -874,7 +880,7 @@
 
 /datum/construction/mecha/durand_chassis/custom_action(step, atom/used_atom, mob/user)
 	user.visible_message("[user] has connected [used_atom] to the [holder].", "You connect [used_atom] to the [holder]")
-	holder.overlays += used_atom.icon_state+"+o"
+	holder.add_overlay(used_atom.icon_state+"+o")
 	qdel(used_atom)
 	return 1
 
@@ -1063,7 +1069,7 @@
 				user.visible_message("[user] installs scanner module to the [holder].", "<span class='notice'>You install phasic scanner module to the [holder].</span>")
 				var/obj/item/I = used_atom
 				user.unEquip(I)
-				I.loc = holder
+				I.forceMove(holder)
 				holder.icon_state = "durand11"
 			else
 				user.visible_message("[user] unfastens the weapon control module.", "<span class='notice'>You unfasten the weapon control module.</span>")
@@ -1075,14 +1081,14 @@
 			else
 				user.visible_message("[user] removes the scanner module from the [holder].", "<span class='notice'>You remove the scanner module from the [holder].</span>")
 				var/obj/item/I = locate(/obj/item/weapon/stock_parts/scanning_module) in holder
-				I.loc = get_turf(holder)
+				I.forceMove(get_turf(holder))
 				holder.icon_state = "durand10"
 		if(8)
 			if(diff==FORWARD)
 				user.visible_message("[user] installs capacitor to the [holder].", "<span class='notice'>You install capacitor to the [holder].</span>")
 				var/obj/item/I = used_atom
 				user.unEquip(I)
-				I.loc = holder
+				I.forceMove(holder)
 				holder.icon_state = "durand13"
 			else
 				user.visible_message("[user] unfastens the scanner module.", "<span class='notice'>You unfasten the scanner module.</span>")
@@ -1094,7 +1100,7 @@
 			else
 				user.visible_message("[user] removes the super capacitor from the [holder].", "<span class='notice'>You remove the capacitor from the [holder].</span>")
 				var/obj/item/I = locate(/obj/item/weapon/stock_parts/capacitor) in holder
-				I.loc = get_turf(holder)
+				I.forceMove(get_turf(holder))
 				holder.icon_state = "durand12"
 		if(6)
 			if(diff==FORWARD)
@@ -1164,7 +1170,7 @@
 
 /datum/construction/mecha/phazon_chassis/custom_action(step, atom/used_atom, mob/user)
 	user.visible_message("[user] has connected [used_atom] to the [holder].", "<span class='notice'>You connect [used_atom] to the [holder].</span>")
-	holder.overlays += used_atom.icon_state+"+o"
+	holder.add_overlay(used_atom.icon_state+"+o")
 	qdel(used_atom)
 	return 1
 
@@ -1370,7 +1376,7 @@
 				user.visible_message("[user] installs phasic scanner module to the [holder].", "<span class='notice'>You install scanner module to the [holder].</span>")
 				var/obj/item/I = used_atom
 				user.unEquip(I)
-				I.loc = holder
+				I.forceMove(holder)
 				holder.icon_state = "phazon11"
 			else
 				user.visible_message("[user] unfastens the weapon control module.", "<span class='notice'>You unfasten the weapon control module.</span>")
@@ -1382,14 +1388,14 @@
 			else
 				user.visible_message("[user] removes the phasic scanner module from the [holder].", "<span class='notice'>You remove the scanner module from the [holder].</span>")
 				var/obj/item/I = locate(/obj/item/weapon/stock_parts/scanning_module) in holder
-				I.loc = get_turf(holder)
+				I.forceMove(get_turf(holder))
 				holder.icon_state = "phazon10"
 		if(12)
 			if(diff==FORWARD)
 				user.visible_message("[user] installs super capacitor to the [holder].", "<span class='notice'>You install capacitor to the [holder].</span>")
 				var/obj/item/I = used_atom
 				user.unEquip(I)
-				I.loc = holder
+				I.forceMove(holder)
 				holder.icon_state = "phazon13"
 			else
 				user.visible_message("[user] unfastens the phasic scanner module.", "<span class='notice'>You unfasten the scanner module.</span>")
@@ -1401,7 +1407,7 @@
 			else
 				user.visible_message("[user] removes the super capacitor from the [holder].", "<span class='notice'>You remove the capacitor from the [holder].</span>")
 				var/obj/item/I = locate(/obj/item/weapon/stock_parts/capacitor) in holder
-				I.loc = get_turf(holder)
+				I.forceMove(get_turf(holder))
 				holder.icon_state = "phazon12"
 		if(10)
 			if(diff==FORWARD)
@@ -1497,7 +1503,7 @@
 
 /datum/construction/mecha/odysseus_chassis/custom_action(step, atom/used_atom, mob/user)
 	user.visible_message("[user] has connected [used_atom] to the [holder].", "<span class='notice'>You connect [used_atom] to the [holder].</span>")
-	holder.overlays += used_atom.icon_state+"+o"
+	holder.add_overlay(used_atom.icon_state+"+o")
 	qdel(used_atom)
 	return 1
 

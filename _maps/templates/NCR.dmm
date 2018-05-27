@@ -1,0 +1,56 @@
+"a" = (/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"b" = (/obj/structure/fence,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"c" = (/obj/structure/barricade/sandbags,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"d" = (/obj/structure/barricade/wooden/strong,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"e" = (/turf/closed/wall/f13/store,/area/f13/wasteland)
+"f" = (/obj/structure/window/fulltile/house,/turf/open/floor/f13,/area/f13/wasteland)
+"g" = (/obj/structure/barricade/wooden/strong,/turf/closed/wall/f13/wood,/area/f13/wasteland)
+"h" = (/obj/structure/bed,/turf/open/floor/f13,/area/f13/wasteland)
+"i" = (/turf/open/floor/f13,/area/f13/wasteland)
+"j" = (/obj/structure/barricade/bars,/turf/open/floor/f13,/area/f13/wasteland)
+"k" = (/obj/structure/bed/mattress,/turf/open/floor/f13,/area/f13/wasteland)
+"l" = (/obj/structure/simple_door/room,/turf/open/floor/f13,/area/f13/wasteland)
+"m" = (/obj/structure/table,/turf/open/floor/f13,/area/f13/wasteland)
+"n" = (/obj/structure/table/wood/settler,/turf/open/floor/f13,/area/f13/wasteland)
+"o" = (/obj/structure/simple_door/metal/barred,/turf/open/floor/f13,/area/f13/wasteland)
+"p" = (/obj/structure/campfire,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"q" = (/obj/structure/table/wood/classic,/turf/open/floor/f13,/area/f13/wasteland)
+"r" = (/obj/structure/simple_door/metal/store,/turf/open/floor/f13,/area/f13/wasteland)
+"s" = (/obj/structure/closet,/turf/open/floor/f13,/area/f13/wasteland)
+"t" = (/obj/structure/bed/mattress,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"u" = (/obj/structure/rack,/turf/open/floor/f13,/area/f13/wasteland)
+"v" = (/obj/structure/chair/wood/worn,/turf/open/floor/f13,/area/f13/wasteland)
+"w" = (/obj/structure/toilet,/turf/open/floor/f13,/area/f13/wasteland)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaabbbbbbbbbbbbbbbbbbbbbbbba
+aaaaabccccccdddcccccaaaaaaaaba
+aaaaabcaaaaaaaaaaaaaaaaaaaaaba
+aaaaaddaaaaaaaaaaaaaaaaaaaaaaa
+aaaaabcaaeeeeeeefeeeeeegggaaba
+aaaaabcaaehihieiiieiijkikgaaba
+aaaaabcaaeiiiilimiliijiingaaba
+aaaaabcaaehihieimieiijiikeaaba
+aaaaabaaaeeeeeeimiliijojeeaaba
+aaaapbcaaegghiliiieiiiiieaaaba
+aaaaaccaaaagqieefeeiiiiieaaaba
+aaaaacaaaaaeeeeaaaeeeereeaaaba
+aaaaaccaaaadaaaaaaaaesiieaaaba
+aaaaaaaaaaaaaaaaaaaariiieaaaba
+aaaaaaaaaaadaaaaaaaaeiiieaaaba
+aaaaaccaaaaaaaaaaaaariiieaaaba
+aaaaacaaaaadaaaaaaaaesiieaaaba
+aaaaaccaaaaeeegtpaeeeereeaaaba
+aaaapbcaaaaeuuggfeeiiiiieaaaba
+aaaaabaaaeeeiiiiiieivviieaaaba
+aaaaabcaaeweuuuuuilinniieeaaba
+aaaaabcaaeleeeeeeeeiiiiiieaaba
+aaaaabcaaeiiiiiiiilivvivveaaba
+aaaaabcaagihihihiheinninneaaba
+aaaaaddaaggeefeefeeeeeeeeeaaaa
+aaaaabcaaaaaaaaaaaaaaaaaaaaaba
+aaaaabccccccdddcccccaaaaaaaaba
+aaaaabbbbbbbbbbbbbbbbbbbbbbbba
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

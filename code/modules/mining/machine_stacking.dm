@@ -8,6 +8,7 @@
 	anchored = 1
 	var/obj/machinery/mineral/stacking_machine/machine = null
 	var/machinedir = SOUTHEAST
+	speed_process = 1
 
 /obj/machinery/mineral/stacking_unit_console/New()
 	..()
@@ -32,7 +33,7 @@
 
 	dat += text("<br>Stacking: [machine.stack_amt]<br><br>")
 
-	user << browse("[dat]", "window=console_stacking_machine")
+	user << browse(dat, "window=console_stacking_machine")
 
 	return
 
@@ -77,7 +78,7 @@
 		stack_list[inp.type] = s
 	var/obj/item/stack/sheet/storage = stack_list[inp.type]
 	storage.amount += inp.amount //Stack the sheets
-	inp.loc = null //Let the old sheet garbage collect
+	inp.forceMove(null )//Let the old sheet garbage collect
 	while(storage.amount > stack_amt) //Get rid of excessive stackage
 		var/obj/item/stack/sheet/out = new inp.type()
 		out.amount = stack_amt

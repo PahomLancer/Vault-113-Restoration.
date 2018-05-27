@@ -5,7 +5,7 @@
 	icon_state = "shock_kit"
 	var/obj/item/clothing/head/helmet/part1 = null
 	var/obj/item/device/electropack/part2 = null
-	w_class = 5
+	w_class = WEIGHT_CLASS_HUGE
 	flags = CONDUCT
 
 /obj/item/assembly/shock_kit/Destroy()
@@ -18,8 +18,8 @@
 		var/turf/T = loc
 		if(ismob(T))
 			T = T.loc
-		part1.loc = T
-		part2.loc = T
+		part1.forceMove(T)
+		part2.forceMove(T)
 		part1.master = null
 		part2.master = null
 		part1 = null
@@ -36,7 +36,7 @@
 	return
 
 /obj/item/assembly/shock_kit/receive_signal()
-	if(istype(loc, /obj/structure/bed/chair/e_chair))
-		var/obj/structure/bed/chair/e_chair/C = loc
+	if(istype(loc, /obj/structure/chair/e_chair))
+		var/obj/structure/chair/e_chair/C = loc
 		C.shock()
 	return

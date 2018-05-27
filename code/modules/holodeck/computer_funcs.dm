@@ -52,7 +52,7 @@
 			if(world.time < (last_change + 15))//To prevent super-spam clicking, reduced process size and annoyance -Sieve
 				return
 			if(get_dist(usr,src) <= 3)
-				usr << "<span class='warning'>ERROR. Recalibrating projection apparatus.</span>"
+				to_chat(usr, "<span class='warning'>ERROR. Recalibrating projection apparatus.</span>")
 				return
 
 	last_change = world.time
@@ -101,8 +101,8 @@
 	if(!obj)
 		return
 	var/turf/T = get_turf(obj)
-	for(var/atom/movable/AM in obj.contents) // these should be derezed if they were generated
-		AM.loc = T							// otherwise make sure they are dropped
+	for(var/go/AM in obj.contents) // these should be derezed if they were generated
+		AM.forceMove(T							)// otherwise make sure they are dropped
 
 	if(istype(obj))
 		var/mob/M = obj.loc
@@ -110,7 +110,7 @@
 			M.unEquip(obj, 1) //Holoweapons should always drop.
 
 	for(var/mob/M in obj.contents)
-		M.loc = obj.loc
+		M.forceMove(obj.loc)
 		silent = 0
 
 	if(!silent)

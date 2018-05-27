@@ -4,38 +4,39 @@
 	icon_state = "clipboard"
 	item_state = "clipboard"
 	throwforce = 0
-	w_class = 2
+	w_class = WEIGHT_CLASS_SMALL
 	throw_speed = 3
 	throw_range = 7
 	var/obj/item/weapon/pen/haspen		//The stored pen.
 	var/obj/item/weapon/paper/toppaper	//The topmost piece of paper.
 	slot_flags = SLOT_BELT
-	burn_state = FLAMMABLE
+	resistance_flags = FLAMMABLE
 
 /obj/item/weapon/clipboard/New()
 	update_icon()
+	..()
 
 
 /obj/item/weapon/clipboard/update_icon()
-	overlays.Cut()
+	cut_overlays()
 	if(toppaper)
-		overlays += toppaper.icon_state
-		overlays += toppaper.overlays
+		add_overlay(toppaper.icon_state)
+		add_overlay(toppaper.overlays)
 	if(haspen)
-		overlays += "clipboard_pen"
-	overlays += "clipboard_over"
+		add_overlay("clipboard_pen")
+	add_overlay("clipboard_over")
 
 
 /obj/item/weapon/clipboard/attackby(obj/item/weapon/W, mob/user, params)
 	if(istype(W, /obj/item/weapon/paper))
 		if(!user.unEquip(W))
 			return
-		W.loc = src
+		W.forceMove(src)
 		toppaper = W
-		user << "<span class='notice'>You clip the paper onto \the [src].</span>"
+		to_chat(user, "<span class='notice'>You clip the paper onto \the [src].</span>")
 		update_icon()
 	else if(toppaper)
-		toppaper.attackby(usr.get_active_hand(), usr)
+		toppaper.attackby(user.get_active_held_item(), user)
 		update_icon()
 
 
@@ -69,30 +70,31 @@
 
 		if(href_list["pen"])
 			if(haspen)
-				haspen.loc = usr.loc
+				haspen.forceMove(usr.loc)
 				usr.put_in_hands(haspen)
 				haspen = null
 
 		if(href_list["addpen"])
 			if(!haspen)
-				if(istype(usr.get_active_hand(), /obj/item/weapon/pen))
-					var/obj/item/weapon/pen/W = usr.get_active_hand()
+				var/obj/item/held = usr.get_active_held_item()
+				if(istype(held, /obj/item/weapon/pen))
+					var/obj/item/weapon/pen/W = held
 					if(!usr.unEquip(W))
 						return
-					W.loc = src
+					W.forceMove(src)
 					haspen = W
-					usr << "<span class='notice'>You slot [W] into [src].</span>"
+					to_chat(usr, "<span class='notice'>You slot [W] into [src].</span>")
 
 		if(href_list["write"])
 			var/obj/item/P = locate(href_list["write"])
 			if(istype(P) && P.loc == src)
-				if(usr.get_active_hand())
-					P.attackby(usr.get_active_hand(), usr)
+				if(usr.get_active_held_item())
+					P.attackby(usr.get_active_held_item(), usr)
 
 		if(href_list["remove"])
 			var/obj/item/P = locate(href_list["remove"])
 			if(istype(P) && P.loc == src)
-				P.loc = usr.loc
+				P.forceMove(usr.loc)
 				usr.put_in_hands(P)
 				if(P == toppaper)
 					toppaper = null
@@ -111,7 +113,7 @@
 			var/obj/item/P = locate(href_list["top"])
 			if(istype(P) && P.loc == src)
 				toppaper = P
-				usr << "<span class='notice'>You move [P.name] to the top.</span>"
+				to_chat(usr, "<span class='notice'>You move [P.name] to the top.</span>")
 
 		//Update everything
 		attack_self(usr)

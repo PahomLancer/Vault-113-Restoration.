@@ -40,7 +40,7 @@
 
   obj/proc/receive_signal(datum/signal/signal, var/receive_method as num, var/receive_param)
     Handler from received signals. By default does nothing. Define your own for your object.
-    Avoid of sending signals directly from this proc, use spawn(-1). Do not use sleep() here please.
+    Avoid of sending signals directly from this proc, use spawn(0). Do not use sleep() here please.
       parameters:
         signal - see description below. Extract all needed data from the signal before doing sleep(), spawn() or return!
         receive_method - may be TRANSMISSION_WIRE or TRANSMISSION_RADIO.
@@ -245,12 +245,12 @@ var/list/pointers = list()
 	if(!holder)
 		return
 
-	src << "There are [pointers.len] pointers:"
+	to_chat(src, "There are [pointers.len] pointers:")
 	for(var/p in pointers)
-		src << p
+		to_chat(src, p)
 		var/datum/signal/S = locate(p)
 		if(istype(S))
-			src << S.debug_print()
+			to_chat(src, S.debug_print())
 
 /obj/proc/receive_signal(datum/signal/signal, receive_method, receive_param)
 	return
@@ -299,4 +299,4 @@ var/list/pointers = list()
 	for(var/d in data)
 		var/val = data[d]
 		if(istext(val))
-			data[d] = html_encode(val)
+			data[d] = html_encode_ru(val)

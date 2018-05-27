@@ -6,7 +6,7 @@
 	item_state = "implantcase"
 	throw_speed = 2
 	throw_range = 5
-	w_class = 1
+	w_class = WEIGHT_CLASS_TINY
 	origin_tech = "materials=1;biotech=2"
 	materials = list(MAT_GLASS=500)
 	var/obj/item/weapon/implant/imp = null
@@ -16,20 +16,17 @@
 	if(imp)
 		icon_state = "implantcase-[imp.item_color]"
 		origin_tech = imp.origin_tech
-		flags = imp.flags
 		reagents = imp.reagents
 	else
 		icon_state = "implantcase-0"
 		origin_tech = initial(origin_tech)
-		flags = initial(flags)
 		reagents = null
 
 
 /obj/item/weapon/implantcase/attackby(obj/item/weapon/W, mob/user, params)
-	..()
 	if(istype(W, /obj/item/weapon/pen))
 		var/t = stripped_input(user, "What would you like the label to be?", name, null)
-		if(user.get_active_hand() != W)
+		if(user.get_active_held_item() != W)
 			return
 		if(!in_range(src, user) && loc != user)
 			return
@@ -40,9 +37,9 @@
 	else if(istype(W, /obj/item/weapon/implanter))
 		var/obj/item/weapon/implanter/I = W
 		if(I.imp)
-			if(imp || I.imp.implanted)
+			if(imp || I.imp.imp_in)
 				return
-			I.imp.loc = src
+			I.imp.forceMove(src)
 			imp = I.imp
 			I.imp = null
 			update_icon()
@@ -51,16 +48,14 @@
 			if(imp)
 				if(I.imp)
 					return
-				imp.loc = I
+				imp.forceMove(I)
 				I.imp = imp
 				imp = null
 				update_icon()
 			I.update_icon()
 
-	/*else if(istype(W, /obj/item/ammo_casing/shotgun/implanter))
-		var/obj/item/ammo_casing/shotgun/implanter/I = W
-		if(I.implanter)
-			src.attackby(I.implanter, user, params) */ // COMING SOON -- c0
+	else
+		return ..()
 
 /obj/item/weapon/implantcase/New()
 	..()

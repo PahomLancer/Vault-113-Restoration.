@@ -24,6 +24,7 @@
 	var/overdose_threshold = 0
 	var/addiction_threshold = 0
 	var/addiction_stage = 0
+	var/water_factor = 0
 	var/overdosed = 0 // You fucked up and this is now triggering its overdose effects, purge that shit quick.
 
 /datum/reagent/Destroy() // This should only be called by the holder, so it's already handled clearing its references
@@ -49,6 +50,7 @@
 
 /datum/reagent/proc/on_mob_life(mob/living/M)
 	current_cycle++
+	M.water_level += water_factor
 	holder.remove_reagent(src.id, metabolization_rate * M.metabolism_efficiency) //By default it slowly disappears.
 	return
 
@@ -83,27 +85,27 @@
 	return
 
 /datum/reagent/proc/overdose_start(mob/living/M)
-	M << "<span class='userdanger'>You feel like you took too much of [name]!</span>"
+	to_chat(M, "<span class='userdanger'>You feel like you took too much of [name]!</span>")
 	return
 
 /datum/reagent/proc/addiction_act_stage1(mob/living/M)
 	if(prob(30))
-		M << "<span class='notice'>You feel like some [name] right about now.</span>"
+		to_chat(M, "<span class='notice'>You feel like some [name] right about now.</span>")
 	return
 
 /datum/reagent/proc/addiction_act_stage2(mob/living/M)
 	if(prob(30))
-		M << "<span class='notice'>You feel like you need [name]. You just can't get enough.</span>"
+		to_chat(M, "<span class='notice'>You feel like you need [name]. You just can't get enough.</span>")
 	return
 
 /datum/reagent/proc/addiction_act_stage3(mob/living/M)
 	if(prob(30))
-		M << "<span class='danger'>You have an intense craving for [name].</span>"
+		to_chat(M, "<span class='danger'>You have an intense craving for [name].</span>")
 	return
 
 /datum/reagent/proc/addiction_act_stage4(mob/living/M)
 	if(prob(30))
-		M << "<span class='boldannounce'>You're not feeling good at all! You really need some [name].</span>"
+		to_chat(M, "<span class='boldannounce'>You're not feeling good at all! You really need some [name].</span>")
 	return
 
 /proc/pretty_string_from_reagent_list(var/list/reagent_list)

@@ -1,11 +1,10 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1471681555
-DIR: code 
-AUTO_FILE_DIR: ON
+LAST_COMPILE_TIME: 1527429170
+DIR: _maps _maps\map_files _maps\map_files\ArizonaWasteland _maps\map_files\CaliforniaWasteland _maps\map_files\debug _maps\map_files\generic _maps\map_files\OldWasteland _maps\map_files\TexasWasteland _maps\map_files\TgStation 
+AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 510.1338
-WINDOW: code\modules\reagents\reagent_containers\patch.dm;code\modules\crafting\recipes.dm;code\game\objects\items\stacks\medical.dm;code\modules\mining\mine_turfs.dm;_maps\map_files\TgStation\tgstation.2.1.3.dmm;icons\turf\floors.dmi;code\modules\clothing\suits\armor.dm;icons\turf\floors2.dmi;icons\turf\floors3.dmi;code\hub.dm
-FILE: code\hub.dm
+LAST_COMPILE_VERSION: 511.1385
+WINDOW: _maps\arizona.dm
 */
 // END_INTERNALS

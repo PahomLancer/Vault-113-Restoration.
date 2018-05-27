@@ -40,14 +40,22 @@ var/global/list/GlobalPool = list()
 	if(!get_type)
 		return
 
+	if(SSpool)
+		INCREMENT_TALLY(SSpool.stats_pooled_or_newed, get_type)
+
 	. = GetFromPool(get_type,second_arg)
 
 	if(!.)
+		if(SSpool)
+			INCREMENT_TALLY(SSpool.stats_created_new, get_type)
 		if(ispath(get_type))
 			if(islist(second_arg))
 				. = new get_type (arglist(second_arg))
 			else
 				. = new get_type (second_arg)
+	else
+		if(SSpool)
+			INCREMENT_TALLY(SSpool.stats_reused, get_type)
 
 
 /proc/GetFromPool(get_type,second_arg)
@@ -62,18 +70,20 @@ var/global/list/GlobalPool = list()
 
 	var/datum/pooled = pop(GlobalPool[get_type])
 	if(pooled)
-		var/atom/movable/AM
-		if(istype(pooled, /atom/movable))
+		pooled.gc_destroyed = null
+
+		var/go/AM
+		if(istype(pooled, /go))
 			AM = pooled
 
 		if(islist(second_arg))
 			if(AM)
-				AM.loc = second_arg[1] //we need to do loc setting explicetly before even calling New() to replicate new()'s behavior
+				AM.forceMove(second_arg[1] )//we need to do loc setting explicetly before even calling New() to replicate new()'s behavior
 			pooled.New(arglist(second_arg))
 
 		else
 			if(AM)
-				AM.loc = second_arg
+				AM.forceMove(second_arg)
 			pooled.New(second_arg)
 
 		return pooled
@@ -86,17 +96,22 @@ var/global/list/GlobalPool = list()
 	if(diver in GlobalPool[diver.type])
 		return
 
+	if(SSpool)
+		INCREMENT_TALLY(SSpool.stats_placed_in_pool, diver.type)
+
 	if(!GlobalPool[diver.type])
 		GlobalPool[diver.type] = list()
 
 	GlobalPool[diver.type] |= diver
 
-	if (destroy)
+	if(destroy)
 		diver.Destroy()
+
+	diver.gc_destroyed = 1
 
 	diver.ResetVars()
 
-var/list/exclude = list("animate_movement", "contents", "loc", "locs", "parent_type", "vars", "verbs", "type")
+var/list/exclude = list("animate_movement", "contents", "loc", "locs", "parent_type", "vars", "verbs", "type", "gc_destroyed")
 var/list/pooledvariables = list()
 //thanks to clusterfack @ /vg/station for these two procs
 /datum/proc/createVariables()
@@ -106,9 +121,7 @@ var/list/pooledvariables = list()
 	for(var/key in vars)
 		if(key in exclude)
 			continue
-		if(islist(vars[key]))
-			pooledvariables[type][key] = list()
-		else
+		if(!islist(vars[key]))
 			pooledvariables[type][key] = initial(vars[key])
 
 /datum/proc/ResetVars()
@@ -116,14 +129,12 @@ var/list/pooledvariables = list()
 		createVariables(args)
 
 	for(var/key in pooledvariables[type])
-		if (islist(pooledvariables[type][key]))
-			vars[key] = list()
-		else
+		if (!islist(pooledvariables[type][key]))
 			vars[key] = pooledvariables[type][key]
 
-/atom/movable/ResetVars()
+/go/ResetVars()
 	..()
-	loc = null
+	forceMove(null)
 	contents = initial(contents) //something is really wrong if this object still has stuff in it by this point
 
 /image/ResetVars()

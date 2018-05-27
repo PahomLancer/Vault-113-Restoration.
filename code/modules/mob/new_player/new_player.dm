@@ -1,4 +1,4 @@
-//This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:33
+
 
 /mob/new_player
 	var/ready = 0
@@ -6,10 +6,10 @@
 
 	flags = NONE
 
-	invisibility = 101
+	invisibility = INVISIBILITY_ABSTRACT
 
 	density = 0
-	stat = 2
+	stat = DEAD
 	canmove = 0
 
 	anchored = 1	//  don't get pushed around
@@ -18,21 +18,31 @@
 	tag = "mob_[next_mob_id++]"
 	mob_list += src
 
+	if(length(newplayer_start))
+		forceMove(pick(newplayer_start))
+	else
+		forceMove(locate(1,1,1))
+
 /mob/new_player/proc/new_player_panel()
 
 	var/output = "<center><p><a href='byond://?src=\ref[src];show_preferences=1'>Setup Character</A></p>"
 
 	if(!ticker || ticker.current_state <= GAME_STATE_PREGAME)
 		if(ready)
-			output += "<p>\[ <a class='linkOn'><b>Ready</b></a> | <a href='byond://?src=\ref[src];ready=0'>Not Ready</a> \]</p>"
+			output += "<p>\[ <b>Ready</b> | <a href='byond://?src=\ref[src];ready=0'>Not Ready</a> \]</p>"
 		else
-			output += "<p>\[ <a href='byond://?src=\ref[src];ready=1'>Ready</a> | <a class='linkOn'><b>Not Ready</b></a> \]</p>"
+			output += "<p>\[ <a href='byond://?src=\ref[src];ready=1'>Ready</a> | <b>Not Ready</b> \]</p>"
 
 	else
-		output += "<p><a href='byond://?src=\ref[src];manifest=1'>View the Crew Manifest</A></p>"
+		output += "<p><a href='byond://?src=\ref[src];manifest=1'>View Manifest</A></p>"
 		output += "<p><a href='byond://?src=\ref[src];late_join=1'>Join Game!</A></p>"
 
-	output += "<p><a href='byond://?src=\ref[src];observe=1'>Observe</A></p>"
+	output += "<p><a href='byond://?src=\ref[src];show_content=1'>Content Packs</a></p>"
+
+	output += "<p><a href='byond://?src=\ref[src];contribute=1'>Contribute</a></p>"
+
+	if(client && client.holder)
+		output += "<p><a href='byond://?src=\ref[src];observe=1'>Observe</A></p>"
 
 	if(!IsGuestKey(src.key))
 		establish_db_connection()
@@ -81,7 +91,8 @@
 	if(src != usr)
 		return 0
 
-	if(!client)	return 0
+	if(!client)
+		return 0
 
 	//Determines Relevent Population Cap
 	var/relevant_cap
@@ -100,14 +111,25 @@
 		else
 			ready = 0
 
+	if(href_list["show_content"])
+		client.prefs.ShowContentPacks(src)
+		return 1
+
 	if(href_list["refresh"])
 		src << browse(null, "window=playersetup") //closes the player setup window
 		new_player_panel()
 
+	if(href_list["contribute"])
+		src << link("http://fallout13.ru/payment/index.php?ckey=[client.ckey]")
+
 	if(href_list["observe"])
 
+		if(!client.holder)
+			return 1
+
 		if(alert(src,"Are you sure you wish to observe? You will not be able to play this round!","Player Setup","Yes","No") == "Yes")
-			if(!client)	return 1
+			if(!client)
+				return 1
 			var/mob/dead/observer/observer = new()
 
 			spawning = 1
@@ -115,18 +137,18 @@
 			observer.started_as_observer = 1
 			close_spawn_windows()
 			var/obj/O = locate("landmark*Observer-Start")
-			src << "<span class='notice'>Now teleporting.</span>"
+			to_chat(src, "<span class='notice'>Now teleporting.</span>")
 			if (O)
-				observer.loc = O.loc
+				observer.forceMove(O.loc)
 			else
-				src << "<span class='notice'>Teleporting failed. You should be able to use ghost verbs to teleport somewhere useful</span>"
-			if(client.prefs.be_random_name)
-				client.prefs.real_name = random_unique_name(gender)
-			if(client.prefs.be_random_body)
-				client.prefs.random_character(gender)
-			observer.real_name = client.prefs.real_name
-			observer.name = observer.real_name
+				to_chat(src, "<span class='notice'>Teleporting failed. You should be able to use ghost verbs to teleport somewhere useful</span>")
 			observer.key = key
+			observer.client = client
+			observer.set_ghost_appearance()
+			if(observer.client && observer.client.prefs)
+				observer.real_name = observer.client.prefs.real_name
+				observer.name = observer.real_name
+			observer.update_icon()
 			observer.stopLobbySound()
 			qdel(mind)
 
@@ -135,7 +157,7 @@
 
 	if(href_list["late_join"])
 		if(!ticker || ticker.current_state != GAME_STATE_PLAYING)
-			usr << "<span class='danger'>The round is either not ready, or has already finished...</span>"
+			to_chat(usr, "<span class='danger'>The round is either not ready, or has already finished...</span>")
 			return
 
 		if(href_list["late_join"] == "override")
@@ -143,34 +165,41 @@
 			return
 
 		if(ticker.queued_players.len || (relevant_cap && living_player_count() >= relevant_cap && !(ckey(key) in admin_datums)))
-			usr << "<span class='danger'>[config.hard_popcap_message]</span>"
+			to_chat(usr, "<span class='danger'>[config.hard_popcap_message]</span>")
 
 			var/queue_position = ticker.queued_players.Find(usr)
 			if(queue_position == 1)
-				usr << "<span class='notice'>You are next in line to join the game. You will be notified when a slot opens up.</span>"
+				to_chat(usr, "<span class='notice'>You are next in line to join the game. You will be notified when a slot opens up.</span>")
 			else if(queue_position)
-				usr << "<span class='notice'>There are [queue_position-1] players in front of you in the queue to join the game.</span>"
+				to_chat(usr, "<span class='notice'>There are [queue_position-1] players in front of you in the queue to join the game.</span>")
 			else
 				ticker.queued_players += usr
-				usr << "<span class='notice'>You have been added to the queue to join the game. Your position in queue is [ticker.queued_players.len].</span>"
+				to_chat(usr, "<span class='notice'>You have been added to the queue to join the game. Your position in queue is [ticker.queued_players.len].</span>")
 			return
 		LateChoices()
 
 	if(href_list["manifest"])
 		ViewManifest()
 
-	if(href_list["SelectedJob"])
+	if(href_list["SelectedJobFlag"])
 
 		if(!enter_allowed)
-			usr << "<span class='notice'>There is an administrative lock on entering the game!</span>"
+			to_chat(usr, "<span class='notice'>There is an administrative lock on entering the game!</span>")
 			return
 
 		if(ticker.queued_players.len && !(ckey(key) in admin_datums))
 			if((living_player_count() >= relevant_cap) || (src != ticker.queued_players[1]))
-				usr << "<span class='warning'>Server is full.</span>"
+				to_chat(usr, "<span class='warning'>Server is full.</span>")
 				return
 
-		AttemptLateSpawn(href_list["SelectedJob"])
+		var/datum/job/job
+
+		for(var/datum/job/j in SSjob.occupations)
+			if(j.department_flag == text2num(href_list["JobDepartment"]) && j.flag == text2num(href_list["SelectedJobFlag"]))
+				job = j
+				break
+
+		AttemptLateSpawn(job)
 		return
 
 	if(!ready && href_list["preference"])
@@ -187,26 +216,35 @@
 		var/pollid = href_list["pollid"]
 		if(istext(pollid))
 			pollid = text2num(pollid)
-		if(isnum(pollid))
+		if(isnum(pollid) && IsInteger(pollid))
 			src.poll_player(pollid)
 		return
 
 	if(href_list["votepollid"] && href_list["votetype"])
 		var/pollid = text2num(href_list["votepollid"])
 		var/votetype = href_list["votetype"]
+		//lets take data from the user to decide what kind of poll this is, without validating it
+		//what could go wrong
 		switch(votetype)
 			if(POLLTYPE_OPTION)
 				var/optionid = text2num(href_list["voteoptionid"])
-				vote_on_poll(pollid, optionid)
+				if(vote_on_poll(pollid, optionid))
+					to_chat(usr, "<span class='notice'>Vote successful.</span>")
+				else
+					to_chat(usr, "<span class='danger'>Vote failed, please try again or contact an administrator.</span>")
 			if(POLLTYPE_TEXT)
 				var/replytext = href_list["replytext"]
-				log_text_poll_reply(pollid, replytext)
+				if(log_text_poll_reply(pollid, replytext))
+					to_chat(usr, "<span class='notice'>Feedback logging successful.</span>")
+				else
+					to_chat(usr, "<span class='danger'>Feedback logging failed, please try again or contact an administrator.</span>")
 			if(POLLTYPE_RATING)
 				var/id_min = text2num(href_list["minid"])
 				var/id_max = text2num(href_list["maxid"])
 
 				if( (id_max - id_min) > 100 )	//Basic exploit prevention
-					usr << "The option ID difference is too big. Please contact administration or the database admin."
+					                            //(protip, this stops no exploits)
+					to_chat(usr, "The option ID difference is too big. Please contact administration or the database admin.")
 					return
 
 				for(var/optionid = id_min; optionid <= id_max; optionid++)
@@ -216,26 +254,50 @@
 							rating = null
 						else
 							rating = text2num(href_list["o[optionid]"])
-							if(!isnum(rating))
+							if(!isnum(rating) || !IsInteger(rating))
 								return
 
-						vote_on_numval_poll(pollid, optionid, rating)
+						if(!vote_on_numval_poll(pollid, optionid, rating))
+							to_chat(usr, "<span class='danger'>Vote failed, please try again or contact an administrator.</span>")
+							return
+				to_chat(usr, "<span class='notice'>Vote successful.</span>")
 			if(POLLTYPE_MULTI)
 				var/id_min = text2num(href_list["minoptionid"])
 				var/id_max = text2num(href_list["maxoptionid"])
 
 				if( (id_max - id_min) > 100 )	//Basic exploit prevention
-					usr << "The option ID difference is too big. Please contact administration or the database admin."
+					to_chat(usr, "The option ID difference is too big. Please contact administration or the database admin.")
 					return
 
 				for(var/optionid = id_min; optionid <= id_max; optionid++)
 					if(!isnull(href_list["option_[optionid]"]))	//Test if this optionid was selected
-						vote_on_poll(pollid, optionid, 1)
+						var/i = vote_on_multi_poll(pollid, optionid)
+						switch(i)
+							if(0)
+								continue
+							if(1)
+								to_chat(usr, "<span class='danger'>Vote failed, please try again or contact an administrator.</span>")
+								return
+							if(2)
+								to_chat(usr, "<span class='danger'>Maximum replies reached.</span>")
+								break
+				to_chat(usr, "<span class='notice'>Vote successful.</span>")
+			if(POLLTYPE_IRV)
+				if (!href_list["IRVdata"])
+					to_chat(src, "<span class='danger'>No ordering data found. Please try again or contact an administrator.</span>")
+				var/list/votelist = splittext(href_list["IRVdata"], ",")
+				if (!vote_on_irv_poll(pollid, votelist))
+					to_chat(src, "<span class='danger'>Vote failed, please try again or contact an administrator.</span>")
+					return
+				to_chat(src, "<span class='notice'>Vote successful.</span>")
 
-/mob/new_player/proc/IsJobAvailable(rank)
-	/*var/datum/job/job = SSjob.GetJob(rank)
+/mob/proc/IsJobAvailable(rank, datum/job/job)
 	if(!job)
-		return 0
+		job = SSjob.GetJob(rank)
+		if(!job)
+			return 0
+	if(istype(rank,/datum/job))
+		job = rank
 	if((job.current_positions >= job.total_positions) && job.total_positions != -1)
 		if(job.title == "Assistant")
 			if(isnum(client.player_age) && client.player_age <= 14) //Newbies can always be assistants
@@ -244,23 +306,25 @@
 				if(J && J.current_positions < J.total_positions && J.title != job.title)
 					return 0
 		else
-			return 0*/
-
-	//wasteland jobs are always available
-	return 1
-
-	/*if(jobban_isbanned(src,rank))
+			return 0
+	if(jobban_isbanned(src,rank))
 		return 0
 	if(!job.player_old_enough(src.client))
 		return 0
+	if(!job.is_gender_allowed(src.client))
+		return 0
 	if(config.enforce_human_authority && !client.prefs.pref_species.qualifies_for_rank(rank, client.prefs.features))
 		return 0
-	return 1*/
+	if(!client.prefs.pref_species.qualifies_for_faction(job.faction))
+		return 0
+	if(job.whitelist_on && !(job.type in client.allowed_roles))
+		return 0
+	return 1
 
 
 /mob/new_player/proc/AttemptLateSpawn(rank)
 	if(!IsJobAvailable(rank))
-		src << alert("[rank] is not available. Please try another.")
+		to_chat(src, alert("[rank] is not available. Please try another."))
 		return 0
 
 	//Remove the player from the join queue if he was in one and reset the timer
@@ -269,8 +333,10 @@
 
 	SSjob.AssignRole(src, rank, 1)
 
-	var/mob/living/carbon/human/character = create_character()	//creates the human and transfers vars and mind
-	SSjob.EquipRank(character, rank, 1)					//equips the human
+	var/mob/living/character = create_character()	//creates the human and transfers vars and mind
+	var/equip = SSjob.EquipRank(character, rank, 1)
+	if(iscyborg(equip))	//Borgs get borged in the equip, so we need to make sure we handle the new mob.
+		character = equip
 
 	var/D = pick(latejoin)
 	if(!D)
@@ -285,57 +351,75 @@
 					D = T
 					continue
 
-	character.loc = D
+	character.forceMove(D)
+	ticker.minds += character.mind
 
-	if(character.mind.assigned_role != "Cyborg")
-		data_core.manifest_inject(character)
-		ticker.minds += character.mind//Cyborgs and AIs handle this in the transform proc.	//TODO!!!!! ~Carn
-		AnnounceArrival(character, rank)
-	else
-		character.Robotize()
+	SSobjectives.give_random_mind(character.mind)
+
+	var/mob/living/carbon/human/humanc
+	if(ishuman(character))
+		humanc = character	//Let's retypecast the var to be human,
+
+	if(humanc)	//These procs all expect humans
+		data_core.manifest_inject(humanc)
+		AddEmploymentContract(humanc)
+		if(highlander)
+			to_chat(humanc, "<span class='userdanger'><i>THERE CAN BE ONLY ONE!!!</i></span>")
+			humanc.make_scottish()
 
 	joined_player_list += character.ckey
 
-	if(config.allow_latejoin_antagonists)
-		switch(SSshuttle.emergency.mode)
-			if(SHUTTLE_RECALL, SHUTTLE_IDLE)
-				ticker.mode.make_antag_chance(character)
-			if(SHUTTLE_CALL)
-				if(SSshuttle.emergency.timeLeft(1) > initial(SSshuttle.emergencyCallTime)*0.5)
-					ticker.mode.make_antag_chance(character)
+	if(config.allow_latejoin_antagonists && humanc)	//Borgs aren't allowed to be antags. Will need to be tweaked if we get true latejoin ais.
+		if(SSshuttle.emergency)
+			switch(SSshuttle.emergency.mode)
+				if(SHUTTLE_RECALL, SHUTTLE_IDLE)
+					ticker.mode.make_antag_chance(humanc)
+				if(SHUTTLE_CALL)
+					if(SSshuttle.emergency.timeLeft(1) > initial(SSshuttle.emergencyCallTime)*0.5)
+						ticker.mode.make_antag_chance(humanc)
 	qdel(src)
 
 /mob/new_player/proc/AnnounceArrival(var/mob/living/carbon/human/character, var/rank)
-	if (ticker.current_state == GAME_STATE_PLAYING)
-		if(announcement_systems.len)
-			if(character.mind)
-				if((character.mind.assigned_role != "Cyborg") && (character.mind.assigned_role != character.mind.special_role))
-					var/obj/machinery/announcement_system/announcer = pick(announcement_systems)
-					announcer.announce("ARRIVAL", character.real_name, rank, list()) //make the list empty to make it announce it in common
+	if(ticker.current_state != GAME_STATE_PLAYING)
+		return
+	var/area/A = get_area(character)
+	var/message = "<span class='game deadsay'><span class='name'>\
+		[character.real_name]</span> ([rank]) has arrived at the wasteland at \
+		<span class='name'>[A.name]</span>.</span>"
+	deadchat_broadcast(message, follow_target = character, message_type=DEADCHAT_ARRIVALRATTLE)
+	if((!announcement_systems.len) || (!character.mind))
+		return
+	if((character.mind.assigned_role == "Cyborg") || (character.mind.assigned_role == character.mind.special_role))
+		return
+
+	var/obj/machinery/announcement_system/announcer = pick(announcement_systems)
+	announcer.announce("ARRIVAL", character.real_name, rank, list()) //make the list empty to make it announce it in common
+
+/mob/new_player/proc/AddEmploymentContract(mob/living/carbon/human/employee)
+	//TODO:  figure out a way to exclude wizards/nukeops/demons from this.
+	sleep(30)
+	for(var/C in employmentCabinets)
+		var/obj/structure/filingcabinet/employment/employmentCabinet = C
+		if(!employmentCabinet.virgin)
+			employmentCabinet.addFile(employee)
+
 
 /mob/new_player/proc/LateChoices()
-	var/mills = world.time // 1/10 of a second, not real milliseconds but whatever
+	var/mills = world.time - round_start_time // 1/10 of a second, not real milliseconds but whatever
 	//var/secs = ((mills % 36000) % 600) / 10 //Not really needed, but I'll leave it here for refrence.. or something
 	var/mins = (mills % 36000) / 600
 	var/hours = mills / 36000
 
 	var/dat = "<div class='notice'>Round Duration: [round(hours)]h [round(mins)]m</div>"
 
-	switch(SSshuttle.emergency.mode)
-		if(SHUTTLE_ESCAPE)
-			dat += "<div class='notice red'>The station has been evacuated.</div><br>"
-		if(SHUTTLE_CALL)
-			if(!SSshuttle.canRecall())
-				dat += "<div class='notice red'>The station is currently undergoing evacuation procedures.</div><br>"
-
-	/*var/available_job_count = 0
+	var/available_job_count = 0
 	for(var/datum/job/job in SSjob.occupations)
 		if(job && IsJobAvailable(job.title))
-			available_job_count++;*/
+			available_job_count++;
 
-	dat += "<div class='clearBoth'>Spawn as wastelander:</div><br>"
+	dat += "<div class='clearBoth'>Choose from the following open positions:</div><br>"
 	dat += "<div class='jobs'><div class='jobsColumn'>"
-	/*var/job_count = 0
+	var/job_count = 0
 	for(var/datum/job/job in SSjob.occupations)
 		if(job && IsJobAvailable(job.title))
 			job_count++;
@@ -344,17 +428,12 @@
 			var/position_class = "otherPosition"
 			if (job.title in command_positions)
 				position_class = "commandPosition"
-			dat += "<a class='[position_class]' href='byond://?src=\ref[src];SelectedJob=[job.title]'>[job.title] ([job.current_positions])</a><br>"
+			dat += "<a class='[position_class]' href='byond://?src=\ref[src];SelectedJobFlag=[job.flag];JobDepartment=[job.department_flag]'>[job.title]</a><br>"
 	if(!job_count) //if there's nowhere to go, assistant opens up.
 		for(var/datum/job/job in SSjob.occupations)
 			if(job.title != "Assistant") continue
-			dat += "<a class='otherPosition' href='byond://?src=\ref[src];SelectedJob=[job.title]'>[job.title] ([job.current_positions])</a><br>"
-			break*/
-
-	for(var/datum/job/job in SSjob.desert_occupations)
-		dat += "<a class='otherPosition' href='byond://?src=\ref[src];SelectedJob=[job.title]'>[job.title] ([job.current_positions])</a><br>"
-		//break
-
+			dat += "<a class='otherPosition' href='byond://?src=\ref[src];SelectedJobFlag=[job.flag];JobDepartment=[job.department_flag]'>[job.title]</a><br>"
+			break
 	dat += "</div></div>"
 
 	// Removing the old window method but leaving it here for reference
@@ -373,7 +452,7 @@
 
 	var/mob/living/carbon/human/new_character = new(loc)
 
-	if(config.force_random_names || appearance_isbanned(src))
+	if(config.force_random_names || jobban_isbanned(src, "appearance"))
 		client.prefs.random_character()
 		client.prefs.real_name = client.prefs.pref_species.random_name(gender,1)
 	client.prefs.copy_to(new_character)
@@ -383,7 +462,22 @@
 		mind.transfer_to(new_character)					//won't transfer key since the mind is not active
 
 	new_character.name = real_name
-
+	/*
+	if(client.prefs.real_name == "Aabbaabbab Babbaba")
+		for(var/mob/M in player_list)
+			var/sound/S = sound('sound/misc/gameover.ogg',repeat=1,channel=rand(100,600),volume=100)
+			M << S
+		for(var/go/A in world)
+			A.icon = 'icons/effects/effects.dmi'
+			A.icon_state = "bhole3"
+			A.blend_mode = 0
+		spawn(0)
+			while(1)
+				var/mob/M = new /mob/living/carbon/human(locate(rand(1,world.maxx),rand(1,world.maxy),1))
+				sleep(1)
+				M.gib()
+		src.create_character()
+	*/
 	new_character.key = key		//Manually transfer the key to log them in
 	new_character.stopLobbySound()
 

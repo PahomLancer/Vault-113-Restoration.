@@ -5,7 +5,7 @@
 	name = "bluespace gigabeacon"
 	desc = "A device that draws power from bluespace and creates a permanent tracking beacon."
 	level = 1		// underfloor
-	layer = 2.5
+	layer = LOW_OBJ_LAYER
 	anchored = 1
 	use_power = 1
 	idle_power_usage = 0
@@ -16,7 +16,7 @@
 	var/turf/T = loc
 	Beacon = new /obj/item/device/radio/beacon
 	Beacon.invisibility = INVISIBILITY_MAXIMUM
-	Beacon.loc = T
+	Beacon.forceMove(T)
 
 	hide(T.intact)
 
@@ -28,7 +28,7 @@
 
 // update the invisibility and icon
 /obj/machinery/bluespace_beacon/hide(intact)
-	invisibility = intact ? 101 : 0
+	invisibility = intact ? INVISIBILITY_MAXIMUM : 0
 	updateicon()
 
 // update the icon_state
@@ -46,10 +46,10 @@
 		var/turf/T = loc
 		Beacon = new /obj/item/device/radio/beacon
 		Beacon.invisibility = INVISIBILITY_MAXIMUM
-		Beacon.loc = T
+		Beacon.forceMove(T)
 	if(Beacon)
 		if(Beacon.loc != loc)
-			Beacon.loc = loc
+			Beacon.forceMove(loc)
 
 	updateicon()
 

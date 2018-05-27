@@ -1,14 +1,49 @@
 /obj/structure/flora
-	burn_state = FLAMMABLE
-	burntime = 30
+	resistance_flags = FLAMMABLE
+	obj_integrity = 150
+	max_integrity = 150
+	anchored = 1
+
+/obj/structure/flora/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, attack_dir)
+	..()
+	if(damage_flag == "bomb" || damage_type == BURN && prob(damage_amount))
+		fire_act(damage_amount * 100, 1)
 
 //trees
 /obj/structure/flora/tree
 	name = "tree"
-	anchored = 1
 	density = 1
 	pixel_x = -16
-	layer = 9
+	layer = FLY_LAYER
+	appearance_flags = 0
+	var/cut = FALSE
+	var/log_amount = 10
+
+/obj/structure/flora/tree/attackby(obj/item/weapon/W, mob/user, params)
+	if(!cut && log_amount && (!(NODECONSTRUCT in flags)))
+		if(W.sharpness && W.force > 15)
+			if(W.hitsound)
+				playsound(get_turf(src), W.hitsound, 100, 0, 0)
+			user.visible_message("<span class='notice'>[user] begins to cut down [src] with [W].</span>","<span class='notice'>You begin to cut down [src] with [W].</span>", "You hear the sound of sawing.")
+			if(do_after(user, 1000/W.force, target = user)) //5 seconds with 20 force, 8 seconds with a hatchet, 20 seconds with a shard.
+				if(cut)
+					return
+				user.visible_message("<span class='notice'>[user] fells [src] with the [W].</span>","<span class='notice'>You fell [src] with the [W].</span>", "You hear the sound of a tree falling.")
+				playsound(get_turf(src), 'sound/effects/meteorimpact.ogg', 100 , 0, 0)
+				icon = 'icons/obj/flora/pinetrees.dmi'
+				icon_state = "tree_stump"
+				density = 0
+				pixel_x = -16
+				name += " stump"
+				cut = TRUE
+				for(var/i=1 to log_amount)
+					new /obj/item/weapon/grown/log/tree(get_turf(src))
+
+	else
+		return ..()
+
+
+
 
 /obj/structure/flora/tree/pine
 	name = "pine tree"
@@ -21,7 +56,6 @@
 
 /obj/structure/flora/tree/pine/xmas
 	name = "xmas tree"
-	icon = 'icons/obj/flora/pinetrees.dmi'
 	icon_state = "pine_c"
 
 /obj/structure/flora/tree/pine/xmas/New()
@@ -32,7 +66,16 @@
 	icon = 'icons/obj/flora/deadtrees.dmi'
 	icon_state = "tree_1"
 
-/obj/structure/flora/tree/festivus
+/obj/structure/flora/tree/palm
+	icon = 'icons/misc/beach2.dmi'
+	icon_state = "palm1"
+
+/obj/structure/flora/tree/palm/New()
+	..()
+	icon_state = pick("palm1","palm2")
+	pixel_x = 0
+
+/obj/structure/festivus
 	name = "festivus pole"
 	icon = 'icons/obj/flora/pinetrees.dmi'
 	icon_state = "festivus_pole"
@@ -42,22 +85,11 @@
 	icon_state = "tree_[rand(1, 6)]"
 	..()
 
-/obj/structure/flora/tree/wasteland/New()
-	icon = 'icons/obj/flora/deadtrees.dmi'
-	icon_state = "deadtree_[rand(1, 6)]"
-	..()
-
-/obj/structure/flora/tree/stump
-	name = "stump"
-	desc = "The bottom part of a tree left projecting from the ground after most of the trunk has fallen or been cut down."
-	icon = 'icons/obj/flora/wasteland.dmi'
-	icon_state = "stump"
 
 //grass
 /obj/structure/flora/grass
 	name = "grass"
 	icon = 'icons/obj/flora/snowflora.dmi'
-	anchored = 1
 	gender = PLURAL	//"this is grass" not "this is a grass"
 
 /obj/structure/flora/grass/brown
@@ -66,6 +98,7 @@
 /obj/structure/flora/grass/brown/New()
 	icon_state = "snowgrass[rand(1, 3)]bb"
 	..()
+
 
 /obj/structure/flora/grass/green
 	icon_state = "snowgrass1gb"
@@ -81,27 +114,6 @@
 	icon_state = "snowgrassall[rand(1, 3)]"
 	..()
 
-/obj/structure/flora/grass/wasteland/New()
-	..()
-	icon = 'icons/obj/flora/wasteland.dmi'
-	icon_state = "tall_grass_[rand(1, 16)]"
-
-//glowshroom
-/obj/structure/flora/mushroom/New()
-	..()
-	name = "mushroom"
-	desc = "These light giving mushrooms were once a very rare type of fungus that fed on radioactive materials and radiation.<br>The luminescent glow is a by-product of the radiation they feed on.<br>They commonly grow in the dark areas."
-	icon = 'icons/obj/flora/wasteland.dmi'
-	icon_state = "mushroom_[rand(1, 4)]"
-
-//glowshroom
-/obj/structure/flora/cactus/New()
-	..()
-	anchored = 1
-	density = 1
-	name = "cactus"
-	icon = 'icons/obj/flora/wasteland.dmi'
-	icon_state = "cactus_[rand(1, 4)]"
 
 //bushes
 /obj/structure/flora/bush
@@ -120,7 +132,6 @@
 	name = "bush"
 	icon = 'icons/obj/flora/ausflora.dmi'
 	icon_state = "firstbush_1"
-	anchored = 1
 
 /obj/structure/flora/ausbushes/New()
 	if(icon_state == "firstbush_1")
@@ -232,12 +243,49 @@
 	icon_state = "fullgrass_[rand(1, 3)]"
 	..()
 
-/obj/structure/flora/kirbyplants
+/obj/item/weapon/twohanded/required/kirbyplants
 	name = "potted plant"
 	icon = 'icons/obj/flora/plants.dmi'
 	icon_state = "plant-01"
+	layer = ABOVE_MOB_LAYER
+	w_class = WEIGHT_CLASS_HUGE
+	force = 10
+	throwforce = 13
+	throw_speed = 2
+	throw_range = 4
 
-/obj/structure/flora/kirbyplants/dead
+/obj/item/weapon/twohanded/required/kirbyplants/equipped(mob/living/user)
+	var/image/I = image(icon = 'icons/obj/flora/plants.dmi' , icon_state = src.icon_state, loc = user)
+	I.override = 1
+	user.add_alt_appearance("sneaking_mission", I, player_list)
+	..()
+
+/obj/item/weapon/twohanded/required/kirbyplants/dropped(mob/living/user)
+	..()
+	user.remove_alt_appearance("sneaking_mission")
+
+/obj/item/weapon/twohanded/required/kirbyplants/random
+	var/list/static/states
+
+/obj/item/weapon/twohanded/required/kirbyplants/random/New()
+	. = ..()
+	if(!states)
+		generate_states()
+	icon_state = pick(states)
+
+/obj/item/weapon/twohanded/required/kirbyplants/random/proc/generate_states()
+	states = list()
+	for(var/i in 1 to 25)
+		var/number
+		if(i < 10)
+			number = "0[i]"
+		else
+			number = "[i]"
+		states += "plant-[number]"
+	states += "applebush"
+
+
+/obj/item/weapon/twohanded/required/kirbyplants/dead
 	name = "RD's potted plant"
 	desc = "A gift from the botanical staff, presented after the RD's reassignment. There's a tag on it that says \"Y'all come back now, y'hear?\"\nIt doesn't look very healthy..."
 	icon_state = "plant-25"
@@ -245,38 +293,22 @@
 
 //a rock is flora according to where the icon file is
 //and now these defines
+
 /obj/structure/flora/rock
-	name = "rock"
-	desc = "a rock"
-	icon_state = "rock"
+	icon_state = "basalt"
+	desc = "A volcanic rock"
 	icon = 'icons/obj/flora/rocks.dmi'
-	anchored = 1
-	burn_state = FIRE_PROOF
+	resistance_flags = FIRE_PROOF
 	density = 1
 
 /obj/structure/flora/rock/New()
 	..()
-	icon_state = "[icon_state][rand(1,5)]"
-
-/obj/structure/flora/rock/pile
-	name = "rocks"
-	desc = "some rocks"
-	icon_state = "rockpile"
-	density = 0
-
-
-/obj/structure/flora/rock/volcanic
-	icon_state = "basalt"
-	desc = "A volcanic rock"
-
-
-/obj/structure/flora/rock/volcanic/New()
-	..()
 	icon_state = "[icon_state][rand(1,3)]"
 
-/obj/structure/flora/rock/pile/volcanic
+/obj/structure/flora/rock/pile
 	icon_state = "lavarocks"
+	desc = "A pile of rocks"
 
-/obj/structure/flora/rock/pile/volcanic/New()
+/obj/structure/flora/rock/pile/New()
 	..()
 	icon_state = "[icon_state][rand(1,3)]"

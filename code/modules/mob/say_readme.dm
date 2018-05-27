@@ -32,37 +32,37 @@ global procs
 
 	get_hear(range, atom/source)
 		Like view(), but ignores luminosity.
-	
+
 	message_spans_start(spans)
 		Turns each element of spans into a span class.
-	
+
 	message_spans_end(length)
 		Returns lenght times "</span>"
-	
+
 	attach_spans(input, spans)
 		Attaches span classes around input.
 
-/atom/movable
+/go
 	flags
 		The HEAR flag determines whether something is a hearer or not.
 		Hear() is only called on procs with this flag.
 
-	languages
+	languages_spoken/languages_understood
 		Bitmask variable.
 		What languages this object speaks/understands. If the languages of the speaker don't match the languages
 		of the hearer, the message will be modified in the hearer's lang_treat().
-	
+
 	verb_say/verb_ask/verb_exclaim/verb_yell
 		These determine what the verb is for their respective action. Used in say_quote().
 
 	say(message)
 		Say() is the "mother-proc". It calls all the other procs required for speaking, but does little itself.
-		At the atom/movable level, say() just calls send_speech.
+		At the go level, say() just calls send_speech.
 
-	Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, spans)
+	Hear(message, go/speaker, message_langs, raw_message, radio_freq, spans)
 		This proc handles hearing. What it does varies. For mobs, it treats the message with hearer-specific things
 		like language and deafness, then outputs it to the hearer.
-		
+
 		IMPORTANT NOTE: If radio_freq is not null, the code will assume that the speaker is virtual! (more info on this in the Radios section below)
 
 	send_speech(message, range, source, bubble_type, spans)
@@ -70,13 +70,13 @@ global procs
 		Message treatment or composition of output are not done by this proc, these are handled by the rest of
 		say() and the hearer respectively.
 
-	lang_treat(message, atom/movable/speaker, message_langs, raw_message, spans)
+	lang_treat(message, go/speaker, message_langs, raw_message, spans)
 		Modifies the message by comparing the languages of the speaker with the languages of the hearer.
 		Called on the hearer.
 
 	say_quote(input, spans)
 		Adds a verb and quotes to a message. Also attaches span classes to a message. Verbs are determined by verb_say/verb_ask/verb_yell variables. Called on the speaker.
-	
+
 	get_spans(input, spans)
 		Returns the list of spans that are always applied to messages of this atom.
 		Always return ..() | + youroutput when overriding this proc!
@@ -85,13 +85,13 @@ global procs
 	say_dead(message)
 		Sends a message to all dead people. Does not use Hear().
 
-	compose_message(message, atom/movable/speaker, message_langs, raw_message, radio_freq, spans)
+	compose_message(message, go/speaker, message_langs, raw_message, radio_freq, spans)
 		Composes the message mobs see on their screen when they hear something.
 
-	compose_track_href(message, atom/movable/speaker, message_langs, raw_message, radio_freq)
+	compose_track_href(message, go/speaker, message_langs, raw_message, radio_freq)
 		Composes the href tags used by the AI for tracking. Returns "" for all mobs except AIs.
 
-	compose_job(message, atom/movable/speaker, message_langs, raw_message, radio_freq)
+	compose_job(message, go/speaker, message_langs, raw_message, radio_freq)
 		Composes the job and the end tag for tracking hrefs. Returns "" for all mobs except AIs.
 
 	hivecheck()
@@ -162,9 +162,9 @@ To add a radio, simply use add_radio(radio, frequency). To remove a radio, use r
 To remove a radio from ALL frequencies, use remove_radio_all(radio).
 
 VIRTUAL SPEAKERS:
-Virtual speakers are simply atom/movables with a few extra variables.
+Virtual speakers are simply gos with a few extra variables.
 If radio_freq is not null, the code will rely on the fact that the speaker is virtual. This means that several procs will return something:
-	(all of these procs are defined at the atom/movable level and return "" at that level.)
+	(all of these procs are defined at the go level and return "" at that level.)
 	GetJob()
 		Returns the job string variable of the virtual speaker.
 	GetTrack()

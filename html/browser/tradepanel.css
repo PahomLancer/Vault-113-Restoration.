@@ -1,0 +1,48 @@
+.item {
+	border: 0.1px solid #124b28;
+	margin: 5px;
+	background: #004225;
+}
+
+.item-icon {
+	border: 0.1px solid #000;
+	margin: 5px;
+	vertical-align:middle;
+}
+
+.item-text {
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+.lpanel {
+	background: #343333;
+	position: absolute;
+	left: 0%;
+}
+
+.mpanel {
+	position: absolute;
+	left: 33%;
+}
+
+.mpanel .gpanel, .tpanel {
+	border: 0 !important;
+	height: 50% !important;
+	width: 100% !important;
+	margin-top: 0% !important;
+	position: relative;
+}
+.rpanel {
+	position: absolute;
+	left: 66%;
+	background: #0C0C0C;
+}
+
+
+.container .rpanel, .lpanel, .mpanel{
+	border: 1px solid #124b28;
+	height: 90%;
+	width: 32%;
+	margin-top: 1%;
+}

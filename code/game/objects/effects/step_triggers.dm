@@ -3,18 +3,18 @@
 /obj/effect/step_trigger
 	var/affect_ghosts = 0
 	var/stopper = 1 // stops throwers
-	var/mobs_only = 0
-	invisibility = 101 // nope cant see this shit
+	var/mobs_only = FALSE
+	invisibility = INVISIBILITY_ABSTRACT // nope cant see this shit
 	anchored = 1
 
-/obj/effect/step_trigger/proc/Trigger(atom/movable/A)
+/obj/effect/step_trigger/proc/Trigger(go/A)
 	return 0
 
 /obj/effect/step_trigger/Crossed(H as mob|obj)
 	..()
 	if(!H)
 		return
-	if(istype(H, /mob/dead/observer) && !affect_ghosts)
+	if(isobserver(H) && !affect_ghosts)
 		return
 	if(!istype(H, /mob) && mobs_only)
 		return
@@ -25,10 +25,11 @@
 /obj/effect/step_trigger/message
 	var/message	//the message to give to the mob
 	var/once = 1
+	mobs_only = TRUE
 
 /obj/effect/step_trigger/message/Trigger(mob/M)
 	if(M.client)
-		M << "<span class='info'>[message]</span>"
+		to_chat(M, "<span class='info'>[message]</span>")
 		if(once)
 			qdel(src)
 
@@ -44,9 +45,9 @@
 	var/list/affecting = list()
 
 /obj/effect/step_trigger/thrower/Trigger(atom/A)
-	if(!A || !istype(A, /atom/movable))
+	if(!A || !istype(A, /go))
 		return
-	var/atom/movable/AM = A
+	var/go/AM = A
 	var/curtiles = 0
 	var/stopthrow = 0
 	for(var/obj/effect/step_trigger/thrower/T in orange(2, src))
@@ -84,7 +85,7 @@
 			var/predir = AM.dir
 			step(AM, direction)
 			if(!facedir)
-				AM.dir = predir
+				AM.setDir(predir)
 
 
 
@@ -106,7 +107,7 @@
 	var/teleport_y = 0
 	var/teleport_z = 0
 
-/obj/effect/step_trigger/teleporter/Trigger(atom/movable/A)
+/obj/effect/step_trigger/teleporter/Trigger(go/A)
 	if(teleport_x && teleport_y && teleport_z)
 
 		A.x = teleport_x
@@ -120,7 +121,7 @@
 	var/teleport_y_offset = 0
 	var/teleport_z_offset = 0
 
-/obj/effect/step_trigger/teleporter/random/Trigger(atom/movable/A)
+/obj/effect/step_trigger/teleporter/random/Trigger(go/A)
 	if(teleport_x && teleport_y && teleport_z)
 		if(teleport_x_offset && teleport_y_offset && teleport_z_offset)
 
@@ -176,7 +177,7 @@
 	var/triggerer_only = 0 //Whether the triggerer is the only person who hears this
 
 
-/obj/effect/step_trigger/sound_effect/Trigger(atom/movable/A)
+/obj/effect/step_trigger/sound_effect/Trigger(go/A)
 	var/turf/T = get_turf(A)
 
 	if(!T)
