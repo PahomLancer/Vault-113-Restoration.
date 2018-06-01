@@ -85,6 +85,42 @@
 	grow_chance = 5
 	roof = TRUE
 
+/area/f13/powerstation
+	name = "Powerstation"
+	icon_state = "powerstation"
+	ambience = list('sound/f13ambience/building.ogg')
+	ambientmusic = list('sound/f13music/fo3_dungeon_01.ogg', 'sound/f13music/fo3_dungeon_02.ogg', 'sound/f13music/fo3_dungeon_03.ogg', 'sound/f13music/fo3_dungeon_04.ogg', 'sound/f13music/fo3_dungeon_05.ogg')
+	//ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')
+	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg')
+	environment = 2
+	grow_chance = 5
+	roof = TRUE
+
+/area/f13/fabric
+	name = "Fabric"
+	icon_state = "fabric"
+	ambience = list('sound/f13ambience/building.ogg')
+	ambientmusic = list('sound/f13music/fo3_dungeon_01.ogg', 'sound/f13music/fo3_dungeon_02.ogg', 'sound/f13music/fo3_dungeon_03.ogg', 'sound/f13music/fo3_dungeon_04.ogg', 'sound/f13music/fo3_dungeon_05.ogg')
+	//ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')
+	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg')
+	environment = 2
+	grow_chance = 5
+	roof = TRUE
+
+/area/f13/police
+	name = "Police"
+	icon_state = "police"
+	ambience = list('sound/f13ambience/building.ogg')
+	ambientmusic = list('sound/f13music/fo3_dungeon_01.ogg', 'sound/f13music/fo3_dungeon_02.ogg', 'sound/f13music/fo3_dungeon_03.ogg', 'sound/f13music/fo3_dungeon_04.ogg', 'sound/f13music/fo3_dungeon_05.ogg')
+	//ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')
+	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg')
+	environment = 2
+	grow_chance = 5
+	roof = TRUE
+
 /area/f13/farm
 	name = "Farm"
 	icon_state = "farm"
@@ -224,9 +260,45 @@
 	grow_chance = 5
 	roof = TRUE
 
+/area/f13/city_north
+	name = "City north"
+	icon_state = "city_north"
+	ambience = list('sound/f13ambience/warehouse.ogg')
+	ambientmusic = list('sound/f13music/fo3_explore_01.ogg', 'sound/f13music/fo3_explore_02.ogg', 'sound/f13music/fo3_explore_03.ogg', 'sound/f13music/fo3_explore_04.ogg', 'sound/f13music/fo3_explore_05.ogg', 'sound/f13music/fo3_explore_06.ogg', 'sound/f13music/fo3_explore_07.ogg')
+//	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')
+	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg')
+	environment = 2
+	grow_chance = 5
+	roof = TRUE
+
 /area/f13/office
 	name = "Office"
 	icon_state = "office"
+	ambience = list('sound/f13ambience/warehouse.ogg')
+	ambientmusic = list('sound/f13music/fo3_explore_01.ogg', 'sound/f13music/fo3_explore_02.ogg', 'sound/f13music/fo3_explore_03.ogg', 'sound/f13music/fo3_explore_04.ogg', 'sound/f13music/fo3_explore_05.ogg', 'sound/f13music/fo3_explore_06.ogg', 'sound/f13music/fo3_explore_07.ogg')
+//	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')
+	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg')
+	environment = 2
+	grow_chance = 5
+	roof = TRUE
+
+/area/f13/city_center
+	name = "City center"
+	icon_state = "city_center"
+	ambience = list('sound/f13ambience/warehouse.ogg')
+	ambientmusic = list('sound/f13music/fo3_explore_01.ogg', 'sound/f13music/fo3_explore_02.ogg', 'sound/f13music/fo3_explore_03.ogg', 'sound/f13music/fo3_explore_04.ogg', 'sound/f13music/fo3_explore_05.ogg', 'sound/f13music/fo3_explore_06.ogg', 'sound/f13music/fo3_explore_07.ogg')
+//	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')
+	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg', \
+	'sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg','sound/f13ambience/ambigen_8.ogg')
+	environment = 2
+	grow_chance = 5
+	roof = TRUE
+
+/area/f13/city_south
+	name = "City south"
+	icon_state = "city_south"
 	ambience = list('sound/f13ambience/warehouse.ogg')
 	ambientmusic = list('sound/f13music/fo3_explore_01.ogg', 'sound/f13music/fo3_explore_02.ogg', 'sound/f13music/fo3_explore_03.ogg', 'sound/f13music/fo3_explore_04.ogg', 'sound/f13music/fo3_explore_05.ogg', 'sound/f13music/fo3_explore_06.ogg', 'sound/f13music/fo3_explore_07.ogg')
 //	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_ruins.ogg','sound/misc/null.ogg')

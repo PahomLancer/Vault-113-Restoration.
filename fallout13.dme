@@ -14,7 +14,9 @@
 
 // BEGIN_INCLUDE
 #include "_maps\__MAP_DEFINES.dm"
-#include "_maps\texas.dm"
+#include "_maps\denwer.dm"
+#include "_maps\map_files\Denwer\denwersewers.dmm"
+#include "_maps\map_files\Denwer\denwersurface.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DATASTRUCTURES\heap.dm"

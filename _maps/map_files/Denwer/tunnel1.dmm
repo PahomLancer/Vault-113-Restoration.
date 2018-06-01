@@ -1,0 +1,825 @@
+"aa" = (/turf/closed/indestructible/f13/matrix,/area/f13/caves)
+"ab" = (/turf/closed/indestructible/f13/obsidian,/area/f13/caves)
+"ac" = (/turf/closed/wall/r_wall/rust,/area/f13/vault)
+"ad" = (/obj/effect/decal/cleanable/deadcockroach,/obj/effect/decal/cleanable/blood/xtracks,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"ae" = (/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/lootdrop/food,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"af" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"ag" = (/obj/effect/decal/cleanable/generic,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"ah" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/vending/nukacolavend/full,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"ai" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/plate,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aj" = (/obj/effect/decal/cleanable/dirt,/obj/item/crafting/abraxo,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"ak" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin{tag = "icon-tin (EAST)"; icon_state = "tin"; dir = 4},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"al" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"am" = (/obj/effect/decal/cleanable/dirt,/obj/item/crafting/duct_tape,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"an" = (/obj/effect/decal/cleanable/dirt,/obj/item/chair/stool,/mob/living/simple_animal/cockroach,/turf/open/floor/plating,/area/f13/vault)
+"ao" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/mre,/obj/item/device/aicard,/turf/open/floor/plating,/area/f13/vault)
+"ap" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating,/area/f13/vault)
+"aq" = (/obj/effect/decal/cleanable/generic,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/wrench/power,/turf/open/floor/plating,/area/f13/vault)
+"ar" = (/obj/effect/decal/cleanable/blood/xtracks,/obj/effect/decal/cleanable/blood/xtracks,/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small/red{tag = "icon-red1 (WEST)"; icon_state = "red1"; dir = 8},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"as" = (/obj/effect/decal/cleanable/dirt,/obj/structure/barricade/wooden/strong,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"at" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin{tag = "icon-tin (WEST)"; icon_state = "tin"; dir = 8},/obj/item/clothing/under/f13/rag,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"au" = (/obj/item/weapon/newspaper,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"av" = (/obj/effect/decal/cleanable/dirt,/obj/structure/barricade/sandbags,/obj/item/crafting/fuse,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aw" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"ax" = (/obj/item/crafting/transistor,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"ay" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin,/obj/item/trash/f13/tin{tag = "icon-tin (WEST)"; icon_state = "tin"; dir = 8},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"az" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/mre,/turf/open/floor/plating,/area/f13/vault)
+"aA" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/light_construct{tag = "icon-tube-construct-stage1 (EAST)"; icon_state = "tube-construct-stage1"; dir = 4},/obj/item/weapon/circuitboard/computer/mecha_control,/mob/living/simple_animal/hostile/faithless,/turf/open/floor/plating,/area/f13/vault)
+"aB" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/crisps,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aC" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/ghoul,/mob/living/simple_animal/cockroach,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aD" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/shard{icon_state = "small"},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aE" = (/obj/effect/decal/cleanable/dirt,/obj/structure/barricade/sandbags,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aF" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/waffles,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aG" = (/obj/item/weapon/reagent_containers/food/drinks/ale,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aH" = (/obj/effect/decal/cleanable/deadcockroach,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aI" = (/obj/effect/decal/cleanable/molten_object/large,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aJ" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating,/area/f13/vault)
+"aK" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/gun/ballistic/automatic/pistol/n99,/obj/item/clothing/under/f13/bdu,/turf/open/floor/plating,/area/f13/vault)
+"aL" = (/obj/effect/decal/cleanable/blood/old,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aM" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/poster/contraband,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aN" = (/obj/structure/campfire,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aO" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/relic{tag = "icon-emergency_double"; icon_state = "emergency_double"},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aP" = (/obj/machinery/door/airlock/glass,/obj/effect/decal/cleanable/dirt,/obj/structure/barricade/wooden/planks,/turf/open/floor/plasteel/red,/area/f13/vault)
+"aQ" = (/obj/machinery/door/airlock/glass,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/delivery,/area/f13/vault)
+"aR" = (/obj/machinery/status_display,/turf/closed/wall/r_wall/rust,/area/f13/vault)
+"aS" = (/obj/structure/door_assembly/door_assembly_mhatch,/obj/structure/barricade/wooden/planks,/turf/open/floor/plating,/area/f13/vault)
+"aT" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/faithless,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aU" = (/obj/effect/decal/cleanable/blood/tracks,/obj/effect/decal/cleanable/dirt,/obj/item/stack/cable_coil,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aV" = (/obj/machinery/door/airlock/external,/obj/effect/decal/cleanable/dirt,/obj/structure/barricade/wooden/planks,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"aW" = (/obj/effect/decal/cleanable/dirt,/obj/structure/barricade/wooden/strong,/turf/open/floor/plasteel/red,/area/f13/vault)
+"aX" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"aY" = (/obj/effect/decal/cleanable/dirt,/obj/structure/reagent_dispensers/water_cooler,/turf/open/floor/plasteel/red,/area/f13/vault)
+"aZ" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/flour,/turf/open/floor/plasteel/red,/area/f13/vault)
+"ba" = (/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/lootdrop/ammo,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bb" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/stack/rods,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bc" = (/obj/item/weapon/newspaper,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/relic{tag = "icon-emergency_double"; icon_state = "emergency_double"},/turf/open/floor/plasteel/red,/area/f13/vault)
+"bd" = (/obj/structure/closet,/obj/effect/decal/cleanable/dirt,/obj/item/crafting/duct_tape,/obj/item/device/geiger_counter,/turf/open/floor/plasteel/red,/area/f13/vault)
+"be" = (/obj/structure/closet,/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/mre,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bf" = (/obj/structure/closet,/obj/effect/decal/cleanable/dirt,/obj/item/device/geiger_counter,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bg" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/pipe,/turf/open/floor/plating,/area/f13/vault)
+"bh" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/mechanist,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bi" = (/obj/effect/decal/cleanable/blood/tracks,/obj/effect/decal/cleanable/dirt,/obj/item/crafting/transistor,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bj" = (/obj/effect/decal/cleanable/dirt,/obj/structure/grille,/obj/structure/girder,/obj/structure/barricade/wooden/strong,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bk" = (/obj/effect/decal/cleanable/blood/old,/turf/closed/wall/r_wall/rust,/area/f13/vault)
+"bl" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bm" = (/obj/effect/spawner/structure/window/reinforced,/obj/structure/grille,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bn" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin,/obj/item/weapon/shard,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bo" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/shoes/jackboots,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bp" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/campfire,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/waste{tag = "icon-goo10"; icon_state = "goo10"},/obj/item/trash/f13/tin{tag = "icon-tin (NORTH)"; icon_state = "tin"; dir = 1},/turf/open/floor/plasteel/red,/area/f13/vault)
+"br" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bs" = (/obj/machinery/door/airlock/external,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bt" = (/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/lootdrop/food,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bu" = (/obj/structure/decoration/vent/rusty,/obj/effect/decal/cleanable/dirt,/obj/machinery/light,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bv" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/gun/ballistic/automatic/pistol/n99,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bw" = (/obj/item/weapon/shard,/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/cockroach,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bx" = (/obj/effect/decal/cleanable/blood/tracks,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"by" = (/obj/effect/decal/cleanable/dirt,/obj/structure/rack,/obj/structure/grille,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bz" = (/obj/effect/decal/cleanable/dirt,/obj/structure/grille,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bA" = (/obj/structure/table,/obj/item/weapon/reagent_containers/pill/patch/medx,/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/mre,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bB" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/under/lawyer/red,/obj/item/device/flashlight/red,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bC" = (/obj/structure/decoration/vent/rusty,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bD" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/lootdrop/ammo,/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/open/floor/plasteel/red,/area/f13/vault)
+"bE" = (/obj/machinery/vending/wallmed,/turf/closed/wall/r_wall/rust,/area/f13/vault)
+"bF" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small/red{tag = "icon-red1 (WEST)"; icon_state = "red1"; dir = 8},/turf/open/floor/plasteel/red,/area/f13/vault)
+"bG" = (/obj/effect/decal/cleanable/generic,/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/lootdrop/food,/obj/item/stack/cable_coil,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bH" = (/obj/effect/decal/cleanable/dirt,/obj/item/clothing/head/helmet/power_armor/t51b,/turf/open/floor/plating,/area/f13/vault)
+"bI" = (/turf/closed/wall/f13/ruins,/area/f13/vault)
+"bJ" = (/obj/effect/decal/cleanable/dirt,/obj/structure/piano,/obj/structure/grille,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bK" = (/obj/effect/decal/cleanable/dirt,/obj/structure/janitorialcart,/obj/structure/grille,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bL" = (/obj/structure/table,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/head/warden,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bM" = (/obj/effect/decal/cleanable/blood/old,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/shard{icon_state = "medium"},/turf/open/floor/plasteel/red,/area/f13/vault)
+"bN" = (/obj/item/weapon/pickaxe/rust,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bO" = (/obj/item/clothing/suit/curator,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/shoes/winterboots,/obj/item/device/harmonica,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bP" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/protectron,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bQ" = (/obj/structure/decoration/vent/rusty,/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin{tag = "icon-tin (EAST)"; icon_state = "tin"; dir = 4},/obj/item/weapon/circuitboard/computer/mech_bay_power_console,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bR" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/waste{tag = "icon-goo10"; icon_state = "goo10"},/turf/open/floor/plasteel/red,/area/f13/vault)
+"bS" = (/obj/effect/decal/cleanable/generic,/turf/closed/wall/r_wall/rust,/area/f13/vault)
+"bT" = (/obj/effect/decal/cleanable/dirt,/obj/structure/decoration/ruins,/obj/structure/ore_box,/obj/structure/grille,/obj/structure/foamedmetal/iron,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bU" = (/obj/effect/decal/cleanable/dirt,/obj/structure/decoration/ruins,/obj/structure/grille,/obj/structure/foamedmetal/iron,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bV" = (/obj/effect/decal/cleanable/dirt,/obj/structure/decoration/ruins,/obj/structure/rack,/obj/structure/grille,/obj/structure/foamedmetal/iron,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"bW" = (/obj/item/weapon/photo,/obj/structure/table,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/folder/red,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bX" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/drinks/mug,/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/rotten,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bY" = (/obj/machinery/doorButtons/vaultButton{id = 45},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"bZ" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/broken_bottle,/turf/open/floor/plasteel/red,/area/f13/vault)
+"ca" = (/obj/effect/decal/cleanable/blood/old,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"cb" = (/obj/item/weapon/shard{icon_state = "small"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"cc" = (/obj/structure/closet,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"cd" = (/obj/structure/closet,/obj/effect/decal/cleanable/dirt,/obj/item/crafting/duct_tape,/obj/machinery/light,/turf/open/floor/plasteel/red,/area/f13/vault)
+"ce" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/mre,/obj/item/clothing/under/f13/rag,/turf/open/floor/plasteel/red,/area/f13/vault)
+"cf" = (/obj/structure/decoration/rag,/obj/structure/grille,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cg" = (/obj/structure/grille,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/waste{tag = "icon-goo10"; icon_state = "goo10"},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"ch" = (/turf/closed/wall/f13/ruins,/area/f13/caves)
+"ci" = (/turf/closed/wall/r_wall/f13,/area/f13/caves)
+"cj" = (/obj/structure/decoration/clock/old,/turf/closed/wall/r_wall/rust,/area/f13/vault)
+"ck" = (/turf/closed/wall/f13/supermart,/area/f13/vault)
+"cl" = (/obj/structure/vault_door/old{id = 45},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/red,/area/f13/vault)
+"cm" = (/obj/item/weapon/spear,/obj/effect/decal/cleanable/dirt,/obj/item/ammo_box/c10mm,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"cn" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"co" = (/obj/effect/decal/cleanable/blood/tracks,/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cp" = (/turf/closed/wall/f13/tunnel,/area/f13/vault)
+"cq" = (/obj/item/clothing/under/f13/vault,/obj/effect/decal/cleanable/dirt,/obj/item/crafting/resistor,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"cr" = (/obj/effect/decal/cleanable/blood/old,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"cs" = (/obj/effect/decal/cleanable/dirt,/obj/item/crafting/small_gear,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"ct" = (/obj/machinery/doorButtons/vaultButton{id = 45},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"cu" = (/obj/item/weapon/bedsheet/blue,/obj/structure/bed,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cv" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/dog,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cw" = (/obj/structure/table,/obj/item/weapon/reagent_containers/pill/patch/radaway,/obj/effect/decal/cleanable/dirt,/obj/item/device/laser_pointer/red,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cx" = (/obj/effect/decal/cleanable/dirt,/obj/structure/reagent_dispensers/water_cooler,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cy" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cz" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"cA" = (/obj/structure/table,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/gun/ballistic/automatic/pistol/n99,/obj/item/weapon/holodisk/musicbox,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cB" = (/obj/item/weapon/reagent_containers/pill/patch/radx,/obj/effect/decal/cleanable/dirt,/obj/structure/closet/cabinet,/obj/item/trash/f13/bubblegum,/obj/item/clothing/under/f13/bdu,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cC" = (/obj/item/weapon/bedsheet/blue,/obj/structure/bed,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/suit/armor/f13/power_armor/t51b,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cD" = (/turf/closed/wall/f13/tunnel,/area/f13/tunnel)
+"cE" = (/obj/structure/tires/five,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cF" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/cartridge/engineering,/mob/living/simple_animal/cockroach,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cG" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin{tag = "icon-tin (NORTH)"; icon_state = "tin"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cH" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cI" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/waste{tag = "icon-goo3"; icon_state = "goo3"},/obj/item/crafting/duct_tape,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cJ" = (/obj/item/crafting/timer,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cK" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/gun/ballistic/automatic/mini_uzi,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cL" = (/obj/effect/decal/cleanable/generic,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cM" = (/obj/structure/closet/body_bag,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"cN" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/mechanist,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cO" = (/obj/structure/mecha_wreckage/ripley,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cP" = (/obj/effect/decal/cleanable/dirt,/obj/item/clothing/under/f13/mechanic,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cQ" = (/obj/item/weapon/shard{icon_state = "medium"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"cR" = (/obj/structure/grille,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"cS" = (/mob/living/simple_animal/hostile/protectron,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cT" = (/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cU" = (/obj/machinery/light/small/red{tag = "icon-red1 (NORTH)"; icon_state = "red1"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cV" = (/obj/item/weapon/storage/box/lights,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cW" = (/obj/structure/ore_box,/obj/machinery/light{tag = "icon-tube1 (WEST)"; icon_state = "tube1"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cX" = (/obj/item/weapon/reagent_containers/pill/patch/radaway,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cY" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"cZ" = (/obj/structure/rack,/obj/item/weapon/reagent_containers/pill/mutadone,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/powergauntlet,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"da" = (/obj/structure/table,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/paper_bin,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"db" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/portable_atmospherics/canister/freon,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"dc" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/waste{tag = "icon-goo2"; icon_state = "goo2"},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dd" = (/obj/effect/decal/cleanable/dirt,/obj/structure/light_construct{tag = "icon-tube-construct-stage1 (EAST)"; icon_state = "tube-construct-stage1"; dir = 4},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"de" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/drinks/ale,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/pipe,/obj/item/crafting/transistor,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"df" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light{tag = "icon-tube1 (NORTH)"; icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dg" = (/obj/item/weapon/bedsheet/blue,/obj/structure/bed,/obj/effect/decal/cleanable/blood/old,/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/bubblegum,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dh" = (/obj/effect/spawner/lootdrop/ammo,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"di" = (/obj/item/clothing/under/f13/vault,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dj" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/picket_sign,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"dk" = (/obj/item/weapon/shard{icon_state = "small"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dl" = (/obj/effect/decal/cleanable/dirt,/obj/item/blueprint/glock,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dm" = (/obj/item/crafting/timer,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"dn" = (/obj/structure/campfire,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"do" = (/obj/item/trash/f13/tin{tag = "icon-tin (EAST)"; icon_state = "tin"; dir = 4},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"dp" = (/obj/structure/grille,/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small/red{tag = "icon-red1 (WEST)"; icon_state = "red1"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/vault)
+"dq" = (/turf/closed/wall/r_wall/rust,/area/f13/ruins)
+"dr" = (/turf/closed/wall/f13/wood,/area/f13/ruins)
+"ds" = (/turf/closed/wall/f13/tunnel,/area/f13/ruins)
+"dt" = (/obj/structure/urinal,/turf/closed/wall/r_wall/rust,/area/f13/ruins)
+"du" = (/obj/structure/simple_door/metal/ventilation,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"dv" = (/obj/machinery/light/small/red{tag = "icon-red1 (EAST)"; icon_state = "red1"; dir = 4},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"dw" = (/turf/closed/wall/f13/tunnel,/area/f13/caves)
+"dx" = (/obj/item/clothing/under/f13/rag,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"dy" = (/obj/item/weapon/bedsheet/blue,/obj/structure/bed,/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/cram_large,/obj/item/weapon/storage/box/lights,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dz" = (/obj/structure/closet,/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/lootdrop/clothing_low,/obj/item/clothing/under/f13/bdu,/obj/structure/light_construct{tag = "icon-tube-construct-stage1 (NORTH)"; icon_state = "tube-construct-stage1"; dir = 1},/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dA" = (/obj/structure/table,/obj/effect/decal/cleanable/dirt,/obj/item/crafting/lunchbox,/turf/open/floor/plating,/area/f13/vault)
+"dB" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/hatchet,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"dC" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin_large,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dD" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/coal,/obj/item/weapon/melee/powerfist,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dE" = (/obj/effect/decal/cleanable/dirt,/obj/item/crafting/timer,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dF" = (/obj/structure/table,/obj/effect/decal/cleanable/dirt,/obj/item/ammo_box/c10mm,/turf/open/floor/plating,/area/f13/vault)
+"dG" = (/obj/structure/rack,/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/lootdrop/clothing_middle,/obj/item/clothing/under/f13/bdu,/turf/open/floor/plating,/area/f13/vault)
+"dH" = (/obj/item/weapon/bedsheet/blue,/obj/structure/bed,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/gun/ballistic/shotgun/rifle,/turf/open/floor/plating,/area/f13/vault)
+"dI" = (/obj/machinery/autolathe,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"dJ" = (/obj/structure/table/wood/settler,/obj/item/clothing/suit/f13/vest,/obj/item/clothing/under/f13/machinist,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"dK" = (/obj/structure/table/wood/settler,/obj/item/stack/cable_coil/blue,/obj/item/stack/cable_coil/blue,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"dL" = (/obj/structure/reagent_dispensers/barrel/dangerous,/obj/effect/decal/cleanable/waste,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"dM" = (/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"dN" = (/obj/structure/safe,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"dO" = (/obj/effect/decal/cleanable/cobweb,/turf/open/floor/plasteel/blueyellow,/area/f13/ruins)
+"dP" = (/turf/open/floor/plasteel/blueyellow,/area/f13/ruins)
+"dQ" = (/obj/structure/closet/fridge,/turf/open/floor/plasteel/blueyellow,/area/f13/ruins)
+"dR" = (/obj/structure/guncase/shotgun,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"dS" = (/obj/item/weapon/gun/ballistic/automatic/pistol/n99,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"dT" = (/obj/structure/tires/five,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"dU" = (/obj/item/weapon/wrench,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"dV" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/cheesie,/obj/item/crafting/turpentine,/turf/open/floor/plating,/area/f13/vault)
+"dW" = (/obj/item/weapon/shard{icon_state = "small"},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"dX" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin{tag = "icon-tin (NORTH)"; icon_state = "tin"; dir = 1},/turf/open/floor/plating,/area/f13/vault)
+"dY" = (/obj/effect/decal/cleanable/dirt,/obj/vehicle/janicart,/turf/open/floor/plasteel/vault,/area/f13/vault)
+"dZ" = (/obj/item/trash/f13/mre,/turf/open/floor/plating,/area/f13/vault)
+"ea" = (/obj/effect/decal/cleanable/blood/old,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/machete,/turf/open/floor/plating,/area/f13/vault)
+"eb" = (/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"ec" = (/obj/structure/table/wood/settler,/obj/machinery/light/small/red{tag = "icon-red1 (EAST)"; icon_state = "red1"; dir = 4},/obj/item/device/flashlight,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"ed" = (/obj/item/weapon/gun/ballistic/revolver/nagant,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"ee" = (/mob/living/simple_animal/hostile/ghoul/glowing,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"ef" = (/obj/effect/decal/cleanable/waste,/obj/machinery/light/small/red{tag = "icon-red1 (EAST)"; icon_state = "red1"; dir = 4},/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"eg" = (/obj/machinery/light/small/red{tag = "icon-red1 (EAST)"; icon_state = "red1"; dir = 4},/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plasteel/blueyellow,/area/f13/ruins)
+"eh" = (/obj/structure/table/wood/settler,/obj/item/weapon/storage/fancy/rollingpapers,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"ei" = (/obj/machinery/light/small/red{tag = "icon-red1 (EAST)"; icon_state = "red1"; dir = 4},/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"ej" = (/obj/item/weapon/reagent_containers/food/drinks/flask/survival,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ek" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small/red{tag = "icon-red1 (WEST)"; icon_state = "red1"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/vault)
+"el" = (/obj/structure/chair,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/under/f13/gentlesuit,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"em" = (/obj/effect/decal/cleanable/dirt,/obj/structure/barricade/sandbags,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"en" = (/obj/structure/reagent_dispensers/barrel/four,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"eo" = (/obj/structure/table/wood/settler,/obj/item/device/camera_film,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"ep" = (/obj/structure/table/wood/settler,/obj/item/weapon/storage/fancy/donut_box,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"eq" = (/obj/structure/table/wood/settler,/obj/structure/table/wood/settler,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"er" = (/obj/machinery/hydroponics/constructable,/turf/open/floor/plasteel/blueyellow,/area/f13/ruins)
+"es" = (/obj/item/ammo_box/c10mm,/obj/structure/table/wood/settler,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"et" = (/obj/structure/table/wood/settler,/obj/item/clothing/suit/f13/mantle_liz,/obj/item/weapon/circuitboard/machine/microwave,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"eu" = (/turf/closed/wall/rust,/area/f13/tunnel)
+"ev" = (/obj/item/device/camera,/obj/item/device/camera_film,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ew" = (/obj/effect/mob_spawner/molerat,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ex" = (/obj/structure/bed,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/head/flatcap,/turf/open/floor/plating,/area/f13/vault)
+"ey" = (/obj/structure/closet/body_bag,/obj/effect/decal/cleanable/dirt,/obj/item/crafting/reloader,/obj/structure/light_construct{tag = "icon-tube-construct-stage1 (NORTH)"; icon_state = "tube-construct-stage1"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/vault)
+"ez" = (/obj/structure/rack,/obj/item/weapon/reagent_containers/pill/patch/radaway,/obj/item/weapon/reagent_containers/pill/patch/radaway,/obj/item/weapon/reagent_containers/pill/patch/radaway,/obj/item/weapon/reagent_containers/pill/patch/radaway,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating,/area/f13/vault)
+"eA" = (/obj/structure/chair{tag = "icon-chair (EAST)"; icon_state = "chair"; dir = 4},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"eB" = (/obj/structure/campfire,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"eC" = (/obj/structure/chair{tag = "icon-chair (WEST)"; icon_state = "chair"; dir = 8},/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"eD" = (/obj/structure/closet/cardboard,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"eE" = (/obj/structure/table,/obj/item/weapon/reagent_containers/pill/patch/medx,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/head/curator,/turf/open/floor/plating,/area/f13/vault)
+"eF" = (/obj/structure/closet,/obj/effect/decal/cleanable/dirt,/obj/effect/spawner/lootdrop/clothing_middle,/turf/open/floor/plating,/area/f13/vault)
+"eG" = (/obj/item/weapon/bedsheet/blue,/obj/structure/bed,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating,/area/f13/vault)
+"eH" = (/obj/structure/simple_door/wood,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"eI" = (/obj/structure/door_assembly/door_assembly_vault,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"eJ" = (/obj/structure/decoration/clock/old,/turf/closed/wall/r_wall/rust,/area/f13/ruins)
+"eK" = (/obj/structure/simple_door/fakeglass,/turf/open/floor/plasteel/blueyellow,/area/f13/ruins)
+"eL" = (/obj/structure/simple_door/fakeglass,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"eM" = (/obj/effect/spawner/lootdrop/trash,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"eN" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/f13/tin,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"eO" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plating,/area/f13/vault)
+"eP" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/electronics/airalarm,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"eQ" = (/obj/effect/decal/cleanable/dirt,/obj/item/trash/candy,/obj/item/trash/f13/mechanist,/turf/open/floor/plating,/area/f13/vault)
+"eR" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/cobweb,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"eS" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"eT" = (/obj/item/weapon/reagent_containers/food/snacks/grown/mutfruit,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"eU" = (/obj/item/clothing/head/helmet/f13/tribal,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"eV" = (/obj/effect/decal/cleanable/dirt,/obj/item/clothing/under/f13/rag,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"eW" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"eX" = (/obj/machinery/vending/nukacolavend,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/cobweb/cobweb2,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"eY" = (/obj/item/trash/f13/tin,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"eZ" = (/obj/effect/decal/cleanable/generic,/obj/item/crafting/large_gear,/turf/open/floor/plating,/area/f13/vault)
+"fa" = (/obj/structure/cable{tag = "icon-1-2"; icon_state = "1-2"},/turf/open/floor/plating,/area/f13/vault)
+"fb" = (/turf/open/floor/plating,/area/f13/vault)
+"fc" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small{tag = "icon-bulb1 (WEST)"; icon_state = "bulb1"; dir = 8},/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"fd" = (/obj/effect/decal/cleanable/dirt,/obj/structure/decoration/vent,/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"fe" = (/obj/item/door_key,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"ff" = (/obj/item/organ/tongue,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"fg" = (/obj/item/device/radio,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"fh" = (/obj/item/weapon/wirerod,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"fi" = (/obj/machinery/clonepod,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"fj" = (/obj/machinery/light{tag = "icon-tube1 (NORTH)"; icon_state = "tube1"; dir = 1},/obj/machinery/computer/cloning,/turf/open/floor/plasteel/white,/area/f13/vault)
+"fk" = (/obj/machinery/dna_scannernew,/turf/open/floor/plasteel/white,/area/f13/vault)
+"fl" = (/obj/item/crafting/transistor,/turf/open/floor/plating,/area/f13/vault)
+"fm" = (/turf/open/floor/plasteel/white,/area/f13/vault)
+"fn" = (/obj/structure/spider,/obj/item/crafting/transistor,/turf/open/floor/plating,/area/f13/vault)
+"fo" = (/obj/item/trash/candy,/obj/machinery/light/small/red{tag = "icon-red1 (NORTH)"; icon_state = "red1"; dir = 1},/obj/item/clothing/under/f13/combat,/obj/item/weapon/gun/ballistic/shotgun/rifle,/turf/open/floor/plasteel/white,/area/f13/vault)
+"fp" = (/obj/machinery/iv_drip,/turf/open/floor/plasteel/white,/area/f13/vault)
+"fq" = (/turf/open/floor/plating/tunnel,/area/f13/vault)
+"fr" = (/obj/structure/spider,/obj/machinery/light/small/red{tag = "icon-red1 (NORTH)"; icon_state = "red1"; dir = 1},/turf/open/floor/plasteel/white,/area/f13/vault)
+"fs" = (/obj/structure/spider,/obj/item/weapon/hammer,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"ft" = (/obj/machinery/light/small/red{tag = "icon-red1 (NORTH)"; icon_state = "red1"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/vault)
+"fu" = (/obj/item/weapon/gun/energy/plasma/tri,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"fv" = (/obj/structure/janitorialcart,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/vault,/area/f13/ruins)
+"fw" = (/obj/effect/decal/cleanable/dirt,/obj/structure/frame/computer,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"fx" = (/obj/structure/reagent_dispensers/barrel/two,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"fy" = (/obj/structure/curtain,/obj/effect/decal/cleanable/dirt,/obj/structure/decoration/rag,/turf/open/floor/plasteel/loadingarea,/area/f13/ruins)
+"fz" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/circuitboard/machine/hydroponics,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"fA" = (/obj/structure/bonfire,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"fB" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small{tag = "icon-bulb1 (EAST)"; icon_state = "bulb1"; dir = 4},/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"fC" = (/obj/machinery/light/small/red{tag = "icon-red1 (WEST)"; icon_state = "red1"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"fD" = (/obj/item/crafting/turpentine,/mob/living/simple_animal/hostile/protectron,/turf/open/floor/plasteel/delivery,/area/f13/vault)
+"fE" = (/obj/structure/chair,/turf/open/floor/plasteel/white,/area/f13/vault)
+"fF" = (/obj/structure/spider,/obj/item/chair/stool,/obj/structure/light_construct{tag = "icon-tube-construct-stage1 (EAST)"; icon_state = "tube-construct-stage1"; dir = 4},/turf/open/floor/plasteel/white,/area/f13/vault)
+"fG" = (/obj/structure/frame/computer,/turf/open/floor/plating,/area/f13/vault)
+"fH" = (/obj/structure/showcase/horrific_experiment,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced{tag = "icon-rwindow (WEST)"; icon_state = "rwindow"; dir = 8},/turf/open/floor/plasteel/delivery,/area/f13/vault)
+"fI" = (/obj/structure/spider,/obj/structure/spider,/mob/living/simple_animal/hostile/faithless,/turf/open/floor/plasteel/white,/area/f13/vault)
+"fJ" = (/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced{tag = "icon-rwindow (WEST)"; icon_state = "rwindow"; dir = 8},/obj/item/clothing/head/helmet/power_armor/t60,/obj/item/clothing/suit/armor/f13/power_armor/t60,/obj/item/clothing/under/f13/recon,/turf/open/floor/plasteel/delivery,/area/f13/vault)
+"fK" = (/obj/item/clothing/under/f13/bdu,/turf/open/floor/plasteel/white,/area/f13/vault)
+"fL" = (/obj/machinery/clonepod,/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/structure/window/reinforced{tag = "icon-rwindow (NORTH)"; icon_state = "rwindow"; dir = 1},/obj/structure/window/reinforced{tag = "icon-rwindow (WEST)"; icon_state = "rwindow"; dir = 8},/turf/open/floor/plasteel/delivery,/area/f13/vault)
+"fM" = (/obj/item/bodybag,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"fN" = (/obj/structure/tires/five,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"fO" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"fP" = (/obj/item/lock,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"fQ" = (/obj/item/clothing/head/helmet/f13/motorcycle,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"fR" = (/obj/item/crafting/reloader,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"fS" = (/obj/item/device/geiger_counter,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"fT" = (/obj/structure/table_frame,/obj/item/roller,/obj/item/weapon/circular_saw,/obj/item/weapon/hemostat,/obj/item/weapon/surgicaldrill,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"fU" = (/turf/open/floor/plasteel/whitebot,/area/f13/vault)
+"fV" = (/obj/machinery/computer/scan_consolenew,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"fW" = (/obj/structure/spider,/turf/open/floor/plasteel/white,/area/f13/vault)
+"fX" = (/obj/item/weapon/ectoplasm,/turf/open/floor/plating,/area/f13/vault)
+"fY" = (/obj/item/weapon/electronics/apc,/obj/item/weapon/machete,/obj/structure/chair{tag = "icon-chair (NORTH)"; icon_state = "chair"; dir = 1},/turf/open/floor/plasteel/white,/area/f13/vault)
+"fZ" = (/obj/item/crafting/switch,/turf/open/floor/plasteel/whitebot,/area/f13/vault)
+"ga" = (/obj/structure/spider,/obj/item/trash/f13/mechanist,/turf/open/floor/plating,/area/f13/vault)
+"gb" = (/obj/structure/spider,/mob/living/simple_animal/hostile/protectron,/turf/open/floor/plasteel/white,/area/f13/vault)
+"gc" = (/obj/structure/chair{tag = "icon-chair (WEST)"; icon_state = "chair"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/vault)
+"gd" = (/obj/structure/reagent_dispensers/barrel/dangerous,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ge" = (/obj/structure/barricade/wooden,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"gf" = (/obj/item/weapon/newspaper{desc = "The Wunardian 2077."; name = "doomsday newspaper"},/obj/item/weapon/light/tube,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"gg" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"gh" = (/obj/structure/chair/wood,/obj/item/clothing/suit/f13/mantle_liz,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"gi" = (/obj/structure/barricade/sandbags,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"gj" = (/obj/machinery/food_cart,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"gk" = (/obj/structure/reagent_dispensers/barrel/dangerous,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"gl" = (/obj/structure/table/wood/settler,/obj/item/stack/rods,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"gm" = (/obj/structure/table/wood/settler,/obj/item/clothing/head/welding,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/circuitboard/machine/sleeper,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"gn" = (/obj/structure/table/wood/settler,/obj/item/weapon/twohanded/sledgehammer,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/blue,/area/f13/ruins)
+"go" = (/turf/closed/indestructible/f13/obsidian,/area/f13/tunnel)
+"gp" = (/obj/item/trash/f13/mechanist,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gq" = (/obj/item/clothing/head/flatcap,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gr" = (/obj/structure/cable{tag = "icon-1-2-f"; icon_state = "1-2-f"},/turf/open/floor/plating,/area/f13/vault)
+"gs" = (/obj/structure/barricade/sandbags,/turf/open/floor/plating,/area/f13/vault)
+"gt" = (/obj/structure/barricade/sandbags,/turf/open/floor/plasteel/white,/area/f13/vault)
+"gu" = (/obj/structure/curtain,/turf/open/floor/plating,/area/f13/vault)
+"gv" = (/obj/structure/curtain,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"gw" = (/turf/closed/wall/r_wall/rust,/area/f13/caves)
+"gx" = (/turf/closed/wall/rust,/area/f13/caves)
+"gy" = (/obj/effect/decal/cleanable/dirt,/obj/structure/decoration/vent,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gz" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small{tag = "icon-bulb1 (EAST)"; icon_state = "bulb1"; dir = 4},/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"gA" = (/obj/item/weapon/circuitboard/machine/circuit_imprinter,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gB" = (/obj/structure/light_construct{tag = "icon-tube-construct-stage1 (NORTH)"; icon_state = "tube-construct-stage1"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gC" = (/obj/item/device/flashlight,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gD" = (/obj/structure/simple_door/metal/ventilation,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gE" = (/obj/structure/tank_dispenser/oxygen,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"gF" = (/obj/structure/spider,/obj/item/trash/can,/turf/open/floor/plating,/area/f13/vault)
+"gG" = (/obj/structure/spider,/turf/open/floor/plating,/area/f13/vault)
+"gH" = (/obj/item/ammo_box/c10mm,/turf/open/floor/plasteel/white,/area/f13/vault)
+"gI" = (/obj/structure/cable{tag = "icon-1-2"; icon_state = "1-2"},/turf/open/floor/plating/tunnel,/area/f13/vault)
+"gJ" = (/obj/item/clothing/under/f13/navy,/turf/open/floor/plating,/area/f13/vault)
+"gK" = (/obj/structure/fireaxecabinet{step_y = 0},/turf/open/floor/plasteel/white,/area/f13/vault)
+"gL" = (/obj/item/weapon/gun/ballistic/shotgun,/turf/open/floor/plating,/area/f13/vault)
+"gM" = (/obj/structure/bonfire,/turf/open/floor/plasteel/white,/area/f13/vault)
+"gN" = (/obj/item/chair,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"gO" = (/obj/item/weapon/golf10,/turf/open/floor/plating,/area/f13/vault)
+"gP" = (/mob/living/simple_animal/hostile/protectron,/turf/open/floor/plating,/area/f13/vault)
+"gQ" = (/turf/closed/wall/f13/wood,/area/f13/vault)
+"gR" = (/obj/structure/bookcase/random,/turf/open/floor/f13,/area/f13/caves)
+"gS" = (/obj/item/weapon/restraints/legcuffs/bola/tribal,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gT" = (/obj/effect/decal/cleanable/oil,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gU" = (/obj/item/clothing/head/helmet/f13/firefighter,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"gV" = (/obj/effect/decal/cleanable/dirt,/obj/item/clothing/under/f13/doctor,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"gW" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"gX" = (/obj/item/crafting/duct_tape,/mob/living/simple_animal/cockroach,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"gY" = (/turf/closed/wall/r_wall/rust,/area/f13/tunnel)
+"gZ" = (/obj/machinery/light/small/red{tag = "icon-red1 (WEST)"; icon_state = "red1"; dir = 8},/obj/item/weapon/circuitboard/machine/mech_recharger,/turf/open/floor/plating,/area/f13/vault)
+"ha" = (/obj/structure/cable{tag = "icon-1-4"; icon_state = "1-4"},/turf/open/floor/plating,/area/f13/vault)
+"hb" = (/obj/structure/spider,/obj/item/weapon/harpoon,/obj/item/trash/f13/mechanist,/turf/open/floor/plasteel/white,/area/f13/vault)
+"hc" = (/obj/item/weapon/gun/ballistic/shotgun/rifle,/turf/open/floor/plasteel/white,/area/f13/vault)
+"hd" = (/obj/item/crafting/switch,/turf/open/floor/plasteel/white,/area/f13/vault)
+"he" = (/obj/item/roller,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"hf" = (/obj/machinery/door/airlock/vault,/turf/open/floor/f13,/area/f13/vault)
+"hg" = (/mob/living/simple_animal/hostile/protectron,/turf/open/floor/f13,/area/f13/caves)
+"hh" = (/turf/open/floor/f13,/area/f13/caves)
+"hi" = (/obj/structure/fluff/paper/stack,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/blood/splatter,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hj" = (/obj/structure/barricade/sandbags,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"hk" = (/obj/item/device/radio,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"hl" = (/obj/item/weapon/ectoplasm,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"hm" = (/mob/living/simple_animal/hostile/protectron,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"hn" = (/obj/item/trash/can,/turf/open/floor/plating,/area/f13/vault)
+"ho" = (/obj/item/clothing/under/f13/mechanic,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"hp" = (/obj/machinery/light/small/red,/turf/open/floor/plasteel/white,/area/f13/vault)
+"hq" = (/obj/item/roller,/turf/open/floor/plating,/area/f13/vault)
+"hr" = (/obj/item/ring,/mob/living/simple_animal/hostile/protectron,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"hs" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/blood/tracks,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ht" = (/obj/structure/tires/two,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hu" = (/obj/structure/reagent_dispensers/barrel/dangerous,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"hv" = (/obj/item/weapon/light/bulb,/obj/item/weapon/storage/photo_album,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/ruins)
+"hw" = (/obj/item/clothing/head/cone,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hx" = (/obj/structure/curtain,/obj/item/weapon/golf9,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"hy" = (/obj/structure/curtain,/turf/open/floor/plasteel/white,/area/f13/vault)
+"hz" = (/obj/structure/simple_door/metal/barred,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/blood/tracks,/obj/structure/decoration/rag,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hA" = (/obj/structure/barricade/bars,/obj/effect/decal/cleanable/dirt,/obj/structure/decoration/rag,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hB" = (/obj/structure/barricade/bars,/obj/structure/decoration/rag,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hC" = (/obj/structure/simple_door/metal/barred,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hD" = (/obj/structure/table,/obj/item/weapon/gun/ballistic/automatic/pistol/n99,/turf/open/floor/plating,/area/f13/vault)
+"hE" = (/obj/structure/table,/obj/item/ammo_box/c10mm,/turf/open/floor/plating,/area/f13/vault)
+"hF" = (/obj/item/blueprint/n99,/obj/item/weapon/circuitboard/mecha/ripley/main,/turf/open/floor/plasteel/white,/area/f13/vault)
+"hG" = (/obj/structure/barricade/sandbags,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hH" = (/obj/item/ammo_casing,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hI" = (/obj/structure/spider/spiderling,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hJ" = (/obj/item/weapon/holodisk/abducted,/turf/closed/indestructible/f13/obsidian,/area/f13/caves)
+"hK" = (/obj/structure/table,/obj/item/device/geiger_counter,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"hL" = (/turf/open/floor/plasteel/delivery,/area/f13/vault)
+"hM" = (/obj/structure/table,/obj/item/bodybag,/obj/item/weapon/circuitboard/machine/mechfab,/turf/open/floor/plating,/area/f13/vault)
+"hN" = (/obj/structure/AIcore{anchored = 1},/turf/open/floor/plasteel/delivery,/area/f13/vault)
+"hO" = (/obj/item/chair,/turf/open/floor/plating,/area/f13/vault)
+"hP" = (/obj/machinery/clonepod{tag = "icon-pod_0_maintenance"; icon_state = "pod_0_maintenance"},/obj/structure/window/reinforced{tag = "icon-rwindow (EAST)"; icon_state = "rwindow"; dir = 4},/obj/structure/window/reinforced{tag = "icon-rwindow (WEST)"; icon_state = "rwindow"; dir = 8},/obj/structure/window/reinforced,/turf/open/floor/plasteel/delivery,/area/f13/vault)
+"hQ" = (/obj/machinery/vending/wallmed{step_x = 0},/obj/item/clothing/under/f13/bdu,/turf/open/floor/plasteel/white,/area/f13/vault)
+"hR" = (/obj/machinery/limbgrower,/turf/open/floor/plasteel/delivery,/area/f13/vault)
+"hS" = (/obj/item/clothing/under/f13/combat,/obj/item/weapon/gun/ballistic/shotgun/pipe,/turf/open/floor/plasteel/white,/area/f13/vault)
+"hT" = (/obj/effect/decal/cleanable/blood/tracks,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hU" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hV" = (/obj/machinery/light/small/red,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hW" = (/obj/item/device/radio,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hX" = (/obj/item/ammo_casing{tag = "icon-s-casing (NORTHWEST)"; icon_state = "s-casing"; dir = 9},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hY" = (/obj/structure/rack,/obj/machinery/light/small/red{tag = "icon-red1 (EAST)"; icon_state = "red1"; dir = 4},/obj/item/crafting/duct_tape,/obj/item/crafting/diode,/obj/item/crafting/capacitor,/obj/item/crafting/board,/obj/item/crafting/abraxo,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"hZ" = (/obj/machinery/chem_master,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"ia" = (/obj/structure/table,/obj/machinery/light,/obj/item/weapon/holodisk/abducted,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"ib" = (/obj/machinery/chem_dispenser/constructable,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"ic" = (/obj/machinery/light/small/red,/turf/open/floor/plating,/area/f13/vault)
+"id" = (/obj/item/clothing/under/f13/spaceship,/turf/open/floor/plating,/area/f13/vault)
+"ie" = (/obj/machinery/light,/turf/open/floor/plating/tunnel,/area/f13/vault)
+"if" = (/obj/machinery/light/small/red,/obj/item/bodybag,/turf/open/floor/plasteel/white,/area/f13/vault)
+"ig" = (/mob/living/simple_animal/hostile/protectron,/turf/open/floor/plasteel/white,/area/f13/vault)
+"ih" = (/obj/effect/decal/cleanable/dirt,/mob/living/simple_animal/hostile/radroach,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ii" = (/obj/item/crafting/frame,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ij" = (/obj/item/clothing/under/f13/villain,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ik" = (/obj/structure/tires/half,/turf/open/floor/plating/ashplanet/wateryrock,/area/f13/tunnel)
+"il" = (/obj/structure/fence,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"im" = (/obj/item/clothing/head/cone,/obj/machinery/light/small/red{tag = "icon-red1 (NORTH)"; icon_state = "red1"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"in" = (/obj/structure/closet/cardboard,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"io" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small/red{tag = "icon-red1 (NORTH)"; icon_state = "red1"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ip" = (/obj/effect/decal/cleanable/dirt,/obj/item/ammo_casing{tag = "icon-s-casing (WEST)"; icon_state = "s-casing"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iq" = (/obj/item/weapon/shard,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ir" = (/obj/structure/decoration/hatch{tag = "icon-hatch (NORTH)"; icon_state = "hatch"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"is" = (/obj/item/areaeditor/blueprints,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"it" = (/obj/item/ammo_casing{tag = "icon-s-casing (WEST)"; icon_state = "s-casing"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iu" = (/obj/item/ammo_casing,/obj/item/ammo_casing{tag = "icon-s-casing (WEST)"; icon_state = "s-casing"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iv" = (/obj/item/ammo_casing{tag = "icon-s-casing (SOUTHEAST)"; icon_state = "s-casing"; dir = 6},/obj/item/ammo_casing{tag = "icon-s-casing (WEST)"; icon_state = "s-casing"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iw" = (/turf/closed/mineral,/area/f13/caves)
+"ix" = (/obj/structure/ore_box,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iy" = (/obj/structure/safe,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iz" = (/obj/structure/table/wood/settler,/obj/item/crafting/duct_tape,/obj/item/clothing/glasses/eyepatch,/obj/item/clothing/under/color/red,/obj/item/clothing/suit/armor/f13/power_armor/t51b,/obj/item/clothing/head/helmet/power_armor/t51b,/obj/item/clothing/under/f13/recon,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iA" = (/obj/structure/table/wood/settler,/obj/effect/spawner/lootdrop/food,/obj/item/clothing/head/cage,/obj/structure/light_construct{tag = "icon-tube-construct-stage1 (NORTH)"; icon_state = "tube-construct-stage1"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iB" = (/turf/closed/wall/f13/wood,/area/f13/tunnel)
+"iC" = (/obj/machinery/portable_atmospherics/canister/air,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iD" = (/obj/item/crafting/bulb,/obj/item/crafting/bulb,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iE" = (/obj/effect/spawner/lootdrop/trash,/obj/structure/light_construct{tag = "icon-tube-construct-stage1 (NORTH)"; icon_state = "tube-construct-stage1"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iF" = (/obj/machinery/portable_atmospherics/canister/water_vapor,/obj/item/crafting/board,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iG" = (/mob/living/simple_animal/hostile/radroach,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iH" = (/obj/item/clothing/head/radiation,/obj/item/clothing/suit/radiation,/obj/effect/decal/cleanable/dirt,/obj/item/ammo_casing{tag = "icon-s-casing (WEST)"; icon_state = "s-casing"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iI" = (/obj/item/weapon/spear,/obj/item/clothing/head/helmet/f13/broken,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iJ" = (/obj/item/weapon/shard{icon_state = "small"},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iK" = (/mob/living/simple_animal/hostile/eyebot,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iL" = (/obj/item/ammo_casing,/obj/item/ammo_casing{tag = "icon-s-casing (EAST)"; icon_state = "s-casing"; dir = 4},/obj/item/ammo_casing{tag = "icon-s-casing (WEST)"; icon_state = "s-casing"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iM" = (/obj/structure/simple_door/wood,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iN" = (/obj/item/crafting/igniter,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iO" = (/obj/item/clothing/glasses/welding,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iP" = (/mob/living/simple_animal/hostile/cazador,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iQ" = (/obj/structure/decoration/vent,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iR" = (/obj/item/clothing/head/cone,/obj/item/ammo_casing{tag = "icon-s-casing (NORTH)"; icon_state = "s-casing"; dir = 1},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iS" = (/obj/effect/decal/cleanable/dirt,/obj/structure/bus_door,/obj/item/ammo_casing,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iT" = (/obj/item/ammo_casing,/mob/living/carbon/human,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iU" = (/obj/item/ammo_casing{tag = "icon-s-casing (SOUTHWEST)"; icon_state = "s-casing"; dir = 10},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iV" = (/obj/item/weapon/shard{icon_state = "medium"},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iW" = (/obj/item/clothing/gloves/combat,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iX" = (/obj/structure/chair{tag = "icon-chair (EAST)"; icon_state = "chair"; dir = 4},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iY" = (/obj/item/clothing/under/f13/settler,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"iZ" = (/obj/machinery/light{tag = "icon-tube1 (WEST)"; icon_state = "tube1"; dir = 8},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ja" = (/turf/open/floor/plating/ashplanet/wateryrock,/area/f13/tunnel)
+"jb" = (/obj/item/clothing/under/f13/tribal,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jc" = (/obj/item/crafting/duct_tape,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jd" = (/obj/effect/spawner/lootdrop/trash,/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"je" = (/obj/structure/bus_door,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jf" = (/obj/structure/barricade/sandbags,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jg" = (/obj/item/ammo_casing{tag = "icon-s-casing (WEST)"; icon_state = "s-casing"; dir = 8},/obj/item/ammo_casing,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jh" = (/obj/structure/chair,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"ji" = (/mob/living/simple_animal/hostile/ghoul,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jj" = (/obj/item/weapon/pipe,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jk" = (/obj/structure/tires/half,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jl" = (/obj/effect/decal/cleanable/dirt,/obj/structure/decoration/hatch,/obj/item/ammo_casing,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jm" = (/obj/item/device/radio,/obj/effect/decal/cleanable/dirt,/obj/machinery/light/small/red,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jn" = (/obj/structure/table/wood/settler,/obj/item/clothing/under/f13/dbdu,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jo" = (/obj/item/clothing/gloves/color/light_brown,/obj/item/clothing/mask/gas/explorer,/obj/item/clothing/shoes/f13/explorer,/obj/structure/table/wood/settler,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jp" = (/obj/item/weapon/twohanded/baseball,/obj/structure/table/wood/settler,/obj/item/ammo_box/c10mm,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jq" = (/obj/machinery/light/small/red,/obj/item/blueprint/assault_rifle,/obj/item/weapon/circuitboard/machine/autolathe,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jr" = (/obj/item/crafting/duct_tape,/obj/item/blueprint/laser_tri,/obj/item/weapon/circuitboard/machine/biogenerator,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"js" = (/obj/structure/window/fulltile/wood,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jt" = (/obj/item/weapon/reagent_containers/food/snacks/egg,/turf/open/floor/plating/ashplanet/wateryrock,/area/f13/tunnel)
+"ju" = (/obj/structure/rack,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jv" = (/obj/structure/rack,/obj/effect/spawner/lootdrop/trash,/turf/open/floor/plating/ashplanet/wateryrock,/area/f13/tunnel)
+"jw" = (/obj/effect/mob_spawner/molerat,/turf/open/floor/plating/ashplanet/wateryrock,/area/f13/tunnel)
+"jx" = (/turf/open/floor/holofloor/beach,/area/f13/tunnel)
+"jy" = (/obj/structure/rack,/obj/effect/spawner/lootdrop/food,/turf/open/floor/holofloor/beach,/area/f13/tunnel)
+"jz" = (/obj/structure/campfire,/turf/open/floor/holofloor/beach,/area/f13/tunnel)
+"jA" = (/turf/open/floor/holofloor/beach/coast_t,/area/f13/tunnel)
+"jB" = (/obj/structure/chair{tag = "icon-chair (NORTH)"; icon_state = "chair"; dir = 1},/turf/open/floor/holofloor/beach/coast_t,/area/f13/tunnel)
+"jC" = (/turf/open/floor/holofloor/beach/coast_b,/area/f13/tunnel)
+"jD" = (/obj/item/clothing/under/f13/recon,/turf/closed/indestructible/f13/obsidian,/area/f13/caves)
+"jE" = (/turf/open/floor/holofloor/beach/water,/area/f13/tunnel)
+"jF" = (/obj/effect/spawner/lootdrop/trash,/turf/open/floor/holofloor/beach/water,/area/f13/tunnel)
+"jG" = (/obj/machinery/portable_atmospherics/canister/air,/turf/open/floor/holofloor/beach/water,/area/f13/tunnel)
+"jH" = (/obj/structure/fence/door,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jI" = (/turf/closed/wall/f13/ruins,/area/f13/bunker)
+"jJ" = (/obj/item/wallframe/extinguisher_cabinet,/turf/closed/wall/f13/ruins,/area/f13/bunker)
+"jK" = (/turf/closed/wall/f13/wood,/area/f13/bunker)
+"jL" = (/obj/structure/simple_door/bunker,/turf/open/floor/plating/tunnel,/area/f13/bunker)
+"jM" = (/turf/open/floor/plating/tunnel,/area/f13/bunker)
+"jN" = (/obj/structure/bookcase,/turf/open/floor/plating/tunnel,/area/f13/bunker)
+"jO" = (/obj/structure/rack,/obj/item/stack/sheet/metal{amount = 23},/obj/effect/decal/cleanable/cobweb/cobweb2,/turf/open/floor/plating/tunnel,/area/f13/bunker)
+"jP" = (/turf/closed/wall/f13/tunnel,/area/f13/bunker)
+"jQ" = (/obj/item/weapon/tireiron,/turf/open/floor/plating/tunnel,/area/f13/bunker)
+"jR" = (/obj/structure/decoration/vent,/turf/open/floor/plating/tunnel,/area/f13/bunker)
+"jS" = (/obj/structure/ladder{height = -1; id = 311; in_use = 311},/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jT" = (/obj/machinery/autolathe,/turf/open/floor/plating/tunnel,/area/f13/bunker)
+"jU" = (/obj/item/weapon/crowbar,/obj/machinery/light/small,/obj/structure/table/wood/settler,/turf/open/floor/plating/tunnel,/area/f13/bunker)
+"jV" = (/obj/structure/table/wood/settler,/obj/item/weapon/reagent_containers/food/snacks/grown/mutfruit,/turf/open/floor/plating/tunnel,/area/f13/bunker)
+"jW" = (/obj/machinery/light,/turf/open/floor/plating/tunnel,/area/f13/tunnel)
+"jX" = (/turf/closed/indestructible/rock,/area/f13/caves)
+"jY" = (/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababacadaeafagahahafafaiajakafafalamafafafanafaoapaqacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababacaraeafasatafauavafafafawafafaxayafalagazapapaAacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababacaBafaCafaDafafaEafafagafaFaGaHaIafaJafaJaKapaLacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababacaMaNaOacacaPacacacaQaRaQacacacacacacaSacaTaIaUacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababacaVaVaVacaWaXaYacaZbaaXbbbcacbdbebfacbgacbhafbiacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababacbjbjbjbkaXblaXbmbnbobpbqbrbsbtbubvbsaXacafbwbxacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababacbybzbzacbAaXaXbmbBbrbCbrbDacacacacbEbFacbGbHbxacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababbIbJbKbyacbLbMaXbmbrbNbrbObrbsbPbQbRbsaXacaIafbxbSabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababbIbTbUbVacbWbXbYacbZbrbrcacbaccccdbfacceaccfcgbxacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaabababababababababababababababababababababababababababababababababababababchchciciciacbkcjacacckckclckckacacacacacacbScmcncobkacacacacacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababchcicicichacababcpcqcrcncsctcpaccucvcwaccxcyczczafaccAcBcCacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaabababababababababababababababababababababababababababababababababababababababchchchchabababcDcEcEcFcGcHcDaccIafafcJcKcLcycMafbhcnafaTacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaabababababababababababababcDcDcDcDcDcDcDcDcDababababababababababababababababababababababababcDcNcHcHcOcPcDacacacacbScQafcRcRcRacacbSacacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaabababababababababababababcDcScTcTcUcTcTcVcDababababababababababababababababababababababababcDcWcXcHcHcYcDaccucZdabkdbaJafdcddacdedfdgacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaabababababababababababababcDcTcDcDcDcDcDcTcDababababababababababababababababababababababababcDdhcScTcScTcDacdicncncncndjafagdkafafagdlacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaabababababababababababababcDcTcDabababcDcTcDababababababababababababababababababababababababcDdmdncTdocTcDacacacacacdpcRcRafafacacacacacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aadqdrdrdqdqdqdqdsdsdtdtdqdqdqdudrdrababcDdvcDabababababababababababababababababababababababdwcDdocTcTdxcTcDacdydzdAacdBaJdCdDdEacdFdGdHacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aadqdIdJdKdqdLdMdNdsdOdPdQdsdRdSdMdsababcDcTcDabababababababababababababababababababababababdwcDcTdTcTdUcTcDacafdVaJcndWcndXdYaJaJdZaJeaacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aadqebebecdredeeefdqdPdPegdsehdMeidsababcDcTcDabababababababababababababababababababababababdwcDcTcTcTcTejcDacacacacacekelememembkacacacacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aadqenebeodrepdMeqdqerdPerdqesdMetdsababcDcTcDabababababababababababababababababababababababdweucVevcTewcTcDacexeyezbSeAeBeCcneDbSeEeFeGacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aadqdreHdrdrdreIdqeJdqeKdqdqdqeLdqdqdsabcDcTcDabababababababababababababababababababababababdweueMcTcTcTcTcDaceNeOaJaJcncncncnePapaJeQaJacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aadqeReSeTeUeVeWeWeWeWeWeWeWeWeWeWeXdsabcDcTcDababababababababababababababababababababababababeueYcTcTdTcTcDacacacacacaceZfafbacacacacacacacacacacacacacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aadrfcfdeSeWfeeWeWeWeWeWeWffeWeWeWfgdsabcDcTcDabababababababababababababababababababababababababfhcTcTcTeMcDabacfifjfkacflfafmacfnfofpacfqfrfsacfqftfuacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aadrfveSeWfwfxdsdrfyfydrdrfzeWfAeWfBdsabcDdvcDababababababababababababababababababababababababcDfCcTcTcTdvcDabacfqfDfEacfbfmfFacfGfHfIacfqfJfKacfmfLfMacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aadsdsdsdsdsdsdsfNfOfOfPdreWeWeWfQeWdsabcDcTcDababababababababababababababababababababababababeucTfRfSeMcTcDabacfTfUfVacfbfWfXacfYfZgaacgbfUfbacfmfUgcacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcEgdcHgegfggghfOgiggdrgjgkglgmgndsabgocTcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDeueucDcDcDcDcDcTcTgpgqcTcDabacacgracacgsgtfbacacguacacacgvacacacguacacgwgwgwgwgxgwababgwgwabgwgwababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcHgycHggggggggfOgigzdsdrdrdrdsdsdsabgocTcTcScTcTcUcTcTcTcTcTcTcTcUcTgAcTcTcTcTcTcTcTdxgBgCgDeMcTcTcTcTcDabacgEgrgFgGgHgIfbgJgKfqfqftfbgLgMgNfqgOgPgQgRgRgRgRgRgxabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDgSgTcHgegUgVgggWgiggdsabababababababgocTcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDeueucDcDcTcTgXcTcTgYabacgZhafmhbfKhchdfqfqhefbfqfqfqfqfbfqfmfbhfhghhhhhghhgxgwababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDhicHcHdsdsdshjgigihkdsabababababababcDdvcDababababababababababababababababababababababababcDcTcTcTdncTgYabachlhmgMfmfWfmhnfbfbfqhohpfqfqfqgPhqfqhracgRgRgRgRgRgwabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDhscHhtcDabdshufOhvggdrabababababababcDcTcDababababababababababababababababababababababababcDhwcTcTcTcTcDabacacacacacacguacacacgvacacachxacacachyacacgwgwgwgwgwgwababgwgwabgwgwgwabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDhzhAhBcDabdrdrdrdrdrdrabababababababcDhCcDababababababababababababababababababababababababcDcTcThwcTcTcDabababababachDfUhEacfqfUfbacfqfUfqachFfUfmacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDhshGhGcDabcDcDcDcDcDcDcDcDcDcDcDcDcDcDhHcDcDcDcDcDcDabababababababababababababababababababcDhwcThIcTcTcDababhJababachKhLhMacfqhNhOacfqhPfqachQhRhSacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDhTcHhUcDabcDcTcThVcTcTcThWcTcThVcTcTcTcTcTcThXcShYcDabababababababababababababababababababcDdTdTdTcTcTcDabababababachZiaibacfbicidacfqiefqacfmifigacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcHihcHcDcDcDgDcDcDcDcDcDcDcDcDcDcDcDababcDcDcDcDcDcDeueucDeueueucDcDcDcDcDcDgoeueueucDcDcDcDiiijcTikcTcDcDeueucDdwacacacacacacacacacacacacacacacacacabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcHcHcTilimcTcTincEhGioipcHcHiqircUcTabababababiscTitiuivcUcTcTcTcTabiwiwiwixiyiziAiBiCcTiBcTcTcTcTiDcTeMcTcTiEiFcTcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTiGitcTcTcHiHhGcHcHiIhGcHiJcShXgCababcTiJcTcTiKiLhHababhXcTababcDiwiwcTcTcTcTcDcTcTiMcTcTiNcTcTcTcTcTabiOiPcTcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTiQcTcTcTiRcTiScHcHcTgycHdTcThHcThHiTcTcTcTiQabiUiViWabababcTcTabiwiwiwababiXdncTabiYcYiBiZjaeMcTjbcTcTababjccTjdeuabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTiGcTcTjeitcTcTcHcTjfcTjgjfcTcTcSiVcTjhcTcThHabababcTabababcTababiwcDiwababcDjicThXfRcTeucTcTcTcTjacTababcTcTababdwabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTilcThVcThXjjjkjfhVcTcTcHjlcHjmjnjojpgoiVababababababjqcTabiwiwiwiwcDabjrcTcTcTcTiNjshtcTcTeMcTcTeMdTcTiiababdwabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDcDababababababcDeueuababcDcDcDcDcDcDcDcDcDcDeueucTjajtcTgCeucDcDcDcDdwdwabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDabababababababababababababababababababababababababababababababababababababababababeucTjciOcTjucDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcYcDabababababababababababababababababababababababababababababababababababababababababcDjacTcTjajvcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDabababababababababababababababababababababababababababababababababababababababababeucTjwjajxjycDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDabababababababababababababababababababababababababababababababababababababababababeujajzjxjAjAeuabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDabababababababababababababababababababababababababababababababababababababababababeujxjBjAjCjCeuabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDababababababababababababababababababababababababababababababababababababjDababababeujAjCjCjEabeuabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDabababababababababababababababababababababababababababababababababababababababababeujCjEjEjEabcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDabababababababababababababababababababababababababababababababababababababababababeujEjEjFababcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDabababababababababababababababababababababababababababababababababababababababababcDjEjEjEababcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTiQcTcDabababababababababababababababababababababababababababababababababababababababababeujFjGabababcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDiGcTcYcDabababababababababababababababababababababababababababababababababababababababababeuabababababcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDabababababababababababababababababababababababababababababababababababababababababcDabababababcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDiljHilcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDhtcTcTcDabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTjIjIjJjKjIabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTjLjMjNjOjIabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTcTcTjPjQjRjMjIabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcTjScTjPjTjUjVjIabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDdTjWcTjPjIjKjKjKabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aacDcDcDcDcDjXjXjXjXabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
+
+(1,1,2) = {"
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+jYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjYjY
+"}

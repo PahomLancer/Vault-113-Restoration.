@@ -1,9 +1,11 @@
 // BEGIN_INTERNALS
 /*
-DIR: _maps _maps\map_files _maps\map_files\TexasWasteland 
+LAST_COMPILE_TIME: 1527864567
+DIR: _maps _maps\map_files _maps\map_files\debug _maps\map_files\Denwer _maps\map_files\Denwer\backup _maps\map_files\generic _maps\map_files\TexasWasteland _maps\map_files\TexasWasteland\backup _maps\map_files\TexasWasteland\backup\backup _maps\map_files\TgStation _maps\RandomRuins _maps\RandomRuins\LavaRuins _maps\RandomRuins\SpaceRuins _maps\RandomZLevels _maps\shuttles _maps\templates code code\game code\game\objects code\game\objects\effects code\game\objects\effects\spawners code\modules code\modules\clothing code\modules\crafting code\modules\crafting\recipes code\modules\fallout code\modules\fallout\obj code\modules\fallout\obj\clothing code\modules\fallout\obj\clothing\head code\modules\fallout\obj\spawners icons icons\fallout icons\fallout\objects icons\fallout\objects\structures icons\fallout\turfs 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
-WINDOW: _maps\map_files\TexasWasteland\texas_wasteland.dmm;_maps\map_files\TexasWasteland\z2.dmm;_maps\texas.dm
-FILE: _maps\texas.dm
+LAST_COMPILE_VERSION: 511.1385
+WINDOW: _maps\map_files\TexasWasteland\texas_wasteland.dmm;_maps\texas.dm;_maps\map_files\Denwer\denwer.dmm;_maps\map_files\TexasWasteland\z2.dmm;_maps\map_files\Denwer\tunnel1.dmm;_maps\map_files\Denwer\denwersurface.dmm;code\modules\fallout\areas\area.dm;icons\fallout\turfs\areas.dmi;icons\fallout\objects\structures\stationary.dmi;_maps\map_files\Denwer\denwersewers.dmm;_maps\map_files\Denwer\fartexas.dmm
+FILE: _maps\map_files\Denwer\denwersurface.dmm
 */
 // END_INTERNALS

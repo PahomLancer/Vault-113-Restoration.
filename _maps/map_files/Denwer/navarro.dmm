@@ -1,0 +1,396 @@
+"aa" = (/turf/closed/indestructible/f13/matrix,/area/f13/wasteland)
+"ab" = (/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ac" = (/obj/structure/flora/tree/wasteland,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ad" = (/obj/item/trash/f13/mechanist,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ae" = (/obj/structure/car,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"af" = (/obj/structure/flora/tree/tall{tag = "icon-tree_3"; icon_state = "tree_3"},/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ag" = (/obj/structure/flora/cactus,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ah" = (/obj/structure/flora/tree/tall{tag = "icon-tree_2"; icon_state = "tree_2"},/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ai" = (/obj/structure/flora/tree/tall,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"aj" = (/obj/structure/bus_door,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ak" = (/obj/effect/spawner/lootdrop/clothing_low,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"al" = (/obj/item/trash/f13/bubblegum,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"am" = (/obj/effect/spawner/lootdrop/food,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"an" = (/obj/structure/bonfire,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ao" = (/obj/item/trash/chips,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ap" = (/obj/item/weapon/storage/backpack/explorer,/obj/item/weapon/storage/belt/military/assault,/obj/item/weapon/tireiron,/mob/living/carbon/human{health = 0; name = "Jacob Blascowish"},/turf/open/indestructible/ground/desert,/area/f13/forest)
+"aq" = (/obj/item/trash/f13/blamco,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"ar" = (/obj/machinery/hydroponics/soil,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"as" = (/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"at" = (/obj/structure/fence{tag = "icon-metal_fence1"; icon_state = "metal_fence1"},/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"au" = (/obj/structure/fence{tag = "icon-metal_fence3"; icon_state = "metal_fence3"},/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"av" = (/obj/structure/fence{tag = "icon-metal_fence2"; icon_state = "metal_fence2"},/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"aw" = (/obj/structure/fence,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"ax" = (/obj/effect/spawner/lootdrop/crafts,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"ay" = (/obj/structure/reagent_dispensers/barrel/explosive,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"az" = (/obj/structure/reagent_dispensers/barrel/three,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"aA" = (/obj/structure/reagent_dispensers/barrel/two,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"aB" = (/obj/structure/reagent_dispensers/barrel/old,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"aC" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-outerborder (NORTH)"; icon_state = "outerborder"; dir = 1},/area/f13/wasteland)
+"aD" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontalbottomborderbottom0"; icon_state = "horizontalbottomborderbottom0"},/area/f13/wasteland)
+"aE" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-outerborder (EAST)"; icon_state = "outerborder"; dir = 4},/area/f13/wasteland)
+"aF" = (/obj/structure/reagent_dispensers/barrel/three,/turf/open/indestructible/ground/sidewalk{tag = "icon-outerborder (NORTH)"; icon_state = "outerborder"; dir = 1},/area/f13/wasteland)
+"aG" = (/obj/structure/reagent_dispensers/barrel/four,/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontalbottomborderbottom0"; icon_state = "horizontalbottomborderbottom0"},/area/f13/wasteland)
+"aH" = (/obj/structure/reagent_dispensers/barrel/three,/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontalbottomborderbottom0"; icon_state = "horizontalbottomborderbottom0"},/area/f13/wasteland)
+"aI" = (/obj/effect/spawner/lootdrop/crafts,/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontalbottomborderbottom0"; icon_state = "horizontalbottomborderbottom0"},/area/f13/wasteland)
+"aJ" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalrightborderright0"; icon_state = "verticalrightborderright0"},/area/f13/wasteland)
+"aK" = (/obj/machinery/porta_turret/syndicate{faction = "enclave"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"aL" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalleftborderleft0"; icon_state = "verticalleftborderleft0"},/area/f13/wasteland)
+"aM" = (/obj/effect/spawner/lootdrop/crate_spawner,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"aN" = (/obj/structure/reagent_dispensers/barrel/two,/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalrightborderright0"; icon_state = "verticalrightborderright0"},/area/f13/wasteland)
+"aO" = (/turf/closed/wall/f13/vault,/area/f13/building)
+"aP" = (/turf/closed/wall/f13/vault,/area/f13/bunker)
+"aQ" = (/turf/open/indestructible/ground/desert{tag = "icon-wasteland32"; icon_state = "wasteland32"},/area/f13/wasteland)
+"aR" = (/turf/open/indestructible/ground/desert{tag = "icon-wasteland32"; icon_state = "wasteland32"},/area/f13/forest)
+"aS" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-outerborder (WEST)"; icon_state = "outerborder"; dir = 8},/area/f13/wasteland)
+"aT" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontaltopbordertop0"; icon_state = "horizontaltopbordertop0"},/area/f13/wasteland)
+"aU" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-outerborder"; icon_state = "outerborder"},/area/f13/wasteland)
+"aV" = (/obj/structure/reagent_dispensers/barrel/old,/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalrightborderright0"; icon_state = "verticalrightborderright0"},/area/f13/wasteland)
+"aW" = (/obj/structure/reagent_dispensers/barrel/two,/turf/open/floor/plating,/area/f13/building)
+"aX" = (/obj/structure/reagent_dispensers/barrel/four,/turf/open/floor/plating,/area/f13/building)
+"aY" = (/obj/machinery/light/small/red{dir = 1},/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/turf/open/floor/plating,/area/f13/building)
+"aZ" = (/turf/open/floor/plating,/area/f13/building)
+"ba" = (/obj/machinery/light/small/red{dir = 1},/turf/open/floor/plating,/area/f13/building)
+"bb" = (/obj/structure/ladder{height = 0; id = 444; in_use = 444},/turf/open/floor/f13{tag = "icon-floorrusty"; icon_state = "floorrusty"},/area/f13/bunker)
+"bc" = (/turf/open/indestructible/ground/desert{tag = "icon-wasteland33"; icon_state = "wasteland33"},/area/f13/wasteland)
+"bd" = (/obj/structure/fence,/turf/open/indestructible/ground/desert{tag = "icon-wasteland33"; icon_state = "wasteland33"},/area/f13/wasteland)
+"be" = (/obj/structure/tires/five,/obj/item/trash/deadmouse,/turf/open/floor/plating,/area/f13/building)
+"bf" = (/obj/structure/reagent_dispensers/barrel/three,/turf/open/floor/plating,/area/f13/building)
+"bg" = (/obj/structure/decoration/vent,/turf/open/floor/plating,/area/f13/building)
+"bh" = (/obj/item/weapon/reagent_containers/food/drinks/bottle/nukacola,/turf/open/floor/plating,/area/f13/building)
+"bi" = (/obj/structure/simple_door/blast,/obj/structure/fans/tiny,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bunker)
+"bj" = (/obj/effect/bump_teleporter,/turf/open/floor/plating,/area/f13/building)
+"bk" = (/obj/structure/sign/securearea{desc = "A warning sign which reads 'SERVER ROOM'."; name = "SERVER ROOM"; pixel_y = 32},/obj/structure/closet/crate/bin,/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"bl" = (/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"bm" = (/obj/item/trash/pistachios,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"bn" = (/turf/open/indestructible/ground/desert{tag = "icon-wasteland33"; icon_state = "wasteland33"},/area/f13/forest)
+"bo" = (/obj/structure/fence,/turf/open/indestructible/ground/desert{tag = "icon-wasteland32"; icon_state = "wasteland32"},/area/f13/wasteland)
+"bp" = (/obj/machinery/light{dir = 8},/turf/open/floor/plating,/area/f13/building)
+"bq" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/open/floor/plating,/area/f13/building)
+"br" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail6"; icon_state = "y_handrail6"},/turf/open/indestructible/ground/sidewalk{tag = "icon-outerborder (NORTH)"; icon_state = "outerborder"; dir = 1},/area/f13/wasteland)
+"bs" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail12"; icon_state = "y_handrail12"},/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontalbottomborderbottom0"; icon_state = "horizontalbottomborderbottom0"},/area/f13/wasteland)
+"bt" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail10"; icon_state = "y_handrail10"},/turf/open/indestructible/ground/sidewalk{tag = "icon-outerborder (EAST)"; icon_state = "outerborder"; dir = 4},/area/f13/wasteland)
+"bu" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail3"; icon_state = "y_handrail3"},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalrightborderright0"; icon_state = "verticalrightborderright0"},/area/f13/wasteland)
+"bv" = (/turf/closed/wall/r_wall,/area/f13/wasteland)
+"bw" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail3"; icon_state = "y_handrail3"},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalleftborderleft0"; icon_state = "verticalleftborderleft0"},/area/f13/wasteland)
+"bx" = (/obj/structure/campfire,/turf/open/indestructible/ground/desert{tag = "icon-wasteland32"; icon_state = "wasteland32"},/area/f13/wasteland)
+"by" = (/obj/machinery/light/street{dir = 1; pixel_x = -32},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"bz" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail5"; icon_state = "y_handrail5"},/turf/open/indestructible/ground/sidewalk{tag = "icon-outerborder (WEST)"; icon_state = "outerborder"; dir = 8},/area/f13/wasteland)
+"bA" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail8"; icon_state = "y_handrail8"},/turf/open/indestructible/ground/sidewalk{tag = "icon-outerbordercorner (WEST)"; icon_state = "outerbordercorner"; dir = 8},/area/f13/wasteland)
+"bB" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail4"; icon_state = "y_handrail4"},/turf/open/indestructible/ground/sidewalk{tag = "icon-outerbordercorner"; icon_state = "outerbordercorner"},/area/f13/wasteland)
+"bC" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail9"; icon_state = "y_handrail9"},/turf/open/indestructible/ground/sidewalk{tag = "icon-outerborder"; icon_state = "outerborder"},/area/f13/wasteland)
+"bD" = (/obj/structure/flora/ausbushes/sunnybush,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"bE" = (/obj/structure/reagent_dispensers/fueltank,/turf/open/floor/plating,/area/f13/building)
+"bF" = (/obj/item/weapon/storage/toolbox/mechanical,/turf/open/floor/plating,/area/f13/building)
+"bG" = (/obj/structure/flora/ausbushes/ppflowers,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"bH" = (/obj/item/trash/f13/dog,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"bI" = (/obj/effect/spawner/lootdrop/crafts,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"bJ" = (/obj/structure{tag = "icon-vb-static (NORTH)"; name = "Enclave Vertibird"; desc = "Fucking. Vertibird. AWESOME!"; icon = 'icons/fallout/vehicles/vertibird.dmi'; icon_state = "vb-static"; dir = 1; density = 1; pressure_resistance = 22; anchored = 1},/obj/structure/decoration/vent,/turf/open/floor/plating,/area/f13/building)
+"bK" = (/obj/item/weapon/storage/toolbox/electrical,/turf/open/floor/plating,/area/f13/building)
+"bL" = (/obj/effect/landmark/start{name = "Enclave Sergeant"},/turf/open/floor/plating,/area/f13/building)
+"bM" = (/obj/machinery/space_heater,/turf/open/floor/plating,/area/f13/building)
+"bN" = (/obj/structure/statue/gold/hos{desc = "This is statue of most lovely sergeant."; name = "statue of the sergeant Arch Dornan"},/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"bO" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-outerbordercorner (NORTH)"; icon_state = "outerbordercorner"; dir = 1},/area/f13/wasteland)
+"bP" = (/turf/open/floor/plasteel{tag = "icon-warnplate"; icon_state = "warnplate"},/area/f13/building)
+"bQ" = (/obj/structure/sign/securearea{desc = "A warning sign which reads 'SERVER ROOM'."; name = "SERVER ROOM"; pixel_y = 32},/obj/machinery/light/small/red{dir = 1},/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"bR" = (/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"bS" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-outerbordercorner (EAST)"; icon_state = "outerbordercorner"; dir = 4},/area/f13/wasteland)
+"bT" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail6"; icon_state = "y_handrail6"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"bU" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail12"; icon_state = "y_handrail12"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"bV" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail10"; icon_state = "y_handrail10"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"bW" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-outerbordercorner"; icon_state = "outerbordercorner"},/area/f13/wasteland)
+"bX" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-outerbordercorner (WEST)"; icon_state = "outerbordercorner"; dir = 8},/area/f13/wasteland)
+"bY" = (/turf/closed/wall/f13/vault,/area/f13/clinic)
+"bZ" = (/turf/closed/wall/f13/vault,/area/f13/enclave)
+"ca" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail3"; icon_state = "y_handrail3"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cb" = (/obj/structure/reagent_dispensers/barrel/three,/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cc" = (/obj/structure/reagent_dispensers/barrel/explosive,/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cd" = (/turf/open/indestructible/ground/road{tag = "icon-horizontaltopborderbottom0"; icon_state = "horizontaltopborderbottom0"},/area/f13/wasteland)
+"ce" = (/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"cf" = (/obj/machinery/light{dir = 1},/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"cg" = (/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"ch" = (/obj/structure/chalkboard{tag = "icon-board_mess1"; icon_state = "board_mess1"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"ci" = (/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cj" = (/obj/structure/reagent_dispensers/barrel/old,/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"ck" = (/obj/item/trash/deadmouse,/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cl" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail1"; icon_state = "y_handrail1"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cm" = (/obj/effect/decal/marking{tag = "icon-dottedhorizontal"; icon_state = "dottedhorizontal"},/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"cn" = (/obj/machinery/sleeper/syndie{tag = "icon-sleeper_s (EAST)"; icon_state = "sleeper_s"; dir = 4},/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"co" = (/turf/open/floor/plasteel{tag = "icon-aesculapius"; icon_state = "aesculapius"},/area/f13/clinic)
+"cp" = (/obj/machinery/sleeper/syndie{tag = "icon-sleeper_s (WEST)"; icon_state = "sleeper_s"; dir = 8},/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"cq" = (/obj/structure/simple_door/bunker,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/enclave)
+"cr" = (/obj/machinery/power/port_gen/pacman/super,/obj/structure/cable{icon_state = "0-4"; d2 = 4},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cs" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"ct" = (/obj/item/stack/sheet/mineral/uranium{amount = 50},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cu" = (/obj/machinery/power/smes,/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cv" = (/obj/structure/closet/crate/bin,/obj/item/weapon/storage/toolbox/mechanical,/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cw" = (/obj/effect/decal/marking{tag = "icon-dottedvertical"; icon_state = "dottedvertical"},/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"cx" = (/obj/structure/closet/crate/medical,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"cy" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cz" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cA" = (/obj/machinery/power/terminal{tag = "icon-term (NORTH)"; icon_state = "term"; dir = 1},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{icon_state = "0-4"; d2 = 4},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cB" = (/obj/structure/cable{d2 = 8; icon_state = "0-8"},/obj/machinery/power/terminal{tag = "icon-term (NORTH)"; icon_state = "term"; dir = 1},/obj/machinery/power/apc{pixel_y = 30},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cC" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail2"; icon_state = "y_handrail2"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cD" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/clinic)
+"cE" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cF" = (/obj/structure/reagent_dispensers/barrel/two,/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cG" = (/obj/structure/reagent_dispensers/barrel/four,/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cH" = (/obj/effect/bump_teleporter,/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"cI" = (/obj/machinery/chem_master,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"cJ" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"cK" = (/obj/structure/table,/obj/item/weapon/storage/box/beakers,/obj/item/weapon/storage/belt/medical,/obj/item/weapon/reagent_containers/dropper,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"cL" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cM" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cN" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cO" = (/obj/machinery/power/terminal{tag = "icon-term (NORTH)"; icon_state = "term"; dir = 1},/obj/structure/cable{d2 = 8; icon_state = "0-8"},/obj/machinery/power/apc{pixel_y = 30},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cP" = (/obj/effect/spawner/lootdrop/grille_or_trash,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"cQ" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail5"; icon_state = "y_handrail5"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cR" = (/obj/structure/handrail/yellow{tag = "icon-y_handrail9"; icon_state = "y_handrail9"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"cS" = (/obj/structure/chair/office/white{dir = 4},/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"cT" = (/obj/item/bodybag,/obj/item/bodybag,/obj/item/bodybag,/obj/item/bodybag,/obj/item/bodybag,/obj/structure/table,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"cU" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/enclave)
+"cV" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cW" = (/obj/item/weapon/storage/toolbox/syndicate,/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"cX" = (/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/medical/surgery)
+"cY" = (/obj/structure/table/optable,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/medical/surgery)
+"cZ" = (/obj/machinery/chem_dispenser,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"da" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/item/stack/sheet/mineral/uranium{amount = 50},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"db" = (/obj/machinery/power/terminal{tag = "icon-term (NORTH)"; icon_state = "term"; dir = 1},/obj/structure/cable{icon_state = "0-4"; d2 = 4},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"dc" = (/obj/effect/bump_teleporter,/obj/effect/bump_teleporter,/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"dd" = (/obj/machinery/iv_drip,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/medical/surgery)
+"de" = (/obj/structure/table/glass,/obj/item/weapon/storage/backpack/dufflebag/syndie/surgery,/obj/item/weapon/surgical_drapes,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/medical/surgery)
+"df" = (/obj/machinery/light,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"dg" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel{tag = "icon-freezerfloor"; icon_state = "freezerfloor"},/area/f13/clinic)
+"dh" = (/obj/machinery/recharger,/obj/structure/table,/obj/item/stack/sheet/mineral/uranium{amount = 50},/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"di" = (/obj/machinery/button/door{id = 99; pixel_z = -25},/obj/structure/rack,/obj/item/weapon/storage/backpack/industrial,/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"dj" = (/obj/machinery/recharge_station,/turf/open/floor/plasteel{tag = "icon-yellowdirtysolid"; icon_state = "yellowdirtysolid"},/area/f13/enclave)
+"dk" = (/obj/item/clothing/head/f13/bandit,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"dl" = (/obj/machinery/light/street,/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"dm" = (/obj/structure/simple_door/bunker,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/clinic)
+"dn" = (/obj/machinery/door/poddoor/shutters/preopen{id = 99},/turf/open/floor/plasteel{tag = "icon-yellowdirtydir"; icon_state = "yellowdirtydir"},/area/f13/enclave)
+"do" = (/obj/structure/sign/poster{icon_state = "poster26_legit"; pixel_y = 30; tag = "icon-poster26_legit"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"dp" = (/obj/machinery/button/door{id = 99; pixel_y = 25},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalleftborderleft0"; icon_state = "verticalleftborderleft0"},/area/f13/wasteland)
+"dq" = (/obj/structure/sign/securearea{desc = "A warning sign which reads 'SERVER ROOM'."; name = "SERVER ROOM"; pixel_y = 32},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalrightborderright0"; icon_state = "verticalrightborderright0"},/area/f13/wasteland)
+"dr" = (/obj/effect/landmark/start{name = "Private"},/turf/open/indestructible/ground/sidewalk,/area/f13/wasteland)
+"ds" = (/obj/structure{anchored = 1; density = 1; desc = "Fucking. Vertibird. AWESOME!"; icon = 'icons/fallout/vehicles/vertibird.dmi'; icon_state = "vb-static"; name = "Enclave Vertibird"; pressure_resistance = 22},/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"dt" = (/obj/effect/decal/marking{tag = "icon-dottedhorizontaldegraded"; icon_state = "dottedhorizontaldegraded"},/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"du" = (/obj/effect/landmark/start{name = "Private"},/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"dv" = (/obj/effect/landmark/start{name = "Colonel"},/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"dw" = (/obj/structure/closet/bus,/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"dx" = (/obj/effect/spawner/lootdrop/trash,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"dy" = (/turf/closed/wall/f13/vault,/area/f13/bar)
+"dz" = (/obj/structure/simple_door/bunker,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dA" = (/obj/structure/reagent_dispensers/water_cooler,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dB" = (/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dC" = (/obj/structure/closet/crate/bin,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dD" = (/obj/machinery/light{dir = 1},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dE" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dF" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/closet/fridge,/obj/effect/spawner/lootdrop/food,/obj/effect/spawner/lootdrop/food,/obj/effect/spawner/lootdrop/food,/obj/effect/spawner/lootdrop/food,/obj/effect/spawner/lootdrop/food,/obj/effect/spawner/lootdrop/food,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dG" = (/obj/structure/table,/obj/machinery/chem_dispenser/drinks,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dH" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dI" = (/obj/structure/table,/obj/machinery/chem_dispenser/drinks/beer,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dJ" = (/obj/structure/simple_door/bunker,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"dK" = (/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"dL" = (/obj/machinery/autolathe,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"dM" = (/obj/structure/table,/obj/item/clothing/under/f13/enclave_officer,/obj/item/clothing/suit/armor/bulletproof,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"dN" = (/obj/structure/table,/obj/item/weapon/gun/energy/plasma,/obj/item/weapon/gun/energy/plasma,/obj/item/weapon/gun/energy/plasma,/obj/item/weapon/gun/energy/plasma,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"dO" = (/obj/structure/table,/obj/item/weapon/gun/energy/plasma/pistol,/obj/item/weapon/gun/energy/plasma/pistol,/obj/item/weapon/gun/energy/plasma/pistol,/obj/item/weapon/gun/energy/plasma/pistol,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"dP" = (/obj/structure/table,/obj/machinery/recharger,/obj/effect/spawner/lootdrop/armory_contraband,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"dQ" = (/obj/structure/table/wood/bar,/obj/structure/window/reinforced{dir = 8},/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Agent Smith!-brand non-foaming cleaning agent!"; name = "cleaning agent"},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dR" = (/obj/machinery/door/airlock/vault,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"dS" = (/obj/structure/table/wood/bar,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dT" = (/obj/structure/table/wood/bar,/obj/item/device/instrument/guitar,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dU" = (/obj/structure/table/wood/bar,/obj/item/weapon/reagent_containers/food/snacks/fries{desc = "Marceline recomended!"},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dV" = (/obj/structure/table/wood/bar,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dW" = (/obj/structure/table/wood/bar,/obj/effect/spawner/lootdrop/food,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dX" = (/obj/structure/table/wood/bar,/obj/item/weapon/storage/fancy/cigarettes/cigpack_robust,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"dY" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"dZ" = (/obj/structure/rack,/obj/item/stack/sheet/cardboard/fifty,/obj/item/weapon/storage/backpack/explorer,/obj/item/weapon/storage/backpack/explorer,/obj/item/weapon/storage/backpack/explorer,/obj/item/weapon/storage/backpack/explorer,/obj/item/weapon/storage/backpack/explorer,/obj/item/weapon/storage/fancy/rollingpapers,/obj/item/weapon/reagent_containers/food/snacks/f13/mre,/obj/item/weapon/reagent_containers/food/snacks/f13/mre,/obj/item/weapon/reagent_containers/food/snacks/f13/mre,/obj/item/weapon/reagent_containers/food/snacks/f13/mre,/obj/item/weapon/reagent_containers/food/snacks/f13/mre,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ea" = (/obj/structure/rack,/obj/item/clothing/suit/bio_suit/f13/hazmat,/obj/item/clothing/suit/bio_suit/f13/hazmat,/obj/item/clothing/head/bio_hood/f13/hazmat,/obj/item/stack/sheet/mineral/uranium{amount = 50},/obj/item/stack/sheet/mineral/uranium{amount = 50},/obj/item/stack/sheet/mineral/uranium{amount = 50},/obj/item/stack/sheet/mineral/uranium{amount = 50},/obj/item/weapon/storage/toolbox/syndicate,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"eb" = (/obj/structure/rack,/obj/item/stack/sheet/metal/fifty,/obj/item/weapon/storage/backpack/satchel/explorer,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ec" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ed" = (/obj/structure/chair/stool/bar,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"ee" = (/obj/effect/landmark/start{name = "Enclave Sergeant"},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ef" = (/obj/item/trash/semki,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"eg" = (/obj/machinery/light{dir = 8},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"eh" = (/obj/structure/stacklifter,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"ei" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"ej" = (/obj/structure/table/reinforced,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/machinery/door/window{tag = "icon-left (WEST)"; icon_state = "left"; dir = 8},/obj/structure/bedsheetbin,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ek" = (/obj/structure/chair/office{dir = 8},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"el" = (/obj/structure/rack,/obj/item/clothing/under/f13/dbdu,/obj/item/clothing/under/f13/dbdu,/obj/item/clothing/under/f13/dbdu,/obj/item/clothing/under/f13/dbdu,/obj/item/clothing/under/f13/dbdu,/obj/item/clothing/suit/armor/f13/combat_mk2,/obj/item/clothing/suit/armor/f13/combat_mk2,/obj/item/clothing/suit/armor/f13/combat_mk2,/obj/item/clothing/suit/armor/f13/combat_mk2,/obj/item/clothing/head/helmet/f13/combat_mk2,/obj/item/clothing/head/helmet/f13/combat_mk2,/obj/item/clothing/head/helmet/f13/combat_mk2,/obj/item/clothing/head/helmet/f13/combat_mk2,/obj/item/clothing/head/helmet/f13/combat_mk2,/obj/item/clothing/head/helmet/f13/marine,/obj/item/clothing/head/helmet/f13/marine,/obj/item/clothing/head/helmet/f13/marine,/obj/item/weapon/storage/belt/military/army,/obj/item/weapon/storage/belt/military/army,/obj/item/weapon/storage/belt/military/army,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"em" = (/obj/structure/rack,/obj/item/clothing/suit/armor/f13/power_armor/advanced,/obj/item/clothing/head/helmet/power_armor/advanced,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"en" = (/obj/structure/rack,/obj/item/clothing/under/f13/bdu,/obj/item/clothing/under/f13/bdu,/obj/item/clothing/under/f13/bdu,/obj/item/clothing/under/f13/bdu,/obj/item/clothing/under/f13/bdu,/obj/item/clothing/under/f13/bdu,/obj/item/clothing/under/f13/bdu,/obj/item/clothing/under/f13/bdu,/obj/item/clothing/under/f13/bdu,/obj/item/clothing/under/f13/enclave_officer,/obj/item/clothing/suit/f13/autumn,/obj/item/clothing/suit/f13/autumn,/obj/item/clothing/shoes/f13/military,/obj/item/clothing/shoes/f13/military,/obj/item/clothing/shoes/f13/military,/obj/item/clothing/shoes/f13/military,/obj/item/clothing/shoes/f13/military,/obj/item/clothing/gloves/f13/military,/obj/item/clothing/gloves/f13/military,/obj/item/clothing/gloves/f13/military,/obj/item/clothing/gloves/f13/military,/obj/item/clothing/gloves/f13/military,/obj/item/clothing/gloves/f13/military,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"eo" = (/obj/structure/janitorialcart,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ep" = (/obj/structure/closet/crate/bin,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"eq" = (/obj/structure/punching_bag,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"er" = (/obj/structure/chair{dir = 4},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"es" = (/obj/structure/table,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"et" = (/obj/structure/chair{dir = 8},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"eu" = (/obj/structure/table,/obj/item/weapon/storage/fancy/donut_box,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"ev" = (/obj/structure/safe,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ew" = (/obj/structure/rack,/obj/item/stack/sheet/metal/fifty,/obj/item/stack/sheet/glass/fifty,/obj/item/stack/sheet/mineral/wood,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ex" = (/obj/structure/rack,/obj/item/device/geiger_counter,/obj/item/device/geiger_counter,/obj/item/device/geiger_counter,/obj/item/device/geiger_counter,/obj/item/device/geiger_counter,/obj/item/weapon/storage/belt/military/army,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ey" = (/obj/structure/rack,/obj/item/device/flashlight/seclite,/obj/item/device/flashlight/seclite,/obj/item/device/flashlight/seclite,/obj/item/device/flashlight/seclite,/obj/item/device/flashlight/seclite,/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"ez" = (/obj/machinery/light,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"eA" = (/obj/structure/table,/obj/effect/spawner/lootdrop/food,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"eB" = (/obj/structure/chair{dir = 4},/obj/machinery/light,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"eC" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/snacks/f13/cram,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/bar)
+"eD" = (/obj/structure/fence,/turf/open/indestructible/ground/sidewalk{dir = 8; icon_state = "outerpavement"},/area/f13/wasteland)
+"eE" = (/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs{desc = "LOVEST food of Blackjack!"},/turf/open/indestructible/ground,/area/f13/forest)
+"eF" = (/obj/structure/closet/crate/trashcart,/obj/item/trash/pistachios,/turf/open/indestructible/ground,/area/f13/forest)
+"eG" = (/obj/item/stack/sheet/mineral/sandbags{amount = 25},/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/f13/building)
+"eH" = (/obj/item/clothing/gloves/f13/doom,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"eI" = (/obj/structure/fence{tag = "icon-metal_fence1"; icon_state = "metal_fence1"},/turf/open/indestructible/ground/sidewalk{dir = 10; icon_state = "outerpavement"},/area/f13/wasteland)
+"eJ" = (/obj/structure/fence/door,/turf/open/indestructible/ground/sidewalk{dir = 7; icon_state = "outerpavement"},/area/f13/wasteland)
+"eK" = (/obj/structure/fence{tag = "icon-metal_fence3"; icon_state = "metal_fence3"},/turf/open/indestructible/ground/sidewalk{dir = 7; icon_state = "outerpavement"},/area/f13/wasteland)
+"eL" = (/obj/item/trash/f13/sugarbombs,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"eM" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavementcorner (EAST)"; icon_state = "innerpavementcorner"; dir = 4},/area/f13/wasteland)
+"eN" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavement (NORTHEAST)"; icon_state = "innerpavement"; dir = 5},/area/f13/wasteland)
+"eO" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavement (NORTHWEST)"; icon_state = "innerpavement"; dir = 9},/area/f13/wasteland)
+"eP" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavementcorner (NORTH)"; icon_state = "innerpavementcorner"; dir = 1},/area/f13/wasteland)
+"eQ" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavement (EAST)"; icon_state = "innerpavement"; dir = 4},/area/f13/wasteland)
+"eR" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavement (WEST)"; icon_state = "innerpavement"; dir = 8},/area/f13/wasteland)
+"eS" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavement (NORTH)"; icon_state = "innerpavement"; dir = 1},/area/f13/outpost)
+"eT" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavement (NORTHEAST)"; icon_state = "innerpavement"; dir = 5},/area/f13/outpost)
+"eU" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalleftborderleft0"; icon_state = "verticalleftborderleft0"},/area/f13/outpost)
+"eV" = (/turf/open/indestructible/ground/road,/area/f13/outpost)
+"eW" = (/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalrightborderright0"; icon_state = "verticalrightborderright0"},/area/f13/outpost)
+"eX" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavement (NORTHWEST)"; icon_state = "innerpavement"; dir = 9},/area/f13/outpost)
+"eY" = (/turf/open/indestructible/ground/road{tag = "icon-innerpavement (NORTH)"; icon_state = "innerpavement"; dir = 1},/area/f13/wasteland)
+"eZ" = (/obj/structure/fence{tag = "icon-metal_fence3"; icon_state = "metal_fence3"},/turf/open/indestructible/ground/desert,/area/f13/outpost)
+"fa" = (/obj/structure/fence{tag = "icon-metal_fence3"; icon_state = "metal_fence3"},/turf/open/indestructible/ground/sidewalk{dir = 4; icon_state = "outerpavement"},/area/f13/outpost)
+"fb" = (/obj/structure/fence{tag = "icon-metal_fence2"; icon_state = "metal_fence2"},/obj/effect/step_trigger/message{message = "WELCOME TO CAMP NAVARRO"; name = "navarro welcome"},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalleftborderleft0"; icon_state = "verticalleftborderleft0"},/area/f13/outpost)
+"fc" = (/obj/effect/step_trigger/message{message = "WELCOME TO CAMP NAVARRO"; name = "navarro welcome"},/turf/open/indestructible/ground/road,/area/f13/outpost)
+"fd" = (/obj/structure/fence{tag = "icon-metal_fence1"; icon_state = "metal_fence1"},/obj/effect/step_trigger/message{message = "WELCOME TO CAMP NAVARRO"; name = "navarro welcome"},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalrightborderright0"; icon_state = "verticalrightborderright0"},/area/f13/outpost)
+"fe" = (/obj/structure/fence{tag = "icon-metal_fence3"; icon_state = "metal_fence3"},/turf/open/indestructible/ground/sidewalk{dir = 8; icon_state = "outerpavement"},/area/f13/outpost)
+"ff" = (/obj/structure/fence{tag = "icon-metal_fence3"; icon_state = "metal_fence3"},/turf/open/indestructible/ground/desert{tag = "icon-wasteland33"; icon_state = "wasteland33"},/area/f13/wasteland)
+"fg" = (/turf/open/indestructible/ground/desert,/area/f13/outpost)
+"fh" = (/turf/open/indestructible/ground/sidewalk{dir = 4; icon_state = "outerpavement"},/area/f13/outpost)
+"fi" = (/turf/open/indestructible/ground/sidewalk{dir = 8; icon_state = "outerpavement"},/area/f13/outpost)
+"fj" = (/turf/closed/wall/f13/vault,/area/security/checkpoint)
+"fk" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/security/checkpoint)
+"fl" = (/obj/machinery/light{dir = 8},/turf/open/indestructible/ground/sidewalk{dir = 4; icon_state = "outerpavement"},/area/f13/wasteland)
+"fm" = (/turf/open/indestructible/ground/sidewalk{dir = 8; icon_state = "outerpavement"},/area/f13/wasteland)
+"fn" = (/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/security/checkpoint)
+"fo" = (/obj/structure/simple_door/bunker,/turf/open/floor/f13{tag = "icon-floordirtysolid"; icon_state = "floordirtysolid"},/area/security/checkpoint)
+"fp" = (/turf/open/indestructible/ground/sidewalk{dir = 4; icon_state = "outerpavement"},/area/f13/wasteland)
+"fq" = (/obj/effect/landmark/start{name = "Private"},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalleftborderleft0"; icon_state = "verticalleftborderleft0"},/area/f13/wasteland)
+"fr" = (/obj/effect/landmark/start{name = "Private"},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalrightborderright0"; icon_state = "verticalrightborderright0"},/area/f13/wasteland)
+"fs" = (/obj/structure/campfire,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"ft" = (/obj/structure/decoration/reflector,/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"fu" = (/obj/item/trash/sosjerky,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"fv" = (/obj/item/trash/f13/instamash,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"fw" = (/obj/structure/closet/cardboard,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"fx" = (/obj/effect/landmark/start{name = "Raider"},/turf/open/indestructible/ground/desert,/area/f13/forest)
+"fy" = (/mob/living/simple_animal/hostile/radroach,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"fz" = (/mob/living/simple_animal/hostile/cazador,/turf/open/indestructible/ground/desert,/area/f13/forest)
+"fA" = (/obj/structure/billboard/cola,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
+"fB" = (/obj/effect/bump_teleporter{id = 18},/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"fC" = (/obj/effect/bump_teleporter{id = 14; id_target = 16; name = "enclave-wasteland"},/turf/open/indestructible/ground/sidewalk{dir = 4; icon_state = "outerpavement"},/area/f13/wasteland)
+"fD" = (/obj/effect/bump_teleporter{id = 14; id_target = 16; name = "enclave-wasteland"},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalleftborderleft0"; icon_state = "verticalleftborderleft0"},/area/f13/wasteland)
+"fE" = (/obj/effect/bump_teleporter{id = 14; id_target = 16; name = "enclave-wasteland"},/turf/open/indestructible/ground/road,/area/f13/wasteland)
+"fF" = (/obj/effect/bump_teleporter{id = 14; id_target = 16; name = "enclave-wasteland"},/turf/open/indestructible/ground/sidewalk{tag = "icon-verticalrightborderright0"; icon_state = "verticalrightborderright0"},/area/f13/wasteland)
+"fG" = (/obj/effect/bump_teleporter{id = 14; id_target = 16; name = "enclave-wasteland"},/turf/open/indestructible/ground/sidewalk{dir = 8; icon_state = "outerpavement"},/area/f13/wasteland)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababacabababababababababababababadababababababababababababababababababababababababababababacababababababababababababababababababababababababababababaa
+aaabababacababababaeabababafabababababababababababababababababababababagabababababababababababababababacababababababababacabababababababababababahabababababaiabacababababababababababababababababababaa
+aaababajababababakababababababababababababalafabababababamabababafababababababababababacabababababababababababafabababababababababababababababababababababababababababababababababacabababababababababaa
+aaabababababababababababababababacababababababababababababababababababaiabababafababafababababaiababababababababababababababababababababaiabababababacababababababababababababababababababababaiabababaa
+aaababababanabaiababacabababababababababababababababababacabababadababababababababababababababababababababababababaiababababababababababababababababababababababababababababababababababaoababababababaa
+aaabababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababacabababababababababahababababababababababababababaiabapabababababababababaa
+aaabababababababalababagabaqababababababafabababababaiabababafabababababababababagababababababababafabababababacababababababababababababababababababababababababacababababababababababababababahabababaa
+aaababafamabakabababababababababafabakababababajababababababababababababababacababadababababababababababababababababababababababababababababacababababababababababababababababababababababababababababaa
+aaabababababababababababababababababababababababababababababagababababababababababababababababababababababababababababababababababababababababababababababababababahabababababababababacabababababababaa
+aaabababababababababababababababacabababababababafabababababababababababaiabababababababafabacababababababababababababacababababababababababahababababafabababababababababababababababababababababababaa
+aaababababababababababaiababababababababaiabababababababababacababababababababababababababababababababababaiababababababababababaiabababababababababababababababababababababababababarababababababababaa
+aaabababababacababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababaa
+aaabababababababababababababababasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasabababababaiabababababababababababababababababababaa
+aaabababababababababababababababasatauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauauavasababababababacabababababababababababahababababababaa
+aaabababababakababacababababababasawasasasasasasaxasayazaAaBasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasawasabababababababababababababaiababababababaiababababaa
+aaababaiabababajabababababafababasawasaCaDaEasasasasaFaGaHaIaDaDaDaDaDaDaDaDaDaDaDaEasaCaDaDaDaEasasasasasasasasasasasasasasasasasasasasaCaDaEasawasabababababababababababababababababababababababababaa
+aaabababababababababababababababasawasaJaKaLasasaMazaNaOaOaOaOaOaOaOaOaOaOaOaOaOaOaLasaJaPaPaPaLasasasasasasasasasasasasasaQaQaQaQasasasaJaKaLasawasabababababababababababababababababababababababababaa
+aaababababababababababababababaRasawasaSaTaUasasasaxaVaOaWaXaYaZaZaZbaaZaZaZbaaZaOaLasaJaPbbaPaLasasasasasasasasasasasasasaQaQaQaQasasasaSaTaUasawasabababababababababababababababababacabababagabababaa
+aaababababababababacababababaRaRbcbdasasasasasasasasaJaObebfaZaZaZaZaZaZaZaZbgbhaOaLasaJaPbiaPaLasasasasasasasasasasasaQasaQaQaQaQaQaQasasasasasawasababababababababababababababahababababababababababaa
+aaababacabababababababababababaRbcbdbcbcbcasaQasasasaJaOaZaZaZbjbjbjbjbjbjaZaZaZaOaLasaJbkblblaLasasasasasasasasasasasasasbcbcbcaQaQaQbcbcbcbcasawasababababababaiababababababababababababababababababaa
+aaabababababababbmabababaiababbnbcbobcbcbcbcbcbcaQasaJaObpaZbjbjbjbjbjbjbjbjaZbqaOaLasaJblblblaLasasbrbsbsbtasasasasasbcbcbcbcbcaQaQaQbcbcbcbcbcbdbcababababababababababaiababababababababababababababaa
+aaababafabababababababababababbnbcbdbcbcbcaQbcbcasasaJaOaZbjbjbjbjbjbjbjbjbjaZaZaOaLasaJblblblaLasasbubvbvbwasasasasasbcbcbcbcbcbxaQaQbcbcbcbcbcbdbcabababababagabababababababababababababababababababaa
+aaababababababababababababababbnbcbobcbcbcaQbcbcasasaJaOaZaZbjbjbjbjbjbjbjbjaZaZaOaLasaJblblbyaLasasbubvbvbwasasasbcbcbcbcbcbcbcasasaQbcbcbcbcbcbdbcabababababababarababababababababababababaiababababaa
+aaababababababababafababacabababbcbdbcbcbcbcbcbcasasaJaOaZaZbjbjbjbjbjbjbjaZaZaZaOaLasaJblblblaLasasbzbAbBbCasasasbcbcbcbcbcbcasasasaQbcbcbcbcbcbdasabababababababababababababababagabababababababababaa
+aaabababababababababababababababbcbdbcaQbcbcaQbcasaQaJaObpaZaZaZbjbjbjaZaZaZaZbqaOaLasaJblblblaLasasasaJaLasasasasbcbcbcbcasasasasasaQbcaQbcbcasawasababababababababababahbDabababababbDabababahabababaa
+aaababababaiababababaRabababaRabasawbcbcbcbcbcbcasasaJaOaZaZaZaZbjbjbjaZaZaZaZaZaOaLasaJblblbyaLasasasaJaLasasasasbcbcbcbcasasasasasaQaQbcaQaQasawasababababahababababababababababababababababababababaa
+aaababababacababababababababababasawasbcaQasasasasasaJaObEaZaZaZbjbjbjaZaZbFaZaZaOaLasaJblblblaLasasasaJaLasasasasasasasasasasasasasaQaQaQaQaQasawasabababababababababbGababababababbHababababababababaa
+aaabababababababbIababababbIababasawasasasaQasasasasaJaObEbJbKaZaZaZaZaZaZbLbgbMaOaLasaJblblblaLasbNasaJaLasasasasasasasasasasasasasaQbcbcaQaQasawasabababababababahabababababaiabbDababababababbDababaa
+aaabababababababababababababababasawasasasaCaDaDaDaDbOaOaObPbPbPbPbPbPbPbPbPbPaOaOaLasaJblblblaLasasasaJaLasasasasasasasasasasasasasaQbcbcaQaQasawasabababababababababababababababababababababababababaa
+aaababababababababababaiabababaRasawasasasaJblblblblblaEbQbRbRbRbRbRbRbRbRbRbRbQaCbSaDbOblblblbSaDaDaDbObSaDaDaDaDaDaDaDaDaDaEasasasaQaQaQaQaQasawasababababaiababbHababbDbDabababababacababaiababababaa
+aaababababababafababababababababasawasasasaJbTbUbUbVbWaUbRbRbRbRbRbRbRbRbRbRbRbRaSbXbYbYbYbYbYbYbYblblblbZbZbZbZbZbZbZbZbZbZaLasasasaQaQbcbcbcasawasababababababababababababababbGababababababababababaa
+aaababbIabaeababababababbIabababasawasasasaJcacbcccaaLcdbRbRbRbRbRbRbRbRbRbRbRbRcdaJbYcececfcecebYblblblbZcgcgcgchcgcgcgcibZaLasasasaQaQbcbcbcasawasabababababababababacababababaoababababbDabahabababaa
+aaabababababababagabababababababasawasasasaJcacjckclaLbRbRcmbRcmbRcmbRcmbRcmbRbRbRaJbYcncecocecpbYblblblcqcgcrcsctcgcgcubZbZaLasasasaQaQaQaQaQasawasabababababababababababababababababababababababababaa
+aaababababababababababacababababasawasasasaJcacvblblaLbRcwbRbRbRbRbRbRbRbRbRcwbRbRaJbYcececececxbYblblblbZctcgcycgcgczcAcBbZaLasasasbcbcaQaQaQasawasabababababababababababaiabababababababababababababaa
+aaabababacabababababababababababasawasasasaJcaccblcCaLbRbRbRbRbRbRbRbRbRbRbRbRbRbRaJcDcececececxbYblblblbZcgcrcEcscgcycubZbZaLasbcbcbcbcaQaQaQasawasababababacabababababababababababababacababababababaa
+aaabababababababababaiabababababasawasasasaJcacFcGcaaLbRcwbRbRbRbRcHcHbRbRbRcwbRbRaJcDcececIcJcKbYblblblbZcgcgcycLcMcNcAcObZaLasbcbcaQaQaQaQaQasawasababababahababababababababahabababababababababababaa
+aaabababaiababababcPababababababasawasasasaJcQbUbUcRaLbRbRbRbRbRcHcHcHcHbRbRbRbRbRaJcDcecececScTbYblblblcUcgcrcVcWcgcycubZbZaLasbcbcaQaQaQaQaQasawasabababababababababababababababababababababababababaa
+aaabababababababababababababababasawasasasaJblblblblaLbRcwbRbRbRcHcHcHcHbRbRcwbRbRaJcDcXcYcececZbYblblblcUcgcgcgcgcgdadbcObZaLasasasaQaQaQbcbcasawasabababababababababababababababababababababababababaa
+aaabababababababababababababababasawasasasaJblblblblaLbRbRbRbRbRcHdccHcHbRbRbRbRbRaJbYdddedfcedgbYblblblbZdhdicgcgcgcgdjdjbZaLasasbcaQbcbcbcbcasawasababababababababababababdkabarababababababababababaa
+aaabababababababababacabababababasawasasasaJblblbldlaLbRcwbRcHcHcHdccHcHcHbRcwbRbRaJbYbYbYbYdmbYbYblblblbZbZbZdndndnbZcUcUbZaLasbcbcbcbcbcasasasawasababababababababababaiababababababababaiabababababaa
+aaabababababababababaiabababababasawasasasaSbXblblblaLbRbRcHcHcHdcdccHcHcHcHbRbRbRaJblbldoblblblblblblblblbldpbRbRbRdqblblblaLasaQbcbcasbcbcbcasawasabababababababacabababababababababababababababababaa
+aaababababacababababababababababasawasaCaDaEaJblblblaLbRcwcHcHcHdcdccHcHcHcHcwbRbRaJbldlbldrblblblblblbyblblaLbRbRbRaJblblblaLasbcbcasasaCaDaEasawasabababababababababababababababababababababababababaa
+aaabababababcPafababababafabababasawasaJaKaLaJblblblaLbRbRbRcHcHcHdccHcHcHcHbRbRbRaSaTaTaTaTaTaTaTaTaTaTaTaTaUbRbRbRaJblblblaLasasasasasaJaKaLasawasabababababaiabababababababacabababababababbHabababaa
+aaabababababababababababababababasawasaSaTaUaJblblblaLbRcwdsbRbRcHcHcHcHbRbRcwbRbRcdcdcdcdcdcdcdcdcdcdcdcdcdcdbRbRbRaJblblblaLasasasbcasaSaTaUasawasabababababababababababababababababababababababababaa
+aaabababababababababababababababasawasasasaCbOblblblaLbRbRdtbRcmbRcmbRcmbRcmbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRaJblblblaLasasasbcasasasasasawasabababababababababababababababababababababacabababaa
+aaabababababababababababababababasawasasasaJblblblblaLbRbRbRdubRdubRdubRdubRbRbRbRbRbRbRaCaDaEbRbRbRbRbRbRbRbRbRbRbRaJblblblaLasasasasasasasasasawasabababababababababababababababababababababababababaa
+aaabababababababababacabababababasawasasasaJblblblblaLbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRaJaKaLbRbRbRbRbRbRbRbRbRbRbRaJbyblblaLasasasbcbcbcaQasasawasabababababababababababababababababababababababababaa
+aaabababababababababababababababasawasasasaJblblblblaLbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRaSaTaUbRbRbRbRbRbRbRbRbRbRbRaJblblblaLasasasaQaQbcaQasasawasabababahababababababababahababababababaiabababababaa
+aaabababaiababafababababababababasawasasasaJblblbldlaLbRbRbRbRbRbRdvbRbRbRbRbRbRbRbRbRbRcdcdcdbRbRbRbRbRbRbRdwbRbRbRaJblblblaLasasasaQaQbcbcasasawasabababababababababacabababababababababababababababaa
+aaabababababababababababababababasawasasasaJblblblblaLbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRbRaJblblblaLasasasbcbcasasasasawasabababababababababababababababababababababababababaa
+aaababababababababababdxababababasawasasasaJblblblblbSaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaDaEbRbRbRaCaDaDaDaDaDaDaDaDaDaDbOblblblaLasasasbcbcbcaQaQasawasabababababababababababababababababababarabababababaa
+aaabababababafabababababababababasawasasasaJblblblblblblblblblblblblblblblblblblblblblaLbRbRbRaJblblblblblblblblblblblblblblbSaEasasasbcbcbcbcasawasabababababababababababababababababababababababababaa
+aaabababacabababababababababababasawasasasaJdydydzdzdydydydydydydydydydydydyblblblblblaLbRbRbRaJblblblblblblblblblblblblblblblaLasasasbcbcbcaQasawasabababacababababaiababababababababababababababababaa
+aaababababababababaiabacababababasawasasasaJdydAdBdBdCdDdBdBdBdBdBdDdBdBdBdyblblblblblaLbRbRbRaJblblblblaOaOaOaOaOaOaOaOaOaOaOaLasasasbcbcbcbcasawasababababababababababababababababaiababababababababaa
+aaabababababababababababababababasawasasasaJdEdBdBdBdBdBdBdBdBdFdBdGdHdIdBdyblblbldlblaLbRbRbRaJbyblblbldJdKdKaOdLdMdNdOdPdLaOaLasasbcbcaQbcbcasawasabababababababababababababababababababababababababaa
+aaababababababababababababaiababasawasasasaJdydBdBdBdBdBdBdBdBdQdBdBdBdBdBdyblblblblblaLbRbRbRaJblblblblaOdKdKdRdKdKdKdKdKdKaOaLasasbcbcbcbcbcasawasababababababababababahababababababababababababababaa
+aaabababababababdxabababababababasawasasasaJdEdBdBdBdBdBdBdBdBdSdTdUdVdWdXdyblblblblblaLbRbRbRaJblblblbldYdKdKaOdKdKdZeaebecaOaLasasasbcbcbcbcasawasabababababababababababababababababababababababababaa
+aaabababababababababababababababasawasasasaJdEdBdBdBdBdBdBdBdBdBedededededdyblblblblblaLbRbRbRaJblblblblaOdKdKaOdKeedKdKdKdKaOaLasasasbcbcbcasasawasababababababababababababababacababababababababababaa
+aaabababababacababababacabefababasawasasasaJdyegehdBehdBehdBdBdBdBdBdBdBeidyblblblblblaLbRbRbRaJblblblbldJdKdKejekdKelemenecaOaLasasasbcbcbcasasawasababababaiababababababababababababababababababababaa
+aaabababababababababababababababasawasasasaJdEdBdBdBdBdBdBdBdBdBdBdBdBdBdBdyblblbldlblaLbRbRbRaJbyblblblaOeoepaOdKdKdKdKdKdKaOaLasasasbcbcbcasasawasabababababababababababababababababababaiabababababaa
+aaabababababababababababababababasawasasasaJdEdBeqdBeqdBeqdBeresetereuetdBdyblblblblblaLbRbRbRaJblblblblaOaOaOaOevdKewexeyecaOaLasasbcbcbcbcbcasawasabababababababababababababababababababababababababaa
+aaababababababaiabacababababababasawasasasaJdydBdBdBdBezdBdBereAeteBeCetdCdyblblblblblaLbRbRbRaJblblblbleDeEeFaOeGdKdKdKdKdKaOaLasaQaQaQbcbcbcasawasabababababababababababababababababababababeHabababaa
+aaababababacabababababababagababasawasasasaSdydydEdEdEdydEdEdydEdEdydEdEdydyblblblblblaLbRbRbRaJblblblbleIeJeKaOaOaOaOaOaOaOaOaLasaQaQaQbcbcbcasawasababababahababababababababababababababababababababaa
+aaababababababacababababababababasawasaCaDaEaSaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTaTblaLbRbRbRaJblaTaTaTaTaTaTaTaTaTaTaTaTaTaTaUasasasasasasasasawasabababababababababafabababababaiabababababababababaa
+aaababababacabababacabdxabeLababasawasaJaKaLasasasasasasasasasasasasasasaseMeNaCaDaEaJaLbRbRbRaJaLaCaDaEeOePasasasasasasasasasasasasasasaCaDaEasawasababababababaeababababababababababababafabababababaa
+aaabababababababababababababababasawasaSaTaUasasasasasasasasasasasasasasasaseQaJaKaLaJaLbRbRbRaJaLaJaKaLeRasbcbcbcbcaQaQbcasasasasasasasaJaKaLasawasababababababababababababababafababababababababababaa
+aaabababababababababababababababasawasasasasasasasasasasasasasasasasasasasaseQaSaTaUaJaLbRbRbRaJaLaSaTaUeRasbcbcbcbcbcbcbcbcbcbcaQaQaQasaSaTaUasawasababababacababababababababababababababababacabababaa
+aaabababababababababababababababasawasasasasasasasasasasasasasasasasasasasaseMeSeSeSeTeUeVeVeVeWeXeSeSeYePasasaQaQaQbcbcbcbcbcbcaQaQaQasasasasasawasabababababababababababababababababababababababababaa
+aaabababababababababababababababasatauauauauauauauauauauauauauauauauauauauauaueZeZeZfafbfcfcfcfdfeeZeZauauauauauauauauffffffffffffffauauauauauauavasabababababababababababababababababababababababababaa
+aaababababacababababababababababasasasasasasasasasasasasasasasasasasasasasasasfgfgfgfheUeVeVeVeWfifgfgasasasasasaQbcbcbcbcbcbcaQasasasasasasasasasasababababababababababababababababbHaeabababababababaa
+aaabababababababababababababababababababababababababababababababababababababasfjfkfjflaLbRbRbRaJfmaCaDaEabababbnbnbnbnbnaRaRbnbnababababababababababababababababababababahababababababababababababababaa
+aaabababababababababababababababababababababababababababababababababababababasfkfnfofpfqbRbRbRfrfmaJaKaLabababbnbnbnbnabababbnbnabababababababababababababababababababababababababababababababababababaa
+aaababababababababacabababaiabababababdxababababababababababababababababababasfjfkfjflaLbRbRbRaJfmaSaTaUabababababababababababababababababababababababababababaiabababababababababababababaiabababababaa
+aaababababababafababefababababababababababababababababababababacababababababasasasasfpaLbRbRbRaJfmasasasabababababababababababababababababababababababababadabababababababababafabababababababababababaa
+aaababababacabababababababababacabababababababababacababababababababababababasasasasfpaLbRbRbRaJfmasasfsababababafababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababacababababababababababababefabababasasasasfpaLbRbRbRaJfmasasasababababababababababababahababababababababababarabababababababababababababababababababababababaa
+aaababababababdxababababababababababababababababababababababababababababababasasasasfpaLbRftbRaJfmasasasabababababababababababababababababababababababababababababababababababababababababababababababaa
+aaabababababababababababahabababababababababababahababababababacababdxabababasasasasfpaLbRbRbRaJfmasasasabababababababababababababababababababababababababahabababababababababababababababahabababababaa
+aaababababababababababababababacababababababababababababafabababababababababasasasasfpaLbRbRbRaJfmasasasabababababababababababagabababababababahababababababababababababaiabarababababababababababababaa
+aaabababahabarababacababababababababababafabababababababababababababababababasasasasfpaLbRbRbRaJfmasasasabababababababababababababababababahabababababababababababababababababababababababababababababaa
+aaababababababababababababababababababarababababababababababababababababababasasasasfpaLbRbRbRaJfmasasasabababababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababaeabababababababababaiababababababababacabfuabababababababababababasasasasfpaLbRbRbRaJfmasasasababababababahababababababababahabababababababfvabahabababababababababababahabadabababababababaa
+aaabababababababababababababababababababababdxabababababababababababababababasasasasfpaLbRbRbRaJfmasasasababababababababababababababababababaeababahabababababababababababahabababababababababababababaa
+aaabababacabababababababagababababababababababababababababababaiababababababasasasasfpaLbRbRbRaJfmasasasabababababababababababababahabababababababababababababababababababababababababababababababababaa
+aaababababababababababababefababababababababababababababababababababababababasasasasfpaLbRftbRaJfmasasasabababababababababababahabababababababababababababaiabababababababababababababababababahabababaa
+aaababababababaiahababababababababababacababababababababababababababababababasasasasfpaLbRbRbRaJfmasasasababababababababarabababababababababababababababababababababababababaeababababababababababababaa
+aaababarababababababababacabababababababababababababababababababababahabababasasasasfpaLbRbRbRaJfmasasasababababababababababababababababababahabababababababababababababfvabababfwabahababababababababaa
+aaabababababababababababababababababababababababahabababababababababababababasasasasfpaLbRbRbRaJfmasasasabababagababababababadabababababafababababababadabababababababababababfxababababababfyababababaa
+aaabfzabababababfzababababababababababababababababababacababababababababababasasasasfpaLbRbRbRaJfmasasasabababababababababababababababababababababababahababababababahababababababababababababababababaa
+aaababababacabababababababababarabababababababababababababababababababababagasasasasfpaLbRbRbRaJfmasasasabababababababababababababababababababababababababababababababababababababababababababababababaa
+aaabababababababababacabababababababababababababababababababababababababababasasasasfpaLbRbRbRaJfmasasasabababababababababababababababababababarabababababababababababababababababababfxabababababababaa
+aaabababababababababababababababababababababababababababababababababababababasasasasfpaLbRbRbRaJfmasasasababababababababababahababababagabababababababababababaeababababababababfyababababababfyabababaa
+aaabababababfzabababaeababababababababafababababababababababababacabababababasasasasfpaLbRftbRaJfmasfAasababababafababababababababababababababababababababababababababababababababababababababababababaa
+aaababacabababababababababababababababababababacababababababababababababababasasasasfpaLbRbRbRaJfmasasasababababababababababababababababahababababahababababababababababababababababababahababababababaa
+aaabababababababababababagabababaiababababababababababahabababababababahababasasasasfpaLbRfBbRaJfmasasasabababababababababababababababababababababababababababahabababfxabababababababababababababababaa
+aaabababfzabababababababababababababababababarabababababababababacabababababasasasasfpaLbRbRbRaJfmasasasabababababababababababababababababababababababababababababababababababababababababfyabababababaa
+aaabababababababababacabababababababababababababababababababababababababababasasasasfCfDfEfEfEfFfGasasasabababababababababababababababababababababababababababababababababababababababababababababababaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
