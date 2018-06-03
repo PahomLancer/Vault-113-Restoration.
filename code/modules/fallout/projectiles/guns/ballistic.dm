@@ -27,7 +27,7 @@
 	desc = "The Smith & Wesson Model 29 is a powerful six-shot double-action revolver, manufactured by the U.S. company Smith & Wesson since 1955.<br>Centuries later, copies of it can still be found in the wastes."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	origin_tech = "combat=2;materials=2"
-	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44 ///obj/item/ammo_box/F13/m44 //
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	burst_size = 1

@@ -43,6 +43,13 @@
 	price = 800
 	recoil = 1
 
+/obj/item/weapon/gun/energy/plasma/pistol/cyborg
+	name = "cyborg plasma pistol"
+	desc = "An integrated plasma pistol that draws from a cyborg's power cell. This weapon contains a limiter to prevent the cyborg's power cell from overheating."
+	fire_delay = 3
+	can_charge = 0
+	use_cyborg_cell = 1
+
 /obj/item/weapon/gun/energy/plasma/tri
 	name ="Multiplas"
 	icon_state = "multiplas"
@@ -98,6 +105,14 @@
 	fire_delay = 3
 	w_class = 2
 	price = 500
+
+/obj/item/weapon/gun/energy/laser/pistol/wattz1000
+	name ="Wattz 1000 Pistol"
+	icon_state = "wattz1000"
+	desc = "A Wattz 1000 laser pistol. As the pistol is a civilian model, the wattage is lower than military or police versions. The reason for this is that it uses a laser focusing diode instead of a crystal array. For security, it can be locked down for transport, with a proper arming sequence needed to render it operable again."
+	origin_tech = "combat=2;magnets=2"
+	fire_delay = 3.5
+	price = 400
 
 /obj/item/weapon/gun/energy/laser/rifle
 	name ="Laser Rifle AER9"

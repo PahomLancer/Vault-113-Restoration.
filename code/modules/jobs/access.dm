@@ -481,7 +481,9 @@
 	"Raider",
 	"Settler",
 	"Adventurer",
-	"Mercenary")
+	"Mercenary",
+	"Overseer",
+	"Vault dweller")
 
 /proc/get_all_job_icons() //For all existing HUD icons
 	return get_all_jobs() + list("Prisoner")

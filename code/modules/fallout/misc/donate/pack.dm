@@ -88,8 +88,9 @@
 		/datum/job/mayor,
 		/datum/job/general,
 		/datum/job/legate,
-		/datum/job/elder,
-		/datum/job/colonel
+		///datum/job/elder,
+		///datum/job/colonel,
+		/datum/job/overseer
 		)
 	price = -1
 

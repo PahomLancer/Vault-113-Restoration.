@@ -80,7 +80,7 @@
 	desc = "Designed to quickly reload revolvers."
 	icon_state = "b38"
 	ammo_type = /obj/item/ammo_casing/F13/m44
-	max_ammo = 6
+	max_ammo = 7
 	multiple_sprites = 1
 	self_weight = 0.2
 

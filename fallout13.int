@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1527864567
-DIR: _maps _maps\map_files _maps\map_files\debug _maps\map_files\Denwer _maps\map_files\Denwer\backup _maps\map_files\generic _maps\map_files\TexasWasteland _maps\map_files\TexasWasteland\backup _maps\map_files\TexasWasteland\backup\backup _maps\map_files\TgStation _maps\RandomRuins _maps\RandomRuins\LavaRuins _maps\RandomRuins\SpaceRuins _maps\RandomZLevels _maps\shuttles _maps\templates code code\game code\game\objects code\game\objects\effects code\game\objects\effects\spawners code\modules code\modules\clothing code\modules\crafting code\modules\crafting\recipes code\modules\fallout code\modules\fallout\obj code\modules\fallout\obj\clothing code\modules\fallout\obj\clothing\head code\modules\fallout\obj\spawners icons icons\fallout icons\fallout\objects icons\fallout\objects\structures icons\fallout\turfs 
+LAST_COMPILE_TIME: 1528014235
+DIR: _maps _maps\map_files _maps\map_files\Denwer code code\modules code\modules\fallout code\modules\fallout\areas code\modules\fallout\misc code\modules\fallout\misc\donate code\modules\fallout\misc\jobs code\modules\fallout\misc\jobs\faction code\modules\fallout\misc\jobs\job code\modules\fallout\misc\jobs\status goon\code goon\code\datums 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 511.1385
-WINDOW: _maps\map_files\TexasWasteland\texas_wasteland.dmm;_maps\texas.dm;_maps\map_files\Denwer\denwer.dmm;_maps\map_files\TexasWasteland\z2.dmm;_maps\map_files\Denwer\tunnel1.dmm;_maps\map_files\Denwer\denwersurface.dmm;code\modules\fallout\areas\area.dm;icons\fallout\turfs\areas.dmi;icons\fallout\objects\structures\stationary.dmi;_maps\map_files\Denwer\denwersewers.dmm;_maps\map_files\Denwer\fartexas.dmm
+WINDOW: code\modules\fallout\advanced\eye\console.dm;code\modules\fallout\advanced\vertibird\console.dm;code\modules\fallout\advanced\vertibird\vertibird.dm;code\modules\fallout\areas\area.dm;code\modules\fallout\misc\jobs\jobs.dm;code\modules\fallout\misc\jobs\faction\faction.dm;code\modules\fallout\misc\jobs\status\status.dm;code\modules\fallout\projectiles\guns\energy.dm;_maps\map_files\Denwer\denwersewers.dmm;_maps\map_files\Denwer\denwersurface.dmm;code\modules\fallout\misc\jobs\job\vault.dm;code\modules\fallout\misc\jobs\job\enclave.dm;code\modules\jobs\jobs.dm;code\modules\fallout\misc\jobs\whitelist.dm;code\modules\fallout\misc\jobs\job\brotherhood.dm;code\modules\fallout\misc\donate\pack.dm
 FILE: _maps\map_files\Denwer\denwersurface.dmm
 */
 // END_INTERNALS

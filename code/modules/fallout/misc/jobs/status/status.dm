@@ -272,6 +272,21 @@ mob/proc/set_status(var/status)
 	purge_faction = "acolytes"
 	color = "#306300"
 
+//Vault
+
+/datum/status/overseer
+	name = "Overseer"
+	id = "overseer"
+	can_invite_to = list("dweller")
+	purge_faction = "vault"
+	color = "#005A20"
+
+/datum/status/dweller
+	name = "Vault Dweller"
+	id = "dweller"
+	purge_faction = "vault"
+	color = "#005A20"
+
 //Enclave
 
 /datum/status/colonel

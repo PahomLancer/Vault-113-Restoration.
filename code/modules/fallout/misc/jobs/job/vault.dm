@@ -2,6 +2,100 @@
 
 /datum/job/overseer
 	title = "Overseer"
+	desc = "Head of the Vault."
+	flag = VAULT_OVERSEER /*CAPTAIN*/
+	department_head = list("Vault")
+	department_flag = ENGSEC //VAULT
+	faction = "Vault"
+	status = "Overseer"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "Vault-tec"
+	selection_color = "#005A20"
+	minimal_player_age = 31
+	req_admin_notify = 1
+
+	allowed_packs = list("starter", "cigarettes", "follower", "bard", "super_ten")
+
+	required_items = list(
+	/obj/item/clothing/glasses/sunglasses,
+	/obj/item/weapon/lighter/engraved
+	)
+
+	denied_items = list(
+	/obj/item/clothing/shoes/f13/rag,
+	/obj/item/clothing/head/f13/headscarf,
+	/obj/item/clothing/head/f13/pot,
+	/obj/item/clothing/under/pants/f13/ghoul,
+	/obj/item/clothing/under/pants/f13/cloth,
+	/obj/item/clothing/under/pants/f13/caravan,
+	/obj/item/clothing/under/f13/rag,
+	/obj/item/clothing/under/f13/tribal,
+	/obj/item/clothing/under/f13/female/tribal,
+	/obj/item/clothing/under/f13/settler,
+	/obj/item/clothing/under/f13/brahmin,
+	/obj/item/clothing/under/f13/female/brahmin,
+	/obj/item/clothing/under/f13/worn,
+	/obj/item/clothing/suit/f13/mantle_liz
+	)
+
+	outfit = /datum/outfit/job/overseer
+
+	access = list()
+	minimal_access = list()
+
+/datum/outfit/job/overseer
+	name = "Overseer"
+
+	id = /obj/item/weapon/card/id/gold
+	//gloves = /obj/item/clothing/gloves/pda
+	glasses = /obj/item/clothing/glasses/sunglasses
+//	ears = /obj/item/device/radio/headset/headset_vlt
+	//gloves = /obj/item/clothing/gloves/color/captain
+	r_pocket = /obj/item/device/pda/captain
+	uniform = /obj/item/clothing/under/f13/vault/v13
+	//suit = /obj/item/clothing/suit/armor/vest/capcarapace
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	//head = /obj/item/clothing/head/caphat
+	//backpack_contents = list(/obj/item/weapon/melee/classic_baton/telescopic=1)
+
+	//backpack = /obj/item/weapon/storage/backpack/captain
+	//satchel = /obj/item/weapon/storage/backpack/satchel_cap
+
+/datum/job/dweller
+	title = "Vault dweller"
+	flag = VAULT_RESIDENT/*ASSISTANT*/
+	department_head = list("Overseer")
+	department_flag = ENGSEC //VAULT
+	faction = "Vault"
+	status = "Member"
+	total_positions = -1
+	spawn_positions = -1
+	supervisors = "overseer"
+	selection_color = "#005A20"
+	access = list()			//See /datum/job/assistant/get_access()
+	minimal_access = list()	//See /datum/job/assistant/get_access()
+	outfit = /datum/outfit/job/dweller
+
+/datum/outfit/job/dweller
+	name = "Vault dweller"
+
+/datum/outfit/job/dweller/pre_equip(mob/living/carbon/human/H)
+	..()
+	uniform = /obj/item/clothing/under/f13/vault/v13
+	id = /obj/item/weapon/card/id
+	r_pocket = /obj/item/device/pda
+//	ears = /obj/item/device/radio/headset/headset_vlt
+	//gloves = /obj/item/clothing/gloves/color/captain
+	//suit = /obj/item/clothing/suit/armor/vest/capcarapace
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	//head = /obj/item/clothing/head/caphat
+ 	//gloves = /obj/item/clothing/gloves/pda
+//	ears = /obj/item/device/radio/headset/headset_vlt
+
+/*
+/datum/job/overseer
+	title = "Overseer"
 	flag = CAPTAIN
 	department_head = list("Centcom")
 	department_flag = ENGSEC
@@ -24,21 +118,21 @@
 	name = "Overseer"
 
 	id = /obj/item/weapon/card/id/gold
-//	gloves = /obj/item/clothing/gloves/pda/captain
+	//gloves = /obj/item/clothing/gloves/pda
 	glasses = /obj/item/clothing/glasses/sunglasses
 //	ears = /obj/item/device/radio/headset/headset_vlt
 	//gloves = /obj/item/clothing/gloves/color/captain
+	r_pocket = /obj/item/device/pda/captain
 	uniform = /obj/item/clothing/under/f13/vault/v13
 	//suit = /obj/item/clothing/suit/armor/vest/capcarapace
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	//head = /obj/item/clothing/head/caphat
-	backpack_contents = list(/obj/item/weapon/storage/box/ids=1,\
-		/obj/item/weapon/melee/classic_baton/telescopic=1)
+	//backpack_contents = list(/obj/item/weapon/melee/classic_baton/telescopic=1)
 
 	//backpack = /obj/item/weapon/storage/backpack/captain
 	//satchel = /obj/item/weapon/storage/backpack/satchel_cap
 
-/datum/job/vlt_engineer
+/*/datum/job/vlt_engineer
 	title = "Engineer"
 	flag = ENGINEER
 	department_head = list("Chief Engineer")
@@ -175,7 +269,7 @@
 	var/list/dep_access = null
 	var/destination = null
 	var/spawn_point = null
-
+*/
 /datum/job/dweller
 	title = "Vault dweller"
 	flag = ASSISTANT
@@ -211,5 +305,13 @@
 /datum/outfit/job/dweller/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = /obj/item/clothing/under/f13/vault/v13
-//	gloves = /obj/item/clothing/gloves/pda
+	id = /obj/item/weapon/card/id
+	r_pocket = /obj/item/device/pda
 //	ears = /obj/item/device/radio/headset/headset_vlt
+	//gloves = /obj/item/clothing/gloves/color/captain
+	//suit = /obj/item/clothing/suit/armor/vest/capcarapace
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	//head = /obj/item/clothing/head/caphat
+ 	//gloves = /obj/item/clothing/gloves/pda
+//	ears = /obj/item/device/radio/headset/headset_vlt
+*/

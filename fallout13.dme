@@ -1294,6 +1294,7 @@
 #include "code\modules\fallout\misc\jobs\job\legion.dm"
 #include "code\modules\fallout\misc\jobs\job\ncr.dm"
 #include "code\modules\fallout\misc\jobs\job\raider.dm"
+#include "code\modules\fallout\misc\jobs\job\vault.dm"
 #include "code\modules\fallout\misc\jobs\job\wastelander.dm"
 #include "code\modules\fallout\misc\jobs\status\status.dm"
 #include "code\modules\fallout\misc\objectives\_defines.dm"
