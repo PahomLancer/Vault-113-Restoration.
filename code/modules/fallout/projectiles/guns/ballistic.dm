@@ -214,6 +214,36 @@
 	price = 500
 	recoil = 2
 
+/obj/item/weapon/gun/ballistic/automatic/assault_rifle/marksman
+	name = "Marksman Carbine"
+	desc = "A 5.56 caliber assault rifle widely seen in use by pre-war U.S. military forces."
+	icon_state = "marksman_rifle"
+	origin_tech = "combat=4;materials=2"
+	fire_sound = 'sound/f13weapons/marksman_rifle.ogg'
+	burst_size = 2
+	price = 1000
+	scopetype = /obj/screen/fullscreen/scope/medium
+
+/obj/item/weapon/gun/ballistic/automatic/assault_rifle/infiltrator
+	name = "Infiltrator"
+	desc = "The Infiltrator is a silenced and scoped assault rifle. Its appearance consists of a black paint finish, a scope, and is basically a shortened and stock-less variant of the R91 assault rifle that was standard-issue in the United States Armed Forces at the time of the Great War. Based on its name, it was probably created to be used for special operations groups. The Infiltrator fires 5.56mm round and utilizes a 20-round magazine."
+	icon_state = "infiltrator"
+	origin_tech = "combat=5;materials=2"
+	fire_sound = 'sound/f13weapons/infiltrator.ogg'
+	burst_size = 2
+	price = 1400
+	scopetype = /obj/screen/fullscreen/scope/medium
+	can_suppress = 1
+	suppressed = 1
+
+/obj/item/weapon/gun/ballistic/automatic/assault_rifle/chinese
+	name = "Chinese assault rifle"
+	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. To this end, it was chambered for the abundant 5.56mm round and utilizes a 20-round magazine. Thousands of these weapons were smuggled into the US for use by Chinese operatives and sympathizers on the East Coast, and many remain functional even two hundred years after the Great War. These rifles are also proven to be ready for manufacturing in post-War conditions."
+	icon_state = "chinese"
+	fire_sound = 'sound/f13weapons/chinese.ogg'
+	burst_size = 2
+	price = 400
+
 /obj/item/weapon/gun/ballistic/automatic/bozar
 	name = "\improper Bozar"
 	desc = "The ultimate refinement of the sniper's art.<br>Although somewhat finicky and prone to jamming if not kept immacuately clean, its accuracy more than makes up for its extra maintenance requirements."

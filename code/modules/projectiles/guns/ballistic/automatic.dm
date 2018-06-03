@@ -257,6 +257,37 @@
 	pin = /obj/item/device/firing_pin/implant/pindicate
 	actions_types = list()
 
+/obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/riot_shotgun
+	name = "Riot Shotgun"
+	desc = "A shotgun, also called a scattergun, is a firearm designed to shoot a multitude of lead or steel balls of varying sizes, greatly increasing the weapon's hit potential. This makes it very effective at hunting game. However, the accuracy and power found at close range starts to diminish as the target gets farther away. Shotguns designed for the military's use are often called combat shotguns."
+	icon_state = "riot_shotgun"
+	//icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	origin_tech = "combat=6"
+	weapon_weight = WEAPON_HEAVY
+	slot_flags = SLOT_BACK
+	w_class = WEIGHT_CLASS_BULKY
+	wielded_icon = "cshotgun1"
+	price = 2000
+	recoil = 2
+	pin = /obj/item/device/firing_pin
+	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
+
+/obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/pancor
+	name = "Pancor Jackhammer"
+	desc = "This is the strongest shotgun, having greater range, damage and burst fire capabilities and is able with a good burst to shred against strong foes."
+	icon_state = "pancor"
+	//icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	origin_tech = "combat=6"
+	weapon_weight = WEAPON_HEAVY
+	slot_flags = SLOT_BACK
+	w_class = WEIGHT_CLASS_BULKY
+	wielded_icon = "cshotgun1"
+	price = 3000
+	recoil = 2
+	burst_size = 3
+	pin = /obj/item/device/firing_pin
+	fire_sound = 'sound/f13weapons/pancor.ogg'
+
 /obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/unrestricted
 	pin = /obj/item/device/firing_pin
 
@@ -274,7 +305,7 @@
 /obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/update_icon()
 	src.overlays = 0
 	update_magazine()
-	icon_state = "bulldog[chambered ? "" : "-e"]"
+	//icon_state = "bulldog[chambered ? "" : "-e"]"
 
 /obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/afterattack()
 	..()

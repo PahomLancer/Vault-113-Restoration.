@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1528022994
-DIR: _maps _maps\map_files _maps\map_files\Denwer code code\modules code\modules\fallout code\modules\fallout\advanced code\modules\fallout\advanced\eye code\modules\fallout\advanced\vertibird code\modules\fallout\areas code\modules\fallout\misc code\modules\fallout\misc\donate code\modules\fallout\misc\jobs code\modules\fallout\misc\jobs\faction code\modules\fallout\misc\jobs\job code\modules\fallout\misc\jobs\status code\modules\fallout\projectiles code\modules\fallout\projectiles\guns code\modules\jobs 
+LAST_COMPILE_TIME: 1528053099
+DIR: _maps _maps\map_files _maps\map_files\Denwer code code\modules code\modules\fallout code\modules\fallout\projectiles code\modules\projectiles code\modules\projectiles\guns code\modules\projectiles\guns\ballistic code\modules\projectiles\guns\energy code\modules\projectiles\guns\magic icons icons\fallout icons\fallout\objects icons\fallout\objects\guns 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 511.1385
-WINDOW: code\modules\fallout\projectiles\guns\energy.dm;_maps\map_files\Denwer\denwersewers.dmm;_maps\map_files\Denwer\denwersurface.dmm;code\modules\fallout\misc\jobs\job\vault.dm;code\modules\fallout\misc\jobs\job\foa.dm;_maps\denwer.dm;_maps\texas.dm;code\modules\fallout\misc\jobs\jobs.dm;code\modules\fallout\misc\jobs\faction\faction.dm;code\modules\fallout\misc\jobs\status\status.dm;code\modules\fallout\misc\jobs\job\fob.dm;code\modules\fallout\misc\jobs\job\legion.dm;code\modules\fallout\misc\jobs\job\ncr.dm
-FILE: code\modules\fallout\misc\jobs\job\vault.dm
+WINDOW: code\modules\fallout\projectiles\guns\energy.dm;_maps\map_files\Denwer\denwersewers.dmm;_maps\map_files\Denwer\denwersurface.dmm;icons\fallout\objects\structures\doors.dmi;code\modules\fallout\projectiles\guns\ballistic.dm;code\modules\projectiles\guns\ballistic\automatic.dm;code\modules\fallout\projectiles\projectile.dm;icons\fallout\objects\guns\ballistic.dmi;icons\obj\guns\projectile.dmi;code\modules\projectiles\guns\energy\tesla.dm;icons\fallout\objects\guns\energy.dmi
+FILE: _maps\map_files\Denwer\denwersurface.dmm
 */
 // END_INTERNALS

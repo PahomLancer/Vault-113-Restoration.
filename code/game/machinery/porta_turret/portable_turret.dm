@@ -5,6 +5,7 @@
 	name = "turret"
 	icon = 'icons/obj/turrets.dmi'
 	icon_state = "turretCover"
+
 	anchored = 1
 	layer = OBJ_LAYER
 	invisibility = INVISIBILITY_OBSERVER	//the turret is invisible if it's inside its cover
@@ -551,6 +552,19 @@
 /obj/machinery/porta_turret/syndicate/assess_perp(mob/living/carbon/human/perp)
 	return 10 //Syndicate turrets shoot everything not in their faction
 
+/obj/machinery/porta_turret/syndicate/enclave
+	stun_projectile = /obj/item/projectile/beam/plasma
+	lethal_projectile = /obj/item/projectile/beam/plasma
+	lethal_projectile_sound = 'sound/f13weapons/plasmarifle.ogg'
+	stun_projectile_sound = 'sound/f13weapons/plasmarifle.ogg'
+	icon_state = "turretCover"
+	base_icon_state = "standard"
+	faction = "enclave"
+	emp_vunerable = 1
+	always_up = 0
+	use_power = 1
+	has_cover = 1
+
 /obj/machinery/porta_turret/syndicate/pod
 	obj_integrity = 40
 	stun_projectile = /obj/item/projectile/bullet/weakbullet3
@@ -561,6 +575,7 @@
 
 /obj/machinery/porta_turret/ai/assess_perp(mob/living/carbon/human/perp)
 	return 10 //AI turrets shoot at everything not in their faction
+
 
 ////////////////////////
 //Turret Control Panel//
