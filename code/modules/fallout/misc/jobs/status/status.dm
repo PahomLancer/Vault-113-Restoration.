@@ -353,3 +353,17 @@ mob/proc/set_status(var/status)
 	id = "follower"
 	purge_faction = "followers"
 	color = "#000"
+
+// FOB
+/datum/status/overseer
+	name = "Overseer"
+	id = "overseer"
+	can_invite_to = list("dweller")
+	purge_faction = "vault"
+	color = "#005A20"
+
+/datum/status/dweller
+	name = "Vault Dweller"
+	id = "dweller"
+	purge_faction = "vault"
+	color = "#005A20"

@@ -342,6 +342,18 @@ mob/proc/set_faction(var/faction)
 	area = /area/f13/followers
 	karma = 10
 
+/datum/f13_faction/vault
+	name = "Vault"
+	color = "#005A20"
+	id = "vault"
+	full_name = "Vault-Tec Corporation"
+	description = "<b>Alignment: True Neutral</b><br>The Vault-Tec Corporation, or simply the VTC - A former company contracted by the United States government before the Great War to design and produce the Vault system, a vast network of complex fallout and research shelters.<br>When the bombs fell, thousands of carefully-selected Vault dwellers were sealed within the safe confinement of the Vaults, and their lucky descendants have (mostly) lived to the present day."
+	preview_image = 'html/factions/vault.png'
+	head_status = "overseer"
+	verbs = list(/mob/proc/begin_head_voting)
+	area = /area/f13/vault
+	karma = 15
+
 /datum/f13_faction/acolytes
 	name = "Acolytes"
 	color = "#204200"

@@ -36,8 +36,6 @@ var/const/PALADIN			=(1<<2)
 var/const/KNIGHT			=(1<<3)
 var/const/SCRIBER			=(1<<5)
 */
-var/const/VAULT_OVERSEER	=(1<<1)
-var/const/VAULT_RESIDENT	=(1<<2/*5*/)
 
 var/const/CITIZEN			=(1<<4)
 
@@ -48,9 +46,13 @@ var/const/CITIZEN			=(1<<4)
 var/const/FOA				=(1<<8)
 var/const/AFOLLOWER			=(1<<0)
 
-//var/const/VAULT			=(1<<9)
+var/const/FOB				=(1<<9)
+var/const/VAULT_OVERSEER	=(1<<0)
+var/const/VAULT_RESIDENT	=(1<<1)
+
+//var/const/VAULT			=(1<<10)
 //var/const/VAULT_OVERSEER	=(1<<0)
-//var/const/VAULT_RESIDENT	=(1<<1/*5*/)
+//var/const/VAULT_RESIDENT	=(1<<1)
 ///var/const/VAULT_MEDIC		=(1<<1)
 ///var/const/VAULT_SCIENTIST	=(1<<2)
 ///var/const/VAULT_SECURITY	=(1<<3)

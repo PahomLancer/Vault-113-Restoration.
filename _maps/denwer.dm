@@ -10,7 +10,7 @@
 		#define MAP_PATH "map_files/Denwer"
         #define MAP_FILE "denwersurface.dmm"
         #define MAP_NAME "Denwer Wasteland"
-        #define MAP_FACTIONS_LIST list("bs", "enclave", "none", "city", "raiders","ncr","legion","followers","vault","atom")
+		#define MAP_FACTIONS_LIST list("vault","bs", "enclave", "none", "city", "raiders","ncr","legion","followers","vault")
 
 		#define MAP_TRANSITION_CONFIG list()
 
