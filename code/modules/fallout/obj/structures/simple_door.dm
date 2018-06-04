@@ -363,9 +363,22 @@
 	explosion_block = 5
 	hard_open = 0
 
+/obj/structure/simple_door/bunker/vault
+	desc = "Vault door."
+	icon_state = "vault"
+	door_type = "vault"
+	explosion_block = 8
+
 /obj/structure/simple_door/bunker/glass
 	desc = "An olive green painted airlock, with semi-transparent glass window.<br>The door mechanism itself is a complex mix of an electic engine and hydraulic motion.<br>This particular door looks like a pre-War military tech."
 	icon_state = "bunkerglass"
 	door_type = "bunkerglass"
 	explosion_block = 4 //A glass window in it, reduces the resistance, am I right?
+	opaque = 0
+
+/obj/structure/simple_door/bunker/glass/vault
+	desc = "Vault glass door."
+	icon_state = "vault_glass"
+	door_type = "vault_glass"
+	explosion_block = 7 //A glass window in it, reduces the resistance, am I right?
 	opaque = 0

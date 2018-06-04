@@ -1,5 +1,35 @@
 //Fallout 13 melee weapons directory
 
+/obj/item/stack/spear
+	name = "Throwing spears"
+	desc = "A lightweight throwing spear made to be thrown at assailants, has a pretty sharp point."
+	singular_name = "Throwing spear"
+	icon_state = "throw_spear"
+	icon = 'icons/fallout/objects/melee.dmi'
+	item_state = "tribalspear"
+	flags = CONDUCT
+	w_class = 3
+	force = 20
+	throwforce = 50		//I need to add armor pen eventually.
+	throw_speed = 3
+	throw_range = 10
+	materials = list(MAT_METAL=1000)
+	embedded_impact_pain_multiplier = 5
+	max_amount = 5
+	attack_verb = list("attacked", "poked", "jabbed", "torn", "gored")
+	sharpness = IS_SHARP
+	hitsound = 'sound/weapons/bladeslice.ogg'
+
+/obj/item/stack/spear/update_icon()
+	var/amount = get_amount()
+	if((amount <= 5) && (amount > 0))
+		icon_state = "throw_spear[amount]"
+	else
+		icon_state = "throw_spear"
+
+/obj/item/stack/spear/bundle
+	amount = 5
+
 /obj/item/weapon/twohanded/baseball
 	name = "baseball bat"
 	desc = "A wooden source of joy and pain."
@@ -14,7 +44,7 @@
 	max_integrity = 200
 
 /obj/item/weapon/machete
-	name = "\proper machete"
+	name = "Broad Machete"
 	desc = "The machete appears to be a makeshift weapon, as it consists of a lawn mower blade strapped to a wooden handle.<br>It is the primary melee weapon of Caesar's Legion."
 	icon = 'icons/fallout/objects/melee.dmi'
 	icon_state = "machete"
@@ -28,6 +58,18 @@
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	block_chance = 20
 	sharpness = IS_SHARP
+
+/obj/item/weapon/machete/imp_machete
+	name = "Improvised machete"
+	desc = "This big, long, sharp blade is good for cleaving limbs off of the native Joshua trees or from an unlucky mutant. It appears as a long, sharpened lawn mower blade taped to a wooden handle."
+	icon_state = "imp_machete"
+	force = 18
+
+/obj/item/weapon/machete/serratedmachete
+	name = "Serrated machete"
+	desc = "The machete appears to be a makeshift weapon, as it consists of a lawn mower blade strapped to a wooden handle.<br>It is the primary melee weapon of Caesar's Legion. This one serrated."
+	icon_state = "serratedmachete"
+	force = 32
 
 /obj/item/weapon/pipe
 	name = "lead pipe"

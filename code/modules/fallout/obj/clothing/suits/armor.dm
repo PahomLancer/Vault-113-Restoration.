@@ -88,6 +88,18 @@
 	strip_delay = 40
 	self_weight = 3
 
+/obj/item/clothing/suit/armor/f13/sadist
+	name = "sadist raider armor"
+	desc = "Fabulous mutant powers were revealed to me the day I held aloft my bumper sword and said...<br>BY THE POWER OF NUKA-COLA, I AM RAIDER MAN!"
+	icon_state = "sadist"
+	item_state = "sadist"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list(melee = 25, bullet = 15, laser = 5, energy = 0, bomb = 10, bio = 0, rad = 0, fire = 0, acid = 0)
+	flags_inv = HIDEJUMPSUIT
+	put_on_delay = 20
+	strip_delay = 40
+	self_weight = 5
+
 /obj/item/clothing/suit/armor/f13/yankee
 	name = "yankee raider armor"
 	desc = "A set of armor made from football player protective wear. Together we play."
@@ -137,6 +149,32 @@
 	strip_delay = 60
 	resistance_flags = FIRE_PROOF
 	self_weight = 15
+
+/obj/item/clothing/suit/armor/f13/metal_chestplate_f2
+	name = "Metal armor"
+	desc = "Polished metal plates, crudely forming a suit of armor."
+	icon_state = "metal_chestplate_f2"
+	item_state = "metal_chestplate_f2"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	armor = list(melee = 50, bullet = 35, laser = 35, energy = 30, bomb = 40, bio = 0, rad = 0, fire = 20, acid = 0)
+	flags_inv = HIDEJUMPSUIT
+	put_on_delay = 60
+	strip_delay = 60
+	resistance_flags = FIRE_PROOF
+	self_weight = 15
+
+/obj/item/clothing/suit/armor/f13/metal_chestplate2
+	name = "Metal armor Mk II"
+	desc = "Metal armor Mk II is superior version of the regular metal armor."
+	icon_state = "metal_chestplate2"
+	item_state = "metal_chestplate2"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	armor = list(melee = 60, bullet = 40, laser = 50, energy = 30, bomb = 40, bio = 0, rad = 0, fire = 20, acid = 0)
+	flags_inv = HIDEJUMPSUIT
+	put_on_delay = 60
+	strip_delay = 60
+	resistance_flags = FIRE_PROOF
+	self_weight = 14
 
 /obj/item/clothing/suit/armor/f13/legrecruit
 	name = "recruit armor"
@@ -211,6 +249,18 @@
 	resistance_flags = FIRE_PROOF
 	self_weight = 10
 
+/obj/item/clothing/suit/armor/f13/brotherhood_armor
+	name = "Brotherhood combat armor"
+	desc = "A superior version of combat armor. The Brotherhood of Steel have made many improvements over the standard version."
+	icon_state = "brotherhood_armor"
+	item_state = "brotherhood_armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET
+	armor = list(melee = 70, bullet = 60, laser = 40, energy = 35, bomb = 50, bio = 0, rad = 0, fire = 50, acid = 40)
+	put_on_delay = 70
+	strip_delay = 70
+	resistance_flags = FIRE_PROOF
+	self_weight = 11
+
 /obj/item/clothing/suit/armor/f13/ncr
 	name = "trooper armor"
 	desc = "A set of NCR armor that consists of an armored breastplate, metal pauldrons, and gauntlets. Worn by NCR troops in combat environments.<br>It's attached via leather straps and buckles."
@@ -218,6 +268,27 @@
 	item_state = "ncr_armor1"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list(melee = 30, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 10, fire = 10, acid = 10)
+	put_on_delay = 50
+	strip_delay = 50
+	resistance_flags = FIRE_PROOF
+	self_weight = 5
+
+/obj/item/clothing/suit/armor/f13/ncr/ncr_mantle
+	name = "ncr mantle armor"
+	icon_state = "ncr_mantle"
+	item_state = "ncr_mantle"
+	body_parts_covered = CHEST|GROIN|ARMS
+	put_on_delay = 50
+	strip_delay = 50
+	resistance_flags = FIRE_PROOF
+	self_weight = 3
+
+/obj/item/clothing/suit/armor/f13/ncr/ncr_vest
+	name = "ncr vest armor"
+	icon_state = "ncr_vest"
+	item_state = "ncr_vest"
+	body_parts_covered = CHEST|GROIN|ARMS
+	armor = list(melee = 40, bullet = 30, laser = 20, energy = 10, bomb = 20, bio = 0, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 50
 	strip_delay = 50
 	resistance_flags = FIRE_PROOF
@@ -304,6 +375,22 @@
 	armor = list(melee = 40, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 0, rad = 40, fire = 20, acid = 20)
 	self_weight = 2
 
+/obj/item/clothing/suit/armor/f13/rangercombat/desert_ranger
+	name = "Desert ranger combat armor"
+	desc = "A unique armor, that has been in countless battles and caused much bloodshed."
+	icon_state = "desert_ranger"
+	item_state = "desert_ranger"
+	armor = list(melee = 50, bullet = 25, laser = 35, energy = 30, bomb = 30, bio = 0, rad = 50, fire = 40, acid = 30)
+	self_weight = 2
+
+/obj/item/clothing/suit/armor/f13/rangercombat/elite_riot
+	name = "Elite riot ranger combat armor"
+	desc = "The elite riot gear is a unique armor and the most advanced model of L.A.P.D. riot armor, superior to the pre-War 11th Armored Cavalry Regiment riot armor. Originally an 11th Armored Cavalry Regiment riot armor that was modified over time, it was the personal armor of an NCR riot control officer in the Divide, supervising the NCR riot operation in the Third Street Municipal Building before the destruction of the Divide."
+	icon_state = "elite_riot"
+	item_state = "elite_riot"
+	armor = list(melee = 65, bullet = 35, laser = 35, energy = 30, bomb = 30, bio = 0, rad = 60, fire = 40, acid = 30)
+	self_weight = 3
+
 /obj/item/clothing/suit/armor/f13/battlecoat //Maxson's battlecoat from Fallout 4
 	name = "battlecoat"
 	desc = "A heavy padded leather coat, worn by pre-War bomber pilots in the past and post-War zeppelin pilots in the future."
@@ -347,15 +434,15 @@
 	..()
 */
 
-/*
+
 /obj/item/clothing/suit/armor/f13/power_armor/ncr
 	name = "salvaged power armor"
 	desc = "A set of T-45d power armor recovered by the NCR during the NCR-Brotherhood War.<br>NCR technicians have restored it to working order by replacing the back-mounted cylinders with a custom air conditioning module and stripping out the joint servomotors.<br>Due to the lack of servomotors in the limbs, this armor is so heavy that it feels like you're carrying a brahmin on your back!"
 	icon_state = "t45bpowerarmor"
 	item_state = "t45bpowerarmor"
-	armor = list(melee = 80, bullet = 70, laser = 40, energy = 30, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 50)
-	self_weight = 60
-*/
+	armor = list(melee = 70, bullet = 70, laser = 40, energy = 30, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 50)
+	self_weight = 45
+
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"

@@ -12,6 +12,30 @@
 	explosion(src.loc,1,2,4,flame_range = 2)
 	qdel(src)
 
+/obj/item/weapon/grenade/syndieminibomb/dynamite
+	desc = "A stick of dynamite. The merchant of death's making bank. Light the fuse and toss."
+	name = "Dynamite"
+	icon_state = "dynamite"
+	origin_tech = "materials=1;magnets=2"
+	det_time = 30
+
+/obj/item/weapon/grenade/syndieminibomb/dynamite/prime()
+	update_mob()
+	explosion(src.loc,1,3,6,flame_range = 0)
+	qdel(src)
+
+/obj/item/weapon/grenade/syndieminibomb/tincan
+	desc = "Some powder in tincan."
+	name = "Tincan"
+	icon_state = "tincan"
+	origin_tech = "materials=1;magnets=2"
+
+/obj/item/weapon/grenade/syndieminibomb/tincan/prime()
+	update_mob()
+	explosion(src.loc,1,4,10,flame_range = 0)
+	qdel(src)
+
+
 /obj/item/weapon/grenade/syndieminibomb/concussion
 	name = "HE Grenade"
 	desc = "A compact shrapnel grenade meant to devestate nearby organisms and cause some damage in the process. Pull pin and throw opposite direction."
@@ -20,7 +44,7 @@
 
 /obj/item/weapon/grenade/syndieminibomb/concussion/prime()
 	update_mob()
-	explosion(src.loc,0,2,3,flame_range = 3)
+	explosion(src.loc,2,8,16,flame_range = 0)
 	qdel(src)
 
 /obj/item/weapon/grenade/syndieminibomb/concussion/frag

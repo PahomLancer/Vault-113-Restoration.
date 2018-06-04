@@ -62,6 +62,30 @@
 	manifest = null
 	update_icon()
 
+/obj/structure/closet/crate/vault_blue
+	name = "blue vault crate"
+	desc = "A rectangular blue steel vault crate."
+	icon = 'icons/fallout/objects/crates.dmi'
+	icon_state = "vault_blue"
+
+/obj/structure/closet/crate/vault_yellow
+	name = "yellow vault crate"
+	desc = "A rectangular yellow steel vault crate."
+	icon = 'icons/fallout/objects/crates.dmi'
+	icon_state = "vault_yellow"
+
+/obj/structure/closet/crate/orange
+	name = "orange crate"
+	desc = "A rectangular orange steel crate."
+	icon = 'icons/fallout/objects/crates.dmi'
+	icon_state = "orange"
+
+/obj/structure/closet/crate/cratebloody
+	name = "bloody crate"
+	desc = "A rectangular bloody steel crate."
+	icon = 'icons/fallout/objects/crates.dmi'
+	icon_state = "cratebloody"
+
 /obj/structure/closet/crate/internals
 	desc = "A internals crate."
 	name = "internals crate"

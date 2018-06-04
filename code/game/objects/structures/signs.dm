@@ -226,6 +226,48 @@
 	desc = "A sign labelling an area where research and science is performed."
 	icon_state = "science1"
 
+/obj/structure/sign/vault
+	name = "Vault"
+	desc = "Vault"
+	icon_state = "vault"
+	icon = 'icons/fallout/misc/factions.dmi'
+
+/obj/structure/sign/enclave
+	name = "Enclave"
+	desc = "Enclave"
+	icon_state = "enclave"
+	icon = 'icons/fallout/misc/factions.dmi'
+
+/obj/structure/sign/ncr
+	name = "NCR"
+	desc = "NCR"
+	icon_state = "ncr"
+	icon = 'icons/fallout/misc/factions.dmi'
+
+/obj/structure/sign/legion
+	name = "Legion"
+	desc = "Legion"
+	icon_state = "legion"
+	icon = 'icons/fallout/misc/factions.dmi'
+
+/obj/structure/sign/brotherhood
+	name = "Brotherhood"
+	desc = "Brotherhood"
+	icon_state = "brotherhood"
+	icon = 'icons/fallout/misc/factions.dmi'
+
+/obj/structure/sign/raider
+	name = "Raider"
+	desc = "Raider"
+	icon_state = "raider"
+	icon = 'icons/fallout/misc/factions.dmi'
+
+/obj/structure/sign/followers
+	name = "Followers"
+	desc = "Followers"
+	icon_state = "followers"
+	icon = 'icons/fallout/misc/factions.dmi'
+
 /obj/structure/sign/chemistry
 	name = "\improper CHEMISTRY"
 	desc = "A sign labelling an area containing chemical equipment."

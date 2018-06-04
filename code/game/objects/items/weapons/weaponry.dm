@@ -185,17 +185,25 @@ var/highlander_claymores = 0
 	icon = 'icons/fallout/objects/melee.dmi'
 	flags = CONDUCT
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 25
+	force = 30
 	throwforce = 10
 	w_class = WEIGHT_CLASS_NORMAL
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	block_chance = 2
+	block_chance = 20
 	sharpness = IS_SHARP
 	obj_integrity = 200
 	max_integrity = 200
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 100, acid = 50)
 	resistance_flags = FIRE_PROOF
+
+/obj/item/weapon/katana/chinese
+	name = "Chinese officer sword"
+	desc = "A grimy Chinese straight sword with a leather and bronze hilt. It was wielded by Chinese officers before the Great War."
+	icon_state = "chinese"
+	icon = 'icons/fallout/objects/melee.dmi'
+	force = 35
+	block_chance = 25
 
 /obj/item/weapon/katana/cursed
 	slot_flags = null
@@ -454,6 +462,30 @@ var/highlander_claymores = 0
 	w_class = WEIGHT_CLASS_HUGE
 	var/homerun_ready = 0
 	var/homerun_able = 0
+
+/obj/item/weapon/melee/baseball_bat/barbedbat
+	name = "Barbed bat"
+	desc = "This is a long, smooth wooden bat, typically made of ash, for use in the sport of baseball. Under MLB regulations, a baseball bat cannot exceed 2.61 inches in diameter at the widest point, can be no longer than 42 inches, and must be a single solid piece. Bats found in the Commonwealth have a base weight of three pounds, approaching the weight of bats used in the early 20th century by players like Babe Ruth."
+	icon = 'icons/fallout/objects/melee.dmi'
+	icon_state = "barbedbat"
+	force = 16
+	throwforce = 16
+
+/obj/item/weapon/melee/baseball_bat/spikedbat
+	name = "Spiked bat"
+	desc = "This is a long, smooth wooden bat, typically made of ash, for use in the sport of baseball. Under MLB regulations, a baseball bat cannot exceed 2.61 inches in diameter at the widest point, can be no longer than 42 inches, and must be a single solid piece. Bats found in the Commonwealth have a base weight of three pounds, approaching the weight of bats used in the early 20th century by players like Babe Ruth."
+	icon = 'icons/fallout/objects/melee.dmi'
+	icon_state = "spikedbat"
+	force = 18
+	throwforce = 16
+
+/obj/item/weapon/melee/baseball_bat/bladedbat
+	name = "Bladed bat"
+	desc = "This is a long, smooth wooden bat, typically made of ash, for use in the sport of baseball. Under MLB regulations, a baseball bat cannot exceed 2.61 inches in diameter at the widest point, can be no longer than 42 inches, and must be a single solid piece. Bats found in the Commonwealth have a base weight of three pounds, approaching the weight of bats used in the early 20th century by players like Babe Ruth."
+	icon = 'icons/fallout/objects/melee.dmi'
+	icon_state = "bladedbat"
+	force = 25
+	throwforce = 20
 
 /obj/item/weapon/melee/baseball_bat/homerun
 	name = "home run bat"

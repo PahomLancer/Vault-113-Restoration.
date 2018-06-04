@@ -516,6 +516,167 @@
 /obj/item/toy/talking/AI/generate_messages()
 	return list(generate_ion_law())
 
+/obj/item/toy/talking/strength
+	name = "Strength bobblehead"
+	desc = "It's Strength bobblehead"
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "strength"
+	w_class = WEIGHT_CLASS_SMALL
+	recharge_time = 60
+
+/obj/item/toy/talking/strength/activation_message(mob/user)
+	user.visible_message(
+		"<span class='notice'>[user] presses the button on \the [src].</span>",
+		"<span class='notice'>You press the button on \the [src].</span>",
+		"<span class='notice'>You hear a soft click.</span>")
+
+/obj/item/toy/talking/strength/generate_messages()
+	var/list/messages = list()
+	messages = list(
+	"Жизнь — дерьмо, но смерть ещё хуже. Жаль, мы не можем вернуться в прошлое и отменить своё рождение. Life is shit, but death is even worse. Sorry, we can not go back in time and cancel our birth.",
+	"Как тут людей убивать? Мне нужны трупы. How do people kill? I need corpses.",
+	"К тому же я хочу убедиться, что у меня трупы не встают. Besides, I want to make sure that my corpses do not stand up.",
+	"Что я ХОЧУ? Откровенно говоря, не знаю. Большую часть времени я игнорирую мою миссию и захожу в чужие дома, где начинаю шарить по полкам… ооо, как раз таким, что у тебя за спиной! What I want? Frankly, I do not know. Most of the time I ignore my mission and go into other people's houses, where I start to fumble around the shelves ... ooo, just the one behind your back!")
+	return messages
+
+/obj/item/toy/talking/perception
+	name = "Perception bobblehead"
+	desc = "It's Perception bobblehead"
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "perception"
+	w_class = WEIGHT_CLASS_SMALL
+	recharge_time = 60
+
+/obj/item/toy/talking/perception/activation_message(mob/user)
+	user.visible_message(
+		"<span class='notice'>[user] presses the button on \the [src].</span>",
+		"<span class='notice'>You press the button on \the [src].</span>",
+		"<span class='notice'>You hear a soft click.</span>")
+
+/obj/item/toy/talking/perception/generate_messages()
+	var/list/messages = list()
+	messages = list(
+	"Когда-нибудь - а этот день может и не наступить - я напомню тебе, что долг платежом красен. До тех пор прими эти очки как дар по случаю дня свадьбы моей дочери. Someday - and this day may not come - I will remind you that the debt is red by the payment. Until then, take these glasses as a gift on the occasion of my daughter's wedding day.",
+	"— Радскорпионы? Что в них такого радостного? — Это сокращение. Означает „РАДИАЦИЯ“, придурок. Radskorpions? What is so joyful about them? - This is a reduction. Means RADIATION, moron.",
+	"Всем в этом городе нужна хорошая клизма. Everyone in this city needs a good enema.",
+	"Моя стеречь мумуки от люди-жуки. My watch over the mummies from the beetles.")
+	return messages
+
+/obj/item/toy/talking/endurance
+	name = "Endurance bobblehead"
+	desc = "It's Endurance bobblehead"
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "endurance"
+	w_class = WEIGHT_CLASS_SMALL
+	recharge_time = 60
+
+/obj/item/toy/talking/endurance/activation_message(mob/user)
+	user.visible_message(
+		"<span class='notice'>[user] presses the button on \the [src].</span>",
+		"<span class='notice'>You press the button on \the [src].</span>",
+		"<span class='notice'>You hear a soft click.</span>")
+
+/obj/item/toy/talking/endurance/generate_messages()
+	var/list/messages = list()
+	messages = list(
+	"Вероятность успешного завершения Избранным своей миссии — 15%. The probability of a successful completion of the mission is 15%.",
+	"А что за дело с взрывающимися браминами с самонаведением? And what's the matter with exploding self-taught brahmins?",
+	"Я отымел Большого Хесуса и хочу вам кое-что показать. I fucked Big Jesus and I want to show you something.",
+	"Защитим Избранного от идиотизма спамеров! Let's protect the favorite from the idiocy of spammers!")
+	return messages
+
+/obj/item/toy/talking/charisma
+	name = "Charisma bobblehead"
+	desc = "It's Charisma bobblehead"
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "charisma"
+	w_class = WEIGHT_CLASS_SMALL
+	recharge_time = 60
+
+/obj/item/toy/talking/charisma/activation_message(mob/user)
+	user.visible_message(
+		"<span class='notice'>[user] presses the button on \the [src].</span>",
+		"<span class='notice'>You press the button on \the [src].</span>",
+		"<span class='notice'>You hear a soft click.</span>")
+
+/obj/item/toy/talking/charisma/generate_messages()
+	var/list/messages = list()
+	messages = list(
+	"Я осознаю, что я всего лишь неигровой персонаж, но я глубоко оскорблена тем, как в Нью-Рино изображены женщины. I realize that I'm just a non-player character, but I'm deeply offended by how the women in New Reno are portrayed.",
+	"Это как же надо бояться СПИДа, чтобы залезть в эту хреновину… It's like you need to be afraid of AIDS to get into this mess ...",
+	"Война никогда не меняется? Иди на хер! Ты меня не знаешь! War never changes? Go on dick! You do not know me!",
+	"Я могу измениться. Хоть бы они перестали так говорить. I can change. If only they stopped talking like that.")
+	return messages
+
+/obj/item/toy/talking/intelligence
+	name = "Intelligence bobblehead"
+	desc = "It's Intelligence bobblehead"
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "intelligence"
+	w_class = WEIGHT_CLASS_SMALL
+	recharge_time = 60
+
+/obj/item/toy/talking/intelligence/activation_message(mob/user)
+	user.visible_message(
+		"<span class='notice'>[user] presses the button on \the [src].</span>",
+		"<span class='notice'>You press the button on \the [src].</span>",
+		"<span class='notice'>You hear a soft click.</span>")
+
+/obj/item/toy/talking/intelligence/generate_messages()
+	var/list/messages = list()
+	messages = list(
+	"Минздрав на полном серьёзе предупреждает: не кормите яо-гаев! Вот, собственно, и всё. The Ministry of Health seriously warns: do not feed yao-gay! Here, in fact, that's all.",
+	"Ещё раз так сделаешь — и я тебе так ногу в задницу засуну, что шнурками кашлять будешь! Once again, you will do so - and I'll shove your leg into your ass, that you'll cough with laces!",
+	"Я как-то был в крематории, где жертвам ожогов давали скидки. I once was in a crematorium, where the victims of burns were given discounts.",
+	"Если ты думаешь, что умным людям стоит учиться лопотать, как отсталым дикарям, то ты либо Последователь Апокалипсиса… либо тупица. If you think that intelligent people should learn to bawl like backward savages, then you are either a follower of the Apocalypse ... or a dumbass.")
+	return messages
+
+/obj/item/toy/talking/agility
+	name = "Agility bobblehead"
+	desc = "It's Agility bobblehead"
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "agility"
+	w_class = WEIGHT_CLASS_SMALL
+	recharge_time = 60
+
+/obj/item/toy/talking/agility/activation_message(mob/user)
+	user.visible_message(
+		"<span class='notice'>[user] presses the button on \the [src].</span>",
+		"<span class='notice'>You press the button on \the [src].</span>",
+		"<span class='notice'>You hear a soft click.</span>")
+
+/obj/item/toy/talking/agility/generate_messages()
+	var/list/messages = list()
+	messages = list(
+	"Знаешь, когда-то у меня были тысячи сотрудников. Мало кто оправдал мои ожидания, и ещё меньше тех, кто превзошел их. You know, I once had thousands of employees. Few people lived up to my expectations, and fewer than those who surpassed them.",
+	"Тут в „Топс“ они и вправду заботятся о сохранении ваших личных тайн. Ко мне в номер даже уборщица не заходит! Here in Tops they really care about preserving your personal secrets. To me in the room, even the cleaning lady does not go!",
+	"Ты только посмотри на себя: сразу видно — тебе открыты все дороги… на кладбище. Just look at yourself: you can see at once - you have all the roads open ... in the cemetery.",
+	"Все говорят — чокнутый. А ты купи ветро-брамина. Everyone says - crazy. And you buy a wind-brahmin.")
+	return messages
+
+/obj/item/toy/talking/luck
+	name = "Luck bobblehead"
+	desc = "It's Luck bobblehead"
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "luck"
+	w_class = WEIGHT_CLASS_SMALL
+	recharge_time = 60
+
+/obj/item/toy/talking/luck/activation_message(mob/user)
+	user.visible_message(
+		"<span class='notice'>[user] presses the button on \the [src].</span>",
+		"<span class='notice'>You press the button on \the [src].</span>",
+		"<span class='notice'>You hear a soft click.</span>")
+
+/obj/item/toy/talking/luck/generate_messages()
+	var/list/messages = list()
+	messages = list(
+	"Я СЛЫШУ, КАК НЕПОДАЛЁКУ РАСТУТ ТВОИ ПЕНИСЫ.I HEAR HOW YOU HAVE YOUR PEASANTS GROWING UP.",
+	"А-хах! Я снова на посту! Дрожи и трепещи, вселенная перед моей ужасной индукционной катушкой! A-hah! I'm back on duty! Shivers and tremble, the universe in front of my awful induction coil!",
+	"Раньше, чтобы Цезарь вложил тебе в руки оружие, требовалось иметь оружие между ног. Before, that Caesar put weapons into your hands, you had to have a weapon between your legs.",
+	"Ты не представляешь, сколько людей поверили мне, когда я сказал им, что я очень больной гуль. You do not know how many people believed me when I told them that I was a very sick ghoul.")
+	return messages
+
 /obj/item/toy/talking/codex_gigas
 	name = "Toy Codex Gigas"
 	desc = "A tool to help you write fictional devils!"

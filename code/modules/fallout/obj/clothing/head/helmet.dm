@@ -140,6 +140,18 @@
 	resistance_flags = FIRE_PROOF
 	self_weight = 2
 
+/obj/item/clothing/head/helmet/f13/brotherhood_helmet
+	name = "Brotherhood combat helmet"
+	desc = "A superior version of combat armor. The Brotherhood of Steel have made many improvements over the standard version."
+	icon_state = "brotherhood_helmet"
+	item_state = "brotherhood_helmet"
+	armor = list(melee = 70, bullet = 65, laser = 40, energy = 35, bomb = 60, bio = 0, rad = 0, fire = 70, acid = 40)
+	flags_inv = HIDEEARS|HIDEHAIR
+	put_on_delay = 20
+	strip_delay = 30
+	resistance_flags = FIRE_PROOF
+	self_weight = 2
+
 /obj/item/clothing/head/helmet/f13/trooper
 	name = "trooper helmet"
 	desc = "A dully-colored helmet designed to provide troopers a basic head protection.<br>It has a very rough \"mass-produced\" look to it, as it is issued to all NCR soldiers and MPs."
@@ -151,6 +163,30 @@
 	strip_delay = 30
 	resistance_flags = FIRE_PROOF
 	self_weight = 1
+
+/obj/item/clothing/head/helmet/f13/ncr_helmet
+	name = "NCR helmet"
+	desc = "A dully-colored NCR helmet designed to provide troopers a basic head protection.<br>It has a very rough \"mass-produced\" look to it, as it is issued to all NCR soldiers and MPs."
+	icon_state = "ncr_helmet"
+	item_state = "ncr_helmet"
+	armor = list(melee = 25, bullet = 20, laser = 15, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 10)
+	flags_inv = HIDEEARS|HIDEHAIR
+	put_on_delay = 10
+	strip_delay = 30
+	resistance_flags = FIRE_PROOF
+	self_weight = 1
+
+/obj/item/clothing/head/helmet/f13/tesla_helmet
+	name = "Tesla helmet"
+	desc = "Tesla helmet it's a prototype, that has good protection against lasers and energy weapons."
+	icon_state = "tesla_helmet"
+	item_state = "tesla_helmet"
+	armor = list(melee = 30, bullet = 20, laser = 95, energy = 90, bomb = 0, bio = 0, rad = 0, fire = 20, acid = 90)
+	flags_inv = HIDEEARS|HIDEHAIR
+	put_on_delay = 10
+	strip_delay = 30
+	resistance_flags = FIRE_PROOF
+	self_weight = 3
 
 /obj/item/clothing/head/helmet/f13/ranger
 	name = "ranger helmet"
@@ -197,6 +233,24 @@
 	self_weight = 1
 	glass_colour_type = /datum/client_colour/glass_colour/lightgreen
 
+/obj/item/clothing/head/helmet/f13/ranger/desert_ranger
+	name = "Desert ranger helmet"
+	desc = "An military helmet, commonly worn by Desert Rangers, that went through the fire and the flames, saving a single life amongst heavy bloodshed.<br>This particular helmet has a \"Forgive me mama\" inscription on the side."
+	icon_state = "desert_ranger"
+	item_state = "desert_ranger"
+	armor = list(melee = 50, bullet = 45, laser = 50, energy = 40, bomb = 55, bio = 0, rad = 80, fire = 70, acid = 40)
+	self_weight = 1
+	glass_colour_type = /datum/client_colour/glass_colour/lightgreen
+
+/obj/item/clothing/head/helmet/f13/ranger/elite_riot
+	name = "Elite riot ranger helmet"
+	desc = "The elite riot gear is a unique armor and the most advanced model of L.A.P.D. riot armor, superior to the pre-War 11th Armored Cavalry Regiment riot armor. Originally an 11th Armored Cavalry Regiment riot armor that was modified over time, it was the personal armor of an NCR riot control officer in the Divide, supervising the NCR riot operation in the Third Street Municipal Building before the destruction of the Divide."
+	icon_state = "elite_riot"
+	item_state = "elite_riot"
+	armor = list(melee = 70, bullet = 55, laser = 50, energy = 40, bomb = 50, bio = 0, rad = 90, fire = 80, acid = 40)
+	self_weight = 1.5
+	glass_colour_type = /datum/client_colour/glass_colour/lightgreen
+
 /obj/item/clothing/head/helmet/f13/legrecruit
 	name = "recruit helmet"
 	desc = "A Legion recruit helmet, made of fine molerat leather. Or was it gecko leather? Come to think of it, that other guy from Legion had a helmet made of brahmin leather..."
@@ -207,6 +261,17 @@
 	put_on_delay = 10
 	strip_delay = 30
 	self_weight = 1
+
+/obj/item/clothing/head/helmet/f13/legvet
+	name = "Veteran helmet"
+	desc = "The veteran helmet is comprised of several different pieces adjoined together: a baseball cap with an aluminum helmet, goggles for the eyes and a face wrap."
+	icon_state = "legvet"
+	item_state = "legvet"
+	armor = list(melee = 50, bullet = 25, laser = 20, energy = 20, bomb = 15, bio = 0, rad = 0, fire = 0, acid = 10)
+	flags_inv = HIDEEARS|HIDEHAIR
+	put_on_delay = 10
+	strip_delay = 30
+	self_weight = 1.5
 
 /obj/item/clothing/head/helmet/f13/legvexil
 	name = "vexillarius hat"
