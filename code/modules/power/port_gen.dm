@@ -334,7 +334,16 @@ display round(lastgen) and plasmatank amount
 	board_path = /obj/item/weapon/circuitboard/machine/pacman/super
 
 /obj/machinery/power/port_gen/pacman/super/overheat()
-	explosion(src.loc, 3, 3, 3, -1)
+	explosion(src.loc, 5, 5, 5, -1)
+
+/obj/machinery/power/port_gen/pacman/super/generator_uranium
+	name = "Big uranium generator"
+	icon_state = "portgen0"
+	icon = 'icons/fallout/machines/64x32.dmi'
+	sheet_path = /obj/item/stack/sheet/mineral/uranium
+	power_gen = 60000
+	time_per_sheet = 40
+	board_path = /obj/item/weapon/circuitboard/machine/pacman/super
 
 /obj/machinery/power/port_gen/pacman/mrs
 	name = "\improper M.R.S.P.A.C.M.A.N.-type portable generator"

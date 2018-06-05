@@ -3,11 +3,11 @@ var/datum/subsystem/weather/SSweather
 	name = "Weather"
 	wait = 10
 	priority = 3000
-	can_fire = 0
+	can_fire = 1
 	var/list/datum/weather_controller/controllers = list()
 	var/list/datum/weather_controller/active = list()
-	var/min_interval = 10000
-	var/max_interval = 120000
+	var/min_interval = 1000
+	var/max_interval = 1200
 	var/next_weather
 	var/list/outside_areas = list()
 

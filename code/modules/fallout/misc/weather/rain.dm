@@ -1,10 +1,10 @@
 #define RAIN_CHANNEL 15
 /datum/weather_controller/rain
-	name = "rain"
-	id = "rain"
+	name = "Rain_acid"
+	id = "Rain_acid"
 	desc = "Simple rain."
 
-	overlay = "rain"
+	overlay = "Rain_acid"//"rain"
 	chance = 40
 	duration_min = 1000
 	duration_max = 10000
@@ -12,15 +12,18 @@
 	var/outside_sound
 	var/inside_sound
 
+	var/list/mobs = list()
+	var/list/currentrun = list()
+
 /datum/weather_controller/rain/on_start()
 	power = pick("normal", "storm")
 	switch(power)
 		if("normal")
-			overlay = "rain"
+			overlay = "Rain_acid"//"rain"
 			outside_sound = 'sound/f13effects/rain_new_2.ogg'
 			inside_sound = 'sound/f13effects/rain_houses_high.ogg'
 		if("storm")
-			overlay = "storm"
+			overlay = "storm_acid" //storm
 			outside_sound = 'sound/f13effects/rain_new_1.ogg'
 			inside_sound = 'sound/f13effects/rain_houses_high.ogg'
 	. = ..()
@@ -52,5 +55,63 @@
 	if(prob(5))
 		var/turf/open/turf = locate(rand(1,world.maxx), rand(1,world.maxy), rand(1,world.maxz))
 		var/area/A = turf.loc
+		if(!A.open_space)
+			return
+		if(!currentrun.len)
+			currentrun = mobs.Copy()
+		while(currentrun.len)
+			var/mob/living/M = currentrun[currentrun.len]
+			currentrun.len--
+			if(istype(M, /mob/living/carbon/human))
+				if(prob(5))
+					lightningstrike(get_turf(M))
+				var/mob/living/carbon/human/H = M
+				H.adjustBruteLoss(1)
+				H.adjustFireLoss(1)
+				H.adjustToxLoss(1)
+			if (TICK_CHECK)
+				return
+		currentrun.Cut()
+/*
+	if(prob(5))
+		var/turf/open/turf = locate(rand(1,world.maxx), rand(1,world.maxy), rand(1,world.maxz))
+		var/area/A = turf.loc
 		if(A.open_space)
 			lightningstrike(turf)
+			if(!currentrun.len)
+				currentrun = mobs.Copy()
+			while(currentrun.len)
+				var/mob/living/M = currentrun[currentrun.len]
+				currentrun.len--
+				if(istype(M, /mob/living/carbon/human))
+					var/mob/living/carbon/human/H = M
+						H.adjustBruteLoss(1)
+						H.adjustFireLoss(1)
+						H.adjustToxLoss(1)
+					if (TICK_CHECK)
+					return
+			currentrun.Cut()
+
+/datum/weather_controller/sandstorm/process()
+	if(!started)
+		return
+	if(prob(75))
+		spawn(rand(1,10))
+			var/turf/open/turf = locate(rand(1,world.maxx), rand(1,world.maxy), rand(1,world.maxz))
+			var/area/A = turf.loc
+			if(A.open_space)
+				lightningstrike(turf)
+	if(!currentrun.len)
+		currentrun = mobs.Copy()
+	while(currentrun.len)
+		var/mob/living/M = currentrun[currentrun.len]
+		currentrun.len--
+		if(istype(M, /mob/living/carbon/human))
+			if(prob(0.5))
+				lightningstrike(get_turf(M))
+			var/mob/living/carbon/human/H = M
+			if((!H.wear_mask || !(H.wear_mask.flags_inv & HIDEFACE)) && (!H.head || !(H.head.flags_inv & HIDEFACE)))
+				H.adjustOxyLoss(2)
+		if (TICK_CHECK)
+			return
+	currentrun.Cut()*/
