@@ -4,6 +4,8 @@
 	desc = "Heavy duty metal shutters that opens mechanically."
 	icon = 'icons/obj/doors/shutters.dmi'
 	layer = CLOSED_DOOR_LAYER
+	obj_integrity = 15000
+	max_integrity = 15000
 	damage_deflection = 20
 	var/shuttersopen = 'sound/f13machines/doorshutter_open.ogg'
 	var/shuttersclose = 'sound/f13machines/doorshutter_close.ogg'

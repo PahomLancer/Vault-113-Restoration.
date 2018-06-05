@@ -6,8 +6,8 @@ var/datum/subsystem/weather/SSweather
 	can_fire = 1
 	var/list/datum/weather_controller/controllers = list()
 	var/list/datum/weather_controller/active = list()
-	var/min_interval = 1000
-	var/max_interval = 1200
+	var/min_interval = 12000
+	var/max_interval = 24000
 	var/next_weather
 	var/list/outside_areas = list()
 

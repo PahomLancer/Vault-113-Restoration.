@@ -158,7 +158,6 @@
 /obj/item/ammo_box/magazine/internal/minigun/get_round(keep = 0)
 	return ..()
 
-
 /obj/item/ammo_box/magazine/internal/bow
 	name = "bow internal magazine"
 	ammo_type = /obj/item/ammo_casing/caseless/arrow

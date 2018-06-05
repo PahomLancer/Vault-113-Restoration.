@@ -32,7 +32,7 @@
 
 /obj/item/weapon/grenade/syndieminibomb/tincan/prime()
 	update_mob()
-	explosion(src.loc,1,4,10,flame_range = 0)
+	explosion(src.loc,1,4,8,flame_range = 0)
 	qdel(src)
 
 
@@ -44,7 +44,7 @@
 
 /obj/item/weapon/grenade/syndieminibomb/concussion/prime()
 	update_mob()
-	explosion(src.loc,2,8,16,flame_range = 0)
+	explosion(src.loc,1,8,16,flame_range = 0)
 	qdel(src)
 
 /obj/item/weapon/grenade/syndieminibomb/concussion/frag

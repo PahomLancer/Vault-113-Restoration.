@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1528199603
-DIR: _maps _maps\map_files _maps\map_files\Denwer _maps\map_files\TgStation code code\modules code\modules\fallout code\modules\fallout\misc code\modules\fallout\misc\subsystems code\modules\fallout\misc\sun_lighting code\modules\fallout\misc\weather code\modules\fallout\obj code\modules\fallout\turf code\modules\fallout\vehicles code\modules\power code\modules\projectiles icons icons\fallout icons\fallout\machines icons\fallout\misc icons\obj 
+LAST_COMPILE_TIME: 1528220539
+DIR: _maps _maps\map_files _maps\map_files\Denwer _maps\map_files\TexasWasteland code code\game code\game\machinery code\game\machinery\doors code\modules code\modules\fallout code\modules\fallout\obj code\modules\fallout\obj\structures code\modules\projectiles code\modules\projectiles\ammunition code\modules\surgery code\modules\surgery\organs 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 511.1385
-WINDOW: _maps\map_files\Denwer\denwersewers.dmm;_maps\map_files\Denwer\denwersurface.dmm;icons\fallout\objects\structures\doors.dmi;icons\fallout\objects\melee.dmi;code\game\objects\items\weapons\melee\energy.dm;icons\fallout\objects\crafting.dmi;code\modules\fallout\turf\walls.dm;icons\fallout\misc\weather_screens.dmi;icons\fallout\machines\terminals.dmi;code\modules\fallout\misc\subsystems\weather.dm;icons\fallout\machines\64x32.dmi;code\modules\fallout\misc\subsystems\objectives.dm;code\modules\fallout\misc\weather\fog.dm;icons\fallout\misc\weather.dmi;code\modules\fallout\misc\weather\rain.dm;code\modules\fallout\misc\weather\sandstorm.dm;code\modules\fallout\misc\weather\turf.dm;code\modules\fallout\obj\items.dm;code\modules\fallout\misc\weather\controller.dm;code\modules\fallout\obj\campfire.dm;code\modules\fallout\misc\weather\area.dm
-FILE: icons\fallout\misc\weather.dmi
+WINDOW: code\game\objects\items\weapons\melee\energy.dm;_maps\map_files\Denwer\denwersewers.dmm;_maps\map_files\Denwer\denwersurface.dmm;icons\fallout\objects\structures\doors.dmi;icons\fallout\objects\melee.dmi;icons\fallout\objects\crafting.dmi;code\modules\fallout\turf\walls.dm;icons\fallout\machines\terminals.dmi;icons\fallout\machines\64x32.dmi;code\modules\fallout\misc\subsystems\objectives.dm;code\game\objects\items\weapons\grenades\syndieminibomb.dm;code\modules\projectiles\guns\ballistic\laser_gatling.dm;code\modules\projectiles\guns\ballistic\avenger.dm;code\modules\projectiles\boxes_magazines\external_mag.dm;icons\obj\guns\minigun.dmi;icons\fallout\objects\guns\ballistic.dmi;code\modules\projectiles\ammunition\ammo_casings.dm;_maps\map_files\TexasWasteland\texas_wasteland.dmm;code\game\machinery\doors\shutters.dm;code\modules\fallout\obj\structures\vault_door.dm
+FILE: code\game\machinery\doors\shutters.dm
 */
 // END_INTERNALS

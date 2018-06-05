@@ -99,6 +99,11 @@
 	caliber = "a556"
 	projectile_type = /obj/item/projectile/bullet/weakbullet3
 
+/obj/item/ammo_casing/a5mm
+	desc = "A 5mm bullet casing."
+	caliber = "5mm"
+	projectile_type = /obj/item/projectile/bullet/weakbullet3
+
 /obj/item/ammo_casing/a40mm
 	name = "40mm HE shell"
 	desc = "A cased high explosive grenade that can only be activated once fired out of a grenade launcher."

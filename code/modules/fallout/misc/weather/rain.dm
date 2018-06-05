@@ -66,9 +66,9 @@
 				if(prob(5))
 					lightningstrike(get_turf(M))
 				var/mob/living/carbon/human/H = M
-				H.adjustBruteLoss(1)
-				H.adjustFireLoss(1)
-				H.adjustToxLoss(1)
+				H.adjustBruteLoss(2)
+				H.adjustFireLoss(2)
+				H.adjustToxLoss(2)
 			if (TICK_CHECK)
 				return
 		currentrun.Cut()
