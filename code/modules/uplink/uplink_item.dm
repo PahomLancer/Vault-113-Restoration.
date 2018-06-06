@@ -203,10 +203,6 @@ var/list/uplink_items = list() // Global list so we only initialize this once.
 	surplus = 40
 	include_modes = list(/datum/game_mode/nuclear)
 
-/datum/uplink_item/dangerous/smg/unrestricted
-	item = /obj/item/weapon/gun/ballistic/automatic/c20r/unrestricted
-	include_modes = list(/datum/game_mode/gang)
-
 /datum/uplink_item/dangerous/machinegun
 	name = "L6 Squad Automatic Weapon"
 	desc = "A fully-loaded Aussec Armoury belt-fed machine gun. \

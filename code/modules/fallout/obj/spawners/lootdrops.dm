@@ -42,7 +42,8 @@
 	loot = list(
 	/obj/item/weapon/gun/ballistic/automatic/pistol/n99 = 33,
 	/obj/item/weapon/gun/ballistic/shotgun/pipe = 33,
-	/obj/item/weapon/gun/energy/laser/pistol = 33)
+	/obj/item/weapon/gun/energy/laser/pistol = 33,
+	/obj/item/weapon/gun/energy/laser/pistol/wattz1000 = 33)
 
 /obj/effect/spawner/lootdrop/wrange_middle
 	color = "#0AAAFA"
@@ -51,7 +52,8 @@
 	/obj/item/weapon/gun/ballistic/shotgun/rifle = 1,
 	/obj/item/weapon/gun/ballistic/automatic/garand = 1,
 	/obj/item/weapon/gun/ballistic/shotgun/rifle/scope = 1,
-	/obj/item/weapon/gun/ballistic/shotgun/trail = 1)
+	/obj/item/weapon/gun/ballistic/shotgun/trail = 1,
+	/obj/item/weapon/gun/ballistic/automatic/assault_rifle/chinese = 1)
 
 /obj/effect/spawner/lootdrop/wrange_high
 	color = "#FFAAFA"
@@ -62,19 +64,24 @@
 	/obj/item/weapon/gun/energy/plasma = 1,
 	/obj/item/weapon/gun/ballistic/automatic/smg10mm = 1,
 	/obj/item/weapon/gun/ballistic/automatic/rifle = 1,
-	/obj/item/kit/random = 1)
+	/obj/item/kit/random = 1,
+	/obj/item/weapon/gun/ballistic/automatic/assault_rifle/infiltrator = 1,
+	/obj/item/weapon/gun/ballistic/automatic/assault_rifle/marksman = 1,
+	/obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/riot_shotgun = 1)
 
 /obj/effect/spawner/lootdrop/wrange_legend
 	color = "#FF0000"
 	loot = list(
-	/obj/item/weapon/gun/ballistic/automatic/bozar = 25,
+	/obj/item/weapon/gun/ballistic/automatic/bozar = 1,
 	/obj/item/weapon/gun/ballistic/revolver/magnum = 1,
-	/obj/item/weapon/gun/energy/laser/rifle/tri = 25,
-	/obj/item/weapon/gun/energy/plasma/turbo = 25,
+	/obj/item/weapon/gun/energy/laser/rifle/tri = 1,
+	/obj/item/weapon/gun/energy/plasma/turbo = 1,
 	/obj/item/weapon/gun/energy/laser/rifle/aer13 = 1,
-	/obj/item/weapon/gun/energy/plasma/tri = 25,
-	/obj/item/weapon/gun/energy/laser/rcw = 25,
-	/obj/item/kit/random = 25)
+	/obj/item/weapon/gun/energy/plasma/tri = 1,
+	/obj/item/weapon/gun/energy/laser/rcw = 1,
+	/obj/item/kit/random = 1,
+	/obj/item/weapon/gun/ballistic/automatic/sniper_rifle = 1,
+	/obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/pancor = 1)
 
 /obj/effect/spawner/lootdrop/ammo
 	color = "#FF00FF"
@@ -88,9 +95,6 @@
 	/obj/item/ammo_box/magazine/F13/m10smg/armourpiercing = 1,
 	/obj/item/ammo_box/magazine/F13/m10smg/toxic = 1,
 	/obj/item/ammo_box/F13/m44 = 1,
-	/obj/item/ammo_box/F13/m44/heap = 1,
-	/obj/item/ammo_box/F13/m44/armourpiercing = 1,
-	/obj/item/ammo_box/F13/m44/toxic = 1,
 	/obj/item/ammo_box/magazine/F13/m308 = 1,
 	/obj/item/ammo_box/magazine/F13/m308/heap = 1,
 	/obj/item/ammo_box/magazine/F13/m308/armourpiercing = 1,
@@ -114,6 +118,22 @@
 	/obj/item/ammo_box/magazine/F13/m556/toxic = 1,
 	/obj/item/ammo_box/magazine/F13/m556/fire = 1)
 
+/obj/effect/spawner/lootdrop/garbage
+	color = "#FF00FF"
+	loot = list(
+	/obj/structure/garbage = 1,
+	/obj/structure/garbage/garbage2 = 1,
+	/obj/structure/garbage/garbage3 = 1,
+	/obj/structure/garbage/garbage4 = 1,
+	/obj/structure/garbage/garbage5 = 1,
+	/obj/structure/garbage/garbage6 = 1,
+	/obj/structure/garbage/garbage7 = 1,
+	///obj/structure/garbage/garbage8 = 1,
+	/obj/structure/garbage/garbage9 = 1,
+	/obj/structure/garbage/garbage10 = 1,
+	/obj/structure/garbage/garbage11 = 1,
+	/obj/structure/garbage/garbage12 = 1)
+
 /obj/effect/spawner/lootdrop/snacks
 	color = "#FF00FF"
 	loot = list(/obj/item/ring = 1)
@@ -123,7 +143,6 @@
 	loot = list(
 	/obj/item/ammo_box/magazine/F13/m10/fire = 1,
 	/obj/item/ammo_box/magazine/F13/m10smg/fire = 1,
-	/obj/item/ammo_box/F13/m44/fire = 1,
 	/obj/item/ammo_box/magazine/F13/m308/fire = 1,
 	/obj/item/ammo_box/F13/m308/fire = 1,
 	/obj/item/ammo_box/magazine/F13/m223/fire = 1,
@@ -135,14 +154,17 @@
 	/obj/item/weapon/pipe = 1,
 	/obj/item/weapon/tireiron = 1,
 	/obj/item/weapon/twohanded/baseball = 1,
-	/obj/item/weapon/hammer = 1)
+	/obj/item/weapon/hammer = 1,
+	/obj/item/weapon/machete/imp_machete = 1)
 
 /obj/effect/spawner/lootdrop/wmelee_middle
 	color = "#FF0000"
 	loot = list(
 	/obj/item/weapon/machete = 1,
 	/obj/item/weapon/golf9 = 1,
-	/obj/item/weapon/spear = 1)
+	/obj/item/weapon/spear = 1,
+	/obj/item/weapon/melee/baseball_bat/barbedbat = 1,
+	/obj/item/weapon/melee/baseball_bat/spikedbat = 1)
 
 /obj/effect/spawner/lootdrop/wmelee_high
 	color = "#FF0000"
@@ -151,12 +173,15 @@
 	/obj/item/weapon/twohanded/sledgehammer = 1,
 	/obj/item/weapon/twohanded/tribal_spear = 1,
 	/obj/item/weapon/powergauntlet = 1,
-	/obj/item/weapon/golf10 = 1)
+	/obj/item/weapon/golf10 = 1,
+	/obj/item/weapon/melee/baseball_bat/bladedbat = 1,
+	/obj/item/weapon/machete/serratedmachete = 1)
 
 /obj/effect/spawner/lootdrop/wmelee_legend
 	color = "#FF0000"
 	loot = list(
-	/obj/item/weapon/twohanded/superhammer = 1)
+	/obj/item/weapon/twohanded/superhammer = 1,
+	/obj/item/weapon/katana/chinese = 1)
 
 /obj/effect/spawner/lootdrop/food
 	color = "#FF0000"
@@ -261,14 +286,19 @@
 	/obj/item/clothing/suit/f13/veteran = 1,
 	/obj/item/clothing/under/f13/cyberpunk = 1,
 	/obj/item/clothing/under/f13/combat = 1,
-	/obj/item/clothing/under/f13/petrochico = 1)
+	/obj/item/clothing/under/f13/petrochico = 1,
+	/obj/item/clothing/suit/armor/f13/metal_chestplate2 = 1,
+	/obj/item/clothing/suit/armor/f13/metal_chestplate_f2 = 1)
 
 /obj/effect/spawner/lootdrop/clothing_high
 	color = "#FF0000"
 	loot = list(
 	/obj/item/clothing/head/helmet/f13/combat_mk2 = 1,
 	/obj/item/clothing/suit/armor/f13/bmetalarmor = 1,
-	/obj/item/clothing/suit/armor/f13/combat_mk2 = 1)
+	/obj/item/clothing/suit/armor/f13/combat_mk2 = 1,
+	/obj/item/clothing/suit/armor/f13/rangercombat/desert_ranger = 1,
+	/obj/item/clothing/head/helmet/f13/ranger/desert_ranger = 1
+	)
 
 /obj/effect/spawner/lootdrop/clothing_legend
 	color = "#FF0000"
@@ -276,4 +306,6 @@
 	/obj/item/clothing/head/helmet/power_armor/t45d = 1,
 	/obj/item/clothing/head/helmet/power_armor/ncr = 1,
 	/obj/item/clothing/suit/armor/f13/power_armor/t45d = 1,
-	/obj/item/clothing/under/f13/recon = 1)
+	/obj/item/clothing/under/f13/recon = 1,
+	/obj/item/clothing/suit/armor/f13/rangercombat/elite_riot = 1,
+	/obj/item/clothing/head/helmet/f13/ranger/elite_riot = 1)

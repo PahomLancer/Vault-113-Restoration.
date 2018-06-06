@@ -50,8 +50,7 @@
 		/obj/item/weapon/kitchen/knife, /obj/item/weapon/switchblade, /obj/item/weapon/pen,
 		/obj/item/weapon/scalpel, /obj/item/weapon/reagent_containers/syringe, /obj/item/weapon/dnainjector,
 		/obj/item/weapon/reagent_containers/hypospray/medipen, /obj/item/weapon/reagent_containers/dropper,
-		/obj/item/weapon/implanter, /obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool/mini,
-		/obj/item/device/firing_pin
+		/obj/item/weapon/implanter, /obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool/mini
 		)
 	//can hold both regular pens and energy daggers. made for your every-day tactical librarians/murderers.
 	priority = FALSE
@@ -65,7 +64,7 @@
 		/obj/item/weapon/scalpel, /obj/item/weapon/reagent_containers/syringe, /obj/item/weapon/dnainjector,
 		/obj/item/weapon/reagent_containers/hypospray/medipen, /obj/item/weapon/reagent_containers/dropper,
 		/obj/item/weapon/implanter, /obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool/mini,
-		/obj/item/device/firing_pin, /obj/item/weapon/bikehorn)
+		/obj/item/weapon/bikehorn)
 
 /obj/item/weapon/storage/internal/pocket/small/detective
 	priority = TRUE // so the detectives would discover pockets in their hats

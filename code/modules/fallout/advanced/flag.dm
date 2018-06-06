@@ -25,8 +25,20 @@ obj/flagpole
 	var/obj/flag
 
 obj/flagpole/city
-	flag_location = "City"
-	flag_perk = /datum/perk_hidden/cyborg
+	flag_location = "City North"
+	flag_perk = /datum/perk_hidden/conqueror1
+
+obj/flagpole/city2
+	flag_location = "City South"
+	flag_perk = /datum/perk_hidden/conqueror2
+
+obj/flagpole/city3
+	flag_location = "City Center"
+	flag_perk = /datum/perk_hidden/conqueror3
+
+obj/flagpole/village
+	flag_location = "Village"
+	flag_perk = /datum/perk_hidden/conqueror4
 
 obj/flagpole/bunker
 	flag_location = "Bunker"

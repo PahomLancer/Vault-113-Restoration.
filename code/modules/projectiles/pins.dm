@@ -1,4 +1,4 @@
-/obj/item/device/firing_pin
+/*/obj/item/device/firing_pin
 	name = "electronic firing pin"
 	desc = "A small authentication device, to be inserted into a firearm receiver to allow operation. NT safety regulations require all new designs to incorporate one."
 	icon = 'icons/obj/device.dmi'
@@ -219,3 +219,4 @@
 	if(gun)
 		gun.pin = null
 	return ..()
+*/

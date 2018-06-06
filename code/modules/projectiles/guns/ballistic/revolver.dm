@@ -154,7 +154,7 @@
 	icon_state = "goldrevolver"
 	fire_sound = 'sound/weapons/resonator_blast.ogg'
 	recoil = 8
-	pin = /obj/item/device/firing_pin
+	//pin = /obj/item/device/firing_pin
 
 /obj/item/weapon/gun/ballistic/revolver/nagant
 	name = "nagant revolver"
@@ -203,13 +203,13 @@
 			if(user.a_intent == INTENT_HARM) // Flogging action
 				return
 
-	if(isliving(user))
+	/*if(isliving(user))
 		if(!can_trigger_gun(user))
 			return
 	if(target != user)
 		if(ismob(target))
 			to_chat(user, "<span class='warning'>A mechanism prevents you from shooting anyone but yourself!</span>")
-		return
+		return*/
 
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user

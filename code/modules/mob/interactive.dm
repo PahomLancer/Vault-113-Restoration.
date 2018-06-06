@@ -1542,7 +1542,7 @@
 					if(main_hand.force != 0)
 						if(istype(main_hand,/obj/item/weapon/gun))
 							var/obj/item/weapon/gun/G = main_hand
-							if(G.can_trigger_gun(src))
+							if(1 /*G.can_trigger_gun(src)*/)
 								if(istype(main_hand,/obj/item/weapon/gun/ballistic))
 									var/obj/item/weapon/gun/ballistic/P = main_hand
 									if(!P.chambered)

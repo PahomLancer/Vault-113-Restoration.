@@ -121,7 +121,6 @@
 	projectilesound = 'sound/weapons/Gunshot.ogg'
 	casingtype = /obj/item/ammo_casing/shotgun/buckshot
 	loot = list(/obj/effect/mob_spawn/human/corpse/syndicatestormtrooper,
-				/obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/unrestricted,
 				/obj/item/weapon/shield/energy)
 
 ///////////////Misc////////////

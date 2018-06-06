@@ -223,6 +223,8 @@
 	burst_size = 2
 	price = 1000
 	scopetype = /obj/screen/fullscreen/scope/medium
+	zoomable = TRUE
+	zoom_amt = 7
 
 /obj/item/weapon/gun/ballistic/automatic/assault_rifle/infiltrator
 	name = "Infiltrator"
@@ -235,6 +237,8 @@
 	scopetype = /obj/screen/fullscreen/scope/medium
 	can_suppress = 1
 	suppressed = 1
+	zoomable = TRUE
+	zoom_amt = 7
 
 /obj/item/weapon/gun/ballistic/automatic/assault_rifle/chinese
 	name = "Chinese assault rifle"

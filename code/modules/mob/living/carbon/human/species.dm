@@ -1262,8 +1262,17 @@
 
 	hit_percent *= 1 - (H.special.getPoint("e") * 0.025)
 
-	if(H.perks.have(/datum/perk_hidden/cyborg))
-		hit_percent *= 0.75
+	if(H.perks.have(/datum/perk_hidden/conqueror1))
+		hit_percent *= 0.9
+
+	if(H.perks.have(/datum/perk_hidden/conqueror2))
+		hit_percent *= 0.9
+
+	if(H.perks.have(/datum/perk_hidden/conqueror3))
+		hit_percent *= 0.9
+
+	if(H.perks.have(/datum/perk_hidden/conqueror4))
+		hit_percent *= 0.9
 
 	var/obj/item/weapon = H.held_items[H.active_hand_index]
 	if(!istype(weapon, /obj/item/weapon/gun))

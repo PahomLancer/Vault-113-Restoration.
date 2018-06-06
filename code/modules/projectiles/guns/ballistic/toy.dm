@@ -14,8 +14,8 @@
 	needs_permit = 0
 	casing_ejector = 0
 
-/obj/item/weapon/gun/ballistic/automatic/toy/unrestricted
-	pin = /obj/item/device/firing_pin
+//obj/item/weapon/gun/ballistic/automatic/toy/unrestricted
+	//pin = /obj/item/device/firing_pin
 
 /obj/item/weapon/gun/ballistic/automatic/toy/pistol
 	name = "foam force pistol"
@@ -40,11 +40,11 @@
 	magazine = new /obj/item/ammo_box/magazine/toy/pistol/riot(src)
 	..()
 
-/obj/item/weapon/gun/ballistic/automatic/toy/pistol/unrestricted
-	pin = /obj/item/device/firing_pin
+///obj/item/weapon/gun/ballistic/automatic/toy/pistol/unrestricted
+	//pin = /obj/item/device/firing_pin
 
-/obj/item/weapon/gun/ballistic/automatic/toy/pistol/riot/unrestricted
-	pin = /obj/item/device/firing_pin
+///obj/item/weapon/gun/ballistic/automatic/toy/pistol/riot/unrestricted
+	//pin = /obj/item/device/firing_pin
 
 /obj/item/weapon/gun/ballistic/shotgun/toy
 	name = "foam force shotgun"
@@ -63,8 +63,8 @@
 	if(chambered && !chambered.BB)
 		qdel(chambered)
 
-/obj/item/weapon/gun/ballistic/shotgun/toy/unrestricted
-	pin = /obj/item/device/firing_pin
+///obj/item/weapon/gun/ballistic/shotgun/toy/unrestricted
+	//pin = /obj/item/device/firing_pin
 
 /obj/item/weapon/gun/ballistic/shotgun/toy/crossbow
 	name = "foam force crossbow"
@@ -86,8 +86,8 @@
 	mag_type = /obj/item/ammo_box/magazine/toy/smgm45
 	casing_ejector = 0
 
-/obj/item/weapon/gun/ballistic/automatic/c20r/toy/unrestricted
-	pin = /obj/item/device/firing_pin
+//obj/item/weapon/gun/ballistic/automatic/c20r/toy/unrestricted
+	//pin = /obj/item/device/firing_pin
 
 /obj/item/weapon/gun/ballistic/automatic/l6_saw/toy
 	name = "donksoft LMG"
@@ -98,5 +98,5 @@
 	mag_type = /obj/item/ammo_box/magazine/toy/m762
 	casing_ejector = 0
 
-/obj/item/weapon/gun/ballistic/automatic/l6_saw/toy/unrestricted
-	pin = /obj/item/device/firing_pin
+//obj/item/weapon/gun/ballistic/automatic/l6_saw/toy/unrestricted
+	//pin = /obj/item/device/firing_pin

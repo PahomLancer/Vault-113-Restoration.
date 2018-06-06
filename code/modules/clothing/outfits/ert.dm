@@ -50,8 +50,7 @@
 	glasses = /obj/item/clothing/glasses/thermal/eyepatch
 	backpack_contents = list(/obj/item/weapon/storage/box/engineer=1,\
 		/obj/item/weapon/melee/baton/loaded=1,\
-		/obj/item/clothing/mask/gas/sechailer/swat=1,\
-		/obj/item/weapon/gun/energy/pulse/pistol/loyalpin=1)
+		/obj/item/clothing/mask/gas/sechailer/swat=1)
 	l_pocket = /obj/item/weapon/melee/energy/sword/saber
 
 /datum/outfit/ert/security
@@ -85,8 +84,7 @@
 	backpack_contents = list(/obj/item/weapon/storage/box/engineer=1,\
 		/obj/item/weapon/storage/box/handcuffs=1,\
 		/obj/item/clothing/mask/gas/sechailer/swat=1,\
-		/obj/item/weapon/melee/baton/loaded=1,\
-		/obj/item/weapon/gun/energy/pulse/carbine/loyalpin=1)
+		/obj/item/weapon/melee/baton/loaded=1)
 
 
 /datum/outfit/ert/medic
@@ -121,7 +119,6 @@
 	backpack_contents = list(/obj/item/weapon/storage/box/engineer=1,\
 		/obj/item/weapon/melee/baton/loaded=1,\
 		/obj/item/clothing/mask/gas/sechailer/swat=1,\
-		/obj/item/weapon/gun/energy/pulse/pistol/loyalpin=1,\
 		/obj/item/weapon/reagent_containers/hypospray/combat/nanites=1,\
 		/obj/item/weapon/gun/medbeam=1)
 
@@ -157,7 +154,6 @@
 	backpack_contents = list(/obj/item/weapon/storage/box/engineer=1,\
 		/obj/item/weapon/melee/baton/loaded=1,\
 		/obj/item/clothing/mask/gas/sechailer/swat=1,\
-		/obj/item/weapon/gun/energy/pulse/pistol/loyalpin=1,\
 		/obj/item/weapon/rcd/combat=1)
 
 

@@ -32,12 +32,12 @@
 			H.mind.objectives += survive
 			H.attack_log += "\[[time_stamp()]\] <font color='red'>Was made into a survivalist, and trusts no one!</font>"
 			H.mind.announce_objectives()
-		var/randomizeguns 			= pick(gunslist)
+		//var/randomizeguns 			= pick(gunslist)
 		var/randomizemagic 			= pick(magiclist)
 		var/randomizemagicspecial 	= pick(magicspeciallist)
 		if(!summon_type)
-			var/obj/item/weapon/gun/G
-			switch (randomizeguns)
+			//var/obj/item/weapon/gun/G
+			/*switch (randomizeguns)
 				if("taser")
 					G = new /obj/item/weapon/gun/energy/e_gun/advtaser(get_turf(H))
 				if("egun")
@@ -122,8 +122,8 @@
 				if("scatterbeam")
 					G = new /obj/item/weapon/gun/energy/laser/scatter(get_turf(H))
 				if("gravgun")
-					G = new /obj/item/weapon/gun/energy/gravity_gun(get_turf(H))
-			G.unlock()
+					G = new /obj/item/weapon/gun/energy/gravity_gun(get_turf(H))*/
+			//G.unlock()
 			playsound(get_turf(H),'sound/magic/Summon_guns.ogg', 50, 1)
 
 		else

@@ -22,7 +22,7 @@
 	icon_state = "ioncarbine"
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = SLOT_BELT
-	pin = null
+	//pin = null
 	ammo_x_offset = 2
 	flight_x_offset = 18
 	flight_y_offset = 11
@@ -33,7 +33,7 @@
 	icon_state = "decloner"
 	origin_tech = "combat=4;materials=4;biotech=5;plasmatech=6"
 	ammo_type = list(/obj/item/ammo_casing/energy/declone)
-	pin = null
+	//pin = null
 	ammo_x_offset = 1
 
 /obj/item/weapon/gun/energy/decloner/update_icon()
@@ -117,7 +117,7 @@
 	origin_tech = "combat=4;magnets=4;syndicate=2"
 	suppressed = 0
 	ammo_type = list(/obj/item/ammo_casing/energy/bolt/large)
-	pin = null
+	//pin = null
 
 /obj/item/weapon/gun/energy/plasmacutter
 	name = "plasma cutter"
@@ -234,13 +234,13 @@
 	origin_tech = "combat=4;materials=4;powerstorage=3;magnets=2"
 	ammo_type = list(/obj/item/ammo_casing/energy/temp, /obj/item/ammo_casing/energy/temp/hot)
 	cell_type = "/obj/item/weapon/stock_parts/cell/high"
-	pin = null
+	//pin = null
 
 /obj/item/weapon/gun/energy/temperature/security
 	name = "security temperature gun"
 	desc = "A weapon that can only be used to its full potential by the truly robust."
 	origin_tech = "combat=2;materials=2;powerstorage=1;magnets=1"
-	pin = /obj/item/device/firing_pin
+	//pin = /obj/item/device/firing_pin
 
 /obj/item/weapon/gun/energy/laser/instakill
 	name = "instakill rifle"
