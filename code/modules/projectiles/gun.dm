@@ -329,7 +329,7 @@
 			process_chamber()
 			update_icon()
 
-			sleep(chambered ? chambered.delay : (fire_delay / (userCarbon.special.getPoint("a") * 0.2)))
+			//sleep(chambered ? chambered.delay : (fire_delay/* / (userCarbon.special.getPoint("a") * 0.2)*/))
 		firing_burst = 0
 	else
 		if(chambered)
@@ -357,10 +357,10 @@
 			return
 		process_chamber()
 		update_icon()
-		semicd = 1
+		//semicd = 1
 
-		spawn(fire_delay / (userCarbon.special.getPoint("a") * 0.2))
-			semicd = 0
+		/*spawn(fire_delay / (userCarbon.special.getPoint("a") * 0.2))
+			semicd = 0*/
 
 	if(user)
 		user.update_inv_hands()
@@ -506,7 +506,7 @@
 		target.visible_message("<span class='warning'>[user] points [src] at [target]'s head, ready to pull the trigger...</span>", \
 			"<span class='userdanger'>[user] points [src] at your head, ready to pull the trigger...</span>")
 
-	semicd = 1
+	//semicd = 1
 
 	if(!do_mob(user, target, 120) || user.zone_selected != "mouth")
 		if(user)

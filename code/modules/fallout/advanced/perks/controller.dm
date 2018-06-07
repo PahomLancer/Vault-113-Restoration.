@@ -102,8 +102,8 @@
 		<tr><td><img src='[first.icon_state].png' class='center'></td><td><img src='[second.icon_state].png' class='center'></td></tr>
 		<tr><td>[first.description]</td><td>[second.description]</td></tr>
 		<tr>
-			<td><a href='?src=\ref[src];perk=1'>Выбрать</a></td>
-			<td><a href='?src=\ref[src];perk=2'>Выбрать</a></td>
+			<td><a href='?src=\ref[src];perk=1'>Выбрать/Choose</a></td>
+			<td><a href='?src=\ref[src];perk=2'>Выбрать/Choose</a></td>
 		</tr>
 	</table'>"}
 

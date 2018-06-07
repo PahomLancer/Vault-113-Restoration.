@@ -54,7 +54,7 @@
 		. += 20
 
 	if(istype(user.wear_suit, /obj/item/clothing/suit/armor/f13/power_armor))
-		. += 50
+		. += 10 + getPoint("s") * 5 + 20
 
 	. += 10 + getPoint("s") * 5
 
@@ -127,19 +127,19 @@
 
 	switch(type)
 		if("s")
-			description = "Грубая физическая сила. Оказывает влияние на грузоподъёмность и урон оружия ближнего боя."
+			description = "Грубая физическая сила. Оказывает влияние на грузоподъёмность и урон оружия ближнего боя. Raw physical strength. A high Strength is good for physical characters (Modifies: Melee Damage, and Carry Weight)."
 		if("p")
-			description = "Применения пока что нет :("
+			description = "Способность видеть, слышать, вынюхивать и замечать необычные вещи. Высокий показатель восприятия важен для снайперов. Влияет на шанс попадания и лут с мобов. The ability to see, hear, taste and notice unusual things. A high Perception is important for a sharpshooter. (Modifies: Ranged combat, looting from mobs.)"
 		if("e")
-			description = "Выдержка и физическая стойкость. Влияет на количество здоровья."
+			description = "Выдержка и физическая стойкость. Влияет на количество здоровья. Stamina and physical toughness. A character with a high Endurance will survive where others may not. (Modifies: Hit Points)"
 		if("c")
-			description = "Определяет цены при торговле."
+			description = "Определяет цены при торговле. A combination of appearance and charm. A high Charisma is important for characters that want to influence people with words. (Modifies: Trading skills with autotraders)"
 		if("i")
-			description = "Влияет на длительность использования медикаментов и химикатов, количество получаемого опыта."
+			description = "Влияет на длительность использования медикаментов и химикатов, количество получаемого опыта. Knowledge, wisdom and the ability to think quickly. A high Intelligence is important for any character. (Modifies: The number of exp getting from all actions, medical skills)"
 		if("a")
-			description = "Влияет на скорость стрельбы оружия."
+			description = "Влияет на скорость стрельбы оружия, уклонение. Coordination and the ability to move well. A high Agility is important for any active character. (Modifies: Rate of fire of ranged weapons, evasion)"
 		if("l")
-			description = "Влияет на шанс попадания по Вам, качество вещей в мобах."
+			description = "Влияет на шанс попадания по Вам, качество вещей в мобах. Fate. Karma. An extremely high or low Luck will affect the character - somehow. Events and situations will be changed by how lucky (or unlucky) your character is. (Modifies: Evasion, looting from mobs.)"
 
 	return description
 
@@ -151,14 +151,14 @@
 
 	switch(type)
 		if("list")
-			html += "<a href='byond://?src=\ref[src];special=s'>Сила</a> <br>"
-			//html += "<a href='byond://?src=\ref[src];special=p'>Восприятие</a> <br>"
-			html += "<a href='byond://?src=\ref[src];special=e'>Выносливость</a> <br>"
-			html += "<a href='byond://?src=\ref[src];special=c'>Харизма</a> <br>"
-			html += "<a href='byond://?src=\ref[src];special=i'>Интеллект</a> <br>"
-			html += "<a href='byond://?src=\ref[src];special=a'>Ловкость</a> <br>"
-			html += "<a href='byond://?src=\ref[src];special=l'>Удача</a> <br>"
-			html += "<br><a href='byond://?src=\ref[src];apply=1'>Принять</a> <br>"
+			html += "<a href='byond://?src=\ref[src];special=s'>Сила/Strength</a> <br>"
+			html += "<a href='byond://?src=\ref[src];special=p'>Восприятие/Perception</a> <br>"
+			html += "<a href='byond://?src=\ref[src];special=e'>Выносливость/Endurance</a> <br>"
+			html += "<a href='byond://?src=\ref[src];special=c'>Харизма/Charisma</a> <br>"
+			html += "<a href='byond://?src=\ref[src];special=i'>Интеллект/Intelligence</a> <br>"
+			html += "<a href='byond://?src=\ref[src];special=a'>Ловкость/Agility</a> <br>"
+			html += "<a href='byond://?src=\ref[src];special=l'>Удача/Luck</a> <br>"
+			html += "<br><a href='byond://?src=\ref[src];apply=1'>Принять/Apply</a> <br>"
 		else
 			//usr.browse_rsc_icon("icons/special/[type].png", "special_[type]")
 			//usr.browse_rsc("icons/special/[type].png", "special_[type]")
@@ -169,15 +169,15 @@
 			var/current = getPoint(type, TRUE)
 			var/left = max(0, SPECIAL_POINTS - getSpentPoints())
 
-			html += "<br>Сейчас: [current] (осталось [left])<br>"
+			html += "<br>Сейчас/Current: [current] (осталось/left [left])<br>"
 
 			if((current > 1))
-				html += "<a href='byond://?src=\ref[src];dec=[type]'>Понизить</a>"
+				html += "<a href='byond://?src=\ref[src];dec=[type]'>Понизить/Reduce</a>"
 
 			if((left > 0) & (current < 10))
-				html += "<a href='byond://?src=\ref[src];inc=[type]'>Повысить</a>"
+				html += "<a href='byond://?src=\ref[src];inc=[type]'>Повысить/Increace</a>"
 
-			html += "<br><a href='byond://?src=\ref[src];back=1'>Назад</a> <br>"
+			html += "<br><a href='byond://?src=\ref[src];back=1'>Назад/Back</a> <br>"
 
 	popup.set_content(html)
 	popup.open()

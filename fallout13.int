@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1528324867
-DIR: _maps _maps\map_files _maps\map_files\Denwer code code\game code\game\gamemodes code\game\gamemodes\miniantags code\game\gamemodes\miniantags\abduction code\game\machinery code\game\machinery\computer code\game\objects code\game\objects\items code\game\objects\items\weapons code\game\objects\items\weapons\storage code\game\objects\structures code\game\objects\structures\crates_lockers code\game\objects\structures\crates_lockers\closets code\game\objects\structures\crates_lockers\closets\secure code\modules code\modules\awaymissions code\modules\awaymissions\mission_code code\modules\cargo code\modules\clothing code\modules\clothing\outfits code\modules\fallout code\modules\fallout\advanced code\modules\fallout\advanced\perks code\modules\fallout\machinery code\modules\fallout\misc code\modules\fallout\misc\subsystems code\modules\fallout\obj code\modules\fallout\obj\clothing code\modules\fallout\obj\clothing\head code\modules\fallout\obj\clothing\suits code\modules\fallout\obj\spawners code\modules\fallout\obj\structures code\modules\fallout\projectiles code\modules\fallout\projectiles\guns code\modules\mob code\modules\mob\living code\modules\mob\living\carbon code\modules\mob\living\carbon\human code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\hostile code\modules\projectiles code\modules\projectiles\ammunition code\modules\projectiles\boxes_magazines code\modules\projectiles\guns code\modules\projectiles\guns\ballistic code\modules\projectiles\guns\energy code\modules\research code\modules\research\designs code\modules\spells code\modules\spells\spell_types code\modules\uplink icons icons\fallout icons\fallout\machines icons\fallout\objects icons\fallout\objects\guns icons\fallout\objects\structures 
+LAST_COMPILE_TIME: 1528392991
+DIR: _maps _maps\map_files _maps\map_files\Denwer code code\modules code\modules\fallout code\modules\fallout\advanced code\modules\projectiles 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 511.1385
-WINDOW: _maps\map_files\Denwer\denwersurface.dmm;icons\fallout\objects\melee.dmi;icons\fallout\machines\terminals.dmi;code\modules\fallout\misc\subsystems\objectives.dm;code\modules\mob\interactive.dm;code\modules\spells\spell_types\rightandwrong.dm
-FILE: _maps\map_files\Denwer\denwersurface.dmm
+WINDOW: code\modules\fallout\misc\subsystems\objectives.dm;code\modules\projectiles\gun.dm;code\modules\fallout\advanced\special.dm;code\modules\fallout\advanced\perks\controller.dm;code\modules\fallout\advanced\perks\hidden.dm;code\modules\fallout\advanced\perks\perk.dm;code\game\objects\effects\mines.dm;code\modules\mob\living\carbon\human\human_defense.dm;_maps\map_files\Denwer\denwersewers.dmm;_maps\map_files\Denwer\denwersurface.dmm;code\modules\fallout\advanced\mob_loot.dm
+FILE: code\modules\projectiles\gun.dm
 */
 // END_INTERNALS

@@ -1291,7 +1291,7 @@
 	if(H.reagents.has_reagent("medx"))
 		hit_percent *= 0.75
 
-	var/missProb = 2 * H.special.getPoint("l")
+	var/missProb = 1.5 * H.special.getPoint("l") + 3 * H.special.getPoint("a")
 
 	if(H.stat == DEAD)
 		missProb = 0

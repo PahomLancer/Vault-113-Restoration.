@@ -65,7 +65,7 @@
 		playsound(src, 'sound/machines/DeniedBeep.ogg', 60, 1)
 		return
 
-	var/price_mod = 0.50 + (usr:special.getPoint("c") * 0.03)
+	var/price_mod = 0.50 + (usr:special.getPoint("c") * 0.05)
 	product_price *= price_mod
 	product_price = round(product_price)
 

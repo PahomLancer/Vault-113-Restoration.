@@ -125,7 +125,7 @@
 	player.visible_message("[player] takes something from [src].")
 
 	// 0 LUCK = 0.3. 10 LUCK = 1.2
-	var/modifer = 0.3 + (player.special.getPoint("l") * 0.1)
+	var/modifer = 0.3 + (player.special.getPoint("l") * 0.05) + (player.special.getPoint("p") * 0.15)
 
 
 	// DEATHCLAW = 1.3 MOLERAT = 0.67

@@ -179,7 +179,16 @@
 	icon_state = "tunnel0"
 	icontype = "tunnel"
 	smooth = SMOOTH_OLD
-	canSmoothWith = list(/turf/closed/wall/f13/tunnel, /turf/closed/wall)
+	canSmoothWith = list(/turf/closed/wall/f13/tunnel, /turf/closed/wall, /turf/closed/indestructible/f13/tunnel)
+
+/turf/closed/indestructible/f13/vault
+	name = "vault reinforced wall"
+	desc = "A wall built to withstand an atomic explosion."
+	icon = 'icons/fallout/turfs/walls/vault_reinforced.dmi'
+	icon_state = "vaultrwall0"
+	icontype = "vaultrwall"
+	smooth = SMOOTH_OLD
+	canSmoothWith = list(/turf/closed/wall/f13/vault, /turf/closed/wall/r_wall/f13/vault, /turf/closed/wall, /turf/closed/indestructible/f13/vault)
 
 /turf/closed/indestructible/f13/obsidian //Just like that one game studio that worked on the original game, or that block in Minecraft!
 	name = "obsidian"
