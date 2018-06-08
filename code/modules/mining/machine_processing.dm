@@ -23,7 +23,7 @@
 
 	var/dat = "<b>Smelter control console</b><br><br>"
 	//iron
-	if(machine.ore_iron || machine.ore_glass || machine.ore_plasma || machine.ore_uranium || machine.ore_gold || machine.ore_silver || machine.ore_diamond || machine.ore_clown || machine.ore_adamantine)
+	if(machine.ore_iron || machine.ore_glass || machine.ore_plasma || machine.ore_uranium || machine.ore_gold || machine.ore_cooper || machine.ore_silver || machine.ore_diamond || machine.ore_clown || machine.ore_adamantine)
 		if(machine.ore_iron)
 			if (machine.selected_iron==1)
 				dat += "<A href='?src=\ref[src];sel_iron=no'><font color='green'>Smelting</font></A> "
@@ -72,6 +72,16 @@
 			dat += "Gold: [machine.ore_gold]<br>"
 		else
 			machine.selected_gold = 0
+
+		//cooper
+		if(machine.ore_cooper)
+			if (machine.selected_cooper==1)
+				dat += "<A href='?src=\ref[src];sel_cooper=no'><font color='green'>Smelting</font></A> "
+			else
+				dat += "<A href='?src=\ref[src];sel_cooper=yes'><font color='red'>Not smelting</font></A> "
+			dat += "Cooper: [machine.ore_cooper]<br>"
+		else
+			machine.selected_cooper = 0
 
 		//silver
 		if(machine.ore_silver)
@@ -158,6 +168,11 @@
 			machine.selected_gold = 1
 		else
 			machine.selected_gold = 0
+	if(href_list["sel_cooper"])
+		if (href_list["sel_cooper"] == "yes")
+			machine.selected_cooper = 1
+		else
+			machine.selected_cooper = 0
 	if(href_list["sel_silver"])
 		if (href_list["sel_silver"] == "yes")
 			machine.selected_silver = 1
@@ -197,6 +212,7 @@
 	anchored = 1
 	var/obj/machinery/mineral/CONSOLE = null
 	var/ore_gold = 0;
+	var/ore_cooper = 0;
 	var/ore_silver = 0;
 	var/ore_diamond = 0;
 	var/ore_glass = 0;
@@ -207,6 +223,7 @@
 	var/ore_adamantine = 0;
 	var/ore_titanium = 0;
 	var/selected_gold = 0
+	var/selected_cooper = 0
 	var/selected_silver = 0
 	var/selected_diamond = 0
 	var/selected_glass = 0
@@ -220,14 +237,14 @@
 /obj/machinery/mineral/processing_unit/process()
 	for(var/i in 1 to 10)
 		if (on)
-			if (selected_glass && !selected_gold && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
+			if (selected_glass && !selected_gold && !selected_cooper && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
 				if (ore_glass > 0)
 					ore_glass--
 					generate_mineral(/obj/item/stack/sheet/glass)
 				else
 					on = 0
 				continue
-			if (selected_glass && !selected_gold && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && selected_iron && !selected_clown && !selected_titanium)
+			if (selected_glass && !selected_gold && !selected_cooper && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && selected_iron && !selected_clown && !selected_titanium)
 				if (ore_glass > 0 && ore_iron > 0)
 					ore_glass--
 					ore_iron--
@@ -235,71 +252,78 @@
 				else
 					on = 0
 				continue
-			if (!selected_glass && selected_gold && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
+			if (!selected_glass && selected_gold && !selected_cooper && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
 				if (ore_gold > 0)
 					ore_gold--
 					generate_mineral(/obj/item/stack/sheet/mineral/gold)
 				else
 					on = 0
 				continue
-			if (!selected_glass && !selected_gold && selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
+			if (!selected_glass && !selected_gold && selected_cooper && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
+				if (ore_cooper > 0)
+					ore_cooper--
+					generate_mineral(/obj/item/stack/sheet/mineral/cooper)
+				else
+					on = 0
+				continue
+			if (!selected_glass && !selected_gold && !selected_cooper && selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
 				if (ore_silver > 0)
 					ore_silver--
 					generate_mineral(/obj/item/stack/sheet/mineral/silver)
 				else
 					on = 0
 				continue
-			if (!selected_glass && !selected_gold && !selected_silver && selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
+			if (!selected_glass && !selected_gold && !selected_cooper && !selected_silver && selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
 				if (ore_diamond > 0)
 					ore_diamond--
 					generate_mineral(/obj/item/stack/sheet/mineral/diamond)
 				else
 					on = 0
 				continue
-			if (!selected_glass && !selected_gold && !selected_silver && !selected_diamond && selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
+			if (!selected_glass && !selected_gold && !selected_silver && !selected_cooper && !selected_diamond && selected_plasma && !selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
 				if (ore_plasma > 0)
 					ore_plasma--
 					generate_mineral(/obj/item/stack/sheet/mineral/plasma)
 				else
 					on = 0
 				continue
-			if (!selected_glass && !selected_gold && !selected_silver && !selected_diamond && !selected_plasma && selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
+			if (!selected_glass && !selected_gold && !selected_silver && !selected_cooper && !selected_diamond && !selected_plasma && selected_uranium && !selected_iron && !selected_clown && !selected_titanium)
 				if (ore_uranium > 0)
 					ore_uranium--
 					generate_mineral(/obj/item/stack/sheet/mineral/uranium)
 				else
 					on = 0
 				continue
-			if (!selected_glass && !selected_gold && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && selected_iron && !selected_clown && !selected_titanium)
+			if (!selected_glass && !selected_gold && !selected_silver && !selected_cooper && !selected_diamond && !selected_plasma && !selected_uranium && selected_iron && !selected_clown && !selected_titanium)
 				if (ore_iron > 0)
 					ore_iron--
 					generate_mineral(/obj/item/stack/sheet/metal)
 				else
 					on = 0
 				continue
-			if (!selected_glass && !selected_gold && !selected_silver && !selected_diamond && selected_plasma && !selected_uranium && selected_iron && !selected_clown && !selected_titanium)
+			if (!selected_glass && !selected_gold && !selected_silver && !selected_cooper && !selected_diamond && !selected_plasma && !selected_uranium && selected_iron && !selected_clown && selected_titanium)
 				if (ore_iron > 0 && ore_plasma > 0)
 					ore_iron--
-					ore_plasma--
+					ore_titanium--
 					generate_mineral(/obj/item/stack/sheet/plasteel)
 				else
 					on = 0
 				continue
-			if (!selected_glass && !selected_gold && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && selected_clown && !selected_titanium)
+			if (!selected_glass && !selected_gold && !selected_cooper && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && selected_clown && !selected_titanium)
 				if (ore_clown > 0)
 					ore_clown--
 					generate_mineral(/obj/item/stack/sheet/mineral/bananium)
 				else
 					on = 0
 				continue
-			if (!selected_glass && !selected_gold && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && selected_titanium)
+			if (!selected_glass && !selected_gold && !selected_cooper && !selected_silver && !selected_diamond && !selected_plasma && !selected_uranium && !selected_iron && !selected_clown && selected_titanium)
 				if (ore_titanium > 0)
 					ore_titanium--
 					generate_mineral(/obj/item/stack/sheet/mineral/titanium)
 				else
 					on = 0
 				continue
-			if (!selected_glass && !selected_gold && !selected_silver && !selected_diamond && selected_plasma && !selected_uranium && !selected_iron && !selected_clown && selected_titanium)
+			if (!selected_glass && !selected_gold && !selected_cooper && !selected_silver && !selected_diamond && selected_plasma && !selected_uranium && !selected_iron && !selected_clown && selected_titanium)
 				if (ore_titanium > 0)
 					ore_titanium--
 					ore_plasma--
@@ -332,11 +356,14 @@
 
 			var/b = 1 //this part checks if all required ores are available
 
-			if (!(selected_gold || selected_silver ||selected_diamond || selected_uranium | selected_plasma || selected_iron || selected_iron))
+			if (!(selected_gold || selected_cooper || selected_silver ||selected_diamond || selected_uranium | selected_plasma || selected_iron || selected_iron))
 				b = 0
 
 			if (selected_gold == 1)
 				if (ore_gold <= 0)
+					b = 0
+			if (selected_cooper == 1)
+				if (ore_cooper <= 0)
 					b = 0
 			if (selected_silver == 1)
 				if (ore_silver <= 0)
@@ -363,6 +390,8 @@
 			if (b) //if they are, deduct one from each, produce slag and shut the machine off
 				if (selected_gold == 1)
 					ore_gold--
+				if (selected_cooper == 1)
+					ore_cooper--
 				if (selected_silver == 1)
 					ore_silver--
 				if (selected_diamond == 1)
@@ -408,6 +437,10 @@
 				continue
 			if (istype(O,/obj/item/weapon/ore/gold))
 				ore_gold++
+				O.forceMove(null)
+				continue
+			if (istype(O,/obj/item/weapon/ore/cooper))
+				ore_cooper++
 				O.forceMove(null)
 				continue
 			if (istype(O,/obj/item/weapon/ore/silver))

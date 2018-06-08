@@ -147,6 +147,14 @@
 	materials = list(MAT_GOLD=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/gold
 
+/obj/item/weapon/ore/cooper
+	name = "cooper ore"
+	icon_state = "Cooper ore"
+	origin_tech = "materials=3"
+	points = 18
+	materials = list(MAT_COOPER=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/mineral/cooper
+
 /obj/item/weapon/ore/diamond
 	name = "diamond ore"
 	icon_state = "Diamond ore"

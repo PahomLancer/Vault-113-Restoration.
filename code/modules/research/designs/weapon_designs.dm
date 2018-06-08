@@ -8,10 +8,10 @@
 	id = "stunrevolver"
 	req_tech = list("combat" = 4, "materials" = 4, "powerstorage" = 5)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 10000, MAT_GLASS = 10000, MAT_SILVER = 10000)
+	materials = list(MAT_METAL = 10000, MAT_GLASS = 10000, MAT_SILVER = 10000, MAT_COOPER = 2000)
 	build_path = /obj/item/weapon/gun/energy/tesla_revolver
 	category = list("Weapons")
-
+/*
 /datum/design/nuclear_gun
 	name = "Advanced Energy Gun"
 	desc = "An energy gun with an experimental miniaturized reactor."
@@ -21,7 +21,7 @@
 	materials = list(MAT_METAL = 10000, MAT_GLASS = 2000, MAT_URANIUM = 3000, MAT_TITANIUM = 1000)
 	build_path = /obj/item/weapon/gun/energy/e_gun/nuclear
 	category = list("Weapons")
-
+*/
 /datum/design/tele_shield
 	name = "Telescopic Riot Shield"
 	desc = "An advanced riot shield made of lightweight materials that collapses for easy storage."
@@ -32,6 +32,27 @@
 	build_path = /obj/item/weapon/shield/riot/tele
 	category = list("Weapons")
 
+/datum/design/baton
+	name = "stunbaton"
+	desc = "A stun baton for incapacitating people with."
+	id = "baton"
+	req_tech = list("combat" = 3, "materials" = 3, "engineering" = 2)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 2000, MAT_GLASS = 2000, MAT_COOPER = 500)
+	build_path = /obj/item/weapon/melee/baton
+	category = list("Weapons")
+
+/datum/design/powerfist
+	name = "power-fist"
+	desc = "A metal gauntlet with a piston-powered ram ontop for that extra 'ompfh' in your punch."
+	id = "powerfist"
+	req_tech = list("combat" = 5, "materials" = 4, "engineering" = 4, "prewar" = 3)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 6000, MAT_GLASS = 500, MAT_COOPER = 1000)
+	build_path = /obj/item/weapon/melee/powerfist
+	category = list("Weapons")
+
+/*
 /datum/design/lasercannon
 	name = "Accelerator Laser Cannon"
 	desc = "A heavy duty laser cannon. It does more damage the farther away the target is."
@@ -52,7 +73,7 @@
 	reagents_list = list("mutagen" = 40)
 	build_path = /obj/item/weapon/gun/energy/decloner
 	category = list("Weapons")
-
+*/
 /datum/design/rapidsyringe
 	name = "Rapid Syringe Gun"
 	desc = "A gun that fires many syringes."
@@ -67,9 +88,9 @@
 	name = "Temperature Gun"
 	desc = "A gun that shoots temperature bullet energythings to change temperature."//Change it if you want
 	id = "temp_gun"
-	req_tech = list("combat" = 4, "materials" = 4, "powerstorage" = 3, "magnets" = 2)
+	req_tech = list("combat" = 4, "materials" = 4, "powerstorage" = 3, "magnets" = 2, "prewar" = 3)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 5000, MAT_GLASS = 500, MAT_SILVER = 3000)
+	materials = list(MAT_METAL = 5000, MAT_GLASS = 500, MAT_SILVER = 3000, MAT_COOPER = 1000)
 	build_path = /obj/item/weapon/gun/energy/temperature
 	category = list("Weapons")
 
@@ -79,7 +100,7 @@
 	id = "flora_gun"
 	req_tech = list("materials" = 2, "biotech" = 4)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 2000, MAT_GLASS = 500)
+	materials = list(MAT_METAL = 2000, MAT_GLASS = 500, MAT_COOPER = 1000)
 	reagents_list = list("radium" = 20)
 	build_path = /obj/item/weapon/gun/energy/floragun
 	category = list("Weapons")
@@ -100,7 +121,7 @@
 	id = "pyro_Grenade"
 	req_tech = list("combat" = 4, "engineering" = 4)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 2000, MAT_PLASMA = 500)
+	materials = list(MAT_METAL = 2000, MAT_COOPER = 500)
 	build_path = /obj/item/weapon/grenade/chem_grenade/pyro
 	category = list("Weapons")
 
@@ -126,7 +147,7 @@
 	materials = list(MAT_METAL = 3000, MAT_GLASS = 500)
 	build_path = /obj/item/weapon/grenade/chem_grenade/adv_release
 	category = list("Weapons")
-
+/*
 /datum/design/xray
 	name = "Xray Laser Gun"
 	desc = "Not quite as menacing as it sounds"
@@ -136,14 +157,14 @@
 	materials = list(MAT_GOLD = 5000,MAT_URANIUM = 8000, MAT_METAL = 5000, MAT_TITANIUM = 2000)
 	build_path = /obj/item/weapon/gun/energy/xray
 	category = list("Weapons")
-
+*/
 /datum/design/ioncarbine
 	name = "Ion Carbine"
 	desc = "How to dismantle a cyborg : The gun."
 	id = "ioncarbine"
-	req_tech = list("combat" = 5, "magnets" = 4)
+	req_tech = list("combat" = 5, "magnets" = 4, "prewar" = 4)
 	build_type = PROTOLATHE
-	materials = list(MAT_SILVER = 6000, MAT_METAL = 8000, MAT_URANIUM = 2000)
+	materials = list(MAT_SILVER = 6000, MAT_METAL = 8000, MAT_URANIUM = 2000, MAT_COOPER = 1000)
 	build_path = /obj/item/weapon/gun/energy/ionrifle/carbine
 	category = list("Weapons")
 
@@ -151,9 +172,9 @@
 	name = "Bluespace Wormhole Projector"
 	desc = "A projector that emits high density quantum-coupled bluespace beams."
 	id = "wormholeprojector"
-	req_tech = list("combat" = 5, "engineering" = 5, "bluespace" = 7, "plasmatech" = 6)
+	req_tech = list("combat" = 5, "engineering" = 5, "bluespace" = 7, "prewar" = 6)
 	build_type = PROTOLATHE
-	materials = list(MAT_SILVER = 2000, MAT_METAL = 5000, MAT_DIAMOND = 3000)
+	materials = list(MAT_SILVER = 2000, MAT_METAL = 5000, MAT_DIAMOND = 3000, MAT_COOPER = 2000)
 	build_path = /obj/item/weapon/gun/energy/wormhole_projector
 	category = list("Weapons")
 
@@ -168,7 +189,7 @@
 	category = list("Weapons")
 
 //WT550 Mags
-
+/*
 /datum/design/mag_oldsmg
 	name = "WT-550 Auto Gun Magazine (4.6x30mm)"
 	desc = "A 20 round magazine for the out of date security WT-550 Auto Rifle"
@@ -199,7 +220,7 @@
 	id = "mag_oldsmg_tx"
 	materials = list(MAT_METAL = 6000, MAT_SILVER = 600, MAT_URANIUM = 2000)
 	build_path = /obj/item/ammo_box/magazine/wt550m9/wttx
-
+*/
 /datum/design/stunshell
 	name = "Stun Shell"
 	desc = "A stunning shell for a shotgun."
@@ -222,14 +243,14 @@
 
 /datum/design/suppressor
 	name = "Universal Suppressor"
-	desc = "A reverse-engineered universal suppressor that fits on most small arms with threaded barrels."
+	desc = "Part of some weapons."
 	id = "suppressor"
-	req_tech = list("combat" = 6, "engineering" = 5, "syndicate" = 3)
+	req_tech = list("combat" = 4, "engineering" = 5, "prewar" = 3)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 2000, MAT_SILVER = 500)
 	build_path = /obj/item/weapon/suppressor
 	category = list("Weapons")
-
+/*
 /datum/design/gravitygun
 	name = "one-point bluespace-gravitational manipulator"
 	desc = "A multi-mode device that blasts one-point bluespace-gravitational bolts that locally distort gravity."
@@ -249,3 +270,4 @@
 	materials = list(MAT_METAL = 5000, MAT_GLASS = 1500, MAT_URANIUM = 1500, MAT_SILVER = 1500)
 	build_path = /obj/item/weapon/gun/energy/kinetic_accelerator/crossbow/large
 	category = list("Weapons")
+*/

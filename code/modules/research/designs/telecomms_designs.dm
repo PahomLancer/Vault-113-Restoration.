@@ -9,6 +9,7 @@
 	req_tech = list("programming" = 2, "engineering" = 2, "bluespace" = 1)
 	build_path = /obj/item/weapon/circuitboard/machine/telecomms/receiver
 	category = list("Subspace Telecomms")
+	build_type = IMPRINTER
 
 /datum/design/board/telecomms_bus
 	name = "Machine Design (Bus Mainframe)"
@@ -17,6 +18,7 @@
 	req_tech = list("programming" = 2, "engineering" = 2)
 	build_path = /obj/item/weapon/circuitboard/machine/telecomms/bus
 	category = list("Subspace Telecomms")
+	build_type = IMPRINTER
 
 /datum/design/board/telecomms_hub
 	name = "Machine Design (Hub Mainframe)"
@@ -25,6 +27,7 @@
 	req_tech = list("programming" = 2, "engineering" = 2)
 	build_path = /obj/item/weapon/circuitboard/machine/telecomms/hub
 	category = list("Subspace Telecomms")
+	build_type = IMPRINTER
 
 /datum/design/board/telecomms_relay
 	name = "Machine Design (Relay Mainframe)"
@@ -33,6 +36,7 @@
 	req_tech = list("programming" = 2, "engineering" = 2, "bluespace" = 2)
 	build_path = /obj/item/weapon/circuitboard/machine/telecomms/relay
 	category = list("Subspace Telecomms")
+	build_type = IMPRINTER
 
 /datum/design/board/telecomms_processor
 	name = "Machine Design (Processor Unit)"
@@ -41,6 +45,7 @@
 	req_tech = list("programming" = 2, "engineering" = 2)
 	build_path = /obj/item/weapon/circuitboard/machine/telecomms/processor
 	category = list("Subspace Telecomms")
+	build_type = IMPRINTER
 
 /datum/design/board/telecomms_server
 	name = "Machine Design (Server Mainframe)"
@@ -49,6 +54,7 @@
 	req_tech = list("programming" = 2, "engineering" = 2)
 	build_path = /obj/item/weapon/circuitboard/machine/telecomms/server
 	category = list("Subspace Telecomms")
+	build_type = IMPRINTER
 
 /datum/design/board/subspace_broadcaster
 	name = "Machine Design (Subspace Broadcaster)"
@@ -57,3 +63,4 @@
 	req_tech = list("programming" = 2, "engineering" = 2)
 	build_path = /obj/item/weapon/circuitboard/machine/telecomms/broadcaster
 	category = list("Subspace Telecomms")
+	build_type = IMPRINTER

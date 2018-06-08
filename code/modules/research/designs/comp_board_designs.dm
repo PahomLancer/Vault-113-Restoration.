@@ -5,11 +5,11 @@
 	desc = "Allows for the construction of circuit boards used to build a new arcade machine."
 	id = "arcade_battle"
 	req_tech = list("programming" = 1)
-	build_type = IMPRINTER
 	materials = list(MAT_GLASS = 1000)
 	reagents_list = list("sacid" = 20)
 	build_path = /obj/item/weapon/circuitboard/computer/arcade/battle
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/orion_trail
 	name = "Computer Design (Orion Trail Arcade Machine)"
@@ -18,6 +18,7 @@
 	req_tech = list("programming" = 1)
 	build_path = /obj/item/weapon/circuitboard/computer/arcade/orion_trail
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 
 /datum/design/board/seccamera
@@ -27,22 +28,25 @@
 	req_tech = list("programming" = 2, "combat" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/security
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/aiupload
 	name = "Computer Design (AI Upload)"
 	desc = "Allows for the construction of circuit boards used to build an AI Upload Console."
 	id = "aiupload"
-	req_tech = list("programming" = 5, "engineering" = 4)
+	req_tech = list("programming" = 4, "engineering" = 4)
 	build_path = /obj/item/weapon/circuitboard/computer/aiupload
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/borgupload
 	name = "Computer Design (Cyborg Upload)"
 	desc = "Allows for the construction of circuit boards used to build a Cyborg Upload Console."
 	id = "borgupload"
-	req_tech = list("programming" = 5, "engineering" = 4)
+	req_tech = list("programming" = 4, "engineering" = 4)
 	build_path = /obj/item/weapon/circuitboard/computer/borgupload
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/med_data
 	name = "Computer Design (Medical Records)"
@@ -51,6 +55,7 @@
 	req_tech = list("programming" = 2, "biotech" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/med_data
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/operating
 	name = "Computer Design (Operating Computer)"
@@ -59,6 +64,7 @@
 	req_tech = list("programming" = 2, "biotech" = 3)
 	build_path = /obj/item/weapon/circuitboard/computer/operating
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/pandemic
 	name = "Computer Design (PanD.E.M.I.C. 2200)"
@@ -67,6 +73,7 @@
 	req_tech = list("programming" = 3, "biotech" = 3)
 	build_path = /obj/item/weapon/circuitboard/computer/pandemic
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/scan_console
 	name = "Computer Design (DNA Machine)"
@@ -75,6 +82,7 @@
 	req_tech = list("programming" = 2, "biotech" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/scan_consolenew
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/comconsole
 	name = "Computer Design (Communications)"
@@ -83,6 +91,7 @@
 	req_tech = list("programming" = 3, "magnets" = 3)
 	build_path = /obj/item/weapon/circuitboard/computer/communications
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/idcardconsole
 	name = "Computer Design (ID Console)"
@@ -91,6 +100,7 @@
 	req_tech = list("programming" = 3)
 	build_path = /obj/item/weapon/circuitboard/computer/card
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/crewconsole
 	name = "Computer Design (Crew monitoring computer)"
@@ -99,6 +109,7 @@
 	req_tech = list("programming" = 3, "magnets" = 2, "biotech" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/crew
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/secdata
 	name = "Computer Design (Security Records Console)"
@@ -107,6 +118,7 @@
 	req_tech = list("programming" = 2, "combat" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/secure_data
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/atmosalerts
 	name = "Computer Design (Atmosphere Alert)"
@@ -115,6 +127,7 @@
 	req_tech = list("programming" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/atmos_alert
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/atmos_control
 	name = "Computer Design (Atmospheric Monitor)"
@@ -123,6 +136,7 @@
 	req_tech = list("programming" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/atmos_control
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/robocontrol
 	name = "Computer Design (Robotics Control Console)"
@@ -131,6 +145,7 @@
 	req_tech = list("programming" = 4)
 	build_path = /obj/item/weapon/circuitboard/computer/robotics
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/slot_machine
 	name = "Computer Design (Slot Machine)"
@@ -139,6 +154,7 @@
 	req_tech = list("programming" = 1)
 	build_path = /obj/item/weapon/circuitboard/computer/slot_machine
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/powermonitor
 	name = "Computer Design (Power Monitor)"
@@ -147,6 +163,7 @@
 	req_tech = list("programming" = 2, "powerstorage" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/powermonitor
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/solarcontrol
 	name = "Computer Design (Solar Control)"
@@ -155,6 +172,7 @@
 	req_tech = list("programming" = 2, "powerstorage" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/solar_control
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/prisonmanage
 	name = "Computer Design (Prisoner Management Console)"
@@ -163,6 +181,7 @@
 	req_tech = list("programming" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/prisoner
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/mechacontrol
 	name = "Computer Design (Exosuit Control Console)"
@@ -171,6 +190,7 @@
 	req_tech = list("programming" = 3)
 	build_path = /obj/item/weapon/circuitboard/computer/mecha_control
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/mechapower
 	name = "Computer Design (Mech Bay Power Control Console)"
@@ -179,6 +199,7 @@
 	req_tech = list("programming" = 3, "powerstorage" = 3)
 	build_path = /obj/item/weapon/circuitboard/computer/mech_bay_power_console
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/rdconsole
 	name = "Computer Design (R&D Console)"
@@ -187,6 +208,7 @@
 	req_tech = list("programming" = 4)
 	build_path = /obj/item/weapon/circuitboard/computer/rdconsole
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/cargo
 	name = "Computer Design (Supply Console)"
@@ -195,6 +217,7 @@
 	req_tech = list("programming" = 3)
 	build_path = /obj/item/weapon/circuitboard/computer/cargo
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/cargorequest
 	name = "Computer Design (Supply Request Console)"
@@ -203,6 +226,7 @@
 	req_tech = list("programming" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/cargo/request
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/mining
 	name = "Computer Design (Outpost Status Display)"
@@ -211,6 +235,7 @@
 	req_tech = list("programming" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/mining
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/comm_monitor
 	name = "Computer Design (Telecommunications Monitoring Console)"
@@ -219,6 +244,7 @@
 	req_tech = list("programming" = 3, "magnets" = 3, "bluespace" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/comm_monitor
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/comm_server
 	name = "Computer Design (Telecommunications Server Monitoring Console)"
@@ -227,14 +253,16 @@
 	req_tech = list("programming" = 3, "magnets" = 3, "bluespace" = 2)
 	build_path = /obj/item/weapon/circuitboard/computer/comm_server
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/message_monitor
 	name = "Computer Design (Messaging Monitor Console)"
 	desc = "Allows for the construction of circuit boards used to build a messaging monitor console."
 	id = "message_monitor"
-	req_tech = list("programming" = 5)
+	req_tech = list("programming" = 4)
 	build_path = /obj/item/weapon/circuitboard/computer/message_monitor
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/aifixer
 	name = "Computer Design (AI Integrity Restorer)"
@@ -243,6 +271,7 @@
 	req_tech = list("programming" = 4, "magnets" = 3)
 	build_path = /obj/item/weapon/circuitboard/computer/aifixer
 	category = list("Computer Boards")
+	build_type = IMPRINTER
 
 /datum/design/board/libraryconsole
 	name = "Computer Design (Library Console)"
@@ -251,3 +280,4 @@
 	req_tech = list("programming" = 1)
 	build_path = /obj/item/weapon/circuitboard/computer/libraryconsole
 	category = list("Computer Boards")
+	build_type = IMPRINTER

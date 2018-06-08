@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1528392991
-DIR: _maps _maps\map_files _maps\map_files\Denwer code code\modules code\modules\fallout code\modules\fallout\advanced code\modules\projectiles 
+LAST_COMPILE_TIME: 1528490270
+DIR: _maps _maps\map_files _maps\map_files\Denwer _maps\map_files\generic code code\__DEFINES code\datums code\game code\game\gamemodes code\game\gamemodes\miniantags code\game\gamemodes\miniantags\abduction code\game\gamemodes\miniantags\slaughter code\game\gamemodes\wizard code\game\machinery code\game\mecha code\game\objects code\game\objects\items code\game\objects\items\stacks code\game\objects\items\stacks\sheets code\game\objects\items\weapons code\game\turfs code\game\turfs\simulated code\modules code\modules\clothing code\modules\clothing\head code\modules\clothing\suits code\modules\crafting code\modules\crafting\recipes code\modules\crafting\recipes\blueprint code\modules\fallout code\modules\fallout\advanced code\modules\fallout\advanced\perks code\modules\fallout\obj code\modules\fallout\obj\clothing code\modules\fallout\obj\clothing\head code\modules\fallout\obj\clothing\suits code\modules\fallout\obj\structures code\modules\fallout\projectiles code\modules\fallout\projectiles\guns code\modules\fallout\turf code\modules\hydroponics code\modules\mining code\modules\mob code\modules\mob\living code\modules\mob\living\carbon code\modules\mob\living\carbon\alien code\modules\mob\living\carbon\human code\modules\mob\living\carbon\human\species_types code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\hostile code\modules\projectiles code\modules\projectiles\boxes_magazines code\modules\research code\modules\research\designs code\modules\surgery code\modules\surgery\organs icons icons\fallout icons\fallout\turfs icons\obj 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 511.1385
-WINDOW: code\modules\fallout\misc\subsystems\objectives.dm;code\modules\projectiles\gun.dm;code\modules\fallout\advanced\special.dm;code\modules\fallout\advanced\perks\controller.dm;code\modules\fallout\advanced\perks\hidden.dm;code\modules\fallout\advanced\perks\perk.dm;code\game\objects\effects\mines.dm;code\modules\mob\living\carbon\human\human_defense.dm;_maps\map_files\Denwer\denwersewers.dmm;_maps\map_files\Denwer\denwersurface.dmm;code\modules\fallout\advanced\mob_loot.dm
-FILE: code\modules\projectiles\gun.dm
+WINDOW: code\modules\fallout\misc\subsystems\objectives.dm;code\modules\fallout\advanced\perks\controller.dm;_maps\map_files\Denwer\denwersewers.dmm;code\modules\research\research.dm;_maps\map_files\Denwer\denwersurface.dmm
+FILE: _maps\map_files\Denwer\denwersurface.dmm
 */
 // END_INTERNALS

@@ -49,7 +49,7 @@
 	name = "fuse"
 	desc = "A tiny glass tube with some wiring stuck inside of it.<br>I have no idea what it is."
 	icon_state = "fuse_1"
-/obj/item/crafting/furse/initialize()
+/obj/item/crafting/fuse/initialize()
 	..()
 	icon_state = "fuse_[rand(1,3)]"
 

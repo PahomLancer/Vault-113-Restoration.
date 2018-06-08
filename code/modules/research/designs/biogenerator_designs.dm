@@ -210,3 +210,35 @@
 	materials = list(MAT_BIOMASS = 300)
 	build_path = /obj/item/clothing/head/rice_hat
 	category = list("initial","Leather and Cloth")
+
+/datum/design/wonderglue
+	name = "wonder glue"
+	id = "wonderglue"
+	build_type = BIOGENERATOR
+	materials = list(MAT_BIOMASS = 20)
+	build_path = /obj/item/crafting/wonderglue
+	category = list("initial","Crafting")
+
+/datum/design/duct_tape
+	name = "duct tape"
+	id = "duct_tape"
+	build_type = BIOGENERATOR
+	materials = list(MAT_BIOMASS = 20)
+	build_path = /obj/item/crafting/duct_tape
+	category = list("initial","Crafting")
+
+/datum/design/turpentine
+	name = "turpentine"
+	id = "turpentine"
+	build_type = BIOGENERATOR
+	materials = list(MAT_BIOMASS = 20)
+	build_path = /obj/item/crafting/turpentine
+	category = list("initial","Crafting")
+
+/datum/design/abraxo
+	name = "abraxo"
+	id = "abraxo"
+	build_type = BIOGENERATOR
+	materials = list(MAT_BIOMASS = 20)
+	build_path = /obj/item/crafting/abraxo
+	category = list("initial","Crafting")

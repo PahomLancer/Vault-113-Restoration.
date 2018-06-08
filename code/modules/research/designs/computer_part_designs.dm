@@ -1,7 +1,7 @@
 ////////////////////////////////////////
 ///////////Computer Parts///////////////
 ////////////////////////////////////////
-
+/*
 /datum/design/disk/normal
 	name = "hard disk drive"
 	id = "hdd_basic"
@@ -259,3 +259,4 @@
 	reagents_list = list("sacid" = 20)
 	build_path = /obj/item/weapon/computer_hardware/processor_unit/photonic/small
 	category = list("Computer Parts")
+	*/

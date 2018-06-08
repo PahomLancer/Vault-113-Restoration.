@@ -200,11 +200,11 @@ research holder datum.
 	desc = "Development of new and improved engineering parts and tools."
 	id = "engineering"
 
-/datum/tech/plasmatech
+/*/datum/tech/plasmatech
 	name = "Plasma Research"
 	desc = "Research into the mysterious substance colloqually known as \"plasma\"."
 	id = "plasmatech"
-	rare = 3
+	rare = 3*/
 
 /datum/tech/powerstorage
 	name = "Power Manipulation Technology"
@@ -237,11 +237,16 @@ research holder datum.
 	desc = "The development of new computer and artificial intelligence and data storage systems."
 	id = "programming"
 
-/datum/tech/syndicate
+/datum/tech/prewar
+	name = "Pre-war Research"
+	desc = "The development and stading of old pre-war techologies."
+	id = "prewar"
+
+/*/datum/tech/syndicate
 	name = "Illegal Technologies Research"
 	desc = "The study of technologies that violate Nanotrassen regulations."
 	id = "syndicate"
-	rare = 4
+	rare = 4*/
 
 
 //Secret Technologies (hidden by default, require rare items to reveal)
@@ -317,13 +322,13 @@ research holder datum.
 /obj/item/weapon/disk/tech_disk/adv
 	name = "advanced technology disk"
 	desc = "A disk for storing technology data for further research. This one has extra storage space."
-	materials = list(MAT_METAL=300, MAT_GLASS=100, MAT_SILVER=50)
+	materials = list(MAT_METAL=300, MAT_GLASS=100, MAT_SILVER=50, MAT_COOPER=50)
 	max_tech_stored = 5
 
 /obj/item/weapon/disk/tech_disk/super_adv
 	name = "quantum technology disk"
 	desc = "A disk for storing technology data for further research. This one has extremely large storage space."
-	materials = list(MAT_METAL=300, MAT_GLASS=100, MAT_SILVER=100, MAT_GOLD=100)
+	materials = list(MAT_METAL=300, MAT_GLASS=100, MAT_SILVER=100, MAT_GOLD=100, MAT_COOPER=100)
 	max_tech_stored = 10
 
 /obj/item/weapon/disk/tech_disk/debug

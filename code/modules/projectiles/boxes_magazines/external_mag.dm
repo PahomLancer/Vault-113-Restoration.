@@ -159,7 +159,7 @@
 	max_ammo = 120
 
 /obj/item/ammo_box/magazine/m12g
-	name = "shotgun magazine (12g taser slugs)"
+	name = "shotgun magazine (12g frag slugs)"
 	desc = "A drum magazine."
 	icon_state = "m12gs"
 	ammo_type = /obj/item/ammo_casing/shotgun/frag12

@@ -193,6 +193,34 @@ var/global/list/datum/stack_recipe/gold_recipes = list ( \
 	..()
 
 /*
+ * Cooper
+ */
+/obj/item/stack/sheet/mineral/cooper
+	name = "cooper"
+	icon_state = "sheet-cooper"
+	singular_name = "cooper bar"
+	origin_tech = "materials=3"
+	sheettype = "cooper"
+	materials = list(MAT_COOPER=MINERAL_MATERIAL_AMOUNT)
+
+var/global/list/datum/stack_recipe/cooper_recipes = list ( \
+//	new/datum/stack_recipe("golden door", /obj/structure/mineral_door/cooper, 10, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("gold tile", /obj/item/stack/tile/mineral/cooper, 1, 4, 20), \
+	new/datum/stack_recipe("HoS Statue", /obj/structure/statue/cooper/hos, 5, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("HoP Statue", /obj/structure/statue/cooper/hop, 5, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("CE Statue", /obj/structure/statue/cooper/ce, 5, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("RD Statue", /obj/structure/statue/cooper/rd, 5, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("Simple Crown", /obj/item/clothing/head/crown, 5), \
+	new/datum/stack_recipe("CMO Statue", /obj/structure/statue/cooper/cmo, 5, one_per_turf = 1, on_floor = 1),
+	)
+
+/obj/item/stack/sheet/mineral/cooper/New(var/loc, var/amount=null)
+	recipes = cooper_recipes
+	pixel_x = rand(0,4)-4
+	pixel_y = rand(0,4)-4
+	..()
+
+/*
  * Silver
  */
 /obj/item/stack/sheet/mineral/silver

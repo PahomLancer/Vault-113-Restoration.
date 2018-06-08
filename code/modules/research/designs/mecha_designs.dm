@@ -9,6 +9,7 @@
 	req_tech = list("programming" = 2)
 	build_path = /obj/item/weapon/circuitboard/mecha/ripley/main
 	category = list("Exosuit Modules")
+	build_type = IMPRINTER
 
 /datum/design/board/ripley_peri
 	name = "APLU \"Ripley\" Peripherals Control module"
@@ -17,7 +18,7 @@
 	req_tech = list("programming" = 2)
 	build_path = /obj/item/weapon/circuitboard/mecha/ripley/peripherals
 	category = list("Exosuit Modules")
-
+	build_type = IMPRINTER
 
 /datum/design/board/odysseus_main
 	name = "\"Odysseus\" Central Control module"
@@ -26,6 +27,7 @@
 	req_tech = list("programming" = 3,"biotech" = 3, "engineering" = 3)
 	build_path = /obj/item/weapon/circuitboard/mecha/odysseus/main
 	category = list("Exosuit Modules")
+	build_type = IMPRINTER
 
 /datum/design/board/odysseus_peri
 	name = "\"Odysseus\" Peripherals Control module"
@@ -34,58 +36,62 @@
 	req_tech = list("programming" = 3,"biotech" = 3, "engineering" = 3)
 	build_path = /obj/item/weapon/circuitboard/mecha/odysseus/peripherals
 	category = list("Exosuit Modules")
-
+	build_type = IMPRINTER
 
 /datum/design/board/gygax_main
 	name = "\"Gygax\" Central Control module"
 	desc = "Allows for the construction of a \"Gygax\" Central Control module."
 	id = "gygax_main"
-	req_tech = list("programming" = 4, "combat" = 3, "engineering" = 4)
+	req_tech = list("programming" = 4, "combat" = 3, "engineering" = 4, "prewar" = 4)
 	build_path = /obj/item/weapon/circuitboard/mecha/gygax/main
 	category = list("Exosuit Modules")
+	build_type = IMPRINTER
 
 /datum/design/board/gygax_peri
 	name = "\"Gygax\" Peripherals Control module"
 	desc = "Allows for the construction of a \"Gygax\" Peripheral Control module."
 	id = "gygax_peri"
-	req_tech = list("programming" = 4, "combat" = 3, "engineering" = 4)
+	req_tech = list("programming" = 4, "combat" = 3, "engineering" = 4, "prewar" = 4)
 	build_path = /obj/item/weapon/circuitboard/mecha/gygax/peripherals
 	category = list("Exosuit Modules")
+	build_type = IMPRINTER
 
 /datum/design/board/gygax_targ
 	name = "\"Gygax\" Weapons & Targeting Control module"
 	desc = "Allows for the construction of a \"Gygax\" Weapons & Targeting Control module."
 	id = "gygax_targ"
-	req_tech = list("programming" = 4, "combat" = 4, "engineering" = 4)
+	req_tech = list("programming" = 4, "combat" = 4, "engineering" = 4, "prewar" = 4)
 	build_path = /obj/item/weapon/circuitboard/mecha/gygax/targeting
 	category = list("Exosuit Modules")
-
+	build_type = IMPRINTER
 
 /datum/design/board/durand_main
 	name = "\"Durand\" Central Control module"
 	desc = "Allows for the construction of a \"Durand\" Central Control module."
 	id = "durand_main"
-	req_tech = list("programming" = 4, "combat" = 4, "engineering" = 4)
+	req_tech = list("programming" = 4, "combat" = 4, "engineering" = 4, "prewar" = 4)
 	build_path = /obj/item/weapon/circuitboard/mecha/durand/main
 	category = list("Exosuit Modules")
+	build_type = IMPRINTER
 
 /datum/design/board/durand_peri
 	name = "\"Durand\" Peripherals Control module"
 	desc = "Allows for the construction of a \"Durand\" Peripheral Control module."
 	id = "durand_peri"
-	req_tech = list("programming" = 4, "combat" = 4, "engineering" = 4)
+	req_tech = list("programming" = 4, "combat" = 4, "engineering" = 4, "prewar" = 4)
 	build_path = /obj/item/weapon/circuitboard/mecha/durand/peripherals
 	category = list("Exosuit Modules")
+	build_type = IMPRINTER
 
 /datum/design/board/durand_targ
 	name = "\"Durand\" Weapons & Targeting Control module"
 	desc = "Allows for the construction of a \"Durand\" Weapons & Targeting Control module."
 	id = "durand_targ"
-	req_tech = list("programming" = 5, "combat" = 4, "engineering" = 4)
+	req_tech = list("programming" = 5, "combat" = 4, "engineering" = 4, "prewar" = 4)
 	build_path = /obj/item/weapon/circuitboard/mecha/durand/targeting
 	category = list("Exosuit Modules")
-
-
+	build_type = IMPRINTER
+/*
 /datum/design/board/honker_main
 	name = "\"H.O.N.K\" Central Control module"
 	desc = "Allows for the construction of a \"H.O.N.K\" Central Control module."
@@ -109,31 +115,34 @@
 	req_tech = list("programming" = 3, "engineering" = 3)
 	build_path = /obj/item/weapon/circuitboard/mecha/honker/targeting
 	category = list("Exosuit Modules")
-
+*/
 
 /datum/design/board/phazon_main
 	name = "\"Phazon\" Central Control module"
 	desc = "Allows for the construction of a \"Phazon\" Central Control module."
 	id = "phazon_main"
-	req_tech = list("programming" = 6, "materials" = 6, "plasmatech" = 5)
+	req_tech = list("programming" = 6, "materials" = 6, "prewar" = 5)
 	build_path = /obj/item/weapon/circuitboard/mecha/phazon/main
 	category = list("Exosuit Modules")
+	build_type = IMPRINTER
 
 /datum/design/board/phazon_peri
 	name = "\"Phazon\" Peripherals Control module"
 	desc = "Allows for the construction of a \"Phazon\" Peripheral Control module."
 	id = "phazon_peri"
-	req_tech = list("programming" = 6, "bluespace" = 5, "plasmatech" = 5)
+	req_tech = list("programming" = 6, "bluespace" = 5, "prewar" = 5)
 	build_path = /obj/item/weapon/circuitboard/mecha/phazon/peripherals
 	category = list("Exosuit Modules")
+	build_type = IMPRINTER
 
 /datum/design/board/phazon_targ
 	name = "\"Phazon\" Weapons & Targeting Control module"
 	desc = "Allows for the construction of a \"Phazon\" Weapons & Targeting Control module."
 	id = "phazon_targ"
-	req_tech = list("programming" = 6, "magnets" = 5, "plasmatech" = 5)
+	req_tech = list("programming" = 6, "magnets" = 5, "prewar" = 5)
 	build_path = /obj/item/weapon/circuitboard/mecha/phazon/targeting
 	category = list("Exosuit Modules")
+	build_type = IMPRINTER
 
 ////////////////////////////////////////
 /////////// Mecha Equpment /////////////
@@ -146,7 +155,7 @@
 	build_type = MECHFAB
 	req_tech = list("combat" = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot
-	materials = list(MAT_METAL=10000)
+	materials = list(MAT_METAL=10000,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -157,7 +166,7 @@
 	build_type = MECHFAB
 	req_tech = list("combat" = 5, "materials" = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/carbine
-	materials = list(MAT_METAL=10000)
+	materials = list(MAT_METAL=10000,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -168,7 +177,7 @@
 	build_type = MECHFAB
 	req_tech = list("combat" = 6, "magnets" = 5, "materials" = 5)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/ion
-	materials = list(MAT_METAL=20000,MAT_SILVER=6000,MAT_URANIUM=2000)
+	materials = list(MAT_METAL=20000,MAT_SILVER=6000,MAT_URANIUM=2000,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -179,7 +188,7 @@
 	build_type = MECHFAB
 	req_tech = list("combat" = 3, "magnets" = 3, "engineering" = 3)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser
-	materials = list(MAT_METAL=10000)
+	materials = list(MAT_METAL=10000,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -190,7 +199,7 @@
 	build_type = MECHFAB
 	req_tech = list("combat" = 4, "magnets" = 4, "engineering" = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy
-	materials = list(MAT_METAL=10000)
+	materials = list(MAT_METAL=10000,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -201,7 +210,7 @@
 	build_type = MECHFAB
 	req_tech = list("combat" = 4, "engineering" = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang
-	materials = list(MAT_METAL=22000,MAT_GOLD=6000,MAT_SILVER=8000)
+	materials = list(MAT_METAL=22000,MAT_GOLD=6000,MAT_SILVER=8000,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -210,9 +219,9 @@
 	desc = "Allows for the construction of SRM-8 Missile Rack."
 	id = "mech_missile_rack"
 	build_type = MECHFAB
-	req_tech = list("combat" = 6, "materials" = 5, "engineering" = 5)
+	req_tech = list("combat" = 6, "materials" = 5, "engineering" = 5, "prewar" = 5)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/missile_rack
-	materials = list(MAT_METAL=22000,MAT_GOLD=6000,MAT_SILVER=8000)
+	materials = list(MAT_METAL=22000,MAT_GOLD=6000,MAT_SILVER=8000,MAT_COOPER=4000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -221,9 +230,9 @@
 	desc = "A weapon that violates the Geneva Convention at 3 rounds per minute"
 	id = "clusterbang_launcher"
 	build_type = MECHFAB
-	req_tech = list("combat"= 5, "materials" = 5, "syndicate" = 3)
+	req_tech = list("combat"= 5, "materials" = 5, "prewar" = 5)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang/clusterbang
-	materials = list(MAT_METAL=20000,MAT_GOLD=10000,MAT_URANIUM=10000)
+	materials = list(MAT_METAL=20000,MAT_GOLD=10000,MAT_URANIUM=10000,MAT_COOPER=5000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -232,9 +241,9 @@
 	desc = "An exosuit module that allows generating of small quasi-stable wormholes."
 	id = "mech_wormhole_gen"
 	build_type = MECHFAB
-	req_tech = list("bluespace" = 4, "magnets" = 4, "plasmatech" = 3)
+	req_tech = list("bluespace" = 4, "magnets" = 4, "prewar" = 5)
 	build_path = /obj/item/mecha_parts/mecha_equipment/wormhole_generator
-	materials = list(MAT_METAL=10000)
+	materials = list(MAT_METAL=10000,MAT_COOPER=9000,MAT_URANIUM=10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -243,9 +252,9 @@
 	desc = "An exosuit module that allows exosuits to teleport to any position in view."
 	id = "mech_teleporter"
 	build_type = MECHFAB
-	req_tech = list("bluespace" = 8, "magnets" = 5)
+	req_tech = list("bluespace" = 6, "magnets" = 5, "prewar" = 5)
 	build_path = /obj/item/mecha_parts/mecha_equipment/teleporter
-	materials = list(MAT_METAL=10000,MAT_DIAMOND=10000)
+	materials = list(MAT_METAL=10000,MAT_DIAMOND=10000,MAT_COOPER=9000,MAT_URANIUM=10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -256,7 +265,7 @@
 	build_type = MECHFAB
 	req_tech = list("materials" = 5, "bluespace" = 3, "magnets" = 4, "powerstorage"=4, "engineering" = 5)
 	build_path = /obj/item/mecha_parts/mecha_equipment/rcd
-	materials = list(MAT_METAL=30000,MAT_GOLD=20000,MAT_PLASMA=25000,MAT_SILVER=20000)
+	materials = list(MAT_METAL=30000,MAT_GOLD=20000,MAT_COOPER=25000,MAT_SILVER=20000)
 	construction_time = 1200
 	category = list("Exosuit Equipment")
 
@@ -267,7 +276,7 @@
 	build_type = MECHFAB
 	req_tech = list("bluespace" = 4, "magnets" = 3, "engineering" = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/gravcatapult
-	materials = list(MAT_METAL=10000)
+	materials = list(MAT_METAL=10000,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -278,7 +287,7 @@
 	build_type = MECHFAB
 	req_tech = list("magnets" = 3, "programming" = 3, "engineering" = 5)
 	build_path = /obj/item/mecha_parts/mecha_equipment/repair_droid
-	materials = list(MAT_METAL=10000,MAT_GLASS=5000,MAT_GOLD=1000,MAT_SILVER=2000)
+	materials = list(MAT_METAL=10000,MAT_GLASS=5000,MAT_GOLD=1000,MAT_SILVER=2000,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -289,7 +298,7 @@
 	build_type = MECHFAB
 	req_tech = list("magnets" = 4, "powerstorage" = 5, "engineering" = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/tesla_energy_relay
-	materials = list(MAT_METAL=10000,MAT_GLASS=2000,MAT_GOLD=2000,MAT_SILVER=3000)
+	materials = list(MAT_METAL=10000,MAT_GLASS=2000,MAT_GOLD=2000,MAT_SILVER=3000,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -300,7 +309,7 @@
 	build_type = MECHFAB
 	req_tech = list("materials" = 5, "combat" = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster
-	materials = list(MAT_METAL=20000,MAT_SILVER=5000)
+	materials = list(MAT_METAL=20000,MAT_SILVER=5000,MAT_COOPER=5000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -311,7 +320,7 @@
 	build_type = MECHFAB
 	req_tech = list("materials" = 5, "combat" = 5, "engineering"=3)
 	build_path = /obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster
-	materials = list(MAT_METAL=20000,MAT_GOLD=5000)
+	materials = list(MAT_METAL=20000,MAT_GOLD=5000,MAT_COOPER=5000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -322,7 +331,7 @@
 	build_type = MECHFAB
 	req_tech = list("materials" = 5, "engineering" = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/drill/diamonddrill
-	materials = list(MAT_METAL=10000,MAT_DIAMOND=6500)
+	materials = list(MAT_METAL=10000,MAT_DIAMOND=6500,MAT_COOPER=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -333,11 +342,11 @@
 	build_type = MECHFAB
 	req_tech = list("powerstorage"= 5, "engineering" = 4, "materials" = 3)
 	build_path = /obj/item/mecha_parts/mecha_equipment/generator/nuclear
-	materials = list(MAT_METAL=10000,MAT_GLASS=1000,MAT_SILVER=500)
+	materials = list(MAT_METAL=10000,MAT_GLASS=1000,MAT_SILVER=500,MAT_COOPER=1000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
-/datum/design/mech_plasma_cutter
+/*/datum/design/mech_plasma_cutter
 	name = "Exosuit Module Design (217-D Heavy Plasma Cutter)"
 	desc = "A device that shoots resonant plasma bursts at extreme velocity. The blasts are capable of crushing rock and demolishing solid obstacles."
 	id = "mech_plasma_cutter"
@@ -358,7 +367,7 @@
 	materials = list(MAT_METAL=10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
-
+*/
 /datum/design/mech_lmg
 	name = "Exosuit Weapon (\"Ultra AC 2\" LMG)"
 	desc = "A weapon for combat exosuits. Shoots a rapid, three shot burst."
@@ -375,7 +384,7 @@
 	desc = "Equipment for medical exosuits. A mounted sleeper that stabilizes patients and can inject reagents in the exosuit's reserves."
 	id = "mech_sleeper"
 	build_type = MECHFAB
-	req_tech = list("biotech" = 3, "engineering" = 3, "plasmatech" = 2)
+	req_tech = list("biotech" = 3, "engineering" = 3)
 	build_path = /obj/item/mecha_parts/mecha_equipment/medical/sleeper
 	materials = list(MAT_METAL=5000,MAT_GLASS=10000)
 	construction_time = 100
@@ -396,9 +405,9 @@
 	name = "Exosuit Medical Equipment (Medical Beamgun)"
 	desc = "Equipment for medical exosuits. A mounted medical nanite projector which will treat patients with a focused beam."
 	id = "mech_medi_beam"
-	req_tech = list("engineering" = 6, "materials" = 7, "powerstorage" = 5, "biotech" = 6)
+	req_tech = list("engineering" = 6, "materials" = 6, "powerstorage" = 5, "biotech" = 5)
 	build_type = MECHFAB
-	materials = list(MAT_METAL = 15000, MAT_GLASS = 8000, MAT_PLASMA = 3000, MAT_GOLD = 8000, MAT_DIAMOND = 2000)
+	materials = list(MAT_METAL = 15000, MAT_GLASS = 8000, MAT_COOPER=2000, MAT_GOLD = 8000, MAT_DIAMOND = 2000)
 	construction_time = 250
 	build_path = /obj/item/mecha_parts/mecha_equipment/medical/mechmedbeam
 	category = list("Exosuit Equipment")

@@ -56,7 +56,7 @@
 	materials = list(MAT_METAL = 1500, MAT_SILVER = 150, MAT_GLASS = 3000)
 	build_path = /obj/item/device/lightreplacer
 	category = list("Power Designs")
-
+/*
 /datum/design/board/pacman
 	name = "Machine Design (PACMAN-type Generator Board)"
 	desc = "The circuit board that for a PACMAN-type portable generator."
@@ -64,17 +64,19 @@
 	req_tech = list("programming" = 2, "plasmatech" = 3, "powerstorage" = 3, "engineering" = 3)
 	build_path = /obj/item/weapon/circuitboard/machine/pacman
 	category = list("Engineering Machinery")
-
+*/
 /datum/design/board/pacman/super
-	name = "Machine Design (SUPERPACMAN-type Generator Board)"
-	desc = "The circuit board that for a SUPERPACMAN-type portable generator."
+	name = "Machine Design (Uranium Generator Board)"
+	desc = "The circuit board that for a Uranium portable generator."
 	id = "superpacman"
 	req_tech = list("programming" = 3, "powerstorage" = 4, "engineering" = 4)
 	build_path = /obj/item/weapon/circuitboard/machine/pacman/super
-
+	build_type = IMPRINTER
+/*
 /datum/design/board/pacman/mrs
 	name = "Machine Design (MRSPACMAN-type Generator Board)"
 	desc = "The circuit board that for a MRSPACMAN-type portable generator."
 	id = "mrspacman"
 	req_tech = list("programming" = 3, "powerstorage" = 5, "engineering" = 5, "plasmatech" = 4)
 	build_path = /obj/item/weapon/circuitboard/machine/pacman/mrs
+*/

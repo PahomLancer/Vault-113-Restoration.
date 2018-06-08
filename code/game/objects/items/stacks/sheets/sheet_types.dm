@@ -38,9 +38,9 @@ var/global/list/datum/stack_recipe/metal_recipes = list ( \
 	new/datum/stack_recipe("machine frame", /obj/structure/frame/machine, 5, time = 25, one_per_turf = 1, on_floor = 1), \
 	new/datum/stack_recipe("airlock assembly", /obj/structure/door_assembly, 4, time = 50, one_per_turf = 1, on_floor = 1), \
 //	new/datum/stack_recipe("firelock frame", /obj/structure/firelock_frame, 3, time = 50, one_per_turf = 1, on_floor = 1), \*/
-/*	new/datum/stack_recipe("turret frame", /obj/machinery/porta_turret_construct, 5, time = 25, one_per_turf = 1, on_floor = 1), \*/
-/*	new/datum/stack_recipe("meatspike frame", /obj/structure/kitchenspike_frame, 5, time = 25, one_per_turf = 1, on_floor = 1), \*/
-/*	new/datum/stack_recipe("reflector frame", /obj/structure/reflector, 5, time = 25, one_per_turf = 1, on_floor = 1), \*/
+	new/datum/stack_recipe("turret frame", /obj/machinery/porta_turret_construct, 5, time = 25, one_per_turf = 1, on_floor = 1), \
+ 	new/datum/stack_recipe("meatspike frame", /obj/structure/kitchenspike_frame, 5, time = 25, one_per_turf = 1, on_floor = 1), \
+ 	new/datum/stack_recipe("reflector frame", /obj/structure/reflector, 5, time = 25, one_per_turf = 1, on_floor = 1), \
 	null, \
 	new/datum/stack_recipe("grenade casing", /obj/item/weapon/grenade/chem_grenade), \
 	new/datum/stack_recipe("light fixture frame", /obj/item/wallframe/light_fixture, 2), \
@@ -105,13 +105,13 @@ var/global/list/datum/stack_recipe/plasteel_recipes = list ( \
 /obj/item/stack/sheet/plasteel
 	name = "plasteel"
 	singular_name = "plasteel sheet"
-	desc = "This sheet is an alloy of iron and plasma."
+	desc = "This sheet is an alloy of iron and titanium."
 	icon_state = "sheet-plasteel"
 	item_state = "sheet-metal"
-	materials = list(MAT_METAL=2000, MAT_PLASMA=2000)
+	materials = list(MAT_METAL=2000, MAT_TITANIUM=500)
 	throwforce = 10
 	flags = CONDUCT
-	origin_tech = "materials=2"
+	origin_tech = "materials=3"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 100, acid = 80)
 	resistance_flags = FIRE_PROOF
 	merge_type = /obj/item/stack/sheet/plasteel
@@ -152,9 +152,9 @@ var/global/list/datum/stack_recipe/wood_recipes = list ( \
 	new/datum/stack_recipe("picture frame", /obj/item/weapon/picture_frame, 1, time = 10),\
 	new/datum/stack_recipe("display case chassis", /obj/structure/displaycase_chassis, 5, one_per_turf = 1), \
 	new/datum/stack_recipe("wooden buckler", /obj/item/weapon/shield/riot/buckler, 20, time = 40), \
-/*	new/datum/stack_recipe("apiary", /obj/structure/beebox, 40, time = 50),\
-	new/datum/stack_recipe("honey frame", /obj/item/honey_frame, 5, time = 10),\*/
-/*	new/datum/stack_recipe("ore box", /obj/structure/ore_box, 4, time = 50, one_per_turf = 1, on_floor = 1),\*/
+	new/datum/stack_recipe("apiary", /obj/structure/beebox, 40, time = 50),\
+	new/datum/stack_recipe("honey frame", /obj/item/honey_frame, 5, time = 10),\
+ 	new/datum/stack_recipe("ore box", /obj/structure/ore_box, 4, time = 50, one_per_turf = 1, on_floor = 1),\
 	new/datum/stack_recipe("baseball bat", /obj/item/weapon/twohanded/baseball, 5, time = 15),\
 	)
 
@@ -183,25 +183,12 @@ var/global/list/datum/stack_recipe/wood_recipes = list ( \
  * Cloth
  */
 var/global/list/datum/stack_recipe/cloth_recipes = list ( \
-/*	new/datum/stack_recipe("grey jumpsuit", /obj/item/clothing/under/color/grey, 3), \
-	new/datum/stack_recipe("black shoes", /obj/item/clothing/shoes/sneakers/black, 2), \
-	null, \*/
 	new/datum/stack_recipe("backpack", /obj/item/weapon/storage/backpack, 4), \
-/*	new/datum/stack_recipe("dufflebag", /obj/item/weapon/storage/backpack/dufflebag, 6), \
-	null, \
 	new/datum/stack_recipe("plant bag", /obj/item/weapon/storage/bag/plants, 4), \
-	new/datum/stack_recipe("book bag", /obj/item/weapon/storage/bag/books, 4), \
 	new/datum/stack_recipe("mining satchel", /obj/item/weapon/storage/bag/ore, 4), \
-	new/datum/stack_recipe("chemistry bag", /obj/item/weapon/storage/bag/chemistry, 4), \
-	new/datum/stack_recipe("bio bag", /obj/item/weapon/storage/bag/bio, 4), \*/
-	null, \
-	// new/datum/stack_recipe("improvised gauze", /obj/item/stack/medical/gauze/improvised, 1, 2, 6),
 	new/datum/stack_recipe("rag", /obj/item/weapon/reagent_containers/glass/rag, 1), \
 	new/datum/stack_recipe("bedsheet", /obj/item/weapon/bedsheet, 3), \
-	new/datum/stack_recipe("empty sandbag", /obj/item/weapon/emptysandbag, 4), \
-	null, \
-/*	new/datum/stack_recipe("fingerless gloves", /obj/item/clothing/gloves/fingerless, 1), \
-	new/datum/stack_recipe("black gloves", /obj/item/clothing/gloves/color/black, 3), \*/
+	new/datum/stack_recipe("empty sandbag", /obj/item/weapon/emptysandbag, 4)
 	)
 
 /obj/item/stack/sheet/cloth

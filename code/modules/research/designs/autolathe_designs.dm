@@ -337,7 +337,7 @@
 	construction_time=100
 	build_path = /obj/item/weapon/stock_parts/cell
 	category = list("hacked", "Security")
-
+/*
 /datum/design/beanbag_slug
 	name = "Beanbag slug"
 	id = "beanbag_slug"
@@ -345,7 +345,7 @@
 	materials = list(MAT_METAL = 250)
 	build_path = /obj/item/ammo_casing/shotgun/beanbag
 	category = list("initial", "Security")
-
+*/
 /datum/design/rubbershot
 	name = "Rubber shot"
 	id = "rubber_shot"
@@ -475,7 +475,7 @@
 	materials = list(MAT_METAL = 30000)
 	build_path = /obj/item/weapon/grenade/mine/explosive
 	category = list("hacked", "Security")
-
+/*
 /datum/design/rcd
 	name = "Rapid construction device (RCD)"
 	id = "rcd"
@@ -483,7 +483,7 @@
 	materials = list(MAT_METAL = 30000)
 	build_path = /obj/item/weapon/rcd
 	category = list("hacked", "Construction")
-
+*/
 /datum/design/electropack
 	name = "Electropack"
 	id = "electropack"
@@ -578,6 +578,30 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 20000)
 	build_path = /obj/item/ammo_box/magazine/F13/m556
+	category = list("hacked", "Security")
+
+/datum/design/avenger
+	name = "5mm ammo pack"
+	id = "avenger"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 60000)
+	build_path = /obj/item/ammo_box/magazine/avenger
+	category = list("hacked", "Security")
+
+/datum/design/m12gslug
+	name = "shotgun magazine (12g slugs)"
+	id = "m12gslug"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 30000)
+	build_path = /obj/item/ammo_box/magazine/m12g/slug
+	category = list("hacked", "Security")
+
+/datum/design/tommygunm45
+	name = "drum magazine (.45)"
+	id = "tommygunm45"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 40000)
+	build_path = /obj/item/ammo_box/magazine/tommygunm45
 	category = list("hacked", "Security")
 
 /datum/design/c308mm

@@ -24,7 +24,7 @@ using metal and glass, it uses glass and reagents (usually sulfuric acis).
 								"Subspace Telecomms",
 								"Research Machinery",
 								"Misc. Machinery",
-								"Computer Parts"
+								"Prewar Designs"
 								)
 
 /obj/machinery/r_n_d/circuit_imprinter/New()

@@ -280,6 +280,18 @@
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	defer_change = 1
 
+/turf/closed/mineral/cooper
+	mineralType = /obj/item/weapon/ore/cooper
+	spreadChance = 5
+	spread = 1
+	scan_state = "rock_Cooper"
+
+/turf/closed/mineral/cooper/volcanic
+	environment_type = "basalt"
+	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
+	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
+	initial_gas_mix = "o2=14;n2=23;TEMP=300"
+	defer_change = 1
 
 /turf/closed/mineral/silver
 	mineralType = /obj/item/weapon/ore/silver

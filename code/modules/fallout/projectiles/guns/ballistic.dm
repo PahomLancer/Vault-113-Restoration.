@@ -5,7 +5,7 @@
 	desc = "The N99 self-loading pistol is known for its ability to survive in the harshest of conditions.<br>This great weapon is able to be reliably restored to working condition, even after extended exposure to hard elements without maintenance."
 	icon_state = "n99"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=2;materials=2"
+	origin_tech = "combat=2;materials=2;prewar=2"
 	mag_type = /obj/item/ammo_box/magazine/F13/m10
 	fire_sound = "10mmfire"
 	force = 13
@@ -26,7 +26,7 @@
 	icon_state = "44magnum"
 	desc = "The Smith & Wesson Model 29 is a powerful six-shot double-action revolver, manufactured by the U.S. company Smith & Wesson since 1955.<br>Centuries later, copies of it can still be found in the wastes."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=2;materials=2"
+	origin_tech = "combat=2;materials=2;prewar=2"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44 ///obj/item/ammo_box/F13/m44 //
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
@@ -45,7 +45,7 @@
 	icon_state = "rifle-automatic"
 	item_state = "shotgun"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+	origin_tech = "combat=3;materials=2;prewar=2"
 	mag_type = /obj/item/ammo_box/magazine/F13/m308
 	can_suppress = 1
 	casing_ejector = 1
@@ -65,7 +65,7 @@
 	icon_state = "garand"
 	item_state = "shotgun"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+	origin_tech = "combat=3;materials=2;prewar=2"
 	mag_type = /obj/item/ammo_box/magazine/F13/g308
 	can_suppress = 1
 	casing_ejector = 1
@@ -99,7 +99,7 @@
 	icon_state = "gauss"
 	item_state = "shotgun"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=4;materials=4"
+	origin_tech = "combat=5;materials=4;prewar=6"
 	mag_type = /obj/item/ammo_box/magazine/F13/gaussmag
 	suppressed = 1
 	casing_ejector = 1
@@ -122,7 +122,7 @@
 	icon_state = "rifle"
 	item_state = "shotgun"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+	origin_tech = "combat=3;materials=2;prewar=3"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/m308
 	can_suppress = 1
 	casing_ejector = 0
@@ -152,7 +152,7 @@
 	icon_state = "smg10mm"
 	item_state = "assault"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+	origin_tech = "combat=3;materials=2;prewar=4"
 	mag_type = /obj/item/ammo_box/magazine/F13/m10smg
 	fire_sound = "10mmfire"
 	can_suppress = 0
@@ -168,7 +168,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "pipe-gun"
 	item_state = "shotgun"
-	origin_tech = "combat=1;materials=1"
+	origin_tech = "combat=1;materials=1;prewar=1"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/pipe
 	casing_ejector = 1
 	weapon_weight = WEAPON_HEAVY
@@ -182,7 +182,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "trail-carbine"
 	item_state = "shotgun"
-	origin_tech = "combat=1;materials=1"
+	origin_tech = "combat=1;materials=1;prewar=2"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal/trail
 	casing_ejector = 1
 	weapon_weight = WEAPON_HEAVY
@@ -198,7 +198,7 @@
 	icon_state = "assault-rifle"
 	item_state = "assault"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+	origin_tech = "combat=3;materials=2;prewar=3"
 	mag_type = /obj/item/ammo_box/magazine/F13/m556
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	burst_size = 2
@@ -218,7 +218,7 @@
 	name = "Marksman Carbine"
 	desc = "A 5.56 caliber assault rifle widely seen in use by pre-war U.S. military forces."
 	icon_state = "marksman_rifle"
-	origin_tech = "combat=4;materials=2"
+	origin_tech = "combat=4;materials=2;prewar=4"
 	fire_sound = 'sound/f13weapons/marksman_rifle.ogg'
 	burst_size = 2
 	price = 1000
@@ -230,7 +230,7 @@
 	name = "Infiltrator"
 	desc = "The Infiltrator is a silenced and scoped assault rifle. Its appearance consists of a black paint finish, a scope, and is basically a shortened and stock-less variant of the R91 assault rifle that was standard-issue in the United States Armed Forces at the time of the Great War. Based on its name, it was probably created to be used for special operations groups. The Infiltrator fires 5.56mm round and utilizes a 20-round magazine."
 	icon_state = "infiltrator"
-	origin_tech = "combat=5;materials=2"
+	origin_tech = "combat=5;materials=2;prewar=5"
 	fire_sound = 'sound/f13weapons/infiltrator.ogg'
 	burst_size = 2
 	price = 1400
@@ -255,7 +255,7 @@
 	icon_state = "bozar"
 	item_state = "arg" //Looks like bozar
 	slot_flags = 0
-	origin_tech = "combat=6;engineering=3;"
+	origin_tech = "combat=6;engineering=3;prewar=7"
 	mag_type = /obj/item/ammo_box/magazine/F13/m223
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	can_suppress = 0

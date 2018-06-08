@@ -30,7 +30,7 @@
 				/obj/item/stack/sheet/metal = 3,
 				/obj/item/stack/sheet/plasteel = 5)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 800
+	time = 400
 	category = CAT_WEAPON
 	XP = 200
 
@@ -42,7 +42,7 @@
 				/obj/item/stack/sheet/metal = 2,
 				/obj/item/stack/sheet/plasteel = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 600
+	time = 400
 	category = CAT_WEAPON
 	XP = 75
 
@@ -54,7 +54,7 @@
 				/obj/item/stack/sheet/metal = 3,
 				/obj/item/stack/sheet/mineral/wood = 3)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 120
 
@@ -66,7 +66,7 @@
 				/obj/item/stack/sheet/metal = 2,
 				/obj/item/stack/sheet/plasteel = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 100
 
@@ -78,7 +78,7 @@
 				/obj/item/stack/sheet/metal = 3,
 				/obj/item/stack/sheet/mineral/wood = 3)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 110
 
@@ -90,7 +90,7 @@
 				/obj/item/stack/sheet/metal = 1,
 				/obj/item/stack/sheet/mineral/wood = 2)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 40
 
@@ -102,7 +102,7 @@
 				/obj/item/stack/sheet/metal = 3,
 				/obj/item/stack/sheet/plasteel = 2)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 140
 
@@ -113,7 +113,7 @@
 				/obj/item/weaponcrafting/stock = 1,
 				/obj/item/stack/sheet/metal = 3)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 120
 
@@ -129,7 +129,7 @@
 			/obj/item/crafting/resistor = 1, /obj/item/crafting/board = 1, /obj/item/stack/cable_coil = 9,
 			/obj/item/weapon/stock_parts/cell = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 250
 
@@ -143,7 +143,7 @@
 	/obj/item/crafting/resistor = 1, /obj/item/crafting/board = 1, /obj/item/stack/cable_coil = 7,
 	/obj/item/weapon/stock_parts/cell = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 175
 
@@ -157,7 +157,7 @@
 	/obj/item/crafting/resistor = 1, /obj/item/crafting/board = 1,
 	/obj/item/stack/cable_coil = 6, /obj/item/weapon/stock_parts/cell = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 140
 
@@ -170,7 +170,7 @@
 	/obj/item/crafting/transistor = 7, /obj/item/crafting/capacitor = 15,
 	/obj/item/crafting/resistor = 3, /obj/item/crafting/board = 1,
 	/obj/item/stack/cable_coil = 15, /obj/item/weapon/stock_parts/cell = 1)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 400
 
@@ -184,9 +184,9 @@
 			/obj/item/crafting/resistor = 5, /obj/item/crafting/board = 2,
 			/obj/item/stack/cable_coil = 30, /obj/item/weapon/stock_parts/cell = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
-	XP = 700
+	XP = 500
 
 //LASER
 
@@ -200,7 +200,7 @@
 			/obj/item/crafting/bulb = 1, /obj/item/stack/cable_coil = 2,
 			/obj/item/weapon/stock_parts/cell = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 150
 
@@ -215,7 +215,7 @@
 			/obj/item/crafting/bulb = 1, /obj/item/stack/cable_coil = 6,
 			/obj/item/weapon/stock_parts/cell = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 200
 
@@ -230,7 +230,7 @@
 			/obj/item/crafting/bulb = 1, /obj/item/stack/cable_coil = 13,
 			/obj/item/weapon/stock_parts/cell = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 250
 
@@ -245,7 +245,7 @@
 			/obj/item/crafting/bulb = 3, /obj/item/stack/cable_coil = 20,
 			/obj/item/weapon/stock_parts/cell = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 300
 
@@ -260,6 +260,6 @@
 			/obj/item/crafting/bulb = 1, /obj/item/stack/cable_coil = 15,
 			/obj/item/weapon/stock_parts/cell = 1)
 	tools = list(/obj/item/weapon/screwdriver)
-	time = 700
+	time = 400
 	category = CAT_WEAPON
 	XP = 400

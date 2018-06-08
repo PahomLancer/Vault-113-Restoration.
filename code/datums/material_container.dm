@@ -240,6 +240,12 @@
 	sheet_type = /obj/item/stack/sheet/mineral/gold
 	coin_type = /obj/item/weapon/coin/gold
 
+/datum/material/cooper
+	name = "Cooper"
+	id = MAT_COOPER
+	sheet_type = /obj/item/stack/sheet/mineral/cooper
+	coin_type = /obj/item/weapon/coin/gold
+
 /datum/material/diamond
 	name = "Diamond"
 	id = MAT_DIAMOND
