@@ -41,5 +41,5 @@
 	icon_state = "bluebodybag_folded"
 	unfoldedbag_path = /obj/structure/closet/body_bag/bluespace
 	w_class = WEIGHT_CLASS_SMALL
-	origin_tech = "bluespace=4;materials=4;plasmatech=4"
+	origin_tech = "bluespace=5;materials=4;prewar=4"
 

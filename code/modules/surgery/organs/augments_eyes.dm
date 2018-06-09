@@ -59,7 +59,7 @@
 	desc = "These cybernetic eye implants will give you Thermal vision. Vertical slit pupil included."
 	eye_color = "FC0"
 	implant_color = "#FFCC00"
-	origin_tech = "materials=5;programming=4;biotech=4;magnets=4;syndicate=1"
+	origin_tech = "materials=5;programming=4;biotech=4;magnets=4;prewar=1"
 	sight_flags = SEE_MOBS
 	see_invisible = SEE_INVISIBLE_MINIMUM
 	flash_protect = -1
@@ -112,7 +112,7 @@
 	name = "welding shield implant"
 	desc = "These reactive micro-shields will protect you from welders and flashes without obscuring your vision."
 	slot = "eye_shield"
-	origin_tech = "materials=4;biotech=3;engineering=4;plasmatech=3"
+	origin_tech = "materials=4;biotech=3;engineering=4;prewar=3"
 	implant_color = "#101010"
 	flash_protect = 2
 	aug_message = null

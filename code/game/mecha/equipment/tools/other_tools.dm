@@ -28,7 +28,7 @@
 	name = "mounted wormhole generator"
 	desc = "An exosuit module that allows generating of small quasi-stable wormholes."
 	icon_state = "mecha_wholegen"
-	origin_tech = "bluespace=4;magnets=4;plasmatech=2"
+	origin_tech = "bluespace=5;magnets=4;prewar=2"
 	equip_cooldown = 50
 	energy_drain = 300
 	range = RANGED
@@ -79,7 +79,7 @@
 	name = "mounted gravitational catapult"
 	desc = "An exosuit mounted Gravitational Catapult."
 	icon_state = "mecha_teleport"
-	origin_tech = "bluespace=3;magnets=3;engineering=4"
+	origin_tech = "bluespace=4;magnets=3;engineering=4"
 	equip_cooldown = 10
 	energy_drain = 100
 	range = MELEE|RANGED

@@ -6,6 +6,7 @@
 
         #include "map_files\Denwer\denwersurface.dmm"
         #include "map_files\Denwer\denwersewers.dmm"
+        #include "RandomZLevels\centcomAway.dmm"
 
 		#define MAP_PATH "map_files/Denwer"
         #define MAP_FILE "denwersurface.dmm"

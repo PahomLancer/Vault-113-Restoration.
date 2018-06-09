@@ -23,7 +23,7 @@
 	holder.clear_reagents()
 
 
-/datum/chemical_reaction/reagent_explosion/nitroglycerin
+/*/datum/chemical_reaction/reagent_explosion/nitroglycerin
 	name = "Nitroglycerin"
 	id = "nitroglycerin"
 	results = list("nitroglycerin" = 2)
@@ -42,7 +42,7 @@
 	required_reagents = list("nitroglycerin" = 1)
 	required_temp = 474
 	strengthdiv = 2
-
+*/
 
 /datum/chemical_reaction/reagent_explosion/potassium_explosion
 	name = "Explosion"
@@ -90,7 +90,7 @@
 	id = "blackpowder_explosion"
 	required_reagents = list("blackpowder" = 1)
 	required_temp = 474
-	strengthdiv = 6
+	strengthdiv = 3
 	modifier = 1
 	mix_message = "<span class='boldannounce'>Sparks start flying around the black powder!</span>"
 
@@ -135,7 +135,7 @@
 		PoolOrNew(/obj/effect/hotspot, turf)
 	holder.chem_temp = 1000 // hot as shit
 
-/datum/chemical_reaction/reagent_explosion/methsplosion
+/*/datum/chemical_reaction/reagent_explosion/methsplosion
 	name = "Meth explosion"
 	id = "methboom1"
 	results = list("methboom1" = 1)
@@ -155,7 +155,7 @@
 	required_reagents = list("diethylamine" = 1, "iodine" = 1, "phosphorus" = 1, "hydrogen" = 1) //diethylamine is often left over from mixing the ephedrine.
 	required_temp = 300 //room temperature, chilling it even a little will prevent the explosion
 	results = list("methboom1" = 4) // this is ugly. Sorry goof.
-
+*/
 /datum/chemical_reaction/sorium
 	name = "Sorium"
 	id = "sorium"

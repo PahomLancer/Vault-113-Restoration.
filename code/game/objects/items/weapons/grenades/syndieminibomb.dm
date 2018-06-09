@@ -44,7 +44,7 @@
 
 /obj/item/weapon/grenade/syndieminibomb/concussion/prime()
 	update_mob()
-	explosion(src.loc,1,8,16,flame_range = 0)
+	explosion(src.loc,0,8,16,flame_range = 0)
 	qdel(src)
 
 /obj/item/weapon/grenade/syndieminibomb/concussion/frag

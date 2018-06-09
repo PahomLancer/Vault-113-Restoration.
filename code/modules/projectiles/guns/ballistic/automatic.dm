@@ -242,7 +242,7 @@
 	icon_state = "bulldog"
 	item_state = "bulldog"
 	w_class = WEIGHT_CLASS_NORMAL
-	origin_tech = "combat=6;materials=4;syndicate=6"
+	origin_tech = "combat=6;materials=4;prewar=6"
 	mag_type = /obj/item/ammo_box/magazine/m12g
 	fire_sound = 'sound/weapons/Gunshot.ogg'
 	can_suppress = 0
@@ -256,7 +256,7 @@
 	desc = "A shotgun, also called a scattergun, is a firearm designed to shoot a multitude of lead or steel balls of varying sizes, greatly increasing the weapon's hit potential. This makes it very effective at hunting game. However, the accuracy and power found at close range starts to diminish as the target gets farther away. Shotguns designed for the military's use are often called combat shotguns."
 	icon_state = "riot_shotgun"
 	//icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=6"
+	origin_tech = "combat=6;materials=4;prewar=5"
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
@@ -271,7 +271,7 @@
 	desc = "This is the strongest shotgun, having greater range, damage and burst fire capabilities and is able with a good burst to shred against strong foes."
 	icon_state = "pancor"
 	//icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=6"
+	origin_tech = "combat=6;materials=5;prewar=6"
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
@@ -317,7 +317,7 @@
 	item_state = "l6closedmag"
 	w_class = WEIGHT_CLASS_HUGE
 	slot_flags = 0
-	origin_tech = "combat=6;engineering=3;syndicate=6"
+	origin_tech = "combat=6;engineering=3;prewar=6"
 	mag_type = /obj/item/ammo_box/magazine/mm556x45
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
@@ -408,7 +408,7 @@
 	name = "syndicate sniper rifle"
 	desc = "An illegally modified .50 cal sniper rifle with supression compatibility. Quickscoping still doesn't work."
 	//pin = /obj/item/device/firing_pin/implant/pindicate
-	origin_tech = "combat=7;syndicate=6"
+	origin_tech = "combat=7;prewar=6"
 
 
 

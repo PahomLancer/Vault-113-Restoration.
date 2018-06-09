@@ -7,7 +7,7 @@
 	overlay = "Rain_acid"//"rain"
 	chance = 40
 	duration_min = 1000
-	duration_max = 10000
+	duration_max = 5000
 	var/power = "normal"
 	var/outside_sound
 	var/inside_sound
@@ -63,12 +63,13 @@
 			var/mob/living/M = currentrun[currentrun.len]
 			currentrun.len--
 			if(istype(M, /mob/living/carbon/human))
-				if(prob(5))
-					lightningstrike(get_turf(M))
+				//if(prob(5))
+					//lightningstrike(get_turf(M))
 				var/mob/living/carbon/human/H = M
 				H.adjustBruteLoss(2)
 				H.adjustFireLoss(2)
 				H.adjustToxLoss(2)
+				M.adjustFireLoss(2)
 			if (TICK_CHECK)
 				return
 		currentrun.Cut()

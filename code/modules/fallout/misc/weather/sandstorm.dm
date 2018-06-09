@@ -7,8 +7,8 @@
 
 	overlay = "sandstorm"
 	chance = 5
-	duration_min = 5000
-	duration_max = 20000
+	duration_min = 2000
+	duration_max = 8000
 	var/list/mobs = list()
 	var/list/currentrun = list()
 	var/started = FALSE
@@ -62,8 +62,8 @@
 		var/mob/living/M = currentrun[currentrun.len]
 		currentrun.len--
 		if(istype(M, /mob/living/carbon/human))
-			if(prob(0.5))
-				lightningstrike(get_turf(M))
+			//if(prob(0.5))
+				//lightningstrike(get_turf(M))
 			var/mob/living/carbon/human/H = M
 			if((!H.wear_mask || !(H.wear_mask.flags_inv & HIDEFACE)) && (!H.head || !(H.head.flags_inv & HIDEFACE)))
 				H.adjustOxyLoss(2)

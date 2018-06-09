@@ -163,7 +163,7 @@
 /obj/item/weapon/circuitboard/computer/telesci_console
 	name = "Telescience Console (Computer Board)"
 	build_path = /obj/machinery/computer/telescience
-	origin_tech = "programming=3;bluespace=3;plasmatech=4"
+	origin_tech = "programming=3;bluespace=4;prewar=4"
 /obj/item/weapon/circuitboard/computer/message_monitor
 	name = "Message Monitor (Computer Board)"
 	build_path = /obj/machinery/computer/message_monitor
@@ -230,7 +230,7 @@
 /obj/item/weapon/circuitboard/computer/teleporter
 	name = "Teleporter (Computer Board)"
 	build_path = /obj/machinery/computer/teleporter
-	origin_tech = "programming=3;bluespace=3;plasmatech=3"
+	origin_tech = "programming=3;bluespace=4;prewar=3"
 /obj/item/weapon/circuitboard/computer/secure_data
 	name = "Security Records Console (Computer Board)"
 	build_path = /obj/machinery/computer/secure_data
@@ -366,11 +366,11 @@
 /obj/item/weapon/circuitboard/computer/comm_monitor
 	name = "Telecommunications Monitor (Computer Board)"
 	build_path = /obj/machinery/computer/telecomms/monitor
-	origin_tech = "programming=3;magnets=3;bluespace=2"
+	origin_tech = "programming=3;magnets=3;bluespace=3"
 /obj/item/weapon/circuitboard/computer/comm_server
 	name = "Telecommunications Server Monitor (Computer Board)"
 	build_path = /obj/machinery/computer/telecomms/server
-	origin_tech = "programming=3;magnets=3;bluespace=2"
+	origin_tech = "programming=3;magnets=3;bluespace=3"
 
 /obj/item/weapon/circuitboard/computer/shuttle
 	name = "Shuttle (Computer Board)"

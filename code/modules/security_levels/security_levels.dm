@@ -56,10 +56,10 @@
 					minor_announce(config.alert_desc_red_downto, "Attention! Code red!")
 				security_level = SEC_LEVEL_RED
 
-				/*	- At the time of commit, setting status displays didn't work properly
+				/*	- At the time of commit, setting status displays didn't work properly*/
 				var/obj/machinery/computer/communications/CC = locate(/obj/machinery/computer/communications,world)
 				if(CC)
-					CC.post_status("alert", "redalert")*/
+					CC.post_status("alert", "redalert")
 
 				for(var/obj/machinery/firealarm/FA in machines)
 					if(FA.z == ZLEVEL_STATION)

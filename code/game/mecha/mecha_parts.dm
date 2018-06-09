@@ -265,7 +265,7 @@
 	name="\improper Phazon torso"
 	desc="A Phazon torso part. The socket for the bluespace core that powers the exosuit's unique phase drives is located in the middle."
 	icon_state = "phazon_harness"
-	origin_tech = "programming=4;materials=4;bluespace=4;plasmatech=5"
+	origin_tech = "programming=4;materials=4;bluespace=4;prewar=5"
 
 /obj/item/mecha_parts/part/phazon_head
 	name="\improper Phazon head"
@@ -301,7 +301,7 @@
 	name="Phazon armor"
 	desc="Phazon armor plates. They are layered with plasma to protect the pilot from the stress of phasing and have unusual properties."
 	icon_state = "phazon_armor"
-	origin_tech = "materials=4;bluespace=4;plasmatech=5"
+	origin_tech = "materials=4;bluespace=4;prewar=5"
 
 
 ///////// Circuitboards

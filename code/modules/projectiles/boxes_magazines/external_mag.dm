@@ -161,9 +161,9 @@
 /obj/item/ammo_box/magazine/m12g
 	name = "shotgun magazine (12g frag slugs)"
 	desc = "A drum magazine."
-	icon_state = "m12gs"
-	ammo_type = /obj/item/ammo_casing/shotgun/frag12
-	origin_tech = "combat=3;syndicate=1"
+	icon_state = "m12gb"
+	ammo_type = /obj/item/ammo_casing/shotgun
+	origin_tech = "combat=3;prewar=1"
 	caliber = "shotgun"
 	max_ammo = 12
 

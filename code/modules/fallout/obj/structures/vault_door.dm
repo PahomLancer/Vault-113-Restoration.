@@ -19,9 +19,9 @@
 	var/broken_state = "113empty"
 	pixel_x = -32
 	pixel_y = -32
-	obj_integrity = 150000
-	max_integrity = 150000
-	integrity_failure = 30000
+	obj_integrity = 1500000
+	max_integrity = 1500000
+	integrity_failure = 300000
 
 /obj/structure/vault_door/old
 	name = "\proper ancient Vault blast door"

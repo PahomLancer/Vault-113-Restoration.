@@ -17,6 +17,7 @@
 #include "_maps\denwer.dm"
 #include "_maps\map_files\Denwer\denwersewers.dmm"
 #include "_maps\map_files\Denwer\denwersurface.dmm"
+#include "_maps\RandomZLevels\centcomAway.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DATASTRUCTURES\heap.dm"

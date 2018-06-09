@@ -5,7 +5,7 @@
 	icon_state = "closed"
 	var/id = 1
 	sub_door = 1
-	explosion_block = 3
+	explosion_block = 5
 	heat_proof = 1
 	safe = 0
 	obj_integrity = 600
