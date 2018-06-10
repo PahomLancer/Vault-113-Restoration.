@@ -31,7 +31,7 @@ var/bomb_set
 	var/exploding = FALSE
 	var/detonation_timer = null
 	var/r_code = "ADMIN"
-	var/yes_code = FALSE
+	var/yes_code = TRUE/*FALSE*/
 	var/safety = TRUE
 	var/obj/item/weapon/disk/nuclear/auth = null
 	use_power = 0
@@ -304,7 +304,7 @@ var/bomb_set
 				switch(digit)
 					if("R")
 						numeric_input = ""
-						yes_code = FALSE
+						yes_code = TRUE/*FALSE*/
 						. = TRUE
 					if("E")
 						if(numeric_input == r_code)
@@ -414,7 +414,7 @@ var/bomb_set
 		return
 
 	exploding = TRUE
-	yes_code = FALSE
+	yes_code = TRUE/*FALSE*/
 	safety = TRUE
 	update_icon()
 	for(var/mob/M in player_list)
