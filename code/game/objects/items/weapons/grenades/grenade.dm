@@ -48,9 +48,16 @@
 /obj/item/weapon/grenade/attack_self(mob/user)
 	if(!active)
 		if(clown_check(user))
+			//var/mob/living/carbon/human/humanUser = user
+			//det_time = det_time / (30 - 2.9 * (humanUser.skills.getPoint("explosives")))
 			to_chat(user, "<span class='warning'>You prime the [name]! [det_time/10] seconds!</span>")
 			playsound(user.loc, 'sound/weapons/armbomb.ogg', 60, 1)
 			active = 1
+
+			/*var/mob/living/carbon/human/humanUser = user
+			if(prob(100 - humanUser.skills.getPoint("explosives") * 9 - humanUser.special.getPoint("l")))
+				det_time = det_time / (30 - 2.9 * (humanUser.skills.getPoint("explosives")))
+			*/
 			icon_state = initial(icon_state) + "_active"
 			add_fingerprint(user)
 			var/turf/bombturf = get_turf(src)

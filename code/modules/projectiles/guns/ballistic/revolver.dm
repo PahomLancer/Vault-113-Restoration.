@@ -92,6 +92,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
 	unique_rename = 1
 	unique_reskin = 1
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/revolver/detective/New()
 	..()

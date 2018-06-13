@@ -81,6 +81,7 @@
 		to_chat(user, "A [chambered.BB ? "live" : "spent"] one is in the chamber.")
 
 /obj/item/weapon/gun/ballistic/shotgun/lethal
+	small_gun = 1
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal
 
 // RIOT SHOTGUN //
@@ -91,6 +92,7 @@
 	icon_state = "riotshotgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/riot
 	sawn_desc = "Come with me if you want to live."
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/shotgun/riot/attackby(obj/item/A, mob/user, params)
 	..()
@@ -198,6 +200,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com
 	w_class = WEIGHT_CLASS_HUGE
 	wielded_icon = "cshotgun1"
+	small_gun = 1
 
 //Dual Feed Shotgun
 

@@ -1233,6 +1233,7 @@
 #include "code\modules\fallout\advanced\flag.dm"
 #include "code\modules\fallout\advanced\hrange.dm"
 #include "code\modules\fallout\advanced\mob_loot.dm"
+#include "code\modules\fallout\advanced\skills.dm"
 #include "code\modules\fallout\advanced\special.dm"
 #include "code\modules\fallout\advanced\teleport.dm"
 #include "code\modules\fallout\advanced\trading.dm"

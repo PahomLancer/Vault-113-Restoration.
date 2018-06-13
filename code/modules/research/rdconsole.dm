@@ -607,9 +607,18 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 /obj/machinery/computer/rdconsole/attack_hand(mob/user)
 	if(..())
 		return
-	interact(user)
+	var/mob/living/carbon/human/humanUser = user
+	if (humanUser.special.getPoint("i") + humanUser.skills.getPoint("science") > 16)
+		interact(user)
+	/*else
+		to_chat(user, "You too dumb or have not enough science skills for this console")
+		return*/
 
 /obj/machinery/computer/rdconsole/interact(mob/user)
+	var/mob/living/carbon/human/humanUser = user
+	if (humanUser.special.getPoint("i") + humanUser.skills.getPoint("science") < 16)
+		to_chat(user, "You too dumb or have not enough science skills for this console")
+		return
 	user.set_machine(src)
 
 	if(first_use)

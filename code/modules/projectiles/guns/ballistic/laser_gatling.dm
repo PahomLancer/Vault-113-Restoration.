@@ -111,6 +111,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/minigun
 	casing_ejector = 0
 	var/obj/item/weapon/minigunpack/ammo_pack
+	big_gun = 1
 
 /obj/item/weapon/gun/ballistic/minigun/attack_self(mob/living/user)
 	return

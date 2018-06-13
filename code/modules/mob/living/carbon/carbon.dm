@@ -2,6 +2,7 @@
 	blood_volume = BLOOD_VOLUME_NORMAL
 
 	var/datum/special/special
+	var/datum/skills/skills
 
 /mob/living/carbon/New()
 	create_reagents(1000)

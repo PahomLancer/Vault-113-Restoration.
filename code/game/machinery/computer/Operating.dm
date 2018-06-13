@@ -30,6 +30,10 @@
 	interact(user)
 
 /obj/machinery/computer/operating/interact(mob/user)
+	var/mob/living/carbon/human/humanUser = user
+	if (humanUser.special.getPoint("i") + humanUser.skills.getPoint("medicine") < 14)
+		to_chat(user, "You too dumb or have not enough medicine skills for this console")
+		return
 	var/dat = ""
 	if(table)
 		dat += "<B>Patient information:</B><BR>"

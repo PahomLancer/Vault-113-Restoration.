@@ -212,12 +212,13 @@
 	item_state = "shotgun"
 	w_class = WEIGHT_CLASS_HUGE
 	slot_flags = 0
-	origin_tech = "combat=5;materials=1;syndicate=3"
+	origin_tech = "combat=5;materials=1;prewar=3"
 	mag_type = /obj/item/ammo_box/magazine/tommygunm45
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	can_suppress = 0
 	burst_size = 4
 	fire_delay = 1
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/ar
 	name = "\improper NT-ARG 'Boarder'"
@@ -265,6 +266,7 @@
 	recoil = 2
 	//pin = /obj/item/device/firing_pin
 	fire_sound = 'sound/f13weapons/riot_shotgun.ogg'
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/pancor
 	name = "Pancor Jackhammer"
@@ -281,6 +283,7 @@
 	burst_size = 3
 	//pin = /obj/item/device/firing_pin
 	fire_sound = 'sound/f13weapons/pancor.ogg'
+	small_gun = 1
 
 //obj/item/weapon/gun/ballistic/automatic/shotgun/bulldog/unrestricted
 	//pin = /obj/item/device/firing_pin
@@ -395,7 +398,7 @@
 	zoom_amt = 7 //Long range, enough to see in front of you, but no tiles behind you.
 	slot_flags = SLOT_BACK
 	actions_types = list()
-
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/sniper_rifle/update_icon()
 	if(magazine)

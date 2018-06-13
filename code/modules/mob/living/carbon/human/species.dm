@@ -781,7 +781,7 @@
 			to_chat(H, "<span class='notice'>You no longer feel vigorous.</span>")
 		H.metabolism_efficiency = 1
 
-	H.metabolism_efficiency *= 1.3 - (0.068 * H.special.getPoint("i"))
+	H.metabolism_efficiency *= 1.3 - (0.05 * (H.special.getPoint("i") + H.skills.getPoint("medicine")))
 
 	switch(H.nutrition)
 		if(NUTRITION_LEVEL_FAT to INFINITY)
@@ -1147,10 +1147,10 @@
 			H.attacked_trigger(M)
 			disarm(M, H, attacker_style)
 
-/datum/species/proc/spec_attacked_by(obj/item/I, mob/living/user, obj/item/bodypart/affecting, intent, mob/living/carbon/human/H)
+/datum/species/proc/spec_attacked_by(obj/item/I, mob/living/user, obj/item/bodypart/affecting, intent, mob/living/carbon/human/H, dammod)
 	// Allows you to put in item-specific reactions based on species
 	if(user != H)
-		if(H.check_shields(I.force, "the [I.name]", I, MELEE_ATTACK, I.armour_penetration))
+		if(H.check_shields(I.force + dammod, "the [I.name]", I, MELEE_ATTACK, I.armour_penetration))
 			return 0
 	if(H.check_block())
 		H.visible_message("<span class='warning'>[H] blocks [I]!</span>")
@@ -1165,7 +1165,7 @@
 
 	var/armor_block = H.run_armor_check(affecting, "melee", "<span class='notice'>Your armor has protected your [hit_area].</span>", "<span class='notice'>Your armor has softened a hit to your [hit_area].</span>",I.armour_penetration)
 	armor_block = min(90,armor_block) //cap damage reduction at 90%
-	var/Iforce = I.force //to avoid runtimes on the forcesay checks at the bottom. Some items might delete themselves if you drop them. (stunning yourself, ninja swords)
+	var/Iforce = I.force + dammod //to avoid runtimes on the forcesay checks at the bottom. Some items might delete themselves if you drop them. (stunning yourself, ninja swords)
 
 	var/weakness = H.check_weakness(I, user)
 
@@ -1277,6 +1277,7 @@
 	var/obj/item/weapon = H.held_items[H.active_hand_index]
 	if(!istype(weapon, /obj/item/weapon/gun))
 		hit_percent *= H.special.getMeleeMod()
+		hit_percent *= H.skills.getMeleeMod()
 
 	if(H.murder)
 		var/mob/living/carbon/murder = H.murder
@@ -1291,7 +1292,7 @@
 	if(H.reagents.has_reagent("medx"))
 		hit_percent *= 0.75
 
-	var/missProb = 1.5 * H.special.getPoint("l") + 3 * H.special.getPoint("a")
+	var/missProb = 2 * H.special.getPoint("l") + 4.5 * H.special.getPoint("a")
 
 	if(H.stat == DEAD)
 		missProb = 0

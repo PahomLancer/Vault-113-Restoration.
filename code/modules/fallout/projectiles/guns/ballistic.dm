@@ -15,6 +15,7 @@
 	w_class = 2
 	price = 750
 	recoil = 1
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/n99/update_icon()
 	..()
@@ -39,6 +40,7 @@
 	recoil = 2
 	scopetype = /obj/screen/fullscreen/scope/short
 	price = 2500
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/rifle
 	name = "Automatic Rifle .308"
@@ -57,6 +59,7 @@
 	chamber_sound = 'sound/effects/wep_magazines/ar_chamber.ogg'
 	recoil = 2
 	price = 1000
+	small_gun = 1
 
 //crc
 /obj/item/weapon/gun/ballistic/automatic/garand
@@ -80,7 +83,7 @@
 	recoil = 2
 	fire_sound = 'sound/weapons/garandshot.ogg'
 	price = 400
-
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/garand/shoot_with_empty_chamber(mob/living/user as mob)
 	if(magazine)
@@ -113,6 +116,7 @@
 	chamber_sound = 'sound/effects/wep_magazines/ar_chamber.ogg'
 	fire_sound = 'sound/weapons/bulletflyby.ogg'
 	recoil = 2
+	small_gun = 1
 //crc
 
 
@@ -133,6 +137,7 @@
 	mag_load_sound = 'sound/effects/wep_magazines/rifle_load.ogg'
 	recoil = 2
 	price = 500
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/shotgun/rifle/scope
 	icon_state = "rifle-scope"
@@ -145,6 +150,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	scopetype = /obj/screen/fullscreen/scope/medium
 	price = 1000
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/smg10mm
 	name = "10-mm submachine gun"
@@ -161,6 +167,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	price = 2300
 	recoil = 1
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/shotgun/pipe
 	name = "pipe gun"
@@ -175,6 +182,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	price = 500
 	recoil = 1
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/shotgun/trail
 	name = "trail carbine"
@@ -191,6 +199,7 @@
 	pumpsound = 'sound/f13weapons/repeater_reload.ogg'
 	recoil = 2
 	price = 400
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/assault_rifle
 	name = "Battle Rifle Ра15"
@@ -213,6 +222,7 @@
 	wielded_icon = "assault-wielded"//Two handing
 	price = 500
 	recoil = 2
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/assault_rifle/marksman
 	name = "Marksman Carbine"
@@ -225,6 +235,7 @@
 	scopetype = /obj/screen/fullscreen/scope/medium
 	zoomable = TRUE
 	zoom_amt = 7
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/assault_rifle/infiltrator
 	name = "Infiltrator"
@@ -239,6 +250,7 @@
 	suppressed = 1
 	zoomable = TRUE
 	zoom_amt = 7
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/assault_rifle/chinese
 	name = "Chinese assault rifle"
@@ -247,6 +259,7 @@
 	fire_sound = 'sound/f13weapons/chinese.ogg'
 	burst_size = 2
 	price = 400
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/bozar
 	name = "\improper Bozar"
@@ -268,3 +281,4 @@
 	recoil = 2
 	scopetype = /obj/screen/fullscreen/scope/long
 	price = 10000
+	big_gun = 1

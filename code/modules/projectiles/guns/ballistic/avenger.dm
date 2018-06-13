@@ -103,6 +103,7 @@
 	mag_type = /obj/item/ammo_box/magazine/avenger
 	casing_ejector = 1
 	var/obj/item/weapon/avengerpack/ammo_pack
+	big_gun = 1
 
 /obj/item/weapon/gun/ballistic/avenger/attack_self(mob/living/user)
 	return

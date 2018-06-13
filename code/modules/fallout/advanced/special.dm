@@ -64,17 +64,17 @@
 	. = 0
 	switch(type)
 		if("s")
-			. = (reagent("jet") ? 5 : 0) + (reagent("psyho") ? 2 : 0)
+			. = (reagent("jet") ? 10 : 0) + (reagent("psyho") ? 4 : 0)
 		if("p")
 			. = 0
 		if("e")
-			. = (reagent("psyho") ? 2 : 0)
+			. = (reagent("psyho") ? 4 : 0)
 		if("c")
 			. = 0
 		if("i")
-			. = (reagent("mentats") ? 5 : 0)
+			. = (reagent("mentats") ? 10 : 0)
 		if("a")
-			. = (reagent("turbo") ? 5 : 0)
+			. = (reagent("turbo") ? 10 : 0)
 		if("l")
 			. = 0
 
@@ -127,9 +127,9 @@
 
 	switch(type)
 		if("s")
-			description = "Грубая физическая сила. Оказывает влияние на грузоподъёмность и урон оружия ближнего боя. Raw physical strength. A high Strength is good for physical characters (Modifies: Melee Damage, and Carry Weight)."
+			description = "Грубая физическая сила. Оказывает влияние на грузоподъёмность и урон оружия ближнего боя, так же незначительно влияет на тяжелое оружие. Raw physical strength. A high Strength is good for physical characters (Modifies: Melee Damage, and Carry Weight, also slightly improve big guns skills)."
 		if("p")
-			description = "Способность видеть, слышать, вынюхивать и замечать необычные вещи. Высокий показатель восприятия важен для снайперов. Влияет на шанс попадания и лут с мобов. The ability to see, hear, taste and notice unusual things. A high Perception is important for a sharpshooter. (Modifies: Ranged combat, looting from mobs.)"
+			description = "Способность видеть, слышать, вынюхивать и замечать необычные вещи. Высокий показатель восприятия важен для снайперов. Влияет на шанс попадания и лут с мобов, так же незначительно влияет на энергетическое оружие. The ability to see, hear, taste and notice unusual things. A high Perception is important for a sharpshooter. (Modifies: Ranged combat, looting from mobs, also slightly improve energy guns skills.)"
 		if("e")
 			description = "Выдержка и физическая стойкость. Влияет на количество здоровья. Stamina and physical toughness. A character with a high Endurance will survive where others may not. (Modifies: Hit Points)"
 		if("c")
@@ -137,7 +137,7 @@
 		if("i")
 			description = "Влияет на длительность использования медикаментов и химикатов, количество получаемого опыта. Knowledge, wisdom and the ability to think quickly. A high Intelligence is important for any character. (Modifies: The number of exp getting from all actions, medical skills)"
 		if("a")
-			description = "Влияет на скорость стрельбы оружия, уклонение. Coordination and the ability to move well. A high Agility is important for any active character. (Modifies: Rate of fire of ranged weapons, evasion)"
+			description = "Влияет на скорость стрельбы оружия, уклонение, так же незначительно влияет на легкое оружие. Coordination and the ability to move well. A high Agility is important for any active character. (Modifies: Rate of fire of ranged weapons, evasion, also slightly improve small guns skills)"
 		if("l")
 			description = "Влияет на шанс попадания по Вам, качество вещей в мобах. Fate. Karma. An extremely high or low Luck will affect the character - somehow. Events and situations will be changed by how lucky (or unlucky) your character is. (Modifies: Evasion, looting from mobs.)"
 

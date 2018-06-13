@@ -30,6 +30,7 @@
 	verbs += /mob/living/proc/lay_down
 	verbs += /mob/living/proc/surrender
 	verbs += /mob/living/proc/SPECIALshow
+	verbs += /mob/living/proc/SKILLSshow
 
 	//initialize limbs first
 	create_bodyparts()

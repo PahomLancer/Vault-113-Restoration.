@@ -337,6 +337,7 @@
 	desc = "This looks like it could really hurt in melee."
 	force = 75
 	mag_type = /obj/item/ammo_box/magazine/m50/ctf
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/deagle/ctf/dropped()
 	. = ..()

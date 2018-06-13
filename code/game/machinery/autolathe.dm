@@ -98,6 +98,11 @@
 	materials.retrieve_all()
 
 /obj/machinery/autolathe/attackby(obj/item/O, mob/user, params)
+	var/mob/living/carbon/human/humanUser = user
+	if (humanUser.special.getPoint("i") + humanUser.skills.getPoint("science") < 12)
+		to_chat(user, "You too dumb or have not enough science skills for this autolathe")
+		return
+
 	if (busy)
 		to_chat(user, "<span class=\"alert\">The autolathe is busy. Please wait for completion of previous operation.</span>")
 		return 1

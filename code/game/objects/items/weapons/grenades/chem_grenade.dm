@@ -46,7 +46,10 @@
 			if(iscarbon(user))
 				var/mob/living/carbon/C = user
 				C.throw_mode_on()
-
+			var/mob/living/carbon/human/humanUser = user
+			if(prob(100 - humanUser.skills.getPoint("explosives") * 9 - humanUser.special.getPoint("l")))
+				to_chat(user, "<span class='warning'>Ops! Your skill with explosions to low and your set time wrong!</span>")
+				det_time = det_time / (30 - 2.9 * (humanUser.skills.getPoint("explosives")))
 			addtimer(CALLBACK(src, .proc/prime), det_time)
 
 
@@ -291,6 +294,11 @@
 	for(var/obj/item/weapon/reagent_containers/RC in beakers)
 		RC.reagents.trans_to(reactants, RC.reagents.total_volume*fraction, threatscale, 1, 1)
 	chem_splash(get_turf(src), affected_area, list(reactants), ignition_temp, threatscale)
+
+	var/mob/MH = get_mob_by_ckey(assemblyattacher)
+	var/mob/living/carbon/human/humanUser = MH
+	if(prob(100 - humanUser.skills.getPoint("explosives") * 9 - humanUser.special.getPoint("l")))
+		det_time = det_time / (30 - 2.9 * (humanUser.skills.getPoint("explosives")))
 
 	if(nadeassembly)
 		var/mob/M = get_mob_by_ckey(assemblyattacher)

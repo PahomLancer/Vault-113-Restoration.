@@ -13,6 +13,7 @@
 	fire_delay = 5
 	price = 1300
 	recoil = 2
+	energy_gun = 1
 
 /obj/item/weapon/gun/energy/plasma/glock
 	name ="Glock86"
@@ -29,6 +30,7 @@
 	fire_delay = 10
 	price = 950
 	recoil = 1
+	energy_gun = 1
 
 /obj/item/weapon/gun/energy/plasma/pistol
 	name ="Plasma Pistol"
@@ -42,6 +44,7 @@
 	fire_delay = 5
 	price = 800
 	recoil = 1
+	energy_gun = 1
 
 /obj/item/weapon/gun/energy/plasma/pistol/cyborg
 	name = "cyborg plasma pistol"
@@ -49,6 +52,7 @@
 	fire_delay = 3
 	can_charge = 0
 	use_cyborg_cell = 1
+	energy_gun = 0
 
 /obj/item/weapon/gun/energy/plasma/tri
 	name ="Multiplas"
@@ -62,7 +66,7 @@
 	fire_delay = 15
 	price = 1500
 	recoil = 4
-
+	energy_gun = 1
 
 /obj/item/weapon/gun/energy/plasma/turbo
 	name ="turbo plasma rifle"
@@ -77,7 +81,7 @@
 	w_class = 4
 	price = 1500
 	recoil = 3
-
+	energy_gun = 1
 ///////LASERS//////
 
 /obj/item/weapon/gun/energy/laser/rcw
@@ -92,6 +96,7 @@
 	weapon_weight = WEAPON_HEAVY
 	w_class = WEIGHT_CLASS_BULKY
 	price = 3000
+	energy_gun = 1
 
 /obj/item/weapon/gun/energy/laser/pistol
 	name ="Laser Pistol"
@@ -105,6 +110,7 @@
 	fire_delay = 3
 	w_class = 2
 	price = 500
+	energy_gun = 1
 
 /obj/item/weapon/gun/energy/laser/pistol/wattz1000
 	name ="Wattz 1000 Pistol"
@@ -113,6 +119,7 @@
 	origin_tech = "combat=2;magnets=2;prewar=1"
 	fire_delay = 3.5
 	price = 400
+	energy_gun = 1
 
 /obj/item/weapon/gun/energy/laser/rifle
 	name ="Laser Rifle AER9"
@@ -127,6 +134,7 @@
 	weapon_weight = WEAPON_HEAVY
 	w_class = WEIGHT_CLASS_BULKY
 	price = 1000
+	energy_gun = 1
 
 /obj/item/weapon/gun/energy/laser/rifle/aer13
 	name ="Laser Rifle AER13"
@@ -135,6 +143,7 @@
 	weapon_weight = WEAPON_HEAVY
 	burst_size = 2
 	fire_delay = 3
+	energy_gun = 1
 
 /obj/item/weapon/gun/energy/laser/rifle/tri
 	name ="Tribeam"
@@ -146,3 +155,4 @@
 	fire_delay = 5
 	w_class = 4
 	price = 2100
+	energy_gun = 1

@@ -37,6 +37,9 @@
 	var/unique_reskin = 0 //allows one-time reskinning
 	var/current_skin = null //the skin choice if we had a reskin
 	var/list/options = list()
+	var/small_gun = 0
+	var/big_gun = 0
+	var/energy_gun = 0
 
 	lefthand_file = 'icons/mob/inhands/guns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/guns_righthand.dmi'
@@ -237,6 +240,9 @@
 
 /obj/item/weapon/gun/proc/process_fire(atom/target as mob|obj|turf, mob/living/user as mob|obj, message = 1, params, zone_override, bonus_spread = 0)
 	add_fingerprint(user)
+/////////////
+	if(gunroll(src,user))
+		return
 
 	if(condition == 0)
 		to_chat(usr, "<span class='info'>With this weapon you can kill only yourself.</span>")
@@ -366,6 +372,251 @@
 		user.update_inv_hands()
 	feedback_add_details("gun_fired","[src.type]")
 	return 1
+
+//////////////////////////////////////////////////////
+
+/obj/item/weapon/gun/proc/gunroll(src,mob/living/carbon/human/user)
+	if(src:small_gun)
+		switch(/*user:small_guns*/user.skills.getPoint("small_guns"))
+			if(1)
+				if(prob(70 - user.special.getPoint("a")))
+					user << "You are not skilled in small guns so you cant fire [src]"
+					return 1
+			if(2)
+				if(prob(65 - user.special.getPoint("a")))
+					user << "You failed to fire [src] you are not skilled with small guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(3)
+				if(prob(60 - user.special.getPoint("a")))
+					user << "You failed to fire [src] you are not skilled with small guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(4)
+				if(prob(55 - user.special.getPoint("a")))
+					user << "You failed to fire [src] you are not skilled with small guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(5)
+				if(prob(50 - user.special.getPoint("a")))
+					user << "You failed to fire [src] you are not skilled with small guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(6)
+				if(prob(40 - user.special.getPoint("a")))
+					user << "You failed to fire [src] you are not skilled with small guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(7)
+				if(prob(30 - user.special.getPoint("a")))
+					user << "You failed to fire [src] you are not skilled with small guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(8)
+				if(prob(20 - user.special.getPoint("a")))
+					user << "You failed to fire [src] you are not skilled with small guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(9)
+				if(prob(10 - user.special.getPoint("a")))
+					user << "You failed to fire [src] you are not skilled with small guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+	if(src:big_gun)
+		switch(/*user:big_guns*/user.skills.getPoint("big_guns"))
+			if(1)
+				if(prob(70 - user.special.getPoint("s")))
+					user << "You are not skilled in big guns so you cant fire [src]"
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(2)
+				if(prob(65 - user.special.getPoint("s")))
+					user << "You failed to fire [src] you are not skilled with big guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+
+			if(3)
+				if(prob(60 - user.special.getPoint("s")))
+					user << "You failed to fire [src] you are not skilled with big guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(4)
+				if(prob(55 - user.special.getPoint("s")))
+					user << "You failed to fire [src] you are not skilled with big guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(5)
+				if(prob(50 - user.special.getPoint("s")))
+					user << "You failed to fire [src] you are not skilled with big guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(6)
+				if(prob(40 - user.special.getPoint("s")))
+					user << "You failed to fire [src] you are not skilled with big guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(7)
+				if(prob(30 - user.special.getPoint("s")))
+					user << "You failed to fire [src] you are not skilled with big guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(8)
+				if(prob(20 - user.special.getPoint("s")))
+					user << "You failed to fire [src] you are not skilled with big guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(9)
+				if(prob(10 - user.special.getPoint("s")))
+					user << "You failed to fire [src] you are not skilled with big guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+	if(src:energy_gun)
+		switch(/*user:energy_weapons*/user.skills.getPoint("energy_weapons"))
+			if(1)
+				if(prob(70 - user.special.getPoint("p")))
+					user << "You are not skilled in energy guns so you cant fire [src]"
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(2)
+				if(prob(65 - user.special.getPoint("p")))
+					user << "You failed to fire [src] you are not skilled with energy guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+
+			if(3)
+				if(prob(60 - user.special.getPoint("p")))
+					user << "You failed to fire [src] you are not skilled with energy guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(4)
+				if(prob(55 - user.special.getPoint("p")))
+					user << "You failed to fire [src] you are not skilled with energy guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(5)
+				if(prob(50 - user.special.getPoint("p")))
+					user << "You failed to fire [src] you are not skilled with energy guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(6)
+				if(prob(40 - user.special.getPoint("p")))
+					user << "You failed to fire [src] you are not skilled with energy guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(7)
+				if(prob(30 - user.special.getPoint("p")))
+					user << "You failed to fire [src] you are not skilled with energy guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(8)
+				if(prob(20 - user.special.getPoint("p")))
+					user << "You failed to fire [src] you are not skilled with energy guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+			if(9)
+				if(prob(10 - user.special.getPoint("p")))
+					user << "You failed to fire [src] you are not skilled with energy guns."
+					user << "<span class='danger'>*click*</span>"
+					playsound(user, 'sound/weapons/empty.ogg', 100, 1)
+					return 1
+/*
+/obj/item/weapon/gun/proc/process_fire(atom/target as mob|obj|turf, mob/living/user as mob|obj, message = 1, params, zone_override)
+	if(gunroll(src,user))
+		return
+	if (user:dna.species && user:dna.species.id=="bigmutant")
+		user << "Dont know how us this."
+		return
+	else
+		add_fingerprint(user)
+
+		if(semicd)
+			return
+		/*
+		if(heavy_weapon)
+			if(user.get_inactive_hand()get_active_held_item())
+				recoil = 4 //one-handed kick
+			else
+				recoil = initial(recoil)
+		*/
+		if(burst_size > 1)
+			for(var/i = 1 to burst_size)
+				if(!user)
+					break
+				/*if(!issilicon(user))
+					if( i>1 && !(src in get_both_hands(user))) //for burst firing
+						break*/
+				if(chambered)
+					var/sprd = 0
+					if(randomspread)
+						sprd = round((rand() - 0.5) * spread)
+					else //Smart spread
+						sprd = round((i / burst_size - 0.5) * spread)
+					/*if(!chambered.fire(target, user, params, suppressed, zone_override, sprd))
+						shoot_with_empty_chamber(user)
+						break
+					else
+						if(get_dist(user, target) <= 1) //Making sure whether the target is in vicinity for the pointblank shot
+							shoot_live_shot(user, 1, target, message)
+						else
+							shoot_live_shot(user, 0, target, message)*/
+				else
+					shoot_with_empty_chamber(user)
+					break
+				process_chamber()
+				update_icon()
+				sleep(fire_delay)
+		else
+			if(chambered)
+				if(!chambered.fire(target, user, params, suppressed, zone_override, spread))
+					shoot_with_empty_chamber(user)
+					return
+				else
+					if(get_dist(user, target) <= 1) //Making sure whether the target is in vicinity for the pointblank shot
+						shoot_live_shot(user, 1, target, message)
+					else
+						shoot_live_shot(user, 0, target, message)
+			else
+				shoot_with_empty_chamber(user)
+				return
+			process_chamber()
+			update_icon()
+			semicd = 1
+			spawn(fire_delay)
+				semicd = 0
+
+		/*if(user)
+			if(user.hand)
+				user.update_inv_l_hand()
+			else
+				user.update_inv_r_hand()*/
+		feedback_add_details("gun_fired","[src.type]")
+*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /obj/item/weapon/gun/attack(mob/M as mob, mob/user)
 	if(user.a_intent == INTENT_HARM) //Flogging

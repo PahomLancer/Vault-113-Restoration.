@@ -54,6 +54,7 @@
 
 //Barman's shotgun
 /obj/item/weapon/gun/ballistic/shotgun/sc_pump
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/shotgun/sc_pump/New()
 	..()

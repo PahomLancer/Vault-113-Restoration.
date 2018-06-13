@@ -39,6 +39,11 @@
 	active_power_usage = 400
 
 /obj/machinery/computer/scan_consolenew/attackby(obj/item/I, mob/user, params)
+	var/mob/living/carbon/human/humanUser = user
+	if (humanUser.special.getPoint("i") + humanUser.skills.getPoint("science") < 15)
+		to_chat(user, "You too dumb or have not enough science skills for this console")
+		return
+
 	if (istype(I, /obj/item/weapon/disk/data)) //INSERT SOME DISKETTES
 		if (!src.diskette)
 			if(!user.drop_item())

@@ -24,6 +24,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/deagle
 	name = "desert eagle"
@@ -32,6 +33,7 @@
 	force = 14
 	mag_type = /obj/item/ammo_box/magazine/m50
 	can_suppress = 0
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/deagle/update_icon()
 	..()
@@ -41,11 +43,13 @@
 	desc = "A gold plated desert eagle folded over a million times by superior martian gunsmiths. Uses .50 AE ammo."
 	icon_state = "deagleg"
 	item_state = "deagleg"
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/deagle/camo
 	desc = "A Deagle brand Deagle for operators operating operationally. Uses .50 AE ammo."
 	icon_state = "deaglecamo"
 	item_state = "deagleg"
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/APS
 	name = "stechkin APS pistol"
@@ -58,6 +62,7 @@
 	burst_size = 3
 	fire_delay = 2
 	actions_types = list(/datum/action/item_action/toggle_firemode)
+	small_gun = 1
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/stickman
 	name = "flat gun"
