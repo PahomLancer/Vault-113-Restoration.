@@ -43,7 +43,7 @@
 	return owner.reagents.has_reagent(type)
 
 /datum/skills/proc/getMeleeMod()
-	return (0.6 + (getPoint("unarmed") * 0.10))
+	return (getPoint("unarmed") * 1.5)
 /*
 /datum/special/proc/getWeight(var/mob/living/carbon/human/user)
 	if(!user)

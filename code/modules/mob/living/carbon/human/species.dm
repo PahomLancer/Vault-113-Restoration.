@@ -1277,7 +1277,7 @@
 	var/obj/item/weapon = H.held_items[H.active_hand_index]
 	if(!istype(weapon, /obj/item/weapon/gun))
 		hit_percent *= H.special.getMeleeMod()
-		hit_percent *= H.skills.getMeleeMod()
+		hit_percent = hit_percent + H.skills.getMeleeMod()
 
 	if(H.murder)
 		var/mob/living/carbon/murder = H.murder

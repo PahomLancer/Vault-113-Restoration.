@@ -189,7 +189,7 @@
 	var/dammod = 0
 	//var/mob/living/carbon/human/humanUser = user
 	var/mob/living/carbon/human/humanUser = user
-	dammod = -20 + humanUser.skills.getPoint("melee_weapons") * rand(2,2.5) + humanUser.special.getPoint("s") * rand(0.8,1.2) + humanUser.special.getPoint("a") * rand(0.8,1.2)
+	dammod = 0 + humanUser.skills.getPoint("melee_weapons") * rand(1.5,2) + humanUser.special.getPoint("s") * rand(0.5,1) + humanUser.special.getPoint("a") * rand(0.5,1)
 	// the attacked_by code varies among species
 	//return dna.species.spec_attacked_by(I,user,def_zone,affecting,hit_area,src.a_intent,target_limb,target_area,src, dammod)
 	return dna.species.spec_attacked_by(I, user, affecting, a_intent, src, dammod)
