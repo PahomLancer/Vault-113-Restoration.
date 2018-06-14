@@ -18,7 +18,7 @@
 			var/obj/item/weapon = H.held_items[H.active_hand_index]
 			if(!istype(weapon, /obj/item/weapon/gun))
 				hit_percent *= H.special.getMeleeMod()
-				hit_percent = hit_percent + H.skills.getMeleeMod()
+				//hit_percent = hit_percent + H.skills.getMeleeMod()
 
 	if(!damage || (hit_percent <= 0))
 		return 0

@@ -1147,10 +1147,10 @@
 			H.attacked_trigger(M)
 			disarm(M, H, attacker_style)
 
-/datum/species/proc/spec_attacked_by(obj/item/I, mob/living/user, obj/item/bodypart/affecting, intent, mob/living/carbon/human/H, dammod)
+/datum/species/proc/spec_attacked_by(obj/item/I, mob/living/user, obj/item/bodypart/affecting, intent, mob/living/carbon/human/H/*, dammod*/)
 	// Allows you to put in item-specific reactions based on species
 	if(user != H)
-		if(H.check_shields(I.force + dammod, "the [I.name]", I, MELEE_ATTACK, I.armour_penetration))
+		if(H.check_shields(I.force/* + dammod*/, "the [I.name]", I, MELEE_ATTACK, I.armour_penetration))
 			return 0
 	if(H.check_block())
 		H.visible_message("<span class='warning'>[H] blocks [I]!</span>")
@@ -1165,7 +1165,7 @@
 
 	var/armor_block = H.run_armor_check(affecting, "melee", "<span class='notice'>Your armor has protected your [hit_area].</span>", "<span class='notice'>Your armor has softened a hit to your [hit_area].</span>",I.armour_penetration)
 	armor_block = min(90,armor_block) //cap damage reduction at 90%
-	var/Iforce = I.force + dammod //to avoid runtimes on the forcesay checks at the bottom. Some items might delete themselves if you drop them. (stunning yourself, ninja swords)
+	var/Iforce = I.force/* + dammod*/ //to avoid runtimes on the forcesay checks at the bottom. Some items might delete themselves if you drop them. (stunning yourself, ninja swords)
 
 	var/weakness = H.check_weakness(I, user)
 
@@ -1277,7 +1277,7 @@
 	var/obj/item/weapon = H.held_items[H.active_hand_index]
 	if(!istype(weapon, /obj/item/weapon/gun))
 		hit_percent *= H.special.getMeleeMod()
-		hit_percent = hit_percent + H.skills.getMeleeMod()
+		//hit_percent = hit_percent + H.skills.getMeleeMod()
 
 	if(H.murder)
 		var/mob/living/carbon/murder = H.murder
