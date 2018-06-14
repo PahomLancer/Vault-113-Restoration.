@@ -186,13 +186,13 @@
 	feedback_add_details("zone_targeted","[target_area]")
 
 	// the attacked_by code varies among species
-	var/dammod = 0
+	//var/dammod = 0
 	//var/mob/living/carbon/human/humanUser = user
-	var/mob/living/carbon/human/humanUser = user
-	dammod = 0 + humanUser.skills.getPoint("melee_weapons") * rand(1.5,2) + humanUser.special.getPoint("s") * rand(0.5,1) + humanUser.special.getPoint("a") * rand(0.5,1)
+	//var/mob/living/carbon/human/humanUser = user
+	//dammod = 0 + humanUser.skills.getPoint("melee_weapons") * rand(1.5,2) + humanUser.special.getPoint("s") * rand(0.5,1) + humanUser.special.getPoint("a") * rand(0.5,1)
 	// the attacked_by code varies among species
 	//return dna.species.spec_attacked_by(I,user,def_zone,affecting,hit_area,src.a_intent,target_limb,target_area,src, dammod)
-	return dna.species.spec_attacked_by(I, user, affecting, a_intent, src, dammod)
+	return dna.species.spec_attacked_by(I, user, affecting, a_intent, src/*, dammod*/)
 
 
 /mob/living/carbon/human/attack_hulk(mob/living/carbon/human/user, does_attack_animation = 0)
