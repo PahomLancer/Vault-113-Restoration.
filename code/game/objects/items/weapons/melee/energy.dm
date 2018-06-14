@@ -46,6 +46,29 @@
 	user.visible_message("<span class='suicide'>[user] swings [src] towards [user.p_their()] head! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return (BRUTELOSS|FIRELOSS)
 
+/obj/item/weapon/melee/energy/powerkebab
+	name = "Power Sword"
+	desc = "A crude, unassuming weapon that seems to be constructed from spare parts and scrap metal attached to an eastern sword of some kind. A prototype perhaps? When the trigger is held charge from the attached microfusion cell arcs energy around the blade."
+	icon_state = "powerkebab0"
+	icon_state_on = "powerkebab1"
+	slot_flags = SLOT_BACK
+	force = 40
+	force_on = 120
+	throwforce = 70
+	throwforce_on = 100
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	throw_speed = 3
+	throw_range = 5
+	block_chance = 40
+	sharpness = IS_SHARP
+	embed_chance = 300
+	w_class = WEIGHT_CLASS_HUGE
+	flags = CONDUCT
+	armour_penetration = 300
+	origin_tech = "combat=5;magnets=4"
+	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
+	attack_verb_on = list()
+
 /obj/item/weapon/melee/energy/sword
 	name = "energy sword"
 	desc = "May the force be within you."

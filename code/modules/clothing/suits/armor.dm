@@ -329,6 +329,73 @@
 /obj/item/clothing/suit/armor/reactive/table/emp_act()
 	return
 
+/obj/item/clothing/suit/stealth/stealthsuit
+	name = "Chinese Stealth Suit"
+	desc = "A form-fitting armor suit complete with an active stealth field that can be triggered at the press of a button."
+	icon_state = "stealthsuit"
+	item_state = "stealthsuit"
+	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/restraints/handcuffs,/obj/item/weapon/tank/internals,/obj/item/weapon/stock_parts/cell)
+	slowdown = 0
+	resistance_flags = LAVA_PROOF | ACID_PROOF
+	armor = list(melee = 30, bullet = 25, laser = 20,energy = 15, bomb = 30, bio = 30, rad = 30, fire = 100, acid = 100)
+	strip_delay = 12
+	var/mob/living/carbon/human/user = null
+	var/charge = 300
+	var/max_charge = 300
+	var/on = 0
+	var/old_alpha = 0
+	actions_types = list(/datum/action/item_action/toggle)
+
+/obj/item/clothing/suit/stealth/stealthsuit/ui_action_click(mob/user)
+	if(user.get_item_by_slot(slot_wear_suit) == src)
+		if(!on)
+			Activate(usr)
+		else
+			Deactivate()
+	return
+
+/obj/item/clothing/suit/stealth/stealthsuit/item_action_slot_check(slot, mob/user)
+	if(slot == slot_wear_suit)
+		return 1
+
+/obj/item/clothing/suit/stealth/stealthsuit/proc/Activate(mob/living/carbon/human/user)
+	if(!user)
+		return
+	to_chat(user, "<span class='notice'>You activate [src].</span>")
+	src.user = user
+	START_PROCESSING(SSobj, src)
+	old_alpha = user.alpha
+	on = 1
+
+
+/obj/item/clothing/suit/stealth/stealthsuit/proc/Deactivate()
+	to_chat(user, "<span class='notice'>You deactivate [src].</span>")
+	STOP_PROCESSING(SSobj, src)
+	if(user)
+		user.alpha = old_alpha
+	on = 0
+	user = null
+
+
+
+/obj/item/clothing/suit/stealth/stealthsuit/dropped(mob/user)
+	..()
+	if(user && user.get_item_by_slot(slot_wear_suit) != src)
+		Deactivate()
+
+/obj/item/clothing/suit/stealth/stealthsuit/process()
+	if(user.get_item_by_slot(slot_wear_suit) != src)
+		Deactivate()
+		return
+	var/turf/T = get_turf(src)
+	if(on)
+		var/lumcount = T.get_lumcount()
+		if(lumcount > 3)
+			charge = max(0,charge - 25)//Quick decrease in light
+		else
+			charge = min(max_charge,charge + 50) //Charge in the dark
+		animate(user,alpha = Clamp(255 - charge,0,255),time = 5)
+
 //All of the armor below is mostly unused
 
 /obj/item/clothing/suit/armor/centcom

@@ -209,7 +209,7 @@
 	name = "\improper Thompson SMG"
 	desc = "Based on the classic 'Chicago Typewriter'."
 	icon_state = "tommygun"
-	item_state = "shotgun"
+	item_state = "tommygun"
 	w_class = WEIGHT_CLASS_HUGE
 	slot_flags = 0
 	origin_tech = "combat=5;materials=1;prewar=3"

@@ -139,6 +139,14 @@
 	item_state = "suit-command"
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/weapon/storage/pill_bottle/dice,/obj/item/weapon/dice)
 
+/obj/item/clothing/suit/f13/scriberobe
+	icon = 'icons/obj/clothing/suits.dmi'
+	name = "Brotherhood Scribe's robe"
+	desc = "A red cloth robe worn by the Brotherhood of Steel Scribes."
+	icon_state = "scriberobe"
+	item_state = "suit-command"
+	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/weapon/storage/pill_bottle/dice,/obj/item/weapon/dice)
+
 /obj/item/clothing/suit/f13/elder //Robes are made of finest cloth, so you won't be able to put sharp objects but pens in.
 	name = "Brotherhood Elder's robe"
 	desc = "A blue cloth robe with scarlet red highlights, traditionally worn by the Brotherhood of Steel Elders."

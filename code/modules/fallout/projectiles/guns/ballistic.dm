@@ -45,7 +45,7 @@
 /obj/item/weapon/gun/ballistic/automatic/rifle
 	name = "Automatic Rifle .308"
 	icon_state = "rifle-automatic"
-	item_state = "shotgun"
+	item_state = "rifle308"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	origin_tech = "combat=3;materials=2;prewar=2"
 	mag_type = /obj/item/ammo_box/magazine/F13/m308
@@ -66,7 +66,7 @@
 	name = "Garand M1"
 	desc = "Vintage semi-automatic rifle. Advanced."
 	icon_state = "garand"
-	item_state = "shotgun"
+	item_state = "garand"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	origin_tech = "combat=3;materials=2;prewar=2"
 	mag_type = /obj/item/ammo_box/magazine/F13/g308
@@ -100,7 +100,7 @@
 	name = "M72 Gauss EM rifle"
 	desc = "The M72 rifle is of German design. It uses an electromagnetic field to propel rounds at tremendous speed."
 	icon_state = "gauss"
-	item_state = "shotgun"
+	item_state = "fnfal"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	origin_tech = "combat=5;materials=4;prewar=6"
 	mag_type = /obj/item/ammo_box/magazine/F13/gaussmag
@@ -124,7 +124,7 @@
 	name = "Rifle .308"
 	desc = "A pre-War bolt-action hunting rifle."
 	icon_state = "rifle"
-	item_state = "shotgun"
+	item_state = "rifle"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	origin_tech = "combat=3;materials=2;prewar=3"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/m308
@@ -141,7 +141,7 @@
 
 /obj/item/weapon/gun/ballistic/shotgun/rifle/scope
 	icon_state = "rifle-scope"
-	item_state = "shotgun"
+	item_state = "rifle"
 	can_suppress = 1
 	zoomable = TRUE
 	zoom_amt = 12
@@ -156,7 +156,7 @@
 	name = "10-mm submachine gun"
 	desc = "An H&K MP9 submachine gun (10mm caliber variant). A average submachine gun which can operate in both single and automatic fire modes."
 	icon_state = "smg10mm"
-	item_state = "assault"
+	item_state = "smg10mm"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	origin_tech = "combat=3;materials=2;prewar=4"
 	mag_type = /obj/item/ammo_box/magazine/F13/m10smg
@@ -189,7 +189,7 @@
 	desc = "The trail carbine features a good ammunition capacity, a brisk rate of fire, and high accuracy."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "trail-carbine"
-	item_state = "shotgun"
+	item_state = "huntingshotgun"
 	origin_tech = "combat=1;materials=1;prewar=2"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal/trail
 	casing_ejector = 1

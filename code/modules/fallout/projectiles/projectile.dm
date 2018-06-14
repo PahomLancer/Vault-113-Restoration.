@@ -11,7 +11,7 @@
 
 /obj/item/projectile/beam/plasma/turbo
 	name = "turbo plasma"
-	damage = 52
+	damage = 60
 	irradiate = 20
 
 //Bullets library

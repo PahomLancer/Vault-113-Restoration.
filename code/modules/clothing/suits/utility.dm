@@ -116,6 +116,12 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = 0
 
+/obj/item/clothing/head/radiation/enclave
+	name = "enclave radiation hood"
+	icon_state = "sciencehood"
+	armor = list(melee = 10, bullet = 10, laser = 20,energy = 20, bomb = 20, bio = 90, rad = 100, fire = 90, acid = 90)
+	item_state = "sciencehood"
+
 /obj/item/clothing/suit/radiation
 	name = "radiation suit"
 	desc = "A suit that protects against radiation. The label reads, 'Made with lead. Please do not consume insulation.'"
@@ -133,3 +139,9 @@
 	put_on_delay = 60
 	flags_inv = HIDEJUMPSUIT
 	resistance_flags = 0
+
+/obj/item/clothing/suit/radiation/enclave
+	name = "enclave radiation suit"
+	icon_state = "sciencesuit"
+	armor = list(melee = 20, bullet = 20, laser = 30,energy = 30, bomb = 40, bio = 90, rad = 100, fire = 90, acid = 90)
+	item_state = "sciencesuit"
