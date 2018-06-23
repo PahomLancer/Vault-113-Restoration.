@@ -69,4 +69,5 @@
 	open_sound = 'sound/machines/click.ogg'
 	cutting_sound = 'sound/items/Welder.ogg'
 	material_drop = /obj/item/stack/sheet/plasteel
+	move_speed_multiplier = 0.1
 #undef SNAKE_SPAM_TICKS

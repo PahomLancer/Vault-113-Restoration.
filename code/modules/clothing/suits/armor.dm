@@ -335,15 +335,15 @@
 	icon_state = "stealthsuit"
 	item_state = "stealthsuit"
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/restraints/handcuffs,/obj/item/weapon/tank/internals,/obj/item/weapon/stock_parts/cell)
-	slowdown = 0
+	slowdown = 3
 	resistance_flags = LAVA_PROOF | ACID_PROOF
-	armor = list(melee = 30, bullet = 25, laser = 20,energy = 15, bomb = 30, bio = 30, rad = 30, fire = 100, acid = 100)
+	armor = list(melee = 10, bullet = 10, laser = 10,energy = 10, bomb = 10, bio = 10, rad = 10, fire = 100, acid = 100)
 	strip_delay = 12
 	var/mob/living/carbon/human/user = null
 	var/charge = 300
 	var/max_charge = 300
 	var/on = 0
-	var/old_alpha = 0
+	var/old_alpha = 120
 	actions_types = list(/datum/action/item_action/toggle)
 
 /obj/item/clothing/suit/stealth/stealthsuit/ui_action_click(mob/user)

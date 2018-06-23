@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1529003256
-DIR: _maps _maps\map_files _maps\map_files\Denwer code code\modules code\modules\clothing code\modules\clothing\suits code\modules\crafting code\modules\crafting\recipes code\modules\fallout code\modules\fallout\obj code\modules\fallout\obj\clothing code\modules\fallout\obj\clothing\head code\modules\fallout\obj\clothing\suits code\modules\research code\modules\research\designs icons icons\fallout icons\fallout\clothing_w icons\obj icons\obj\clothing sound sound\vox_fem 
+LAST_COMPILE_TIME: 1529784653
+DIR: _maps _maps\map_files _maps\map_files\Denwer code code\game code\game\machinery code\game\machinery\porta_turret code\modules code\modules\clothing code\modules\clothing\suits code\modules\fallout code\modules\fallout\misc code\modules\fallout\misc\donate code\modules\fallout\misc\jobs code\modules\fallout\misc\jobs\faction code\modules\fallout\obj code\modules\fallout\obj\clothing code\modules\fallout\obj\clothing\gloves code\modules\fallout\obj\clothing\head code\modules\fallout\obj\clothing\shoes code\modules\fallout\obj\clothing\suits code\modules\fallout\obj\clothing\under code\modules\fallout\projectiles code\modules\fallout\projectiles\guns code\modules\mob code\modules\mob\living code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\hostile icons icons\fallout icons\fallout\clothing_w icons\mob icons\mob\inhands icons\obj icons\obj\clothing 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 511.1385
-WINDOW: icons\mob\suit.dmi;icons\mob\uniform.dmi;icons\mob\head.dmi;icons\fallout\clothing_w\head.dmi;icons\fallout\clothing_w\suit.dmi;icons\fallout\clothing_w\uniform.dmi;icons\obj\clothing\uniforms.dmi;icons\obj\clothing\suits.dmi;icons\obj\clothing\hats.dmi;_maps\map_files\Denwer\denwersurface.dmm;code\modules\fallout\obj\clothing\suits\miscellaneous.dm;code\modules\fallout\obj\clothing\suits\armor.dm;_maps\map_files\Denwer\denwersewers.dmm;code\modules\clothing\suits\armor.dm
-FILE: _maps\map_files\Denwer\denwersurface.dmm
+WINDOW: icons\mob\suit.dmi;icons\mob\uniform.dmi;icons\mob\head.dmi;icons\fallout\clothing_w\head.dmi;icons\fallout\clothing_w\suit.dmi;icons\fallout\clothing_w\uniform.dmi;_maps\map_files\Denwer\denwersurface.dmm;_maps\map_files\Denwer\denwersewers.dmm;code\modules\fallout\obj\holodisks.dm;icons\mob\animal.dmi;icons\mob\human.dmi;icons\mob\feet.dmi;icons\mob\inhands\guns_lefthand.dmi;code\modules\mob\living\simple_animal\hostile\fallout_npc.dm;code\modules\fallout\misc\jobs\faction\faction.dm;code\modules\fallout\projectiles\guns\energy.dm;code\game\machinery\porta_turret\portable_turret.dm;code\modules\fallout\obj\clothing\head\helmet.dm;code\modules\fallout\obj\clothing\suits\armor.dm;code\modules\fallout\obj\clothing\under\miscellaneous.dm;code\modules\fallout\misc\donate\pack.dm;code\modules\fallout\misc\jobs\jobs.dm
+FILE: code\modules\mob\living\simple_animal\hostile\fallout_npc.dm
 */
 // END_INTERNALS

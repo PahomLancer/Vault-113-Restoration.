@@ -10,6 +10,7 @@
 	var/icon_living = ""
 	var/icon_dead = "" //icon when the animal is dead. Don't use animated icons for this.
 	var/icon_gib = null	//We only try to show a gibbing animation if this exists.
+	var/respawn_time_of_mob = 9000
 
 	var/list/speak = list()
 	var/list/speak_emote = list()//	Emotes while speaking IE: Ian [emote], [text] -- Ian barks, "WOOF!". Spoken text is generated from the speak variable.
@@ -341,10 +342,10 @@
 					carbonMurder.experience.add(XP)
 
 	if(spawnPosition)
-		spawn(MOB_RESPAWN_TIME)
+		spawn(respawn_time_of_mob/*MOB_RESPAWN_TIME*/)
 			PoolOrNew(src.type, spawnPosition)
 
-		spawn(MOB_RESPAWN_TIME * MOB_DELETE_MUL)
+		spawn(respawn_time_of_mob/*MOB_RESPAWN_TIME*/ * MOB_DELETE_MUL)
 			qdel(src)
 
 
