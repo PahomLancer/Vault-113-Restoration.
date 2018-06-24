@@ -46,7 +46,7 @@
 /datum/outfit/job/overseer
 	name = "Overseer"
 
-	id = /obj/item/weapon/card/id/gold
+	id = /obj/item/weapon/card/id/captains_spare
 	glasses = /obj/item/clothing/glasses/sunglasses
 	r_pocket = /obj/item/device/pda/captain
 	uniform = /obj/item/clothing/under/f13/vault/v13
