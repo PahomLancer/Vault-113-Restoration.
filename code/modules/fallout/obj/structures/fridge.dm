@@ -1,5 +1,21 @@
 //Fallout 13 fridge directory
 
+/obj/structure/closet/wood
+	name = "wood"
+	desc = "An old, wood barel with drinks."
+	icon_state = "wood"
+
+/obj/structure/closet/wood/standard/New()
+	..()
+	for(var/i = 0, i < 4, i++)
+		new /obj/item/weapon/reagent_containers/food/drinks/bottle/tequila(src)
+	for(var/i = 0, i < 3, i++)
+		new /obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey(src)
+	for(var/i = 0, i < 2, i++)
+		new /obj/item/weapon/reagent_containers/food/drinks/bottle/wine(src)
+	for(var/i = 0, i < 1, i++)
+		new /obj/item/weapon/reagent_containers/food/drinks/bottle/sunset(src)
+
 /obj/structure/closet/fridge
 	name = "fridge"
 	desc = "An old, pre-War refrigerator.<br>Despite being covered in rust and making noises straight out of a horror film, it still keeps your Nuka-Cola cold."

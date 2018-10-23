@@ -1,6 +1,6 @@
 //Fallout 13 Brotherhood of Steel faction roles
 
-/*/datum/job/elder
+/datum/job/elder
 	title = "Elder"
 	desc = "A mentor, the source of wisdom.<br>You are the one who shall fulfill destiny."
 	flag = ELDER
@@ -234,4 +234,3 @@
 	suit = /obj/item/clothing/suit/f13/scribe
 	belt = /obj/item/weapon/storage/belt/military/army
 	belt_contents = list(/obj/item/device/radio = 1)
-	*/

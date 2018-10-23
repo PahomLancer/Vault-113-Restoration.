@@ -27,7 +27,14 @@
 	/obj/item/crafting/sensor = 5,
 	/obj/item/crafting/weapon_repair_kit = 5,
 	/obj/item/crafting/reloader_set = 5,
-	/obj/item/crafting/lunchbox = 5)
+	/obj/item/crafting/lunchbox = 5,
+	/obj/item/crafting/kettle = 5,
+	/obj/item/crafting/toaster = 5,
+	/obj/item/crafting/vacuum_cleaner = 5,
+	/obj/item/crafting/sensor_module = 5,
+	/obj/item/crafting/cofee_pot = 5,
+	/obj/item/crafting/cookpot = 5,
+	/obj/item/crafting/Baseball_ball = 5)
 
 /obj/effect/spawner/lootdrop/med_medium
 	color = "#FFAAFA"

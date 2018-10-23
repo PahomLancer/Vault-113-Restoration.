@@ -110,6 +110,41 @@
 	desc = "A pinnacle of engineering - it fixes everything!"
 	icon_state = "duct_tape"
 
+/obj/item/crafting/kettle
+	name = "kettle"
+	desc = "A kettle for tea"
+	icon_state = "kettle"
+
+/obj/item/crafting/toaster
+	name = "toaster"
+	desc = "The toaster is a pre-War kitchen appliance that was used to toast bread. It has a stainless steel casing with black painted levers and base, that has internal heating coils to toast the bread inside the two slots on the top."
+	icon_state = "toaster"
+
+/obj/item/crafting/vacuum_cleaner
+	name = "vacuum cleaner"
+	desc = "A Vacuum cleaner"
+	icon_state = "vacuum_cleaner"
+
+/obj/item/crafting/sensor_module
+	name = "sensor module"
+	desc = "A Sensor module"
+	icon_state = "sensor_module"
+
+/obj/item/crafting/cofee_pot
+	name = "Coffee pot"
+	desc = "The coffee pot is a large pot that gently slopes inwards. As indicated by the untarnished pot, it was originally chrome colored."
+	icon_state = "cofee_pot"
+
+/obj/item/crafting/cookpot
+	name = "Cookpot"
+	desc = "Cookpot."
+	icon_state = "cookpot"
+
+/obj/item/crafting/Baseball_ball
+	name = "Baseball ball"
+	desc = "Baseball ball."
+	icon_state = "Baseball_ball"
+
 /obj/item/crafting/wonderglue
 	name = "wonder glue"
 	desc = "A pre-War brand of glue that has retained its adhesive qualities.<br>A glue itself is a liquid acrylic adhesive, meant to fix broken plastics and ceramics or used in the assembly of a great assortment of items."

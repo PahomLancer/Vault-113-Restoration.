@@ -1,6 +1,6 @@
 //Fallout 13 Enclave faction roles
 
-/*/datum/job/colonel
+/datum/job/colonel
 	title = "Colonel"
 	desc = "An actual American patriot.<br>You live by the principle that the Main Goal is more important than the means of achieving it."
 	flag = COLONEL
@@ -187,4 +187,3 @@
 	weapon = /obj/item/weapon/gun/energy/plasma
 	belt_contents = list(/obj/item/weapon/reagent_containers/f13stimpack = 1, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
-*/

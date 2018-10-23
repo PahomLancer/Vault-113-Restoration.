@@ -73,3 +73,7 @@
 /obj/vehicle/fuel/motorcycle/buggy/hot
 	icon_state = "buggy_hot"
 	names = list("Dragon", "Fire And Flames", "Flash", "Igniter", "Heat", "Hot Wheels", "Trailblazer")
+
+/obj/vehicle/fuel/motorcycle/buggy/interceptor
+	icon_state = "interceptor"
+	names = list("Interceptor")

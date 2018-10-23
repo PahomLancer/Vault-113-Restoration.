@@ -1,11 +1,12 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1529846602
-DIR: _maps _maps\map_files _maps\map_files\Denwer code code\datums code\game code\game\gamemodes code\game\machinery code\game\machinery\computer code\game\objects code\game\objects\items code\game\objects\items\weapons code\modules code\modules\fallout code\modules\fallout\misc code\modules\fallout\misc\jobs code\modules\fallout\misc\jobs\faction code\modules\mob code\modules\mob\living code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\hostile icons icons\mob 
+MAP_ZOOM: 1.000
+LAST_COMPILE_TIME: 1540324438
+DIR: code code\modules code\modules\fallout code\modules\fallout\misc code\modules\fallout\misc\jobs code\modules\fallout\misc\jobs\job 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 511.1385
-WINDOW: _maps\map_files\Denwer\denwersurface.dmm;_maps\map_files\Denwer\denwersewers.dmm;icons\mob\animal.dmi;code\modules\fallout\misc\jobs\faction\faction.dm;code\modules\mob\living\simple_animal\hostile\fallout_npc.dm
-FILE: code\modules\mob\living\simple_animal\hostile\fallout_npc.dm
+LAST_COMPILE_VERSION: 512.1448
+WINDOW: code\modules\fallout\obj\flora\farming.dm;code\modules\fallout\misc\donate\pack.dm;code\modules\fallout\misc\jobs\job\brotherhood.dm;code\modules\fallout\misc\jobs\job\enclave.dm;code\modules\fallout\misc\jobs\jobs.dm
+FILE: code\modules\fallout\misc\jobs\jobs.dm
 */
 // END_INTERNALS

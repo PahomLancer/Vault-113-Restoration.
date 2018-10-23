@@ -48,7 +48,7 @@ var/global/list/desertTurfEdgeCache
 	name = "desert"
 	icon_state = "wasteland"
 	step_sounds = list("human" = "dirtfootsteps")
-	allowed_plants = list(/obj/item/seeds/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit, \
+	allowed_plants = list(/obj/item/seeds/broc, /obj/item/seeds/xander, /obj/item/seeds/agave, /obj/item/seeds/mutfruit, \
 	/obj/item/seeds/ferocactus, /obj/item/seeds/corn,/obj/item/seeds/shroom)
 	slowdown = 0.1
 	flags = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
