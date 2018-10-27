@@ -565,6 +565,19 @@
 	use_power = 1
 	has_cover = 1
 
+/obj/machinery/porta_turret/syndicate/bs
+	stun_projectile = /obj/item/projectile/beam
+	lethal_projectile = /obj/item/projectile/beam
+	lethal_projectile_sound = 'sound/f13weapons/laser_rifle.ogg'
+	stun_projectile_sound = 'sound/f13weapons/laser_rifle.ogg'
+	icon_state = "turretCover"
+	base_icon_state = "standard"
+	faction = "bs"
+	emp_vunerable = 1
+	always_up = 1
+	use_power = 1
+	has_cover = 1
+
 /obj/machinery/porta_turret/syndicate/pod
 	obj_integrity = 40
 	stun_projectile = /obj/item/projectile/bullet/weakbullet3

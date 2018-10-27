@@ -83,7 +83,19 @@
 	var/anyai = 1
 	var/mob/living/silicon/ai/ai = list()
 	var/last_tick //used to delay the powercheck
+	var/busy = 0
+	var/soundLength = 50
+	var/soundFile = 'sound/f13music/mysterious_stranger.ogg'
+	var/songnumber = 1
 	dog_fashion = null
+
+/obj/item/device/radio/radio/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob)
+	src.playAudio(user)
+	return ..()
+
+/obj/item/device/radio/radio/attack_self(mob/user as mob)
+	src.playAudio(user)
+	return
 
 /obj/item/device/radio/radio/New()
 	..()
@@ -95,9 +107,116 @@
 
 /obj/item/device/radio/radio/attack_ai(mob/user)
 	interact(user)
+	src.playAudio(user)
+	return ..()
 
 /obj/item/device/radio/radio/attack_hand(mob/user)
 	interact(user)
+	src.playAudio(user)
+	return ..()
+
+/obj/item/device/radio/radio/proc/playAudio(mob/user)
+	if(!src.busy)
+		src.busy = 1
+
+		songnumber = pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30)
+		if(songnumber == 1)
+			soundFile = 'sound/f13music/enclave_dixie.ogg'
+			soundLength = 470
+		if(songnumber == 2)
+			soundFile = 'sound/f13music/enclave_hymn.ogg'
+			soundLength = 310
+		if(songnumber == 3)
+			soundFile = 'sound/f13music/enclave_montezuma.ogg'
+			soundLength = 420
+		if(songnumber == 4)
+			soundFile = 'sound/f13music/enclave_presidential.ogg'
+			soundLength = 700
+		if(songnumber == 5)
+			soundFile = 'sound/f13music/enclave_stars.ogg'
+			soundLength = 820
+		if(songnumber == 6)
+			soundFile = 'sound/f13music/enclave_washington.ogg'
+			soundLength = 560
+		if(songnumber == 7)
+			soundFile = 'sound/f13music/enclave_yankee.ogg'
+			soundLength = 730
+		if(songnumber == 8)
+			soundFile = 'sound/f13music/new_vegas_show_bonus_1.ogg'
+			soundLength = 1870
+		if(songnumber == 9)
+			soundFile = 'sound/f13music/new_vegas_show_bonus_2.ogg'
+			soundLength = 2409
+		if(songnumber == 10)
+			soundFile = 'sound/f13music/Aint That A Kick In the Head.ogg'
+			soundLength = 1460
+		if(songnumber == 11)
+			soundFile = 'sound/f13music/Big Iron.ogg'
+			soundLength = 2380
+		if(songnumber == 12)
+			soundFile = 'sound/f13music/Jingle Jangle Jingle.ogg'
+			soundLength = 2000
+		if(songnumber == 13)
+			soundFile = 'sound/f13music/Why Dont You Do Right.ogg'
+			soundLength = 2020
+		if(songnumber == 14)
+			soundFile = 'sound/f13music/Strahlende Trompete.ogg'
+			soundLength = 1870
+		if(songnumber == 15)
+			soundFile = 'sound/f13music/Johnny Guitar.ogg'
+			soundLength = 1830
+		if(songnumber == 16)
+			soundFile = 'sound/f13music/Where Have You Been All My Life.ogg'
+			soundLength = 1770
+		if(songnumber == 17)
+			soundFile = 'sound/f13music/Goin Under.ogg'
+			soundLength = 1770
+		if(songnumber == 18)
+			soundFile = 'sound/f13music/Blue Moon.ogg'
+			soundLength = 1720
+		if(songnumber == 19)
+			soundFile = 'sound/f13music/Love Me As Though No Tomorrow.ogg'
+			soundLength = 1550
+		if(songnumber == 20)
+			soundFile = 'sound/f13music/Heartaches by the Number.ogg'
+			soundLength = 1540
+		if(songnumber == 21)
+			soundFile = 'sound/f13music/Its A Sin To Tell A Lie.ogg'
+			soundLength = 1410
+		if(songnumber == 22)
+			soundFile = 'sound/f13music/Hallo Mister X.ogg'
+			soundLength = 1300
+		if(songnumber == 23)
+			soundFile = 'sound/f13music/Mad About The Boy.ogg'
+			soundLength = 1290
+		if(songnumber == 24)
+			soundFile = 'sound/f13music/Slow Bounce.ogg'
+			soundLength = 1250
+		if(songnumber == 25)
+			soundFile = 'sound/f13music/Somethings Gotta Give.ogg'
+			soundLength = 1220
+		if(songnumber == 26)
+			soundFile = 'sound/f13music/Happy Times.ogg'
+			soundLength = 1170
+		if(songnumber == 27)
+			soundFile = 'sound/f13music/Von Spanien Nach S damerika.ogg'
+			soundLength = 1060
+		if(songnumber == 28)
+			soundFile = 'sound/f13music/Sit And Dream.ogg'
+			soundLength = 900
+		if(songnumber == 29)
+			soundFile = 'sound/f13music/Manhattan.ogg'
+			soundLength = 880
+		if(songnumber == 30)
+			soundFile = 'sound/f13music/American Swing.ogg'
+			soundLength = 950
+
+		playsound(get_turf(src),src.soundFile,50)
+		src.add_fingerprint(user)
+		spawn(src.soundLength)
+			src.icon_state = initial(src.icon_state)
+			src.busy = 0
+	return
 
 /obj/item/device/radio/radio/interact(mob/user)
 	..()
@@ -157,7 +276,19 @@
 	var/anyai = 1
 	var/mob/living/silicon/ai/ai = list()
 	var/last_tick //used to delay the powercheck
+	var/busy = 0
+	var/soundLength = 50
+	var/soundFile = 'sound/f13music/mysterious_stranger.ogg'
+	var/songnumber = 1
 	dog_fashion = null
+
+/obj/item/device/radio/large_radio/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob)
+	src.playAudio(user)
+	return ..()
+
+/obj/item/device/radio/large_radio/attack_self(mob/user as mob)
+	src.playAudio(user)
+	return
 
 /obj/item/device/radio/large_radio/New()
 	..()
@@ -169,9 +300,116 @@
 
 /obj/item/device/radio/large_radio/attack_ai(mob/user)
 	interact(user)
+	src.playAudio(user)
+	return ..()
 
 /obj/item/device/radio/large_radio/attack_hand(mob/user)
 	interact(user)
+	src.playAudio(user)
+	return ..()
+
+/obj/item/device/radio/large_radio/proc/playAudio(mob/user)
+	if(!src.busy)
+		src.busy = 1
+
+		songnumber = pick(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30)
+		if(songnumber == 1)
+			soundFile = 'sound/f13music/enclave_dixie.ogg'
+			soundLength = 470
+		if(songnumber == 2)
+			soundFile = 'sound/f13music/enclave_hymn.ogg'
+			soundLength = 310
+		if(songnumber == 3)
+			soundFile = 'sound/f13music/enclave_montezuma.ogg'
+			soundLength = 420
+		if(songnumber == 4)
+			soundFile = 'sound/f13music/enclave_presidential.ogg'
+			soundLength = 700
+		if(songnumber == 5)
+			soundFile = 'sound/f13music/enclave_stars.ogg'
+			soundLength = 820
+		if(songnumber == 6)
+			soundFile = 'sound/f13music/enclave_washington.ogg'
+			soundLength = 560
+		if(songnumber == 7)
+			soundFile = 'sound/f13music/enclave_yankee.ogg'
+			soundLength = 730
+		if(songnumber == 8)
+			soundFile = 'sound/f13music/new_vegas_show_bonus_1.ogg'
+			soundLength = 1870
+		if(songnumber == 9)
+			soundFile = 'sound/f13music/new_vegas_show_bonus_2.ogg'
+			soundLength = 2409
+		if(songnumber == 10)
+			soundFile = 'sound/f13music/Aint That A Kick In the Head.ogg'
+			soundLength = 1460
+		if(songnumber == 11)
+			soundFile = 'sound/f13music/Big Iron.ogg'
+			soundLength = 2380
+		if(songnumber == 12)
+			soundFile = 'sound/f13music/Jingle Jangle Jingle.ogg'
+			soundLength = 2000
+		if(songnumber == 13)
+			soundFile = 'sound/f13music/Why Dont You Do Right.ogg'
+			soundLength = 2020
+		if(songnumber == 14)
+			soundFile = 'sound/f13music/Strahlende Trompete.ogg'
+			soundLength = 1870
+		if(songnumber == 15)
+			soundFile = 'sound/f13music/Johnny Guitar.ogg'
+			soundLength = 1830
+		if(songnumber == 16)
+			soundFile = 'sound/f13music/Where Have You Been All My Life.ogg'
+			soundLength = 1770
+		if(songnumber == 17)
+			soundFile = 'sound/f13music/Goin Under.ogg'
+			soundLength = 1770
+		if(songnumber == 18)
+			soundFile = 'sound/f13music/Blue Moon.ogg'
+			soundLength = 1720
+		if(songnumber == 19)
+			soundFile = 'sound/f13music/Love Me As Though No Tomorrow.ogg'
+			soundLength = 1550
+		if(songnumber == 20)
+			soundFile = 'sound/f13music/Heartaches by the Number.ogg'
+			soundLength = 1540
+		if(songnumber == 21)
+			soundFile = 'sound/f13music/Its A Sin To Tell A Lie.ogg'
+			soundLength = 1410
+		if(songnumber == 22)
+			soundFile = 'sound/f13music/Hallo Mister X.ogg'
+			soundLength = 1300
+		if(songnumber == 23)
+			soundFile = 'sound/f13music/Mad About The Boy.ogg'
+			soundLength = 1290
+		if(songnumber == 24)
+			soundFile = 'sound/f13music/Slow Bounce.ogg'
+			soundLength = 1250
+		if(songnumber == 25)
+			soundFile = 'sound/f13music/Somethings Gotta Give.ogg'
+			soundLength = 1220
+		if(songnumber == 26)
+			soundFile = 'sound/f13music/Happy Times.ogg'
+			soundLength = 1170
+		if(songnumber == 27)
+			soundFile = 'sound/f13music/Von Spanien Nach S damerika.ogg'
+			soundLength = 1060
+		if(songnumber == 28)
+			soundFile = 'sound/f13music/Sit And Dream.ogg'
+			soundLength = 900
+		if(songnumber == 29)
+			soundFile = 'sound/f13music/Manhattan.ogg'
+			soundLength = 880
+		if(songnumber == 30)
+			soundFile = 'sound/f13music/American Swing.ogg'
+			soundLength = 950
+
+		playsound(get_turf(src),src.soundFile,50)
+		src.add_fingerprint(user)
+		spawn(src.soundLength)
+			src.icon_state = initial(src.icon_state)
+			src.busy = 0
+	return
 
 /obj/item/device/radio/large_radio/interact(mob/user)
 	..()

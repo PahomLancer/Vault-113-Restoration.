@@ -51,6 +51,18 @@
 /obj/effect/mine/explosive/mineEffect(mob/victim)
 	explosion(loc, range_devastation, range_heavy, range_light, range_flash)
 
+/obj/effect/mine/caps_mine
+	name = "caps mine"
+	var/range_devastation = 1
+	var/range_heavy = 2
+	var/range_light = 4
+	var/range_flash = 4
+	icon = 'icons/fallout/objects/crafting.dmi'
+	icon_state = "capmine_active"
+
+/obj/effect/mine/caps_mine/mineEffect(mob/victim)
+	explosion(loc, range_devastation, range_heavy, range_light, range_flash)
+
 
 /obj/effect/mine/stun
 	name = "stun mine"

@@ -1,12 +1,12 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1540324438
-DIR: code code\modules code\modules\fallout code\modules\fallout\misc code\modules\fallout\misc\jobs code\modules\fallout\misc\jobs\job 
+LAST_COMPILE_TIME: 1540588690
+DIR: _maps _maps\map_files _maps\map_files\Denwer code code\datums code\datums\wires code\game code\game\objects code\game\objects\items code\game\objects\items\weapons code\modules code\modules\crafting code\modules\crafting\recipes 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 512.1448
-WINDOW: code\modules\fallout\obj\flora\farming.dm;code\modules\fallout\misc\donate\pack.dm;code\modules\fallout\misc\jobs\job\brotherhood.dm;code\modules\fallout\misc\jobs\job\enclave.dm;code\modules\fallout\misc\jobs\jobs.dm
-FILE: code\modules\fallout\misc\jobs\jobs.dm
+LAST_COMPILE_VERSION: 512.1454
+WINDOW: code\modules\fallout\obj\holodisks.dm;_maps\map_files\Denwer\denwersurface.dmm;code\modules\crafting\recipes\medicine.dm;code\modules\crafting\recipes\weapon.dm
+FILE: _maps\map_files\Denwer\denwersurface.dmm
 */
 // END_INTERNALS
