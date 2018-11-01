@@ -663,3 +663,39 @@
 	throw_cooldown = world.time + 5				//Half a second between throws.
 	user.put_in_hands(src)
 	playsound(src, 'sound/weapons/laser2.ogg', 20, 1)
+
+/obj/item/weapon/bumpersword
+	name = "bumper sword"
+	desc = "The bumper sword, as the name suggests, consists of a rusty car bumper that has been flattened and sharpened into a thick, heavy blade. The license plate is still attached, and an exhaust pipe strapped to the unsharpened end serves as a makeshift handle. Typically favored by Caesar's Legion due to it's immense cutting power."
+	icon = 'icons/fallout/objects/melee.dmi'
+	icon_state = "bumpersword"
+	item_state = "bumpersword"
+	flags = CONDUCT
+	slot_flags = SLOT_BACK
+	force_unwielded = 50
+	force_wielded = 70
+	block_chance = 30
+	throwforce = 35
+	w_class = 3
+	armour_penetration = 30
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	sharpness = IS_SHARP
+	obj_integrity = 100
+	max_integrity = 100
+	w_class = WEIGHT_CLASS_BULKY
+	self_weight = 35
+
+/obj/item/weapon/twohanded/bumpersword/hit_reaction(mob/living/carbon/human/owner, attack_text, final_block_chance, damage, attack_type)
+	if(wielded)
+		final_block_chance *= 2
+	if(wielded || attack_type != PROJECTILE_ATTACK)
+		if(prob(final_block_chance))
+			if(attack_type == PROJECTILE_ATTACK)
+				owner.visible_message("<span class='danger'>[owner] blocks [attack_text] with [src]!</span>")
+				playsound(src, pick("sound/weapons/bulletflyby.ogg","sound/weapons/bulletflyby2.ogg","sound/weapons/bulletflyby3.ogg"), 75, 1)
+				return 1
+			else
+				owner.visible_message("<span class='danger'>[owner] parries [attack_text] with [src]!</span>")
+				return 1
+	return 0

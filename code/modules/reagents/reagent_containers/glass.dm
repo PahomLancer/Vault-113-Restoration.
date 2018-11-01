@@ -276,3 +276,57 @@
 		slot_equipment_priority.Insert(index, slot_head)
 		return
 	return ..()
+
+/obj/item/weapon/reagent_containers/glass/bucket/canister
+	name = "canister"
+	desc = "An old canister."
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "canister"
+	item_state = "bucket"
+	materials = list(MAT_METAL=500)
+	w_class = WEIGHT_CLASS_NORMAL
+	amount_per_transfer_from_this = 50
+	possible_transfer_amounts = list(10,15,20,25,30,50,100)
+	volume = 100
+	flags = OPENCONTAINER
+	flags_inv = HIDEHAIR
+	slot_flags = SLOT_HEAD
+	resistance_flags = 0
+	armor = list(melee = 10, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 75, acid = 50) //Weak melee protection, because you can wear it on your head
+	slot_equipment_priority = list( \
+		slot_back, slot_wear_id,\
+		slot_w_uniform, slot_wear_suit,\
+		slot_wear_mask, slot_head, slot_neck,\
+		slot_shoes, slot_gloves,\
+		slot_ears, slot_glasses,\
+		slot_belt, slot_s_store,\
+		slot_l_store, slot_r_store,\
+		slot_generic_dextrous_storage
+	)
+
+/obj/item/weapon/reagent_containers/glass/bucket/canisterlarge
+	name = "large canister"
+	desc = "An old large canister."
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "canisterlarge"
+	item_state = "bucket"
+	materials = list(MAT_METAL=1000)
+	w_class = WEIGHT_CLASS_NORMAL
+	amount_per_transfer_from_this = 100
+	possible_transfer_amounts = list(10,15,20,25,30,50,100,200)
+	volume = 100
+	flags = OPENCONTAINER
+	flags_inv = HIDEHAIR
+	slot_flags = SLOT_HEAD
+	resistance_flags = 0
+	armor = list(melee = 10, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 75, acid = 50) //Weak melee protection, because you can wear it on your head
+	slot_equipment_priority = list( \
+		slot_back, slot_wear_id,\
+		slot_w_uniform, slot_wear_suit,\
+		slot_wear_mask, slot_head, slot_neck,\
+		slot_shoes, slot_gloves,\
+		slot_ears, slot_glasses,\
+		slot_belt, slot_s_store,\
+		slot_l_store, slot_r_store,\
+		slot_generic_dextrous_storage
+	)

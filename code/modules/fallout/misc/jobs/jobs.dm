@@ -50,6 +50,11 @@ var/const/FOB				=(1<<9)
 var/const/VAULT_OVERSEER	=(1<<0)
 var/const/VAULT_RESIDENT	=(1<<1)
 
+var/const/COC				=(1<<12)
+var/const/CHILDOFCATHEDRAL	=(1<<0)
+var/const/PREACHER			=(1<<1)
+var/const/MUTANT			=(1<<2)
+
 //var/const/VAULT			=(1<<10)
 //var/const/VAULT_OVERSEER	=(1<<0)
 //var/const/VAULT_RESIDENT	=(1<<1)
@@ -67,7 +72,8 @@ var/list/fallout_head_positions = list(
 	"Centurion",
 	"Sergeant NCR",
 	"Veteran Ranger",
-	"Overseer"
+	"Overseer",
+	"Preacher"
 )
 
 

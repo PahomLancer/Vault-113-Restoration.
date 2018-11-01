@@ -1,6 +1,6 @@
 //#define FLAG_CAPTURE_SPEED 0.27
 //#define FLAG_CAPTURE_SPEED 2
-#define FLAG_CAPTURE_SPEED 0.2
+#define FLAG_CAPTURE_SPEED 0.4
 
 var/datum/subsystem/flag/SSflag
 
@@ -10,7 +10,7 @@ var/datum/subsystem/flag/SSflag
 	display_order = 1
 	wait = 5
 
-	var/list/war_factions = list("bs", "enclave", "ncr", "legion", "raiders")
+	var/list/war_factions = list("bs", "enclave", "ncr", "legion", "raiders", "vault", "coc")
 	var/list/processing = list()
 
 /datum/subsystem/flag/New()

@@ -233,6 +233,235 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
 
+/obj/item/clothing/under/f13/deadmoney
+	name = "Utility jumpsuit"
+	desc = "A working class jumpsuit that appears rather plain in every aspect, apart from the unsettling red X painted across it's back with an unknown substance."
+	icon_state = "deadmoney"
+	item_state = "deadmoney"
+	item_color = "deadmoney"
+	can_adjust = 0
+
+/obj/item/clothing/under/f13/casinoarmor
+	icon = 'icons/obj/clothing/uniforms.dmi'
+	name = "Casino security uniform"
+	desc = "A rather dated and now defunct pre-war Casino security guard's uniform, bearing mild kevlar armoring suitable for defense against some melee weapons and basic handgun calibers."
+	icon_state = "casinoarmor"
+	item_state = "casinoarmor"
+	item_color = "casinoarmor"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list(melee = 20, bullet = 40, laser = 25,energy = 25, bomb = 15, bio = 100, rad = 100, fire = 30, acid = 15)
+	can_adjust = 0
+
+/obj/item/clothing/under/f13/assassinarmor
+	icon = 'icons/obj/clothing/uniforms.dmi'
+	name = "Assassin's armor"
+	desc = "A very flexible bodysuit bearing little in the way of ballistic protection but highly suitable for defense against most conventional energy and plasma weapons due to it's odd and rubbery material."
+	icon_state = "assassinarmor"
+	item_state = "assassinarmor"
+	item_color = "assassinarmor"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list(melee = 20, bullet = 30, laser = 60,energy = 50, bomb = 35, bio = 100, rad = 100, fire = 30, acid = 15)
+	can_adjust = 0
+
+/obj/item/clothing/under/f13/patriotsuit
+	icon = 'icons/obj/clothing/uniforms.dmi'
+	name = "Patriotic Suit"
+	desc = "Motorcycle not included."
+	icon_state = "ek"
+	item_state = "ek"
+	item_color = "ek"
+	can_adjust = 0
+
+/obj/item/clothing/under/f13/wolfwood
+	name = "Priest's suit"
+	desc = "A solid black suit with the untucked collar of a white button up. Looks pretty snazzy, but incredibly impactical for preaching."
+	icon_state = "wolfwood"
+	item_state = "wolfwood"
+	item_color = "wolfwood"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/myers
+	name = "Navy jumpsuit"
+	desc = "A standard issue navy blue jumpsuit for madmen and lunatics alike."
+	icon_state = "myers"
+	item_state = "myers"
+	item_color = "myers"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/loomisclothes
+	name = "Brown suit"
+	desc = "An ''english cut'' style formal brown suit with matching trousers and a white button up shirt with cufflinks."
+	icon_state = "loomisclothes"
+	item_state = "loomisclothes"
+	item_color = "loomisclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/wolfclothes
+	name = "Red sweater vest"
+	desc = "A timeless checkered red sweater vest paired with grey suit pants and a white button up shirt with cufflinks."
+	icon_state = "wolfclothes"
+	item_state = "wolfclothes"
+	item_color = "wolfclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/harryclothes
+	name = "Brown sweater vest"
+	desc = "A timeless checkered brown sweater vest paired with sepia suit pants and a white button up shirt with cufflinks."
+	icon_state = "harryclothes"
+	item_state = "harryclothes"
+	item_color = "harryclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/gatclothes
+	name = "Street clothes"
+	desc = "A simple white V-neck acompanied by worn blue jeans. You don't look like much. Then again, the wearer doesn't look like they have an eight inch cock, so I guess you're both full of surprises."
+	icon_state = "gatclothes"
+	item_state = "gatclothes"
+	item_color = "gatclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/zimclothes
+	name = "Casual clothing"
+	desc = "A simple white tee shirt paired with classic blue jeans. Sharp dresser."
+	icon_state = "zimclothes"
+	item_state = "zimclothes"
+	item_color = "zimclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/stokerclothes
+	name = "Vested suit"
+	desc = "A formal suit styled after Victorian era fashion, composed of a white button up and accompanied by a single breasted vest and matching trousers. It also appears to sport a classy maroon puff tie."
+	icon_state = "stokerclothes"
+	item_state = "stokerclothes"
+	item_color = "stokerclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/belmontclothes
+	name = "Casual clothing"
+	desc = "A very relaxed attire composed of a Renaissance-styled white button up and partnered with light blue breeches."
+	icon_state = "belmontclothes"
+	item_state = "belmontclothes"
+	item_color = "belmontclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/belmontclothesalt
+	name = "Casual clothing"
+	desc = "A very relaxed attire composed of a Renaissance-styled grey button up and partnered with rugged crimson work trousers, which appear to be held up via combination of matching suspenders and a belt."
+	icon_state = "belmontclothesalt"
+	item_state = "belmontclothesalt"
+	item_color = "belmontclothesalt"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/juliusclothes
+	name = "Vested suit"
+	desc = "A formal suit styled after Victorian era fashion, composed of a maroon button up and accompanied by a single breasted tan vest and deep red trousers. It also appears to sport a scarlet bandana around the neck."
+	icon_state = "juliusclothes"
+	item_state = "juliusclothes"
+	item_color = "juliusclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/chrisclothes
+	name = "Soldier fatigues"
+	desc = "A rather dated and now defunct U.S Airforce uniform complete with an exposed holster rig worn over one shoulder and securely buckled to the belt for maximum retention."
+	icon_state = "chrisclothes"
+	item_state = "chrisclothes"
+	item_color = "chrisclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/barryclothes
+	name = "Sergeant fatigues"
+	desc = "A rather dated and now defunct U.S Airforce Sergeant's uniform complete with an exposed holster rig worn over one shoulder and securely buckled to the belt for maximum retention."
+	icon_state = "barryclothes"
+	item_state = "barryclothes"
+	item_color = "barryclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/weskerclothes
+	name = "Major fatigues"
+	desc = "A rather dated and now defunct U.S Airforce Major's uniform complete with an exposed holster rig worn over one shoulder and securely buckled to the belt for maximum retention."
+	icon_state = "weskerclothes"
+	item_state = "weskerclothes"
+	item_color = "weskerclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/mikeclothes
+	name = "Work clothes"
+	desc = "A button up flannel paired with a simple white undershirt and medium-olive khakis. The outfit has seen better days, but it's fairly well kept for the most part."
+	icon_state = "mikeclothes"
+	item_state = "mikeclothes"
+	item_color = "mikeclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/jakeclothes
+	name = "Mid-worlder's clothing"
+	desc = "A beige ranch hand's shirt complete with a traditional bowtie and yellow khakis."
+	icon_state = "jakeclothes"
+	item_state = "jakeclothes"
+	item_color = "jakeclothes"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/tribalshaman
+	name = "Tribal Shaman's clothing"
+	desc = "A very simple loincloth fashioned from an unknown animal's hide and held together with sisal rope."
+	icon_state = "tribalshaman"
+	item_state = "tribalshaman"
+	item_color = "tribalshaman"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/tribalwarrior
+	name = "Tribal Warrior's armor"
+	desc = "An improvised suit of armor composed of several roughly cut pieces of metal scrap and linked together on the wearer's body via crudely woven pieces of rope."
+	icon_state = "tribalwarrior"
+	item_state = "tribalwarrior"
+	item_color = "tribalwarrior"
+	armor = list(melee = 40, bullet = 60, laser = 35,energy = 35, bomb = 25, bio = 100, rad = 100, fire = 30, acid = 15)
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/tribaldoctor
+	name = "Tribal Witch doctor's clothing"
+	desc = "A very simple loincloth fashioned from an unknown animal's hide and held together with sisal rope, accompanied by a string necklace bearing three strange blue crystals and matching legbands crafted from leather."
+	icon_state = "tribaldoctor"
+	item_state = "tribaldoctor"
+	item_color = "tribaldoctor"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/veramale
+	name = "Star's tuxedo"
+	desc = "A classy sepia tuxedo paired up with a vibrant red suit vest and beige dress shirt, complimented with a bowtie adding a bit of pre-war flair for the ambitious male waster."
+	icon_state = "veramale"
+	item_state = "veramale"
+	item_color = "veramale"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
+/obj/item/clothing/under/f13/verafemale
+	name = "Starlet's dress"
+	desc = "A sexy black evening dress with a vibrant scarlet trim and faux flower attached to the left hip, suited for formal events or general bossywork for the ambitious female waster."
+	icon_state = "verafemale"
+	item_state = "verafemale"
+	item_color = "verafemale"
+	can_adjust = 0
+	icon = 'icons/obj/clothing/uniforms.dmi'
+
 /obj/item/clothing/under/f13/mercadv //Male version
 	name = "male merc adventurer outfit"
 	desc = "A large leather jacket with torn-off sleeves, paired with a red sweater, a necklace with three teeth of unknown origin strung on, and a pair of brown leather pants.<br>There is also a rough leather bandolier for additional storage capacity.<br>Fitted for male wastelanders."

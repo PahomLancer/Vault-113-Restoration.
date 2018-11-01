@@ -39,6 +39,54 @@
 	body_parts_covered = HEAD
 	flags_inv = HIDEHAIR|HIDEFACE|HIDEEARS
 
+/obj/item/clothing/suit/hooded/preacher_hoodie
+	name = "preacher hoodie"
+	desc = "Robes from the Children of the Cathedral!"
+	icon_state = "preacher_hoodie"
+	item_state = "preacher_hoodie"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	allowed = list(/obj/item/weapon/storage/book/bible, /obj/item/weapon/nullrod, /obj/item/weapon/reagent_containers/food/drinks/bottle/holywater, /obj/item/weapon/storage/fancy/candle_box, /obj/item/candle, /obj/item/weapon/tank/internals/emergency_oxygen)
+	hoodtype = /obj/item/clothing/head/hooded/preacher_hood
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 0, bomb = 10, bio = 0, rad = 10, fire = 10, acid = 10)
+
+/obj/item/clothing/suit/hooded/preacher_hoodie/preacher_hoodie_armored
+	name = "armored preacher hoodie"
+	desc = "Robes from the Children of the Cathedral! This one with armour."
+	self_weight = 15
+	armor = list(melee = 50, bullet = 40, laser = 40, energy = 40, bomb = 40, bio = 30, rad = 10, fire = 10, acid = 10)
+
+/obj/item/clothing/head/hooded/preacher_hood
+	name = "preacher hood"
+	desc = "Robes from the Children of the Cathedral!"
+	icon_state = "preacher"
+	body_parts_covered = HEAD
+	flags_inv = HIDEHAIR|HIDEFACE|HIDEEARS
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 0, bomb = 10, bio = 0, rad = 10, fire = 10, acid = 10)
+
+/obj/item/clothing/suit/hooded/child_of_cathedral_hoodie
+	name = "child of cathedral hoodie"
+	desc = "Robes from the Children of the Cathedral!"
+	icon_state = "child_of_cathedral_hoodie"
+	item_state = "child_of_cathedral_hoodie"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	allowed = list(/obj/item/weapon/storage/book/bible, /obj/item/weapon/nullrod, /obj/item/weapon/reagent_containers/food/drinks/bottle/holywater, /obj/item/weapon/storage/fancy/candle_box, /obj/item/candle, /obj/item/weapon/tank/internals/emergency_oxygen)
+	hoodtype = /obj/item/clothing/head/hooded/child_of_cathedral_hood
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 0, bomb = 10, bio = 0, rad = 10, fire = 10, acid = 10)
+
+/obj/item/clothing/suit/hooded/child_of_cathedral_hoodie/child_of_cathedral_hoodie_armored
+	name = "armored child of cathedral hoodie"
+	desc = "Robes from the Children of the Cathedral! This one with armour."
+	self_weight = 15
+	armor = list(melee = 50, bullet = 40, laser = 40, energy = 40, bomb = 40, bio = 30, rad = 10, fire = 10, acid = 10)
+
+/obj/item/clothing/head/hooded/child_of_cathedral_hood
+	name = "child of cathedral hood"
+	desc = "Robes from the Children of the Cathedral!"
+	icon_state = "child_of_cathedral"
+	body_parts_covered = HEAD
+	flags_inv = HIDEHAIR|HIDEFACE|HIDEEARS
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 0, bomb = 10, bio = 0, rad = 10, fire = 10, acid = 10)
+
 /obj/item/clothing/suit/nun
 	name = "nun robe"
 	desc = "Maximum piety in this star system."

@@ -155,3 +155,29 @@
 	attack_verb = list("bashed", "battered", "bludgeoned", "thrashed", "whacked")
 
 /* Trays  moved to /obj/item/weapon/storage/bag */
+
+/obj/item/weapon/kitchen/knife/cosmicknife
+	name = "cosmic knife"
+	icon = 'icons/fallout/objects/melee.dmi'
+	icon_state = "cosmicknife"
+	item_state = "cosmicknife"
+	desc = "Made from a ''space age'' Saturnite alloy in the Big Mountain Research and Development Center, cosmic knives were advertised to be super-sharp, all-purpose kitchen knives that would not chip or dull. They proved to be too sharp for their own good, with a majority of them winding up on backorder for casinos in Texas years later."
+	force = 50
+	throwforce = 35
+	embed_chance = 100
+	armour_penetration = 100
+	origin_tech = "materials=3;combat=4"
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cut")
+
+/obj/item/weapon/kitchen/knife/heatcosmicknife
+	name = "heat cosmic knife"
+	icon = 'icons/fallout/objects/melee.dmi'
+	icon_state = "heatcosmicknife"
+	item_state = "heatcosmicknife"
+	desc = "Made from a ''space age'' Saturnite alloy in the Big Mountain Research and Development Center, cosmic knives were advertised to be super-sharp, all-purpose kitchen knives that would not chip or dull. They proved to be too sharp for their own good, with a majority of them winding up on backorder for casinos in Texas years later. This one heat"
+	force = 75
+	throwforce = 55
+	embed_chance = 100
+	armour_penetration = 150
+	origin_tech = "materials=3;combat=4"
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cut")

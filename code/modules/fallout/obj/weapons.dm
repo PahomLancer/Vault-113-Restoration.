@@ -214,6 +214,27 @@
 	obj_integrity = 200
 	max_integrity = 200
 
+/obj/item/weapon/twohanded/legionspear
+	name = "legionspear"
+	desc = "A haphazardly-constructed, yet still deadly weapon of an ancient design."
+	icon = 'icons/fallout/objects/melee.dmi'
+	icon_state = "legionspear0"
+	force = 20
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = SLOT_BACK
+	force_unwielded = 15
+	force_wielded = 30
+	throwforce = 25
+	throw_speed = 5
+	embedded_impact_pain_multiplier = 4
+	armour_penetration = 15
+	materials = list(MAT_METAL=1150, MAT_WOOD=2075)
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("attacked", "poked", "jabbed", "torn", "gored")
+	sharpness = IS_SHARP
+	obj_integrity = 200
+	max_integrity = 200
+
 /obj/item/weapon/spear
 	name = "throwing spear"
 	desc = "A rather deadly weapon of an ancient design."
@@ -232,6 +253,20 @@
 	sharpness = IS_SHARP
 	obj_integrity = 200
 	max_integrity = 200
+
+/obj/item/weapon/beartrapfist
+	name = "bear trap fist"
+	desc = "The bear trap fist is a peculiar weapon fashioned from bear traps and an old combat glove. The jaws of the trap are folded back past the normal open position, exposing a pressure plate. When a punch connects, the pressure plate makes contact with the target causing the trap to snap shut and inflict horrific wounds upon them."
+	icon = 'icons/fallout/objects/melee.dmi'
+	icon_state = "beartrapfist"
+	item_state = "beartrapfist"
+	slot_flags = SLOT_BELT
+	force = 46
+	hitsound = 'sound/f13weapons/beartrapfist.ogg'
+	throw_speed = 3
+	throw_range = 4
+	throwforce = 25
+	w_class = 2
 
 /obj/item/weapon/hammer
 	name = "hammer"

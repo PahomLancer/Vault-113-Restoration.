@@ -140,6 +140,41 @@
 	on = 1
 	light_color = LIGHT_COLOR_YELLOW
 
+/obj/item/device/flashlight/torchere
+	name = "torchere"
+	desc = "A torchere with an adjustable mount."
+	icon_state = "torchere"
+	item_state = "lamp"
+	brightness_on = 5
+	w_class = WEIGHT_CLASS_BULKY
+	flags = CONDUCT
+	materials = list()
+	on = 1
+	light_color = LIGHT_COLOR_YELLOW
+
+/obj/item/device/flashlight/blue_torchere
+	name = "blue_torchere"
+	desc = "A blue torchere with an adjustable mount."
+	icon_state = "blue_torchere"
+	item_state = "lamp"
+	brightness_on = 5
+	w_class = WEIGHT_CLASS_BULKY
+	flags = CONDUCT
+	materials = list()
+	on = 1
+	light_color = LIGHT_COLOR_BLUE
+
+/obj/item/device/flashlight/table_lamp
+	name = "table lamp"
+	desc = "A table lamp with an adjustable mount."
+	icon_state = "table_lamp"
+	item_state = "lamp"
+	brightness_on = 5
+	w_class = WEIGHT_CLASS_BULKY
+	flags = CONDUCT
+	materials = list()
+	on = 1
+	light_color = LIGHT_COLOR_YELLOW
 
 // green-shaded desk lamp
 /obj/item/device/flashlight/lamp/green

@@ -228,6 +228,21 @@
 
 // Fallout 13 general doors directory
 
+/obj/structure/simple_door/manhole
+	name = "sewer's manhole"
+	desc = "A small manhole to access sewers."
+	icon_state = "manhole"
+	door_type = "manhole"
+	opacity = 0
+	density = 0
+	opaque = 0
+	can_hold_padlock = FALSE
+	open_sound = "sound/f13machines/doorhidden_open.ogg"
+	close_sound = "sound/f13machines/doorhidden_close.ogg"
+	hard_open = 0
+	opening_time = 25
+	closing_time = 20
+
 /obj/structure/simple_door/house
 	icon_state = "house"
 	door_type = "house"

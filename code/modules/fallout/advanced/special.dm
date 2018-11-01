@@ -49,6 +49,11 @@
 		return 0
 
 	. = 0
+	if (user:dna.species && user:dna.species.id=="supermutant")
+		. += 50
+
+	if (user:dna.species && user:dna.species.id=="ghoul")
+		. -= 15
 
 	if(user.perks.have(/datum/perk/strongback))
 		. += 20
@@ -64,17 +69,17 @@
 	. = 0
 	switch(type)
 		if("s")
-			. = (reagent("jet") ? 10 : 0) + (reagent("psyho") ? 4 : 0)
+			. = (reagent("jet") ? 3 : 0) + (reagent("psyho") ? 2 : 0)
 		if("p")
 			. = 0
 		if("e")
-			. = (reagent("psyho") ? 4 : 0)
+			. = (reagent("psyho") ? 3 : 0)
 		if("c")
 			. = 0
 		if("i")
-			. = (reagent("mentats") ? 10 : 0)
+			. = (reagent("mentats") ? 4 : 0)
 		if("a")
-			. = (reagent("turbo") ? 10 : 0)
+			. = (reagent("turbo") ? 4 : 0)
 		if("l")
 			. = 0
 

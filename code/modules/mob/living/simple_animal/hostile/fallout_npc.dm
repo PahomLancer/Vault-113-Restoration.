@@ -36,6 +36,16 @@
 	speak_chance = 1
 	XP = 10
 
+/mob/living/simple_animal/hostile/vault/death(gibbed)
+	if(murder)
+		if(istype(murder, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = murder
+			//if(H.dna.species)
+			//	if(H.dna.species.type == /datum/species/ghoul)
+			H.faction -= "vault"
+			H.faction -= "city"
+	..()
+
 /obj/effect/mob_spawn/human/corpse/vault
 	name = "Vault Dweller"
 	uniform = /obj/item/clothing/under/f13/vault/v13
@@ -159,6 +169,15 @@
 	speak_chance = 1
 	XP = 15
 
+/mob/living/simple_animal/hostile/enclave/death(gibbed)
+	if(murder)
+		if(istype(murder, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = murder
+			//if(H.dna.species)
+			//	if(H.dna.species.type == /datum/species/ghoul)
+			H.faction -= "enclave"
+	..()
+
 /obj/effect/mob_spawn/human/corpse/enclave
 	name = "Enclave scientist"
 	uniform = /obj/item/clothing/under/f13/enclave_officer
@@ -253,6 +272,15 @@
 	emote_see = list("farts", "shivers")
 	speak_chance = 1
 	XP = 30
+
+/mob/living/simple_animal/hostile/bs/death(gibbed)
+	if(murder)
+		if(istype(murder, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = murder
+			//if(H.dna.species)
+			//	if(H.dna.species.type == /datum/species/ghoul)
+			H.faction -= "bs"
+	..()
 
 /obj/effect/mob_spawn/human/corpse/bs
 	name = "BS Knight"
@@ -353,6 +381,19 @@
 	emote_see = list("farts", "shivers")
 	speak_chance = 1
 	XP = 20
+
+/mob/living/simple_animal/hostile/ncr/death(gibbed)
+	if(murder)
+		if(istype(murder, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = murder
+			//if(H.dna.species)
+			//	if(H.dna.species.type == /datum/species/ghoul)
+			H.faction -= "ncr"
+			H.faction -= "city"
+			H.faction -= "none"
+			H.faction -= "followers"
+
+	..()
 
 /obj/effect/mob_spawn/human/corpse/ncr
 	name = "NCR Trooper"
@@ -456,6 +497,19 @@
 	speak_chance = 1
 	XP = 20
 
+/mob/living/simple_animal/hostile/legion/death(gibbed)
+	if(murder)
+		if(istype(murder, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = murder
+			//if(H.dna.species)
+			//	if(H.dna.species.type == /datum/species/ghoul)
+			H.faction -= "legion"
+			H.faction -= "city"
+			H.faction -= "none"
+			H.faction -= "followers"
+
+	..()
+
 /obj/effect/mob_spawn/human/corpse/legion
 	name = "Legion Prime"
 	uniform = /obj/item/clothing/under/f13/rag
@@ -557,6 +611,19 @@
 	emote_see = list("farts", "shivers")
 	speak_chance = 1
 	XP = 15
+
+/mob/living/simple_animal/hostile/raider/death(gibbed)
+	if(murder)
+		if(istype(murder, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = murder
+			//if(H.dna.species)
+			//	if(H.dna.species.type == /datum/species/ghoul)
+			H.faction -= "raider"
+			H.faction -= "city"
+			H.faction -= "none"
+			H.faction -= "followers"
+
+	..()
 
 /obj/effect/mob_spawn/human/corpse/raider
 	name = "Raider"

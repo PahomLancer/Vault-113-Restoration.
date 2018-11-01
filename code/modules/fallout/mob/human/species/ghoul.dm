@@ -16,7 +16,7 @@
 	sexes = 0
 
 /datum/species/ghoul/qualifies_for_faction(faction_id)
-	if(faction_id == "legion" || faction_id == "city")
+	if(faction_id == "legion" || faction_id == "city" || faction_id == "vault" || faction_id == "brotherhood" || faction_id == "enclave" || faction_id == "bs")
 		return 0
 	return 1
 

@@ -128,9 +128,40 @@
 	heal_burn = 5
 	self_delay = 20
 
+/*/obj/item/stack/medical/attack(mob/living/M, mob/user) //need MORE hardcode by your moron
+	if(iscarbon(M))
+		var/mob/living/carbon/human/H = M
+		if(!H.bleedsuppress) //so you can't stack bleed suppression
+			H.suppress_bloodloss(600)
+	..()*/
+
+//magic_powder
+/obj/item/stack/medical/fev
+	name = "FEV"
+	singular_name = "FEV"
+	desc = "FEV nears completion. Test on lab animals are at a near 100% success rate. Size and muscle density increase approximately 60%, and the potential intelligence increase by 200%. Effects upon human subjects remain unknown; although they are theoretically promising. The military, wishing to continue further testing, builds a large facility at the Mariposa military installation in central California. At this new facility, testing of the FEV virus continues on volunteer subjects from the military."
+	icon = 'icons/fallout/objects/medicine/bloodpack.dmi'
+	icon_state = "fev"
+	item_state = "bandaid"
+	amount = 1
+	max_amount = 1
+	heal_brute = 30
+	heal_burn = 30
+	self_delay = 30
+
 /obj/item/stack/medical/attack(mob/living/M, mob/user) //need MORE hardcode by your moron
 	if(iscarbon(M))
 		var/mob/living/carbon/human/H = M
+		if(name == "FEV")
+			if(self_delay)
+				if(!do_mob(user, M, self_delay))
+					return 0
+			to_chat(H, "<span class='danger'>You feel strange! You should wait some time before moving, becuase your whole body hurts!</span>")
+			H.set_species(/datum/species/supermutant)
+			H.Stun(20)
+			H.radiation = 0
+			qdel(src)
+			/*var/obj/item/weapon/reagent_containers/blood/CC = */new/obj/item/weapon/reagent_containers/blood/empty(user.loc)
 		if(!H.bleedsuppress) //so you can't stack bleed suppression
 			H.suppress_bloodloss(600)
 	..()

@@ -34,6 +34,30 @@
 	default = 1
 	XP = 40
 
+/datum/crafting_recipe/preacher_hoodie_armored
+	name = "Armored Preacher Hoodie"
+	result = /obj/item/clothing/suit/hooded/preacher_hoodie/preacher_hoodie_armored
+	reqs = list(/obj/item/clothing/suit/hooded/preacher_hoodie = 1,
+				/obj/item/stack/cable_coil = 2,
+				/obj/item/stack/sheet/metal = 5)
+	tools = list(/obj/item/weapon/screwdriver, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench)
+	time = 100
+	category = CAT_ARMOR
+	default = 1
+	XP = 30
+
+/datum/crafting_recipe/child_of_cathedral_hoodie_armored
+	name = "Armored Child of Cathedral Hoodie"
+	result = /obj/item/clothing/suit/hooded/child_of_cathedral_hoodie/child_of_cathedral_hoodie_armored
+	reqs = list(/obj/item/clothing/suit/hooded/child_of_cathedral_hoodie = 1,
+				/obj/item/stack/cable_coil = 2,
+				/obj/item/stack/sheet/metal = 5)
+	tools = list(/obj/item/weapon/screwdriver, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench)
+	time = 100
+	category = CAT_ARMOR
+	default = 1
+	XP = 30
+
 /datum/crafting_recipe/metalarmor
 	name = "Metal Armor"
 	result = /obj/item/clothing/suit/armor/f13/metalarmor
@@ -59,6 +83,19 @@
 				/obj/item/crafting/duct_tape = 1,
 				/obj/item/crafting/wonderglue = 2)
 	tools = list(/obj/item/weapon/screwdriver, /obj/item/weapon/wirecutters)
+	time = 200
+	category = CAT_ARMOR
+	default = 1
+	XP = 50
+
+/datum/crafting_recipe/supermutant_armor
+	name = "Supermutant Metal Armor"
+	result = /obj/item/clothing/suit/armor/f13/supermutant_armor
+	reqs = list(/obj/item/stack/cable_coil = 5,
+				/obj/item/stack/sheet/metal = 10,
+				/obj/item/crafting/duct_tape = 1,
+				/obj/item/crafting/wonderglue = 2)
+	tools = list(/obj/item/weapon/screwdriver, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench)
 	time = 200
 	category = CAT_ARMOR
 	default = 1

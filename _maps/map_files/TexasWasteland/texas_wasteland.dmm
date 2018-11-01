@@ -2011,7 +2011,7 @@
 "aMI" = (/turf/open/indestructible/ground/desert,/turf/closed/wall/f13/wood/house/broken,/area/f13/building)
 "aMJ" = (/obj/item/weapon/gun/ballistic/shotgun/toy,/obj/structure/displaycase,/turf/open/floor/f13/wood{tag = "icon-housewood2"; icon_state = "housewood2"},/area/f13/building)
 "aMK" = (/obj/item/clothing/shoes/f13/cowboy,/obj/structure/displaycase,/turf/open/floor/f13/wood{tag = "icon-housewood2"; icon_state = "housewood2"},/area/f13/building)
-"aML" = (/obj/item/weapon/gun/ballistic/automatic/toy/pistol/riot/unrestricted,/obj/structure/displaycase,/turf/open/floor/f13/wood{tag = "icon-housewood2"; icon_state = "housewood2"},/area/f13/building)
+"aML" = (/obj/structure/displaycase,/turf/open/floor/f13/wood{tag = "icon-housewood2"; icon_state = "housewood2"},/area/f13/building)
 "aMM" = (/obj/structure/table/wood/settler,/obj/item/weapon/gun/ballistic/automatic/pistol/n99,/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/open/floor/f13{tag = "icon-floorrusty"; icon_state = "floorrusty"},/area/f13/building)
 "aMN" = (/obj/structure/simple_door/house{tag = "icon-room"; icon_state = "room"},/turf/open/floor/f13{tag = "icon-floorrusty"; icon_state = "floorrusty"},/area/f13/building)
 "aMO" = (/obj/structure/chair{tag = "icon-chair (NORTH)"; icon_state = "chair"; dir = 1},/obj/machinery/light,/obj/effect/landmark/start{name = "Sheriff"},/turf/open/floor/f13{tag = "icon-floorrusty"; icon_state = "floorrusty"},/area/f13/building)

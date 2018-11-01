@@ -56,7 +56,7 @@
 	uniform = /obj/item/clothing/under/f13/enclave_officer
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/f13/autumn
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/army/enclave
 	weapon = /obj/item/weapon/gun/energy/plasma/glock
 	belt_contents = list(/obj/item/weapon/reagent_containers/f13stimpack = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
@@ -122,7 +122,7 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = null
 	head = /obj/item/clothing/head/soft/f13/enclave
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/army/enclave
 	weapon = /obj/item/weapon/gun/energy/plasma/pistol
 	belt_contents = list(/obj/item/weapon/reagent_containers/f13stimpack = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
@@ -183,7 +183,7 @@
 	uniform = /obj/item/clothing/under/f13/dbdu
 	shoes = /obj/item/clothing/shoes/f13/military
 	head = /obj/item/clothing/head/soft/f13/utility/tan
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/army/enclave
 	weapon = /obj/item/weapon/gun/energy/plasma
 	belt_contents = list(/obj/item/weapon/reagent_containers/f13stimpack = 1, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)

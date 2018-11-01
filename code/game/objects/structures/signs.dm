@@ -256,6 +256,12 @@
 	icon_state = "brotherhood"
 	icon = 'icons/fallout/misc/factions.dmi'
 
+/obj/structure/sign/coc
+	name = "Childs of Cathedral"
+	desc = "Childs of Cathedral"
+	icon_state = "childs of cathedral"
+	icon = 'icons/fallout/misc/factions.dmi'
+
 /obj/structure/sign/raider
 	name = "Raider"
 	desc = "Raider"

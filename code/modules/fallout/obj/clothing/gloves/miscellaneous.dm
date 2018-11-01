@@ -9,7 +9,7 @@
 	name = "baseball glove"
 	desc = "A large leather glove worn by baseball players of the defending team which assists them in catching and fielding balls hit by a batter or thrown by a teammate."
 	icon_state = "baseball"
-	item_state = "b_shoes"
+	item_state = "baseball"
 	item_color = null
 	transfer_prints = TRUE
 	strip_delay = 20

@@ -48,3 +48,7 @@
 	can_charge = 0
 	use_cyborg_cell = 1
 
+/obj/item/weapon/gun/energy/disabler/compliance_regulator
+	name = "Compliance Regulator"
+	desc = "The Compliance Regulator is an electroshock weapon and a unique version of the standard laser pistol, in that not only does it fire a blue beam instead of the normal red, but dealing a Critical Hit upon an enemy will paralyze them for 10 seconds."
+	icon_state = "compliance_regulator"

@@ -1,3 +1,12 @@
+/datum/crafting_recipe/cloth
+	name = "Cloth"
+	result = /obj/item/stack/sheet/cloth
+	reqs = list(/obj/item/clothing = 1)
+	time = 30
+	category = CAT_CLOTHING
+	default = 1
+	XP = 5
+
 /datum/crafting_recipe/headscarf
 	name = "Headscarf"
 	result = /obj/item/clothing/head/f13/headscarf
@@ -17,6 +26,28 @@
 	category = CAT_CLOTHING
 	default = 1
 	XP = 5
+
+/datum/crafting_recipe/preacher_hoodie
+	name = "Preacher Hoodie"
+	result = /obj/item/clothing/suit/hooded/preacher_hoodie
+	reqs = list(/obj/item/stack/sheet/cloth = 5,
+				/obj/item/crafting/wonderglue = 1)
+	tools = list(/obj/item/weapon/wirecutters)
+	time = 150
+	category = CAT_CLOTHING
+	default = 1
+	XP = 15
+
+/datum/crafting_recipe/child_of_cathedral_hoodie
+	name = "Child of Cathedral Hoodie"
+	result = /obj/item/clothing/suit/hooded/child_of_cathedral_hoodie
+	reqs = list(/obj/item/stack/sheet/cloth = 5,
+				/obj/item/crafting/wonderglue = 1)
+	tools = list(/obj/item/weapon/wirecutters)
+	time = 150
+	category = CAT_CLOTHING
+	default = 1
+	XP = 15
 
 /datum/crafting_recipe/shoes
 	name = "Leather Shoes"
@@ -70,6 +101,15 @@
 				/obj/item/crafting/duct_tape = 1,
 				/obj/item/crafting/wonderglue = 1)
 	tools = list(/obj/item/weapon/wirecutters)
+	category = CAT_CLOTHING
+	default = 1
+	XP = 10
+
+/datum/crafting_recipe/vault_supermutant
+	name = "Vault Supermutant Jumpsuit"
+	result = /obj/item/clothing/under/vault_supermutant
+	time = 20
+	reqs = list(/obj/item/clothing/under/f13/vault = 1)
 	category = CAT_CLOTHING
 	default = 1
 	XP = 10

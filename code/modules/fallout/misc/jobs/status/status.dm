@@ -367,3 +367,23 @@ mob/proc/set_status(var/status)
 	id = "dweller"
 	purge_faction = "vault"
 	color = "#005A20"
+
+// COC
+/datum/status/childofcathedral
+	name = "The Children of the Cathedral"
+	id = "childofcathedral"
+	purge_faction = "coc"
+	color = "#005A20"
+
+/datum/status/preacher
+	name = "Preacher of The Children of the Cathedral"
+	id = "preacher"
+	purge_faction = "coc"
+	can_invite_to = list("childofcathedral", "supermutant")
+	color = "#005A20"
+
+/datum/status/supermutant
+	name = "Supermutant"
+	id = "supermutant"
+	purge_faction = "coc"
+	color = "#005A20"

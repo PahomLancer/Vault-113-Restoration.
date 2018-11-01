@@ -288,6 +288,12 @@
 	icon_state = "grenadebeltold"
 	item_state = "security"
 
+/obj/item/weapon/storage/belt/military/army/enclave
+	name = "enclave belt"
+	desc = "A belt used by enclave military forces."
+	icon_state = "enclave"
+	item_state = "enclave"
+
 /obj/item/weapon/storage/belt/military/assault
 	name = "assault belt"
 	desc = "A tactical assault belt."
@@ -413,6 +419,30 @@
 	icon_state = "fannypack_leather"
 	item_state = "fannypack_leather"
 	storage_slots = 3
+	max_w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/weapon/storage/belt/cowboy
+	name = "cowboy belt"
+	desc = "A cowboy belt."
+	icon_state = "cowboy"
+	item_state = "cowboy"
+	storage_slots = 4
+	max_w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/weapon/storage/belt/survival
+	name = "survival belt"
+	desc = "A survival belt."
+	icon_state = "survival"
+	item_state = "survival"
+	storage_slots = 6
+	max_w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/weapon/storage/belt/doom
+	name = "doom belt"
+	desc = "A doom belt."
+	icon_state = "doom"
+	item_state = "doom"
+	storage_slots = 6
 	max_w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/weapon/storage/belt/fannypack/black

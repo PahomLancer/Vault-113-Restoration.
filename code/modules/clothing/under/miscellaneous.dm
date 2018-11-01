@@ -344,6 +344,19 @@
 	item_color = "assistant_formal"
 	can_adjust = 0
 
+/obj/item/clothing/under/vault_supermutant
+	name = "supermutant vault jumpsuit"
+	desc = "A supermutant vault jumpsuit."
+	icon_state = "vault_supermutant"
+	item_state = "vault_supermutant"
+	item_color = "vault_supermutant"
+	can_adjust = 0
+	body_parts_covered = CHEST|GROIN
+	armor = list(melee = 10, bullet = 5, laser = 5, energy = 5, bomb = 5, bio = 5, rad = 30, fire = 20, acid = 20)
+	can_adjust = 0
+	self_weight = 2
+	species_exception = list(/datum/species/supermutant)
+
 /obj/item/clothing/under/singery
 	name = "yellow performer's outfit"
 	desc = "Just looking at this makes you want to sing."

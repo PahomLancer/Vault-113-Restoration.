@@ -98,6 +98,17 @@
 	cuffsound = 'sound/weapons/cablecuff.ogg'
 	var/datum/robot_energy_storage/wirestorage = null
 
+/obj/item/weapon/restraints/handcuffs/cable/rope
+	name = "rope"
+	desc = "Looks like rope. Could be used to tie something up."
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "rope"
+	item_state = "coil_orange"
+	materials = list(MAT_METAL=250, MAT_GLASS=75)
+	origin_tech = "engineering=2"
+	breakouttime = 400 //Deciseconds = 40s
+	cuffsound = 'sound/weapons/cablecuff.ogg'
+
 /obj/item/weapon/restraints/handcuffs/cable/attack(mob/living/carbon/C, mob/living/carbon/human/user)
 	if(!istype(C))
 		return

@@ -80,6 +80,24 @@
 	icon = 'icons/fallout/objects/crates.dmi'
 	icon_state = "orange"
 
+/obj/structure/closet/crate/mil_crate
+	name = "mil crate"
+	desc = "A rectangular mil steel crate."
+	icon = 'icons/fallout/objects/crates.dmi'
+	icon_state = "mil_crate"
+
+/obj/structure/closet/crate/blue
+	name = "blue crate"
+	desc = "A rectangular blue steel crate."
+	icon = 'icons/fallout/objects/crates.dmi'
+	icon_state = "blue"
+
+/obj/structure/closet/crate/handmadecrate
+	name = "handmade crate"
+	desc = "A rectangular handmade steel crate."
+	icon = 'icons/fallout/objects/crates.dmi'
+	icon_state = "handmadecrate"
+
 /obj/structure/closet/crate/cratebloody
 	name = "bloody crate"
 	desc = "A rectangular bloody steel crate."

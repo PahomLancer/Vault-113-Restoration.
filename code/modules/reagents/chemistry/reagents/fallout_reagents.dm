@@ -169,3 +169,14 @@ datum/reagent/supstimpackium_oxy/on_mob_life(mob/living/M)
 	M.adjustToxLoss(1.2*REM, 0)  //fix it after RadRebalance
 	..()
 	. = 1
+
+/datum/reagent/water/fev
+	name = "FEV"
+	id = "fev"
+	description = "FEV nears completion. Test on lab animals are at a near 100% success rate. Size and muscle density increase approximately 60%, and the potential intelligence increase by 200%. Effects upon human subjects remain unknown; although they are theoretically promising. The military, wishing to continue further testing, builds a large facility at the Mariposa military installation in central California. At this new facility, testing of the FEV virus continues on volunteer subjects from the military."
+	color = "#88ff8877"
+
+/datum/reagent/water/fev/on_mob_life(mob/living/M)
+	M.adjustToxLoss(12*REM, 0)  //fix it after RadRebalance
+	..()
+	. = 1

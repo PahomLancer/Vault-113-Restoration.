@@ -60,3 +60,13 @@
 	category = CAT_MEDICINE
 	default = 1
 	XP = 50
+
+/datum/crafting_recipe/fev
+	name = "FEV"
+	result = /obj/item/stack/medical/fev
+	reqs = list(/obj/item/weapon/reagent_containers/blood/empty = 1,
+				/datum/reagent/water/fev = 10)
+	time = 100
+	category = CAT_MEDICINE
+	default = 1
+	XP = 10

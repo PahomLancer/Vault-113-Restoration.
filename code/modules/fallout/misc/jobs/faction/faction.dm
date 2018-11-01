@@ -365,3 +365,15 @@ mob/proc/set_faction(var/faction)
 	verbs = list(/mob/proc/begin_head_voting)
 
 //	craft_recipes = list(/datum/table_recipe/den_encryption_key)
+
+/datum/f13_faction/coc
+	name = "The Children of the Cathedral"
+	color = "#204200"
+	id = "coc"
+	full_name = "The Children of the Cathedral"
+	description = "<b>Alignment: Lawful Evil</b><br>The Children of the Cathedral was the religious branch of the Unity, a widespread religious cult that the Master established as a cover for his activities and to spread his philosophy."
+	preview_image = 'html/factions/coc.png'
+	head_status = "preacher"
+	verbs = list(/mob/proc/begin_head_voting)
+	area = /area/f13/ahs
+	karma = -10

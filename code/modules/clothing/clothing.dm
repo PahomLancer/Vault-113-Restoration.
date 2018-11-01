@@ -31,7 +31,6 @@
 	var/invis_view = SEE_INVISIBLE_LIVING
 	var/invis_override = 0
 
-
 	//Var modification - PLEASE be careful with this I know who you are and where you live
 	var/list/user_vars_to_edit = list() //VARNAME = VARVALUE eg: "name" = "butts"
 	var/list/user_vars_remembered = list() //Auto built by the above + dropped() + equipped()

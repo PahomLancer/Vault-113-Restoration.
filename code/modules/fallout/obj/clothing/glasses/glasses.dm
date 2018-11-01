@@ -11,6 +11,13 @@
 	icon_state = "biker"
 	item_state = "biker"
 
+/obj/item/clothing/glasses/f13/supermutant_glasses
+	name = "supermutant biker goggles"
+	desc = "B-B-B-B-Bad,<br>B-B-B-B-Bad,<br>B-B-B-B-Bad,<br>Bad to the bone!"
+	icon_state = "supermutant_glasses"
+	item_state = "supermutant_glasses"
+	species_exception = list(/datum/species/supermutant)
+
 //Fallout 13 sunglasses
 
 /obj/item/clothing/glasses/sunglasses/f13

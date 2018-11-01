@@ -20,6 +20,16 @@
 	default = 1
 	XP = 20
 
+/datum/crafting_recipe/heatcosmicknife
+	name = "Heat cosmic knife"
+	result = /obj/item/weapon/kitchen/knife/heatcosmicknife
+	reqs = list(/obj/item/weapon/kitchen/knife/cosmicknife = 1,
+				/obj/item/crafting/toaster = 1)
+	time = 200
+	category = CAT_WEAPON
+	default = 1
+	XP = 40
+
 //BALLISTIC
 
 /datum/crafting_recipe/bozar

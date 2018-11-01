@@ -270,7 +270,7 @@
 	if(WMK_have(/obj/item/kit/damage))
 		chambered.BB.damage *= 1.33
 
-	var/mob/living/carbon/userCarbon = user
+	//var/mob/living/carbon/userCarbon = user
 
 	// Location of weapon will be 0, 0, 0 if it in hand
 	if(SSbulletecho.can_fire)
@@ -548,7 +548,7 @@
 /obj/item/weapon/gun/proc/process_fire(atom/target as mob|obj|turf, mob/living/user as mob|obj, message = 1, params, zone_override)
 	if(gunroll(src,user))
 		return
-	if (user:dna.species && user:dna.species.id=="bigmutant")
+	if (user:dna.species && user:dna.species.id=="supermutant")
 		user << "Dont know how us this."
 		return
 	else

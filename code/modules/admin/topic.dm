@@ -2259,6 +2259,7 @@
 		O.head = text2path(href_list["outfit_head"])
 		O.back = text2path(href_list["outfit_back"])
 		O.mask = text2path(href_list["outfit_mask"])
+		O.neck = text2path(href_list["outfit_neck"])
 		O.glasses = text2path(href_list["outfit_glasses"])
 		O.r_hand = text2path(href_list["outfit_r_hand"])
 		O.l_hand = text2path(href_list["outfit_l_hand"])

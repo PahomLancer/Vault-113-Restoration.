@@ -69,6 +69,7 @@ var/global/list/datum/stack_recipe/sandstone_recipes = list ( \
 
 var/global/list/datum/stack_recipe/sandbag_recipes = list ( \
 	new/datum/stack_recipe("sandbags", /obj/structure/barricade/sandbags, 1, time = 25, one_per_turf = 1, on_floor = 1), \
+	new/datum/stack_recipe("sandbags", /obj/structure/barricade_m/sandbags, 1, time = 25, one_per_turf = 0, on_floor = 1), \
 	)
 
 /obj/item/stack/sheet/mineral/sandbags/New(var/loc, var/amount=null)

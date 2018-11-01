@@ -178,6 +178,25 @@
 	light_type = /obj/item/weapon/light/bulb
 	light_color = LIGHT_COLOR_YELLOW
 
+/obj/machinery/light/floor
+	icon_state = "floor1"
+	base_state = "floor"
+	fitting = "bulb"
+	brightness = 4
+	layer = 3
+	desc = "A small lighting fixture on floor."
+	light_type = /obj/item/weapon/light/bulb
+	light_color = LIGHT_COLOR_YELLOW
+
+/obj/machinery/light/flamp
+	icon_state = "flamp1"
+	base_state = "flamp"
+	fitting = "bulb"
+	brightness = 5
+	desc = "A small lighting fixture."
+	light_type = /obj/item/weapon/light/bulb
+	light_color = LIGHT_COLOR_YELLOW
+
 /obj/machinery/light/small/red
 	icon_state = "red1"
 	base_state = "red"

@@ -55,6 +55,41 @@
 	..() //extend the zap
 	boom()
 
+/obj/structure/reagent_dispensers/barrel/fueltank
+	name = "fuel barrel"
+	desc = "A fuel barrel. It is used to store high amounts of fuel."
+	icon = 'icons/fallout/objects/structures/stationary.dmi'
+	icon_state = "barrel"
+	tank_volume = 500
+	reagent_id = "welding_fuel"
+	self_weight = 200
+
+/obj/structure/reagent_dispensers/barrel/fueltank/boom()
+	explosion(get_turf(src), 0, 1, tank_volume/200, flame_range = tank_volume/200)
+	qdel(src)
+
+/obj/structure/reagent_dispensers/barrel/fueltank/blob_act(obj/structure/blob/B)
+	boom()
+
+/obj/structure/reagent_dispensers/barrel/fueltank/ex_act()
+	boom()
+
+/obj/structure/reagent_dispensers/barrel/fueltank/fire_act(exposed_temperature, exposed_volume)
+	boom()
+
+/obj/structure/reagent_dispensers/barrel/fueltank/tesla_act()
+	..() //extend the zap
+	boom()
+
+/obj/structure/reagent_dispensers/barrel/fev
+	name = "fev barrel"
+	desc = "A fev barrel. It is used to store high amounts of fev."
+	icon = 'icons/fallout/objects/structures/stationary.dmi'
+	icon_state = "fev"
+	tank_volume = 500
+	reagent_id = "fev"
+	self_weight = 200
+
 /obj/structure/reagent_dispensers/barrel/old
 	name = "old barrel"
 	desc = "An old barrel. Oddly enough, it stands undamaged after all this time.<br>You wonder if there is anything left in it."

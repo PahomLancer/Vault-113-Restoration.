@@ -49,6 +49,14 @@
 	icon_state = "syndicate"
 	strip_delay = 60
 
+/obj/item/clothing/mask/gas/huntermask
+	name = "hunter mask"
+	desc = "A hunter mask which protects from radiation."
+	icon_state = "huntermask"
+	item_state = "huntermask"
+	strip_delay = 60
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 100, rad = 100, fire = 0, acid = 0)
+
 /obj/item/clothing/mask/gas/clown_hat
 	name = "clown wig and mask"
 	desc = "A true prankster's facial attire. A clown is incomplete without his wig and mask."

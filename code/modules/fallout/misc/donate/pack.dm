@@ -90,9 +90,16 @@
 		/datum/job/legate,
 		/datum/job/elder,
 		/datum/job/colonel,
-		/datum/job/overseer
+		/datum/job/overseer,
+		/datum/job/preacher
 		)
 	price = -1
+
+	on_set(client/client)
+		client.add_race("glowing ghoul", /datum/species/ghoul/glowing)
+		client.add_race("supermutant", /datum/species/supermutant)
+		client.add_race("ghoul", /datum/species/ghoul)
+		client.add_race("human", /datum/species/human)
 
 /datum/content_pack/cigarettes
 	name = "Cigarettes"

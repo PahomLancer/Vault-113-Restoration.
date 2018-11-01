@@ -52,6 +52,19 @@
 	resistance_flags = FIRE_PROOF
 	self_weight = 5
 
+/obj/item/clothing/suit/armor/f13/supermutant_armor
+	name = "supermutant armor"
+	desc = "Supermutant armor.<br>It's heavy and uncomfortable, though."
+	icon_state = "supermutant_armor"
+	item_state = "supermutant_armor"
+	body_parts_covered = CHEST|GROIN|HEAD
+	armor = list(melee = 40, bullet = 30, laser = 30, energy = 30, bomb = 40, bio = 0, rad = 0, fire = 20, acid = 20)
+	put_on_delay = 60
+	strip_delay = 50
+	resistance_flags = FIRE_PROOF
+	self_weight = 15
+	species_exception = list(/datum/species/supermutant)
+
 /obj/item/clothing/suit/armor/f13/tribal
 	name = "tribal armor"
 	desc = "A set of armor made of gecko hides.<br>It's pretty good for makeshift armor."
@@ -431,9 +444,17 @@
 /obj/item/clothing/suit/armor/f13/power_armor/dropped(mob/user)
 	user.resize = 1
 	user.update_transform()
-	..()
-*/
+	..()*/
 
+
+
+/obj/item/clothing/suit/armor/f13/power_armor/sierra
+	name = "scorched sierra power armor"
+	desc = "The scorched Sierra power armor is a suit of T-45d power armor that has been modified by the NCR for its officers. The left shoulder pauldron has been replaced with a hairless, taxidermied bear's head held in place by a green mantle with two bronze star medallion clips. The back-mounted power cylinders have been replaced by a more streamlined box unit with glowing green panels which also appear on the forearms. The armor itself is slightly blackened due to the nuclear detonation. The bolts on the armor appear to have once been plated in gold-flake, along with gold trim all around the armor."
+	icon_state = "sierra"
+	item_state = "sierra"
+	armor = list(melee = 80, bullet = 75, laser = 45, energy = 35, bomb = 75, bio = 100, rad = 100, fire = 100, acid = 50)
+	self_weight = 35
 
 /obj/item/clothing/suit/armor/f13/power_armor/ncr
 	name = "salvaged power armor"
@@ -442,7 +463,6 @@
 	item_state = "t45bpowerarmor"
 	armor = list(melee = 70, bullet = 70, laser = 40, energy = 30, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 50)
 	self_weight = 45
-
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	name = "T-45d power armor"

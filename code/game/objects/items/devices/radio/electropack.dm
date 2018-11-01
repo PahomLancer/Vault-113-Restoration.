@@ -13,6 +13,11 @@
 	var/frequency = 1449
 	var/shock_cooldown = 0
 
+/obj/item/device/electropack/proc/prime()
+	//update_mob()
+	explosion(src.loc,1,2,4,flame_range = 0)
+	qdel(src)
+
 /obj/item/device/electropack/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] hooks [user.p_them()]self to the electropack and spams the trigger! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return (FIRELOSS)
@@ -117,6 +122,7 @@
 		step(M, pick(cardinal))
 
 		to_chat(M, "<span class='danger'>You feel a sharp shock!</span>")
+		//prime()
 		var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
 		s.set_up(3, 1, M)
 		s.start()
@@ -128,6 +134,143 @@
 	return
 
 /obj/item/device/electropack/attack_self(mob/user)
+
+	if(!ishuman(user))
+		return
+	user.set_machine(src)
+	var/dat = {"<TT>Turned [on ? "On" : "Off"] -
+<A href='?src=\ref[src];power=1'>Toggle</A><BR>
+<B>Frequency/Code</B> for electropack:<BR>
+Frequency:
+<A href='byond://?src=\ref[src];freq=-10'>-</A>
+<A href='byond://?src=\ref[src];freq=-2'>-</A> [format_frequency(frequency)]
+<A href='byond://?src=\ref[src];freq=2'>+</A>
+<A href='byond://?src=\ref[src];freq=10'>+</A><BR>
+
+Code:
+<A href='byond://?src=\ref[src];code=-5'>-</A>
+<A href='byond://?src=\ref[src];code=-1'>-</A> [code]
+<A href='byond://?src=\ref[src];code=1'>+</A>
+<A href='byond://?src=\ref[src];code=5'>+</A><BR>
+</TT>"}
+	user << browse(dat, "window=radio")
+	onclose(user, "radio")
+	return
+
+
+
+/obj/item/device/slave_collar
+	name = "slave collar"
+	desc = "The slave collar is a pre-War prisoner control device, adapted by slavers after the War for the purpose of capturing and forcing slaves into submission. Not quite. If you fit it just right, their body never gets used to the feeling of wearing it. It cuts in just enough when they swallow or turn their head to remind them who they belong to and it's that constant reminder that keeps them docile."
+	icon = 'icons/obj/radio.dmi'
+	icon_state = "slave_collar0"
+	item_state = "slave_collar"
+	flags = CONDUCT
+	slot_flags = SLOT_NECK
+	w_class = WEIGHT_CLASS_SMALL
+	materials = list(MAT_METAL=5000, MAT_GLASS=2500)
+	var/on = 0
+	var/code = 2
+	var/frequency = 1449
+	var/shock_cooldown = 0
+
+/obj/item/device/slave_collar/proc/prime()
+	//update_mob()
+	explosion(src.loc,1,2,4,flame_range = 0)
+	qdel(src)
+
+/obj/item/device/slave_collar/suicide_act(mob/user)
+	user.visible_message("<span class='suicide'>[user] hooks [user.p_them()]self to the slave_collar and spams the trigger! It looks like [user.p_theyre()] trying to commit suicide!</span>")
+	return (FIRELOSS)
+
+/obj/item/device/slave_collar/initialize()
+	if(SSradio)
+		SSradio.add_object(src, frequency, RADIO_CHAT)
+
+/obj/item/device/slave_collar/New()
+	if(SSradio)
+		SSradio.add_object(src, frequency, RADIO_CHAT)
+	..()
+
+/obj/item/device/slave_collar/Destroy()
+	if(SSradio)
+		SSradio.remove_object(src, frequency)
+	return ..()
+
+/obj/item/device/slave_collar/attack_hand(mob/user)
+	if(iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(src == C.wear_neck)
+			to_chat(user, "<span class='warning'>You need help taking this off!</span>")
+			return
+	..()
+
+/obj/item/device/slave_collar/Topic(href, href_list)
+	//..()
+	var/mob/living/carbon/C = usr
+	if(usr.stat || usr.restrained() || C.wear_neck == src)
+		return
+	if((ishuman(usr) && usr.contents.Find(src)) || usr.contents.Find(master) || (in_range(src, usr) && isturf(loc)))
+		usr.set_machine(src)
+		if(href_list["freq"])
+			SSradio.remove_object(src, frequency)
+			frequency = sanitize_frequency(frequency + text2num(href_list["freq"]))
+			SSradio.add_object(src, frequency, RADIO_CHAT)
+		else
+			if(href_list["code"])
+				code += text2num(href_list["code"])
+				code = round(code)
+				code = min(100, code)
+				code = max(1, code)
+			else
+				if(href_list["power"])
+					on = !( on )
+					icon_state = "slave_collar[on]"
+		if(!( master ))
+			if(istype(loc, /mob))
+				attack_self(loc)
+			else
+				for(var/mob/M in viewers(1, src))
+					if(M.client)
+						attack_self(M)
+		else
+			if(istype(master.loc, /mob))
+				attack_self(master.loc)
+			else
+				for(var/mob/M in viewers(1, master))
+					if(M.client)
+						attack_self(M)
+	else
+		usr << browse(null, "window=radio")
+		return
+	return
+
+/obj/item/device/slave_collar/receive_signal(datum/signal/signal)
+	if(!signal || signal.encryption != code)
+		return
+
+	if(ismob(loc) && on)
+		if(shock_cooldown != 0)
+			return
+		shock_cooldown = 1
+		spawn(100)
+			shock_cooldown = 0
+		var/mob/M = loc
+		step(M, pick(cardinal))
+
+		to_chat(M, "<span class='danger'>You feel a sharp shock!</span>")
+		prime()
+		var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
+		s.set_up(3, 1, M)
+		s.start()
+
+		M.Weaken(5)
+
+	if(master)
+		master.receive_signal()
+	return
+
+/obj/item/device/slave_collar/attack_self(mob/user)
 
 	if(!ishuman(user))
 		return
