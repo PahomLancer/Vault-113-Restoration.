@@ -14,6 +14,7 @@
 	response_disarm = "pushes aside"
 	response_harm = "stomps"
 	environment_smash = 0
+	respawn_time_of_mob = 150000
 	move_to_delay = 2
 	maxHealth = 15
 	health = 15

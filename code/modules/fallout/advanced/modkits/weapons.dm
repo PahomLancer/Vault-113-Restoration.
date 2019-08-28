@@ -1,6 +1,7 @@
 /obj/item/kit/damage
 	name = "WMK Damage"
 	desc = "Increasing weapon damage by 33%"
+	icon_state = "wmk_d"
 	prefix = "deadly"
 
 /obj/item/kit/recoil
@@ -26,9 +27,11 @@
 /obj/item/kit/condition
 	name = "WMK Durability"
 	desc = "Increasing weapon durability by 33%."
+	icon_state = "wmk_d"
 	prefix = "hardened"
 
 /obj/item/kit/scope
 	name = "WMK Scope"
 	desc = "What it can be used for? :thinking:"
+	icon_state = "wmk_s"
 	prefix = "sniper"

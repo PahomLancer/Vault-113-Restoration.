@@ -65,7 +65,6 @@
 		/obj/item/weapon/storage/fancy/cigarettes,
 		/obj/item/weapon/storage/fancy/cigarettes/tortoise,
 		/obj/item/weapon/storage/box/matches,
-		/obj/item/device/flashlight/torch,
 		// Weapons
 		/obj/item/weapon/pipe,
 		/obj/item/weapon/tireiron,
@@ -90,8 +89,8 @@
 		/datum/job/legate,
 		/datum/job/elder,
 		/datum/job/colonel,
-		/datum/job/overseer,
-		/datum/job/preacher
+		/datum/job/overseer
+		//datum/job/preacher
 		)
 	price = -1
 

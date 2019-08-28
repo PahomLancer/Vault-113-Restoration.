@@ -7,7 +7,7 @@
 	plantname = "Cocao Tree"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/cocoapod
 	lifespan = 20
-	maturation = 5
+	maturation = 20
 	production = 5
 	yield = 2
 	growthstages = 5

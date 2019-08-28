@@ -3,6 +3,18 @@
 /obj/item/clothing/head/helmet/f13
 	icon = 'icons/fallout/clothing/hats.dmi'
 
+/obj/item/clothing/head/helmet/f13/ssthelmet
+	name = "M.I combat helmet"
+	desc = "A pre-War ballistic assembly, designed to provide moderate protection in combat.<br>Overtime the model became significantly less effective, and was replaced with reinforced combat helmet mark I."
+	icon_state = "ssthelmet"
+	item_state = "marine"
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 20, bomb = 30, bio = 0, rad = 0, fire = 30, acid = 30)
+	flags_inv = HIDEEARS|HIDEHAIR
+	put_on_delay = 20
+	strip_delay = 30
+	resistance_flags = FIRE_PROOF
+	self_weight = 1
+
 /obj/item/clothing/head/helmet/f13/broken
 	name = "broken power helmet"
 	desc = "This power armor helmet is so decrepit and battle-worn that it has ceased its primary function of protecting the wearer from harm.<br>It can still provide some very basic protection."
@@ -589,7 +601,7 @@
 	can_toggle = 1
 	glass_colour_type = /datum/client_colour/glass_colour/lightgreen
 	actions_types = list(/datum/action/item_action/toggle)
-	armor = list(melee = 70, bullet = 60, laser = 50, energy = 50, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 30)
+	armor = list(melee = 98, bullet = 60, laser = 50, energy = 50, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 30)
 	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
 	resistance_flags = FIRE_PROOF | UNACIDABLE
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH
@@ -632,7 +644,7 @@
 	strip_delay = 100
 	self_weight = 5
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list(melee = 80, bullet = 70, laser = 50, energy = 50, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 60)
+	armor = list(melee = 95, bullet = 70, laser = 50, energy = 50, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 60)
 	resistance_flags = FIRE_PROOF | UNACIDABLE
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -668,7 +680,7 @@
 	strip_delay = 100
 	self_weight = 5
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
-	armor = list(melee = 80, bullet = 60, laser = 40, energy = 30, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 50)
+	armor = list(melee = 100, bullet = 60, laser = 40, energy = 30, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 50)
 	resistance_flags = FIRE_PROOF | UNACIDABLE
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
@@ -741,4 +753,16 @@
 	icon = 'icons/fallout/clothing/hats.dmi'
 	icon_state = "rider"
 	item_state = "rider"
+	self_weight = 1
+
+/obj/item/clothing/head/helmet/f13/fluff/m35
+	name = "M35 helmet"
+	desc = "Meine language INTERNATIONAL"
+	icon_state = "m35"
+	item_state = "m35"
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 20, bomb = 30, bio = 0, rad = 0, fire = 30, acid = 30)
+	flags_inv = HIDEEARS|HIDEHAIR
+	put_on_delay = 20
+	strip_delay = 30
+	resistance_flags = FIRE_PROOF
 	self_weight = 1

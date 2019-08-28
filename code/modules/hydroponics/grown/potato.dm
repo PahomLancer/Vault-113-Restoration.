@@ -7,7 +7,7 @@
 	plantname = "Potato Plants"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/potato
 	lifespan = 30
-	maturation = 10
+	maturation = 40
 	production = 1
 	yield = 4
 	growthstages = 4

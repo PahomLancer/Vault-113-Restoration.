@@ -37,7 +37,7 @@
 
 /mob/living/carbon/human/proc/karmaText()
 	var/list/text = list (
-		"<font color='#ff0000'>Вы видите ненависть в его глазах.</font>",
+		"<font color='#ff0000'>Вы видите ненависть в глазах.</font>",
 		"<font color='#bf0000'>Кажется, что он готов напасть на вас.</font>",
 		"<font color='#676767'>Ничего примечательного.</font>",
 		"<font color='#009200'>Его взгляд вселяет надежду.</font>",

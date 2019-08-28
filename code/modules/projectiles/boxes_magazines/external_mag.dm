@@ -158,6 +158,13 @@
 	caliber = "5mm"
 	max_ammo = 120
 
+/obj/item/ammo_box/magazine/avenger/update_icon()
+	..()
+	if(max_ammo == 0)
+		icon_state = "a762-0"
+	else
+		icon_state = "a762-50"
+
 /obj/item/ammo_box/magazine/m12g
 	name = "shotgun magazine (12g frag slugs)"
 	desc = "A drum magazine."

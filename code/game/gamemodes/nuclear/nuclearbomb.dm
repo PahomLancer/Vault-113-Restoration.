@@ -20,9 +20,9 @@ var/bomb_set
 	density = 1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
-	var/timer_set = 60
-	var/default_timer_set = 60
-	var/minimum_timer_set = 60
+	var/timer_set = 120
+	var/default_timer_set = 120
+	var/minimum_timer_set = 120
 	var/maximum_timer_set = 3600
 	var/ui_style = "nanotrasen"
 
@@ -70,7 +70,7 @@ var/bomb_set
 			detonation.")
 
 /obj/machinery/nuclearbomb/selfdestruct
-	name = "station self-destruct terminal"
+	name = "vault self-destruct terminal"
 	desc = "For when it all gets too much to bear. Do not taunt."
 	icon = 'icons/obj/machines/nuke_terminal.dmi'
 	icon_state = "nuclearbomb_base"
@@ -83,7 +83,7 @@ var/bomb_set
 	var/obj/machinery/nuclearbomb/existing = locate("syndienuke")
 	if(existing)
 		qdel(src)
-		throw EXCEPTION("Attempted to spawn a syndicate nuke while one already exists at [existing.loc.x],[existing.loc.y],[existing.loc.z]")
+		throw EXCEPTION("Attempted to spawn a nuke while one already exists at [existing.loc.x],[existing.loc.y],[existing.loc.z]")
 		return 0
 	tag = "syndienuke"
 	return ..()
@@ -418,7 +418,7 @@ var/bomb_set
 	safety = TRUE
 	update_icon()
 	for(var/mob/M in player_list)
-		to_chat(M, 'sound/machines/Alarm.ogg')
+		to_chat(M, 'sound/f13effects/FO76_Nuke_Warning_EBS.ogg')
 	if(ticker && ticker.mode)
 		ticker.mode.explosion_in_progress = 1
 	sleep(100)
@@ -453,12 +453,12 @@ var/bomb_set
 		if(ticker.mode.name == "nuclear emergency")
 			ticker.mode:nukes_left --
 		else
-			to_chat(world, "<B>The station was destoyed by the nuclear blast!</B>")
+			to_chat(world, "<B>Springfield was destoyed by the nuclear blast!</B>")
 		ticker.mode.station_was_nuked = (off_station<2)	//offstation==1 is a draw. the station becomes irradiated and needs to be evacuated.
 														//kinda shit but I couldn't  get permission to do what I wanted to do.
 		if(!ticker.mode.check_finished())//If the mode does not deal with the nuke going off so just reboot because everyone is stuck as is
 			spawn()
-				world.Reboot("Station destroyed by Nuclear Device.", "end_error", "nuke - unhandled ending")
+				world.Reboot("Denwer destroyed by Nuclear Device.", "end_error", "nuke - unhandled ending")
 
 
 /*
@@ -520,7 +520,7 @@ This is here to make the tiles around the station mininuke change when it's arme
 
 /obj/item/weapon/disk/nuclear/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] is going delta! It looks like [user.p_theyre()] trying to commit suicide!</span>")
-	playsound(user.loc, 'sound/machines/Alarm.ogg', 50, -1, 1)
+	playsound(user.loc, 'sound/f13effects/FO76_Nuke_Warning_EBS.ogg', 50, -1, 1)
 	var/end_time = world.time + 100
 	var/newcolor = "#00FF00"
 	while(world.time < end_time)
@@ -543,8 +543,8 @@ This is here to make the tiles around the station mininuke change when it's arme
 	else
 		to_chat(get(src, /mob), "<span class='danger'>You can't help but feel that you just lost something back there...</span>")
 		var/turf/targetturf = relocate()
-		message_admins("[src] has been moved out of bounds in \
-			[ADMIN_COORDJMP(diskturf)]. Moving it to \
+		message_admins("[src] кто-то спиздил диск \
+			[ADMIN_COORDJMP(diskturf)]. “елепортирую сюда \
 			[ADMIN_COORDJMP(targetturf)].")
 		log_game("[src] has been moved out of bounds in [COORD(diskturf)]. \
 			Moving it to [COORD(targetturf)].")

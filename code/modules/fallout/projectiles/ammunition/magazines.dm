@@ -80,9 +80,9 @@
 	desc = "Designed to quickly reload revolvers."
 	icon_state = "b38"
 	ammo_type = /obj/item/ammo_casing/F13/m44
-	max_ammo = 7
+	max_ammo = 6
 	multiple_sprites = 1
-	self_weight = 0.2
+	self_weight = 0.3
 
 /obj/item/ammo_box/F13/m44/heap
 	name = "speed loader (.44) (+Heap!)"
@@ -132,7 +132,7 @@
 	icon_state = "gclip"
 	max_ammo = 8
 	multiple_sprites = 1
-
+/*
 /obj/item/ammo_box/magazine/F13/gaussmag
 	name = "gauss magazine"
 	ammo_type = /obj/item/ammo_casing/penetrator
@@ -140,7 +140,7 @@
 	icon_state = "gaussmag"
 	max_ammo = 8
 	multiple_sprites = 2
-
+*/
 
 //crc
 /obj/item/ammo_box/magazine/F13/m556
@@ -150,6 +150,30 @@
 	caliber = "a556"
 	max_ammo = 20
 	multiple_sprites = 2
+	price = 250
+
+/obj/item/ammo_box/magazine/F13/fnfal //ﬂ  Œ—“€À‹Õ€… œ»ƒŒ–¿— €€€//
+	name = "rifle magazine (7.62mm)"
+	icon_state = "falmag"
+	ammo_type = /obj/item/ammo_casing/F13/a556/heap
+	caliber = "a556"
+	max_ammo = 20
+	price = 300
+
+/obj/item/ammo_box/magazine/F13/chinese
+	name = "rifle magazine (5.56mm)"
+	icon_state = "china"
+	ammo_type = /obj/item/ammo_casing/F13/a556
+	caliber = "a556"
+	max_ammo = 24
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/F13/sst_stanag
+	name = "STANAG (5.56mm)"
+	icon_state = "stanagmag"
+	ammo_type = /obj/item/ammo_casing/F13/a556
+	caliber = "a556"
+	max_ammo = 36
 
 /obj/item/ammo_box/magazine/F13/m556/heap
 	name = "rifle magazine (5.56mm) (+Heap!)"
@@ -244,13 +268,13 @@
 	name = "rifle .308 magazine"
 	ammo_type = /obj/item/ammo_casing/F13/m308
 	caliber = "308mm"
-	max_ammo = 7
+	max_ammo = 5
 
 /obj/item/ammo_box/magazine/internal/cylinder/m44
 	name = "magnum revolver cylinder"
 	ammo_type = /obj/item/ammo_casing/F13/m44
 	caliber = "44mm"
-	max_ammo = 7
+	max_ammo = 6
 
 /obj/item/ammo_box/magazine/internal/shot/pipe
 	name = "pipe gun magazine"

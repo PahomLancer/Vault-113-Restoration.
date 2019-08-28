@@ -578,6 +578,8 @@
 	to_chat(usr, "<b><i>In addition, by having your throw mode on when being attacked, you enter an active defense mode where you have a chance to block and sometimes even counter attacks done to you.</i></b>")
 
 //ITEMS
+/obj/item/clothing/gloves
+	icon_state = "gray"
 
 /obj/item/clothing/gloves/boxing
 	var/datum/martial_art/boxing/style = new

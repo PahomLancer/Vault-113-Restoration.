@@ -483,7 +483,12 @@
 	"Adventurer",
 	"Mercenary",
 	"Overseer",
-	"Vault dweller")
+	"Vault dweller",
+	"Arroyo elder",
+	"Arroyo villager",
+	"Child of the Cathedral",
+	"Preacher",
+	"Supermutant")
 
 /proc/get_all_job_icons() //For all existing HUD icons
 	return get_all_jobs() + list("Prisoner")

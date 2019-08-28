@@ -170,6 +170,9 @@
 				soundin = pick('sound/f13ambience/rain1.ogg'/*, 'sound/f13ambience/rain2.ogg', 'sound/f13ambience/rain3.ogg', 'sound/f13ambience/rain4.ogg'*/)
 			if ("rain_roof_loop")
 				soundin = pick('sound/f13ambience/rain4.ogg')
+			if ("eastbladeslice")
+				soundin = pick('sound/f13weapons/eastbladeslice1.ogg','sound/f13weapons/eastbladeslice2.ogg','sound/f13weapons/eastbladeslice3.ogg','sound/f13weapons/eastbladeslice4.ogg')
+
 	return soundin
 
 /proc/playsound_global(file, repeat=0, wait, channel, volume)

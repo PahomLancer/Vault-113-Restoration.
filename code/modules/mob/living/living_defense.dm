@@ -340,6 +340,17 @@
 		)
 		return shock_damage
 
+/mob/living/proc/oxigen_loss_act(oxigen_damage, obj/source, siemens_coeff = 1, safety = 0, tesla_shock = 0, illusion = 0)
+	if(oxigen_damage > 0)
+		if(!illusion)
+			adjustOxyLoss(oxigen_damage)
+		visible_message(
+			"<span class='danger'>[src] was strangled by \the [source]!</span>", \
+			"<span class='userdanger'>You feel a week spasm coursing through your body!</span>", \
+			"<span class='italics'>You hear a loud crack in your neck.</span>" \
+		)
+		return oxigen_damage
+
 /mob/living/emp_act(severity)
 	var/list/L = src.get_contents()
 	for(var/obj/O in L)

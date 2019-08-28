@@ -8,6 +8,7 @@
 	materials = list(MAT_GLASS=500)
 	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
 	list_reagents = list("sunset" = 30)
+	price = 50
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/nukacola //It's actually a coffee...
 	name = "Nuka-Cola"
@@ -136,6 +137,7 @@
 	materials = list(MAT_GLASS=500)
 	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
 	list_reagents = list("nuka" = 10, "tricordrazine" = 8, "adminordrazine" = 8, "radium" = 4)
+	light_range = 1
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/quantumcola/on_reagent_change()
 	if(reagents.total_volume > 0)
@@ -156,6 +158,7 @@
 	materials = list(MAT_GLASS=500)
 	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
 	list_reagents = list("nuka" = 10, "tricordrazine" = 2, "adminordrazine" = 2, "ethanol" = 16)
+	light_range = 1
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/quartzcola/on_reagent_change()
 	if(reagents.total_volume > 0)
@@ -165,6 +168,109 @@
 	if(reagents.total_volume == 0)
 		if(icon_state != "nukacola_empty")
 			icon_state = "nukacola_empty"
+
+	..()
+
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vim //It's actually a coffee...
+	name = "VIM"
+	desc = "Vim! Pop Incorporated was founded in 1931, initially being sold as a health tonic. It wasn't as popular as Nuka-Cola, however in Maine it was more widely consumed than its rival. Vim was even referred to as a state tradition and about to become the official state drink of Maine; however, during the process of making this official, legal situations forced the company to back off its marketing."
+	icon_state = "vim"
+	item_state = "beer"
+	materials = list(MAT_GLASS=500)
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
+	list_reagents = list("vim" = 30)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vim/on_reagent_change()
+	if(reagents.total_volume > 0)
+		if(icon_state != "vim")
+			icon_state = "vim"
+
+	if(reagents.total_volume == 0)
+		if(icon_state != "vim_empty")
+			icon_state = "vim_empty"
+
+	..()
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vimquartz //It's actually a coffee...
+	name = "Vim Quartz"
+	desc = "Vim Quartz is one of the four known Vim flavors. The soft drink comes in a transparent glass bottle and is tinted a light yellow color which, like Nuka-Cola Quantum, glows in the dark. Quartz has a lighter label than the standard Vim flavor, sporting a white background with a purple, white and red logo. Considering its ingredients (bubblegum and carrot), it likely has a light, sweet flavor."
+	icon_state = "vimquartz"
+	item_state = "beer"
+	materials = list(MAT_GLASS=500)
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
+	list_reagents = list("vim" = 10, "tricordrazine" = 2, "adminordrazine" = 2, "ethanol" = 16)
+	light_range = 1
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vimquartz/on_reagent_change()
+	if(reagents.total_volume > 0)
+		if(icon_state != "vimquartz")
+			icon_state = "vimquartz"
+
+	if(reagents.total_volume == 0)
+		if(icon_state != "vim_empty")
+			icon_state = "vim_empty"
+
+	..()
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vimnuclear //It's actually a coffee...
+	name = "Vim Captain's Blend"
+	desc = "Vim Captain's Blend, test formula 10784, was in its testing state before the Great War. It hadn't yet been released on the market, though it was noted as being remarkably popular among focus groups. The #1 word used to describe the taste was 'fishy.' The company higher-ups were confused as to the popularity of the taste and were hesitant to put it out for a full release. The inspiration for the drink's odd flavor came from the request to put the 'taste of Maine in a bottle.' In fact, even the CEO hadn't been made aware of the ingredients causing the popular fishy taste."
+	icon_state = "vimnuclear"
+	item_state = "beer"
+	materials = list(MAT_GLASS=500)
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
+	list_reagents = list("vim" = 10, "tricordrazine" = 5, "adminordrazine" = 5, "ethanol" = 10)
+	light_range = 1
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vimnuclear/on_reagent_change()
+	if(reagents.total_volume > 0)
+		if(icon_state != "vimnuclear")
+			icon_state = "vimnuclear"
+
+	if(reagents.total_volume == 0)
+		if(icon_state != "vim_empty")
+			icon_state = "vim_empty"
+
+	..()
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vimdreams //It's actually a coffee...
+	name = "Vim Refresh"
+	desc = "Vim Refresh looks the same as regular Vim but with a light green color and a lime wedge design on the label. Rarer than Vim, it can be found in Vim machines."
+	icon_state = "vimdreams"
+	item_state = "beer"
+	materials = list(MAT_GLASS=500)
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
+	list_reagents = list("vim" = 17, "tricordrazine" = 3, "ethanol" = 10)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vimdreams/on_reagent_change()
+	if(reagents.total_volume > 0)
+		if(icon_state != "vimdreams")
+			icon_state = "vimdreams"
+
+	if(reagents.total_volume == 0)
+		if(icon_state != "vim_empty")
+			icon_state = "vim_empty"
+
+	..()
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vimdark //It's actually a coffee...
+	name = "Vim Dark"
+	desc = "Vim Dark looks the same as regular Vim but with a black color and a cofee wedge design on the label. Rarer than Vim, it can be found in Vim machines."
+	icon_state = "vimdark"
+	item_state = "beer"
+	materials = list(MAT_GLASS=500)
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
+	list_reagents = list("vim" = 17, "tricordrazine" = 3, "coffee" = 10)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/vimdark/on_reagent_change()
+	if(reagents.total_volume > 0)
+		if(icon_state != "vimdark")
+			icon_state = "vimdark"
+
+	if(reagents.total_volume == 0)
+		if(icon_state != "vim_empty")
+			icon_state = "vim_empty"
 
 	..()
 

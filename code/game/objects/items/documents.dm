@@ -17,7 +17,7 @@
 	icon_state = "docs_verified"
 
 /obj/item/documents/syndicate
-	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence."
+	desc = "\"Top Secret\" documents detailing sensitive Enclave operational intelligence."
 
 /obj/item/documents/syndicate/red
 	name = "red secret documents"

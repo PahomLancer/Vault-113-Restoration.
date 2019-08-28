@@ -13,7 +13,7 @@
 	yield = 2
 	growthstages = 3
 	production = 4
-	maturation = 4
+	maturation = 20
 	growing_icon = 'icons/fallout/flora/flora.dmi'
 	icon_grow = "broc-grow"
 	icon_dead = "broc-dead"
@@ -35,7 +35,7 @@
 	yield = 1
 	growthstages = 3
 	production = 1
-	maturation = 1
+	maturation = 10
 	growing_icon = 'icons/fallout/flora/flora.dmi'
 	icon_grow = "xander-grow"
 	icon_dead = "xander-dead"
@@ -55,7 +55,7 @@
 	yield = 3
 	growthstages = 3
 	production = 5
-	maturation = 5
+	maturation = 15
 	growing_icon = 'icons/fallout/flora/flora.dmi'
 	icon_grow = "mutfruit-grow"
 	icon_dead = "mutfruit-dead"

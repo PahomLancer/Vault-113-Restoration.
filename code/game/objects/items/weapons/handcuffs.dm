@@ -259,7 +259,7 @@
 	desc = "A trap used to catch bears and other legged creatures."
 	origin_tech = "engineering=4"
 	var/armed = 0
-	var/trap_damage = 20
+	var/trap_damage = 40
 
 /obj/item/weapon/restraints/legcuffs/beartrap/New()
 	..()
@@ -307,6 +307,9 @@
 						"<span class='userdanger'>You trigger \the [src]!</span>")
 				L.apply_damage(trap_damage,BRUTE, def_zone)
 	..()
+
+/obj/item/weapon/restraints/legcuffs/beartrap/armed
+	armed = 1
 
 /obj/item/weapon/restraints/legcuffs/beartrap/energy
 	name = "energy snare"

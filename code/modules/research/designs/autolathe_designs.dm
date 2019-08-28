@@ -659,3 +659,26 @@
 	materials = list(MAT_METAL = 12000)
 	build_path = /obj/item/wallframe/turret_control
 	category = list("initial", "Construction")
+
+/datum/design/fnfal
+	name = "rifle magazine (7.62mm)"
+	id = "fnfal"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 25000)
+	build_path = /obj/item/ammo_box/magazine/F13/fnfal
+	category = list("hacked", "Security")
+
+/datum/design/weapon_parts
+	id = "fnfal"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 35000, MAT_GLASS = 5000)
+	build_path = /obj/item/crafting/weapon_parts/ballistic
+	category = list("hacked", "Security")
+
+/datum/design/chinese
+	name = "rifle magazine for chinese rifle (5.56mm)"
+	id = "chinese"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 20000)
+	build_path = /obj/item/ammo_box/magazine/F13/chinese
+	category = list("hacked", "Security")

@@ -72,9 +72,9 @@
 
 /obj/item/projectile/beam/laser/gauss2mm
 	name = "2mm bolt"
-	damage = 100
-	armour_penetration = 200
-	dismemberment = 100
+	damage = 65
+	armour_penetration = 80
+	dismemberment = 10
 	icon_state = "2mm"
 	pass_flags = PASSTABLE
 	light_color = LIGHT_COLOR_BLUE

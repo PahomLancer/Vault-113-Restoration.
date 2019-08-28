@@ -13,7 +13,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/reishi
 	lifespan = 35
 	endurance = 35
-	maturation = 10
+	maturation = 20
 	production = 5
 	yield = 4
 	potency = 15
@@ -40,7 +40,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/amanita
 	lifespan = 50
 	endurance = 35
-	maturation = 10
+	maturation = 20
 	production = 5
 	yield = 4
 	growthstages = 3
@@ -67,7 +67,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/angel
 	lifespan = 50
 	endurance = 35
-	maturation = 12
+	maturation = 50
 	production = 5
 	yield = 2
 	potency = 35
@@ -94,7 +94,7 @@
 	species = "liberty"
 	plantname = "Liberty-Caps"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/libertycap
-	maturation = 7
+	maturation = 35
 	production = 1
 	yield = 5
 	potency = 15
@@ -119,7 +119,7 @@
 	species = "plump"
 	plantname = "Plump-Helmet Mushrooms"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/plumphelmet
-	maturation = 8
+	maturation = 40
 	production = 1
 	yield = 4
 	potency = 15
@@ -147,7 +147,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/walkingmushroom
 	lifespan = 30
 	endurance = 30
-	maturation = 5
+	maturation = 35
 	yield = 1
 	growing_icon = 'icons/obj/hydroponics/growing_mushrooms.dmi'
 	mutatelist = list()
@@ -185,7 +185,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/chanterelle
 	lifespan = 35
 	endurance = 20
-	maturation = 7
+	maturation = 35
 	production = 1
 	yield = 5
 	potency = 15
@@ -212,7 +212,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/glowshroom
 	lifespan = 120 //ten times that is the delay
 	endurance = 30
-	maturation = 15
+	maturation = 35
 	production = 1
 	yield = 3 //-> spread
 	potency = 30 //-> brightness

@@ -4,6 +4,17 @@
 	icon = 'icons/fallout/clothing/suits.dmi'
 	self_weight = 7.5
 
+/obj/item/clothing/suit/armor/f13/sstarmor
+	name = "M.I ARMOR"
+	desc = "ITS A GOOD DAY TO DIE HUH?"
+	icon_state = "sstarmor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	armor = list(melee = 40, bullet = 30, laser = 20, energy = 20, bomb = 30, bio = 0, rad = 0, fire = 10, acid = 0)
+	put_on_delay = 60
+	strip_delay = 60
+	resistance_flags = FIRE_PROOF
+	self_weight = 4
+
 /obj/item/clothing/suit/armor/f13/cyberpunk
 	name = "armored trenchcoat"
 	desc = "A trenchcoat augmented with a special alloy for some protection and style."
@@ -52,6 +63,9 @@
 	resistance_flags = FIRE_PROOF
 	self_weight = 5
 
+/obj/item/clothing/suit/armor/f13/chestplate/New()
+	item_state = pick("metal_chestplate", "metal_chestplate_2")
+
 /obj/item/clothing/suit/armor/f13/supermutant_armor
 	name = "supermutant armor"
 	desc = "Supermutant armor.<br>It's heavy and uncomfortable, though."
@@ -64,6 +78,20 @@
 	resistance_flags = FIRE_PROOF
 	self_weight = 15
 	species_exception = list(/datum/species/supermutant)
+
+/obj/item/clothing/suit/armor/f13/sm_armor_kit
+	name = "supermutant armor kit"
+	desc = "Supermutant armor kit.<br>It's light but not provide good protection, though."
+	icon_state = "sm_armor_kit"
+	item_state = "sm_armor_kit"
+	body_parts_covered = CHEST|GROIN|LEGS
+	armor = list(melee = 35, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 0, rad = 0, fire = 30, acid = 30)
+	put_on_delay = 60
+	strip_delay = 50
+	resistance_flags = FIRE_PROOF
+	self_weight = 5
+	species_exception = list(/datum/species/supermutant)
+
 
 /obj/item/clothing/suit/armor/f13/tribal
 	name = "tribal armor"
@@ -163,6 +191,9 @@
 	resistance_flags = FIRE_PROOF
 	self_weight = 15
 
+/obj/item/clothing/suit/armor/f13/bmetalarmor/New()
+	item_state = pick("bmetalarmor", "bmetalarmor_2")
+
 /obj/item/clothing/suit/armor/f13/metal_chestplate_f2
 	name = "Metal armor"
 	desc = "Polished metal plates, crudely forming a suit of armor."
@@ -188,6 +219,9 @@
 	strip_delay = 60
 	resistance_flags = FIRE_PROOF
 	self_weight = 14
+
+/obj/item/clothing/suit/armor/f13/metal_chestplate2/New()
+	item_state = pick("metal_chestplate2", "metal_chestplate2_2")
 
 /obj/item/clothing/suit/armor/f13/legrecruit
 	name = "recruit armor"
@@ -225,6 +259,9 @@
 	strip_delay = 60
 	self_weight = 10
 
+/obj/item/clothing/suit/armor/f13/legcenturion/New()
+	item_state = pick("legcenturion", "legcenturion_2")
+
 /obj/item/clothing/suit/armor/f13/leglegate
 	name = "legate armor"
 	desc = "The armor appears to be a full suit of heavy-gauge steel and offers full body protection.<br>The armor itself bears numerous battle scars.<br>The Legate's suit appears originally crafted, in contrast to other Legion armor which consists of repurposed pre-War sports equipment."
@@ -250,6 +287,9 @@
 	resistance_flags = FIRE_PROOF
 	self_weight = 5
 
+/obj/item/clothing/suit/armor/f13/combat_mk1/New()
+	item_state = pick("combat_mk1", "combat_mk1_2")
+
 /obj/item/clothing/suit/armor/f13/combat_mk2
 	name = "reinforced combat armor mark II"
 	desc = "An improved version of pre-War reinforced combat armor - designed to replace it, this high tech suit was created as a lightweight, more protective set reserved for use by American shock troops and special forces."
@@ -262,6 +302,22 @@
 	resistance_flags = FIRE_PROOF
 	self_weight = 10
 
+/obj/item/clothing/suit/armor/f13/combat_mk2/New()
+	item_state = pick("combat_mk2", "combat_mk2_2")
+
+/obj/item/clothing/suit/armor/f13/black_combat_armor
+	name = "black combat armour"
+	desc = "Standard issue is your run-of-the-mill combat armor, with a nice dark coat of paint for both brand recognition and sheer intimidation value."
+	icon_state = "black_combat_armor"
+	item_state = "black_combat_armor"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET
+	armor = list(melee = 60, bullet = 50, laser = 50, energy = 30, bomb = 50, bio = 0, rad = 0, fire = 50, acid = 40)
+	put_on_delay = 70
+	strip_delay = 70
+	resistance_flags = FIRE_PROOF
+	self_weight = 10
+
+
 /obj/item/clothing/suit/armor/f13/brotherhood_armor
 	name = "Brotherhood combat armor"
 	desc = "A superior version of combat armor. The Brotherhood of Steel have made many improvements over the standard version."
@@ -273,6 +329,9 @@
 	strip_delay = 70
 	resistance_flags = FIRE_PROOF
 	self_weight = 11
+
+/obj/item/clothing/suit/armor/f13/brotherhood_armor/New()
+	item_state = pick("brotherhood_armor", "brotherhood_armor_2")
 
 /obj/item/clothing/suit/armor/f13/ncr
 	name = "trooper armor"
@@ -419,7 +478,7 @@
 /obj/item/clothing/suit/armor/f13/power_armor
 	put_on_delay = 100
 	strip_delay = 200
-	self_weight = 50
+	self_weight = 75
 	max_integrity = 10000
 	w_class = WEIGHT_CLASS_HUGE
 	flags = STOPSPRESSUREDMAGE
@@ -469,28 +528,28 @@
 	desc = "Originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
-	armor = list(melee = 80, bullet = 70, laser = 40, energy = 30, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 50)
+	armor = list(melee = 95, bullet = 70, laser = 40, energy = 30, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 50)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
 	desc = "A mass-produced pinnacle of pre-War engineering.<br>Developed in the laboratories of the West Tek Research Facility, the T-51b was deployed at the end of the Anchorage Reclamation, and by January 2077, the armor had become standard issue for American soldiers in the Army's Mechanized Cavalry Regiments."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
-	armor = list(melee = 80, bullet = 80, laser = 40, energy = 40, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 60)
+	armor = list(melee = 98, bullet = 80, laser = 40, energy = 40, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 60)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60
 	name = "T-60 power armor"
 	desc = "Developed in early 2077 after the Anchorage Reclamation, the T-60 series of power armor was designed to eventually replace the T-51b power armor as the pinnacle of powered armor technology in the U.S. military arsenal.<br>Incorporating design elements from the earlier T-45, the T-60 was deployed domestically among U.S. Army units just prior to the dropping of the bombs."
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
-	armor = list(melee = 80, bullet = 80, laser = 50, energy = 50, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 60)
+	armor = list(melee = 99, bullet = 80, laser = 50, energy = 50, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 60)
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced
 	name = "advanced power armor mark I"
 	desc = "An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
 	icon_state = "mk1"
 	item_state = "mk1"
-	armor = list(melee = 70, bullet = 70, laser = 50, energy = 50, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 30)
+	armor = list(melee = 100, bullet = 70, laser = 50, energy = 50, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 30)
 	self_weight = 40
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
@@ -499,7 +558,7 @@
 	icon_state = "mk1-tesla"
 	item_state = "mk1-tesla"
 	self_weight = 40
-	armor = list(melee = 50, bullet = 50, laser = 60, energy = 60, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 50)
+	armor = list(melee = 50, bullet = 50, laser = 80, energy = 80, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 50)
 
 /obj/item/clothing/suit/armor/f13/power_armor/superadvanced
 	name = "advanced power armor mark II"
@@ -507,7 +566,7 @@
 	icon_state = "mk2"
 	item_state = "mk2"
 	self_weight = 30
-	armor = list(melee = 80, bullet = 80, laser = 60, energy = 60, bomb = 80, bio = 100, rad = 100, fire = 100, acid = 50)
+	armor = list(melee = 100, bullet = 95, laser = 60, energy = 60, bomb = 80, bio = 100, rad = 100, fire = 100, acid = 50)
 
 	//armor = list(melee = 80, bullet = 80, laser = 50, energy = 50, bomb = 80, bio = 100, rad = 100, fire = 100, acid = 30)
 

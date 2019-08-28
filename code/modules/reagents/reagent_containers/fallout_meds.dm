@@ -10,7 +10,7 @@
 	container_type = 0
 	list_reagents = list("stimpackium" = 2)
 	flags = null
-	price = 1000
+	price = 150
 	var/def_volume = 8
 	var/reloadable = 0
 	var/ignore_flags = 1
@@ -87,7 +87,7 @@
 	desc = "The super version of the Stimpak has an additional vial containing more powerful drugs than the basic model, as well as a leather belt to strap the needle to the injured limb."
 	icon_state = "superstim"
 	volume = 12
-	price = 2000
+	price = 350
 	amount_per_transfer_from_this = 12
 	list_reagents = list("supstimpackium" = 6)
 //end
@@ -100,6 +100,7 @@
 	icon = 'icons/fallout/objects/medicine/chemical.dmi'
 	icon_state = "mentats"
 	storage_slots = 8
+	price = 250
 
 /obj/item/weapon/storage/pill_bottle/mentats/New()
 	..()

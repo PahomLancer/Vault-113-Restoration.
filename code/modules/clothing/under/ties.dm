@@ -405,3 +405,47 @@
 	var/mob/living/L = user
 	if(L)
 		L.bubble_icon = initial(L.bubble_icon)
+
+
+
+/obj/item/clothing/tie/medal/silver/ncrcolonel
+	name = "(O-6) Colonel rank pin"
+	desc = "An officer holding the rank of Colonel should wear these."
+	icon_state = "colonelrank"
+	item_color = "colonelrank"
+
+/obj/item/clothing/tie/medal/silver/ncrCPT
+	name = "(O-3) Captain rank pin"
+	desc = "An officer holding the rank of Captain should wear this."
+	icon_state = "captainrank"
+	item_color = "captainrank"
+
+/obj/item/clothing/tie/medal/silver/ncrLT
+	name = "(O-1) Lieutenant rank pin"
+	desc = "An officer holding the rank of Lieutenant should wear this."
+	icon_state = "lieutenantrank"
+	item_color = "lieutenantrank"
+
+/obj/item/clothing/tie/medal/silver/ncrSSGT
+	name = "(E-6) Staff Sergeant rank pins"
+	desc = "A trooper holding the rank of Staff Sergeant should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"
+
+/obj/item/clothing/tie/medal/silver/ncrSGT
+	name = "(E-5) Sergeant rank pins"
+	desc = "A trooper holding the rank of Sergeant should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"
+
+/obj/item/clothing/tie/medal/silver/ncrTPR
+	name = "(E-3) Trooper rank pins"
+	desc = "A trooper should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"
+
+/obj/item/clothing/tie/medal/silver/ncrREC
+	name = "(E-2) Recruit rank pins"
+	desc = "A recruit should wear this."
+	icon_state = "ncrenlisted"
+	item_color = "ncrenlisted"

@@ -17,6 +17,31 @@
 	icon_state = "tan"
 	item_state = "tan"
 
+/obj/item/clothing/shoes/f13/superleather
+	name = "supermutant leather boots"
+	desc = "A pair of brown leather shoes made of wasteland animals hides."
+	icon_state = "superleather"
+	item_state = "superleather"
+	species_exception = list(/datum/species/supermutant)
+	armor = list(melee = 10, bullet = 10, laser = 5, energy = 0, bomb = 10, bio = 0, rad = 0, fire = 10, acid = 0)
+	self_weight = 2
+
+/obj/item/clothing/shoes/f13/sm_leather_boots
+	name = "supermutant leather boots"
+	desc = "A pair of brown leather shoes made of wasteland animals hides."
+	icon_state = "sm_leather_boots"
+	item_state = "sm_leather_boots"
+	species_exception = list(/datum/species/supermutant)
+	armor = list(melee = 10, bullet = 10, laser = 5, energy = 0, bomb = 10, bio = 0, rad = 0, fire = 10, acid = 0)
+	self_weight = 2
+
+/obj/item/clothing/shoes/f13/supersandals
+	name = "supermutant sandals"
+	desc = "A pair of supermutant sandals."
+	icon_state = "supersandals"
+	item_state = "supersandals"
+	species_exception = list(/datum/species/supermutant)
+
 /obj/item/clothing/shoes/f13/brownie //Make a craft recipe, and delete this comment.
 	name = "brown shoes"
 	desc = "A pair of brown leather shoes made of wasteland animals hides."

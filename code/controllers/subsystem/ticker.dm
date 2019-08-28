@@ -62,7 +62,7 @@ var/datum/subsystem/ticker/ticker
 		login_music = 'sound/f13music/mysterious_stranger.ogg'
 	*/
 
-	login_music = pickweight(list('sound/f13music/Johnny Guitar.ogg' = 45, 'sound/f13music/Where Have You Been All My Life.ogg' =45, 'sound/f13music/Goin Under.ogg' = 45, 'sound/f13music/Blue Moon.ogg' =45, 'sound/f13music/Heartaches by the Number.ogg' = 45, 'sound/f13music/Somethings Gotta Give.ogg' =45))
+	login_music = pickweight(list('sound/f13music/Johnny Guitar.ogg' = 45, 'sound/f13music/Where Have You Been All My Life.ogg' =45, 'sound/f13music/Goin Under.ogg' = 45, 'sound/f13music/Blue Moon.ogg' =45, 'sound/f13music/Heartaches by the Number.ogg' = 45, 'sound/f13music/Somethings Gotta Give.ogg' =45, 'sound/f13music/takemehome.ogg' = 50))
 
 	//login_music = 'sound/f13music/Johnny Guitar.ogg'
 

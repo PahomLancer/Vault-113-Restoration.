@@ -320,6 +320,13 @@ var/inerror = 0
 	if (config && config.server_name)
 		s += "<b>[config.server_name]</b> &#8212; "
 	s += "<b>[station_name()]</b>";
+	s += " ("
+	s += "<a href=\"https://discord.gg/K2Yxxvs\">" //Change this to wherever you want the hub to link to.
+//	s += "[game_version]"
+	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "</a>"
+	s += ")"
+	s += "<img src='https://i.imgur.com/lkW0ozf.png'><br>"
 
 	var/list/features = list()
 

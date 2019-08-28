@@ -259,9 +259,13 @@
 		add_overlay(smesImageCache[clevel])
 	return
 
-
+/*
 /obj/machinery/power/smes/proc/chargedisplay()
 	return round(5.5*charge/capacity)
+*/
+
+/obj/machinery/power/smes/proc/chargedisplay()
+	return Clamp(round(5.5*charge/capacity), 1, 5)
 
 /obj/machinery/power/smes/process()
 	if(stat & BROKEN)

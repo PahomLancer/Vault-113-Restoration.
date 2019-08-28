@@ -8,10 +8,10 @@
 	icon_living = "dog"
 	icon_dead = "dog_dead"
 
-	health = 150
-	maxHealth = 150
+	health = 250
+	maxHealth = 250
 
-	move_to_delay = 2
+	move_to_delay = 1
 
 	density = 1
 	self_weight = 40
@@ -30,7 +30,7 @@
 
 	attacktext = "bites"
 	melee_damage_lower = 15
-	melee_damage_upper = 30
+	melee_damage_upper = 45
 	attack_sound = 'sound/weapons/bite.ogg'
 
 	death_sound = 'sound/f13npc/dog_death.ogg'

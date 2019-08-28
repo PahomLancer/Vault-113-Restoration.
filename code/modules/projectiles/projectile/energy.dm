@@ -144,6 +144,14 @@
 	irradiate = 10
 	impact_effect_type = /obj/effect/overlay/temp/impact_effect/green_laser
 
+/obj/item/projectile/energy/alien
+	name = "alien bluster beam"
+	icon_state = "e_netting"
+	damage = 25
+	damage_type = CLONE
+	irradiate = 20
+	impact_effect_type = /obj/effect/overlay/temp/impact_effect/blue_laser
+
 /obj/item/projectile/energy/dart //ninja throwing dart
 	name = "dart"
 	icon_state = "toxin"

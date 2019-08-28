@@ -127,7 +127,10 @@
 		/obj/item/weapon/storage/bag/chemistry,
 		/obj/item/weapon/storage/bag/bio,
 		/obj/item/weapon/reagent_containers/blood,
-		/obj/item/weapon/tank/internals/emergency_oxygen
+		/obj/item/weapon/tank/internals/emergency_oxygen,
+		/obj/item/weapon/reagent_containers/pill/patch/medx,
+		/obj/item/weapon/reagent_containers/pill/patch/radaway,
+		/obj/item/weapon/reagent_containers/f13stimpack
 		)
 
 
@@ -286,6 +289,18 @@
 	name = "army belt"
 	desc = "A belt used by military forces."
 	icon_state = "grenadebeltold"
+	item_state = "security"
+
+/obj/item/weapon/storage/belt/military/german
+	name = "army belt"
+	desc = "A belt used by old german military forces."
+	icon_state = "wehr"
+	item_state = "wehr"
+
+/obj/item/weapon/storage/belt/military/sst
+	name = "M.I belt"
+	desc = "M.I belt, for M.I needs."
+	icon_state = "sstbelt"
 	item_state = "security"
 
 /obj/item/weapon/storage/belt/military/army/enclave

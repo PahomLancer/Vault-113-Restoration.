@@ -11,7 +11,7 @@
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 0
+	speed = 1
 	stat_attack = 1
 	robust_searching = 1
 	maxHealth = 100
@@ -30,9 +30,7 @@
 	status_flags = CANPUSH
 	del_on_death = 1
 	speak = list("Yep!", "I want to eat!", "Overseer is asshole!", "What about nuka cola?")
-	speak_emote = list("I want to eat!", "What about nuka cola?")
-	emote_hear = list("I want to eat!", "What about nuka cola?")
-	emote_see = list("farts", "shivers")
+	speak_emote = "says,"
 	speak_chance = 1
 	XP = 10
 
@@ -144,7 +142,7 @@
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 0
+	speed = 1
 	stat_attack = 1
 	robust_searching = 1
 	maxHealth = 150
@@ -163,9 +161,7 @@
 	status_flags = CANPUSH
 	del_on_death = 1
 	speak = list("Yep!", "Where is your powerarmor!", "Moron!", "Idiot!")
-	speak_emote = list("Moron!", "Idiot!")
-	emote_hear = list("Moron!", "Idiot!")
-	emote_see = list("farts", "shivers")
+	speak_emote = "says,"
 	speak_chance = 1
 	XP = 15
 
@@ -248,7 +244,7 @@
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 0
+	speed = 1
 	stat_attack = 1
 	robust_searching = 1
 	maxHealth = 250
@@ -267,9 +263,7 @@
 	status_flags = CANPUSH
 	del_on_death = 1
 	speak = list("Everyone knows how to make another human being, but not everyone knows how to make another plasma rifle", "Semper Invicta!", "Steel be with you!")
-	speak_emote = list("Semper Invicta!", "Steel be with you!")
-	emote_hear = list("Semper Invicta!", "Steel be with you!")
-	emote_see = list("farts", "shivers")
+	speak_emote = "says,"
 	speak_chance = 1
 	XP = 30
 
@@ -357,7 +351,7 @@
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 0
+	speed = 1
 	stat_attack = 1
 	robust_searching = 1
 	maxHealth = 150
@@ -376,9 +370,7 @@
 	status_flags = CANPUSH
 	del_on_death = 1
 	speak = list("Patrolling the Mojave almost makes you wish for a nuclear winter.", "When I got this assignment I was hoping there would be more gambling.", "It's been a long tour, all I can think about now is going back home.", "You know, if you were serving, you'd probably be halfway to general by now.", "You oughtta think about enlisting. We need you here.")
-	speak_emote = list("Patrolling the Mojave almost makes you wish for a nuclear winter.", "When I got this assignment I was hoping there would be more gambling.", "It's been a long tour, all I can think about now is going back home.", "You know, if you were serving, you'd probably be halfway to general by now.", "You oughtta think about enlisting. We need you here.")
-	emote_hear = list("Patrolling the Mojave almost makes you wish for a nuclear winter.", "When I got this assignment I was hoping there would be more gambling.", "It's been a long tour, all I can think about now is going back home.", "You know, if you were serving, you'd probably be halfway to general by now.", "You oughtta think about enlisting. We need you here.")
-	emote_see = list("farts", "shivers")
+	speak_emote = "says,"
 	speak_chance = 1
 	XP = 20
 
@@ -389,8 +381,8 @@
 			//if(H.dna.species)
 			//	if(H.dna.species.type == /datum/species/ghoul)
 			H.faction -= "ncr"
-			H.faction -= "city"
-			H.faction -= "none"
+			//H.faction -= "city"
+			//H.faction -= "none"
 			H.faction -= "followers"
 
 	..()
@@ -472,7 +464,7 @@
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 0
+	speed = 1
 	stat_attack = 1
 	robust_searching = 1
 	maxHealth = 150
@@ -486,14 +478,12 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/legion)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
-	faction = list("legion", "city", "none", "followers")
+	faction = list("legion", "none", "followers")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	del_on_death = 1
 	speak = list("Ave, true to Caesar.", "True to Caesar.", "Ave, Amicus.", "The new slave girls are quite beautiful.", "Give me cause, Profligate.", "Degenerates like you belong on a cross.")
-	speak_emote = list("Ave, true to Caesar.", "True to Caesar.", "Ave, Amicus.", "The new slave girls are quite beautiful.", "Give me cause, Profligate.", "Degenerates like you belong on a cross.")
-	emote_hear = list("Ave, true to Caesar.", "True to Caesar.", "Ave, Amicus.", "The new slave girls are quite beautiful.", "Give me cause, Profligate.", "Degenerates like you belong on a cross.")
-	emote_see = list("farts", "shivers")
+	speak_emote = "says,"
 	speak_chance = 1
 	XP = 20
 
@@ -504,9 +494,9 @@
 			//if(H.dna.species)
 			//	if(H.dna.species.type == /datum/species/ghoul)
 			H.faction -= "legion"
-			H.faction -= "city"
-			H.faction -= "none"
-			H.faction -= "followers"
+			//H.faction -= "city"
+			//H.faction -= "none"
+			//H.faction -= "followers"
 
 	..()
 
@@ -587,7 +577,7 @@
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 0
+	speed = 1
 	stat_attack = 1
 	robust_searching = 1
 	maxHealth = 150
@@ -601,14 +591,12 @@
 	loot = list(/obj/effect/mob_spawn/human/corpse/raider)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
-	faction = list("raiders", "city", "none", "followers")
+	faction = list("raiders")
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	del_on_death = 1
 	speak = list("Got to lay off the jet", "Scared huh? You should be.", "The jet will make you jittery", "...I can do this all day", "I've done this 100 times... you think you'll be any different?")
-	speak_emote = list("Got to lay off the jet", "Scared huh? You should be.", "The jet will make you jittery", "...I can do this all day", "I've done this 100 times... you think you'll be any different?")
-	emote_hear = list("Got to lay off the jet", "Scared huh? You should be.", "The jet will make you jittery", "...I can do this all day", "I've done this 100 times... you think you'll be any different?")
-	emote_see = list("farts", "shivers")
+	speak_emote = "says,"
 	speak_chance = 1
 	XP = 15
 

@@ -239,4 +239,38 @@
 	name = "Weapon repair kit"
 	desc = "It can be used to repair weapons."
 	icon_state = "weapon_repair_set"
-	price = 1000
+	price = 500
+
+
+//пора сделать жизнь оружейников сложнее//
+
+
+/obj/item/crafting/weapon_parts/ballistic
+	name = "Ballistic Weapon Parts"
+	desc = "You need this if you want craft ballistic weapon."
+	//icon = 'icons/fallout/objects/crafting.dmi'
+	icon_state = "b_weapon_parts_1"
+
+/obj/item/crafting/weapon_parts/ballistic/initialize()
+	..()
+	icon_state = "b_weapon_parts_[rand(1,3)]"
+
+/obj/item/crafting/weapon_parts/energy
+	name = "Energy Weapon Parts"
+	desc = "You need this if you want craft energy weapon."
+	//icon = 'icons/fallout/objects/crafting.dmi'
+	icon_state = "e_weapon_parts_1"
+
+/obj/item/crafting/weapon_parts/energy/initialize()
+	..()
+	icon_state = "weapon_parts/energy_[rand(1,3)]"
+
+/obj/item/crafting/weapon_parts/plasma
+	name = "Plasma Weapon Parts"
+	desc = "You need this if you want craft plasma weapon."
+	//icon = 'icons/fallout/objects/crafting.dmi'
+	icon_state = "p_weapon_parts_1"
+
+/obj/item/crafting/weapon_parts/plasma/initialize()
+	..()
+	icon_state = "weapon_parts/plasma_[rand(1,3)]"

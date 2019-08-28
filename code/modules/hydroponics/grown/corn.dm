@@ -6,7 +6,7 @@
 	species = "corn"
 	plantname = "Corn Stalks"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/corn
-	maturation = 8
+	maturation = 40
 	potency = 20
 	growthstages = 3
 	growing_icon = 'icons/obj/hydroponics/growing_vegetables.dmi'

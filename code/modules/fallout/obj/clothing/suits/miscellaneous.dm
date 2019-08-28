@@ -176,6 +176,13 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	self_weight = 15
 
+/obj/item/clothing/suit/bio_suit/f13/institute_hazmat
+	name = "institute hazmat suit"
+	desc = "Blue good looking radiation protection suit..<br>You can see strange emblem with human."
+	icon = 'icons/fallout/clothing/suits.dmi'
+	icon_state = "ins_hazmat"
+	item_state = "hazmat_ins"
+	self_weight = 15
 
 //crc
 /obj/item/clothing/suit/armor/f13/ghillie

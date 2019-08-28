@@ -67,6 +67,17 @@
 			/obj/item/trash/sosjerky = 1,
 			/obj/item/trash/syndi_cakes = 1)
 
+/obj/effect/spawner/lootdrop/money
+	name = "money spawner"
+	loot = list(/obj/item/stack/caps/random = 5,
+			/obj/item/stack/spacecash/c20 = 1,
+			/obj/item/stack/spacecash/c50 = 1,
+			/obj/item/stack/spacecash/c100 = 1,
+			/obj/item/stack/spacecash/c200 = 1,
+			/obj/item/stack/spacecash/c500 = 1,
+			/obj/item/stack/spacecash/c10 = 1,
+			/obj/item/stack/spacecash/c1000 = 1)
+
 /obj/effect/spawner/lootdrop/maintenance
 	name = "maintenance loot spawner"
 

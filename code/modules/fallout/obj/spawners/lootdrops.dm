@@ -191,39 +191,40 @@
 	/obj/item/weapon/katana/chinese = 1)
 
 /obj/effect/spawner/lootdrop/food
-	color = "#FF0000"
+	color = "#2DF31A"
+	icon_state = "food"
 	loot = list(
 	// TRASH
-	/obj/item/trash/f13/bubblegum = 90,
-	/obj/item/trash/f13/bubblegum_large = 90,
-	/obj/item/trash/f13/cram = 90,
-	/obj/item/trash/f13/cram_large = 90,
-	/obj/item/trash/f13/yumyum = 90,
-	/obj/item/trash/f13/fancylads = 90,
-	/obj/item/trash/f13/sugarbombs = 90,
-	/obj/item/trash/f13/crisps = 90,
+	/obj/item/trash/f13/bubblegum = 1,
+	/obj/item/trash/f13/bubblegum_large = 1,
+	/obj/item/trash/f13/cram = 1,
+	/obj/item/trash/f13/cram_large = 1,
+	/obj/item/trash/f13/yumyum = 1,
+	/obj/item/trash/f13/fancylads = 1,
+	/obj/item/trash/f13/sugarbombs = 1,
+	/obj/item/trash/f13/crisps = 1,
 
 	// FOOD
-	/obj/item/weapon/reagent_containers/food/snacks/f13/bubblegum = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/bubblegum/large = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/cram = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/cram/large = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/yumyum = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/fancylads = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/crisps = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/steak = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/specialapples = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/dandyapples = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/blamco = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/blamco/large = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/mechanic = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/instamash = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/porknbeans = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/borscht = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/dog = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 20,
-	/obj/item/weapon/reagent_containers/food/snacks/f13/galette = 20
+	/obj/item/weapon/reagent_containers/food/snacks/f13/bubblegum = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/bubblegum/large = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/cram = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/cram/large = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/yumyum = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/fancylads = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/crisps = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/steak = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/specialapples = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/dandyapples = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/blamco = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/blamco/large = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/mechanic = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/instamash = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/porknbeans = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/borscht = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/dog = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/f13/galette = 1
 	)
 
 /obj/effect/spawner/lootdrop/trash

@@ -1541,7 +1541,7 @@
 				if(main_hand)
 					if(main_hand.force != 0)
 						if(istype(main_hand,/obj/item/weapon/gun))
-							var/obj/item/weapon/gun/G = main_hand
+						//	var/obj/item/weapon/gun/G = main_hand
 							if(1 /*G.can_trigger_gun(src)*/)
 								if(istype(main_hand,/obj/item/weapon/gun/ballistic))
 									var/obj/item/weapon/gun/ballistic/P = main_hand
@@ -1577,7 +1577,7 @@
 										var/obj/item/weapon/W = main_hand
 										W.attack(TARGET,src)
 							else
-								G.forceMove(get_turf(src) )// drop item works inconsistently
+							//	G.forceMove(get_turf(src) )// drop item works inconsistently
 								enforce_hands()
 								update_icons()
 				else

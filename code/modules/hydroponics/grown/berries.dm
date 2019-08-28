@@ -7,7 +7,7 @@
 	plantname = "Berry Bush"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/berries
 	lifespan = 20
-	maturation = 5
+	maturation = 20
 	production = 5
 	yield = 2
 	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
@@ -99,7 +99,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/cherries
 	lifespan = 35
 	endurance = 35
-	maturation = 5
+	maturation = 20
 	production = 5
 	growthstages = 5
 	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
@@ -148,7 +148,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/grapes
 	lifespan = 50
 	endurance = 25
-	maturation = 3
+	maturation = 15
 	production = 5
 	yield = 4
 	growthstages = 2

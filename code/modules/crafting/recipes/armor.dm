@@ -100,3 +100,30 @@
 	category = CAT_ARMOR
 	default = 1
 	XP = 50
+
+/datum/crafting_recipe/sm_armor_kit
+	name = "Supermutant Armor Kit"
+	result = /obj/item/clothing/suit/armor/f13/sm_armor_kit
+	reqs = list(/obj/item/stack/cable_coil = 2,
+				/obj/item/stack/sheet/metal = 2,
+				/obj/item/crafting/duct_tape = 1,
+				/obj/item/crafting/wonderglue = 1,
+				/obj/item/clothing/suit/armor/f13/kit = 1)
+	tools = list(/obj/item/weapon/screwdriver, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench)
+	time = 100
+	category = CAT_ARMOR
+	default = 1
+	XP = 25
+
+/datum/crafting_recipe/kit
+	name = "Basic Armor Kit"
+	result = /obj/item/clothing/suit/armor/f13/kit
+	reqs = list(/obj/item/stack/cable_coil = 2,
+				/obj/item/stack/sheet/metal = 2,
+				/obj/item/crafting/duct_tape = 1,
+				/obj/item/crafting/wonderglue = 1,
+				/obj/item/stack/sheet/animalhide = 2)
+	time = 100
+	category = CAT_ARMOR
+	default = 1
+	XP = 25

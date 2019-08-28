@@ -206,6 +206,7 @@
 	materials = list(MAT_GLASS=60)
 	rating = 3
 	chargerate = 1500
+	price = 200
 
 /obj/item/weapon/stock_parts/cell/high/plus
 	name = "high-capacity micro-fusion cell+"

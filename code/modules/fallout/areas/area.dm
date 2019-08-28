@@ -34,6 +34,47 @@
 	environment = 19
 	grow_chance = 45
 
+/area/f13/wasteland/hologram
+	name = "Hologram"
+	icon_state = "DJ"
+	outdoors = 1
+	open_space = 1
+
+/area/f13/wasteland/hologram/h1
+	name = "Hologram 1"
+/area/f13/wasteland/hologram/h2
+	name = "Hologram 2"
+	outdoors = 0
+	open_space = 0
+/area/f13/wasteland/hologram/h3
+	name = "Hologram 3"
+	outdoors = 0
+	open_space = 0
+/area/f13/wasteland/hologram/h4
+	name = "Hologram 4"
+/area/f13/wasteland/hologram/h5
+	name = "Hologram 5"
+/area/f13/wasteland/hologram/h6
+	name = "Hologram 6"
+/area/f13/wasteland/hologram/h7
+	name = "Hologram 7"
+/area/f13/wasteland/hologram/h8
+	name = "Hologram 8"
+/area/f13/wasteland/hologram/h9
+	name = "Hologram 9"
+/area/f13/wasteland/hologram/h10
+	name = "Hologram 10"
+/area/f13/wasteland/hologram/h11
+	name = "Hologram 11"
+/area/f13/wasteland/hologram/h12
+	name = "Hologram 12"
+/area/f13/wasteland/hologram/h13
+	name = "Hologram 13"
+/area/f13/wasteland/hologram/h14
+	name = "Hologram 14"
+/area/f13/wasteland/hologram/h15
+	name = "Hologram 15"
+
 /area/f13/forest
 	name = "Forest"
 	icon_state = "forest"

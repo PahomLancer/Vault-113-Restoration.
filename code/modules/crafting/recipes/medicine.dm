@@ -14,8 +14,7 @@
 	reqs = list(/obj/item/weapon/reagent_containers/food/snacks/grown/glow = 2,
 				/obj/item/weapon/reagent_containers/food/snacks/grown/shroom = 1,
 				/obj/item/weapon/reagent_containers/food/snacks/grown/agave = 1,
-				/obj/item/crafting/abraxo = 1,
-				/obj/item/stack/sheet/glass = 1,
+				/obj/item/weapon/reagent_containers/syringe = 1,
 				/datum/reagent/water = 20
 				)
 	time = 50

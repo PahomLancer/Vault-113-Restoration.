@@ -60,6 +60,38 @@
 	default = 1
 	XP = 5
 
+/datum/crafting_recipe/superleather
+	name = "Supermutant Leather Boots"
+	result = /obj/item/clothing/shoes/f13/superleather
+	reqs = list(/obj/item/stack/sheet/animalhide = 3,
+				/obj/item/crafting/wonderglue = 1)
+	tools = list(/obj/item/weapon/wirecutters)
+	time = 150
+	category = CAT_CLOTHING
+	default = 1
+	XP = 15
+
+/datum/crafting_recipe/superleather2
+	name = "Supermutant Leather Light Boots"
+	result = /obj/item/clothing/shoes/f13/sm_leather_boots
+	reqs = list(/obj/item/stack/sheet/animalhide = 3,
+				/obj/item/crafting/wonderglue = 1)
+	tools = list(/obj/item/weapon/wirecutters)
+	time = 150
+	category = CAT_CLOTHING
+	default = 1
+	XP = 15
+
+/datum/crafting_recipe/supersandals
+	name = "Supermutant Sandals"
+	result = /obj/item/clothing/shoes/f13/supersandals
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 3,
+				/obj/item/crafting/wonderglue = 1)
+	time = 150
+	category = CAT_CLOTHING
+	default = 1
+	XP = 10
+
 /datum/crafting_recipe/tribalclothing
 	name = "Tribal Clothing"
 	result = /obj/item/clothing/under/f13/tribal
@@ -114,4 +146,14 @@
 	default = 1
 	XP = 10
 
+/datum/crafting_recipe/sm_black_pants
+	name = "Supermutants Pants"
+	result = /obj/item/clothing/under/sm_black_pants
+	reqs = list(/obj/item/stack/sheet/cloth = 5,
+				/obj/item/crafting/wonderglue = 1)
+	tools = list(/obj/item/weapon/wirecutters)
+	time = 50
+	category = CAT_CLOTHING
+	default = 1
+	XP = 15
 

@@ -94,6 +94,21 @@ Contains:
 	desc = "An old, NASA Centcom branch designed, dark red space suit."
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals,/obj/item/device/multitool)
 
+	//Alien Voidsuit
+/obj/item/clothing/head/helmet/space/alien
+	name = "Alien Helmet"
+	desc = "An alien space suit helmet."
+	icon_state = "alien"
+	item_state = "alien"
+	armor = list(melee = 30, bullet = 10, laser = 20, energy = 50, bomb = 20, bio = 100, rad = 100, fire = 100, acid = 100)
+
+/obj/item/clothing/suit/space/alien
+	name = "Alien Spacesuit"
+	icon_state = "alien"
+	item_state = "alien"
+	desc = "An alien space suit."
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals,/obj/item/device/multitool)
+	armor = list(melee = 50, bullet = 30, laser = 30, energy = 50, bomb = 50, bio = 100, rad = 100, fire = 100, acid = 100)
 
 	//Space santa outfit suit
 /obj/item/clothing/head/helmet/space/santahat

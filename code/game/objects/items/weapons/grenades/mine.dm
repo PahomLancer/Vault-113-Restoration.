@@ -34,12 +34,23 @@
 
 /obj/item/weapon/grenade/mine/Crossed(AM as mob|obj)
 	if(active)
+		if(ispath(AM, /obj/effect/))
+			return
+
 		if(ismob(AM))
 			var/mob/MM = AM
+			var/mob/living/user = AM
+
+			if(user.perks.have(/datum/perk/lightstep))
+				if(prob(50))
+					user.visible_message("<font color='green'>[user] avoid mine explosion!</font>")
+					return
+
 			if(!(MM.movement_type & FLYING))
 				triggermine(AM)
 		else
-			triggermine(AM)
+			if(istype(AM, /obj/item/))
+				triggermine(AM)
 
 /obj/item/weapon/grenade/mine/proc/triggermine(mob/victim)
 	if(triggered)
@@ -60,6 +71,7 @@
 	var/range_heavy = 1
 	var/range_light = 2
 	var/range_flash = 3
+	price = 350
 
 /obj/item/weapon/grenade/mine/explosive/mineEffect(mob/victim)
 	explosion(loc, range_devastation, range_heavy, range_light, range_flash)

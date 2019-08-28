@@ -7,7 +7,7 @@
 	product = /obj/item/weapon/grown/log
 	lifespan = 80
 	endurance = 50
-	maturation = 15
+	maturation = 40
 	production = 1
 	yield = 5
 	potency = 50

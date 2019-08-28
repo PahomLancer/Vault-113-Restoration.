@@ -9,3 +9,8 @@
 	update_mob()
 	empulse(src, 4, 10)
 	qdel(src)
+
+/obj/item/weapon/grenade/empgrenade/emp_fal
+	name = "Pulse grenade"
+	desc = "An electromagnetic pulse grenade, generating an intense magnetic field on detonation. Doesn't affect biological creatures. Contact fuze."
+	icon_state = "emp_fal"

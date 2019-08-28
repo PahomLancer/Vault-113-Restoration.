@@ -87,3 +87,44 @@
 	icon_state = "bus_door"
 	anchored = 1
 	density = 0
+
+
+
+/obj/structure/closet/truck
+	name = "\proper ancient truck"
+	desc = "A derelict truck that belonged to a City Liner network.<br>Despite all the decades it has spent out in the open, the exterior looks more or less intact."
+	icon_state = "truck"
+	pixel_x = -110
+	pixel_y = -18
+	anchored = 1
+	layer = ABOVE_MOB_LAYER
+	icon = 'icons/fallout/vehicles/truck.dmi'
+	density = 1
+	appearance_flags = 0
+	icon_door_override = TRUE
+	obj_integrity = 200
+	max_integrity = 200
+	integrity_failure = 50
+
+/obj/structure/closet/truck/New()
+	..()
+	var/atom/movable/S = new (locate(x-3,y,z))
+	S.density = 1
+	S.anchored = 1
+	S.icon = null
+	S.verbs.Cut()
+	S = new (locate(x-2,y,z))
+	S.density = 1
+	S.anchored = 1
+	S.icon = null
+	S.verbs.Cut()
+	S = new (locate(x-1,y,z))
+	S.density = 1
+	S.anchored = 1
+	S.icon = null
+	S.verbs.Cut()
+	S = new (locate(x+1,y,z))
+	S.density = 1
+	S.anchored = 1
+	S.icon = null
+	S.verbs.Cut()

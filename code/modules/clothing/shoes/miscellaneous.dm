@@ -1,5 +1,8 @@
 /obj/item/clothing/shoes/proc/step_action() //this was made to rewrite clown shoes squeaking
 
+/obj/item/clothing/shoes
+	self_weight = 0.5
+
 /obj/item/clothing/shoes/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] is bashing [user.p_their()] own head in with [src]! Ain't that a kick in the head?</span>")
 	for(var/i = 0, i < 3, i++)

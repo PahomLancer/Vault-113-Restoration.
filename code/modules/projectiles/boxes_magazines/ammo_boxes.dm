@@ -5,6 +5,7 @@
 	ammo_type = /obj/item/ammo_casing/a357
 	max_ammo = 6
 	multiple_sprites = 1
+	price = 180
 
 /obj/item/ammo_box/c38
 	name = "speed loader (.38)"

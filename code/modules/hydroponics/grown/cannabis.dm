@@ -6,7 +6,7 @@
 	species = "cannabis"
 	plantname = "Cannabis Plant"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/cannabis
-	maturation = 8
+	maturation = 30
 	potency = 20
 	growthstages = 1
 	growing_icon = 'goon/icons/obj/hydroponics.dmi'

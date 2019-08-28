@@ -1,8 +1,8 @@
 /obj/item/weapon/pneumatic_cannon
-	name = "pneumatic cannon"
-	desc = "A gas-powered cannon that can fire any object loaded into it."
+	name = "Junk Jet"
+	desc = "A gas-powered cannon that can fire any object loaded into it. You can change settings with wrench"
 	w_class = WEIGHT_CLASS_BULKY
-	force = 8 //Very heavy
+	force = 12 //Very heavy
 	attack_verb = list("bludgeoned", "smashed", "beaten")
 	icon = 'icons/obj/pneumaticCannon.dmi'
 	icon_state = "pneumaticCannon"
@@ -10,12 +10,12 @@
 	lefthand_file = 'icons/mob/inhands/guns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/guns_righthand.dmi'
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 60, acid = 50)
-	var/maxWeightClass = 20 //The max weight of items that can fit into the cannon
+	var/maxWeightClass = 40 //The max weight of items that can fit into the cannon
 	var/loadedWeightClass = 0 //The weight of items currently in the cannon
 	var/obj/item/weapon/tank/internals/tank = null //The gas tank that is drawn from to fire things
 	var/gasPerThrow = 3 //How much gas is drawn from a tank's pressure to fire
 	var/list/loadedItems = list() //The items loaded into the cannon that will be fired out
-	var/pressureSetting = 1 //How powerful the cannon is - higher pressure = more gas but more powerful throws
+	var/pressureSetting = 3 //How powerful the cannon is - higher pressure = more gas but more powerful throws
 
 
 /obj/item/weapon/pneumatic_cannon/examine(mob/user)
@@ -46,6 +46,10 @@
 			if(2)
 				pressureSetting = 3
 			if(3)
+				pressureSetting = 4
+			if(4)
+				pressureSetting = 5
+			if(5)
 				pressureSetting = 1
 		to_chat(user, "<span class='notice'>You tweak \the [src]'s pressure output to [pressureSetting].</span>")
 	else if(istype(W, /obj/item/weapon/screwdriver))
@@ -88,7 +92,7 @@
 	if(!tank)
 		to_chat(user, "<span class='warning'>\The [src] can't fire without a source of gas.</span>")
 		return
-	if(tank && !tank.air_contents.remove(gasPerThrow * pressureSetting))
+	if(tank && !tank.air_contents.remove(gasPerThrow * pressureSetting * 0.01))
 		to_chat(user, "<span class='warning'>\The [src] lets out a weak hiss and doesn't react!</span>")
 		return
 	if(user.disabilities & CLUMSY && prob(75))
@@ -111,9 +115,25 @@
 		ITD.throw_speed = pressureSetting * 2
 		ITD.forceMove(get_turf(src))
 		ITD.throw_at(target, pressureSetting * 5, pressureSetting * 2,user)
-	if(pressureSetting >= 3 && user)
+	if(pressureSetting >= 5 && user)
 		user.visible_message("<span class='warning'>[user] is thrown down by the force of the cannon!</span>", "<span class='userdanger'>[src] slams into your shoulder, knocking you down!")
 		user.Weaken(3)
+
+/datum/crafting_recipe/pneumatic_cannon //Pretty easy to obtain but
+	name = "Junk Jet"
+	result = /obj/item/weapon/pneumatic_cannon
+	tools = list(/obj/item/weapon/weldingtool,
+				 /obj/item/weapon/wrench)
+	reqs = list(/obj/item/stack/sheet/metal = 4,
+				/obj/item/crafting/cookpot = 2,
+				/obj/item/crafting/cofee_pot = 2,
+				/obj/item/crafting/small_gear = 1,
+				/obj/item/crafting/large_gear = 1,
+				/obj/item/crafting/vacuum_cleaner = 1)
+	time = 300
+	category = CAT_WEAPON
+	default = 1
+	XP = 20
 
 
 /obj/item/weapon/pneumatic_cannon/ghetto //Obtainable by improvised methods; more gas per use, less capacity, but smaller

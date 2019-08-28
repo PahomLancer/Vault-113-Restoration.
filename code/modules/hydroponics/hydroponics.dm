@@ -6,10 +6,10 @@
 	anchored = 1
 	pixel_y = 8
 	unique_rename = 1
-	var/waterlevel = 100	//The amount of water in the tray (max 100)
-	var/maxwater = 100		//The maximum amount of water in the tray
-	var/nutrilevel = 10		//The amount of nutrient in the tray (max 10)
-	var/maxnutri = 10		//The maximum nutrient of water in the tray
+	var/waterlevel = 500	//The amount of water in the tray (max 100)
+	var/maxwater = 500		//The maximum amount of water in the tray
+	var/nutrilevel = 50		//The amount of nutrient in the tray (max 10)
+	var/maxnutri = 50		//The maximum nutrient of water in the tray
 	var/pestlevel = 0		//The amount of pests in the tray (max 10)
 	var/weedlevel = 0		//The amount of weeds in the tray (max 10)
 	var/yieldmod = 1		//Nutriment's effect on yield
@@ -221,7 +221,7 @@
 				adjustWeeds(1 / rating)
 
 		// Weeeeeeeeeeeeeeedddssss
-		if(weedlevel >= 10 && prob(50)) // At this point the plant is kind of fucked. Weeds can overtake the plant spot.
+		if(weedlevel >= 10 && prob(75)) // At this point the plant is kind of fucked. Weeds can overtake the plant spot.
 			if(myseed)
 				if(!myseed.get_gene(/datum/plant_gene/trait/plant_type/weed_hardy) && !myseed.get_gene(/datum/plant_gene/trait/plant_type/fungal_metabolism)) // If a normal plant
 					weedinvasion()
@@ -960,6 +960,10 @@
 	density = 0
 	use_power = 0
 	unwrenchable = 0
+	waterlevel = 50	//The amount of water in the tray (max 100)
+	maxwater = 200		//The maximum amount of water in the tray
+	nutrilevel = 0		//The amount of nutrient in the tray (max 10)
+	maxnutri = 20
 
 /obj/machinery/hydroponics/soil/update_icon_hoses()
 	return // Has no hoses

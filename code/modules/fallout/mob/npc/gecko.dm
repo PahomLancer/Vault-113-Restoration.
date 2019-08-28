@@ -38,3 +38,7 @@
 	move_to_delay = 2
 
 	XP = 7
+
+/mob/living/simple_animal/hostile/gecko/New()
+	icon_state = pick("gecko", "gecko2")
+	icon_living = pick("gecko", "gecko2")

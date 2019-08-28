@@ -1,9 +1,9 @@
 /mob/living/simple_animal/hostile/russian
-	name = "Russian"
-	desc = "For the Motherland!"
+	name = "Chinese"
+	desc = "For the Imperior!"
 	icon_state = "russianmelee"
 	icon_living = "russianmelee"
-	icon_dead = "russianmelee_dead"
+	icon_dead = "russianmelee_d"
 	icon_gib = "syndicate_gib"
 	speak_chance = 0
 	turns_per_move = 5
@@ -19,30 +19,28 @@
 	attacktext = "punches"
 	attack_sound = 'sound/weapons/punch1.ogg'
 	a_intent = INTENT_HARM
-	loot = list(/obj/effect/mob_spawn/human/corpse/russian,
-				/obj/item/weapon/kitchen/knife)
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 15
-	faction = list("russian")
+	faction = list("chinese")
 	status_flags = CANPUSH
-	del_on_death = 1
-
+	del_on_death = 0
+	loot = list(/obj/effect/mob_spawn/human/corpse/russian,
+				/obj/item/weapon/gun/ballistic/automatic/assault_rifle/chinese)
 
 /mob/living/simple_animal/hostile/russian/ranged
 	icon_state = "russianranged"
 	icon_living = "russianranged"
-	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged,
-				/obj/item/weapon/gun/ballistic/revolver/nagant)
+	icon_dead = "russianranged_d"
 	ranged = 1
 	retreat_distance = 5
-	minimum_distance = 5
-	projectilesound = 'sound/weapons/Gunshot.ogg'
+	minimum_distance = 3
+	projectilesound = 'sound/f13weapons/chinese.ogg'
 	casingtype = /obj/item/ammo_casing/n762
 
 
 /mob/living/simple_animal/hostile/russian/ranged/mosin
 	loot = list(/obj/effect/mob_spawn/human/corpse/russian/ranged,
-				/obj/item/weapon/gun/ballistic/shotgun/boltaction)
+				/obj/item/weapon/gun/ballistic/automatic/assault_rifle/chinese)
 	casingtype = /obj/item/ammo_casing/a762
 
 /mob/living/simple_animal/hostile/russian/ranged/trooper

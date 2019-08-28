@@ -54,9 +54,9 @@
 /obj/effect/mine/caps_mine
 	name = "caps mine"
 	var/range_devastation = 1
-	var/range_heavy = 2
-	var/range_light = 4
-	var/range_flash = 4
+	var/range_heavy = 1
+	var/range_light = 3
+	var/range_flash = 5
 	icon = 'icons/fallout/objects/crafting.dmi'
 	icon_state = "capmine_active"
 
@@ -193,3 +193,25 @@
 	sleep(duration)
 	victim.status_flags &= ~GOTTAGOREALLYFAST
 	to_chat(victim, "<span class='notice'>You slow down.</span>")
+
+obj/effect/mine/ghoul
+	name = " Feral ghoul"
+	desc = " Have you ever seen a living ghoul before? "
+	icon = 'icons/fallout/mobs/animal.dmi'
+	icon_state = "angry_ghoul_d"
+
+
+obj/effect/mine/ghoul/mineEffect(mob/living/carbon/victim)  /// эффект " мины "
+	to_chat(victim, "<span class='userdanger'>Ghoul suddenly rises up and tries to bite you!</span>") /// текстовый графон, ееее!
+	new/mob/living/simple_animal/hostile/ghoul
+	qdel()   ///гуль встал и ПОБЕЖАЛ, поэтому сама " мина " удаляется
+obj/effect/mine/Gghoul
+	name = " Glowing feral ghoul "
+	desc = " Have you ever seen a living ghoul before? "
+	icon = 'icons/fallout/mobs/animal.dmi'
+	icon_state = "retro_glowghoul_d"
+
+obj/effect/mine/Gghoul/mineEffect(mob/living/carbon/victim)
+	to_chat(victim, "<span class='userdanger'>Ghoul suddenly rises up and tries to bite you!</span>")
+	new/mob/living/simple_animal/hostile/ghoul/glowing
+	qdel()

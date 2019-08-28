@@ -136,6 +136,18 @@
 	icon_state = "securitypack"
 	item_state = "securitypack"
 
+/obj/item/weapon/storage/backpack/traveler
+	name = "traveler bag"
+	desc = "traveler backpack for merchants or adventurers."
+	icon_state = "traveler"
+	item_state = "explorerpack"
+
+/obj/item/weapon/storage/backpack/sstbackpack
+	name = "M.I backpack"
+	desc = "fancy backpack for good troopers!"
+	icon_state = "sstback"
+	item_state = "sstback"
+
 /obj/item/weapon/storage/backpack/captain
 	name = "captain's backpack"
 	desc = "It's a special backpack made exclusively for Nanotrasen officers."

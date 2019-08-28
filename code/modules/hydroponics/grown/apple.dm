@@ -42,7 +42,7 @@
 	species = "goldapple"
 	plantname = "Golden Apple Tree"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/apple/gold
-	maturation = 10
+	maturation = 40
 	production = 10
 	mutatelist = list()
 	reagents_add = list("gold" = 0.2, "vitamin" = 0.04, "nutriment" = 0.1)

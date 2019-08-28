@@ -311,7 +311,7 @@
 	build_path = /obj/item/organ/cyberimp/chest/reviver
 	category = list("Misc", "Medical Designs")
 
-/datum/design/combat
+/*datum/design/combat
 	name = "combat cybernetics implant"
 	desc = "A powerful cybernetic implant that contains combat modules built into the user's arm"
 	id = "combat"
@@ -320,7 +320,7 @@
 	construction_time = 60
 	materials = list(MAT_METAL = 2000, MAT_GLASS = 800, MAT_GOLD = 300, MAT_URANIUM = 500, MAT_COOPER = 1000)
 	build_path = /obj/item/organ/cyberimp/arm/combat
-	category = list("Misc", "Medical Designs")
+	category = list("Misc", "Medical Designs") */
 
 /datum/design/medibeam
 	name = "integrated medical beamgun"

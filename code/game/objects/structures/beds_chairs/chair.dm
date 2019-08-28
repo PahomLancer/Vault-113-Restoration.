@@ -15,6 +15,7 @@
 	var/buildstackamount = 1
 	var/item_chair = /obj/item/chair // if null it can't be picked up
 	layer = OBJ_LAYER
+	var/can_rotate = 1
 
 /obj/structure/chair/deconstruct()
 	// If we have materials, and don't have the NOCONSTRUCT flag
@@ -84,6 +85,8 @@
 	set category = "Object"
 	set src in oview(1)
 
+	if (can_rotate == 0)
+		return
 	if(config.ghost_interaction)
 		spin()
 	else
@@ -95,6 +98,8 @@
 
 /obj/structure/chair/AltClick(mob/user)
 	..()
+	if (can_rotate == 0)
+		return
 	if(user.incapacitated())
 		to_chat(user, "<span class='warning'>You can't do that right now!</span>")
 		return

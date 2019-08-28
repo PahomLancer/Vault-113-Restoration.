@@ -7,7 +7,7 @@
 	plantname = "Tea Aspera Plant"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/tea
 	lifespan = 20
-	maturation = 5
+	maturation = 4
 	production = 5
 	yield = 5
 	growthstages = 5
@@ -51,7 +51,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/coffee
 	lifespan = 30
 	endurance = 20
-	maturation = 5
+	maturation = 20
 	production = 5
 	yield = 5
 	growthstages = 5

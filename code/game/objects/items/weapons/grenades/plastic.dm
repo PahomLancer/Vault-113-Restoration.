@@ -179,3 +179,41 @@
 /obj/item/weapon/grenade/plastic/x4/afterattack(atom/movable/AM, mob/user, flag)
 	aim_dir = get_dir(user,AM)
 	..()
+
+/*
+/obj/item/weapon/grenade/plastic/dynim
+	name = "Dynamite"
+	desc = "A high explosive, consisting of nitroglycerin mixed with the absorbent substance kiselguhr. Includes a timer."
+	var/aim_dir = NORTH
+	icon_state = "dynim40"
+	item_state = "plasticx4"
+
+/obj/item/weapon/grenade/plastic/dynim/prime()
+	var/turf/location
+	if(target)
+		if(!qdeleted(target))
+			location = get_turf(target)
+			target.overlays -= image_overlay
+			target.priority_overlays -= image_overlay
+	else
+		location = get_turf(src)
+	if(location)
+		if(istype(loc, /obj/item/weapon/twohanded/spear) || !target)
+			explosion(location, 0, 7, 12)
+		else if(target && target.density)
+			var/turf/T = get_step(location, aim_dir)
+			explosion(get_step(T, aim_dir),0,7,12)
+			explosion(T,0,7,12)
+			location.ex_act(2, target)
+		else
+			explosion(location, 0, 7, 12)
+			location.ex_act(2, target)
+	if(istype(target, /mob))
+		var/mob/M = target
+		M.gib()
+	qdel(src)
+
+/obj/item/weapon/grenade/plastic/dynim/afterattack(atom/movable/AM, mob/user, flag)
+	aim_dir = get_dir(user,AM)
+	..()
+*/

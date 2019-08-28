@@ -53,11 +53,11 @@
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/APS
 	name = "stechkin APS pistol"
-	desc = "The original russian version of a widely used Syndicate sidearm. Uses 9mm ammo."
+	desc = "The original russian version sidearm. Uses 9mm ammo."
 	icon_state = "aps"
 	w_class = WEIGHT_CLASS_NORMAL
 	origin_tech = "combat=3;materials=2;prewar=3"
-	mag_type = /obj/item/ammo_box/magazine/pistolm9mm
+	mag_type = /obj/item/ammo_box/magazine/F13/m9
 	can_suppress = 0
 	burst_size = 3
 	fire_delay = 2

@@ -19,12 +19,12 @@
 	faction = list("hostile", "wolf")
 
 	sound_speak_chance = 5
-	sound_speak = list('sound/f13npc/dog_charge1.ogg','sound/f13npc/dog_charge2.ogg','sound/f13npc/dog_charge3.ogg')
+	sound_speak = list('sound/f13npc/dog_charge1.ogg','sound/f13npc/dog_charge2.ogg','sound/f13npc/dog_charge3.ogg','sound/f13npc/dog_charge4.ogg','sound/f13npc/dog_charge5.ogg','sound/f13npc/dog_charge6.ogg','sound/f13npc/dog_charge7.ogg')
 
 	aggro_sound_chance = 50
 	aggro_sound = list('sound/f13npc/dog_alert1.ogg','sound/f13npc/dog_alert2.ogg','sound/f13npc/dog_alert3.ogg')
 
-	death_sound = 'sound/f13npc/dog_death.ogg'
+	death_sound = list('sound/f13npc/dog_death.ogg','sound/f13npc/dog_death2.ogg','sound/f13npc/dog_death3.ogg','sound/f13npc/dog_death4.ogg')
 
 	environment_smash = 0
 	butcher_results = list(/obj/item/stack/sheet/animalhide/wolf = 1, \

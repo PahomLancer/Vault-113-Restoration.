@@ -15,6 +15,7 @@
 	response_disarm = "pushes aside"
 	response_harm = "slaps"
 	move_to_delay = 4
+	respawn_time_of_mob = 500000000
 	maxHealth = 70
 	health = 70
 	self_weight = 45

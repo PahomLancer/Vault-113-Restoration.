@@ -1,7 +1,7 @@
 //Fallout 13 New California Republic faction directory
 
 /datum/job/general
-	title = "General"
+	title = "NCR General"
 	desc = "The fate of civilization rests on your shoulders.<br>You were chosen to write history anew.<br>Make a two-headed bear proud."
 	flag = GENERAL
 	department_head = list("NCR Command HQ")
@@ -49,12 +49,13 @@
 	minimal_access = list()
 
 /datum/outfit/job/general
-	name = "General"
-	id = null
+	name = "general"
+	id = /obj/item/card/id/ncrgeneral
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/general
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = null
+	r_pocket = /obj/item/clothing/tie/medal/silver/ncrcolonel
 	head = /obj/item/clothing/head/f13/sergeant
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
 	belt = /obj/item/weapon/storage/belt/military/army
@@ -64,7 +65,6 @@
 		/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 1, \
 		/obj/item/device/radio = 1, \
 		/obj/item/device/flashlight/torch/flare/blue = 1)
-
 //NCR Sergeant
 
 /datum/job/ncr_sergeant
@@ -115,9 +115,10 @@
 
 /datum/outfit/job/ncr_sergeant
 	name = "Sergeant NCR"
-	id = null
+	id = /obj/item/card/id/ncrsergeant
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/ncr_officer
+	r_pocket = /obj/item/clothing/tie/medal/silver/ncrSGT
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/armor/f13/sergeant
 	head = /obj/item/clothing/head/f13/sergeant
@@ -176,6 +177,7 @@
 
 /datum/outfit/job/vranger
 	name = "Veteran Ranger"
+	id = /obj/item/card/id/ncrranger
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/mechanic
 	shoes = /obj/item/clothing/shoes/f13/military/light
@@ -185,12 +187,12 @@
 	weapon = /obj/item/weapon/gun/ballistic/revolver/magnum
 	belt_contents = list(/obj/item/weapon/restraints/handcuffs = 1,
 		/obj/item/weapon/reagent_containers/f13stimpack = 1,
-		/obj/item/ammo_box/F13/m44/heap = 1,
+		/obj/item/ammo_box/F13/m44 = 2,
 		/obj/item/device/radio = 1)
 
 
 /datum/job/trooper
-	title = "Trooper"
+	title = "NCR Trooper"
 	desc = "I am a soldier and I'm marching on, I am a warrior and this is my song!"
 	flag = TROOPER
 	department_head = list("general", "ncr_sergeant")
@@ -234,8 +236,10 @@
 
 /datum/outfit/job/trooper
 	name = "Trooper"
+	id = /obj/item/card/id/ncrtrooper
 	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr
+	r_pocket = /obj/item/clothing/tie/medal/silver/ncrTPR
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncr/soldier
 	head = /obj/item/clothing/head/helmet/f13/trooper

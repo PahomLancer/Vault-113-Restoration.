@@ -9,11 +9,11 @@
 
 /obj/item/kit/proc/install(var/obj/item/I)
 	if(type in I:modifications)
-		to_chat(usr, "Weapon already have this type of upgrade.")
+		to_chat(usr, "Оружие уже имеет данный тип модификации.")
 		return
 
 	if(!istype(I, type_deserved))
-		to_chat(usr, "What are you doing man?")
+		to_chat(usr, "Что ты творишь?")
 		return
 
 	if(!do_mob(usr, usr, 20))
@@ -40,7 +40,7 @@
 		I:fire_delay *= 0.5
 
 	if(istype(src, /obj/item/kit/bayonet))
-		I:force *= 5
+		I:force *= 2
 
 	if(istype(src, /obj/item/kit/scope))
 		W.zoomable = TRUE
@@ -64,6 +64,6 @@
 	if(sufix)
 		I.name = "[I.name] [sufix]"
 
-	to_chat(usr, "<font color='blue'>You installed [name] to [I.name].</font>")
+	to_chat(usr, "<font color='blue'>Вы установили [name] на [I.name].</font>")
 
 	qdel(src)

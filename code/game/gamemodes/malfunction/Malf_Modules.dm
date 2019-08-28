@@ -109,7 +109,7 @@
 
 /obj/machinery/doomsday_device/proc/detonate(z_level = 1)
 	for(var/mob/M in player_list)
-		to_chat(M, 'sound/machines/Alarm.ogg')
+		to_chat(M, 'sound/f13effects/FO76_Nuke_Warning_EBS.ogg')
 	sleep(100)
 	for(var/mob/living/L in mob_list)
 		var/turf/T = get_turf(L)

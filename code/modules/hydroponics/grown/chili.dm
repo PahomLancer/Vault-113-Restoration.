@@ -7,7 +7,7 @@
 	plantname = "Chili Plants"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/chili
 	lifespan = 20
-	maturation = 5
+	maturation = 20
 	production = 5
 	yield = 4
 	potency = 20
@@ -35,7 +35,7 @@
 	plantname = "Ice Pepper Plants"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/icepepper
 	lifespan = 25
-	maturation = 4
+	maturation = 15
 	production = 4
 	rarity = 20
 	mutatelist = list()
@@ -59,7 +59,7 @@
 	plantname = "Ghost Chili Plants"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/ghost_chili
 	endurance = 10
-	maturation = 10
+	maturation = 40
 	production = 10
 	yield = 3
 	rarity = 20

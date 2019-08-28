@@ -111,3 +111,10 @@ var/global/list/desertTurfEdgeCache
 				ChangeTurf(baseturf)
 		if(1)
 			ChangeTurf(baseturf)
+
+/turf/open/temple
+	name = "temple"
+	desc = "It's temple floor."
+	icon_state = "temple"
+	icon = 'icons/fallout/turfs/ground.dmi'
+	step_sounds = list("human" = "erikafootsteps")

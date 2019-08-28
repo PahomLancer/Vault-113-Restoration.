@@ -255,6 +255,41 @@
 			var/obj/structure/grille/G = A
 			G.take_damage(40, BRUTE, "melee", 0)
 
+/obj/item/weapon/twohanded/lumberaxe  // DEM AXES MAN, marker -Agouri
+	icon_state = "lumberjack"
+	name = "lumber axe"
+	flags = CONDUCT
+	desc = "An axe for chopping wood, or heads. This one appears to be leaning more towards heads."
+	force = 32
+	throwforce = 15
+	w_class = WEIGHT_CLASS_NORMAL
+	slot_flags = SLOT_BELT | SLOT_BACK
+	attack_verb = list("attacked", "slashed", "bashed", "sliced", "torn", "ripped", "chopped")
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	sharpness = IS_SHARP
+	obj_integrity = 200
+	max_integrity = 200
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 100, acid = 30)
+	resistance_flags = FIRE_PROOF
+
+/obj/item/weapon/twohanded/lumberaxe/update_icon()  //Currently only here to fuck with the on-mob icons.
+	icon_state = "lumberjack"
+	return
+
+/obj/item/weapon/twohanded/lumberaxe/suicide_act(mob/user)
+	user.visible_message("<span class='suicide'>[user] axes [user.p_them()]self from head to toe! It looks like [user.p_theyre()] trying to commit suicide!</span>")
+	return (BRUTELOSS)
+
+/obj/item/weapon/twohanded/lumberaxe/afterattack(atom/A, mob/user, proximity)
+	if(!proximity)
+		return
+	if(wielded) //destroys windows and grilles in one hit
+		if(istype(A,/obj/structure/window))
+			var/obj/structure/window/W = A
+			W.take_damage(200, BRUTE, "melee", 0)
+		else if(istype(A,/obj/structure/grille))
+			var/obj/structure/grille/G = A
+			G.take_damage(40, BRUTE, "melee", 0)
 
 /*
  * Double-Bladed Energy Swords - Cheridan
@@ -699,3 +734,18 @@
 				owner.visible_message("<span class='danger'>[owner] parries [attack_text] with [src]!</span>")
 				return 1
 	return 0
+
+/obj/item/weapon/twohanded/fireaxe/eastblade
+	name = "blade of the East"
+	desc = "A great Blade of the East. With that weapon you can dismembering NCR rangers for whole battle. Ave Caesar!"
+	icon_state = "eastblade0"
+	force_unwielded = 60
+	force_wielded = 80
+	block_chance = 50
+	throwforce = 40
+	armour_penetration = 90
+	hitsound = "eastbladeslice"
+	self_weight = 20
+
+/obj/item/weapon/twohanded/fireaxe/eastblade/update_icon()
+	icon_state = "eastblade[wielded]"

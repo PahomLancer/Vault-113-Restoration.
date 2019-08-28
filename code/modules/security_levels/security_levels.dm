@@ -67,7 +67,7 @@
 				for(var/obj/machinery/computer/shuttle/pod/pod in machines)
 					pod.admin_controlled = 0
 			if(SEC_LEVEL_DELTA)
-				minor_announce(config.alert_desc_delta, "Attention! Delta security level reached!",1)
+				minor_announce(config.alert_desc_delta, "Attention citizens! Nuclear strike imminent!",1)
 				if(SSshuttle.emergency.mode == SHUTTLE_CALL || SSshuttle.emergency.mode == SHUTTLE_RECALL)
 					if(security_level == SEC_LEVEL_GREEN)
 						SSshuttle.emergency.modTimer(0.25)

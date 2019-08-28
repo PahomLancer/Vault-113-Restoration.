@@ -18,7 +18,7 @@
 
 	var/lifespan = 25				// How long before the plant begins to take damage from age.
 	var/endurance = 15				// Amount of health the plant has.
-	var/maturation = 6				// Used to determine which sprite to switch to when growing.
+	var/maturation = 20				// Used to determine which sprite to switch to when growing.
 	var/production = 6				// Changes the amount of time needed for a plant to become harvestable.
 	var/yield = 3					// Amount of growns created per harvest. If is -1, the plant/shroom/weed is never meant to be harvested.
 	var/potency = 10				// The 'power' of a plant. Generally effects the amount of reagent in a plant, also used in other ways.
@@ -348,7 +348,7 @@
 	set_potency(rand(10, 35))
 	set_weed_rate(rand(1, 10))
 	set_weed_chance(rand(5, 100))
-	maturation = rand(6, 12)
+	maturation = rand(15, 30)
 
 /obj/item/seeds/proc/add_random_reagents(lower = 0, upper = 2)
 	var/amount_random_reagents = rand(lower, upper)

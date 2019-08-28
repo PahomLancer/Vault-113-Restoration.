@@ -7,3 +7,12 @@
 
 /obj/item/blueprint/New()
 	icon_state = "blueprint[rand(1,4)]"
+
+/obj/item/bench
+	name = "Crafting Bench"
+	desc = "just bench"
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "bebch"
+	density = 1
+	anchored = 1
+	var/recipe

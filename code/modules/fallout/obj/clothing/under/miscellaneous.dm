@@ -234,6 +234,7 @@
 	can_adjust = 0
 
 /obj/item/clothing/under/f13/deadmoney
+	icon = 'icons/obj/clothing/uniforms.dmi'
 	name = "Utility jumpsuit"
 	desc = "A working class jumpsuit that appears rather plain in every aspect, apart from the unsettling red X painted across it's back with an unknown substance."
 	icon_state = "deadmoney"
@@ -249,7 +250,7 @@
 	item_state = "casinoarmor"
 	item_color = "casinoarmor"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list(melee = 20, bullet = 40, laser = 25,energy = 25, bomb = 15, bio = 100, rad = 100, fire = 30, acid = 15)
+	armor = list(melee = 20, bullet = 40, laser = 25,energy = 25, bomb = 15, bio = 100, rad = 0, fire = 30, acid = 15)
 	can_adjust = 0
 
 /obj/item/clothing/under/f13/assassinarmor
@@ -260,7 +261,7 @@
 	item_state = "assassinarmor"
 	item_color = "assassinarmor"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list(melee = 20, bullet = 30, laser = 60,energy = 50, bomb = 35, bio = 100, rad = 100, fire = 30, acid = 15)
+	armor = list(melee = 20, bullet = 30, laser = 60,energy = 50, bomb = 35, bio = 100, rad = 50, fire = 30, acid = 15)
 	can_adjust = 0
 
 /obj/item/clothing/under/f13/patriotsuit
@@ -588,6 +589,12 @@
 	icon_state = "vault42"
 	item_color = "vault42"
 
+/obj/item/clothing/under/f13/vault/v76
+	name = "Vault 76 jumpsuit"
+	desc = "The regulation clothing worn by the vault dwellers, of Vault-Tec vaults built to solve the Ultimate Question of life, Universe, and everything. It's made of sturdy leather.<br>This jumpsuit has number 76 on the back."
+	icon_state = "vault76"
+	item_color = "vault76"
+
 /obj/item/clothing/under/f13/followers
 	name = "followers outfit "
 	desc = "A white shirt with a pair of dark brown cargo pants - an outfit commonly worn by Followers of the Apocalypse.<br><i>Nihil boni sine labore.</i>"
@@ -613,6 +620,17 @@
 	icon_state = "enclave_o"
 	item_state = "bl_suit"
 	item_color = "enclave_o"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 10, bomb = 0, bio = 10, rad = 10, fire = 0, acid = 0)
+	can_adjust = 0
+	self_weight = 3
+
+/obj/item/clothing/under/f13/sstform
+	name = "M.I. BDU"
+	desc = "A standard Mobile Infantry uniform.<br>The outer layer is made of a sturdy material designed to withstand the harsh conditions of the battlefield."
+	icon_state = "sstform"
+	item_state = "bl_suit"
+	item_color = "sstform"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list(melee = 20, bullet = 10, laser = 10, energy = 10, bomb = 0, bio = 10, rad = 10, fire = 0, acid = 0)
 	can_adjust = 0
@@ -667,6 +685,20 @@
 	item_color = "recon"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HEAD
 	flags_inv = HIDEHAIR
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0, fire = 0, acid = 0)
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
+	can_adjust = 0
+	self_weight = 5
+
+/obj/item/clothing/under/f13/reconenclave
+	name = "enclave recon armor"
+	desc = "Intended to serve as the under-armor of the X01 power armor, the recon armor is a vacuum-sealed asbestos jumpsuit covering the entire body.<br>Attached to it is the interface and mounts for the power armor.<br>Its purpose is twofold - it allows the user to actually operate the armor and protect soft tissue from moving parts inside the suit and heat."
+	icon_state = "reconenclave"
+	item_state = "rig_suit"
+	item_color = "reconenclave"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HEAD
+	flags_inv = HIDEHAIR|HIDEFACIALHAIR
 	armor = list(melee = 20, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0, fire = 0, acid = 0)
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
@@ -1176,3 +1208,25 @@
 	body_parts_covered = CHEST|GROIN|LEGS
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = 0
+
+/obj/item/clothing/under/f13/fluff/waffenss
+	name = "Waffen SS form"
+	desc = "Scheisse, das uniformei ist gut!."
+	icon_state = "waffen"
+	item_state = "bl_suit"
+	item_color = "waffen"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list(melee = 20, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
+	can_adjust = 1
+	self_weight = 3
+
+/obj/item/clothing/under/f13/fluff/m35
+	name = "M35 form"
+	desc = "Scheisse, das uniformei ist gut!."
+	icon_state = "m35"
+	item_state = "bl_suit"
+	item_color = "m35"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list(melee = 20, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
+	can_adjust = 1
+	self_weight = 3

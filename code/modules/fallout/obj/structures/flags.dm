@@ -54,3 +54,12 @@
 /obj/structure/flag/tribal_totem/New()
 	..()
 	icon_state = pick("totem")
+
+/obj/structure/flag/bulletin_board
+	name = "Bulletin board"
+	desc = "Just Bulletin board."
+	icon_state = "bulletin_board"
+
+/obj/structure/flag/bulletin_board/New()
+	..()
+	icon_state = pick("bulletin_board")

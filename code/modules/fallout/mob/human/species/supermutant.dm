@@ -4,7 +4,7 @@
 	say_mod = "shouts"
 	//default_color = "D5FF00"
 	limbs_id = "supermutant"
-	roundstart = 1
+	roundstart = 0
 	brutemod = 0.35
 	burnmod = 0.5
 	speedmod = 1.25

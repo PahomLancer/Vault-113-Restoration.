@@ -124,8 +124,8 @@
 /obj/structure/barricade/sandbags
 	name = "sandbags"
 	desc = "Bags of sand. Take cover!"
-	icon = 'icons/obj/smooth_structures/sandbags.dmi'
-	icon_state = "sandbags"
+	icon = 'icons/Marine/barricades.dmi'
+	icon_state = "sandbag_0"
 	obj_integrity = 300
 	max_integrity = 300
 	proj_pass_rate = 20

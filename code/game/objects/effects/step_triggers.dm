@@ -176,6 +176,8 @@
 	var/happens_once = 0
 	var/triggerer_only = 0 //Whether the triggerer is the only person who hears this
 
+/obj/effect/step_trigger/sound_effect/wild
+	sound = 'sound/wildw.ogg'
 
 /obj/effect/step_trigger/sound_effect/Trigger(atom/movable/A)
 	var/turf/T = get_turf(A)

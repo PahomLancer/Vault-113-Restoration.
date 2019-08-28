@@ -126,28 +126,28 @@ var/global/list/smooth_files = list(/turf/open/indestructible/ground/desert = 'i
 	var/turf/T
 
 	T = get_step(src, NORTH)
-	if(T.type == turf_type)
+	if(T && T.type == turf_type)
 		. |= N_NORTH
 	T = get_step(src, EAST)
-	if(T.type == turf_type)
+	if(T && T.type == turf_type)
 		. |= N_EAST
 	T = get_step(src, WEST)
-	if(T.type == turf_type)
+	if(T && T.type == turf_type)
 		. |= N_WEST
 	T = get_step(src, SOUTH)
-	if(T.type == turf_type)
+	if(T && T.type == turf_type)
 		. |= N_SOUTH
 	T = get_step(src, NORTHWEST)
-	if(T.type == turf_type)
+	if(T && T.type == turf_type)
 		. |= N_NORTHWEST
 	T = get_step(src, NORTHEAST)
-	if(T.type == turf_type)
+	if(T && T.type == turf_type)
 		. |= N_NORTHEAST
 	T = get_step(src, SOUTHWEST)
-	if(T.type == turf_type)
+	if(T && T.type == turf_type)
 		. |= N_SOUTHWEST
 	T = get_step(src, SOUTHEAST)
-	if(T.type == turf_type)
+	if(T && T.type == turf_type)
 		. |= N_SOUTHEAST
 
 proc/get_adjacencies_overlay(overlay_name, file)

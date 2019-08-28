@@ -7,7 +7,7 @@
 	plantname = "Poppy Plants"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/poppy
 	endurance = 10
-	maturation = 8
+	maturation = 40
 	yield = 6
 	potency = 20
 	growthstages = 3
@@ -71,7 +71,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/harebell
 	lifespan = 100
 	endurance = 20
-	maturation = 7
+	maturation = 35
 	production = 1
 	yield = 2
 	potency = 30

@@ -269,6 +269,15 @@
 	walltype = /turf/closed/wall/mineral/sandstone
 	canSmoothWith = list(/obj/structure/falsewall/sandstone, /turf/closed/wall/mineral/sandstone)
 
+/obj/structure/falsewall/temple
+	name = "temple wall"
+	desc = "A temple wall."
+	icon = 'icons/turf/walls/temple_wall.dmi'
+	icon_state = "temple"
+	mineral = /obj/item/stack/sheet/mineral/sandstone
+	walltype = /turf/closed/wall/mineral/temple
+	canSmoothWith = list(/obj/structure/falsewall/temple, /turf/closed/wall/mineral/temple)
+
 /obj/structure/falsewall/wood
 	name = "wooden wall"
 	desc = "A wall with wooden plating. Stiff."

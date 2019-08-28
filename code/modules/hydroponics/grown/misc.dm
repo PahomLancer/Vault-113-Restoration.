@@ -7,7 +7,7 @@
 	plantname = "Starthistle"
 	lifespan = 100
 	endurance = 50 // damm pesky weeds
-	maturation = 5
+	maturation = 20
 	production = 1
 	yield = -1
 	potency = -1
@@ -25,7 +25,7 @@
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/cabbage
 	lifespan = 50
 	endurance = 25
-	maturation = 3
+	maturation = 15
 	production = 5
 	yield = 4
 	growthstages = 1
@@ -54,7 +54,7 @@
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	lifespan = 60
 	endurance = 50
-	maturation = 3
+	maturation = 15
 	yield = 4
 	growthstages = 3
 	reagents_add = list("sugar" = 0.25)

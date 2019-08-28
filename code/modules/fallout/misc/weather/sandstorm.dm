@@ -8,7 +8,7 @@
 	overlay = "sandstorm"
 	chance = 5
 	duration_min = 2000
-	duration_max = 8000
+	duration_max = 5000
 	var/list/mobs = list()
 	var/list/currentrun = list()
 	var/started = FALSE
@@ -20,7 +20,7 @@
 		..()
 	for (var/area/A in SSweather.outside_areas)
 		for(var/mob/living/carbon/human/H in A)
-			H.playsound_local(get_turf(H), 'sound/f13effects/sandstorm_transition.ogg', vol = 100, channel = SANDSTORM_CHANNEL, repeat = 1)
+			H.playsound_local(get_turf(H), 'sound/f13effects/sandstorm_transition.ogg', vol = 15, channel = SANDSTORM_CHANNEL, repeat = 1)
 	return TRUE
 
 /datum/weather_controller/sandstorm/on_end()
@@ -38,9 +38,9 @@
 		if(istype(mob,/mob/living/carbon/human))
 			mobs |= mob
 		if(started)
-			mob.playsound_local(get_turf(mob), 'sound/f13effects/sandstorm_loop.ogg', vol = 100, channel = SANDSTORM_CHANNEL, repeat = 1)
+			mob.playsound_local(get_turf(mob), 'sound/f13effects/sandstorm_loop.ogg', vol = 15, channel = SANDSTORM_CHANNEL, repeat = 1)
 		else
-			mob.playsound_local(get_turf(mob), 'sound/f13effects/sandstorm_transition.ogg', vol = 100, channel = SANDSTORM_CHANNEL, repeat = FALSE)
+			mob.playsound_local(get_turf(mob), 'sound/f13effects/sandstorm_transition.ogg', vol = 15, channel = SANDSTORM_CHANNEL, repeat = FALSE)
 
 /datum/weather_controller/sandstorm/on_mob_exit(mob/mob, area/area)
 	. = ..()

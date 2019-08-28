@@ -30,58 +30,42 @@
 
 	var/list/common = list (
 		/obj/item/stack/caps/random = 80,
-		/obj/item/ammo_box/magazine/F13/m10 = 70,
-		/obj/item/ammo_box/magazine/F13/m10smg = 70,
-		/obj/item/ammo_box/F13/m44 = 70,
-		/obj/item/ammo_box/magazine/F13/m308 = 70,
-		/obj/item/ammo_box/F13/m308 = 70,
-		/obj/item/ammo_box/magazine/F13/m223 = 70,
-		/obj/item/ammo_box/F13/m223 = 70,
+		/obj/item/ammo_box/magazine/F13/m10 = 10,
+		/obj/item/ammo_box/magazine/F13/m10smg = 10,
+		/obj/item/ammo_box/F13/m44 = 1,
+		/obj/item/ammo_box/magazine/F13/m308 = 20,
+		/obj/item/ammo_box/F13/m308 = 20,
+		/obj/item/ammo_box/magazine/F13/m223 = 10,
+		/obj/item/ammo_box/F13/m223 = 20,
 		/obj/item/ammo_box/magazine/F13/m556 = 70,
-		/obj/item/weapon/stock_parts/cell = 70
+		/obj/item/weapon/stock_parts/cell = 10
 	)
 
 	var/list/uncommon = list (
-		/obj/item/weapon/reagent_containers/pill/patch/radaway = 30,
-		/obj/item/weapon/gun/ballistic/shotgun/pipe = 30,
-		/obj/item/weapon/gun/energy/laser/pistol = 30,
-		/obj/item/weapon/gun/ballistic/automatic/pistol/n99 = 30
+		/obj/item/weapon/reagent_containers/pill/patch/radaway = 5,
+		/obj/item/weapon/gun/ballistic/shotgun/pipe = 5,
+		/obj/item/weapon/gun/energy/laser/pistol = 7,
+		/obj/item/weapon/gun/ballistic/automatic/pistol/n99 = 25
 	)
 
 	var/list/unusual = list (
-		/obj/item/weapon/reagent_containers/food/snacks/f13/bubblegum = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/bubblegum/large = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/cram = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/cram/large = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/yumyum = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/fancylads = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/sugarbombs = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/crisps = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/steak = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/specialapples = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/dandyapples = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/blamco = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/blamco/large = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/mechanic = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/instamash = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/porknbeans = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/borscht = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/dog = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 20,
-		/obj/item/weapon/reagent_containers/food/snacks/f13/galette = 20
+		/obj/item/trash/f13/rotten = 25,
+		/obj/item/weapon/reagent_containers/food/snacks/f13/bubblegum/large = 5,
+		/obj/item/weapon/reagent_containers/food/snacks/f13/cram = 6,
+		/obj/item/trash/f13/mre = 24
 	)
 
 	var/list/rare = list (
-		/obj/item/weapon/reagent_containers/f13stimpack = 10,
+		/obj/item/weapon/reagent_containers/f13stimpack = 5,
 		/obj/item/weapon/reagent_containers/f13stimpack/super = 2,
-		/obj/item/crafting/weapon_repair_kit = 10,
-		/obj/item/kit/damage = 10,
-		/obj/item/kit/recoil = 10,
-		/obj/item/kit/burst = 10,
-		/obj/item/kit/delay = 10,
-		/obj/item/kit/bayonet = 10,
-		/obj/item/kit/scope = 10,
-		/obj/item/kit/condition = 10
+		/obj/item/crafting/weapon_repair_kit = 3,
+		/obj/item/kit/damage = 1,
+		/obj/item/kit/recoil = 1,
+		/obj/item/kit/burst = 1,
+		/obj/item/kit/delay = 1,
+		/obj/item/kit/bayonet = 1,
+		/obj/item/kit/scope = 1,
+		/obj/item/kit/condition = 1
 	)
 
 	var/rarity = rand(1, 100)

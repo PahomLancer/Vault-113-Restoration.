@@ -10,10 +10,10 @@
 "aj" = (/obj/machinery/vending/cigarette,/turf/open/floor/plasteel/bar{dir = 2},/area/awaymission/centcomAway/cafe)
 "ak" = (/turf/closed/wall,/area/awaymission/centcomAway/cafe)
 "al" = (/obj/machinery/vending/dinnerware,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
-"am" = (/obj/structure/closet/chefcloset,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
+"am" = (/obj/structure/closet/chefcloset,/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
 "an" = (/obj/structure/table,/obj/item/weapon/reagent_containers/food/condiment/peppermill,/obj/item/weapon/reagent_containers/food/condiment/saltshaker,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
 "ao" = (/obj/machinery/disposal/bin,/obj/structure/disposalpipe/trunk,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
-"ap" = (/obj/structure/closet/secure_closet/freezer/fridge,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
+"ap" = (/obj/structure/closet/secure_closet/freezer/fridge,/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
 "aq" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
 "ar" = (/obj/structure/table,/obj/item/weapon/storage/box/donkpockets{pixel_x = 3; pixel_y = 3},/obj/item/weapon/kitchen/rollingpin,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
 "as" = (/obj/structure/table,/obj/item/weapon/reagent_containers/glass/beaker,/obj/item/weapon/reagent_containers/food/condiment/enzyme,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
@@ -54,7 +54,7 @@
 "bb" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
 "bc" = (/obj/structure/chair{dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
 "bd" = (/obj/item/device/radio,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
-"be" = (/turf/open/floor/plating/warnplate{dir = 8},/area/awaymission/centcomAway/hangar)
+"be" = (/turf/closed/indestructible/f13/obsidian,/area/f13/caves)
 "bf" = (/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/hangar)
 "bg" = (/obj/effect/decal/cleanable/oil,/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/hangar)
 "bh" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/bar{dir = 2},/area/awaymission/centcomAway/cafe)
@@ -62,13 +62,13 @@
 "bj" = (/obj/machinery/chem_dispenser,/obj/item/weapon/storage/box/beakers,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
 "bk" = (/obj/machinery/chem_master,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
 "bl" = (/obj/structure/rack,/obj/item/clothing/suit/fire,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
-"bm" = (/obj/structure/lattice,/turf/open/space,/area/space)
+"bm" = (/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid9"},/area/f13/caves)
 "bn" = (/obj/machinery/door/poddoor{id = "XCCHangar1"; name = "XCC Main Hangar"},/turf/open/floor/plasteel/delivery,/area/awaymission/centcomAway/hangar)
 "bo" = (/turf/open/floor/plasteel/vault{dir = 9},/area/awaymission/centcomAway/hangar)
-"bp" = (/turf/open/floor/plasteel/vault{dir = 5},/turf/closed/wall/mineral/titanium/interior,/area/awaymission/centcomAway/hangar)
-"bq" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_r"; dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"br" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion"; dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"bs" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_l"; dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"bp" = (/turf/open/floor/plasteel{icon_state = "asteroid6"; name = "sand"},/area/f13/caves)
+"bq" = (/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid5"},/area/f13/caves)
+"br" = (/turf/open/floor/plasteel{dir = 6; icon_state = "asteroid8"; name = "sand"},/area/f13/caves)
+"bs" = (/turf/open/indestructible/ground/desert,/area/f13/caves)
 "bt" = (/obj/structure/closet/crate,/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/hangar)
 "bu" = (/obj/machinery/vending/boozeomat{req_access_txt = ""},/turf/closed/wall/r_wall,/area/awaymission/centcomAway/cafe)
 "bv" = (/obj/structure/closet/secure_closet/freezer/meat,/turf/open/floor/plasteel/freezer{dir = 2},/area/awaymission/centcomAway/cafe)
@@ -79,25 +79,25 @@
 "bA" = (/obj/structure/closet/secure_closet/hydroponics,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/cafe)
 "bB" = (/obj/structure/rack,/obj/item/weapon/extinguisher/mini,/obj/item/clothing/head/hardhat/red,/obj/item/clothing/gloves/color/black,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
 "bC" = (/turf/closed/wall/mineral/titanium,/area/awaymission/centcomAway/hangar)
-"bD" = (/obj/structure/window/reinforced,/obj/structure/shuttle/engine/heater{icon_state = "heater"; dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"bE" = (/obj/machinery/door/airlock/external{name = "Salvage Shuttle Dock"},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"bD" = (/obj/structure/closet/crate,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"bE" = (/obj/structure/closet/crate/large,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "bF" = (/obj/structure/chair/comfy/brown,/turf/open/floor/plasteel/bar{dir = 2},/area/awaymission/centcomAway/cafe)
-"bG" = (/obj/structure/reagent_dispensers/beerkeg,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
+"bG" = (/obj/item/weapon/reagent_containers/glass/bucket,/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/cafe)
 "bH" = (/obj/structure/table,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
 "bI" = (/obj/structure/kitchenspike,/turf/open/floor/plasteel/freezer{dir = 2},/area/awaymission/centcomAway/cafe)
 "bJ" = (/obj/machinery/gibber,/turf/open/floor/plasteel/freezer{dir = 2},/area/awaymission/centcomAway/cafe)
 "bK" = (/obj/structure/disposalpipe/segment,/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
 "bL" = (/turf/open/floor/plasteel/green/side{dir = 2},/area/awaymission/centcomAway/cafe)
 "bM" = (/turf/open/floor/plasteel/green/side{dir = 6},/area/awaymission/centcomAway/cafe)
-"bN" = (/obj/machinery/power/solar/fake,/turf/open/floor/plasteel/airless/solarpanel,/area/awaymission/centcomAway/maint)
+"bN" = (/obj/structure/ore_box,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "bO" = (/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"bP" = (/turf/open/floor/plating,/turf/closed/wall/mineral/titanium/interior,/area/awaymission/centcomAway/hangar)
-"bQ" = (/turf/open/floor/mineral/titanium/blue,/turf/closed/wall/mineral/titanium/interior,/area/awaymission/centcomAway/hangar)
-"bR" = (/obj/structure/closet/emcloset,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"bS" = (/turf/open/floor/mineral/titanium,/area/awaymission/centcomAway/hangar)
-"bT" = (/obj/structure/table,/obj/item/weapon/storage/firstaid/toxin{pixel_x = -2; pixel_y = 4},/obj/item/weapon/storage/firstaid/toxin,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"bU" = (/obj/structure/table,/obj/item/weapon/storage/firstaid/fire,/obj/item/weapon/storage/firstaid/fire{pixel_x = -2; pixel_y = 4},/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"bV" = (/obj/structure/table,/obj/item/weapon/storage/firstaid/regular{pixel_x = 2; pixel_y = 0},/obj/item/weapon/storage/firstaid/regular{pixel_x = -2; pixel_y = 4},/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
+"bP" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
+"bQ" = (/obj/machinery/shieldgen,/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
+"bR" = (/obj/machinery/portable_atmospherics/canister/air,/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
+"bS" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
+"bT" = (/obj/structure/table,/turf/open/floor/plasteel/vault{dir = 8},/area/awaymission/centcomAway/hangar)
+"bU" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/bar{dir = 2},/area/awaymission/centcomAway/cafe)
+"bV" = (/turf/open/space,/area/f13/caves)
 "bW" = (/obj/item/weapon/paper_bin,/obj/structure/table,/turf/open/floor/plasteel/redyellow,/area/awaymission/centcomAway/cafe)
 "bX" = (/obj/item/weapon/clipboard,/obj/structure/table,/turf/open/floor/plasteel/redyellow,/area/awaymission/centcomAway/cafe)
 "bY" = (/obj/structure/disposalpipe/segment,/obj/machinery/door/window/southright,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
@@ -108,9 +108,9 @@
 "cd" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
 "ce" = (/obj/machinery/door/airlock/external,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
 "cf" = (/obj/machinery/door/airlock/external,/turf/open/floor/plating/airless,/area/awaymission/centcomAway/maint)
-"cg" = (/turf/open/floor/plating/airless,/area/awaymission/centcomAway/maint)
-"ch" = (/turf/closed/wall/mineral/titanium/nodiagonal,/area/awaymission/centcomAway/hangar)
-"ci" = (/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
+"cg" = (/obj/machinery/button/door{id = "XCCHangar1"; name = "Hangar Bay Blast Doors"; pixel_x = -28; pixel_y = 7; req_access_txt = "2"},/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/hangar)
+"ch" = (/obj/structure/rack,/obj/item/clothing/ears/earmuffs{pixel_x = -3; pixel_y = -2},/turf/open/floor/plasteel/vault{dir = 8},/area/awaymission/centcomAway/hangar)
+"ci" = (/turf/closed/wall/r_wall,/area/f13/caves)
 "cj" = (/obj/item/weapon/pen,/obj/structure/table,/turf/open/floor/plasteel/redyellow,/area/awaymission/centcomAway/cafe)
 "ck" = (/turf/open/floor/plasteel/grimy,/area/awaymission/centcomAway/cafe)
 "cl" = (/obj/structure/disposalpipe/segment{dir = 1; icon_state = "pipe-c"},/turf/open/floor/plasteel/grimy,/area/awaymission/centcomAway/cafe)
@@ -118,8 +118,8 @@
 "cn" = (/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/turf/open/floor/plasteel/vault{dir = 8},/area/awaymission/centcomAway/cafe)
 "co" = (/turf/open/floor/plasteel/hydrofloor,/area/awaymission/centcomAway/cafe)
 "cp" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
-"cq" = (/obj/structure/sign/vacuum,/turf/closed/wall/r_wall,/area/awaymission/centcomAway/maint)
-"cr" = (/obj/machinery/door/airlock/maintenance_hatch{req_access_txt = "101"},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"cq" = (/obj/structure/lattice,/turf/closed/indestructible/f13/obsidian,/area/f13/caves)
+"cr" = (/turf/closed/indestructible/f13/obsidian,/area/awaymission/centcomAway/general)
 "cs" = (/turf/closed/wall,/area/awaymission/centcomAway/hangar)
 "ct" = (/turf/closed/wall,/area/awaymission/centcomAway/maint)
 "cu" = (/obj/machinery/door/airlock/maintenance_hatch{req_access_txt = "101"},/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
@@ -129,24 +129,24 @@
 "cy" = (/obj/machinery/vending/hydroseeds{slogan_delay = 700},/turf/open/floor/plasteel/hydrofloor,/area/awaymission/centcomAway/cafe)
 "cz" = (/obj/machinery/vending/hydronutrients,/turf/open/floor/plasteel/hydrofloor,/area/awaymission/centcomAway/cafe)
 "cA" = (/obj/machinery/biogenerator,/turf/open/floor/plasteel/hydrofloor,/area/awaymission/centcomAway/cafe)
-"cB" = (/obj/structure/table/reinforced,/obj/item/weapon/paper_bin,/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"cC" = (/obj/structure/table/reinforced,/obj/item/weapon/storage/fancy/donut_box,/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"cD" = (/obj/structure/table/reinforced,/obj/item/weapon/pen,/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"cE" = (/obj/structure/table/reinforced,/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"cF" = (/obj/machinery/sleeper{icon_state = "sleeper-open"; dir = 8},/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"cG" = (/obj/machinery/sleep_console{icon_state = "console"; dir = 8},/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"cH" = (/obj/structure/chair{dir = 8},/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
+"cB" = (/obj/machinery/button/door{id = "XCCFerry"; name = "Hangar Bay Shutters"; pixel_x = -28; pixel_y = 7; req_access_txt = "2"},/turf/open/floor/plasteel/vault{dir = 8},/area/awaymission/centcomAway/hangar)
+"cC" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_r"; dir = 1},/turf/open/space,/area/f13/caves)
+"cD" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion"; dir = 1},/turf/open/space,/area/f13/caves)
+"cE" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_l"; dir = 1},/turf/open/space,/area/f13/caves)
+"cF" = (/obj/machinery/light/built,/turf/open/floor/carpet,/area/awaymission/centcomAway/cafe)
+"cG" = (/obj/machinery/hydroponics,/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/cafe)
+"cH" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/hangar)
 "cI" = (/obj/machinery/door/airlock/external,/turf/open/floor/plasteel/bar{dir = 2},/area/awaymission/centcomAway/maint)
 "cJ" = (/obj/structure/disposalpipe/segment{dir = 4; icon_state = "pipe-c"},/turf/open/floor/plasteel/grimy,/area/awaymission/centcomAway/cafe)
 "cK" = (/obj/structure/disposalpipe/segment{dir = 2; icon_state = "pipe-c"},/turf/open/floor/plasteel/vault{dir = 8},/area/awaymission/centcomAway/cafe)
-"cL" = (/obj/machinery/computer/secure_data,/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"cM" = (/obj/structure/chair{dir = 1},/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"cN" = (/obj/structure/chair{dir = 4},/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"cO" = (/obj/structure/table/reinforced,/obj/item/weapon/clipboard,/obj/item/weapon/stamp,/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
+"cL" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
+"cM" = (/obj/structure/closet/crate,/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/hangar)
+"cN" = (/obj/structure/reagent_dispensers/beerkeg,/obj/machinery/light/built,/turf/open/floor/plasteel/green{dir = 1},/area/awaymission/centcomAway/cafe)
+"cO" = (/obj/machinery/light/built,/turf/open/floor/plasteel/freezer{dir = 2},/area/awaymission/centcomAway/cafe)
 "cP" = (/obj/structure/disposalpipe/segment,/obj/machinery/door/window/northright,/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
 "cQ" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
-"cR" = (/obj/structure/table,/obj/item/device/assembly/flash/handheld,/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"cS" = (/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
+"cR" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/space,/area/space)
+"cS" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/grimy,/area/awaymission/centcomAway/cafe)
 "cT" = (/obj/structure/chair{dir = 4},/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
 "cU" = (/obj/structure/reagent_dispensers/fueltank,/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/hangar)
 "cV" = (/turf/open/floor/plasteel/vault{dir = 4},/area/awaymission/centcomAway/hangar)
@@ -156,38 +156,38 @@
 "cZ" = (/obj/structure/disposalpipe/segment,/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
 "da" = (/turf/open/floor/plasteel/red/side{dir = 1},/area/awaymission/centcomAway/cafe)
 "db" = (/turf/open/floor/plasteel/red/side{dir = 5},/area/awaymission/centcomAway/cafe)
-"dc" = (/obj/structure/table,/obj/item/weapon/storage/box/handcuffs,/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"dd" = (/obj/machinery/door/window/northright{base_state = "right"; dir = 4; icon_state = "right"; name = "Security Desk"; req_access_txt = "103"},/turf/open/floor/mineral/titanium/yellow,/area/awaymission/centcomAway/hangar)
-"de" = (/obj/structure/closet/crate,/turf/open/floor/plating/warnplate{dir = 9},/area/awaymission/centcomAway/hangar)
-"df" = (/turf/open/floor/plating/warnplate{dir = 1},/area/awaymission/centcomAway/hangar)
-"dg" = (/obj/structure/closet/crate/large,/turf/open/floor/plating/warnplate{dir = 5},/area/awaymission/centcomAway/hangar)
+"dc" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/closed/wall,/area/awaymission/centcomAway/hangar)
+"dd" = (/obj/machinery/light/built,/turf/open/space,/area/space)
+"de" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/vault{dir = 4},/area/awaymission/centcomAway/hangar)
+"df" = (/obj/structure/kitchenspike,/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/freezer{dir = 2},/area/awaymission/centcomAway/cafe)
+"dg" = (/obj/structure/ore_box,/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "dh" = (/obj/structure/dresser,/turf/open/floor/carpet,/area/awaymission/centcomAway/cafe)
 "di" = (/obj/machinery/vending/boozeomat{req_access_txt = ""},/turf/closed/wall,/area/awaymission/centcomAway/cafe)
 "dj" = (/obj/structure/disposalpipe/trunk{dir = 1},/obj/machinery/disposal/bin,/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
 "dk" = (/turf/open/floor/plasteel/red/side{dir = 4},/area/awaymission/centcomAway/cafe)
-"dl" = (/obj/structure/closet/crate,/turf/open/floor/plating/warnplate{dir = 4},/area/awaymission/centcomAway/hangar)
+"dl" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
 "dm" = (/obj/machinery/chem_dispenser,/obj/item/weapon/storage/box/beakers,/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
 "dn" = (/turf/open/floor/plasteel/red/side{dir = 8},/area/awaymission/centcomAway/cafe)
 "do" = (/obj/machinery/chem_master,/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
 "dp" = (/obj/structure/closet/firecloset/full,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
-"dq" = (/obj/structure/bed,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"dr" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"ds" = (/obj/structure/ore_box,/turf/open/floor/plating/warnplate{dir = 4},/area/awaymission/centcomAway/hangar)
+"dq" = (/obj/structure/dresser,/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/carpet,/area/awaymission/centcomAway/cafe)
+"dr" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
+"ds" = (/obj/machinery/light/built,/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
 "dt" = (/obj/structure/table,/obj/item/weapon/storage/fancy/donut_box,/turf/open/floor/plasteel/redyellow,/area/awaymission/centcomAway/cafe)
 "du" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
 "dv" = (/obj/structure/sink/kitchen{pixel_y = 28},/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
 "dw" = (/obj/structure/table,/obj/machinery/processor{pixel_x = 0; pixel_y = 10},/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
-"dx" = (/obj/structure/bed,/turf/open/floor/mineral/titanium,/area/awaymission/centcomAway/hangar)
+"dx" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/general)
 "dy" = (/obj/machinery/door/airlock/centcom,/turf/open/floor/plasteel/cafeteria,/area/awaymission/centcomAway/cafe)
 "dz" = (/obj/structure/table,/obj/machinery/microwave{pixel_x = -3; pixel_y = 6},/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
-"dA" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plating/warnplate{dir = 9},/area/awaymission/centcomAway/cafe)
-"dB" = (/obj/machinery/shieldgen,/turf/open/floor/plating/warnplate{dir = 1},/area/awaymission/centcomAway/cafe)
-"dC" = (/turf/open/floor/plating/warnplate{dir = 5},/area/awaymission/centcomAway/cafe)
-"dD" = (/obj/machinery/door/airlock/hatch{name = "Rest Room"; req_access_txt = "0"},/turf/open/floor/mineral/titanium,/area/awaymission/centcomAway/hangar)
-"dE" = (/obj/structure/closet/crate/large,/turf/open/floor/plating/warnplate{dir = 10},/area/awaymission/centcomAway/hangar)
-"dF" = (/obj/structure/closet/crate,/turf/open/floor/plating/warnplate{dir = 2},/area/awaymission/centcomAway/hangar)
-"dG" = (/turf/open/floor/plating/warnplate{dir = 6},/area/awaymission/centcomAway/hangar)
-"dH" = (/obj/machinery/portable_atmospherics/canister/air,/turf/open/floor/plating/warnplate{dir = 8},/area/awaymission/centcomAway/cafe)
+"dA" = (/obj/machinery/light/built,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
+"dB" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
+"dC" = (/obj/machinery/light/built,/turf/open/floor/plasteel/yellow/side,/area/awaymission/centcomAway/general)
+"dD" = (/obj/machinery/light/built,/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/general)
+"dE" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"dF" = (/obj/machinery/light/built,/turf/open/floor/carpet,/area/awaymission/centcomAway/courtroom)
+"dG" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/light/built,/turf/open/floor/plating,/area/awaymission/centcomAway/general)
+"dH" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/yellow/corner{dir = 1},/area/awaymission/centcomAway/general)
 "dI" = (/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
 "dJ" = (/obj/machinery/door/airlock/maintenance_hatch{req_access_txt = "101"},/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
 "dK" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
@@ -196,17 +196,17 @@
 "dN" = (/obj/structure/closet/secure_closet/freezer/kitchen,/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
 "dO" = (/turf/open/floor/plasteel/red/side{dir = 10},/area/awaymission/centcomAway/cafe)
 "dP" = (/turf/open/floor/plasteel/red/side{dir = 6},/area/awaymission/centcomAway/cafe)
-"dQ" = (/obj/machinery/portable_atmospherics/canister/air,/turf/open/floor/plating/warnplate{dir = 10},/area/awaymission/centcomAway/cafe)
-"dR" = (/turf/open/floor/plating/warnplate{dir = 2},/area/awaymission/centcomAway/cafe)
-"dS" = (/obj/machinery/portable_atmospherics/pump,/turf/open/floor/plating/warnplate{dir = 6},/area/awaymission/centcomAway/cafe)
-"dT" = (/obj/structure/table,/obj/structure/bedsheetbin,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"dU" = (/obj/structure/table,/obj/item/weapon/hand_labeler,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"dV" = (/obj/structure/table,/obj/item/weapon/storage/box/donkpockets,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
+"dQ" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/purple/corner{dir = 4},/area/awaymission/centcomAway/general)
+"dR" = (/obj/machinery/light/built,/turf/open/floor/plasteel/green/side,/area/awaymission/centcomAway/general)
+"dS" = (/obj/structure/chair,/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/carpet,/area/awaymission/centcomAway/courtroom)
+"dT" = (/turf/open/floor/plating,/obj/structure/shuttle/engine/propulsion/burst{dir = 4},/turf/closed/wall/mineral/titanium/interior,/area/awaymission/centcomAway/hangar)
+"dU" = (/obj/structure/table,/obj/item/weapon/paper/ccaMemo,/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"dV" = (/obj/machinery/light/built,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/courtroom)
 "dW" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid2"},/area/awaymission/centcomAway/cafe)
 "dX" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid11"},/area/awaymission/centcomAway/cafe)
-"dY" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid"},/area/awaymission/centcomAway/cafe)
+"dY" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/general)
 "dZ" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid3"},/area/awaymission/centcomAway/cafe)
-"ea" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid10"},/area/awaymission/centcomAway/cafe)
+"ea" = (/obj/machinery/light/built,/turf/open/floor/engine,/area/awaymission/centcomAway/general)
 "eb" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid9"},/area/awaymission/centcomAway/cafe)
 "ec" = (/obj/machinery/door/airlock/centcom,/turf/open/floor/plasteel/bar{dir = 2},/area/awaymission/centcomAway/cafe)
 "ed" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/cafe)
@@ -218,15 +218,15 @@
 "ej" = (/obj/structure/table,/obj/machinery/reagentgrinder,/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
 "ek" = (/obj/structure/table,/obj/item/weapon/storage/box/donkpockets{pixel_x = 3; pixel_y = 3},/obj/item/weapon/kitchen/rollingpin,/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
 "el" = (/obj/structure/table,/obj/item/weapon/reagent_containers/glass/beaker,/obj/item/weapon/reagent_containers/food/condiment/enzyme,/turf/open/floor/plasteel/red,/area/awaymission/centcomAway/cafe)
-"em" = (/obj/machinery/door/airlock/hatch{name = "Cockpit"; req_access_txt = "109"},/turf/open/floor/mineral/titanium,/area/awaymission/centcomAway/hangar)
+"em" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/green/side{dir = 1},/area/awaymission/centcomAway/general)
 "en" = (/turf/closed/wall/r_wall,/area/awaymission/centcomAway/general)
 "eo" = (/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/general)
 "ep" = (/obj/machinery/space_heater,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
 "eq" = (/obj/structure/closet/emcloset,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
 "er" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
-"es" = (/obj/structure/table,/obj/item/device/radio/off,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"et" = (/obj/structure/chair{dir = 4; name = "Prosecution"},/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"eu" = (/obj/structure/filingcabinet,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
+"es" = (/obj/machinery/light/built,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/hangar)
+"et" = (/obj/structure/table,/obj/item/stack/sheet/metal{amount = 50},/obj/machinery/light/built,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"eu" = (/obj/structure/closet/secure_closet/injection,/obj/machinery/light/built,/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/courtroom)
 "ev" = (/turf/open/floor/plasteel/yellow/side{dir = 9},/area/awaymission/centcomAway/general)
 "ew" = (/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
 "ex" = (/turf/open/floor/plasteel/yellow/side{dir = 5},/area/awaymission/centcomAway/general)
@@ -242,7 +242,7 @@
 "eH" = (/obj/machinery/clonepod,/turf/open/floor/plasteel/whitepurple/side{dir = 1},/area/awaymission/centcomAway/general)
 "eI" = (/obj/machinery/computer/cloning,/turf/open/floor/plasteel/whitepurple/side{dir = 1},/area/awaymission/centcomAway/general)
 "eJ" = (/obj/machinery/dna_scannernew,/turf/open/floor/plasteel/whitepurple/side{dir = 1},/area/awaymission/centcomAway/general)
-"eK" = (/obj/structure/chair,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
+"eK" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/vault{dir = 8},/area/awaymission/centcomAway/hangar)
 "eL" = (/obj/machinery/telecomms/relay/preset/ruskie,/turf/open/floor/plasteel/delivery,/area/awaymission/centcomAway/general)
 "eM" = (/obj/machinery/door/airlock/engineering{name = "Engineering Access"; req_access_txt = "10"},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "eN" = (/obj/machinery/door/airlock/centcom,/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/general)
@@ -250,13 +250,13 @@
 "eP" = (/obj/structure/chair{dir = 1},/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/general)
 "eQ" = (/turf/open/floor/plasteel/whitepurple/side{dir = 4},/area/awaymission/centcomAway/general)
 "eR" = (/turf/closed/wall,/area/awaymission/centcomAway/courtroom)
-"eS" = (/obj/structure/table,/obj/item/weapon/storage/lockbox,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"eT" = (/obj/structure/table,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"eU" = (/obj/structure/frame/computer,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"eV" = (/obj/structure/table,/obj/item/weapon/clipboard,/obj/item/weapon/pen,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
-"eW" = (/obj/structure/table,/obj/item/weapon/paper_bin,/turf/open/floor/mineral/titanium/blue,/area/awaymission/centcomAway/hangar)
+"eS" = (/obj/structure/flora/ausbushes,/obj/machinery/light/built,/turf/open/floor/plasteel{icon_state = "asteroid6"; name = "sand"},/area/awaymission/centcomAway/general)
+"eT" = (/obj/machinery/light/built,/turf/open/floor/plasteel{icon_state = "asteroid6"; name = "sand"},/area/f13/caves)
+"eU" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/general)
+"eV" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/grimy,/area/awaymission/centcomAway/general)
+"eW" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/green/side{dir = 8},/area/awaymission/centcomAway/general)
 "eX" = (/turf/open/floor/plasteel/yellow/side{dir = 10},/area/awaymission/centcomAway/general)
-"eY" = (/turf/open/floor/plasteel/yellow/side,/area/awaymission/centcomAway/general)
+"eY" = (/obj/machinery/light/built,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/general)
 "eZ" = (/obj/structure/table/reinforced,/obj/item/device/t_scanner,/turf/open/floor/plasteel/yellow/side,/area/awaymission/centcomAway/general)
 "fa" = (/obj/structure/tank_dispenser,/turf/open/floor/plasteel/yellow/side{dir = 6},/area/awaymission/centcomAway/general)
 "fb" = (/turf/open/floor/plasteel/black/corner{dir = 1},/area/awaymission/centcomAway/general)
@@ -265,9 +265,9 @@
 "fe" = (/obj/structure/table,/obj/item/weapon/storage/box/prisoner,/turf/open/floor/carpet,/area/awaymission/centcomAway/courtroom)
 "ff" = (/obj/structure/closet/secure_closet/security,/turf/open/floor/carpet,/area/awaymission/centcomAway/courtroom)
 "fg" = (/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/courtroom)
-"fh" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"fi" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"fj" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"fh" = (/obj/structure/safe/floor,/obj/item/clothing/under/rank/centcom_officer,/obj/item/clothing/suit/det_suit,/obj/item/weapon/gun/ballistic/revolver/mateba,/obj/machinery/light/built,/turf/open/floor/plasteel/grimy,/area/awaymission/centcomAway/general)
+"fi" = (/obj/machinery/computer/card,/obj/machinery/light/built,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/general)
+"fj" = (/obj/machinery/light/built,/turf/open/floor/plasteel/vault{dir = 8},/area/awaymission/centcomAway/hangar)
 "fk" = (/obj/machinery/power/terminal,/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "fl" = (/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "fm" = (/obj/machinery/door/airlock/glass_engineering{name = "Engineering"; req_access_txt = "32"},/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
@@ -291,12 +291,12 @@
 "fE" = (/obj/structure/table/wood,/obj/structure/window/reinforced{dir = 1},/turf/open/floor/wood,/area/awaymission/centcomAway/courtroom)
 "fF" = (/obj/machinery/door/window/northleft,/turf/open/floor/wood,/area/awaymission/centcomAway/courtroom)
 "fG" = (/obj/machinery/power/smes,/obj/structure/cable,/obj/structure/cable{icon_state = "0-4"; d2 = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
-"fH" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
+"fH" = (/obj/structure/table,/obj/item/stack/sheet/glass{amount = 50},/obj/item/stack/sheet/metal{amount = 50},/obj/machinery/light/built,/turf/open/floor/plasteel/vault,/area/awaymission/centcomAway/hangar)
 "fI" = (/obj/machinery/power/smes,/obj/structure/cable,/obj/structure/cable{d2 = 8; icon_state = "0-8"},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "fJ" = (/turf/open/floor/plasteel/yellow/side{dir = 6},/area/awaymission/centcomAway/general)
 "fK" = (/turf/open/floor/plasteel/yellow/side{dir = 1},/area/awaymission/centcomAway/general)
-"fL" = (/turf/open/floor/plasteel/yellow/corner{dir = 1},/area/awaymission/centcomAway/general)
-"fM" = (/turf/open/floor/plasteel/purple/corner{dir = 4},/area/awaymission/centcomAway/general)
+"fL" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/hangar)
+"fM" = (/obj/structure/chair{dir = 4},/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/green/side{dir = 8},/area/awaymission/centcomAway/general)
 "fN" = (/turf/open/floor/plasteel/purple/side{dir = 1},/area/awaymission/centcomAway/general)
 "fO" = (/obj/structure/sign/science,/turf/closed/wall/r_wall,/area/awaymission/centcomAway/general)
 "fP" = (/obj/machinery/door/window/eastright,/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
@@ -311,7 +311,7 @@
 "fY" = (/obj/structure/chair{dir = 4},/turf/open/floor/carpet,/area/awaymission/centcomAway/courtroom)
 "fZ" = (/obj/structure/window/reinforced{dir = 1},/turf/open/floor/wood,/area/awaymission/centcomAway/courtroom)
 "ga" = (/obj/structure/grille,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
-"gb" = (/turf/open/floor/plasteel/warning{dir = 8},/area/awaymission/centcomAway/general)
+"gb" = (/obj/structure/chair{dir = 8},/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/green/side{dir = 4},/area/awaymission/centcomAway/general)
 "gc" = (/turf/open/floor/plasteel/green/side{dir = 4},/area/awaymission/centcomAway/general)
 "gd" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "ge" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
@@ -319,13 +319,13 @@
 "gg" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "gh" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "gi" = (/turf/open/floor/plasteel/green/side{dir = 8},/area/awaymission/centcomAway/general)
-"gj" = (/turf/open/floor/plasteel/warning{dir = 4},/area/awaymission/centcomAway/general)
+"gj" = (/obj/machinery/light/built,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "gk" = (/turf/open/floor/wood,/area/awaymission/centcomAway/courtroom)
 "gl" = (/obj/structure/table,/turf/open/floor/wood,/area/awaymission/centcomAway/courtroom)
 "gm" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/awaymission/centcomAway/courtroom)
 "gn" = (/turf/open/floor/plasteel/vault{dir = 8},/area/awaymission/centcomAway/hangar)
-"go" = (/turf/open/floor/plating/warnplate{dir = 9},/area/awaymission/centcomAway/hangar)
-"gp" = (/obj/structure/table,/turf/open/floor/plating/warnplate{dir = 1},/area/awaymission/centcomAway/hangar)
+"go" = (/obj/structure/table/reinforced,/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
+"gp" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/vault{dir = 4},/area/awaymission/centcomAway/general)
 "gq" = (/obj/machinery/shieldgen,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
 "gr" = (/turf/open/floor/plasteel/green/corner{dir = 4},/area/awaymission/centcomAway/general)
 "gs" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
@@ -344,7 +344,7 @@
 "gF" = (/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/hangar)
 "gG" = (/obj/structure/closet/secure_closet/engineering_welding,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "gH" = (/obj/machinery/door/airlock/glass_command{name = "Bridge"; req_access_txt = "19"},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
-"gI" = (/obj/structure/chair/comfy/beige{dir = 1; icon_state = "comfychair_beige"},/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
+"gI" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/general)
 "gJ" = (/obj/machinery/door/airlock/centcom{name = "Centcom Security"; opacity = 1; req_access_txt = "101"},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/courtroom)
 "gK" = (/obj/machinery/portable_atmospherics/canister/carbon_dioxide,/turf/open/floor/plating,/area/awaymission/centcomAway/maint)
 "gL" = (/obj/structure/bodycontainer/crematorium,/turf/open/floor/engine,/area/awaymission/centcomAway/general)
@@ -363,9 +363,9 @@
 "gY" = (/obj/structure/chair{dir = 1},/turf/open/floor/carpet,/area/awaymission/centcomAway/courtroom)
 "gZ" = (/obj/machinery/door/airlock/centcom,/turf/open/floor/carpet,/area/awaymission/centcomAway/courtroom)
 "ha" = (/obj/effect/decal/cleanable/oil,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/hangar)
-"hb" = (/turf/open/floor/plating,/obj/structure/shuttle/engine/propulsion/burst{dir = 4},/turf/closed/wall/mineral/titanium/interior,/area/awaymission/centcomAway/hangar)
+"hb" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/thunderdome)
 "hc" = (/turf/open/floor/plasteel/black,/turf/closed/wall/mineral/titanium/interior,/area/awaymission/centcomAway/hangar)
-"hd" = (/obj/structure/table,/obj/item/weapon/paper/ccaMemo,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"hd" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/thunderdome)
 "he" = (/obj/item/xenos_claw,/turf/open/floor/engine,/area/awaymission/centcomAway/general)
 "hf" = (/obj/machinery/door/airlock/centcom{name = "Special Operations"; opacity = 1; req_access_txt = "103"},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/general)
 "hg" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
@@ -407,12 +407,12 @@
 "hQ" = (/turf/open/floor/plasteel/green/side{dir = 1},/area/awaymission/centcomAway/general)
 "hR" = (/obj/machinery/door/airlock/centcom,/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/general)
 "hS" = (/obj/structure/toilet{dir = 8},/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/general)
-"hT" = (/obj/machinery/button/door{id = "XCCHangar1"; name = "Hangar Bay Blast Doors"; pixel_x = -28; pixel_y = 7; req_access_txt = "2"},/turf/open/floor/plating/warnplate{dir = 8},/area/awaymission/centcomAway/hangar)
+"hT" = (/obj/machinery/light/built,/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/thunderdome)
 "hU" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/hangar)
-"hV" = (/obj/structure/rack,/obj/item/clothing/ears/earmuffs{pixel_x = -3; pixel_y = -2},/turf/open/floor/plating/warnplate{dir = 8},/area/awaymission/centcomAway/hangar)
+"hV" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/redblue{dir = 8},/area/awaymission/centcomAway/thunderdome)
 "hW" = (/obj/structure/rack,/obj/item/clothing/ears/earmuffs{pixel_x = -3; pixel_y = -2},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "hX" = (/obj/structure/closet,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"hY" = (/obj/structure/table,/obj/item/stack/sheet/metal{amount = 50},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
+"hY" = (/obj/structure/closet/crate/trashcart,/obj/machinery/light/built{icon_state = "tube1"; dir = 1},/turf/open/floor/plasteel/redblue{dir = 8},/area/awaymission/centcomAway/thunderdome)
 "hZ" = (/obj/structure/table,/obj/item/clothing/glasses/welding,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "ia" = (/turf/open/floor/plasteel/green/corner{dir = 2},/area/awaymission/centcomAway/general)
 "ib" = (/turf/open/floor/plasteel/green/side{dir = 2},/area/awaymission/centcomAway/general)
@@ -420,10 +420,10 @@
 "id" = (/obj/structure/table/wood,/obj/item/weapon/paper_bin,/turf/open/floor/wood,/area/awaymission/centcomAway/courtroom)
 "ie" = (/obj/structure/sign/vacuum,/turf/closed/wall/r_wall,/area/awaymission/centcomAway/hangar)
 "if" = (/obj/machinery/door/airlock/external,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/hangar)
-"ig" = (/obj/item/weapon/twohanded/required/kirbyplants,/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/general)
+"ig" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/barber{dir = 8; heat_capacity = 1},/area/awaymission/centcomAway/thunderdome)
 "ih" = (/obj/machinery/door/airlock/centcom,/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
 "ii" = (/obj/machinery/door/airlock/centcom{name = "Centcom Security"; opacity = 1; req_access_txt = "101"},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/general)
-"ij" = (/obj/structure/closet/secure_closet/injection,/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/courtroom)
+"ij" = (/obj/structure/sink{icon_state = "sink"; dir = 8; pixel_x = -12; pixel_y = 2},/obj/structure/mirror{pixel_x = -28},/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/thunderdome)
 "ik" = (/obj/structure/bed,/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/courtroom)
 "il" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/turf/open/floor/plating,/area/awaymission/centcomAway/courtroom)
 "im" = (/obj/machinery/vending/snack,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/courtroom)
@@ -488,79 +488,51 @@
 "jt" = (/obj/structure/closet/secure_closet/personal,/turf/open/floor/plasteel/vault{dir = 1},/area/awaymission/centcomAway/hangar)
 "ju" = (/obj/structure/window/reinforced{dir = 1},/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/general)
 "jv" = (/obj/effect/decal/cleanable/cobweb/cobweb2,/turf/open/floor/plasteel/grimy,/area/awaymission/centcomAway/general)
-"jw" = (/obj/structure/safe/floor,/obj/item/clothing/under/rank/centcom_officer,/obj/item/clothing/suit/det_suit,/obj/item/weapon/gun/ballistic/revolver/mateba,/turf/open/floor/plasteel/grimy,/area/awaymission/centcomAway/general)
+"jw" = (/obj/machinery/igniter,/obj/machinery/light/floor,/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/thunderdome)
 "jx" = (/obj/structure/table/reinforced,/obj/item/weapon/paper_bin,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/general)
 "jy" = (/obj/machinery/computer/secure_data,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/general)
-"jz" = (/obj/machinery/computer/card,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/general)
+"jz" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/thunderdome)
 "jA" = (/obj/item/weapon/stamp,/obj/structure/table/reinforced,/turf/open/floor/plasteel/vault{dir = 4},/area/awaymission/centcomAway/general)
 "jB" = (/obj/structure/table,/obj/item/weapon/firstaid_arm_assembly,/turf/open/floor/plasteel/vault,/area/awaymission/centcomAway/hangar)
 "jC" = (/obj/structure/table,/obj/item/device/assembly/flash/handheld,/obj/item/device/assembly/flash/handheld,/turf/open/floor/plasteel/vault,/area/awaymission/centcomAway/hangar)
-"jD" = (/obj/structure/table,/obj/item/stack/sheet/glass{amount = 50},/obj/item/stack/sheet/metal{amount = 50},/turf/open/floor/plasteel/vault,/area/awaymission/centcomAway/hangar)
+"jD" = (/obj/structure/rack,/obj/item/clothing/under/color/red,/obj/item/clothing/shoes/sneakers/brown,/obj/item/clothing/suit/armor/tdome/red,/obj/item/clothing/head/helmet/thunderdome,/obj/item/weapon/hatchet,/obj/item/weapon/shield/riot,/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/thunderdome)
 "jE" = (/obj/structure/table,/obj/item/device/mmi,/turf/open/floor/plasteel/vault,/area/awaymission/centcomAway/hangar)
 "jF" = (/obj/structure/table,/obj/item/weapon/storage/toolbox/mechanical,/turf/open/floor/plasteel/vault,/area/awaymission/centcomAway/hangar)
 "jG" = (/obj/machinery/door/airlock/maintenance_hatch{req_access_txt = "101"},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "jH" = (/obj/machinery/door/window,/obj/machinery/door/window/northright,/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
 "jI" = (/obj/structure/sink/puddle,/turf/open/floor/plasteel{icon_state = "asteroid6"; name = "sand"},/area/awaymission/centcomAway/general)
-"jJ" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid10"},/area/awaymission/centcomAway/general)
-"jK" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid4"},/area/awaymission/centcomAway/general)
+"jJ" = (/obj/structure/rack,/obj/item/clothing/under/color/green,/obj/item/clothing/shoes/sneakers/brown,/obj/item/clothing/suit/armor/tdome/green,/obj/item/clothing/head/helmet/thunderdome,/obj/item/weapon/hatchet,/obj/item/weapon/shield/riot,/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/thunderdome)
+"jK" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/green/side{dir = 4},/area/awaymission/centcomAway/thunderdome)
 "jL" = (/obj/structure/chair{dir = 4},/turf/open/floor/plasteel/green/side{dir = 8},/area/awaymission/centcomAway/general)
 "jM" = (/obj/structure/chair{dir = 8},/turf/open/floor/plasteel/green/side{dir = 4},/area/awaymission/centcomAway/general)
-"jN" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid"},/area/awaymission/centcomAway/general)
-"jO" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid11"},/area/awaymission/centcomAway/general)
-"jP" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid9"},/area/awaymission/centcomAway/general)
-"jQ" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid8"},/area/awaymission/centcomAway/general)
+"jN" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/thunderdome)
+"jO" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 8},/turf/open/floor/plasteel/redyellow{dir = 5},/area/awaymission/centcomAway/thunderdome)
+"jP" = (/obj/machinery/light/built{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel/redyellow{dir = 5},/area/awaymission/centcomAway/thunderdome)
 "jR" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plasteel{name = "plating"},/area/awaymission/centcomAway/general)
 "jS" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/open/floor/plasteel{name = "plating"},/area/awaymission/centcomAway/general)
 "jT" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plasteel{name = "plating"},/area/awaymission/centcomAway/general)
 "jU" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/turf/open/floor/plating,/area/awaymission/centcomAway/general)
-"jV" = (/turf/closed/wall/mineral/titanium,/area/shuttle/escape)
-"jW" = (/obj/structure/grille,/obj/structure/window/shuttle,/turf/open/indestructible/ground/desert,/area/shuttle/escape)
 "jX" = (/obj/machinery/door/poddoor/shutters{id = "XCCFerry"; name = "XCC Ferry Hangar"},/turf/open/floor/plasteel/delivery,/area/awaymission/centcomAway/hangar)
 "jY" = (/obj/structure/chair,/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
 "jZ" = (/obj/machinery/vending/coffee,/turf/open/floor/plasteel/green/side{dir = 8},/area/awaymission/centcomAway/general)
 "ka" = (/obj/machinery/vending/cigarette,/turf/open/floor/plasteel/green/side{dir = 4},/area/awaymission/centcomAway/general)
-"kb" = (/obj/machinery/door/airlock/external{name = "Arrival Airlock"},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
-"kc" = (/turf/open/floor/mineral/titanium,/turf/closed/wall/mineral/titanium/interior,/area/shuttle/escape)
-"kd" = (/obj/structure/table,/obj/item/weapon/storage/firstaid/fire,/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"ke" = (/obj/structure/chair{dir = 1},/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kf" = (/obj/machinery/computer/emergency_shuttle,/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kg" = (/obj/structure/table,/obj/item/weapon/storage/firstaid/regular{pixel_x = 2; pixel_y = 3},/obj/item/weapon/crowbar,/turf/open/indestructible/ground/desert,/area/shuttle/escape)
 "kh" = (/obj/machinery/door/airlock/centcom,/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/hangar)
 "ki" = (/obj/structure/table,/obj/item/weapon/paper/pamphlet/ccaInfo,/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
 "kj" = (/obj/machinery/door/poddoor/shutters{id = "XCCsec1"; name = "XCC Checkpoint 1 Shutters"},/turf/open/floor/plasteel/delivery,/area/awaymission/centcomAway/general)
 "kk" = (/obj/machinery/door/poddoor/shutters{id = "XCCsec2"; name = "XCC Checkpoint 2 Shutters"},/turf/open/floor/plasteel/delivery,/area/awaymission/centcomAway/general)
-"kl" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/open/floor/plating,/area/awaymission/centcomAway/general)
-"km" = (/obj/machinery/computer/atmos_alert,/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kn" = (/obj/structure/chair{dir = 8},/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"ko" = (/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kp" = (/obj/structure/chair{dir = 4},/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kq" = (/obj/machinery/computer/security,/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kr" = (/obj/structure/sign/vacuum,/turf/closed/wall/r_wall,/area/awaymission/centcomAway/general)
-"ks" = (/obj/machinery/computer/crew,/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kt" = (/obj/structure/chair{dir = 8},/obj/structure/extinguisher_cabinet{pixel_x = 0; pixel_y = -30},/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"ku" = (/obj/item/device/radio/intercom{name = "Station Intercom (General)"; pixel_x = 0; pixel_y = -29},/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kv" = (/obj/machinery/button/flasher{id = "cockpit_flasher"; pixel_x = 6; pixel_y = -24},/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kw" = (/obj/machinery/computer/communications,/turf/open/indestructible/ground/desert,/area/shuttle/escape)
-"kx" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{dir = 6; icon_state = "asteroid8"; name = "sand"},/area/awaymission/centcomAway/general)
-"ky" = (/obj/structure/flora/ausbushes,/turf/open/floor/plasteel{name = "plating"; icon_state = "asteroid5"},/area/awaymission/centcomAway/general)
 "kz" = (/obj/structure/chair{dir = 1},/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/general)
-"kA" = (/obj/machinery/status_display,/turf/closed/wall/mineral/titanium,/area/shuttle/escape)
-"kB" = (/turf/open/indestructible/ground/desert,/area/space)
 "kC" = (/obj/machinery/gateway{dir = 9},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "kD" = (/obj/machinery/gateway{dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "kE" = (/obj/machinery/gateway{dir = 5},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"kF" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "kG" = (/obj/machinery/gateway{dir = 8},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "kH" = (/obj/machinery/gateway/centeraway,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "kI" = (/obj/machinery/gateway{dir = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
-"kJ" = (/obj/machinery/button/door{id = "XCCFerry"; name = "Hangar Bay Shutters"; pixel_x = -28; pixel_y = 7; req_access_txt = "2"},/turf/open/floor/plating/warnplate{dir = 8},/area/awaymission/centcomAway/hangar)
 "kK" = (/obj/machinery/gateway{dir = 10},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "kL" = (/obj/machinery/gateway,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "kM" = (/obj/machinery/gateway{dir = 6},/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "kN" = (/turf/open/floor/plasteel/delivery{dir = 6},/area/awaymission/centcomAway/general)
 "kO" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "kP" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/open/floor/plating,/area/awaymission/centcomAway/general)
-"kQ" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/turf/open/floor/plating,/area/awaymission/centcomAway/general)
 "kR" = (/obj/structure/table,/obj/item/device/flashlight/torch/flare,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/hangar)
 "kS" = (/obj/structure/table,/obj/item/device/flashlight/torch/flare,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
 "kT" = (/obj/structure/table,/obj/item/device/multitool,/turf/open/floor/plating,/area/awaymission/centcomAway/hangar)
@@ -614,7 +586,6 @@
 "lP" = (/obj/structure/table/reinforced,/obj/item/weapon/reagent_containers/food/snacks/popcorn,/turf/open/floor/plasteel/barber{dir = 8; heat_capacity = 1},/area/awaymission/centcomAway/thunderdome)
 "lQ" = (/turf/open/floor/plasteel/redblue{dir = 8},/area/awaymission/centcomAway/thunderdome)
 "lR" = (/obj/structure/reagent_dispensers/beerkeg,/turf/open/floor/plasteel/redblue{dir = 8},/area/awaymission/centcomAway/thunderdome)
-"lS" = (/obj/structure/closet/crate/trashcart,/turf/open/floor/plasteel/redblue{dir = 8},/area/awaymission/centcomAway/thunderdome)
 "lT" = (/obj/structure/reagent_dispensers/water_cooler,/turf/open/floor/plasteel/redblue{dir = 8},/area/awaymission/centcomAway/thunderdome)
 "lU" = (/obj/machinery/vending/snack,/turf/open/floor/plasteel/redblue{dir = 8},/area/awaymission/centcomAway/thunderdome)
 "lV" = (/obj/structure/table,/obj/item/weapon/lipstick,/turf/open/floor/plasteel/vault{dir = 5},/area/awaymission/centcomAway/thunderdome)
@@ -638,7 +609,6 @@
 "mn" = (/turf/open/floor/plasteel/green/side{dir = 1},/area/awaymission/centcomAway/thunderdome)
 "mo" = (/turf/open/floor/plasteel/green/side{dir = 9},/area/awaymission/centcomAway/thunderdome)
 "mp" = (/obj/machinery/portable_atmospherics/scrubber/huge,/turf/open/floor/plasteel/green/side{dir = 5},/area/awaymission/centcomAway/thunderdome)
-"mq" = (/obj/structure/sink{icon_state = "sink"; dir = 8; pixel_x = -12; pixel_y = 2},/obj/structure/mirror{pixel_x = -28},/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/thunderdome)
 "mr" = (/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/thunderdome)
 "ms" = (/obj/structure/closet/secure_closet/personal,/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/thunderdome)
 "mt" = (/obj/structure/rack,/obj/item/clothing/under/color/red,/obj/item/clothing/shoes/sneakers/brown,/obj/item/clothing/suit/armor/tdome/red,/obj/item/clothing/head/helmet/thunderdome,/obj/item/weapon/hatchet,/obj/item/weapon/shield/riot,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/thunderdome)
@@ -646,7 +616,6 @@
 "mv" = (/obj/machinery/recharger{pixel_y = 4},/turf/open/floor/plating,/area/awaymission/centcomAway/thunderdome)
 "mw" = (/turf/open/floor/plating,/area/awaymission/centcomAway/thunderdome)
 "mx" = (/obj/machinery/door/poddoor{id = "XCCtdome"; name = "XCC Thunderdome"},/turf/open/floor/plasteel/delivery,/area/awaymission/centcomAway/thunderdome)
-"my" = (/obj/machinery/igniter,/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/thunderdome)
 "mz" = (/obj/structure/rack,/obj/item/clothing/under/color/green,/obj/item/clothing/shoes/sneakers/brown,/obj/item/clothing/suit/armor/tdome/green,/obj/item/clothing/head/helmet/thunderdome,/obj/item/weapon/hatchet,/obj/item/weapon/shield/riot,/turf/open/floor/plasteel/black,/area/awaymission/centcomAway/thunderdome)
 "mA" = (/obj/machinery/door/airlock/centcom,/turf/open/floor/plasteel/white,/area/awaymission/centcomAway/thunderdome)
 "mB" = (/turf/open/floor/plasteel/red/corner{dir = 2},/area/awaymission/centcomAway/thunderdome)
@@ -696,132 +665,132 @@
 "nt" = (/obj/machinery/button/door{id = "XCCtdome"; name = "XCC Thunderdome Go!"},/obj/structure/table/reinforced,/turf/open/floor/plasteel{icon_state = "floor"},/area/awaymission/centcomAway/thunderdome)
 
 (1,1,1) = {"
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababacadaeaeaeaeaeafacacacacacacacacacacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababagagagagagahaiaiaiaiaiaiaiaiajakalamanaoapaqarasatauavavauakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababagagakakakakakaiaiaiaiaiaiaiaiaiakawaxayazaxaxaxaAaBauaCaDauakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaEagagakaFaGaHakaiaiaIaJaJaiaiaiawaKawaxaLazaxaxaxaMaBauaNaOauakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaPagagakaQaGaGaRaiaiaIaJaJaiaiaiawaSawaxaxazaxaxaxaMaBauaNaOauakabaTaUaUaVababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWagagakakakakakaiaiaiaiaiaiaiaiawaKaXaxaxaYawaZawbabbauaNaOauakagagbcbcagbdababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWbebfbfbfbfbfbfbfbfbgbfbfbfbfbfbfbfbfbfbfbfbfaWagagakaFaGaHakaiaiaiaiaiaiaiaiaIbhawaxaxaYakakbiakakbjaNaObkakblagagagagagagabaabmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbpbqbrbsbpbfbfbfbfbfbfbfbpbqbrbsbpbfbgbtaWagagakaQaGaGaRaiaiaiaiaiaiaiaiaIbhawaxaxaYbubvbwbxakbybzaObAakbBagagagagagagabaabmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbCbDbDbDbCbCbEbCbCbCbEbCbCbDbDbDbCbfbfbfaWagagakakakakakaiaiaibFbFaiaiaiaIbhawbGbHaYakbIbwbJakbKbLbMbAakakakacababagagabababbmbNbNbNbNbNbNbNbNbNbNbNbNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbCbObObPbQbRbSbTbUbVbSbRbQbPbObObCbfbfbfaWagagakaFaGaHakaiaiaIbWbXaiaiaiaiakakakaKbYakakakakakbZcacaaKcbccccataacdagagceagcfcgcgcgcgcgcgcgcgcgcgcgcgcgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbCbObOchcicibScicicibScicichbObObCbfbfbfaWagagakaQaGaGaRaiaiaIcjaJaiaiaiaiaKckckckclcmcmcmcmcmcncocococococoaBaacpagagcqababbmbNbNbNbNbNbNbNbNbNbNbNbNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbpbPbOcrcibSbSbSbSbSbSbScicrbObPbpbfbfcsaWctcuakakakakakaiaiaIaJaJaiaiaiaicvckckcwcwcwckckckckcacocxcyczcAcoaBaacpagagabaabmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbpbCchcBcCcDcEbScFcGbScHchbCbpbfbfbObOceagagagcIaiaiaiaiaiaIaJaJaiaiaiaiaKckckckcJcmcmcmcmcmcKcocococococoaBaacpagagabaabmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbgbfbfbCcLcMcNcObScicibScHbCbfbfbfbfbfbOceagagagcIaiaiaiaiaiaIaJaJaiaiaiaiakakakaKcPakakakakakbZcacaaKcbccccbbaacQagagcqababbmbNbNbNbNbNbNbNbNbNbNbNbNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbgbObfbCcRcScScEbScHcTbScHbCcUbfbfcVcVcsaWaWcuakakakakakaiaiaiaiaiaiaiaiaIbhcWcXcYcZakbIbwbJakbKdadbbAakakakacababagagceagcecgcgcgcgcgcgcgcgcgcgcgcgcgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbfbCdccScSddbScHcTbSbSbEbfbfbfbodedfdgaWagakaFdhaHakaiaiaiaiaiaiaiaiaIbhcWaxaxcZdibvbwbxakdjbzdkbAakbBagagagagagagabababbmbNbNbNbNbNbNbNbNbNbNbNbNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbObgbfbCbCbCbCchbScicibScHbCbfbfbfbobebOdlaWagakaQaGaGaRaiaiaiaiaiaiaiaiaIbhcWaxaxcZakakbiakakdmdndkdoakdpagagagagagagabaabmbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbfbCdqbSdqbCbScHcTbScHdrbfbfbfbobebOdsaWagakakakakakaiaiaIaJdtaiaiaicWaKduaxaxcZcWdvcWdwataudndkauakakakakakagagagabaabmbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbfbCdqbSdxbCbScHcTbScHbCbfbfbfbobebOdsaWagakaFdhaHakaiaiaIaJaJaiaiaicWdycWaxaxazaxaxaxdzaBaudndkauakdAdBdCakagagababaabmbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbfbCdqbSbSdDbSbSbSbSbSbEbfbfbfbodEdFdGaWagakaQaGaGaRaiaiaiaiaiaiaiaicWaKcWaxaLazaxaxaxdzaBaudndkauakdHdIdIdJagagabaaaabmbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbfbCdqbSdqbCbScicicicibCbfbfbfaWaWaWaWaWagakakdKdLakakakdKdMdLakaiaiaiakcWaxayazaxaxaxdNaBaudOdPauakdQdRdSakagagabaaaabmbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbObCdqbSdqbCbSdTdUdVbRbCbfbgbfbtaWbdagagagacdWdXdYdYdZdYeadYebacecedecakeeefegeheiejekelbbauavavauakakakakakagagababababababaTaUaUaVababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbObPbCbCbCchembCbCbCbCbpbfbfbfbfaWagageneneneneneneneneneneneneneoeoeoenenenenenenenenenenenenenakakepeqbdagagageragagagagagagagagagagabababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbObObPbCescHbSeteubCbpbfbfbfbfbOaWagagenevewewewexeneveyezeyexeneoeoeoeneAeBeCeDeEeneFeGeHeIeJenagagagagagagagagagagagagagagagagagagagageqabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbfbObObCdVcieKciesbCbfbfbfbfbObOaWagageneweweLeweweMeweweweweweneNeOeNeneCeCeCeCePeQeCeCeCePeQenageReReReReReReReReReReReReReReReReReRagbdabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbObfbfbObCeSeTeUeVeWbCbfbfbfbfbObOaWagageneweweweweweneXeYeZeZfaenfbewfceneAeBeCeCeCeQeCeCeCeCeQenageRfdfeffeRfgfgfgeRfgfgfgfgfgfgfgfgeRagagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbfbfbfbpfhfifififjbpbfbfbfbfbfbOaWagagenewfkflfkewenfmfnfofpfqenewewewenfofpfrfsftenfufveCfwfxenageRfyfyfyfzfgfgfgfAfgfBfCfBfgfDfEfFeRagagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbObfbfbfbfaWagageneXfGfHfIfJenewfKfKfKfKfLewewewfMfNfNfNfNewfOewfPeCePeQenageReReReReRfgfgfgeRfQfRfBfSfQfTfUfUeRagagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbgbfbfbfbfbfbfbfbgbfbfbfbfbfbfbfaWagagenenenenenenenewewfVfWfWfWfWfWfWfWfWfWfXewewenenenenenenenageRfYfyfdeRfgfgfgeRfZfZfZfZfZfTfUfUeRaggaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfaWagagagagagagagagcugbewgcgdgeengfgggeengfghgiewgjcuagagagagagagageRfYgkgleRfgfgfgeRgmgmgkgmgmfTfUfUeRagagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbogngngngngngngngngngngngngngodfdfdfdfgpaWdpblepageraggqgqenewewgrgsgtgugvgwgxgygzgsgAewewgBgBgBgBgBgBgBgCeRgDgkgleRfgfgfgeRgEgEgkgEgEfTfUfUeRagaEabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbogFgFgFgFgFgFgFgFgFgFgFgFgnbebObObObOgGaWenenenenenenenenenewewewgHewewewgIewewewgHewewewgBfCfCfCfCfCgBgBgBgBfzgBgBgBgJgBgBgkgkgkgkgkfTfUfUeRaggKabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbogFgFgFgFgFgFgFgFgFgFgFgFgnbebObObObOgGaWgLgMgNgNengOgPgQengRewfVgSgTgUewewewgVgWgSfXewgXgBfgfgfgfgfgfgfAfgfgfgfgfgfgfgfgfAgkgYgYgYgkeReRgZeRcueRgBgBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbogFgFgFgFgFhagFhbbCbChcgFgnbebObObObOhdaWgNhegNgNhfeoeoeoeNewewgchghhewhiewhiewhjhggiewewfAfgfgfgfgfgfgfAfgfgfgfgfgfgfgfgfAgkgYgYgYgkeRfgfgfgfgfghkgBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbogFhbbCbChcgFgFhlhmcThngFgnbebObObOhohpaWhqgNgNhrhsgOeogOenfbewgcgshthuhvhwhxhyhzgsgiewfcgBgBgBgBhAhBgBgBgBgBhCgBgBgBfzgBgBgkgYgYgYgkeRfgfghDhDfgfghEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbogFhlhmcThngFgFhbbCbChcgFgnbebObObObOhFaWhqgNgNhrhGgOeogOenewewgcenfofpfpfpfpfpfrengiewewhHhIeCenaaaaaaaagBhJhKgBfyfyfyfygBgkfyfyfygkeRfghLfBfBhMfghNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabnbogFhbbCbChcgFgFgFgFgFgFgFgnbebObObObOhOaWhqgNgNhPengOeogOenewewgrhQhQhQhQhQhQhQhQhQgAewewhReChSenaaaaaaaagBhJhKgBfyfCfyfygBgBgBgBgBgBgBfghLfBfBhMfghNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWhTgFgFgFgFgFgFgFgFgFgFgFhUgnhVhWhXhYhZhOaWeneneneneneneNenenewewewewewiaibewibfXewgXewgRewhHeCeCenaaaaaaaagBichKgBidgmgmgkgBaaaaaaaaaahEfghLfBfBhMfghNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWieaWaWaWaWaWaWaWaWaWifaWaWaWaWaWaWaWaWaWaWigeoeoeoigeneoeneneneneneneneneniheneneneniienenenenenenaaaaaaaagBijikgBgDgEgkgkgBaaaaaaaaaailimfgininfgioilaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWaWipiqirgnisitcsiubObObOivcsaaaaaaaaaaaaengOgOgOgOgOeneNeniwixfliyizeneniAiAiAeniBeOgOiCaabmaaaaaaaaaaaaaagBgBgBgBhAiDiDiEgBbmbmbmbmbmgBgBgBgBgBgBgBgBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiFiGiHiIgngngFitcscscsiJcscscsfofpfpfpfpiKengOeoiLeogOgOeoeniMiMiMiMiMeneneOiheOeneneniienenbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWcsipiqirgngFcVcsiNgFbfgFiNcsgOgOgOgOgOgOgOgOiOiPiQgOgOeoiRiMiMiMflfleniSgAewgriTeniUgOiVenbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiFiGiHiIgngngnboiJbfiWbfbfbfiXeoeoeoeoeoeoeoeoiOiYiQeoeoeoeniMiMiMiMfleniSewewewiTiZgOgOjaenbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWcsipiqirgngnboiJbfbfbfbfbfiXeoeoeoeoeoeoeoeoiOjbiQeoeoeoeniMjcjdjejfengiewewewgcjgjhgOjienbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiFiGiHiIgngngFjjaWgFjkgFjkgFaWgOgOgOgOgOgOgOgOiOjliQgOgOeoeniMjmjnjojnenjpewewewjqjrjsgOjienbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWcsipiqirgngFjtaWgFgFgFgFgFaWfofpfpfpfpiKengOeojueogOgOeoenfljvjwiMiMenjpfXewiajqjxjyjzjAenbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiFiGiHiIgngngFjtaWjBjCjDjEjFaWaaaaaaaaaaaaengOgOgOgOgOenjGenenenenenenenfpfrjHfofpenenenenenenenenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWenigeoeoeoigenfleniBjIjJenjKgSjLewewewjMgSiBenjNjOjPjQenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWbegFbObOgFbObObOgFgFgFgFgFgFgFgFbObOgFaWenenenenenenenjGenjRjSjTeniBjUjLewewewjMjUjPenfofpfpiKenfoiKjVjWjWjWjWjWjVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajXbogFgFgFgFbObOgFgFgFgFgFhagFgFgFgFbOgFaWhQhQhQhQhQhQenewewjYjYewenenenjZewewewkaenenenewjYjYewkbflkbkckdkekfkekgkcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajXbogFgFgFbOgFgFgFgFgFgFgFgFgFgFgFgFgFgFkhewewewewewewihewewkikiewihkjihewewewewewihkkihewewewewklfpiKkmknkokokokpkqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajXbogFgFgFgFgFgFgFhahagFgFgFgFgFgFgFgFgFaWfofpfpfpfpiKenewewkikiewenkjenjLewewewjMenkkenewewewewkraaaaksktkukvkokpkwaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajXbogFgFgFgFgFgFgFgFgFgFgFgFgFgFgFgFgFgFaWiBkxiBjNkyjNenewewkzkzeweOkjeOgiewewewgceOkkeOewewewewenaaaajVjVjVjVkokAjVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajXbogFgFgFbObOgFgFgFgFgFgFgFgFgFgFgFgFgFaWfofpfpfpfpiKenewewewewewenkjenjLewewewjMenkkenewewewewkraaaakBkBkBkBkBkBkBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajXbogFgFbOkCkDkEbOgFgFgFgFgFgFgFgFgFbOgFkhewewewewewewihewewewewewihkjihewewewewewihkkihewewewewkFfpiKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajXbogFbObOkGkHkIbOgFgFgFgFbOgFgFgFbObOgFaWfWfWfWfWfWfWenewewewewewenkjenjLewewewjMenkkenewewewewkbflkbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWkJgFbOgFkKkLkMbObOgFgFgFgFgFgFbObObObOaWenfofpfpiKenenkNkNkNkNkNenkjkOjpfWfWfWjqkPkkenewewewewgfggkQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWiebObObObObObOgFgFbOgFgFgFgFkRkSkThOaWaWbmaaaaaaaaaaenkUiZjgjrjxenenengdfreofoghenenenewewewewkbflkbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaabmbmaaaaaaaaenjigOkVkWkXenkYkZlalbeolcgskZkYenkNkNkNkNfofpiKaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabmbmaaaaaaenjigOgOgOldenewlekYlbeolckYlfeweniZjgjrjxenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabmbmaaaaenlggOgOgOlheneOlieOlbeolceOlieOenjiljkWkXenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabmbmaaenjigOgOgOiUenlkewewewgSewewewgcenjigOgOldenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabmbmenjaiVgOiUiUiilllmlmlnjUiafWfWjqiijijiiUloenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabmenenenenenenenenenenlphHlqenenenenenenenenenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabmlrlsgSeoeoeogSltlrbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabmhgluhgeoeoeohgluhgbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabmjUluhgeoeoeohglvjUbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabmenenhglwlrlwhgenenbmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlxlxlxlylzlAlxaaaaaaaajUfljUfljUaaaaaaaalxlylzlAlxlxlxlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlBlClClxlxlxlxlxlxlxlxlxlxlDlxlDlxlxlxlxlxlxlxlxlxlxlElFlGlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlHlHlHlHlHlHlHlHlHlHlHlHlHlxlHlHlHlxlHlHlHlHlHlHlHlHlHlHlHlHlHlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlHlHlHlHlHlHlHlHlHlHlHlHlHlHlIlHlHlHlIlHlHlHlHlHlHlHlHlHlHlHlHlHlHlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlHlHlxlJlxlxlxlxlxlxlxlxlxlxlxlKlLlMlxlxlxlxlxlxlxlHlNlNlNlHlHlHlHlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlHlHlxlOlOlOlOlOlPlQlQlQlQlRlQlQlQlQlQlRlSlRlTlUlxlHlFlFlFlHlHlHlHlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlHlHlxlOlOlOlOlOlPlQlQlQlQlQlQlQlQlQlQlQlQlQlQlQlxlHlVlFlFlHlHlHlHlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlHlHlxlWlWlXlXlOlPlQlQlQlQlQlQlQlQlQlQlQlQlQlQlQlxlHlYlYlYlHlHlHlHlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlHlHlxlxlxlxlxlxlxlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlxlxlxlxlxlxlHlHlHlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxmalHlHlxlxmbmbmbmblxmcmdmdmdmdmdmdmdmdmdmdmdmdmdmelxmbmbmbmblxlHlHlHmflxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlxlxlxlxmalHlxlxlxmgmgmgmglxmhmimjmimjmimkmlmmmnmomnmomnmplxmgmgmgmglxlxlxlHmflxlxlxlxlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxmqmrmrmslxmalHlxmtmumvmwmwmwmxmamlmlmlmlmymlmlmlmymlmlmlmlmfmxmwmwmwmvmumzlxlHmflxmsmrmrmrlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxmrmrmrmrmAmalHlxmtmumvmwmwmwmxmamlmBmlmlmlmkmCmmmlmlmlmDmlmfmxmwmwmwmvmumzlxlHmfmAmrmrmrmElxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxmrmsmsmslxmalHlxmtmumwmwmwmwmxmamlmFmlmymlmFmGmHmlmymlmHmlmfmxmwmwmwmwmumzlxlHmflxmsmsmsmrlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxmIlxlxlxlxmalHlxmtmumvmwmwmwmxmamlmJmlmlmlmKmnmLmlmlmlmMmlmfmxmwmwmwmvmumzlxlHmflxlxlxlxmNlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxmrmOmrmPlxmalHlxmQmumvmwmwmwmxmamlmlmlmlmymlmlmlmymlmlmlmlmfmxmwmwmwmvmumRlxlHmflxmSmrmOmrlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxmrmrmrmPlxmalHlxmTlxmUmUmUmUlxmVmCmWmCmWmCmKmlmLmXmYmXmYmXmZlxmUmUmUmUlxmTlxlHmflxmSmrmrmrlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxmrnamPlxmalHlHlHlxnbnbnbnblxmcmdmdmdmdmdmdmdmdmdmdmdmdmdmelxnbnbnbnblxlHlHlHmflxmSmrmrlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlxlxlxmalHlHlHlxlxlxlxlxlxncncndndndndncnencndndndndncnclxlxlxlxlxlxlHlHlHmflxlxlxlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlxlxlHlHlHlHlHlHlHlxncncncncncncncnfncncncncncncnclxlHlHlHlHlHlHlHlxlxlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlHlHlHlHlHlHngncncncnhncncncncncncncncncncncnglHlHlHlHlHlHlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlxlxlxlxlxlxninjnknkncncncncncncnlnmnnnonplxlxlxlxlxlxlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlxlxlxlxlxnqnrnslxlxlxlxlxlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxntlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalxlxlxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebmbmbpbpbpbpbpbmbpbpbpbpbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebmbmbpbmbqbmbpbpbrbpbpbmbpbpbmbpbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebeabababababababacadaeaeaeaeaeafacacacacacacacacacacacacacacacacbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebeababagagagagagahaiaiaiaiaiaiaiaiajakalamanaoapaqarasatauavbGauakbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebeababagagakakakakakbUaiaiaiaiaiaiaiaiakawaxayazaxaxaxaAaBauaCaDauakbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebeabaEagagakaFaGaHakaiaiaIaJaJaiaiaiawaKawaxaLazaxaxaxaMaBauaNaOauakbebebebebebebebebebebebebebebebebebebebebsbsbsbsbsbsbsbsbebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebeabaPagagakaQcFaGaRaiaiaIaJaJaiaiaiawaSawaxaxazaxaxaxaMaBauaNaOauakabaTaUaUaVababbebebebebebebebebebebebsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWagagakakakakakbUaiaiaiaiaiaiaiawaKaXaxaxaYawaZawbabbauaNaOcGakagagbcbcagbdababbebebebebsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWbfbfbfbfcHbfbfbfbfbgbfbfbfbfbfcHbfbfbfbfbfbfaWagagakaFaGaHakaiaiaiaiaiaiaiaiaIbhawaxaxaYakakbiakakbjaNaObkakblagagagagagcLabbebebebebsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbgcMaWagagakaQcFaGaRaiaiaiaiaiaiaiaiaIbhawaxaxaYbubvbwbxakbybzaObAakbBagagagagagagabbebebebebsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfaWagagakakakakakbUaiaibFbFaiaiaiaIbhawcNbHaYakbIcObJakbKbLbMbAakakakacababagagabababbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfaWagagakaFaGaHakaiaiaIbWbXaiaiaiaiakakakaKbYakakakakakbZcacaaKcbccccatcRcdagagceagcfbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfaWagagakaQcFaGaRaiaiaIcjaJaiaiaiaiaKckckckclcmcmcScmcmcncocococococoaBaacpagagabababbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfdcaWctcuakakakakakaiaiaIaJaJaiaiaiaicvckckcwcwcwckckckckcacocxcyczcAcoaBaacpagagabbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbObOceagagagcIaiaiaiaiaiaIaJaJaiaiaiaiaKckckckcJcmcmcmcmcmcKcocococococoaBaacpagcLabbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbgbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbOceagagagcIaiaiaiaiaiaIaJaJaiaiaiaiakakakaKcPakakakakakbZcacaaKcbccccbbddcQagagabababbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbgbObfbfbfbfbfbfbfbfbfbfbfbfcUbfbfcVdecsaWaWcuakakakakakbUaiaiaiaiaiaiaiaIbhcWcXcYcZakdfbwbJakbKdadbbAakakakacababagagceagcebsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbobDbObEaWagakaFdhaHakaiaiaiaiaiaiaiaiaIbhcWaxaxcZdibvbwbxakdjbzdkbAakbBagagagagagagabababbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbObgbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbobObObDaWagakaQcFaGaRaiaiaiaiaiaiaiaiaIbhcWaxaxcZakakbiakakdmdndkdoakdpagagagagagagabbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbobObOdgaWdlakakakakakbUaiaIaJdtaiaiaicWaKduaxaxcZcWdvcWdwataudndkauakakakakakagagagabbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbobObObNaWagakaFdqaHakaiaiaIaJaJaiaiaicWdycWaxaxazaxaxaxdzaBaudndkauakbPbQdIakagagababbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbobEbDbOaWagakaQaGaGaRaiaiaiaiaiaiaiaicWaKcWaxaLazaxaxaxdzaBaudndkauakbRdIdIdJagagabbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfaWaWaWaWaWagakakdKdLakakakdKdMdLakaiaiaiakdraxayazaxaxaxdNaBaudOdPauakbRdsbSakagcLabbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbObfbfbfbfbfbfbfbfbfbfbfbfbgbfbtaWbdagagagacdWdXdZdZdZdZdZdZebacecedecakeeefegeheiejekelbbauavavauakakakakakagagababababababaTaUaUaVababbsbsbsbsbsbsbsbsbsbsbebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbObfbfbfbfbfbfbfbfbfbfbfbfbfbfbfaWagageneneneneneneneneneneneneneoeoeoenenenenenenenenenenenenenakakepeqbdagagageragagagagagagagagagagabababbsbsbsbsbsbsbsbsbebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbObfbfbfbfbfbfbfbfbfbfbfbfbfbfbOaWdlagenevewewewexeneveyezeyexeneoeodxeneAeBeCeDeEeneFeGeHeIeJenagagagdAagagagagagagagagagagagagagagagageqabbsbsbsbsbsbsbsbebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbObOaWagageneweweLeweweMeweweweweweneNeOeNeneCeCeCeCePeQeCeCeCePeQenageReReReReReReReReReReReReReReReReReRagbdabbsbsbsbsbsbsbsbebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbObfbfbfbfbfbfbfbfbfbfbfbfbfbfbObOaWagagendBeweweweweneXdCeZeZfaenfbewfceneAeBeCdDeCeQeCeCeCeCeQenageRfdfeffeRfgfgfgeRfgfgfgfgfgfgfgfgeRagagabbsbsbsbsbsbsbsbebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfdEaWagagenewfkflfkewenfmfnfofpfqenewewewenfofpfrfsftenfufveCfwfxenageRfydFfyfzfgfgfgfAfgfBfCfBfgfDfEfFeRagagabbsbsbsbsbsbsbebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbObfbfbfbfaWagageneXfGdGfIfJenewfKfKfKfKdHewewewdQfNfNfNfNewfOewfPdDePeQenageReReReReRfgfgfgeRfQfRfBfSfQfTfUfUeRagagabbsbsbsbsbsbsbebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbgbfbfbfbfbfbfbfbgbfbfbfbfbfbfbfaWagagenenenenenenenewewfVfWfWdRfWfWfWdRfWfWfXewewenenenenenenenageRfYfyfdeRfgfgfgeRfZfZfZfZfZfTfUfUeRaggaabbsbsbsbsbebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbobfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfaWdlagagagagagagagcuewewgcgdgeengfgggeengfghgiewewcuagagagagagagageRfYgkgleRfgfgfgeRgmgmgkgmgmfTfUfUeRagagabbebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbogngngngngngngngngngngngngngngngngngnbTaWdpblepageraggqgqenewewgrgsgtgugvgwgxgygzgsgAewewgBgBgBgBgBgBgBgCeRgDgkgleRfgfgfgeRgEgEgkgEgEfTfUfUeRagaEabbebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbogFgFgFgFgFgFgFgFgFgFgFgFgngnbObObObOgGaWenenenenenenenenenewewewgHewewewewewewewgHewewewgBfCfCdSfCfCgBgBgBgBfzgBgBgBgJgBgBgkgkgkgkgkfTfUfUeRaggKabbebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbogFgFgFgFgFgFgFgFgFgFgFgFgngnbObObObOgGaWgLgMgNgNengOgPgQengRewfVgSgTgUewewewgVgWgSfXewgXgBfgfgfgfgfgfgfAfgfgfgfgfgfgfgfgfAgkgYgYgYgkeReRgZeRcueRgBgBbebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbogFgFgFgFgFhagFdTbCbChcgFgngnbObObObOdUaWgNhegNgNhfeoeoeoeNewewgchghhewhiewhiewhjhggiewewfAfgfgfgfgfgfgfAfgfgfgfgdVfgfgfgfAgkgYgYgYgkeRfgfgfgfgfghkgBbVbVbebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbogFdTbCbChcgFgFhlhmcThngFgngnbObObOhohpaWhqgNgNhrhsgOeogOenfbewgcgshthuhvhwhxhyhzgsgiewfcgBgBgBgBhAhBgBgBgBgBhCgBgBgBfzgBgBgkgYgYgYgkeRfgfghDhDfgfghEbVbVbVbVbVbebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbogFhlhmcThngFgFdTbCbChcgFgngnbObObObOhFaWhqgNgNhrhGdYeogOenewewgcenfofpfpfpfpfpfrengiewewhHhIeCenbebebebegBhJhKgBfyfyfyfygBgkfyfyfygkeRfghLfBfBhMfghNbVbVbVbVbVbebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbnbogFdTbCbChcgFgFgFgFgFgFgFgngnbObObObOhOaWhqeagNhPengOeogOenewewgremhQhQhQhQhQhQhQemgAewewhReChSenbebebebegBhJhKgBfyfCfyfygBgBgBgBgBgBgBfghLfBfBhMfghNbVbVbVbVbVbebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWcggFgFgFesgFgFgFgFgFgFgFhUgnchhWhXethZhOaWeneneneneneneNenenewewewewewiaibewibfXewgXewgRewhHeCdDenbebebebegBichKgBidgmgmgkgBbebebebebehEfghLfBfBhMfghNbVbVbVbVbVbebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWieaWaWaWaWaWaWaWaWaWifaWaWaWaWaWaWaWaWaWaWeoeoeoeoeoeneoeneneneneneneneneniheneneneniienenenenenenbebebebegBeuikgBgDgEgkgkgBbebebebebeilimfgininfgioilbVbVbVbVbVbebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWaWipiqireKisitcsiubObObOivcsbpbpbpbpbpbpengOgOgOgOgOeneNeniwixiMiyizeneniAiAiAeneSeOgOiCeTcibebebebebebebegBgBgBgBhAiDiDiEgBbebebebebegBgBgBgBgBgBgBgBbVbVbVbVbebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsiFiGiHiIgngngFitcscscsiJcscscsfofpfpfpfpiKengOeoiLeogOeUeoeneViMiMiMiMeneneOiheOeneneniienencibebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWcsipiqirgngFcVcsiNgFbfgFiNcsgOgOgOgOgOgOeUgOiOiPiQgOgOeoiRiMiMiMiMiMeniSgAewgriTeniUgOiVencqbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsiFiGiHiIgngngnboiJbfiWbfbfbfiXeoeoeoeoeoeoeoeoiOiYiQeoeoeoeniMiMiMiMiMeniSewewewiTiZgOgOjaencqbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWcsipiqirgngnboiJbfbfbfbfbfiXeoeoeoeoeoeoeoeoiOjbiQeoeoeoeniMjcjdjejfeneWewewewgcjgjhgOjiencqbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsiFiGiHiIgngngFjjaWgFjkgFjkgFaWgOgOgOgOgOgOeYgOiOjliQgOgOeoeniMjmjnjojnenjpewewewjqjrjsgOjiencqbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWcsipiqirgngFjtaWgFgFgFgFgFaWfofpfpfpfpiKengOeojueogOeYeoeniMjvfhiMiMenjpfXewiajqjxjyfijAencqbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsiFiGiHiIgnfjgFjtaWjBjCfHjEjFaWbpbpbpbpbpbpengOgOgOgOgOenjGenenenenenenenfpfrjHfofpenenenenenenenenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWeneoeoeoeoeoenfleniBjIiBeniBgSjLewewewjMgSiBeniBiBiBiBenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWgngFbObOgFbObObOgFfLgFgFgFgFgFgFbObOgFaWenenenenenenenjGenjRjSjTeneSjUjLewewewjMjUeSenfofpfpiKencrcrbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsjXbogFgFgFgFbObOgFgFgFgFgFhagFgFgFgFbOgFaWhQhQemhQhQhQenewewjYjYewenenenjZewewewkaenenenewjYjYewencrcrbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsjXbogFgFgFbOgFgFgFgFgFgFgFgFgFgFgFgFgFgFkhewewewewewewihewewkikiewihkjihewewewewewihkkihewewewewencrcrbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsjXbogFgFgFgFgFgFgFhahagFgFgFgFgFgFgFgFgFaWfofpfpfpfpiKenewewkikiewenkjenfMewewewgbenkkenewewewewenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsjXbogFgFgFgFgFgFgFgFgFgFgFgFgFgFgFgFgFgFaWiBiBiBiBiBiBendBewkzkzeweOkjeOgiewewewgceOkkeOewewewewenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsjXbogFgFgFbObOgFgFgFgFgFgFgFgFgFgFgFgFgFaWfofpfpfpfpiKenewewewewewenkjenfMewewewgbenkkendBewewewenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsjXbogFgFbOkCkDkEbOgFgFgFgFgFgFgFgFgFbOgFkhewewewewewewihewewewewewihkjihewewewewewihkkihewewewewencrcrbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsjXbogFbObOkGkHkIbOgFgFgFgFbOgFgFgFbObOgFaWfWfWdRfWfWfWenewewewewewenkjenjLewewewjMenkkenewewewewencrcrbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWcBgFbOgFkKkLkMbObOgFgFgFgFgFgFbObObObOaWenenenenenenenkNkNkNkNkNenkjkOjpfWfWfWjqkPkkenewewewewencrcrbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsaWaWbObOgjbObObOgFgFgjgFgFgFeskRkSkThOaWaWcqbebebebebeenkUiZjgjrjxenenengdfreofoghenenenewewewewencrcrbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsbsciaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWaWbecqcqbebebebeenjigOkVkWkXengokZlalbeolcgskZgoenkNkNkNkNencrcrbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebecqcqbebebeenjigOgOgOldenewlekYlbeolckYlfeweniZjgjrjxenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebecqcqbebeenlggOgOgOlheneOlieOlbeolceOlieOenjiljkWkXenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebecqcqbeenjigOgOgOiUenlkewewewgSewewewgcengpgOgOldenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebecqcqenjaiVeYiUiUiilllmlmlnjUiafWfWjqiijijiiUloenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebecqenenenenenenenenenenlphHlqenenenenenenenenenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelrlsgSeogIeogSltlrbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebehgluhgeoeoeohgluhgbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebejUluhgeoeoeohglvjUbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebeenenhglwlrlwhgenenbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlxlxlxlxlylzlAlxbebebebejUfljUfljUbebebebelxcCcDcElxlxlxlxlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlxlBlClClxlxlxlxlxlxlxlxlxlxlDlxlDlxlxlxlxlxlxlxlxlxlxlElFlGlxlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlxlHlHlHlHlHlHhblHlHlHlHlHlHlxlHlHlHlxlHlHlHlHlHlHhblHlHlHlHlHhdlxlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlHlHlHlHlHlHlHlHlHlHlHlHlHlHlIlHhTlHlIlHlHlHlHlHlHlHlHlHlHlHlHlHlHlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlHlHlxlJlxlxlxlxlxlxlxlxlxlxlxlKlLlMlxlxlxlxlxlxlxlHlNlNlNlHlHlHlHlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlHlHlxlOlOlOlOlOlPlQlQlQhVlRlQlQlQlQlQlRhYlRlTlUlxlHlFlFlFlHlHlHlHlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlHlHlxiglOlOlOlOlPlQlQlQlQlQlQlQlQlQlQlQlQlQlQlQlxlHlVlFlFlHlHlHlHlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlHlHlxlWlWlXlXlOlPlQlQlQlQlQlQlQlQlQlQlQlQlQlQlQlxlHlYlYlYlHlHlHhdlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlxlHlHlxlxlxlxlxlxlxlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlxlxlxlxlxlxlHlHlHlxlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlxmalHlHlxlxmbmbmbmblxmcmdmdmdmdmdmdmdmdmdmdmdmdmdmelxmbmbmbmblxlHlHlHmflxlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlxlxlxlxlxmalHlxlxlxmgmgmgmglxmhmimjmimjmimkmlmmmnmomnmomnmplxmgmgmgmglxlxlxlHmflxlxlxlxlxlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxijmrmrmslxmalHlxmtmumvmwmwmwmxmamlmlmlmljwmlmlmljwmlmlmlmlmfmxmwmwmwmvmumzlxlHmflxmsmrmrjzlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxmrmrmrmrmAmalHlxmtmumvmwmwmwmxmamlmBmlmlmlmkmCmmmlmlmlmDmlmfmxmwmwmwmvmumzlxlHmfmAmrmrmrmElxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxmrmsmsmslxmalHlxjDmumwmwmwmwmxmamlmFmljwmlmFmGmHmljwmlmHmlmfmxmwmwmwmwmujJlxlHmflxmsmsmsmrlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxmIlxlxlxlxmalHlxmtmumvmwmwmwmxmamlmJmlmlmlmKmnmLmlmlmlmMmlmfmxmwmwmwmvmumzlxlHjKlxlxlxlxmNlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxmrmOmrmPlxmalHlxmQmumvmwmwmwmxmamlmlmlmljwmlmlmljwmlmlmlmlmfmxmwmwmwmvmumRlxlHmflxmSmrmOmrlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxjNmrmrmPlxmalHlxmTlxmUmUmUmUlxmVmCmWmCmWmCmKmlmLmXmYmXmYmXmZlxmUmUmUmUlxmTlxlHmflxmSmrmrjzlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebelxlxmrnamPlxmalHlHlHlxnbnbnbnblxmcmdmdmdmdmdmdmdmdmdmdmdmdmdmelxnbnbnbnblxlHlHlHmflxmSmrmrlxlxbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVlxlxlxlxlxmalHlHlHlxlxlxlxlxlxncncndndndndncnencndndndndncnclxlxlxlxlxlxlHlHlHmflxlxlxlxlxbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVlxlxlxlxlHlHlHlHlHlHlHlxjOncncncncncncnfncncncncncncjPlxlHlHlHlHlHlHlHlxlxlxlxbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVlxlxlHlHlHlHlHlHngncncncnhncncncncncncncncncncncnglHlHlHlHlHhdlxlxbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVlxlxlxlxlxlxlxlxninjnknkncncncncncncnlnmnnnonplxlxlxlxlxlxlxlxbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVlxlxlxlxlxlxlxnqnrnslxlxlxlxlxlxlxbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVlxlxntlxlxbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVlxlxlxbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
+bebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbVbebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebebe
 "}

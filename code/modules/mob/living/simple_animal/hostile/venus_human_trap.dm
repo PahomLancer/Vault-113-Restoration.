@@ -47,16 +47,17 @@
 
 
 /mob/living/simple_animal/hostile/venus_human_trap
-	name = "venus human trap"
-	desc = "Now you know how the fly feels."
+	icon = 'icons/fallout/mobs/animal.dmi'
+	name = "Spore plant"
+	desc = "Spore plants are mutated Venus Flytrap. Before the Great War, they could be found in nitrogen and phosphorus-poor environments and having a trapping structure formed by the terminal portion of each of the plant's leaves prey triggered tiny hairs on their inner surfaces allowed them to feed. After the Great War, they were experimented with and mutated as part of the botanical and agricultural experiments of Vault 22 and in the Big MT. After the opening of Vault 22, they were spread by seeds and spores carried by the wind across the Mojave Wasteland, Zion Canyon, and into New California."
 	icon_state = "venus_human_trap"
 	layer = SPACEVINE_MOB_LAYER
 	health = 50
 	maxHealth = 50
 	ranged = 1
 	harm_intent_damage = 5
-	obj_damage = 60
-	melee_damage_lower = 25
+	obj_damage = 30
+	melee_damage_lower = 15
 	melee_damage_upper = 25
 	a_intent = INTENT_HARM
 	attack_sound = 'sound/weapons/bladeslice.ogg'
@@ -69,6 +70,7 @@
 	var/grasp_pull_chance = 85
 	var/grasp_range = 4
 	del_on_death = 1
+	XP = 5
 
 /mob/living/simple_animal/hostile/venus_human_trap/handle_automated_action()
 	if(..())

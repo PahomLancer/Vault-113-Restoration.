@@ -109,6 +109,12 @@
 	ammo_type = /obj/item/ammo_casing/caseless/a84mm
 	caliber = "84mm"
 	max_ammo = 1
+	icon_state = "missile"
+
+/obj/item/ammo_box/magazine/internal/rocketlauncher/update_icon()
+	..()
+	if(max_ammo == 0)
+		qdel(src)
 
 /obj/item/ammo_box/magazine/internal/speargun
 	name = "speargun internal magazine"
@@ -154,7 +160,8 @@
 	name = "gatling gun fusion core"
 	ammo_type = /obj/item/ammo_casing/caseless/laser/gatling
 	caliber = "gatling"
-	max_ammo = 1000
+	max_ammo = 600
+	icon_state = "gatlinglasercore"
 /obj/item/ammo_box/magazine/internal/minigun/get_round(keep = 0)
 	return ..()
 

@@ -253,6 +253,16 @@
 	origin_tech = "combat=4;magnets=7;powerstorage=3;abductor=3"
 	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
 
+/obj/item/weapon/gun/energy/alien_fallout
+	name = "alien blaster"
+	desc = "A strange gun of obviously alien origin. It can support small energy cells, however."
+	ammo_type = list(/obj/item/ammo_casing/energy/alien)
+	//pin = /obj/item/device/firing_pin/abductor
+	icon_state = "alien"
+	item_state = "alien"
+	origin_tech = "combat=4;magnets=7;powerstorage=3;abductor=3"
+	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
+
 /obj/item/weapon/paper/abductor
 	name = "Dissection Guide"
 	icon_state = "alienpaper_words"

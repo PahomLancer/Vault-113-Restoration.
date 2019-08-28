@@ -37,9 +37,9 @@
 
 /datum/weather_controller/rain/on_mob_enter(mob/mob, area/area = locate(/area/f13/wasteland))
 	if(area.open_space)
-		mob.playsound_local(get_turf(mob), outside_sound, vol = 100, channel = RAIN_CHANNEL, repeat = 1)
+		mob.playsound_local(get_turf(mob), outside_sound, vol = 15, channel = RAIN_CHANNEL, repeat = 1)
 	else if(area.roof)
-		mob.playsound_local(get_turf(mob), inside_sound, vol = 100, channel = RAIN_CHANNEL, repeat = 1)
+		mob.playsound_local(get_turf(mob), inside_sound, vol = 15, channel = RAIN_CHANNEL, repeat = 1)
 	. = ..()
 
 /datum/weather_controller/rain/can_start()

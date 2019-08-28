@@ -182,3 +182,13 @@
 		return 1
 	return 0
 
+
+/obj/effect/decal/cleanable/cum
+	name = "cum"
+	desc = "Fuck, what is this!? IS IT CUM?"
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "cum1"
+	random_icon_states = list("cum1", "cum2", "cum3", "cum4", "cum5", "cum6", "cum7", "cum8", "cum9", "cum10", "cum11", "cum12")
+	var/list/viruses = list()
+	blood_DNA = list()
+

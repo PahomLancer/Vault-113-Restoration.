@@ -21,7 +21,7 @@
 	plantname = "Death Nettles"
 	product = /obj/item/weapon/grown/nettle/death
 	endurance = 25
-	maturation = 8
+	maturation = 40
 	yield = 2
 	genes = list(/datum/plant_gene/trait/repeated_harvest, /datum/plant_gene/trait/plant_type/weed_hardy, /datum/plant_gene/trait/stinging)
 	mutatelist = list()

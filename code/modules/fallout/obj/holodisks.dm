@@ -56,6 +56,31 @@
 	soundFile =  'sound/f13music/new_vegas_show_bonus_2.ogg'
 	soundLength = 2448
 
+/obj/item/weapon/holodisk/civildefence_samaya
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a Civil Defence song.<br>An inscription on the side reads \"Sam (Aya)\""
+	soundFile =  'sound/f13music/civildefence1.ogg'
+	soundLength = 255
+
+/obj/item/weapon/holodisk/JohnnyGuitar
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a song.<br>An inscription on the side reads \"Johnny Guitar\""
+	soundFile =  'sound/f13music/Johnny Guitar.ogg'
+	soundLength = 183
+
+/obj/item/weapon/holodisk/maybe
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a song.<br>An inscription on the side reads \"Maybe\""
+	soundFile =  'sound/f13music/maybe.ogg'
+	soundLength = 1836
+
+/obj/item/weapon/holodisk/takemehome
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a song.<br>An inscription on the side reads \"Take me Home, Country roads\""
+	soundFile =  'sound/f13music/takemehome.ogg'
+	soundLength = 1836
+
+/obj/item/weapon/holodisk/WouldnItBeNice
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a song.<br>An inscription on the side reads \"Wouldn't It Be Nice\""
+	soundFile =  'sound/f13music/wibn.ogg'
+	soundLength = 1836
+
 //One special holodisk can gib the listener or cripple someone else.
 
 /obj/item/weapon/holodisk/cursed

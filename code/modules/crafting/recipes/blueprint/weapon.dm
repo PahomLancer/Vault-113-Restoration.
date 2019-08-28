@@ -75,3 +75,17 @@
 /obj/item/blueprint/laser_rcw
 	name = "RCW blueprint"
 	recipe = /datum/crafting_recipe/laser_rcw
+
+
+///bench///
+
+/obj/item/bench/ballistic
+	name = "Weapon Crafting Bench"
+	icon_state = "bench"
+	recipe = list(/datum/crafting_recipe/trail_carbine, /datum/crafting_recipe/assault_rifle, /datum/crafting_recipe/pipegun, /datum/crafting_recipe/rifle308, /datum/crafting_recipe/smg10mm, /datum/crafting_recipe/a_rifle308, /datum/crafting_recipe/n99)
+
+/obj/item/bench/laser
+	name = "Energy Weapon Crafting Bench"
+	icon_state = "bench_l"
+	recipe = list(/datum/crafting_recipe/laser_rcw, /datum/crafting_recipe/laser_tri, /datum/crafting_recipe/laser_rifle13, /datum/crafting_recipe/laser_rifle9, /datum/crafting_recipe/laser_pistol, /datum/crafting_recipe/plasma_pistol)
+

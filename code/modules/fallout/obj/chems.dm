@@ -8,6 +8,7 @@
 	icon_state = "medx_15"
 	item_state = "syringe_15"
 	self_weight = 0.1
+	price = 250
 
 /obj/item/weapon/reagent_containers/pill/patch/radaway
 	name = "RadAway"
@@ -17,7 +18,7 @@
 	icon_state = "radaway"
 	item_state = "syringe_15"
 	self_weight = 0.1
-	price = 500
+	price = 200
 
 /obj/item/weapon/reagent_containers/pill/patch/jet
 	name = "Jet"
@@ -27,6 +28,7 @@
 	icon_state = "jet"
 	item_state = "bandaid"
 	self_weight = 0.1
+	price = 250
 
 /obj/item/weapon/reagent_containers/pill/patch/psycho
 	name = "Psycho"
@@ -36,6 +38,7 @@
 	icon_state = "psycho"
 	item_state = "syringe_15"
 	self_weight = 0.1
+	price = 250
 
 /obj/item/weapon/reagent_containers/pill/patch/radx
 	name = "Rad-X"
@@ -45,6 +48,7 @@
 	icon_state = "radx"
 	item_state = "bandaid"
 	self_weight = 0.1
+	price = 200
 
 /obj/item/weapon/reagent_containers/pill/patch/turbo
 	name = "Turbo"
@@ -54,3 +58,4 @@
 	icon_state = "turbo"
 	item_state = "turbo"
 	self_weight = 0.1
+	price = 250

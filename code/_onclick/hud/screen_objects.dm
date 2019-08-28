@@ -649,7 +649,7 @@
 
 /obj/screen/wheel_button/close_wheel
 	name = "close wheel"
-	icon_state = "x3"
+	icon_state = "radialclose"
 
 /obj/screen/wheel_button/close_wheel/Click()
 	if(isliving(usr))

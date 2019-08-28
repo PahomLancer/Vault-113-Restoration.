@@ -150,6 +150,7 @@
 //Krav Maga Gloves
 
 /obj/item/clothing/gloves/krav_maga
+	icon_state = "fightgloves"
 	var/datum/martial_art/krav_maga/style = new
 
 /obj/item/clothing/gloves/krav_maga/equipped(mob/user, slot)

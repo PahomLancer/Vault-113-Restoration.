@@ -5,8 +5,10 @@
 	var/stance = COMMANDED_STOP
 	melee_damage_lower = 0
 	melee_damage_upper = 0
+	player_only = FALSE
 	density = 1
 	icon = 'icons/fallout/mobs/animal.dmi'
+	environment_target_typecache = list()
 	var/list/command_buffer = list()
 	var/list/known_commands = list("stay", "stop", "attack", "follow", "defend", "enemy", "friend", "pull")
 	var/mob/master = null //undisputed master. Their commands hold ultimate sway and ultimate power.
@@ -15,13 +17,18 @@
 	var/search_enemy = 1
 	var/list/faction_enemy = list("hostile")
 	var/list/allowed_targets = list() //WHO CAN I KILL D:
+	var/list/debug = list()
 	var/retribution = 1 //whether or not they will attack us if we attack them like some kinda dick.
 
 /mob/living/simple_animal/hostile/commanded/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
-	if((speaker in friends) || speaker == master)
-		command_buffer.Add(speaker)
-		command_buffer.Add(lowertext_uni(html_decode(raw_message)))
-	return 0
+	if(ismob(speaker))
+		if(is_master(speaker))
+			command_buffer.Add(speaker)
+			command_buffer.Add(lowertext_uni(html_decode(raw_message)))
+	return ..()
+
+/mob/living/simple_animal/hostile/commanded/proc/is_master(var/mob/speaker)
+	return (speaker in friends) || speaker == master
 
 /mob/living/simple_animal/hostile/commanded/CanAttack(atom/the_target)
 	if(!the_target)
@@ -36,9 +43,9 @@
 		else
 			if(L.stat)
 				return 0
-		if(allowed_targets.Find("anybody") && !(the_target == master || friends.Find(the_target)))
+		if(allowed_targets.Find("anybody") && !is_master(the_target))
 			return 1
-		if(allowed_targets.Find(the_target) || is_enemy(the_target))
+		if(allowed_targets.Find(the_target) || is_enemy(L))
 			return 1
 		return 0
 
@@ -52,7 +59,7 @@
 		var/obj/machinery/porta_turret/P = the_target
 		if(P.faction in faction)
 			return 0
-		if(P.has_cover &&!P.raised) //Don't attack invincible turrets
+		if(P.has_cover &&!P.raised)
 			return 0
 		if(P.stat & BROKEN) //Or turrets that are already broken
 			return 0
@@ -198,7 +205,7 @@
 	var/list/possible_targets = hearers(src,10)
 	. = list()
 	for(var/mob/M in possible_targets)
-		if(filter_friendlies && ((M in friends) || faction_check(M) || M == master))
+		if(filter_friendlies && ((M in friends) || faction_check(M) || is_master(M)))
 			continue
 		var/found = 0
 		if(parse_phrase(text, "[M]"))
@@ -355,10 +362,11 @@
 	accepted()
 	return 1
 
-/mob/living/simple_animal/hostile/commanded/proc/is_enemy(var/mob/M)
-	for(var/F in M.faction)
-		if(F in faction_enemy)
-			return 1
+/mob/living/simple_animal/hostile/commanded/proc/is_enemy(var/mob/living/M)
+	if(istype(M))
+		for(var/F in M.faction)
+			if(F in faction_enemy)
+				return 1
 	return 0
 
 /mob/living/simple_animal/hostile/commanded/proc/misc_command(var/mob/speaker,var/text)

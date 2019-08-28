@@ -11,8 +11,8 @@
 
 /obj/item/projectile/beam/plasma/turbo
 	name = "turbo plasma"
-	damage = 60
-	irradiate = 20
+	damage = 50
+	irradiate = 10
 
 //Bullets library
 /obj/item/projectile/bullet/F13
@@ -119,7 +119,7 @@
 
 //Bullets library: .308
 /obj/item/projectile/bullet/F13/c308mmBullet
-	damage = 36
+	damage = 46
 
 /obj/item/projectile/bullet/F13/c308mmBullet/toxic
 	damage = 34

@@ -71,13 +71,14 @@
 	helmet = /obj/item/clothing/head/pirate
 
 /obj/effect/mob_spawn/human/corpse/russian
-	name = "Russian"
-	uniform = /obj/item/clothing/under/soviet
-	shoes = /obj/item/clothing/shoes/jackboots
-	helmet = /obj/item/clothing/head/bearpelt
+	name = "Chinese soldier"
+	gloves = /obj/item/clothing/gloves/f13/ncr
+	uniform = /obj/item/clothing/under/f13/ncr
+	shoes = /obj/item/clothing/shoes/f13/military/ncr
+	helmet = /obj/item/clothing/head/f13/chinese_soldier
 
 /obj/effect/mob_spawn/human/corpse/russian/ranged
-	helmet = /obj/item/clothing/head/ushanka
+	helmet = /obj/item/clothing/head/f13/chinese_officer
 
 /obj/effect/mob_spawn/human/corpse/russian/ranged/trooper
 	uniform = /obj/item/clothing/under/syndicate/camo

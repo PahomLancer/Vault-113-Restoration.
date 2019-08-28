@@ -97,8 +97,19 @@
 			to_chat(usr, "<span class='danger'>You cannot apply this ban type on yourself.</span>")
 			return
 
-	var/who = ""
-	var/adminwho = ""
+	var/who
+	for(var/client/C in clients)
+		if(!who)
+			who = "[C]"
+		else
+			who += ", [C]"
+
+	var/adminwho
+	for(var/client/C in admins)
+		if(!adminwho)
+			adminwho = "[C]"
+		else
+			adminwho += ", [C]"
 
 	reason = sanitizeSQL(reason)
 
@@ -113,10 +124,7 @@
 
 	var/sql = "INSERT INTO [format_table_name("ban")] (`id`,`bantime`,`serverip`,`bantype`,`reason`,`job`,`duration`,`rounds`,`expiration_time`,`ckey`,`computerid`,`ip`,`a_ckey`,`a_computerid`,`a_ip`,`who`,`adminwho`,`edits`,`unbanned`,`unbanned_datetime`,`unbanned_ckey`,`unbanned_computerid`,`unbanned_ip`) VALUES (null, Now(), '[serverip]', '[bantype_str]', '[reason]', '[job]', [(duration)?"[duration]":"0"], [(rounds)?"[rounds]":"0"], Now() + INTERVAL [(duration>0) ? duration : 0] MINUTE, '[ckey]', '[computerid]', '[ip]', '[a_ckey]', '[a_computerid]', '[a_ip]', '[who]', '[adminwho]', '', null, null, null, null, null)"
 	var/DBQuery/query_insert = dbcon.NewQuery(sql)
-
-	if(!query_insert.Execute())
-		message_admins("SQL ERROR obtaining jobbans. Error : \[[query_insert.ErrorMsg()]\]\n")
-
+	query_insert.Execute()
 	to_chat(usr, "<span class='adminnotice'>Ban saved to database.</span>")
 	message_admins("[key_name_admin(usr)] has added a [bantype_str] for [ckey] [(job)?"([job])":""] [(duration > 0)?"([duration] minutes)":""] with the reason: \"[reason]\" to the ban database.",1)
 

@@ -589,6 +589,7 @@
 	name = "box of lethal shotgun shots"
 	desc = "A box full of lethal shots, designed for riot shotguns."
 	icon_state = "lethalshot_box"
+	price = 350
 
 /obj/item/weapon/storage/box/lethalshot/New()
 	..()

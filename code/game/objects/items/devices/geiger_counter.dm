@@ -86,11 +86,11 @@
 	if(isliving(loc))
 		var/mob/living/M = loc
 		if(!emagged)
-			to_chat(M, "<span class='boldannounce'>[bicon(src)] RADIATION PULSE DETECTED.</span>")
-			to_chat(M, "<span class='boldannounce'>[bicon(src)] Severity: [amount]</span>")
+			to_chat(M, "<span class='notice'>[bicon(src)] RADIATION PULSE DETECTED.</span>")
+			to_chat(M, "<span class='notice'>[bicon(src)] Severity: [amount]</span>")
 		else
-			to_chat(M, "<span class='boldannounce'>[bicon(src)] !@%$AT!(N P!LS! D/TEC?ED.</span>")
-			to_chat(M, "<span class='boldannounce'>[bicon(src)] &!F2rity: <=[amount]#1</span>")
+			to_chat(M, "<span class='notice'>[bicon(src)] !@%$AT!(N P!LS! D/TEC?ED.</span>")
+			to_chat(M, "<span class='notice'>[bicon(src)] &!F2rity: <=[amount]#1</span>")
 	update_icon()
 
 /obj/item/device/geiger_counter/attack_self(mob/user)

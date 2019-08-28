@@ -16,7 +16,9 @@ var/const/SETTLER			=(1<<10)
 var/const/ADVENTURER		=(1<<11)
 var/const/RAIDER        	=(1<<12)
 var/const/MAYOR				=(1<<13)
-
+var/const/ARROYV			=(1<<14)
+var/const/ARROYE			=(1<<15)
+var/const/GUNRUNNER			=(1<<16)
 //This jobs using medsci flag, cause me too lazy.
 
 var/const/COLONEL			=(1<<1)
@@ -49,6 +51,9 @@ var/const/AFOLLOWER			=(1<<0)
 var/const/FOB				=(1<<9)
 var/const/VAULT_OVERSEER	=(1<<0)
 var/const/VAULT_RESIDENT	=(1<<1)
+var/const/VAULT_SECURITY	=(1<<5)
+var/const/VAULT_SCIENCIST	=(1<<6)
+var/const/VAULT_ENGINEER	=(1<<7)
 
 var/const/COC				=(1<<12)
 var/const/CHILDOFCATHEDRAL	=(1<<0)

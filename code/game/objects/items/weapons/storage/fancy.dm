@@ -123,6 +123,7 @@
 	can_hold = list(/obj/item/clothing/mask/cigarette, /obj/item/weapon/lighter)
 	icon_type = "cigarette"
 	spawn_type = /obj/item/clothing/mask/cigarette
+	price = 100
 
 /obj/item/weapon/storage/fancy/cigarettes/New()
 	..()

@@ -6,8 +6,8 @@
 	points = 0
 	kind = FACTION
 
-	var/list/bos_items = list(/obj/item/ring)
-	var/list/enclave_items = list(/obj/item/ring)
+	var/list/bos_items = list(/obj/item/nuke_core)
+	var/list/enclave_items = list(/obj/item/documents/syndicate)
 	var/list/city_items = list(/obj/item/ring)
 	var/list/other_items = list(/obj/item/ring)
 

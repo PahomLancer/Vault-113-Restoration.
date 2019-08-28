@@ -7,7 +7,7 @@
 	plantname = "Tobacco Plant"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/tobacco
 	lifespan = 20
-	maturation = 5
+	maturation = 20
 	production = 5
 	yield = 10
 	growthstages = 3

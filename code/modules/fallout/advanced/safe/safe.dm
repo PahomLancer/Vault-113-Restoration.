@@ -63,6 +63,39 @@
 	if(amount >= 10000)
 		. += "<a class='button' href='byond://?src=\ref[src];withdraw=10000'>Снять 10 000</a>"
 
+	if(amount >= 5000)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=5000'>Снять 5000</a>"
+
+	if(amount >= 3000)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=1000'>Снять 3000</a>"
+
+	if(amount >= 2000)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=1000'>Снять 2000</a>"
+
+	if(amount >= 1000)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=1000'>Снять 1000</a>"
+
+	if(amount >= 500)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=500'>Снять 500</a>"
+
+	if(amount >= 400)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=1000'>Снять 400</a>"
+
+	if(amount >= 300)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=1000'>Снять 300</a>"
+
+	if(amount >= 200)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=1000'>Снять 200</a>"
+
+	if(amount >= 100)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=1000'>Снять 100</a>"
+
+	if(amount >= 50)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=50'>Снять 50</a>"
+
+	if(amount >= 10)
+		. += "<a class='button' href='byond://?src=\ref[src];withdraw=10'>Снять 10</a>"
+
 	if(amount > 0)
 		. += "<a class='button' href='byond://?src=\ref[src];withdraw=[amount]'>Снять все</a>"
 

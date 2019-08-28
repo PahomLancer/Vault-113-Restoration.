@@ -159,6 +159,13 @@ datum/reagent/supstimpackium_oxy/on_mob_life(mob/living/M)
 	color = "#ff9955aa" // rgb: 170, 170, 170, 77 (alpha)
 	//water_factor = 5 * REAGENTS_METABOLISM
 
+/datum/reagent/water/vim
+	name = "VIM"
+	id = "vim"
+	description = "Vim! Pop Incorporated was founded in 1931, initially being sold as a health tonic. It wasn't as popular as Nuka-Cola, however in Maine it was more widely consumed than its rival. Vim was even referred to as a state tradition and about to become the official state drink of Maine; however, during the process of making this official, legal situations forced the company to back off its marketing."
+	color = "#ff9966aa" // rgb: 170, 170, 170, 77 (alpha)
+	//water_factor = 5 * REAGENTS_METABOLISM
+
 /datum/reagent/water/irradiated
 	name = "Irradiated water"
 	id = "radwater"
@@ -180,3 +187,11 @@ datum/reagent/supstimpackium_oxy/on_mob_life(mob/living/M)
 	M.adjustToxLoss(12*REM, 0)  //fix it after RadRebalance
 	..()
 	. = 1
+
+/datum/reagent/consumable/blood/cum
+	name = "Cum"
+	id = "cum"
+	color = "#FFFFFF" // rgb: 255, 255, 255
+	metabolization_rate = 1.5
+	description = "warm salty-biterness with an edge of sweet"
+	water_factor = 3 * REAGENTS_METABOLISM

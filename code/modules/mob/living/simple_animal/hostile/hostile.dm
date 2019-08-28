@@ -15,6 +15,7 @@
 	var/taunt_chance = 0
 	var/aggro_sound_chance = 0
 	var/aggro_sound = null
+	var/player_only = TRUE
 
 //typecache of things this mob will attack in DestroySurroundings() if it has environment_smash
 	var/list/environment_target_typecache = list(
@@ -111,14 +112,10 @@
 //////////////HOSTILE MOB TARGETTING AND AGGRESSION////////////
 
 /mob/living/simple_animal/hostile/proc/ListTargets()//Step 1, find out what we can see
-	return targets
+	. = targets
+	if(player_only)
+		return
 
-	. = list()
-	for(var/mob/living/carbon/human/player in range(vision_range, src))
-		. += player
-	return
-
-	. = list()
 	if(!search_objects)
 		var/list/Mobs = hearers(vision_range, targets_from) - src //Remove self, so we don't suicide
 		. += Mobs

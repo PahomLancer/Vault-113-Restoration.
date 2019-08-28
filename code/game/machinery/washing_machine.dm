@@ -114,6 +114,9 @@
 			if(!can_adjust && adjusted) //we deadjust the uniform if it's now unadjustable
 				toggle_jumpsuit_adjust()
 
+/obj/item/clothing/gloves/color
+	icon_state = "rainbow"
+
 /obj/item/clothing/gloves/color/machine_wash(obj/machinery/washing_machine/WM)
 	if(WM.color_source)
 		var/wash_color = WM.color_source.item_color

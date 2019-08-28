@@ -1,7 +1,7 @@
 //Fallout 13 Brotherhood of Steel faction roles
 
 /datum/job/elder
-	title = "Elder"
+	title = "Elder of Brotherhood"
 	desc = "A mentor, the source of wisdom.<br>You are the one who shall fulfill destiny."
 	flag = ELDER
 	department_head = list("Brotherhood of Steel command HQ")
@@ -56,6 +56,7 @@
 	name = "Elder"
 	backpack = null
 	satchel = null
+	id = /obj/item/card/id/dogtag
 	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/f13/elder
@@ -66,7 +67,7 @@
 //Brotherhood Paladin
 
 /datum/job/paladin
-	title = "Paladin"
+	title = "Paladin of Brotherhood"
 	desc = "A guardian, the bringer of light.<br>You are the one who shall protect others."
 	flag = PALADIN
 	department_head = list("elder")
@@ -115,6 +116,7 @@
 	name = "Paladin"
 	backpack = null
 	satchel = null
+	id = /obj/item/card/id/dogtag
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
@@ -128,7 +130,7 @@
 //Brotherhood Knight
 
 /datum/job/knight
-	title = "Knight"
+	title = "Knight of Brotherhood"
 	desc = "A warrior, the keeper of peace.<br>You are the one who shall bring justice."
 	flag = KNIGHT
 	department_head = list("elder", "paladin")
@@ -176,6 +178,7 @@
 	name = "Knight"
 	backpack = null
 	satchel = null
+	id = /obj/item/card/id/dogtag
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
@@ -187,7 +190,7 @@
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 
 /datum/job/scriber
-	title = "Scriber"
+	title = "Scriber of Brotherhood"
 	desc = "Brotherhood's memory holder."
 	flag = SCRIBER
 	department_head = list("elder", "paladin")
@@ -229,6 +232,7 @@
 	name = "Scriber"
 	backpack = null
 	satchel = null
+	id = /obj/item/card/id/dogtag
 	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/tan
 	suit = /obj/item/clothing/suit/f13/scribe

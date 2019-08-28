@@ -24,6 +24,37 @@
 	explosion(src.loc,0,3,6,flame_range = 0)
 	qdel(src)
 
+/obj/item/weapon/grenade/syndieminibomb/dynim
+	desc = "A high explosive, consisting of nitroglycerin mixed with the absorbent substance kiselguhr. Includes a timer. 1 minute timer setuped."
+	name = "Dynamite"
+	icon_state = "dynim"
+	origin_tech = "materials=1;magnets=2"
+	det_time = 600
+
+/obj/item/weapon/grenade/syndieminibomb/dynim/prime()
+	update_mob()
+	explosion(src.loc,0, 7, 12,flame_range = 0)
+	qdel(src)
+
+/*/obj/item/weapon/grenade/syndieminibomb/dynim/attack_self(mob/user)
+	var/newtime = input(usr, "Please set the timer.", "Timer", 10) as num
+	if(user.get_active_held_item() == src)
+		newtime = Clamp(newtime, 10, 60000)
+		det_time = newtime
+		to_chat(user, "Timer set for [det_time] seconds.")*/
+
+/obj/item/weapon/grenade/syndieminibomb/molotov
+	desc = "A home-made flammable grenade."
+	name = "Molotov cocktail"
+	icon_state = "molotov"
+	origin_tech = "materials=1;magnets=2"
+	det_time = 15
+
+/obj/item/weapon/grenade/syndieminibomb/molotov/prime()
+	update_mob()
+	explosion(src.loc,0,0,1,flame_range = 4)
+	qdel(src)
+
 /obj/item/weapon/grenade/syndieminibomb/tincan
 	desc = "Some powder in tincan."
 	name = "Tincan"
@@ -55,6 +86,16 @@
 /obj/item/weapon/grenade/syndieminibomb/concussion/frag/prime()
 	update_mob()
 	explosion(src.loc,5,10,20,flame_range = 0)
+	qdel(src)
+
+/obj/item/weapon/grenade/syndieminibomb/concussion/frag_fal
+	name = "Frag grenade"
+	desc = "A generic fragmentation grenade. Contains a small amount of high explosives, the container itself forming most of the damaging fragments. Explodes on contact."
+	icon_state = "frag_fal"
+
+/obj/item/weapon/grenade/syndieminibomb/concussion/frag_fal/prime()
+	update_mob()
+	explosion(src.loc,0,4,8,flame_range = 0)
 	qdel(src)
 
 /obj/item/weapon/grenade/gluon

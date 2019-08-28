@@ -23,6 +23,26 @@
 	max_integrity = 1500000
 	integrity_failure = 300000
 
+/obj/structure/vault_door/vault42
+	name = "Vault 42 blast door"
+	desc = "A conventional Vault blast door of \"Nine cog\" model.<br>A blast door design incorporates proper sealants against radiation and other hazardous elements that may be created in the event of a nuclear war, to properly protect its inhabitants."
+	icon_state = "42closed"
+	close_state = "42closed"
+	open_state = "42open"
+	closing_state = "42closing"
+	opening_state = "42opening"
+	broken_state = "42empty"
+
+/obj/structure/vault_door/vault76
+	name = "Vault 76 blast door"
+	desc = "A conventional Vault blast door of \"Nine cog\" model.<br>A blast door design incorporates proper sealants against radiation and other hazardous elements that may be created in the event of a nuclear war, to properly protect its inhabitants."
+	icon_state = "76closed"
+	close_state = "76closed"
+	open_state = "76open"
+	closing_state = "76closing"
+	opening_state = "76opening"
+	broken_state = "76empty"
+
 /obj/structure/vault_door/old
 	name = "\proper ancient Vault blast door"
 	icon_state = "oldclosed"

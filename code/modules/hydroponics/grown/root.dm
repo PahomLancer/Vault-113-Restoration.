@@ -6,7 +6,7 @@
 	species = "carrot"
 	plantname = "Carrots"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/carrot
-	maturation = 10
+	maturation = 40
 	production = 1
 	yield = 5
 	growthstages = 3

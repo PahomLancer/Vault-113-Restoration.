@@ -378,7 +378,7 @@
 "hn" = (/obj/item/clothing/gloves/color/fyellow,/turf/open/floor/plating/asteroid/airless,/area/awaymission/BMPship)
 "ho" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/grille,/turf/open/floor/engine,/area/awaymission/BMPship/Aft)
 "hp" = (/obj/machinery/light/small{dir = 1},/turf/open/floor/engine,/area/awaymission/BMPship/Aft)
-"hq" = (/obj/item/weapon/storage/box/matches,/obj/item/weapon/storage/fancy/cigarettes/dromedaryco,/turf/open/floor/plating,/area/awaymission/BMPship/Aft)
+"hq" = (/obj/item/weapon/storage/box/matches,/turf/open/floor/plating,/area/awaymission/BMPship/Aft)
 "hr" = (/obj/item/weapon/poster/contraband,/turf/open/floor/plating,/area/awaymission/BMPship/Aft)
 "hs" = (/obj/item/weapon/reagent_containers/food/drinks/beer,/turf/open/floor/plating,/area/awaymission/BMPship/Aft)
 "ht" = (/turf/open/floor/plating,/turf/closed/wall/mineral/titanium/interior,/area/awaymission/BMPship/Aft)

@@ -24,7 +24,7 @@
 		icon_state = "[amount]"
 
 /obj/item/stack/caps/random/New()
-	amount = rand(1,100)
+	amount = rand(1,350)
 
 	spawn(10)
 		var/obj/item/stack/caps/target/newEngineAndColor = new /obj/item/stack/caps/target()

@@ -29,7 +29,7 @@
 	var/log_ooc = 0						// log OOC channel
 	var/log_access = 0					// log login/logout
 	var/log_say = 0						// log client say
-	var/log_admin = 0					// log admin actions
+	var/log_admin = 1					// log admin actions
 	var/log_game = 0					// log game events
 	var/log_vote = 0					// log voting
 	var/log_whisper = 0					// log client whisper
@@ -44,7 +44,7 @@
 	var/log_world_topic = 0				// log all world.Topic() calls
 	var/sql_enabled = 0					// for sql switching
 	var/allow_admin_ooccolor = 0		// Allows admins with relevant permissions to have their own ooc colour
-	var/allow_vote_restart = 0 			// allow votes to restart
+	var/allow_vote_restart = 1 			// allow votes to restart
 	var/allow_vote_mode = 0				// allow votes to change mode
 	var/vote_delay = 6000				// minimum time between voting sessions (deciseconds, 10 minute default)
 	var/vote_period = 600				// length of voting period (deciseconds, default 1 minute)
@@ -151,12 +151,12 @@
 	var/no_summon_events	//Allowed
 
 	var/intercept = 1					//Whether or not to send a communications intercept report roundstart. This may be overriden by gamemodes.
-	var/alert_desc_green = "All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
-	var/alert_desc_blue_upto = "The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted."
+	var/alert_desc_green = "All threats to the Vault have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
+	var/alert_desc_blue_upto = "The Vault has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted."
 	var/alert_desc_blue_downto = "The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed."
-	var/alert_desc_red_upto = "There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised."
-	var/alert_desc_red_downto = "The station's destruction has been averted. There is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised."
-	var/alert_desc_delta = "Destruction of the station is imminent. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill."
+	var/alert_desc_red_upto = "There is an immediate serious threat to the Vault. Security may have weapons unholstered at all times. Random searches are allowed and advised."
+	var/alert_desc_red_downto = "The Vault's destruction has been averted. There is still however an immediate serious threat to the Vault. Security may have weapons unholstered at all times, random searches are allowed and advised."
+	var/alert_desc_delta = "Destruction of the Vault is imminent. All dwellers are instructed to obey all instructions given by overseer. Any violations of these orders can be punished by death. This is not a drill."
 
 	var/revival_pod_plants = 1
 	var/revival_cloning = 1

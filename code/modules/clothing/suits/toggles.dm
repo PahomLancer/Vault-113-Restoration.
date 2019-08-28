@@ -2,6 +2,7 @@
 
 /obj/item/clothing/suit/hooded
 	actions_types = list(/datum/action/item_action/toggle_hood)
+	var/last_time = 1
 	var/obj/item/clothing/head/hooded/hood
 	var/hoodtype = /obj/item/clothing/head/hooded/winterhood //so the chaplain hoodie or other hoodies can override this
 	hooded = 1
@@ -49,6 +50,10 @@
 	RemoveHood()
 
 /obj/item/clothing/suit/hooded/proc/ToggleHood()
+	if(last_time + 30 > world.time)
+		return
+	last_time = world.time
+
 	if(!suittoggled)
 		if(ishuman(src.loc))
 			var/mob/living/carbon/human/H = src.loc

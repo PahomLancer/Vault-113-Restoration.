@@ -357,6 +357,19 @@
 	self_weight = 2
 	species_exception = list(/datum/species/supermutant)
 
+/obj/item/clothing/under/sm_black_pants
+	name = "supermutant black pants"
+	desc = "A large supermutant black pants."
+	icon_state = "sm_black_pants"
+	item_state = "sm_black_pants"
+	item_color = "sm_black_pants"
+	can_adjust = 0
+	body_parts_covered = GROIN|LEGS
+	armor = list(melee = 15, bullet = 15, laser = 10, energy = 10, bomb = 15, bio = 0, rad = 10, fire = 0, acid = 0)
+	can_adjust = 0
+	self_weight = 2
+	species_exception = list(/datum/species/supermutant)
+
 /obj/item/clothing/under/singery
 	name = "yellow performer's outfit"
 	desc = "Just looking at this makes you want to sing."

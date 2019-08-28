@@ -51,20 +51,20 @@
 	desc = "A crude, unassuming weapon that seems to be constructed from spare parts and scrap metal attached to an eastern sword of some kind. A prototype perhaps? When the trigger is held charge from the attached microfusion cell arcs energy around the blade."
 	icon_state = "powerkebab0"
 	icon_state_on = "powerkebab1"
-	slot_flags = SLOT_BACK
+	slot_flags = SLOT_BACK|SLOT_BELT
 	force = 40
-	force_on = 120
-	throwforce = 70
-	throwforce_on = 100
+	force_on = 60
+	throwforce = 50
+	throwforce_on = 70
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	throw_speed = 3
 	throw_range = 5
 	block_chance = 40
 	sharpness = IS_SHARP
-	embed_chance = 300
+	embed_chance = 35
 	w_class = WEIGHT_CLASS_HUGE
 	flags = CONDUCT
-	armour_penetration = 300
+	armour_penetration = 85
 	origin_tech = "combat=5;magnets=4"
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
 	attack_verb_on = list()

@@ -264,6 +264,7 @@
 	icon_state = "holyflask"
 	color = "#333333"
 	list_reagents = list("unholywater" = 40)
+	price = 100
 
 /obj/item/device/shuttle_curse
 	name = "cursed orb"

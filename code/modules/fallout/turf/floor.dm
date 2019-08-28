@@ -43,3 +43,17 @@
 		make_plating()
 		playsound(src, C.usesound, 80, 1)
 		return
+
+///Вуна, ты костыльный пидорас, знай это. Удивительно что это вообще работает.
+
+/turf/open/floor/f13/wood/stage
+	icon_state = "housewood_stage1"
+
+/turf/open/floor/f13/wood/housebase
+	icon_state = "housebase"
+
+/turf/open/floor/f13/wood/housebase/sand
+	icon_state = "housebase_sand"
+
+/turf/open/floor/f13/wood/housebase/sand/corner
+	icon_state = "housebase_sandcorner"

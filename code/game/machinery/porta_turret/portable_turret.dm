@@ -552,6 +552,28 @@
 /obj/machinery/porta_turret/syndicate/assess_perp(mob/living/carbon/human/perp)
 	return 10 //Syndicate turrets shoot everything not in their faction
 
+/obj/machinery/porta_turret/syndicate/hologram
+	stun_projectile = /obj/item/projectile/beam
+	lethal_projectile = /obj/item/projectile/beam
+	lethal_projectile_sound = 'sound/f13weapons/laser_rifle.ogg'
+	stun_projectile_sound = 'sound/f13weapons/laser_rifle.ogg'
+	icon_state = "hologram_off"
+	base_icon_state = "hologram"
+	faction = "casino"
+	emp_vunerable = 1
+	always_up = 1
+	use_power = 1
+	has_cover = 0
+	density = 0
+	name = "hologram"
+	max_integrity = 1000000
+	armor = list(melee = 500, bullet = 500, laser = 500, energy = 500, bomb = 500, bio = 500, rad = 500, fire = 500, acid = 500)
+	reqpower = 5
+	obj_integrity = 1000000
+	mode = TURRET_LETHAL
+	scan_range = 10
+
+
 /obj/machinery/porta_turret/syndicate/enclave
 	stun_projectile = /obj/item/projectile/beam/plasma
 	lethal_projectile = /obj/item/projectile/beam/plasma

@@ -62,8 +62,8 @@
 	build_path = /obj/machinery/autolathe
 	origin_tech = "engineering=2;programming=2"
 	req_components = list(
-							/obj/item/weapon/stock_parts/matter_bin = 3,
-							/obj/item/weapon/stock_parts/manipulator = 1,
+							/obj/item/weapon/stock_parts/matter_bin = 6,
+							/obj/item/weapon/stock_parts/manipulator = 2,
 							/obj/item/weapon/stock_parts/console_screen = 1)
 
 /obj/machinery/autolathe/Destroy()

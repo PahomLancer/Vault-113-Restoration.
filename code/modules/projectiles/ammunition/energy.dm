@@ -85,6 +85,11 @@
 	select_name = "declone"
 	fire_sound = 'sound/weapons/pulse3.ogg'
 
+/obj/item/ammo_casing/energy/alien
+	projectile_type = /obj/item/projectile/energy/alien
+	select_name = "blast"
+	fire_sound = 'sound/weapons/AlienBlaster_SingleShot_1 (1).ogg'
+
 /obj/item/ammo_casing/energy/mindflayer
 	projectile_type = /obj/item/projectile/beam/mindflayer
 	select_name = "MINDFUCK"

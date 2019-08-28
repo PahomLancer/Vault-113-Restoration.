@@ -6,7 +6,7 @@
 	species = "soybean"
 	plantname = "Soybean Plants"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/soybeans
-	maturation = 4
+	maturation = 20
 	production = 4
 	potency = 15
 	growthstages = 4
